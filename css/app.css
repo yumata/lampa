@@ -2007,6 +2007,47 @@ body.selectbox--open .selectbox__content {
   .torrent-file.focus {
     background-color: #353535; }
 
+.torrent-error > div + div {
+  margin-top: 1.3em; }
+
+.torrent-error > div {
+  line-height: 1.2; }
+  .torrent-error > div > div {
+    font-size: 1.4em; }
+  .torrent-error > div > ul {
+    margin: 0;
+    margin-top: 0.2em;
+    font-size: 1.2em;
+    font-weight: 300; }
+    .torrent-error > div > ul > li {
+      position: relative;
+      padding-left: 1em; }
+      .torrent-error > div > ul > li::before {
+        content: '';
+        display: block;
+        width: 0.3em;
+        height: 0.3em;
+        -webkit-border-radius: 100%;
+           -moz-border-radius: 100%;
+                border-radius: 100%;
+        background-color: #ddd;
+        position: absolute;
+        top: 0.5em;
+        left: 0; }
+      .torrent-error > div > ul > li + li {
+        margin-top: 0.2em; }
+
+.torrent-error code {
+  background-color: #4c4c4c;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+  padding: 0 0.5em;
+  word-break: break-all; }
+
+.error + .torrent-error {
+  margin-top: 2em; }
+
 .files {
   display: -webkit-box;
   display: -webkit-flex;
