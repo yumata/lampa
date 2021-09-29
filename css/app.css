@@ -2043,7 +2043,9 @@ body.selectbox--open .selectbox__content {
      -moz-border-radius: 0.2em;
           border-radius: 0.2em;
   padding: 0 0.5em;
-  word-break: break-all; }
+  word-break: break-all;
+  font-family: inherit;
+  font-size: inherit; }
 
 .error + .torrent-error {
   margin-top: 2em; }
