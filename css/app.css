@@ -2050,6 +2050,14 @@ body.selectbox--open .selectbox__content {
 .error + .torrent-error {
   margin-top: 2em; }
 
+.torrent-filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em; }
+
 .files {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2117,3 +2125,55 @@ body.selectbox--open .selectbox__content {
     font-weight: 300; }
   .error__title {
     font-size: 1.7em; }
+
+.simple-button {
+  margin-right: 1em;
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.3em 1.2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.8em;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .simple-button > svg {
+    width: 1.5em;
+    height: 1.5em; }
+    .simple-button > svg + span {
+      margin-left: 1em; }
+  .simple-button.focus {
+    background-color: #fff;
+    color: #000; }
+
+.search-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
