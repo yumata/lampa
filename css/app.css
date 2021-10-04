@@ -2067,6 +2067,8 @@ body.selectbox--open .selectbox__content {
   .files__left {
     width: 25%;
     padding: 2.5em 1.5em; }
+    .files__left .full-start__poster {
+      display: inline-block; }
   .files__body {
     width: 75%; }
   .files__title {
@@ -2177,3 +2179,22 @@ body.selectbox--open .selectbox__content {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.console {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1d1f20;
+  z-index: 100;
+  padding: 1.5em 0; }
+  .console__line {
+    padding: 0.3em 1.5em;
+    font-size: 1.1em;
+    line-height: 1.2;
+    word-break: break-all; }
+    .console__line:nth-child(2n) {
+      background-color: rgba(255, 255, 255, 0.05); }
+    .console__line.focus {
+      background-color: rgba(255, 255, 255, 0.2); }
