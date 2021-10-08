@@ -27,6 +27,33 @@
     <script src="./vender/keypad/keypad.js"></script>
     <script src="http://www.youtube.com/iframe_api"></script>
 
-    <script src="app.min.js"></script>
+    <script>
+    function putScript(scripts){
+        var add = function(src){
+            console.log('Loader', 'try-load-script', src)
+            var trys = 0;
+            var sreateScript = function(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.onload = script.onreadystatechange = function() {
+                    console.log('Loader', 'Script loaded');
+                };
+                script.onerror = function(){
+                    trys++;
+                    console.log('Loader', 'error-load-script', src)
+                    if(trys < 3){
+                        sreateScript();
+                    }
+                }
+                script.src = src;
+                document.getElementsByTagName('body')[0].appendChild(script);
+            }
+            sreateScript();
+        }
+        add(scripts);
+    }
+    
+    putScript('app.min.js?v=' + Math.random());
+    </script>
 </body>
 </html>

@@ -146,6 +146,16 @@ ul {
 .hide {
   display: none !important; }
 
+body.no--mask .scroll--mask {
+  -webkit-mask-image: unset !important;
+          mask-image: unset !important; }
+
+body.no--animation * {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -moz-transition: none !important;
+  transition: none !important; }
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1081,6 +1091,22 @@ body.settings--open .settings__content {
   background: url(../img/loader.svg) no-repeat 50% 50%;
   display: none; }
 
+.player-video__paused {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 8em;
+  height: 8em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: -4em;
+  margin-top: -4em;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); }
+
 .player-video.video--load .player-video__loader {
   display: block; }
 
@@ -1094,8 +1120,9 @@ body.settings--open .settings__content {
 
 .player-panel {
   position: fixed;
-  left: 0;
-  bottom: 0;
+  left: 1.5em;
+  bottom: 1.5em;
+  right: 1.5em;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -1109,7 +1136,14 @@ body.settings--open .settings__content {
   -o-transition: opacity 0.3s, -o-transform 0.3s;
   -moz-transition: transform 0.3s, opacity 0.3s, -moz-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s; }
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+  width: auto;
+  padding: 1.5em;
+  -webkit-border-radius: 0.5em;
+     -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); }
   .player-panel.panel--visible {
     -webkit-transform: translateY(0);
        -moz-transform: translateY(0);
@@ -1119,12 +1153,20 @@ body.settings--open .settings__content {
     opacity: 1; }
   .player-panel__timeline {
     position: relative;
-    height: 0.4em; }
+    height: 0.4em;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 2em;
+       -moz-border-radius: 2em;
+            border-radius: 2em;
+    margin-bottom: 0.6em; }
   .player-panel__peding, .player-panel__position {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%; }
+    height: 100%;
+    -webkit-border-radius: 5em;
+       -moz-border-radius: 5em;
+            border-radius: 5em; }
   .player-panel__peding {
     background-color: rgba(255, 255, 255, 0.3); }
   .player-panel__position {
@@ -1176,8 +1218,6 @@ body.settings--open .settings__content {
             transform: translateX(-50%);
     margin-bottom: 0.5em;
     padding: 0.4em; }
-  .player-panel__body {
-    padding: 1em 1.5em; }
   .player-panel__line {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1189,6 +1229,8 @@ body.settings--open .settings__content {
        -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .player-panel__line + .player-panel__line {
+      margin-top: 1em; }
   .player-panel__timeend {
     margin-left: auto; }
   .player-panel__left, .player-panel__right {
@@ -1233,12 +1275,13 @@ body.settings--open .settings__content {
             background-size: 45%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.4em; }
     .player-panel .button.focus {
       background-color: #000;
       -webkit-filter: invert(1);
               filter: invert(1); }
-  .player-panel__right .button + .button {
+  .player-panel__right .button + .button, .player-panel__left .button + .button {
     margin-left: 1em; }
   .player-panel__playpause {
     font-size: 1.4em;
@@ -1248,7 +1291,8 @@ body.settings--open .settings__content {
     font-size: 1.7em;
     overflow: hidden;
     -o-text-overflow: ellipsis;
-       text-overflow: ellipsis; }
+       text-overflow: ellipsis;
+    margin-bottom: 2em; }
   .player-panel__next {
     background-image: url(../img/icons/player/next.svg); }
   .player-panel__prev {
@@ -1265,6 +1309,41 @@ body.settings--open .settings__content {
             background-size: 55% !important; }
   .player-panel.panel--paused .player-panel__playpause {
     background-image: url(../img/icons/player/play.svg); }
+
+.player-info {
+  position: fixed;
+  top: 1.5em;
+  left: 1.5em;
+  right: 1.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+       -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+  padding: 1.5em;
+  -webkit-border-radius: 0.5em;
+     -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); }
+  .player-info.info--visible {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; }
+  .player-info__name {
+    font-size: 1.5em;
+    word-break: break-all; }
 
 .selectbox {
   position: fixed;
@@ -1994,6 +2073,13 @@ body.selectbox--open .selectbox__content {
     padding-right: 1em;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis; }
+    .torrent-file__title .exe {
+      -webkit-border-radius: 0.3em;
+         -moz-border-radius: 0.3em;
+              border-radius: 0.3em;
+      background: #262829;
+      padding: 0.2em 0.4em;
+      display: inline-block; }
   .torrent-file__size {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
