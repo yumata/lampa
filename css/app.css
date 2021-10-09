@@ -1377,6 +1377,8 @@ body.settings--open .settings__content {
             flex-shrink: 0;
     font-size: 1.5em;
     padding-left: 1em; }
+  .player-info__error {
+    margin-top: 1em; }
   .player-info__values {
     display: -webkit-box;
     display: -webkit-flex;
