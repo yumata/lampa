@@ -1103,9 +1103,7 @@ body.settings--open .settings__content {
   padding: 2em;
   background-color: rgba(0, 0, 0, 0.5);
   margin-left: -4em;
-  margin-top: -4em;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px); }
+  margin-top: -4em; }
 
 .player-video__subtitles {
   position: fixed;
@@ -1127,6 +1125,15 @@ body.settings--open .settings__content {
 .player-video[data-size="contain"] .player-video__video {
   -o-object-fit: contain;
      object-fit: contain; }
+
+.player-video__paused {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .player-video__paused {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); } }
 
 .player-panel {
   position: fixed;
@@ -1151,9 +1158,7 @@ body.settings--open .settings__content {
   padding: 1.5em;
   -webkit-border-radius: 0.5em;
      -moz-border-radius: 0.5em;
-          border-radius: 0.5em;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px); }
+          border-radius: 0.5em; }
   .player-panel.panel--visible {
     -webkit-transform: translateY(0);
        -moz-transform: translateY(0);
@@ -1330,6 +1335,15 @@ body.settings--open .settings__content {
   .player-panel.panel--paused .player-panel__playpause {
     background-image: url(../img/icons/player/play.svg); }
 
+.player-panel {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .player-panel {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); } }
+
 .player-info {
   position: fixed;
   top: 1.5em;
@@ -1351,9 +1365,7 @@ body.settings--open .settings__content {
   padding: 1.5em;
   -webkit-border-radius: 0.5em;
      -moz-border-radius: 0.5em;
-          border-radius: 0.5em;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px); }
+          border-radius: 0.5em; }
   .player-info.info--visible {
     -webkit-transform: translateY(0);
        -moz-transform: translateY(0);
@@ -1378,7 +1390,8 @@ body.settings--open .settings__content {
     font-size: 1.5em;
     padding-left: 1em; }
   .player-info__error {
-    margin-top: 1em; }
+    margin-top: 1em;
+    font-size: 1.2em; }
   .player-info__values {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1389,8 +1402,17 @@ body.settings--open .settings__content {
     .player-info__values > div {
       margin-right: 1em; }
       .player-info__values > div span {
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-weight: 300; }
+
+.player-info {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .player-info {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); } }
 
 .selectbox {
   position: fixed;
