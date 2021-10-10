@@ -2179,7 +2179,8 @@ body.selectbox--open .selectbox__content {
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
   .torrent-file__title {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
