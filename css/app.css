@@ -1114,10 +1114,30 @@ body.settings--open .settings__content {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.5em;
+  margin: 1.5em;
   text-align: center;
   font-size: 2.5em;
-  text-shadow: 0 2px 1px #000000, 0 -2px 1px #000000, -2px 1px 0 #000000, 2px 0px 1px #000000; }
+  font-weight: 600;
+  line-height: 1.25; }
+  .player-video__subtitles.size--large {
+    font-size: 3em; }
+  .player-video__subtitles.size--small {
+    font-size: 2em; }
+  .player-video__subtitles.has--backdrop .player-video__subtitles-text {
+    background: rgba(0, 0, 0, 0.3); }
+  .player-video__subtitles.has--stroke {
+    text-shadow: 0 2px 1px #000000, 0 -2px 1px #000000, -2px 1px 0 #000000, 2px 0px 1px #000000; }
+  .player-video__subtitles.on-top {
+    top: 0; }
+
+.player-video__subtitles-text {
+  display: inline-block;
+  padding: .25em .5em;
+  -webkit-border-radius: .25em;
+     -moz-border-radius: .25em;
+          border-radius: .25em; }
+  .player-video__subtitles-text:empty {
+    display: none; }
 
 .player-video.video--load .player-video__loader {
   display: block; }
@@ -1147,11 +1167,11 @@ body.settings--open .settings__content {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transform: translateY(100%);
-     -moz-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-       -o-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(130%);
+     -moz-transform: translateY(130%);
+      -ms-transform: translateY(130%);
+       -o-transform: translateY(130%);
+          transform: translateY(130%);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   -o-transition: opacity 0.3s, -o-transform 0.3s;
@@ -1370,11 +1390,11 @@ body.settings--open .settings__content {
   right: 1.5em;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transform: translateY(-100%);
-     -moz-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-       -o-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-130%);
+     -moz-transform: translateY(-130%);
+      -ms-transform: translateY(-130%);
+       -o-transform: translateY(-130%);
+          transform: translateY(-130%);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   -o-transition: opacity 0.3s, -o-transform 0.3s;
