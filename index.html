@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" href="./vender/keypad/style.css">
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.css?v=1.11">
 </head>
 <body>
     <div class="welcome"></div>
 
     <div id="app">
 
+    </div>
+
+    <div class="no-network hide">
+        <div class="no-network__title">Ошибка</div>
+        <div class="no-network__desc">Не удалось загрузить файл: <span class="no-network__file"></span></div>
     </div>
     
     <script src="./webos/webOSTV.js"></script>
@@ -31,27 +36,44 @@
     function putScript(scripts){
         var add = function(src){
             console.log('Loader', 'try-load-script', src)
+
             var trys = 0;
+
             var sreateScript = function(){
                 var script = document.createElement('script');
+
                 script.type = 'text/javascript';
+
                 script.onload = script.onreadystatechange = function() {
                     console.log('Loader', 'Script loaded');
                 };
+
                 script.onerror = function(){
                     trys++;
+
                     console.log('Loader', 'error-load-script', src)
+
                     if(trys < 3){
                         sreateScript();
                     }
+                    else{
+                        $('.no-network').removeClass('hide')
+
+                        $('.no-network__file').text(window.location.href + '/' + src)
+                    }
                 }
+
                 script.src = src;
+
                 document.getElementsByTagName('body')[0].appendChild(script);
             }
+
             sreateScript();
         }
+
         add(scripts);
     }
+
     putScript('app.min.js?v=' + Math.random());
     </script>
 </body>
