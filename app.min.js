@@ -4148,7 +4148,13 @@
           webapis.avplay.seekTo(t * 1000);
         },
         get: function get() {
-          return webapis.avplay.getCurrentTime() / 1000;
+          var d = 0;
+
+          try {
+            d = webapis.avplay.getCurrentTime();
+          } catch (e) {}
+
+          return d ? d / 1000 : 0;
         }
       });
       /**
@@ -4158,7 +4164,13 @@
       Object.defineProperty(video, "duration", {
         set: function set() {},
         get: function get() {
-          return webapis.avplay.getDuration() / 1000;
+          var d = 0;
+
+          try {
+            d = webapis.avplay.getDuration();
+          } catch (e) {}
+
+          return d ? d / 1000 : 0;
         }
       });
       /**
