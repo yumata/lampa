@@ -5746,7 +5746,7 @@
       };
 
       position++;
-      if (position > movies.length) position = 0;
+      if (position >= movies.length) position = 0;
     }
 
     function stopSlideshow() {
