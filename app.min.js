@@ -5854,10 +5854,10 @@
         serial: movie.number_of_seasons ? true : false
       };
 
-      if (/s([0-9]+)(\.)?ep?([0-9]+)|s([0-9]+)|ep?([0-9]+)|([0-9]{2})x([0-9]+)/.test(path) && movie.number_of_seasons) {
+      if (/s([0-9]+)(\.)?ep?([0-9]+)|s([0-9]+)|ep?([0-9]+)|([0-9]{1,2})x([0-9]+)/.test(path) && movie.number_of_seasons) {
         var math = path.match(/s([0-9]+)\.?ep?([0-9]+)/);
         if (!math) math = path.match(/s([0-9]{2})([0-9]+)/);
-        if (!math) math = path.match(/([0-9]{2})x([0-9]+)/);
+        if (!math) math = path.match(/([0-9]{1,2})x([0-9]+)/);
 
         if (math) {
           data.season = parseInt(math[1]);
