@@ -6789,7 +6789,7 @@
           card.onFocus = function (target, card_data) {
             last = target;
             scroll.update(card.render(), true);
-            Background.change(Utils.cardImgBackground(item_data.movie) || element.poster);
+            Background.change(item_data.movie ? Utils.cardImgBackground(item_data.movie) : element.poster);
             var maxrow = Math.ceil(items.length / 7) - 1;
             if (Math.ceil(items.indexOf(card) / 7) >= maxrow) _this2.next();
           };
