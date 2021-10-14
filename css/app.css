@@ -2299,6 +2299,95 @@ body.selectbox--open .selectbox__content {
   display: flex;
   margin-bottom: 2em; }
 
+.torrent-serial {
+  position: relative;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: #1d1f20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .torrent-serial__img {
+    width: 12em;
+    -webkit-border-radius: 0.3em;
+       -moz-border-radius: 0.3em;
+            border-radius: 0.3em;
+    height: 7em;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+  .torrent-serial__content {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .torrent-serial__title {
+    font-size: 1.9em;
+    max-height: 2em;
+    overflow: hidden; }
+  .torrent-serial__line {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    font-weight: 300; }
+    .torrent-serial__line b {
+      font-weight: 500; }
+  .torrent-serial__size {
+    -webkit-border-radius: 0.3em;
+       -moz-border-radius: 0.3em;
+            border-radius: 0.3em;
+    background: #262829;
+    font-size: 1.3em;
+    padding: 0.3em 0.5em; }
+  .torrent-serial__exe {
+    font-size: 1.4em;
+    margin-top: 0.2em; }
+  .torrent-serial__detail {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 1.5em;
+    white-space: nowrap; }
+  .torrent-serial__episode {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    -webkit-border-radius: 0.2em;
+       -moz-border-radius: 0.2em;
+            border-radius: 0.2em;
+    padding: 0.3em 0.5em;
+    font-size: 1.4em;
+    font-weight: 600; }
+  .torrent-serial.focus {
+    background-color: #353535; }
+  .torrent-serial + .torrent-serial {
+    margin-top: 1em; }
+  .torrent-serial .time-line {
+    position: absolute;
+    left: 12em;
+    bottom: 0;
+    right: 0; }
+
 .files {
   display: -webkit-box;
   display: -webkit-flex;
