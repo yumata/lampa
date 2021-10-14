@@ -6160,16 +6160,18 @@
         episode: 0,
         serial: movie.number_of_seasons ? true : false
       };
+      var math = path.match(/s([0-9]+)\.?ep?([0-9]+)/);
+      if (!math) math = path.match(/s([0-9]{2})([0-9]+)/);
+      if (!math) math = path.match(/([0-9]{1,2})x([0-9]+)/);
 
-      if (/s([0-9]+)(\.)?ep?([0-9]+)|s([0-9]+)|ep?([0-9]+)|([0-9]{1,2})x([0-9]+)/.test(path) && movie.number_of_seasons) {
-        var math = path.match(/s([0-9]+)\.?ep?([0-9]+)/);
-        if (!math) math = path.match(/s([0-9]{2})([0-9]+)/);
-        if (!math) math = path.match(/([0-9]{1,2})x([0-9]+)/);
+      if (!math) {
+        math = path.match(/ep?([0-9]+)/);
+        if (math) math = [0, 0, math[1]];
+      }
 
-        if (math) {
-          data.season = parseInt(math[1]);
-          data.episode = parseInt(math[2]);
-        }
+      if (math && movie.number_of_seasons) {
+        data.season = parseInt(math[1]);
+        data.episode = parseInt(math[2]);
 
         if (data.season === 0) {
           math = path.match(/s([0-9]+)/);
@@ -6192,7 +6194,7 @@
         } else {
           hash$1 = Utils.hash(file_path);
         }
-      } else if (movie.original_title) {
+      } else if (movie.original_title && !data.serial) {
         data.hash = Utils.hash(movie.original_title);
       } else {
         data.hash = Utils.hash(file_path);
