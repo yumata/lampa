@@ -5337,6 +5337,7 @@
       elems.size.text('Загрузка...');
       elems.stat.text('- / - • - seeds');
       elems.speed.text('--');
+      elems.error.addClass('hide');
       clearTimeout(error);
       clearInterval(stat_timer);
       network$1.clear();
