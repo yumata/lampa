@@ -8392,8 +8392,8 @@
         orsay_tap_back_timer;
 
     function init$2() {
-      $('body').append($("<div style=\"position: absolute; left: -1000px; top: -1000px;\">\n    <object id=\"pluginObjectNNavi\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-NNAVI\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n    <object id=\"pluginObjectTVMW\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-TVMW\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n</div>"));
-      Utils.putScript(['$MANAGER_WIDGET/Common/API/Widget.js', '$MANAGER_WIDGET/Common/API/TVKeyValue.js', '$MANAGER_WIDGET/Common/API/Plugin.js', '$CAPH/1.0.0/caph-level1-unified.min.js', '$MANAGER_WIDGET/Common/webapi/1.0/webapis.js'], function () {
+      $('body').append($("<div style=\"position: absolute; left: -1000px; top: -1000px;\">\n    <object id=\"pluginObjectNNavi\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-NNAVI\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n    <object id=\"pluginObjectTVMW\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-TVMW\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n    <object id=\"pluginObjectSef\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-SEF\" style=\"opacity:0.0;background-color:#000;width:1px;height:1px;\"></object>\n</div>"));
+      Utils.putScript(['$MANAGER_WIDGET/Common/API/Widget.js', '$MANAGER_WIDGET/Common/API/TVKeyValue.js', '$MANAGER_WIDGET/Common/API/Plugin.js'], function () {
         window.addEventListener("keydown", function (event) {
           try {
             switch (event.keyCode) {
@@ -8402,27 +8402,8 @@
                 widgetAPI.blockNavigation(event);
                 break;
 
-              case tvKey.KEY_VOLUME_UP:
-                webapis.audiocontrol.setVolumeUp();
-                break;
-
-              case tvKey.KEY_VOLUME_DOWN:
-                webapis.audiocontrol.setVolumeDown();
-                break;
-
-              case tvKey.KEY_VOL_UP:
-                webapis.audiocontrol.setVolumeUp();
-                break;
-
-              case tvKey.KEY_VOL_DOWN:
-                webapis.audiocontrol.setVolumeDown();
-                break;
-
-              case tvKey.KEY_MUTE:
-                if (webapis.audiocontrol.getMute) webapis.audiocontrol.setMute(0);else webapis.audiocontrol.setMute(1);
-                break;
-
               case tvKey.KEY_EXIT:
+                //Тут выполняется проверка на 2 нажатия, если нажатие 1 раз, делается выход в список виджетов, если 2 выход из smarthub
                 if (orsay_tap_back + 200 < Date.now()) {
                   orsay_tap_back_count = 1;
                 } else {
@@ -8452,19 +8433,13 @@
       orsay_loaded = true;
 
       try {
-        pluginAPI.SetBannerState(1);
+        //Включает анимацию изменения громкости на ТВ и т.д.
+        pluginAPI.SetBannerState(1); //Отключает перехват кнопок, этими кнопками управляет система ТВ
+
         pluginAPI.unregistKey(tvKey.KEY_VOL_UP);
         pluginAPI.unregistKey(tvKey.KEY_VOL_DOWN);
         pluginAPI.unregistKey(tvKey.KEY_MUTE);
         pluginAPI.unregistKey(tvKey.KEY_TOOLS);
-      } catch (e) {}
-
-      try {
-        var NNaviPlugin = caph.platform.dtv.Device.plugin('NNAVI');
-        NNaviPlugin.SetBannerState(1);
-        caph.platform.dtv.Device.unRegisterKey(caph.platform.Key.VOL_UP);
-        caph.platform.dtv.Device.unRegisterKey(caph.platform.Key.VOL_DOWN);
-        caph.platform.dtv.Device.unRegisterKey(caph.platform.Key.MUTE);
       } catch (e) {}
     }
 
