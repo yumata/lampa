@@ -5785,6 +5785,7 @@
         link: object.link,
         title: '[LAMPA] ' + object.title,
         poster: object.poster,
+        data: object.data ? JSON.stringify(object.data) : '',
         save_to_db: Storage.get('torrserver_savedb', 'false')
       });
       clear$1();
@@ -5860,6 +5861,15 @@
           data.episode = parseInt(math[3]);
         }
 
+        if (!math) {
+          math = path.match(/s([0-9]{2})([0-9]+)/);
+
+          if (math) {
+            data.season = parseInt(math[1]);
+            data.episode = parseInt(math[2]);
+          }
+        }
+
         if (data.season === 0) {
           math = path.match(/s([0-9]+)/);
           if (math) data.season = parseInt(math[1]);
@@ -5914,8 +5924,9 @@
     var callback$1;
     var formats = ['asf', 'wmv', 'divx', 'avi', 'mp4', 'm4v', 'mov', '3gp', '3g2', 'mkv', 'trp', 'tp', 'mts', 'mpg', 'mpeg', 'dat', 'vob', 'rm', 'rmvb', 'm2ts', 'bdmv', 'ts'];
 
-    function start$2(element) {
+    function start$2(element, movie) {
       SERVER.object = element;
+      if (movie) SERVER.movie = movie;
 
       if (!Storage.field('internal_torrclient')) {
         $('<a href="' + (SERVER.object.MagnetUri || SERVER.object.Link) + '"/>')[0].click();
@@ -5970,7 +5981,11 @@
       Torserver.hash({
         title: SERVER.object.title,
         link: SERVER.object.MagnetUri || SERVER.object.Link,
-        poster: SERVER.object.poster
+        poster: SERVER.object.poster,
+        data: {
+          lampa: true,
+          movie: SERVER.movie
+        }
       }, function (json) {
         SERVER.hash = json.hash;
         files();
@@ -6564,7 +6579,7 @@
             Modal.close();
             element.MagnetUri = 'magnet:' + math[1];
             element.poster = object.movie.img;
-            if (call) call();else Torrent.start(element);
+            if (call) call();else Torrent.start(element, object.movie);
           } else {
             Modal.update(Template.get('error', {
               title: 'Ошибка',
@@ -6648,7 +6663,7 @@
               _this5.loadMagnet(element);
             } else {
               element.poster = object.movie.img;
-              Torrent.start(element);
+              Torrent.start(element, object.movie);
             }
 
             Torrent.opened(function () {
