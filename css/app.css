@@ -2688,3 +2688,23 @@ body.selectbox--open .selectbox__content {
           -ms-transform: scale(1.12);
            -o-transform: scale(1.12);
               transform: scale(1.12); }
+  .screensaver__datetime {
+    position: fixed;
+    bottom: 10%;
+    z-index: 3;
+    right: 5%;
+    width: 50%;
+    text-shadow: 2px 2px 2px #000;
+    text-align: right;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .screensaver__datetime-time {
+      font-size: 3em;
+      font-weight: 800;
+      margin-bottom: .25em; }
+    .screensaver__datetime-date {
+      font-weight: 400;
+      font-size: 1.5em; }
