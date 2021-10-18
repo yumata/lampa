@@ -2166,9 +2166,9 @@ body.selectbox--open .selectbox__content {
             border-radius: 0.3em;
     color: #000;
     padding: 0.3em 0.5em; }
-  .torrent-item__grabs, .torrent-item__seeds {
+  .torrent-item__bitrate, .torrent-item__grabs, .torrent-item__seeds {
     margin-right: 1em; }
-    .torrent-item__grabs > span, .torrent-item__seeds > span {
+    .torrent-item__bitrate > span, .torrent-item__grabs > span, .torrent-item__seeds > span {
       color: #fff; }
   .torrent-item__viewed {
     position: absolute;
