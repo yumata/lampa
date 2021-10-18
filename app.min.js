@@ -5735,7 +5735,7 @@
     }
 
     function resetTimer() {
-      if (!enabled$1 || !Storage.field('screensaver')) return;
+      if (!enabled$1) return;
       clearTimeout(timer.wait);
       timer.wait = setTimeout(function () {
         if (movies.length === 0) {
