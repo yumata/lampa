@@ -447,7 +447,7 @@
 
     var html$y = "<div class=\"actor-start\">\n\n    <div class=\"actor-start__body\">\n        <div class=\"actor-start__right\">\n            <div class=\"actor-start__poster\">\n                <img src=\"{img}\" class=\"actor-start__img\" />\n            </div>\n        </div>\n\n        <div class=\"actor-start__left\">\n            <div class=\"actor-start__tags\">\n                <div class=\"actor-start__tag\">\n                    <img src=\"./img/icons/pulse.svg\" /> <div>{birthday}</div>\n                </div>\n            </div>\n            \n            <div class=\"actor-start__name\">{name}</div>\n            <div class=\"actor-start__place\">{place}</div>\n\n            <div class=\"actor-start__descr\">{descr}</div>\n\n\n            \n        </div>\n    </div>\n\n    <div class=\"full-start__buttons hide\">\n        <div class=\"full-start__button selector\">\n            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\">\n                <g>\n                    <g>\n                        <path fill=\"currentColor\" d=\"M436.742,180.742c-41.497,0-75.258,33.761-75.258,75.258s33.755,75.258,75.258,75.258\n                            C478.239,331.258,512,297.503,512,256C512,214.503,478.239,180.742,436.742,180.742z M436.742,294.246\n                            c-21.091,0-38.246-17.155-38.246-38.246s17.155-38.246,38.246-38.246s38.246,17.155,38.246,38.246\n                            S457.833,294.246,436.742,294.246z\"/>\n                    </g>\n                </g>\n                <g>\n                    <g>\n                        <path fill=\"currentColor\" d=\"M256,180.742c-41.497,0-75.258,33.761-75.258,75.258s33.761,75.258,75.258,75.258c41.503,0,75.258-33.755,75.258-75.258\n                            C331.258,214.503,297.503,180.742,256,180.742z M256,294.246c-21.091,0-38.246-17.155-38.246-38.246s17.155-38.246,38.246-38.246\n                            s38.246,17.155,38.246,38.246S277.091,294.246,256,294.246z\"/>\n                    </g>\n                </g>\n                <g>\n                    <g>\n                        <path fill=\"currentColor\" d=\"M75.258,180.742C33.761,180.742,0,214.503,0,256c0,41.503,33.761,75.258,75.258,75.258\n                            c41.497,0,75.258-33.755,75.258-75.258C150.516,214.503,116.755,180.742,75.258,180.742z M75.258,294.246\n                            c-21.091,0-38.246-17.155-38.246-38.246s17.155-38.246,38.246-38.246c21.091,0,38.246,17.155,38.246,38.246\n                            S96.342,294.246,75.258,294.246z\"/>\n                    </g>\n                </g>\n            </svg>\n        </div>\n\n        <div class=\"full-start__icons\">\n            <div class=\"info__icon icon--like\"></div>\n        </div>\n    </div>\n</div>";
 
-    var html$x = "<div class=\"empty\">\n    <div class=\"empty__img selector\"></div>\n    <div class=\"empty__title\">\u0417\u0434\u0435\u0441\u044C \u043F\u0443\u0441\u0442\u043E</div>\n    <div class=\"empty__descr\">\u041D\u0430 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442 \u0441\u043F\u0438\u0441\u043E\u043A \u043F\u0443\u0441\u0442\u043E\u0439</div>\n</div>";
+    var html$x = "<div class=\"empty\">\n    <div class=\"empty__img selector\"></div>\n    <div class=\"empty__title\">{title}</div>\n    <div class=\"empty__descr\">{descr}</div>\n</div>";
 
     var html$w = "<div class=\"notice selector\">\n    <div class=\"notice__head\">\n        <div class=\"notice__title\">{title}</div>\n        <div class=\"notice__time\">{time}</div>\n    </div>\n    \n    <div class=\"notice__descr\">{descr}</div>\n</div>";
 
@@ -461,7 +461,7 @@
 
     var html$r = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
-    var html$q = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>\n\n<div class=\"torrent-error noconnect\">\n    <div>\n        <div>\u041F\u0440\u0438\u0447\u0438\u043D\u044B</div>\n        <ul>\n            <li>\u0420\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435: <code>{href}</code></li>\n            <li class=\"nocorect\">\u0422\u0435\u043A\u0443\u0448\u0438\u0439 \u0430\u0434\u0440\u0435\u0441 <code>{ip}</code> \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043D\u0435\u0432\u0435\u0440\u043D\u044B\u043C!</li>\n            <li>\u0422\u0435\u043A\u0443\u0448\u0438\u0439 \u043E\u0442\u0432\u0435\u0442: <code>{echo}</code></li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u041A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E?</div>\n        <ul>\n            <li>\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u0430\u0434\u0440\u0435\u0441 <code>192.168.0.\u0445\u0445\u0445:8090</code></li>\n            <li>\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044E Matrix</li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u041A\u0430\u043A \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C?</div>\n        <ul>\n            <li>\u041D\u0430 \u044D\u0442\u043E\u043C \u0436\u0435 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435, \u043E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0438 \u0437\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 <code>{ip}/echo</code></li>\n            <li>\u0415\u0441\u043B\u0438 \u0436\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u043D\u0435 \u043E\u0442\u0432\u0435\u0442\u0438\u0442, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0437\u0430\u043F\u0443\u0449\u0435\u043D \u043B\u0438 TorrServe, \u0438\u043B\u0438 \u043F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u0435\u0433\u043E.</li>\n            <li>\u0415\u0441\u043B\u0438 \u0436\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u043E\u0442\u0432\u0435\u0442\u0438\u043B, \u0443\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E \u0432 \u043E\u0442\u0432\u0435\u0442\u0435 \u0435\u0441\u0442\u044C \u0441\u0442\u0440\u043E\u043A\u0430 <code>MatriX</code></li>\n        </ul>\n    </div>\n</div>";
+    var html$q = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>\n\n<div class=\"torrent-error noconnect\">\n    <div>\n        <div>\u041F\u0440\u0438\u0447\u0438\u043D\u044B</div>\n        <ul>\n            <li>\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0430\u0434\u0440\u0435\u0441: <code>{ip}</code></li>\n            <li class=\"nocorect\">\u0422\u0435\u043A\u0443\u0449\u0438\u0439 \u0430\u0434\u0440\u0435\u0441 <code>{ip}</code> \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043D\u0435\u0432\u0435\u0440\u043D\u044B\u043C!</li>\n            <li>\u0422\u0435\u043A\u0443\u0449\u0438\u0439 \u043E\u0442\u0432\u0435\u0442: <code>{echo}</code></li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u041A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E?</div>\n        <ul>\n            <li>\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u0430\u0434\u0440\u0435\u0441: <code>192.168.0.\u0445\u0445\u0445:8090</code></li>\n            <li>\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044E Matrix</li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u041A\u0430\u043A \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C?</div>\n        <ul>\n            <li>\u041D\u0430 \u044D\u0442\u043E\u043C \u0436\u0435 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0435, \u043E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0438 \u0437\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 <code>{ip}/echo</code></li>\n            <li>\u0415\u0441\u043B\u0438 \u0436\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u043D\u0435 \u043E\u0442\u0432\u0435\u0442\u0438\u0442, \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0437\u0430\u043F\u0443\u0449\u0435\u043D \u043B\u0438 TorrServe, \u0438\u043B\u0438 \u043F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u0435\u0433\u043E.</li>\n            <li>\u0415\u0441\u043B\u0438 \u0436\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u043E\u0442\u0432\u0435\u0442\u0438\u043B, \u0443\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E \u0432 \u043E\u0442\u0432\u0435\u0442\u0435 \u0435\u0441\u0442\u044C \u0441\u0442\u0440\u043E\u043A\u0430 <code>MatriX</code></li>\n        </ul>\n    </div>\n</div>";
 
     var html$p = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>\n\n<div class=\"torrent-error noconnect\">\n    <div>\n        <div>\u041F\u0440\u0438\u0447\u0438\u043D\u044B</div>\n        <ul>\n            <li>\u0417\u0430\u043F\u0440\u043E\u0441 \u043D\u0430 \u043F\u0438\u043D\u0433 \u0432\u0435\u0440\u043D\u0443\u043B \u043D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0444\u043E\u0440\u043C\u0430\u0442</li>\n            <li>\u041E\u0442\u0432\u0435\u0442 \u043E\u0442 TorServer: <code>{echo}</code></li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C?</div>\n        <ul>\n            <li>\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E \u0443 \u0432\u0430\u0441 \u0441\u0442\u043E\u0438\u0442 \u0432\u0435\u0440\u0441\u0438\u044F Matrix</li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u041A\u0430\u043A \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C?</div>\n        <ul>\n            <li>\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0438 \u0437\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 <code>{ip}/echo</code></li>\n            <li>\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E \u0432 \u043E\u0442\u0432\u0435\u0442\u0435 \u0435\u0441\u0442\u044C \u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u043A\u043E\u0434\u0430 <code>MatriX</code></li>\n        </ul>\n    </div>\n</div>";
 
@@ -664,6 +664,28 @@
 
         return string;
       }
+    };
+
+    var html$g = $('<div class="noty"><div class="noty__body"><div class="noty__text"></div></div></div>'),
+        body$1 = html$g.find('.noty__text'),
+        time$1;
+
+    function show$4(text) {
+      clearTimeout(time$1);
+      time$1 = setTimeout(function () {
+        html$g.removeClass('noty--visible');
+      }, 3000);
+      body$1.text(text);
+      html$g.addClass('noty--visible');
+    }
+
+    function render$c() {
+      return html$g;
+    }
+
+    var Noty = {
+      show: show$4,
+      render: render$c
     };
 
     function create$o() {
@@ -940,6 +962,7 @@
               params.complite(data);
             } catch (e) {
               console.error('Reguest', 'complite error:', e.message + "\n\n" + e.stack);
+              Noty.show('Error: ' + e.message);
             }
           }
 
@@ -1202,7 +1225,7 @@
       return (bitSize / Math.pow(1024, 2) / sec).toFixed(2);
     }
 
-    function time$1(html) {
+    function time(html) {
       var create = function create() {
         var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Ма', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
         var days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
@@ -1419,7 +1442,7 @@
       capitalizeFirstLetter: capitalizeFirstLetter,
       substr: substr,
       numberWithSpaces: numberWithSpaces,
-      time: time$1,
+      time: time,
       bytesToSize: bytesToSize,
       calcBitrate: calcBitrate,
       parseTime: parseTime,
@@ -1755,20 +1778,20 @@
       screensavers: screensavers
     };
 
-    var html$g = Template.get('selectbox');
+    var html$f = Template.get('selectbox');
     var scroll$2 = new create$n({
       mask: true,
       over: true
     });
     var active$4;
-    html$g.find('.selectbox__body').append(scroll$2.render());
-    html$g.find('.selectbox__layer').on('click', function () {//window.history.back()
+    html$f.find('.selectbox__body').append(scroll$2.render());
+    html$f.find('.selectbox__layer').on('click', function () {//window.history.back()
     });
-    $('body').append(html$g);
+    $('body').append(html$f);
 
     function bind$3() {
       scroll$2.clear();
-      html$g.find('.selectbox__title').text(active$4.title);
+      html$f.find('.selectbox__title').text(active$4.title);
       active$4.items.forEach(function (element) {
         if (element.hide) return;
         element.title = Utils.capitalizeFirstLetter(element.title || '');
@@ -1796,11 +1819,11 @@
       });
     }
 
-    function show$4(object) {
+    function show$3(object) {
       active$4 = object;
       bind$3();
       $('body').toggleClass('selectbox--open', true);
-      html$g.find('.selectbox__body').addClass('layer--wheight').data('mheight', html$g.find('.selectbox__head'));
+      html$f.find('.selectbox__body').addClass('layer--wheight').data('mheight', html$f.find('.selectbox__head'));
       toggle$7();
     }
 
@@ -1808,8 +1831,8 @@
       Controller.add('select', {
         toggle: function toggle() {
           var selected = scroll$2.render().find('.selected');
-          Controller.collectionSet(html$g);
-          Controller.collectionFocus(selected.length ? selected[0] : false, html$g);
+          Controller.collectionSet(html$f);
+          Controller.collectionFocus(selected.length ? selected[0] : false, html$f);
         },
         up: function up() {
           Navigator.move('up');
@@ -1830,7 +1853,7 @@
     }
 
     var Select = {
-      show: show$4,
+      show: show$3,
       hide: hide$1
     };
 
@@ -2176,15 +2199,15 @@
       tone: tone
     };
 
-    var html$f = $("\n    <div class=\"background\">\n        <canvas class=\"background__one\"></canvas>\n        <canvas class=\"background__two\"></canvas>\n    </div>\n");
+    var html$e = $("\n    <div class=\"background\">\n        <canvas class=\"background__one\"></canvas>\n        <canvas class=\"background__two\"></canvas>\n    </div>\n");
     var background = {
       one: {
-        canvas: $('.background__one', html$f),
-        ctx: $('.background__one', html$f)[0].getContext('2d')
+        canvas: $('.background__one', html$e),
+        ctx: $('.background__one', html$e)[0].getContext('2d')
       },
       two: {
-        canvas: $('.background__two', html$f),
-        ctx: $('.background__two', html$f)[0].getContext('2d')
+        canvas: $('.background__two', html$e),
+        ctx: $('.background__two', html$e)[0].getContext('2d')
       }
     };
     var view$1 = 'one';
@@ -2193,7 +2216,7 @@
     var timer$5;
 
     function bg() {
-      html$f.find('canvas').removeClass('visible');
+      html$e.find('canvas').removeClass('visible');
       view$1 = view$1 == 'one' ? 'two' : 'one';
       return background[view$1];
     }
@@ -2314,8 +2337,8 @@
       load();
     }
 
-    function render$c() {
-      return html$f;
+    function render$b() {
+      return html$e;
     }
 
     function init$a() {
@@ -2326,7 +2349,7 @@
     }
 
     var Background = {
-      render: render$c,
+      render: render$b,
       change: change,
       update: resize,
       init: init$a,
@@ -2536,7 +2559,12 @@
     }
 
     function create$i() {
-      var html = Template.get('empty');
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      Arrays.extend(params, {
+        title: 'Здесь пусто',
+        descr: 'На данный момент список пустой'
+      });
+      var html = Template.get('empty', params);
 
       this.start = function () {
         Controller.add('content', {
@@ -2684,12 +2712,12 @@
     }
 
     var player;
-    var html$e;
+    var html$d;
     var timer$4;
 
     function create$h(id) {
-      html$e = $('<div class="youtube-player"><div id="youtube-player"></div><div id="youtube-player__progress" class="youtube-player__progress"></div></div>');
-      $('body').append(html$e);
+      html$d = $('<div class="youtube-player"><div id="youtube-player"></div><div id="youtube-player__progress" class="youtube-player__progress"></div></div>');
+      $('body').append(html$d);
       player = new YT.Player('youtube-player', {
         height: window.innerHeight,
         width: window.innerWidth,
@@ -2748,8 +2776,8 @@
     function destroy$7() {
       clearTimeout(timer$4);
       player.destroy();
-      html$e.remove();
-      html$e = null;
+      html$d.remove();
+      html$d = null;
     }
 
     var YouTube = {
@@ -2930,26 +2958,26 @@
       };
     }
 
-    var html$d, active$3, scroll$1, last$3;
+    var html$c, active$3, scroll$1, last$3;
 
     function open$2(params) {
       active$3 = params;
-      html$d = Template.get('modal', {
+      html$c = Template.get('modal', {
         title: params.title
       });
-      html$d.on('click', function (e) {//if(!$(e.target).closest($('.modal__content',html)).length) window.history.back()
+      html$c.on('click', function (e) {//if(!$(e.target).closest($('.modal__content',html)).length) window.history.back()
       });
       title$1(params.title);
-      html$d.toggleClass('modal--medium', params.size == 'medium' ? true : false);
-      html$d.toggleClass('modal--large', params.size == 'large' ? true : false);
+      html$c.toggleClass('modal--medium', params.size == 'medium' ? true : false);
+      html$c.toggleClass('modal--large', params.size == 'large' ? true : false);
       scroll$1 = new create$n({
         over: true,
         mask: params.mask
       });
-      html$d.find('.modal__body').append(scroll$1.render());
+      html$c.find('.modal__body').append(scroll$1.render());
       bind$2(params.html);
       scroll$1.append(params.html);
-      $('body').append(html$d);
+      $('body').append(html$c);
       toggle$6();
     }
 
@@ -2991,14 +3019,14 @@
     }
 
     function title$1(tit) {
-      html$d.find('.modal__title').text(tit);
-      html$d.toggleClass('modal--empty-title', tit ? false : true);
+      html$c.find('.modal__title').text(tit);
+      html$c.toggleClass('modal--empty-title', tit ? false : true);
     }
 
     function destroy$6() {
       last$3 = false;
       scroll$1.destroy();
-      html$d.remove();
+      html$c.remove();
     }
 
     function close$1() {
@@ -4469,10 +4497,10 @@
     }
 
     var listener$8 = start$3();
-    var html$c = Template.get('player_video');
-    var display = html$c.find('.player-video__display');
-    var paused = html$c.find('.player-video__paused');
-    var subtitles = html$c.find('.player-video__subtitles');
+    var html$b = Template.get('player_video');
+    var display = html$b.find('.player-video__display');
+    var paused = html$b.find('.player-video__paused');
+    var subtitles = html$b.find('.player-video__subtitles');
     var timer$3 = {};
     var rewind_position = 0;
     var video;
@@ -4676,7 +4704,7 @@
 
     function loader(status) {
       wait = status;
-      html$c.toggleClass('video--load', status);
+      html$b.toggleClass('video--load', status);
     }
     /**
      * Устанавливаем ссылку на видео
@@ -4817,7 +4845,7 @@
 
 
     function size(type) {
-      html$c.attr('data-size', type);
+      html$b.attr('data-size', type);
       if (video.size) video.size(type);
     }
     /**
@@ -4850,14 +4878,14 @@
       loader(false);
     }
 
-    function render$b() {
-      return html$c;
+    function render$a() {
+      return html$b;
     }
 
     var Video = {
       listener: listener$8,
       url: url$2,
-      render: render$b,
+      render: render$a,
       destroy: destroy$5,
       playpause: playpause,
       rewind: rewind$1,
@@ -4886,21 +4914,21 @@
       };
     }
 
-    var html$b = Template.get('player_panel');
+    var html$a = Template.get('player_panel');
     var listener$7 = start$3();
     var condition = {};
     var timer$2 = {};
     var tracks = [];
     var subs = [];
     var elems$1 = {
-      peding: $('.player-panel__peding', html$b),
-      position: $('.player-panel__position', html$b),
-      time: $('.player-panel__time', html$b),
-      timenow: $('.player-panel__timenow', html$b),
-      timeend: $('.player-panel__timeend', html$b),
-      title: $('.player-panel__filename', html$b),
-      tracks: $('.player-panel__tracks', html$b),
-      subs: $('.player-panel__subs', html$b)
+      peding: $('.player-panel__peding', html$a),
+      position: $('.player-panel__position', html$a),
+      time: $('.player-panel__time', html$a),
+      timenow: $('.player-panel__timenow', html$a),
+      timeend: $('.player-panel__timeend', html$a),
+      title: $('.player-panel__filename', html$a),
+      tracks: $('.player-panel__tracks', html$a),
+      subs: $('.player-panel__subs', html$a)
     };
     /**
      * Отсеживаем состояние, 
@@ -4946,24 +4974,24 @@
         }
       }
     });
-    html$b.find('.selector').on('hover:focus', function (e) {
+    html$a.find('.selector').on('hover:focus', function (e) {
     });
-    html$b.find('.player-panel__playpause').on('hover:enter', function (e) {
+    html$a.find('.player-panel__playpause').on('hover:enter', function (e) {
       listener$7.send('playpause', {});
     });
-    html$b.find('.player-panel__next').on('hover:enter', function (e) {
+    html$a.find('.player-panel__next').on('hover:enter', function (e) {
       listener$7.send('next', {});
     });
-    html$b.find('.player-panel__prev').on('hover:enter', function (e) {
+    html$a.find('.player-panel__prev').on('hover:enter', function (e) {
       listener$7.send('prev', {});
     });
-    html$b.find('.player-panel__rprev').on('hover:enter', function (e) {
+    html$a.find('.player-panel__rprev').on('hover:enter', function (e) {
       listener$7.send('rprev', {});
     });
-    html$b.find('.player-panel__rnext').on('hover:enter', function (e) {
+    html$a.find('.player-panel__rnext').on('hover:enter', function (e) {
       listener$7.send('rnext', {});
     });
-    html$b.find('.player-panel__playlist').on('hover:enter', function (e) {
+    html$a.find('.player-panel__playlist').on('hover:enter', function (e) {
       listener$7.send('playlist', {});
     });
     /**
@@ -5047,7 +5075,7 @@
      * Выбор масштаба видео
      */
 
-    html$b.find('.player-panel__size').on('hover:enter', function (e) {
+    html$a.find('.player-panel__size').on('hover:enter', function (e) {
       var select = Storage.get('player_size', 'default');
       var items = [{
         title: 'По умолчанию',
@@ -5109,11 +5137,11 @@
       }
 
       if (need == 'play') {
-        html$b.toggleClass('panel--paused', false);
+        html$a.toggleClass('panel--paused', false);
       }
 
       if (need == 'pause') {
-        html$b.toggleClass('panel--paused', true);
+        html$a.toggleClass('panel--paused', true);
       }
     }
     /**
@@ -5126,7 +5154,7 @@
       listener$7.send('visible', {
         status: status
       });
-      html$b.toggleClass('panel--visible', status);
+      html$a.toggleClass('panel--visible', status);
     }
     /**
      * Можем играть, далее отслеживаем статус
@@ -5150,8 +5178,8 @@
     function toggleRewind() {
       Controller.add('player_rewind', {
         toggle: function toggle() {
-          Controller.collectionSet(render$a());
-          Controller.collectionFocus(false, render$a());
+          Controller.collectionSet(render$9());
+          Controller.collectionFocus(false, render$9());
         },
         up: function up() {
           Controller.toggle('player');
@@ -5166,7 +5194,7 @@
           listener$7.send('rprev', {});
         },
         gone: function gone() {
-          html$b.find('.selector').removeClass('focus');
+          html$a.find('.selector').removeClass('focus');
         },
         back: function back() {
           Controller.toggle('player');
@@ -5179,8 +5207,8 @@
     function toggleButtons() {
       Controller.add('player_panel', {
         toggle: function toggle() {
-          Controller.collectionSet(render$a());
-          Controller.collectionFocus($('.player-panel__playpause', html$b)[0], render$a());
+          Controller.collectionSet(render$9());
+          Controller.collectionFocus($('.player-panel__playpause', html$a)[0], render$9());
         },
         up: function up() {
           toggleRewind();
@@ -5195,7 +5223,7 @@
           Controller.toggle('player');
         },
         gone: function gone() {
-          html$b.find('.selector').removeClass('focus');
+          html$a.find('.selector').removeClass('focus');
         },
         back: function back() {
           Controller.toggle('player');
@@ -5219,7 +5247,7 @@
      */
 
 
-    function show$3() {
+    function show$2() {
       state.start();
     }
     /**
@@ -5272,18 +5300,18 @@
       elems$1.timeend.text('00:00');
       elems$1.subs.toggleClass('hide', true);
       elems$1.tracks.toggleClass('hide', true);
-      html$b.toggleClass('panel--paused', false);
+      html$a.toggleClass('panel--paused', false);
     }
 
-    function render$a() {
-      return html$b;
+    function render$9() {
+      return html$a;
     }
 
     var Panel = {
       listener: listener$7,
-      render: render$a,
+      render: render$9,
       toggle: toggle$5,
-      show: show$3,
+      show: show$2,
       destroy: destroy$4,
       hide: hide,
       canplay: canplay,
@@ -5293,18 +5321,18 @@
       setSubs: setSubs
     };
 
-    var html$a = Template.get('player_info');
+    var html$9 = Template.get('player_info');
     var listener$6 = start$3();
     var network$2 = new create$o();
     var elems = {
-      name: $('.player-info__name', html$a),
-      size: $('.value--size span', html$a),
-      stat: $('.value--stat span', html$a),
-      speed: $('.value--speed span', html$a),
-      error: $('.player-info__error', html$a)
+      name: $('.player-info__name', html$9),
+      size: $('.value--size span', html$9),
+      stat: $('.value--stat span', html$9),
+      speed: $('.value--speed span', html$9),
+      error: $('.player-info__error', html$9)
     };
     var error, stat_timer;
-    Utils.time(html$a);
+    Utils.time(html$9);
     /**
      * Установить значение
      * @param {String} need 
@@ -5331,7 +5359,7 @@
 
       var update = function update() {
         // если панель скрыта, то зачем каждую секунду чекать? хватит и 5 сек
-        if (!html$a.hasClass('info--visible')) {
+        if (!html$9.hasClass('info--visible')) {
           wait++;
           if (wait <= 5) return;else wait = 0;
         }
@@ -5356,7 +5384,7 @@
 
 
     function toggle$4(status) {
-      html$a.toggleClass('info--visible', status);
+      html$9.toggleClass('info--visible', status);
     }
     /**
      * Уничтожить
@@ -5373,13 +5401,13 @@
       network$2.clear();
     }
 
-    function render$9() {
-      return html$a;
+    function render$8() {
+      return html$9;
     }
 
     var Info = {
       listener: listener$6,
-      render: render$9,
+      render: render$8,
       set: set$2,
       toggle: toggle$4,
       destroy: destroy$3
@@ -5393,7 +5421,7 @@
      * Показать плейлист
      */
 
-    function show$2() {
+    function show$1() {
       active$2();
       var enabled = Controller.enabled();
       Select.show({
@@ -5470,7 +5498,7 @@
 
     var Playlist = {
       listener: listener$5,
-      show: show$2,
+      show: show$1,
       url: url$1,
       set: set$1,
       prev: prev,
@@ -5498,14 +5526,14 @@
       };
     }
 
-    function render$8(params) {
+    function render$7(params) {
       var line = Template.get('timeline', params);
       line.toggleClass('hide', params.percent ? false : true);
       return line;
     }
 
     var Timeline = {
-      render: render$8,
+      render: render$7,
       update: update$1,
       view: view
     };
@@ -5683,7 +5711,7 @@
     var enabled$1 = false;
     var worked = false;
     var img;
-    var html$9 = Template.get('screensaver');
+    var html$8 = Template.get('screensaver');
     var movies = [];
     var timer = {};
     var position = 0;
@@ -5723,14 +5751,14 @@
 
     function startSlideshow() {
       worked = true;
-      html$9.fadeIn(300);
-      Utils.time(html$9);
+      html$8.fadeIn(300);
+      Utils.time(html$8);
       nextSlide();
       timer.work = setInterval(function () {
         nextSlide();
       }, 30000);
       timer.start = setTimeout(function () {
-        html$9.addClass('visible');
+        html$8.addClass('visible');
       }, 5000);
     }
 
@@ -5742,18 +5770,18 @@
       img.src = image;
 
       img.onload = function () {
-        var to = $('.screensaver__slides-' + (slides$1 == 'one' ? 'two' : 'one'), html$9);
+        var to = $('.screensaver__slides-' + (slides$1 == 'one' ? 'two' : 'one'), html$8);
         to[0].src = img.src;
         to.removeClass(direct.join(' ') + ' animate').addClass(direct[Math.floor(Math.random() * direct.length)]);
         setTimeout(function () {
-          $('.screensaver__title', html$9).removeClass('visible');
-          $('.screensaver__slides-' + slides$1, html$9).removeClass('visible');
+          $('.screensaver__title', html$8).removeClass('visible');
+          $('.screensaver__slides-' + slides$1, html$8).removeClass('visible');
           slides$1 = slides$1 == 'one' ? 'two' : 'one';
           to.addClass('visible').addClass('animate');
           setTimeout(function () {
-            $('.screensaver__title-name', html$9).text(movie.title || movie.name);
-            $('.screensaver__title-tagline', html$9).text(movie.original_title || movie.original_name);
-            $('.screensaver__title', html$9).addClass('visible');
+            $('.screensaver__title-name', html$8).text(movie.title || movie.name);
+            $('.screensaver__title-tagline', html$8).text(movie.original_title || movie.original_name);
+            $('.screensaver__title', html$8).addClass('visible');
           }, 500);
         }, 3000);
       };
@@ -5768,8 +5796,8 @@
 
     function stopSlideshow() {
       worked = false;
-      html$9.fadeOut(300, function () {
-        html$9.removeClass('visible');
+      html$8.fadeOut(300, function () {
+        html$8.removeClass('visible');
       });
       clearInterval(timer.work);
       clearTimeout(timer.start);
@@ -5777,7 +5805,7 @@
     }
 
     function init$8() {
-      $('body').append(html$9);
+      $('body').append(html$8);
       resetTimer();
       Keypad.listener.follow('keydown', function (e) {
         resetTimer();
@@ -5789,15 +5817,15 @@
       });
     }
 
-    function render$7() {
-      return html$9;
+    function render$6() {
+      return html$8;
     }
 
     var Screensaver = {
       listener: listener$3,
       init: init$8,
       enable: enable$1,
-      render: render$7,
+      render: render$6,
       disable: disable
     };
 
@@ -5970,10 +5998,10 @@
       parse: parse
     };
 
-    var html$8 = Template.get('player');
-    html$8.append(Video.render());
-    html$8.append(Panel.render());
-    html$8.append(Info.render());
+    var html$7 = Template.get('player');
+    html$7.append(Video.render());
+    html$7.append(Panel.render());
+    html$7.append(Info.render());
     var callback$2;
     var work = false;
     var network = new create$o();
@@ -6161,7 +6189,7 @@
       Video.destroy();
       Panel.destroy();
       Info.destroy();
-      html$8.detach();
+      html$7.detach();
     }
 
     function runWebOS(params) {
@@ -6216,7 +6244,7 @@
       if (data.url.indexOf(Torserver.ip()) > -1 && data.url.indexOf('&preload') > -1) {
         preloader.wait = true;
         Info.set('name', data.title);
-        $('body').append(html$8);
+        $('body').append(html$7);
         Panel.show(true);
         togglePreload();
         network.timeout(2000);
@@ -6252,7 +6280,7 @@
           Video.url(data.url);
           Video.size(Storage.get('player_size', 'default'));
           Info.set('name', data.title);
-          if (!preloader.call) $('body').append(html$8);
+          if (!preloader.call) $('body').append(html$7);
           toggle$1();
           Panel.show(true);
         });
@@ -6286,14 +6314,14 @@
       callback$2 = back;
     }
 
-    function render$6() {
-      return html$8;
+    function render$5() {
+      return html$7;
     }
 
     var Player = {
       play: play,
       playlist: playlist,
-      render: render$6,
+      render: render$5,
       stat: stat,
       callback: onBack
     };
@@ -6387,7 +6415,7 @@
         Torserver.files(SERVER.hash, function (json) {
           if (json.file_stats) {
             clearInterval(timers.files);
-            show$1(json.file_stats);
+            show(json.file_stats);
           }
         });
 
@@ -6413,7 +6441,7 @@
       });
     }
 
-    function show$1(files) {
+    function show(files) {
       var plays = files.filter(function (a) {
         var exe = a.path.split('.').pop().toLowerCase();
         return formats.indexOf(exe) >= 0;
@@ -6525,28 +6553,6 @@
       opened: opened
     };
 
-    var html$7 = $('<div class="noty"><div class="noty__body"><div class="noty__text"></div></div></div>'),
-        body$1 = html$7.find('.noty__text'),
-        time;
-
-    function show(text) {
-      clearTimeout(time);
-      time = setTimeout(function () {
-        html$7.removeClass('noty--visible');
-      }, 3000);
-      body$1.text(text);
-      html$7.addClass('noty--visible');
-    }
-
-    function render$5() {
-      return html$7;
-    }
-
-    var Noty = {
-      show: show,
-      render: render$5
-    };
-
     function component$3(object) {
       var network = new create$o();
       var scroll = new create$n({
@@ -6600,7 +6606,7 @@
             url = Utils.checkHttp(Storage.field('jackett_url'));
             this.loadJackett();
           } else {
-            this.empty();
+            this.empty('Укажите ссылку для парсинга Jackett');
           }
         } else {
           if (Storage.get('native')) {
@@ -6610,7 +6616,7 @@
             this.loadTorlook();
           } else if (Storage.field('torlook_parse_type') == 'native') {
             this.loadTorlook();
-          } else this.empty();
+          } else this.empty('Укажите ссылку для парсинга TorLook');
         }
 
         filter.onSearch = function (value) {
@@ -6662,7 +6668,7 @@
 
           _this2.activity.toggle();
         }, function (a, c) {
-          _this2.empty();
+          _this2.empty('Ответ от TorLook: ' + network.errorDecode(a, c));
         }, false, {
           dataType: 'text'
         });
@@ -6700,11 +6706,15 @@
           _this3.activity.loader(false);
 
           _this3.activity.toggle();
-        }, this.empty.bind(this));
+        }, function (a, c) {
+          _this3.empty('Ответ от Jackett: ' + network.errorDecode(a, c));
+        });
       };
 
-      this.empty = function () {
-        var empty = new create$i();
+      this.empty = function (descr) {
+        var empty = new create$i({
+          descr: descr
+        });
         files.append(empty.render(filter.empty()));
         this.start = empty.start;
         this.activity.loader(false);
@@ -6852,7 +6862,7 @@
         };
 
         if (results.Results.length) this.showResults();else {
-          this.empty();
+          this.empty('Не удалось получить результатов');
         }
       };
 
@@ -9238,7 +9248,8 @@
       };
 
       window.addEventListener("error", function (e) {
-        add((e.error || e).message + '<br><br>' + (e.error ? e.error.stack : e.stack || '').split("\n").join('<br>'));
+        add((e.error || e).message + '<br><br>' + (e.error && e.error.stack ? e.error.stack : e.stack || '').split("\n").join('<br>'));
+        Noty.show('Error: ' + (e.error || e).message);
       });
     }
 
