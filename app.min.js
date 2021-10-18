@@ -987,8 +987,8 @@
             if (params.end) params.end();
           },
           beforeSend: function beforeSend(xhr) {
-            var use = Storage.get('torrserver_auth');
-            var srv = Storage.get('torrserver_url');
+            var use = Storage.field('torrserver_auth');
+            var srv = Storage.get(Storage.field('torrserver_use_link') == 'two' ? 'torrserver_url_two' : 'torrserver_url');
             if (use && params.url.indexOf(srv) > -1) xhr.setRequestHeader("Authorization", "Basic " + Base64.encode(Storage.get('torrserver_login') + ':' + Storage.get('torrserver_password')));
           }
         };
@@ -6103,7 +6103,7 @@
         Panel.update('timeend', 100 + '%');
         Panel.update('peding', progress + '%');
 
-        if (progress >= 90) {
+        if (progress >= 90 || isNaN(progress)) {
           Panel.update('peding', '0%');
           preloader.wait = false;
           preloader.call();
