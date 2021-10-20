@@ -765,6 +765,12 @@ body.settings--open .settings__content {
     .card--collection .card__img {
       height: 11.4em; }
 
+body.size--small .card--collection {
+  width: 16.9em; }
+
+body.size--small .card--category {
+  width: 11.57em; }
+
 .full-start {
   padding: 0 1.5em;
   display: -webkit-box;

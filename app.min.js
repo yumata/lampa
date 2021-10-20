@@ -2156,7 +2156,7 @@
       var fs = sz[sl];
       $('body').css({
         fontSize: Math.max(window.innerWidth / 84.17 * fs, 10.6) + 'px'
-      });
+      }).removeClass('size--small size--normal size--bigger').addClass('size--' + sl);
     }
 
     function update$5() {
