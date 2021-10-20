@@ -4505,18 +4505,22 @@
        */
 
       var videoInfo = function videoInfo() {
-        var info = webapis.avplay.getCurrentStreamInfo(),
-            json = {};
+        try {
+          var info = webapis.avplay.getCurrentStreamInfo(),
+              json = {};
 
-        for (var i = 0; i < info.length; i++) {
-          var detail = info[i];
+          for (var i = 0; i < info.length; i++) {
+            var detail = info[i];
 
-          if (detail.type == 'VIDEO') {
-            json = JSON.parse(detail.extra_info);
+            if (detail.type == 'VIDEO') {
+              json = JSON.parse(detail.extra_info);
+            }
           }
-        }
 
-        return json;
+          return json;
+        } catch (e) {
+          return {};
+        }
       };
       /**
        * Меняем размер видео
@@ -4915,6 +4919,7 @@
       var videobox;
 
       if (Platform.is('tizen') && Storage.field('player') == 'tizen') {
+        //if(true){
         videobox = create$9(function (object) {
           video = object;
         });
