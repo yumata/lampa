@@ -1905,7 +1905,7 @@
                 item.original_title = element.originalName;
                 item.release_date = '0000';
                 item.vote_average = 0;
-                item.poster = element.basicCovers && element.basicCovers.items.length ? findPoster(element.basicCovers.items) + '?width=300&scale=1&quality=80&mediaType=jpeg' : '';
+                item.poster = element.basicCovers && element.basicCovers.items.length ? (findPoster(element.basicCovers.items) || element.basicCovers.items[0].url) + '?width=300&scale=1&quality=80&mediaType=jpeg' : '';
               }
 
               items.push(item);
