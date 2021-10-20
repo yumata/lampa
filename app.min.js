@@ -4406,7 +4406,11 @@
       Object.defineProperty(video, "paused", {
         set: function set() {},
         get: function get() {
-          return webapis.avplay.getState() == 'PAUSED';
+          try {
+            return webapis.avplay.getState() == 'PAUSED';
+          } catch (e) {
+            return false;
+          }
         }
       });
       /**
