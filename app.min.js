@@ -6030,7 +6030,7 @@
 
     function nextSlide() {
       var movie = movies[position];
-      var image = Storage.field('screensaver_type') == 'nature' ? 'https://source.unsplash.com/1600x900/?nature&order_by=relevant' : Api.img(movie.backdrop_path, 'original');
+      var image = Storage.field('screensaver_type') == 'nature' ? 'https://source.unsplash.com/1600x900/?nature&order_by=relevant&v=' + Math.random() : Api.img(movie.backdrop_path, 'original');
       img = null;
       img = new Image();
       img.src = image;
