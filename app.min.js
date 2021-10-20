@@ -7648,6 +7648,7 @@
               onBack: function onBack() {
                 Modal.close();
                 Api.clear();
+                Controller.toggle('content');
               }
             });
             Api.search({
@@ -7666,9 +7667,12 @@
                 });
               } else {
                 Noty.show('Не удалось найти фильм.');
+                Controller.toggle('content');
               }
             }, function () {
+              Modal.close();
               Noty.show('Не удалось найти фильм.');
+              Controller.toggle('content');
             });
           };
 
@@ -7955,6 +7959,7 @@
               onBack: function onBack() {
                 Modal.close();
                 Api.clear();
+                Controller.toggle('content');
               }
             });
             Api.search({
@@ -7973,9 +7978,12 @@
                 });
               } else {
                 Noty.show('Не удалось найти фильм.');
+                Controller.toggle('content');
               }
             }, function () {
+              Modal.close();
               Noty.show('Не удалось найти фильм.');
+              Controller.toggle('content');
             });
           };
 
