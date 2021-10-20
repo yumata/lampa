@@ -176,17 +176,9 @@ body.no--animation * {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
-    margin-left: -15em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    margin-left: -15em; }
+    .wrap__left .scroll--mask .scroll__content {
+      padding: 1.9em 0; }
   .wrap__content {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
@@ -270,7 +262,10 @@ body.menu--open .wrap {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0.6em;
-    margin-left: 1.5em; }
+    margin-left: 1.5em;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
     .head__action.focus {
       background-color: #fff;
       color: #000; }
@@ -357,6 +352,8 @@ body.menu--open .wrap {
     margin: 1em 1em;
     width: 2.3em;
     border-top: 2px solid rgba(255, 255, 255, 0.1); }
+  .menu__list {
+    margin: 0; }
   .menu__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -370,7 +367,7 @@ body.menu--open .wrap {
             align-items: center;
     color: #ddd;
     position: relative;
-    padding: 1em 1.5em;
+    padding: 0.8em 1.5em;
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -684,7 +681,8 @@ body.settings--open .settings__content {
     transition: box-shadow 0.3s, border-color 0.2s;
     transition: box-shadow 0.3s, border-color 0.2s, -webkit-box-shadow 0.3s, -moz-box-shadow 0.3s;
     height: 21.3em;
-    width: 100%; }
+    width: 100%;
+    background-color: #3E3E3E; }
   .card__view {
     margin-bottom: 1em; }
   .card__title {
@@ -761,6 +759,11 @@ body.settings--open .settings__content {
       -webkit-box-shadow: 0 0 0 0.3em #fff;
          -moz-box-shadow: 0 0 0 0.3em #fff;
               box-shadow: 0 0 0 0.3em #fff; }
+  .card--collection {
+    padding-bottom: 1em;
+    width: 19.1em; }
+    .card--collection .card__img {
+      height: 11.4em; }
 
 .full-start {
   padding: 0 1.5em;
@@ -1143,14 +1146,6 @@ body.settings--open .settings__content {
 
 .player-video.video--load .player-video__loader {
   display: block; }
-
-.player-video[data-size="cover"] .player-video__video {
-  -o-object-fit: cover;
-     object-fit: cover; }
-
-.player-video[data-size="contain"] .player-video__video {
-  -o-object-fit: contain;
-     object-fit: contain; }
 
 .player-video__paused {
   background-color: rgba(0, 0, 0, 0.6); }
@@ -1895,7 +1890,7 @@ body.selectbox--open .selectbox__content {
   .modal__head {
     margin-bottom: 2em; }
   .modal__body .scroll__content {
-    max-height: 38em; }
+    max-height: 37.2em; }
   .modal__title {
     font-size: 2.2em;
     font-weight: 300; }
@@ -2688,6 +2683,18 @@ body.selectbox--open .selectbox__content {
           -ms-transform: scale(1.12);
            -o-transform: scale(1.12);
               transform: scale(1.12); }
+  .screensaver__gradient {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(1%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 100%);
+    z-index: 2; }
   .screensaver__datetime {
     position: fixed;
     bottom: 10%;
