@@ -1974,7 +1974,7 @@
               episodes.push({
                 name: episode.element.name,
                 img: img$2(episode.element, 'COVER'),
-                air_date: date(episode.element.releaseSaleDate),
+                air_date: date(episode.element.releaseSaleDate || 0),
                 episode_number: en + 1
               });
             });
@@ -1982,7 +1982,7 @@
 
           data['' + (sn + 1)] = {
             name: elem.element.name,
-            air_date: date(elem.element.worldReleaseDate),
+            air_date: date(elem.element.worldReleaseDate || 0),
             episodes: episodes
           };
         });
