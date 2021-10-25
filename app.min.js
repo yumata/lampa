@@ -264,6 +264,12 @@
       return _typeof(obj);
     }
 
+    function _classCallCheck(instance, Constructor) {
+      if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+      }
+    }
+
     function toObject(a) {
       if (Object.prototype.toString.call(a) === '[object Object]') return a;else {
         a = {};
@@ -401,7 +407,7 @@
 
     var html$V = "<div>\n    <div class=\"settings-param selector is--player\" data-type=\"toggle\" data-name=\"player\">\n        <div class=\"settings-param__name\">\u0422\u0438\u043F \u043F\u043B\u0435\u0435\u0440\u0430</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u041A\u0430\u043A\u0438\u043C \u043F\u043B\u0435\u0435\u0440\u043E\u043C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C</div>\n    </div>\n    \n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"playlist_next\">\n        <div class=\"settings-param__name\">\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F \u0441\u0435\u0440\u0438\u044F</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u043D\u0430 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E \u0441\u0435\u0440\u0438\u044E \u043F\u0440\u0438 \u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u0435 \u0442\u0435\u043A\u0443\u0449\u0435\u0439</div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"player_timecode\">\n        <div class=\"settings-param__name\">\u0422\u0430\u0439\u043C\u043A\u043E\u0434</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u0441 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0433\u043E \u043C\u0435\u0441\u0442\u0430 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430</div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"player_scale_method\">\n        <div class=\"settings-param__name\">\u041C\u0435\u0442\u043E\u0434 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u041A\u0430\u043A\u0438\u043C \u043E\u0431\u0440\u0430\u0437\u043E\u043C \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u0432\u044B\u0447\u0438\u0441\u043B\u0435\u043D\u0438\u044F \u0434\u043B\u044F \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E</div>\n    </div>\n    \n    <div class=\"is--has_subs\">\n        <div class=\"settings-param-title\"><span>\u0421\u0443\u0431\u0442\u0438\u0442\u0440\u044B</span></div>\n        \n        <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"subtitles_size\">\n            <div class=\"settings-param__name\">\u0420\u0430\u0437\u043C\u0435\u0440</div>\n            <div class=\"settings-param__value\"></div>\n            <div class=\"settings-param__descr\"></div>\n        </div>\n        \n        <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"subtitles_stroke\">\n            <div class=\"settings-param__name\">\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043E\u043A\u0430\u043D\u0442\u043E\u0432\u043A\u0443</div>\n            <div class=\"settings-param__value\"></div>\n            <div class=\"settings-param__descr\">\u0421\u0443\u0431\u0442\u0438\u0442\u0440\u044B \u0431\u0443\u0434\u0443\u0442 \u043E\u0431\u0432\u0435\u0434\u0435\u043D\u044B \u0447\u0435\u0440\u043D\u044B\u043C \u0446\u0432\u0435\u0442\u043E\u043C \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F \u0447\u0438\u0442\u0430\u0435\u043C\u043E\u0441\u0442\u0438</div>\n        </div>\n        \n        <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"subtitles_backdrop\">\n            <div class=\"settings-param__name\">\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0434\u043B\u043E\u0436\u043A\u0443</div>\n            <div class=\"settings-param__value\"></div>\n            <div class=\"settings-param__descr\">\u0421\u0443\u0431\u0442\u0438\u0442\u0440\u044B \u0431\u0443\u0434\u0443\u0442 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0442\u044C\u0441\u044F \u043D\u0430 \u043F\u043E\u043B\u0443\u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u043E\u0439 \u043F\u043E\u0434\u043B\u043E\u0436\u043A\u0435 \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F \u0447\u0438\u0442\u0430\u0435\u043C\u043E\u0441\u0442\u0438</div>\n        </div>\n    </div>  \n</div>";
 
-    var html$U = "<div>\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"tmdb_lang\">\n        <div class=\"settings-param__name\">TMDB</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u041D\u0430 \u043A\u0430\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0442\u044C \u0434\u0430\u043D\u043D\u044B\u0435 \u0441 TMDB</div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"pages_save_total\">\n        <div class=\"settings-param__name\">\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0441\u0442\u0440\u0430\u043D\u0438\u0446 \u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0432 \u043F\u0430\u043C\u044F\u0442\u0438</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u0425\u0440\u0430\u043D\u0438\u0442 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u0432 \u0442\u043E\u043C \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0432\u044B \u0435\u0451 \u043F\u043E\u043A\u0438\u043D\u0443\u043B\u0438</div>\n    </div>\n\n    <div class=\"settings-param-title\"><span>\u0421\u043A\u0440\u0438\u043D\u0441\u0435\u0439\u0432\u0435\u0440</span></div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"screensaver\">\n        <div class=\"settings-param__name\">\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0437\u0430\u0441\u0442\u0430\u0432\u043A\u0443 \u043F\u0440\u0438 \u0431\u0435\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0438</div>\n        <div class=\"settings-param__value\"></div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"screensaver_type\">\n        <div class=\"settings-param__name\">\u0422\u0438\u043F \u0437\u0430\u0441\u0442\u0430\u0432\u043A\u0438</div>\n        <div class=\"settings-param__value\"></div>\n    </div>\n    \n</div>";
+    var html$U = "<div>\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"source\">\n        <div class=\"settings-param__name\">\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u041E\u0442\u043A\u0443\u0434\u0430 \u0431\u0440\u0430\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E \u0444\u0438\u043B\u044C\u043C\u0430\u0445.</div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"tmdb_lang\">\n        <div class=\"settings-param__name\">TMDB</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u041D\u0430 \u043A\u0430\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0442\u044C \u0434\u0430\u043D\u043D\u044B\u0435 \u0441 TMDB</div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"pages_save_total\">\n        <div class=\"settings-param__name\">\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0441\u0442\u0440\u0430\u043D\u0438\u0446 \u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0432 \u043F\u0430\u043C\u044F\u0442\u0438</div>\n        <div class=\"settings-param__value\"></div>\n        <div class=\"settings-param__descr\">\u0425\u0440\u0430\u043D\u0438\u0442 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u0432 \u0442\u043E\u043C \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0432\u044B \u0435\u0451 \u043F\u043E\u043A\u0438\u043D\u0443\u043B\u0438</div>\n    </div>\n\n    <div class=\"settings-param-title\"><span>\u0421\u043A\u0440\u0438\u043D\u0441\u0435\u0439\u0432\u0435\u0440</span></div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"screensaver\">\n        <div class=\"settings-param__name\">\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0437\u0430\u0441\u0442\u0430\u0432\u043A\u0443 \u043F\u0440\u0438 \u0431\u0435\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0438</div>\n        <div class=\"settings-param__value\"></div>\n    </div>\n\n    <div class=\"settings-param selector\" data-type=\"toggle\" data-name=\"screensaver_type\">\n        <div class=\"settings-param__name\">\u0422\u0438\u043F \u0437\u0430\u0441\u0442\u0430\u0432\u043A\u0438</div>\n        <div class=\"settings-param__value\"></div>\n    </div>\n    \n</div>";
 
     var html$T = "<div class=\"items-line\">\n    <div class=\"items-line__head\">\n        <div class=\"items-line__title\">{title}</div>\n    </div>\n    <div class=\"items-line__body\"></div>\n</div>";
 
@@ -409,11 +415,11 @@
 
     var html$R = "<div class=\"full-start\">\n\n    <div class=\"full-start__body\">\n        <div class=\"full-start__right\">\n            <div class=\"full-start__poster\">\n                <img src=\"{img}\" class=\"full-start__img\" />\n            </div>\n        </div>\n\n        <div class=\"full-start__left\">\n            <div class=\"full-start__tags\">\n                <div class=\"full-start__tag\">\n                    <img src=\"./img/icons/pulse.svg\" /> <div>{genres}</div>\n                </div>\n                <div class=\"full-start__tag\">\n                    <img src=\"./img/icons/time.svg\" /> <div>{time}</div>\n                </div>\n                <div class=\"full-start__tag hide is--serial\">\n                    <img src=\"./img/icons/menu/catalog.svg\" /> <div>{seasons}</div>\n                </div>\n                <div class=\"full-start__tag hide is--serial\">\n                    <img src=\"./img/icons/menu/movie.svg\" /> <div>{episodes}</div>\n                </div>\n            </div>\n\n            <div class=\"full-start__title\">{title}</div>\n            <div class=\"full-start__title-original\">{original_title}</div>\n\n            <div class=\"full-start__descr\">{descr}</div>\n        </div>\n\n        \n    </div>\n\n    <div class=\"full-start__buttons\">\n        <div class=\"full-start__button selector view--trailer\">\n            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\">\n            <g>\n                <g>\n                    <path fill=\"currentColor\" d=\"M482.909,67.2H29.091C13.05,67.2,0,80.25,0,96.291v319.418C0,431.75,13.05,444.8,29.091,444.8h453.818\n                        c16.041,0,29.091-13.05,29.091-29.091V96.291C512,80.25,498.95,67.2,482.909,67.2z M477.091,409.891H34.909V102.109h442.182\n                        V409.891z\"/>\n                </g>\n            </g>\n            <g>\n                <g>\n                    <rect fill=\"currentColor\" x=\"126.836\" y=\"84.655\" width=\"34.909\" height=\"342.109\"/>\n                </g>\n            </g>\n            <g>\n                <g>\n                    <rect fill=\"currentColor\" x=\"350.255\" y=\"84.655\" width=\"34.909\" height=\"342.109\"/>\n                </g>\n            </g>\n            <g>\n                <g>\n                    <rect fill=\"currentColor\" x=\"367.709\" y=\"184.145\" width=\"126.836\" height=\"34.909\"/>\n                </g>\n            </g>\n            <g>\n                <g>\n                    <rect fill=\"currentColor\" x=\"17.455\" y=\"184.145\" width=\"126.836\" height=\"34.909\"/>\n                </g>\n            </g>\n            <g>\n                <g>\n                    <rect fill=\"currentColor\" x=\"367.709\" y=\"292.364\" width=\"126.836\" height=\"34.909\"/>\n                </g>\n            </g>\n            <g>\n                <g>\n                    <rect fill=\"currentColor\" x=\"17.455\" y=\"292.364\" width=\"126.836\" height=\"34.909\"/>\n                </g>\n            </g>\n            \n            </svg>\n\n            <span>\u0422\u0440\u0435\u0439\u043B\u0435\u0440\u044B</span>\n        </div>\n\n        <div class=\"full-start__button view--torrent hide\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:svgjs=\"http://svgjs.com/svgjs\" version=\"1.1\" width=\"512\" height=\"512\" x=\"0\" y=\"0\" viewBox=\"0 0 30.051 30.051\" style=\"enable-background:new 0 0 512 512\" xml:space=\"preserve\" class=\"\">\n            <g xmlns=\"http://www.w3.org/2000/svg\">\n                <path d=\"M19.982,14.438l-6.24-4.536c-0.229-0.166-0.533-0.191-0.784-0.062c-0.253,0.128-0.411,0.388-0.411,0.669v9.069   c0,0.284,0.158,0.543,0.411,0.671c0.107,0.054,0.224,0.081,0.342,0.081c0.154,0,0.31-0.049,0.442-0.146l6.24-4.532   c0.197-0.145,0.312-0.369,0.312-0.607C20.295,14.803,20.177,14.58,19.982,14.438z\" fill=\"currentColor\"/>\n                <path d=\"M15.026,0.002C6.726,0.002,0,6.728,0,15.028c0,8.297,6.726,15.021,15.026,15.021c8.298,0,15.025-6.725,15.025-15.021   C30.052,6.728,23.324,0.002,15.026,0.002z M15.026,27.542c-6.912,0-12.516-5.601-12.516-12.514c0-6.91,5.604-12.518,12.516-12.518   c6.911,0,12.514,5.607,12.514,12.518C27.541,21.941,21.937,27.542,15.026,27.542z\" fill=\"currentColor\"/>\n            </g></svg>\n\n            <span>\u0422\u043E\u0440\u0440\u0435\u043D\u0442\u044B</span>\n        </div>\n\n        <div class=\"full-start__button selector open--menu\">\n            <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\">\n                <g>\n                    <g>\n                        <path fill=\"currentColor\" d=\"M436.742,180.742c-41.497,0-75.258,33.761-75.258,75.258s33.755,75.258,75.258,75.258\n                            C478.239,331.258,512,297.503,512,256C512,214.503,478.239,180.742,436.742,180.742z M436.742,294.246\n                            c-21.091,0-38.246-17.155-38.246-38.246s17.155-38.246,38.246-38.246s38.246,17.155,38.246,38.246\n                            S457.833,294.246,436.742,294.246z\"/>\n                    </g>\n                </g>\n                <g>\n                    <g>\n                        <path fill=\"currentColor\" d=\"M256,180.742c-41.497,0-75.258,33.761-75.258,75.258s33.761,75.258,75.258,75.258c41.503,0,75.258-33.755,75.258-75.258\n                            C331.258,214.503,297.503,180.742,256,180.742z M256,294.246c-21.091,0-38.246-17.155-38.246-38.246s17.155-38.246,38.246-38.246\n                            s38.246,17.155,38.246,38.246S277.091,294.246,256,294.246z\"/>\n                    </g>\n                </g>\n                <g>\n                    <g>\n                        <path fill=\"currentColor\" d=\"M75.258,180.742C33.761,180.742,0,214.503,0,256c0,41.503,33.761,75.258,75.258,75.258\n                            c41.497,0,75.258-33.755,75.258-75.258C150.516,214.503,116.755,180.742,75.258,180.742z M75.258,294.246\n                            c-21.091,0-38.246-17.155-38.246-38.246s17.155-38.246,38.246-38.246c21.091,0,38.246,17.155,38.246,38.246\n                            S96.342,294.246,75.258,294.246z\"/>\n                    </g>\n                </g>\n            </svg>\n        </div>\n\n        <div class=\"full-start__icons\">\n            <div class=\"info__icon icon--book selector\" data-type=\"book\"></div>\n            <div class=\"info__icon icon--like selector\" data-type=\"like\"></div>\n            <div class=\"info__icon icon--wath selector\" data-type=\"wath\"></div>\n        </div>\n\n        <div class=\"info__rate\"><span>{r_themovie}</span></div>\n    </div>\n</div>";
 
-    var html$Q = "<div class=\"full-descr\">\n    <div class=\"full-descr__left\">\n        <div class=\"full-descr__text\">{text}</div>\n\n        <div class=\"full-descr__line\">\n            <div class=\"full-descr__line-name\">\u0416\u0430\u043D\u0440</div>\n            <div class=\"full-descr__line-body\">{genres}</div>\n        </div>\n\n        <div class=\"full-descr__line\">\n            <div class=\"full-descr__line-name\">\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E</div>\n            <div class=\"full-descr__line-body\">{companies}</div>\n        </div>\n    </div>\n\n    <div class=\"full-descr__right\">\n        <div class=\"full-descr__info\">\n            <div class=\"full-descr__info-name\">\u0414\u0430\u0442\u0430 \u0440\u0435\u043B\u0438\u0437\u0430</div>\n            <div class=\"full-descr__info-body\">{relise}</div>\n        </div>\n\n        <div class=\"full-descr__info\">\n            <div class=\"full-descr__info-name\">\u0411\u044E\u0434\u0436\u0435\u0442</div>\n            <div class=\"full-descr__info-body\">{budget}</div>\n        </div>\n\n        <div class=\"full-descr__info\">\n            <div class=\"full-descr__info-name\">\u0421\u0442\u0440\u0430\u043D\u044B</div>\n            <div class=\"full-descr__info-body\">{countries}</div>\n        </div>\n    </div>\n</div>";
+    var html$Q = "<div class=\"full-descr\">\n    <div class=\"full-descr__left\">\n        <div class=\"full-descr__text\">{text}</div>\n\n        <div class=\"full-descr__line full--genres\">\n            <div class=\"full-descr__line-name\">\u0416\u0430\u043D\u0440</div>\n            <div class=\"full-descr__line-body\">{genres}</div>\n        </div>\n\n        <div class=\"full-descr__line full--companies\">\n            <div class=\"full-descr__line-name\">\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E</div>\n            <div class=\"full-descr__line-body\">{companies}</div>\n        </div>\n    </div>\n\n    <div class=\"full-descr__right\">\n        <div class=\"full-descr__info\">\n            <div class=\"full-descr__info-name\">\u0414\u0430\u0442\u0430 \u0440\u0435\u043B\u0438\u0437\u0430</div>\n            <div class=\"full-descr__info-body\">{relise}</div>\n        </div>\n\n        <div class=\"full-descr__info\">\n            <div class=\"full-descr__info-name\">\u0411\u044E\u0434\u0436\u0435\u0442</div>\n            <div class=\"full-descr__info-body\">{budget}</div>\n        </div>\n\n        <div class=\"full-descr__info\">\n            <div class=\"full-descr__info-name\">\u0421\u0442\u0440\u0430\u043D\u044B</div>\n            <div class=\"full-descr__info-body\">{countries}</div>\n        </div>\n    </div>\n</div>";
 
     var html$P = "<div class=\"full-actor selector\">\n    <img src=\"{img}\" class=\"full-actor__foto\" />\n\n    <div class=\"full-actor__body\">\n        <div class=\"full-actor__firstname\">{firstname}</div>\n        <div class=\"full-actor__lastname\">{lastname}</div>\n    </div>\n</div>";
 
-    var html$O = "<div class=\"full-review selector\">\n    <img src=\"{img}\" class=\"full-actor__foto\" />\n\n   \n</div>";
+    var html$O = "<div class=\"full-review selector\">\n    <div class=\"full-review__text\">{text}</div>\n\n    <div class=\"full-review__footer\">\u041D\u0440\u0430\u0432\u0438\u0442\u0441\u044F: {like_count}</div>\n</div>";
 
     var html$N = "<div class=\"player\">\n    \n</div>";
 
@@ -688,7 +694,7 @@
       render: render$c
     };
 
-    function create$o() {
+    function create$p() {
       var listener = start$3();
       var _calls = [];
 
@@ -1012,7 +1018,7 @@
       }
     }
 
-    function create$n() {
+    function create$o() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var html = Template.get('scroll');
       var body = html.find('.scroll__body');
@@ -1066,135 +1072,6 @@
         html = null;
       };
     }
-
-    var data$1 = {};
-
-    function save$1() {
-      Storage.set('favorite', data$1);
-    }
-    /**
-     * Добавить
-     * @param {String} where 
-     * @param {Object} card 
-     */
-
-
-    function add$4(where, card) {
-      if (data$1[where].indexOf(card.id) < 0) {
-        Arrays.insert(data$1[where], 0, card.id);
-        if (!search$2(card.id)) data$1.card.push(card);
-        save$1();
-      }
-    }
-    /**
-     * Удалить
-     * @param {String} where 
-     * @param {Object} card 
-     */
-
-
-    function remove$1(where, card) {
-      Arrays.remove(data$1[where], card.id);
-
-      for (var i = data$1.card.length - 1; i >= 0; i--) {
-        var element = data$1.card[i];
-        if (!check(element).any) Arrays.remove(data$1.card, element);
-      }
-
-      save$1();
-    }
-    /**
-     * Найти
-     * @param {Int} id 
-     * @returns Object
-     */
-
-
-    function search$2(id) {
-      var found;
-
-      for (var index = 0; index < data$1.card.length; index++) {
-        var element = data$1.card[index];
-
-        if (element.id == id) {
-          found = element;
-          break;
-        }
-      }
-
-      return found;
-    }
-    /**
-     * Переключить
-     * @param {String} where 
-     * @param {Object} card 
-     */
-
-
-    function toggle$8(where, card) {
-      var find = check(card);
-      if (find[where]) remove$1(where, card);else add$4(where, card);
-    }
-    /**
-     * Проверить
-     * @param {Object} card 
-     * @returns Object
-     */
-
-
-    function check(card) {
-      var result = {
-        like: data$1.like.indexOf(card.id) > -1,
-        wath: data$1.wath.indexOf(card.id) > -1,
-        book: data$1.book.indexOf(card.id) > -1,
-        history: data$1.history.indexOf(card.id) > -1,
-        any: true
-      };
-      if (!result.like && !result.wath && !result.book && !result.history) result.any = false;
-      return result;
-    }
-    /**
-     * Получить списаок по типу
-     * @param {String} params.type - тип 
-     * @returns Object
-     */
-
-
-    function get$4(params) {
-      var result = [];
-      var ids = data$1[params.type];
-      ids.forEach(function (id) {
-        for (var i = 0; i < data$1.card.length; i++) {
-          var card = data$1.card[i];
-          if (card.id == id) result.push(card);
-        }
-      });
-      return result;
-    }
-    /**
-     * Запуск
-     */
-
-
-    function init$c() {
-      data$1 = Storage.get('favorite', '{}');
-      Arrays.extend(data$1, {
-        like: [],
-        wath: [],
-        book: [],
-        card: [],
-        history: []
-      });
-    }
-
-    var Favorite = {
-      check: check,
-      add: add$4,
-      remove: remove$1,
-      toggle: toggle$8,
-      get: get$4,
-      init: init$c
-    };
 
     function secondsToTime(sec, _short) {
       var sec_num = parseInt(sec, 10);
@@ -1439,7 +1316,7 @@
 
     function cardImgBackground(card_data) {
       if (Storage.field('background')) {
-        return Storage.get('background_type', 'complex') == 'poster' && card_data.backdrop_path ? Api.img(card_data.backdrop_path, 'original') : card_data.poster_path ? Api.img(card_data.poster_path) : card_data.poster || '';
+        return Storage.get('background_type', 'complex') == 'poster' && card_data.backdrop_path ? Api.img(card_data.backdrop_path, 'original') : card_data.poster_path ? Api.img(card_data.poster_path) : card_data.poster || card_data.img || '';
       }
 
       return '';
@@ -1503,39 +1380,148 @@
       hash: hash$2
     };
 
-    var baseurl = Utils.protocol() + 'api.themoviedb.org/3/';
-    var baseimg = Utils.protocol() + 'image.tmdb.org/t/p/w300/';
-    var network$3 = new create$o();
-    var key = '4ef0d7355d9ffb5151e987764708ce96';
+    var data$1 = {};
 
-    function url$3(u) {
-      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      u = add$3(u, 'api_key=' + key);
-      u = add$3(u, 'language=' + Storage.field('tmdb_lang'));
-      if (params.genres) u = add$3(u, 'with_genres=' + params.genres);
-      if (params.page) u = add$3(u, 'page=' + params.page);
-      if (params.query) u = add$3(u, 'query=' + params.query);
+    function save$1() {
+      Storage.set('favorite', data$1);
+    }
+    /**
+     * Добавить
+     * @param {String} where 
+     * @param {Object} card 
+     */
 
-      if (params.filter) {
-        for (var i in params.filter) {
-          u = add$3(u, i + '=' + params.filter[i]);
+
+    function add$4(where, card, limit) {
+      if (data$1[where].indexOf(card.id) < 0) {
+        Arrays.insert(data$1[where], 0, card.id);
+        if (!search$3(card.id)) data$1.card.push(card);
+
+        if (limit) {
+          var excess = data$1[where].slice(limit);
+
+          for (var i = excess.length - 1; i >= 0; i--) {
+            remove$1(where, {
+              id: excess[i]
+            });
+          }
+        }
+
+        save$1();
+      }
+    }
+    /**
+     * Удалить
+     * @param {String} where 
+     * @param {Object} card 
+     */
+
+
+    function remove$1(where, card) {
+      Arrays.remove(data$1[where], card.id);
+
+      for (var i = data$1.card.length - 1; i >= 0; i--) {
+        var element = data$1.card[i];
+        if (!check(element).any) Arrays.remove(data$1.card, element);
+      }
+
+      save$1();
+    }
+    /**
+     * Найти
+     * @param {Int} id 
+     * @returns Object
+     */
+
+
+    function search$3(id) {
+      var found;
+
+      for (var index = 0; index < data$1.card.length; index++) {
+        var element = data$1.card[index];
+
+        if (element.id == id) {
+          found = element;
+          break;
         }
       }
 
-      return baseurl + u;
+      return found;
+    }
+    /**
+     * Переключить
+     * @param {String} where 
+     * @param {Object} card 
+     */
+
+
+    function toggle$8(where, card) {
+      var find = check(card);
+      if (find[where]) remove$1(where, card);else add$4(where, card);
+      return find[where] ? false : true;
+    }
+    /**
+     * Проверить
+     * @param {Object} card 
+     * @returns Object
+     */
+
+
+    function check(card) {
+      var result = {
+        like: data$1.like.indexOf(card.id) > -1,
+        wath: data$1.wath.indexOf(card.id) > -1,
+        book: data$1.book.indexOf(card.id) > -1,
+        history: data$1.history.indexOf(card.id) > -1,
+        any: true
+      };
+      if (!result.like && !result.wath && !result.book && !result.history) result.any = false;
+      return result;
+    }
+    /**
+     * Получить списаок по типу
+     * @param {String} params.type - тип 
+     * @returns Object
+     */
+
+
+    function get$4(params) {
+      var result = [];
+      var ids = data$1[params.type];
+      ids.forEach(function (id) {
+        for (var i = 0; i < data$1.card.length; i++) {
+          var card = data$1.card[i];
+          if (card.id == id) result.push(card);
+        }
+      });
+      return result;
+    }
+    /**
+     * Запуск
+     */
+
+
+    function init$c() {
+      data$1 = Storage.get('favorite', '{}');
+      Arrays.extend(data$1, {
+        like: [],
+        wath: [],
+        book: [],
+        card: [],
+        history: []
+      });
     }
 
-    function add$3(u, params) {
-      return u + (/\?/.test(u) ? '&' : '?') + params;
-    }
+    var Favorite = {
+      check: check,
+      add: add$4,
+      remove: remove$1,
+      toggle: toggle$8,
+      get: get$4,
+      init: init$c
+    };
 
-    function img$1(src, size) {
-      var path = baseimg;
-      if (size) path = path.replace(/w300/g, size);
-      return src ? path + src : '';
-    }
-
-    function Status(need) {
+    function status(need) {
       this.data = {};
       this.work = 0;
 
@@ -1555,84 +1541,137 @@
       };
     }
 
-    function main$2() {
+    var baseurl$2 = Utils.protocol() + 'api.themoviedb.org/3/';
+    var baseimg = Utils.protocol() + 'image.tmdb.org/t/p/w300/';
+    var network$6 = new create$p();
+    var key = '4ef0d7355d9ffb5151e987764708ce96';
+    var menu_list$2 = [];
+
+    function url$3(u) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      u = add$3(u, 'api_key=' + key);
+      u = add$3(u, 'language=' + Storage.field('tmdb_lang'));
+      if (params.genres) u = add$3(u, 'with_genres=' + params.genres);
+      if (params.page) u = add$3(u, 'page=' + params.page);
+      if (params.query) u = add$3(u, 'query=' + params.query);
+
+      if (params.filter) {
+        for (var i in params.filter) {
+          u = add$3(u, i + '=' + params.filter[i]);
+        }
+      }
+
+      return baseurl$2 + u;
+    }
+
+    function add$3(u, params) {
+      return u + (/\?/.test(u) ? '&' : '?') + params;
+    }
+
+    function img$3(src, size) {
+      var path = baseimg;
+      if (size) path = path.replace(/w300/g, size);
+      return src ? path + src : '';
+    }
+
+    function find$1(find) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var finded;
+
+      var filtred = function filtred(items) {
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+
+          if (params.original_title == item.original_title || params.title == item.title) {
+            finded = item;
+            break;
+          }
+        }
+      };
+
+      if (find.movie && find.movie.results.length) filtred(find.movie.results);
+      if (find.tv && find.tv.results.length && !finded) filtred(find.tv.results);
+      return finded;
+    }
+
+    function main$5() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
       var onerror = arguments.length > 2 ? arguments[2] : undefined;
-      var status = new Status(8);
+      var status$1 = new status(8);
 
-      status.onComplite = function () {
+      status$1.onComplite = function () {
         var fulldata = [];
-        if (status.data.wath) fulldata.push(status.data.wath);
-        if (status.data.trend_day) fulldata.push(status.data.trend_day);
-        if (status.data.trend_week) fulldata.push(status.data.trend_week);
-        if (status.data.upcoming) fulldata.push(status.data.upcoming);
-        if (status.data.popular) fulldata.push(status.data.popular);
-        if (status.data.popular_tv) fulldata.push(status.data.popular_tv);
-        if (status.data.top) fulldata.push(status.data.top);
-        if (status.data.top_tv) fulldata.push(status.data.top_tv);
+        if (status$1.data.wath) fulldata.push(status$1.data.wath);
+        if (status$1.data.trend_day) fulldata.push(status$1.data.trend_day);
+        if (status$1.data.trend_week) fulldata.push(status$1.data.trend_week);
+        if (status$1.data.upcoming) fulldata.push(status$1.data.upcoming);
+        if (status$1.data.popular) fulldata.push(status$1.data.popular);
+        if (status$1.data.popular_tv) fulldata.push(status$1.data.popular_tv);
+        if (status$1.data.top) fulldata.push(status$1.data.top);
+        if (status$1.data.top_tv) fulldata.push(status$1.data.top_tv);
         if (fulldata.length) oncomplite(fulldata);else onerror();
       };
 
       var append = function append(title, name, json) {
         json.title = title;
-        status.append(name, json);
+        status$1.append(name, json);
       };
 
       get$3('movie/now_playing', params, function (json) {
         append('Сейчас смотрят', 'wath', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('trending/moviews/day', params, function (json) {
         append('Сегодня в тренде', 'trend_day', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('trending/moviews/week', params, function (json) {
         append('В тренде за неделю', 'trend_week', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('movie/upcoming', params, function (json) {
         append('Смотрите в кинозалах', 'upcoming', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('movie/popular', params, function (json) {
         append('Популярные фильмы', 'popular', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('tv/popular', params, function (json) {
         append('Популярные сериалы', 'popular_tv', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('movie/top_rated', params, function (json) {
         append('Топ фильмы', 'top', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3('tv/top_rated', params, function (json) {
         append('Топ сериалы', 'top_tv', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
     }
 
-    function category() {
+    function category$3() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
       var onerror = arguments.length > 2 ? arguments[2] : undefined;
-      var status = new Status(6);
+      var status$1 = new status(6);
 
-      status.onComplite = function () {
+      status$1.onComplite = function () {
         var fulldata = [];
-        if (status.data.wath && status.data.wath.results.length) fulldata.push(status.data.wath);
-        if (status.data.popular && status.data.popular.results.length) fulldata.push(status.data.popular);
-        if (status.data["new"] && status.data["new"].results.length) fulldata.push(status.data["new"]);
-        if (status.data.tv_today && status.data.tv_today.results.length) fulldata.push(status.data.tv_today);
-        if (status.data.tv_air && status.data.tv_air.results.length) fulldata.push(status.data.tv_air);
-        if (status.data.top && status.data.top.results.length) fulldata.push(status.data.top);
+        if (status$1.data.wath && status$1.data.wath.results.length) fulldata.push(status$1.data.wath);
+        if (status$1.data.popular && status$1.data.popular.results.length) fulldata.push(status$1.data.popular);
+        if (status$1.data["new"] && status$1.data["new"].results.length) fulldata.push(status$1.data["new"]);
+        if (status$1.data.tv_today && status$1.data.tv_today.results.length) fulldata.push(status$1.data.tv_today);
+        if (status$1.data.tv_air && status$1.data.tv_air.results.length) fulldata.push(status$1.data.tv_air);
+        if (status$1.data.top && status$1.data.top.results.length) fulldata.push(status$1.data.top);
         if (fulldata.length) oncomplite(fulldata);else onerror();
       };
 
       var append = function append(title, name, json) {
         json.title = title;
-        status.append(name, json);
+        status$1.append(name, json);
       };
 
       get$3(params.url + '/now_playing', params, function (json) {
         append('Сейчас смотрят', 'wath', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3(params.url + '/popular', params, function (json) {
         append('Популярное', 'popular', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       var date = new Date();
       var nparams = Arrays.clone(params);
       nparams.filter = {
@@ -1644,46 +1683,47 @@
       get$3('discover/' + params.url, nparams, function (json) {
         json.filter = nparams.filter;
         append('Новинки', 'new', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3(params.url + '/airing_today', params, function (json) {
         append('Сегодня в эфире', 'tv_today', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3(params.url + '/on_the_air', params, function (json) {
         append('На этой неделе', 'tv_air', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
       get$3(params.url + '/top_rated', params, function (json) {
         append('В топе', 'top', json);
-      }, status.error.bind(status));
+      }, status$1.error.bind(status$1));
     }
 
-    function full() {
+    function full$3() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
-      var status = new Status(5);
-      status.onComplite = oncomplite;
+      var status$1 = new status(5);
+      status$1.onComplite = oncomplite;
       get$3(params.method + '/' + params.id, params, function (json) {
-        status.append('movie', json);
-      }, status.error.bind(status));
+        json.source = 'tmdb';
+        status$1.append('movie', json);
+      }, status$1.error.bind(status$1));
       get$3(params.method + '/' + params.id + '/credits', params, function (json) {
-        status.append('actors', json);
-      }, status.error.bind(status));
+        status$1.append('actors', json);
+      }, status$1.error.bind(status$1));
       get$3(params.method + '/' + params.id + '/recommendations', params, function (json) {
-        status.append('recomend', json);
-      }, status.error.bind(status));
+        status$1.append('recomend', json);
+      }, status$1.error.bind(status$1));
       get$3(params.method + '/' + params.id + '/similar', params, function (json) {
-        status.append('simular', json);
-      }, status.error.bind(status));
+        status$1.append('simular', json);
+      }, status$1.error.bind(status$1));
       get$3(params.method + '/' + params.id + '/videos', params, function (json) {
-        status.append('videos', json);
-      }, status.error.bind(status));
+        status$1.append('videos', json);
+      }, status$1.error.bind(status$1));
     }
 
-    function categoryFull() {
+    function list$4() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
       var onerror = arguments.length > 2 ? arguments[2] : undefined;
       var u = url$3(params.url, params);
-      network$3.silent(u, oncomplite, onerror);
+      network$6.silent(u, oncomplite, onerror);
     }
 
     function get$3(method) {
@@ -1691,48 +1731,28 @@
       var oncomplite = arguments.length > 2 ? arguments[2] : undefined;
       var onerror = arguments.length > 3 ? arguments[3] : undefined;
       var u = url$3(method, params);
-      network$3.silent(u, function (json) {
+      network$6.silent(u, function (json) {
         json.url = method;
         oncomplite(json);
       }, onerror);
     }
 
-    function search$1() {
+    function search$2() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
-      var status = new Status(2);
-      status.onComplite = oncomplite;
+      var status$1 = new status(2);
+      status$1.onComplite = oncomplite;
       get$3('search/movie', params, function (json) {
         json.title = 'Фильмы';
-        status.append('movie', json);
-      }, status.error.bind(status));
+        status$1.append('movie', json);
+      }, status$1.error.bind(status$1));
       get$3('search/tv', params, function (json) {
         json.title = 'Сериалы';
-        status.append('tv', json);
-      }, status.error.bind(status));
+        status$1.append('tv', json);
+      }, status$1.error.bind(status$1));
     }
 
-    function searchFilter(find) {
-      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var finded;
-
-      var filter = function filter(items) {
-        for (var i = 0; i < items.length; i++) {
-          var item = items[i];
-
-          if (params.original_title == item.original_title) {
-            finded = item;
-            break;
-          }
-        }
-      };
-
-      if (find.movie && find.movie.results.length) filter(find.movie.results);
-      if (find.tv && find.tv.results.length && !finded) filter(find.tv.results);
-      return finded;
-    }
-
-    function actor() {
+    function actor$3() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
 
@@ -1749,25 +1769,1147 @@
         };
       };
 
-      var status = new Status(3);
+      var status$1 = new status(3);
 
-      status.onComplite = function () {
+      status$1.onComplite = function () {
         var fulldata = {};
-        if (status.data.actor) fulldata.actor = status.data.actor;
-        if (status.data.movie && status.data.movie.cast.length) fulldata.movie = convert(status.data.movie);
-        if (status.data.tv && status.data.tv.cast.length) fulldata.tv = convert(status.data.tv);
+        if (status$1.data.actor) fulldata.actor = status$1.data.actor;
+        if (status$1.data.movie && status$1.data.movie.cast.length) fulldata.movie = convert(status$1.data.movie);
+        if (status$1.data.tv && status$1.data.tv.cast.length) fulldata.tv = convert(status$1.data.tv);
         oncomplite(fulldata);
       };
 
       get$3('person/' + params.id, params, function (json) {
-        status.append('actor', json);
-      }, status.error.bind(status));
+        status$1.append('actor', json);
+      }, status$1.error.bind(status$1));
       get$3('person/' + params.id + '/movie_credits', params, function (json) {
-        status.append('movie', json);
-      }, status.error.bind(status));
+        status$1.append('movie', json);
+      }, status$1.error.bind(status$1));
       get$3('person/' + params.id + '/tv_credits', params, function (json) {
-        status.append('tv', json);
-      }, status.error.bind(status));
+        status$1.append('tv', json);
+      }, status$1.error.bind(status$1));
+    }
+
+    function menu$3() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      if (menu_list$2.length) oncomplite(menu_list$2);else {
+        var u = url$3('genre/movie/list', params);
+        network$6.silent(u, function (j) {
+          j.genres.forEach(function (g) {
+            menu_list$2.push({
+              title: g.name,
+              id: g.id
+            });
+          });
+          oncomplite(menu_list$2);
+        });
+      }
+    }
+
+    function company$1() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      var u = url$3('company/' + params.id, params);
+      network$6.silent(u, oncomplite, onerror);
+    }
+
+    function seasons$3(tv, from, oncomplite) {
+      var status$1 = new status(from.length);
+      status$1.onComplite = oncomplite;
+      from.forEach(function (season) {
+        get$3('tv/' + tv.id + '/season/' + season, {}, function (json) {
+          status$1.append('' + season, json);
+        }, status$1.error.bind(status$1));
+      });
+    }
+
+    function screensavers(oncomplite, onerror) {
+      get$3('trending/all/week', {
+        page: Math.round(Math.random() * 30)
+      }, function (json) {
+        oncomplite(json.results.filter(function (entry) {
+          return entry.backdrop_path;
+        }));
+      }, onerror);
+    }
+
+    function clear$3() {
+      network$6.clear();
+    }
+
+    var TMDB = {
+      main: main$5,
+      menu: menu$3,
+      img: img$3,
+      full: full$3,
+      list: list$4,
+      category: category$3,
+      search: search$2,
+      clear: clear$3,
+      company: company$1,
+      actor: actor$3,
+      seasons: seasons$3,
+      find: find$1,
+      screensavers: screensavers
+    };
+
+    var baseurl$1 = 'https://ctx.playfamily.ru/screenapi/v1/noauth/';
+    var network$5 = new create$p();
+    var menu_list$1 = [];
+
+    function img$2(element) {
+      var need = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'PORTRAIT';
+
+      if (element.basicCovers && element.basicCovers.items.length) {
+        for (var index = 0; index < element.basicCovers.items.length; index++) {
+          var _img = element.basicCovers.items[index];
+          if (_img.imageType == need) return _img.url + '?width=' + (need == 'COVER' ? 800 : 300) + '&scale=1&quality=80&mediaType=jpeg';
+        }
+
+        return element.basicCovers.items[0].url + '?width=500&scale=1&quality=80&mediaType=jpeg';
+      }
+
+      return '';
+    }
+
+    function tocard$1(element) {
+      return {
+        url: element.alias,
+        id: element.id,
+        title: element.name,
+        original_title: element.originalName,
+        release_date: '0000',
+        vote_average: element.okkoRating || 0,
+        poster: img$2(element),
+        cover: img$2(element, 'COVER'),
+        promo: element.promoText,
+        description: element.description
+      };
+    }
+
+    function collections$2(params, oncomplite, onerror) {
+      var frm = 20 * (params.page - 1);
+      var uri = baseurl$1 + 'collection/web/1?elementAlias=' + (params.url || 'collections_web') + '&elementType=COLLECTION&limit=20&offset=' + frm + '&withInnerCollections=true&includeProductsForUpsale=false&filter=%7B%22sortType%22%3A%22RANK%22%2C%22sortOrder%22%3A%22ASC%22%2C%22useSvodFilter%22%3Afalse%2C%22genres%22%3A%5B%5D%2C%22yearsRange%22%3Anull%2C%22rating%22%3Anull%7D';
+      network$5["native"](uri, function (json) {
+        var items = [];
+
+        if (json.element) {
+          json.element.collectionItems.items.forEach(function (elem) {
+            var element = elem.element;
+            var item = {
+              url: element.alias,
+              id: element.id,
+              title: element.name,
+              poster: element.basicCovers && element.basicCovers.items.length ? element.basicCovers.items[0].url + '?width=300&scale=1&quality=80&mediaType=jpeg' : 'https://www.ivi.ru/images/stubs/collection_preview_stub.jpeg'
+            };
+            if (params.url) item = tocard$1(element);
+            items.push(item);
+          });
+        }
+
+        oncomplite(items);
+      }, onerror);
+    }
+
+    function actors$1(element) {
+      var data = [];
+      element.actors.items.forEach(function (elem) {
+        var item = elem.element;
+        data.push({
+          url: item.alias,
+          name: item.name,
+          character: item.originalName
+        });
+      });
+      return data.length ? {
+        cast: data
+      } : false;
+    }
+
+    function genres$2(element) {
+      return element.genres.items.map(function (elem) {
+        elem.element.url = elem.element.alias;
+        return elem.element;
+      });
+    }
+
+    function countries$1(element) {
+      return element.countries.items.map(function (elem) {
+        return elem.element;
+      });
+    }
+
+    function date(element) {
+      var d = new Date(element.worldReleaseDate || element || 0);
+      return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+    }
+
+    function seasonsCount$1(element) {
+      var data = {
+        seasons: 0,
+        episodes: 0
+      };
+
+      if (element.children) {
+        data.seasons = element.children.totalSize;
+        element.children.items.forEach(function (elem) {
+          data.episodes += elem.element.children.totalSize;
+        });
+      }
+
+      return data;
+    }
+
+    function seasonsDetails(element) {
+      var data = {};
+
+      if (element.children) {
+        element.children.items.forEach(function (elem, sn) {
+          var episodes = [];
+
+          if (elem.element.children) {
+            elem.element.children.items.forEach(function (episode, en) {
+              episodes.push({
+                name: episode.element.name,
+                img: img$2(episode.element, 'COVER'),
+                air_date: date(episode.element.releaseSaleDate),
+                episode_number: en + 1
+              });
+            });
+          }
+
+          data['' + (sn + 1)] = {
+            name: elem.element.name,
+            air_date: date(elem.element.worldReleaseDate),
+            episodes: episodes
+          };
+        });
+        return data;
+      }
+    }
+
+    function similar$1(element) {
+      var data = [];
+      element.similar.items.forEach(function (elem) {
+        data.push(tocard$1(elem.element));
+      });
+      return data.length ? {
+        results: data
+      } : false;
+    }
+
+    function seasons$2(tv, from, oncomplite, onerror) {
+      oncomplite(tv.seasons || {});
+    }
+
+    function menu$2(params, oncomplite) {
+      if (!menu_list$1.length) {
+        network$5.timeout(1000);
+        network$5["native"](baseurl$1 + 'collection/web/1?elementAlias=action&elementType=GENRE&limit=20&offset=0&withInnerCollections=false&includeProductsForUpsale=false&filter=null', function (json) {
+          if (json.uiScreenInfo && json.uiScreenInfo.webMain) {
+            json.uiScreenInfo.webMain.forEach(function (element) {
+              menu_list$1.push({
+                title: element.name,
+                id: element.alias
+              });
+            });
+            oncomplite(menu_list$1);
+          }
+        });
+      } else {
+        oncomplite(menu_list$1);
+      }
+    }
+
+    function videos$1(element) {
+      var data = [];
+      var qa = 0;
+      element.trailers.items.forEach(function (item) {
+        var media = item.media;
+
+        if (media.width > qa && media.mimeType == 'mp4/ts') {
+          qa = media.width;
+          data.push({
+            name: data.length + 1 + ' / ' + item.language,
+            url: item.url,
+            player: true
+          });
+        }
+      });
+      return data.length ? {
+        results: data
+      } : [];
+    }
+
+    function list$3(params, oncomplite, onerror) {
+      var frm = 20 * (params.page - 1);
+      network$5["native"](baseurl$1 + 'collection/web/1?elementAlias=' + (params.url || params.id) + '&elementType=' + (params.type || 'GENRE') + '&limit=20&offset=' + frm + '&withInnerCollections=false&includeProductsForUpsale=false&filter=null', function (json) {
+        var items = [];
+
+        if (json.element && json.element.collectionItems) {
+          json.element.collectionItems.items.forEach(function (elem) {
+            items.push(tocard$1(elem.element));
+          });
+          oncomplite({
+            results: items,
+            total_pages: Math.round(json.element.collectionItems.totalSize / 20)
+          });
+        } else {
+          onerror();
+        }
+      }, onerror);
+    }
+
+    function actor$2(params, oncomplite, onerror) {
+      network$5["native"](baseurl$1 + 'collection/web/1?elementAlias=' + params.url + '&elementType=PERSON&limit=60&offset=0&withInnerCollections=false&includeProductsForUpsale=false&filter=null', function (json) {
+        var data = {
+          movie: {
+            results: []
+          }
+        };
+
+        if (json.element && json.element.collectionItems) {
+          json.element.collectionItems.items.forEach(function (elem) {
+            data.movie.results.push(tocard$1(elem.element));
+          });
+          data.actor = {
+            name: json.element.name,
+            biography: '',
+            img: '',
+            place_of_birth: '',
+            birthday: '----'
+          };
+          oncomplite(data);
+        } else {
+          onerror();
+        }
+      }, onerror);
+    }
+
+    function main$4(params, oncomplite, onerror) {
+      network$5["native"](baseurl$1 + 'mainpage/web/1', function (json) {
+        var element = json.element;
+        var fulldata = [];
+
+        if (element) {
+          var blocks = json.element.collectionItems.items;
+
+          if (blocks[0]) {
+            var slides = {
+              title: 'Новинки',
+              results: [],
+              wide: true
+            };
+            blocks[0].element.collectionItems.items.forEach(function (elem) {
+              slides.results.push(tocard$1(elem.element));
+            });
+            fulldata.push(slides);
+          }
+
+          if (blocks[2]) {
+            blocks[2].element.collectionItems.items.forEach(function (block) {
+              var line = {
+                title: block.element.name,
+                url: block.element.alias,
+                results: [],
+                more: true
+              };
+              block.element.collectionItems.items.forEach(function (elem) {
+                line.results.push(tocard$1(elem.element));
+              });
+              fulldata.push(line);
+            });
+          }
+        }
+
+        if (fulldata.length) oncomplite(fulldata);else onerror();
+      }, onerror);
+    }
+
+    function category$2(params, oncomplite, onerror) {
+      var status$1 = new status(7);
+
+      status$1.onComplite = function () {
+        var fulldata = [];
+        if (status$1.data["new"] && status$1.data["new"].results.length) fulldata.push(status$1.data["new"]);
+        if (status$1.data.top && status$1.data.top.results.length) fulldata.push(status$1.data.top);
+        if (status$1.data.three && status$1.data.three.results.length) fulldata.push(status$1.data.three);
+        if (status$1.data.four && status$1.data.four.results.length) fulldata.push(status$1.data.four);
+        if (status$1.data.five && status$1.data.five.results.length) fulldata.push(status$1.data.five);
+        if (status$1.data.six && status$1.data.six.results.length) fulldata.push(status$1.data.six);
+        if (status$1.data.seven && status$1.data.seven.results.length) fulldata.push(status$1.data.seven);
+        if (fulldata.length) oncomplite(fulldata);else onerror();
+      };
+
+      var append = function append(title, name, id, json) {
+        json.title = title;
+        json.url = id;
+        status$1.append(name, json);
+      };
+
+      if (params.url == 'movie') {
+        list$3({
+          url: 'Novelty',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Новое', 'new', 'Novelty', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'topfilms',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Топ-новинки', 'top', 'topfilms', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'comedy-plus-horror-movies',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Комедийные фильмы ужасов', 'three', 'comedy-plus-horror-movies', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'collection_maniacs',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Фильмы про маньяков', 'four', 'collection_maniacs', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'witches',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Фильмы про ведьм', 'five', 'witches', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'zombies',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Фильмы про зомби', 'six', 'zombies', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'Russian-17490',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Русские', 'seven', 'Russian-17490', json);
+        }, status$1.error.bind(status$1));
+      } else {
+        list$3({
+          url: 'Serials',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Новое', 'new', 'Serials', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'horror-serial-all-svod',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Очень страшные', 'top', 'horror-serial-all-svod', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'series-about-serial-killers',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Про маньяков', 'three', 'series-about-serial-killers', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'black-humor-serial-all-svod',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('С чёрным юмором', 'four', 'black-humor-serial-all-svod', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'legkiye-serialy-all-svod',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Лёгкие', 'five', 'legkiye-serialy-all-svod', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'comedy-serial-all-svod',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Комедийные', 'six', 'comedy-serial-all-svod', json);
+        }, status$1.error.bind(status$1));
+        list$3({
+          url: 'russian_tvseries',
+          type: 'COLLECTION',
+          page: 1
+        }, function (json) {
+          append('Русские', 'seven', 'russian_tvseries', json);
+        }, status$1.error.bind(status$1));
+      }
+    }
+
+    function full$2(params, oncomplite, onerror) {
+      var data = {};
+      network$5["native"](baseurl$1 + 'moviecard/web/1?elementAlias=' + params.url + '&elementType=MOVIE', function (json) {
+        var element = json.element;
+
+        if (element) {
+          data.actors = actors$1(element);
+          data.simular = similar$1(element);
+          data.videos = videos$1(element);
+          data.movie = {
+            id: element.id,
+            url: element.alias,
+            source: 'okko',
+            title: element.name,
+            original_title: element.originalName,
+            name: element.type == 'SERIAL' ? element.name : '',
+            original_name: element.type == 'SERIAL' ? element.originalName : '',
+            overview: element.description,
+            img: img$2(element),
+            runtime: (element.duration || 0) / 1000 / 60,
+            genres: genres$2(element),
+            vote_average: element.imdbRating || element.kinopoiskRating || 0,
+            production_companies: [],
+            production_countries: countries$1(element),
+            budget: element.budget && element.budget.value ? element.budget.value : 0,
+            release_date: date(element),
+            number_of_seasons: seasonsCount$1(element).seasons,
+            number_of_episodes: seasonsCount$1(element).episodes,
+            seasons: seasonsDetails(element)
+          };
+        }
+
+        oncomplite(data);
+      }, onerror);
+    }
+
+    var OKKO = {
+      main: main$4,
+      full: full$2,
+      collections: collections$2,
+      seasons: seasons$2,
+      list: list$3,
+      actor: actor$2,
+      menu: menu$2,
+      category: category$2,
+      clear: network$5.clear
+    };
+
+    var baseurl = 'https://api.ivi.ru/mobileapi/';
+    var network$4 = new create$p();
+    var menu_list = [];
+
+    function tocard(element) {
+      return {
+        url: element.hru,
+        id: element.id,
+        title: element.title,
+        original_title: element.orig_title,
+        release_date: element.release_date || element.ivi_pseudo_release_date || element.ivi_release_date || (element.year ? element.year + '' : element.years ? element.years[0] + '' : '0000'),
+        vote_average: element.ivi_rating_10 || 0,
+        poster: img$1(element),
+        year: element.year,
+        years: element.years
+      };
+    }
+
+    function entities(url, oncomplite, onerror) {
+      network$4["native"]('https://www.ivi.ru/' + url, function (str) {
+        var parse = str.match(/window.__INITIAL_STATE__ = JSON.parse\('(.*?)'\);<\/script>/);
+        var decod = (parse ? parse[1] : '').replace(/\\'|[\\]+"/g, '\'');
+        var json = Arrays.decodeJson(decod, {});
+
+        if (json.entities) {
+          if (!menu_list.length) {
+            for (var i in json.entities.genres) {
+              var item = json.entities.genres[i];
+              menu_list.push({
+                title: item.title + ' (' + item.catalogue_count + ')',
+                id: item.id
+              });
+            }
+          }
+
+          oncomplite(json.entities, json);
+        } else onerror();
+      }, onerror, false, {
+        dataType: 'text'
+      });
+    }
+
+    function find(json, id) {
+      var found;
+
+      for (var i in json.content) {
+        if (i == id) found = json.content[i];
+      }
+
+      return found;
+    }
+
+    function img$1(element) {
+      return element.poster_originals && element.poster_originals[0] ? element.poster_originals[0].path + '/300x456/' : '';
+    }
+
+    function genres$1(element, json) {
+      var data = [];
+      element.genres.forEach(function (id) {
+        var genre = json.genres[id];
+
+        if (genre) {
+          data.push({
+            id: genre.id,
+            name: genre.title
+          });
+        }
+      });
+      return data;
+    }
+
+    function countries(element, json) {
+      var data = [];
+
+      if (element.country && json.countries[element.country]) {
+        data.push({
+          name: json.countries[element.country].title
+        });
+      }
+
+      return data;
+    }
+
+    function actors(json) {
+      var data = [];
+
+      if (json.persons && json.persons.info) {
+        for (var i in json.persons.info) {
+          var person = json.persons.info[i],
+              images = Arrays.getValues(person.images || {});
+
+          if (person.profession_types[0] == 6) {
+            data.push({
+              name: person.name,
+              character: 'Актер',
+              id: person.id,
+              img: images.length ? images[0].path : ''
+            });
+          }
+        }
+      }
+
+      return data.length ? {
+        cast: data
+      } : false;
+    }
+
+    function similar(element, json) {
+      var data = [];
+
+      if (json.content) {
+        for (var i in json.content) {
+          var item = json.content[i];
+          if (element !== item) data.push(tocard(item));
+        }
+
+        data.sort(function (a, b) {
+          var ay = a.year || (a.years ? a.years[0] : 0);
+          var by = b.year || (b.years ? b.years[0] : 0);
+          return by - ay;
+        });
+      }
+
+      return data.length ? {
+        results: data
+      } : false;
+    }
+
+    function videos(element) {
+      var data = [];
+
+      if (element.additional_data) {
+        element.additional_data.forEach(function (atach) {
+          if (atach.data_type == 'trailer' && atach.files) {
+            atach.files.forEach(function (file) {
+              if (file.content_format == 'MP4-HD1080') {
+                data.push({
+                  name: atach.title,
+                  url: file.url,
+                  player: true
+                });
+              }
+            });
+          }
+        });
+      }
+
+      return data.length ? {
+        results: data
+      } : false;
+    }
+
+    function seasonsCount(element) {
+      var data = {
+        seasons: 0,
+        episodes: 0
+      };
+
+      if (element.seasons) {
+        data.seasons = element.seasons.length;
+
+        for (var i in element.seasons_content_total) {
+          data.episodes += element.seasons_content_total[i];
+        }
+      }
+
+      return data;
+    }
+
+    function seasons$1(tv, from, oncomplite, onerror) {
+      var status$1 = new status(from.length);
+      status$1.onComplite = oncomplite;
+      from.forEach(function (season) {
+        network$4["native"](baseurl + 'videofromcompilation/v5/?id=' + tv.id + '&season=' + season + '&from=0&to=60&fake=1&mark_as_purchased=1&app_version=870&session=66674cdb8528557407669760_1650471651-0EALRgbYRksN8Hfc5UthGeg', function (json) {
+          if (json.result) {
+            var episodes = [];
+            json.result.forEach(function (elem) {
+              episodes.push({
+                name: elem.title,
+                img: elem.promo_images && elem.promo_images.length ? elem.promo_images[0].url + '/300x240/' : '',
+                air_date: elem.release_date || elem.ivi_pseudo_release_date || elem.ivi_release_date || (elem.year ? elem.year + '' : elem.years ? elem.years[0] + '' : '0000'),
+                episode_number: elem.episode
+              });
+            });
+            status$1.append('' + season, {
+              episodes: episodes
+            });
+          } else status$1.error();
+        }, status$1.error.bind(status$1));
+      });
+    }
+
+    function comments(json) {
+      var data = [];
+
+      if (json.comments) {
+        for (var i in json.comments) {
+          var com = json.comments[i];
+          com.text = com.text.replace(/\\[n|r|t]/g, '');
+          data.push(com);
+        }
+      }
+
+      return data.length ? data : false;
+    }
+
+    function menu$1(params, oncomplite) {
+      if (!menu_list.length) {
+        network$4.timeout(1000);
+        entities('', function () {
+          oncomplite(menu_list);
+        });
+      } else oncomplite(menu_list);
+    }
+
+    function full$1(params, oncomplite, onerror) {
+      entities('watch/' + (params.url || params.id), function (json, all) {
+        var data = {};
+        var element = find(json, params.id);
+        console.log(json, all);
+
+        if (element) {
+          data.actors = actors(json);
+          data.simular = similar(element, json);
+          data.videos = videos(element);
+          data.comments = comments(json);
+          data.movie = {
+            id: element.id,
+            url: element.hru,
+            source: 'ivi',
+            title: element.title,
+            original_title: element.orig_title,
+            name: element.seasons ? element.title : '',
+            original_name: element.seasons ? element.orig_title : '',
+            overview: element.description.replace(/\\[n|r|t]/g, ''),
+            img: img$1(element),
+            runtime: element.duration_minutes,
+            genres: genres$1(element, json),
+            vote_average: parseFloat(element.imdb_rating || element.kp_rating || '0'),
+            production_companies: [],
+            production_countries: countries(element, json),
+            budget: element.budget || 0,
+            release_date: element.release_date || element.ivi_pseudo_release_date || element.ivi_release_date,
+            number_of_seasons: seasonsCount(element).seasons,
+            number_of_episodes: seasonsCount(element).episodes
+          };
+        }
+
+        oncomplite(data);
+      }, onerror);
+    }
+
+    function actor$1(params, oncomplite, onerror) {
+      entities('person/' + (params.url || params.id), function (json, all) {
+        var data = {};
+
+        if (all.pages && all.pages.personPage) {
+          var element = all.pages.personPage.person.info,
+              images = Arrays.getValues(element.images || {});
+          data.actor = {
+            name: element.name,
+            biography: element.bio,
+            img: images.length ? images[0].path : '',
+            place_of_birth: element.eng_title,
+            birthday: '----'
+          };
+          data.movie = similar(element, json);
+        }
+
+        oncomplite(data);
+      }, onerror);
+    }
+
+    function list$2(params, oncomplite, onerror) {
+      var fr = 20 * (params.page - 1),
+          to = fr + 19;
+      var url = baseurl + 'catalogue/v5/?genre=' + params.genres + '&from=' + fr + '&to=' + to + '&withpreorderable=true';
+      if (!params.genres) url = baseurl + 'collection/catalog/v5/?id=' + params.url + '&withpreorderable=true&fake=false&from=' + fr + '&to=' + to + '&sort=priority_in_collection&fields=id%2Civi_pseudo_release_date%2Corig_title%2Ctitle%2Cfake%2Cpreorderable%2Cavailable_in_countries%2Chru%2Cposter_originals%2Crating%2Ccontent_paid_types%2Ccompilation_hru%2Ckind%2Cadditional_data%2Crestrict%2Chd_available%2Chd_available_all%2C3d_available%2C3d_available_all%2Cuhd_available%2Cuhd_available_all%2Chdr10_available%2Chdr10_available_all%2Cdv_available%2Cdv_available_all%2Cfullhd_available%2Cfullhd_available_all%2Chdr10plus_available%2Chdr10plus_available_all%2Chas_5_1%2Cshields%2Cseasons_count%2Cseasons_content_total%2Cseasons%2Cepisodes%2Cseasons_description%2Civi_rating_10_count%2Cseasons_extra_info%2Ccount%2Cgenres%2Cyears%2Civi_rating_10%2Crating%2Ccountry%2Cduration_minutes%2Cyear&app_version=870';
+      network$4["native"](url, function (json) {
+        var items = [];
+
+        if (json.result) {
+          json.result.forEach(function (element) {
+            items.push(tocard(element));
+          });
+        }
+
+        oncomplite({
+          results: items,
+          total_pages: Math.round(json.count / 20)
+        });
+      }, onerror);
+    }
+
+    function category$1(params, oncomplite, onerror) {
+      var status$1 = new status(params.url == 'movie' ? 4 : 5);
+
+      status$1.onComplite = function () {
+        var fulldata = [];
+        if (status$1.data["new"] && status$1.data["new"].results.length) fulldata.push(status$1.data["new"]);
+        if (status$1.data.best && status$1.data.best.results.length) fulldata.push(status$1.data.best);
+        if (status$1.data.rus && status$1.data.rus.results.length) fulldata.push(status$1.data.rus);
+        if (status$1.data.popular && status$1.data.popular.results.length) fulldata.push(status$1.data.popular);
+        if (status$1.data.ivi && status$1.data.ivi.results.length) fulldata.push(status$1.data.ivi);
+        if (fulldata.length) oncomplite(fulldata);else onerror();
+      };
+
+      var append = function append(title, name, id, json) {
+        json.title = title;
+        json.url = id;
+        status$1.append(name, json);
+      };
+
+      if (params.url == 'movie') {
+        collections$1({
+          id: '8258'
+        }, function (json) {
+          append('Премьеры фильмов', 'new', '8258', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '942'
+        }, function (json) {
+          append('Лучшие фильмы', 'best', '942', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '11512'
+        }, function (json) {
+          append('Популярное сейчас', 'popular', '11512', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '8448'
+        }, function (json) {
+          append('Выбор ivi', 'ivi', '8448', {
+            results: json
+          });
+        });
+      } else {
+        collections$1({
+          id: '1984'
+        }, function (json) {
+          append('Новинки', 'new', '1984', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '1712'
+        }, function (json) {
+          append('Зарубежные', 'best', '1712', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '935'
+        }, function (json) {
+          append('Зарубежные', 'rus', '935', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '12839'
+        }, function (json) {
+          append('Популярное сейчас', 'popular', '12839', {
+            results: json
+          });
+        });
+        collections$1({
+          id: '1057'
+        }, function (json) {
+          append('Выбор ivi', 'ivi', '1057', {
+            results: json
+          });
+        });
+      }
+    }
+
+    function main$3(params, oncomplite, onerror) {
+      var status$1 = new status(13);
+
+      status$1.onComplite = function () {
+        var fulldata = [];
+
+        for (var i = 1; i <= 13; i++) {
+          var n = i + '';
+          if (status$1.data[n] && status$1.data[n].results.length) fulldata.push(status$1.data[n]);
+        }
+
+        if (fulldata.length) oncomplite(fulldata);else onerror();
+      };
+
+      var append = function append(title, name, id, json) {
+        json.title = title;
+        json.url = id;
+        status$1.append(name, json);
+      };
+
+      collections$1({
+        id: '4655'
+      }, function (json) {
+        append('Рекомендуем вам посмотреть', '1', '4655', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '2460'
+      }, function (json) {
+        append('Мультики для всей семьи', '2', '2460', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '917'
+      }, function (json) {
+        append('Триллеры-ужасы', '3', '917', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '1327'
+      }, function (json) {
+        append('Приключенческие комедии', '4', '1327', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '1246'
+      }, function (json) {
+        append('Экранизации детективов', '5', '1246', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '1335'
+      }, function (json) {
+        append('Криминальные комедии', '6', '1335', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '1411'
+      }, function (json) {
+        append('Романтические драмы', '7', '1411', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '73'
+      }, function (json) {
+        append('Криминальные драмы', '8', '73', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '1413'
+      }, function (json) {
+        append('Фантастические драмы', '9', '1413', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '62'
+      }, function (json) {
+        append('Военные драмы', '10', '62', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '1418'
+      }, function (json) {
+        append('Мистические фильмы', '11', '1418', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '4495'
+      }, function (json) {
+        append('Зарубежные сериалы', '12', '4495', {
+          results: json
+        });
+      });
+      collections$1({
+        id: '217'
+      }, function (json) {
+        append('Исторические сериалы', '13', '217', {
+          results: json
+        });
+      });
+    }
+
+    function collections$1(params, oncomplite, onerror) {
+      var fr = 20 * (params.page - 1),
+          to = fr + 19;
+      var uri = baseurl + 'collections/v5/?app_version=870&from=' + fr + '&tags_exclude=goodmovies&to=' + to;
+      if (params.id) uri = baseurl + 'collection/catalog/v5/?id=' + params.id + '&withpreorderable=true&fake=false&from=' + fr + '&to=' + to + '&sort=priority_in_collection&fields=id%2Civi_pseudo_release_date%2Corig_title%2Ctitle%2Cfake%2Cpreorderable%2Cavailable_in_countries%2Chru%2Cposter_originals%2Crating%2Ccontent_paid_types%2Ccompilation_hru%2Ckind%2Cadditional_data%2Crestrict%2Chd_available%2Chd_available_all%2C3d_available%2C3d_available_all%2Cuhd_available%2Cuhd_available_all%2Chdr10_available%2Chdr10_available_all%2Cdv_available%2Cdv_available_all%2Cfullhd_available%2Cfullhd_available_all%2Chdr10plus_available%2Chdr10plus_available_all%2Chas_5_1%2Cshields%2Cseasons_count%2Cseasons_content_total%2Cseasons%2Cepisodes%2Cseasons_description%2Civi_rating_10_count%2Cseasons_extra_info%2Ccount%2Cgenres%2Cyears%2Civi_rating_10%2Crating%2Ccountry%2Cduration_minutes%2Cyear&app_version=870';
+      network$4["native"](uri, function (json) {
+        var items = [];
+
+        if (json.result) {
+          json.result.forEach(function (element) {
+            var item = {
+              id: element.id,
+              url: element.hru,
+              title: element.title,
+              poster: element.images && element.images.length ? element.images[0].path : 'https://www.ivi.ru/images/stubs/collection_preview_stub.jpeg'
+            };
+            if (params.id) item = tocard(element);
+            items.push(item);
+          });
+        }
+
+        oncomplite(items);
+      }, onerror);
+    }
+
+    var IVI = {
+      collections: collections$1,
+      full: full$1,
+      main: main$3,
+      actor: actor$1,
+      list: list$2,
+      category: category$1,
+      menu: menu$1,
+      seasons: seasons$1,
+      clear: network$4.clear
+    };
+
+    var sources = {
+      ivi: IVI,
+      okko: OKKO,
+      tmdb: TMDB
+    };
+    var network$3 = new create$p();
+
+    function source(params) {
+      return params.source ? sources[params.source] : sources.tmdb;
+    }
+
+    function main$2() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      source(params).main(params, oncomplite, onerror);
+    }
+
+    function category() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      source(params).category(params, oncomplite, onerror);
+    }
+
+    function full() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      source(params).full(params, oncomplite, onerror);
+    }
+
+    function search$1() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      TMDB.search(params, oncomplite, onerror);
+    }
+
+    function actor() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      source(params).actor(params, oncomplite, onerror);
+    }
+
+    function genres() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      TMDB.genres(params, oncomplite, onerror);
+    }
+
+    function company() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      TMDB.company(params, oncomplite, onerror);
+    }
+
+    function list$1() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      var onerror = arguments.length > 2 ? arguments[2] : undefined;
+      source(params).list(params, oncomplite, onerror);
+    }
+
+    function menu() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
+      source(params).menu(params, oncomplite);
+    }
+
+    function seasons(tv, from, oncomplite) {
+      source(tv).seasons(tv, from, oncomplite);
+    }
+
+    function collections(params, oncomplite, onerror) {
+      source(params).collections(params, oncomplite, onerror);
     }
 
     function favorite() {
@@ -1783,165 +2925,55 @@
       if (data.results.length) oncomplite(data);else onerror();
     }
 
-    function genres$1() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
-      var onerror = arguments.length > 2 ? arguments[2] : undefined;
-      var u = url$3('genre/movie/list', params);
-      network$3.silent(u, oncomplite, onerror);
-    }
-
-    function company() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
-      var onerror = arguments.length > 2 ? arguments[2] : undefined;
-      var u = url$3('company/' + params.id, params);
-      network$3.silent(u, oncomplite, onerror);
-    }
-
-    function loadSeasons(tv, seasons, oncomplite) {
-      var status = new Status(seasons.length);
-      status.onComplite = oncomplite;
-      seasons.forEach(function (season) {
-        get$3('tv/' + tv.id + '/season/' + season, {}, function (json) {
-          status.append('' + season, json);
-        }, status.error.bind(status));
-      });
-    }
-
-    function screensavers(oncomplite, onerror) {
-      get$3('trending/all/week', {
-        page: Math.round(Math.random() * 30)
-      }, function (json) {
-        oncomplite(json.results.filter(function (entry) {
-          return entry.backdrop_path;
-        }));
-      }, onerror);
-    }
-
     function relise(oncomplite, onerror) {
-      network$3["native"]('https://ndr.neocities.org/ndr.html', function (str) {
-        var math = str.replace(/\n|\r/g, '').match(new RegExp('data-releaseDate[^>]+>(.*?)<\/div>[ ]+<div class="block2', 'g'));
+      network$3["native"]('https://kinotrend.neocities.org/data.json', function (json) {
         var items = [];
 
-        if (math) {
-          math.slice(1).forEach(function (element) {
-            element = element.replace(/<img/g, '<imb');
-            var voite = element.match(/>([0-9|.]+)/);
-            var div = $('<div ' + element.replace('<div class="block2', '')),
-                item = {};
-            item.title = $('.moviename', div).text();
-            item.original_title = $('[itemprop="alternativeHeadline"]', div).text();
-            item.release_date = div.attr('data-releasedate');
-            item.poster = $('[itemprop="image"]', div).attr('src');
-            item.vote_average = voite ? parseFloat(voite[1]) : 0;
-            items.push(item);
+        if (json.movies) {
+          json.movies.forEach(function (element) {
+            items.push({
+              id: element.filmID,
+              title: element.nameRU,
+              original_title: element.nameOriginal,
+              release_date: element.premierDate,
+              poster: element.posterURL,
+              vote_average: element.ratingFloat
+            });
           });
         }
 
         oncomplite(items);
-      }, onerror, false, {
-        dataType: 'text'
-      });
-    }
-
-    function collections(params, oncomplite, onerror) {
-      var from = 20 * (params.page - 1),
-          to = from + 19;
-
-      if (params.source == 'ivi') {
-        var uri = 'https://api.ivi.ru/mobileapi/collections/v5/?app_version=870&from=' + from + '&tags_exclude=goodmovies&to=' + to;
-        if (params.id) uri = 'https://api.ivi.ru/mobileapi/collection/catalog/v5/?id=' + params.id + '&withpreorderable=true&fake=false&from=' + from + '&to=' + to + '&sort=priority_in_collection&fields=id%2Civi_pseudo_release_date%2Corig_title%2Ctitle%2Cfake%2Cpreorderable%2Cavailable_in_countries%2Chru%2Cposter_originals%2Crating%2Ccontent_paid_types%2Ccompilation_hru%2Ckind%2Cadditional_data%2Crestrict%2Chd_available%2Chd_available_all%2C3d_available%2C3d_available_all%2Cuhd_available%2Cuhd_available_all%2Chdr10_available%2Chdr10_available_all%2Cdv_available%2Cdv_available_all%2Cfullhd_available%2Cfullhd_available_all%2Chdr10plus_available%2Chdr10plus_available_all%2Chas_5_1%2Cshields%2Cseasons_count%2Cseasons_content_total%2Cseasons%2Cepisodes%2Cseasons_description%2Civi_rating_10_count%2Cseasons_extra_info%2Ccount%2Cgenres%2Cyears%2Civi_rating_10%2Crating%2Ccountry%2Cduration_minutes%2Cyear&app_version=870';
-        network$3["native"](uri, function (json) {
-          var items = [];
-
-          if (json.result) {
-            json.result.forEach(function (element) {
-              var item = {
-                id: element.id,
-                url: element.hru,
-                title: element.title,
-                poster: element.images && element.images.length ? element.images[0].path : 'https://www.ivi.ru/images/stubs/collection_preview_stub.jpeg'
-              };
-
-              if (params.url) {
-                item.original_title = element.orig_title;
-                item.release_date = element.ivi_pseudo_release_date;
-                item.vote_average = element.ivi_rating_10;
-                item.poster = element.poster_originals && element.poster_originals[0] ? element.poster_originals[0].path + '/300x456/' : '';
-              }
-
-              items.push(item);
-            });
-          }
-
-          oncomplite(items);
-        }, onerror);
-      } else if (params.source == 'okko') {
-        var _uri = 'https://ctx.playfamily.ru/screenapi/v1/noauth/collection/web/1?elementAlias=' + (params.url || 'collections_web') + '&elementType=COLLECTION&limit=20&offset=' + from + '&withInnerCollections=true&includeProductsForUpsale=false&filter=%7B%22sortType%22%3A%22RANK%22%2C%22sortOrder%22%3A%22ASC%22%2C%22useSvodFilter%22%3Afalse%2C%22genres%22%3A%5B%5D%2C%22yearsRange%22%3Anull%2C%22rating%22%3Anull%7D';
-
-        var findPoster = function findPoster(images) {
-          for (var index = 0; index < images.length; index++) {
-            var _img = images[index];
-            if (_img.imageType == 'PORTRAIT') return _img.url;
-          }
-
-          return '';
-        };
-
-        network$3["native"](_uri, function (json) {
-          var items = [];
-
-          if (json.element) {
-            json.element.collectionItems.items.forEach(function (elem) {
-              var element = elem.element;
-              var item = {
-                url: element.alias,
-                title: element.name,
-                poster: element.basicCovers && element.basicCovers.items.length ? element.basicCovers.items[0].url + '?width=300&scale=1&quality=80&mediaType=jpeg' : 'https://www.ivi.ru/images/stubs/collection_preview_stub.jpeg'
-              };
-
-              if (params.url) {
-                item.original_title = element.originalName;
-                item.release_date = '0000';
-                item.vote_average = 0;
-                item.poster = element.basicCovers && element.basicCovers.items.length ? (findPoster(element.basicCovers.items) || element.basicCovers.items[0].url) + '?width=300&scale=1&quality=80&mediaType=jpeg' : '';
-              }
-
-              items.push(item);
-            });
-          }
-
-          oncomplite(items);
-        }, onerror);
-      } else onerror();
+      }, onerror);
     }
 
     function clear$2() {
+      TMDB.clear();
+      OKKO.clear();
+      IVI.clear();
       network$3.clear();
     }
 
     var Api = {
       main: main$2,
-      img: img$1,
+      img: TMDB.img,
       full: full,
-      categoryFull: categoryFull,
-      genres: genres$1,
+      list: list$1,
+      genres: genres,
       category: category,
       search: search$1,
       clear: clear$2,
       company: company,
       actor: actor,
       favorite: favorite,
-      loadSeasons: loadSeasons,
-      screensavers: screensavers,
+      seasons: seasons,
+      screensavers: TMDB.screensavers,
       relise: relise,
-      collections: collections,
-      searchFilter: searchFilter
+      menu: menu,
+      collections: collections
     };
 
     var html$f = Template.get('selectbox');
-    var scroll$3 = new create$n({
+    var scroll$3 = new create$o({
       mask: true,
       over: true
     });
@@ -2019,7 +3051,7 @@
       hide: hide$1
     };
 
-    function create$m(data) {
+    function create$n(data) {
       var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       Arrays.extend(data, {
         title: data.name,
@@ -2043,6 +3075,17 @@
 
       if (params.card_collection) {
         card.addClass('card--collection');
+        card.find('.card__age').remove();
+      }
+
+      if (params.card_wide) {
+        card.addClass('card--wide');
+        data.poster = data.cover;
+        if (data.promo) card.append('<div class="card__promo"><div class="card__promo-text">' + data.promo + '</div></div>');
+        card.find('.card__age').remove();
+      }
+
+      if (data.release_year == '0000') {
         card.find('.card__age').remove();
       }
 
@@ -2092,6 +3135,7 @@
             Controller.toggle(enabled);
           },
           onSelect: function onSelect(a) {
+            if (params.object) data.source = params.object.source;
             Favorite.toggle(a.where, data);
 
             _this.favorite();
@@ -2117,7 +3161,7 @@
 
       this.visible = function () {
         if (this.visibled) return;
-        if (data.poster_path) img.src = Api.img(data.poster_path);else if (data.poster) img.src = data.poster;else img.src = './img/img_broken.svg';
+        if (data.poster_path) img.src = Api.img(data.poster_path);else if (data.poster) img.src = data.poster;else if (data.img) img.src = data.img;else img.src = './img/img_broken.svg';
         this.visibled = true;
       };
 
@@ -2184,6 +3228,648 @@
     var Layer = {
       update: update$5,
       init: init$b
+    };
+
+    /* eslint-disable no-bitwise -- used for calculations */
+
+    /* eslint-disable unicorn/prefer-query-selector -- aiming at
+      backward-compatibility */
+
+    /**
+    * StackBlur - a fast almost Gaussian Blur For Canvas
+    *
+    * In case you find this class useful - especially in commercial projects -
+    * I am not totally unhappy for a small donation to my PayPal account
+    * mario@quasimondo.de
+    *
+    * Or support me on flattr:
+    * {@link https://flattr.com/thing/72791/StackBlur-a-fast-almost-Gaussian-Blur-Effect-for-CanvasJavascript}.
+    *
+    * @module StackBlur
+    * @author Mario Klingemann
+    * Contact: mario@quasimondo.com
+    * Website: {@link http://www.quasimondo.com/StackBlurForCanvas/StackBlurDemo.html}
+    * Twitter: @quasimondo
+    *
+    * @copyright (c) 2010 Mario Klingemann
+    *
+    * Permission is hereby granted, free of charge, to any person
+    * obtaining a copy of this software and associated documentation
+    * files (the "Software"), to deal in the Software without
+    * restriction, including without limitation the rights to use,
+    * copy, modify, merge, publish, distribute, sublicense, and/or sell
+    * copies of the Software, and to permit persons to whom the
+    * Software is furnished to do so, subject to the following
+    * conditions:
+    *
+    * The above copyright notice and this permission notice shall be
+    * included in all copies or substantial portions of the Software.
+    *
+    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+    * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+    * OTHER DEALINGS IN THE SOFTWARE.
+    */
+    var mulTable = [512, 512, 456, 512, 328, 456, 335, 512, 405, 328, 271, 456, 388, 335, 292, 512, 454, 405, 364, 328, 298, 271, 496, 456, 420, 388, 360, 335, 312, 292, 273, 512, 482, 454, 428, 405, 383, 364, 345, 328, 312, 298, 284, 271, 259, 496, 475, 456, 437, 420, 404, 388, 374, 360, 347, 335, 323, 312, 302, 292, 282, 273, 265, 512, 497, 482, 468, 454, 441, 428, 417, 405, 394, 383, 373, 364, 354, 345, 337, 328, 320, 312, 305, 298, 291, 284, 278, 271, 265, 259, 507, 496, 485, 475, 465, 456, 446, 437, 428, 420, 412, 404, 396, 388, 381, 374, 367, 360, 354, 347, 341, 335, 329, 323, 318, 312, 307, 302, 297, 292, 287, 282, 278, 273, 269, 265, 261, 512, 505, 497, 489, 482, 475, 468, 461, 454, 447, 441, 435, 428, 422, 417, 411, 405, 399, 394, 389, 383, 378, 373, 368, 364, 359, 354, 350, 345, 341, 337, 332, 328, 324, 320, 316, 312, 309, 305, 301, 298, 294, 291, 287, 284, 281, 278, 274, 271, 268, 265, 262, 259, 257, 507, 501, 496, 491, 485, 480, 475, 470, 465, 460, 456, 451, 446, 442, 437, 433, 428, 424, 420, 416, 412, 408, 404, 400, 396, 392, 388, 385, 381, 377, 374, 370, 367, 363, 360, 357, 354, 350, 347, 344, 341, 338, 335, 332, 329, 326, 323, 320, 318, 315, 312, 310, 307, 304, 302, 299, 297, 294, 292, 289, 287, 285, 282, 280, 278, 275, 273, 271, 269, 267, 265, 263, 261, 259];
+    var shgTable = [9, 11, 12, 13, 13, 14, 14, 15, 15, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24];
+    /**
+     * @param {string|HTMLImageElement} img
+     * @param {string|HTMLCanvasElement} canvas
+     * @param {Float} radius
+     * @param {boolean} blurAlphaChannel
+     * @param {boolean} useOffset
+     * @param {boolean} skipStyles
+     * @returns {undefined}
+     */
+
+    function processImage(img, canvas, radius, blurAlphaChannel, useOffset, skipStyles) {
+      if (typeof img === 'string') {
+        img = document.getElementById(img);
+      }
+
+      if (!img || !('naturalWidth' in img)) {
+        return;
+      }
+
+      var dimensionType = useOffset ? 'offset' : 'natural';
+      var w = img[dimensionType + 'Width'];
+      var h = img[dimensionType + 'Height'];
+
+      if (typeof canvas === 'string') {
+        canvas = document.getElementById(canvas);
+      }
+
+      if (!canvas || !('getContext' in canvas)) {
+        return;
+      }
+
+      if (!skipStyles) {
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+      }
+
+      canvas.width = w;
+      canvas.height = h;
+      var context = canvas.getContext('2d');
+      context.clearRect(0, 0, w, h);
+      context.drawImage(img, 0, 0, img.naturalWidth, img.naturalHeight, 0, 0, w, h);
+
+      if (isNaN(radius) || radius < 1) {
+        return;
+      }
+
+      if (blurAlphaChannel) {
+        processCanvasRGBA(canvas, 0, 0, w, h, radius);
+      } else {
+        processCanvasRGB(canvas, 0, 0, w, h, radius);
+      }
+    }
+    /**
+     * @param {string|HTMLCanvasElement} canvas
+     * @param {Integer} topX
+     * @param {Integer} topY
+     * @param {Integer} width
+     * @param {Integer} height
+     * @throws {Error|TypeError}
+     * @returns {ImageData} See {@link https://html.spec.whatwg.org/multipage/canvas.html#imagedata}
+     */
+
+
+    function getImageDataFromCanvas(canvas, topX, topY, width, height) {
+      if (typeof canvas === 'string') {
+        canvas = document.getElementById(canvas);
+      }
+
+      if (!canvas || _typeof(canvas) !== 'object' || !('getContext' in canvas)) {
+        throw new TypeError('Expecting canvas with `getContext` method ' + 'in processCanvasRGB(A) calls!');
+      }
+
+      var context = canvas.getContext('2d');
+
+      try {
+        return context.getImageData(topX, topY, width, height);
+      } catch (e) {
+        throw new Error('unable to access image data: ' + e);
+      }
+    }
+    /**
+     * @param {HTMLCanvasElement} canvas
+     * @param {Integer} topX
+     * @param {Integer} topY
+     * @param {Integer} width
+     * @param {Integer} height
+     * @param {Float} radius
+     * @returns {undefined}
+     */
+
+
+    function processCanvasRGBA(canvas, topX, topY, width, height, radius) {
+      if (isNaN(radius) || radius < 1) {
+        return;
+      }
+
+      radius |= 0;
+      var imageData = getImageDataFromCanvas(canvas, topX, topY, width, height);
+      imageData = processImageDataRGBA(imageData, topX, topY, width, height, radius);
+      canvas.getContext('2d').putImageData(imageData, topX, topY);
+    }
+    /**
+     * @param {ImageData} imageData
+     * @param {Integer} topX
+     * @param {Integer} topY
+     * @param {Integer} width
+     * @param {Integer} height
+     * @param {Float} radius
+     * @returns {ImageData}
+     */
+
+
+    function processImageDataRGBA(imageData, topX, topY, width, height, radius) {
+      var pixels = imageData.data;
+      var div = 2 * radius + 1; // const w4 = width << 2;
+
+      var widthMinus1 = width - 1;
+      var heightMinus1 = height - 1;
+      var radiusPlus1 = radius + 1;
+      var sumFactor = radiusPlus1 * (radiusPlus1 + 1) / 2;
+      var stackStart = new BlurStack();
+      var stack = stackStart;
+      var stackEnd;
+
+      for (var i = 1; i < div; i++) {
+        stack = stack.next = new BlurStack();
+
+        if (i === radiusPlus1) {
+          stackEnd = stack;
+        }
+      }
+
+      stack.next = stackStart;
+      var stackIn = null,
+          stackOut = null,
+          yw = 0,
+          yi = 0;
+      var mulSum = mulTable[radius];
+      var shgSum = shgTable[radius];
+
+      for (var y = 0; y < height; y++) {
+        stack = stackStart;
+        var pr = pixels[yi],
+            pg = pixels[yi + 1],
+            pb = pixels[yi + 2],
+            pa = pixels[yi + 3];
+
+        for (var _i = 0; _i < radiusPlus1; _i++) {
+          stack.r = pr;
+          stack.g = pg;
+          stack.b = pb;
+          stack.a = pa;
+          stack = stack.next;
+        }
+
+        var rInSum = 0,
+            gInSum = 0,
+            bInSum = 0,
+            aInSum = 0,
+            rOutSum = radiusPlus1 * pr,
+            gOutSum = radiusPlus1 * pg,
+            bOutSum = radiusPlus1 * pb,
+            aOutSum = radiusPlus1 * pa,
+            rSum = sumFactor * pr,
+            gSum = sumFactor * pg,
+            bSum = sumFactor * pb,
+            aSum = sumFactor * pa;
+
+        for (var _i2 = 1; _i2 < radiusPlus1; _i2++) {
+          var p = yi + ((widthMinus1 < _i2 ? widthMinus1 : _i2) << 2);
+          var r = pixels[p],
+              g = pixels[p + 1],
+              b = pixels[p + 2],
+              a = pixels[p + 3];
+          var rbs = radiusPlus1 - _i2;
+          rSum += (stack.r = r) * rbs;
+          gSum += (stack.g = g) * rbs;
+          bSum += (stack.b = b) * rbs;
+          aSum += (stack.a = a) * rbs;
+          rInSum += r;
+          gInSum += g;
+          bInSum += b;
+          aInSum += a;
+          stack = stack.next;
+        }
+
+        stackIn = stackStart;
+        stackOut = stackEnd;
+
+        for (var x = 0; x < width; x++) {
+          var paInitial = aSum * mulSum >> shgSum;
+          pixels[yi + 3] = paInitial;
+
+          if (paInitial !== 0) {
+            var _a2 = 255 / paInitial;
+
+            pixels[yi] = (rSum * mulSum >> shgSum) * _a2;
+            pixels[yi + 1] = (gSum * mulSum >> shgSum) * _a2;
+            pixels[yi + 2] = (bSum * mulSum >> shgSum) * _a2;
+          } else {
+            pixels[yi] = pixels[yi + 1] = pixels[yi + 2] = 0;
+          }
+
+          rSum -= rOutSum;
+          gSum -= gOutSum;
+          bSum -= bOutSum;
+          aSum -= aOutSum;
+          rOutSum -= stackIn.r;
+          gOutSum -= stackIn.g;
+          bOutSum -= stackIn.b;
+          aOutSum -= stackIn.a;
+
+          var _p = x + radius + 1;
+
+          _p = yw + (_p < widthMinus1 ? _p : widthMinus1) << 2;
+          rInSum += stackIn.r = pixels[_p];
+          gInSum += stackIn.g = pixels[_p + 1];
+          bInSum += stackIn.b = pixels[_p + 2];
+          aInSum += stackIn.a = pixels[_p + 3];
+          rSum += rInSum;
+          gSum += gInSum;
+          bSum += bInSum;
+          aSum += aInSum;
+          stackIn = stackIn.next;
+          var _stackOut = stackOut,
+              _r = _stackOut.r,
+              _g = _stackOut.g,
+              _b = _stackOut.b,
+              _a = _stackOut.a;
+          rOutSum += _r;
+          gOutSum += _g;
+          bOutSum += _b;
+          aOutSum += _a;
+          rInSum -= _r;
+          gInSum -= _g;
+          bInSum -= _b;
+          aInSum -= _a;
+          stackOut = stackOut.next;
+          yi += 4;
+        }
+
+        yw += width;
+      }
+
+      for (var _x = 0; _x < width; _x++) {
+        yi = _x << 2;
+
+        var _pr = pixels[yi],
+            _pg = pixels[yi + 1],
+            _pb = pixels[yi + 2],
+            _pa = pixels[yi + 3],
+            _rOutSum = radiusPlus1 * _pr,
+            _gOutSum = radiusPlus1 * _pg,
+            _bOutSum = radiusPlus1 * _pb,
+            _aOutSum = radiusPlus1 * _pa,
+            _rSum = sumFactor * _pr,
+            _gSum = sumFactor * _pg,
+            _bSum = sumFactor * _pb,
+            _aSum = sumFactor * _pa;
+
+        stack = stackStart;
+
+        for (var _i3 = 0; _i3 < radiusPlus1; _i3++) {
+          stack.r = _pr;
+          stack.g = _pg;
+          stack.b = _pb;
+          stack.a = _pa;
+          stack = stack.next;
+        }
+
+        var yp = width;
+        var _gInSum = 0,
+            _bInSum = 0,
+            _aInSum = 0,
+            _rInSum = 0;
+
+        for (var _i4 = 1; _i4 <= radius; _i4++) {
+          yi = yp + _x << 2;
+
+          var _rbs = radiusPlus1 - _i4;
+
+          _rSum += (stack.r = _pr = pixels[yi]) * _rbs;
+          _gSum += (stack.g = _pg = pixels[yi + 1]) * _rbs;
+          _bSum += (stack.b = _pb = pixels[yi + 2]) * _rbs;
+          _aSum += (stack.a = _pa = pixels[yi + 3]) * _rbs;
+          _rInSum += _pr;
+          _gInSum += _pg;
+          _bInSum += _pb;
+          _aInSum += _pa;
+          stack = stack.next;
+
+          if (_i4 < heightMinus1) {
+            yp += width;
+          }
+        }
+
+        yi = _x;
+        stackIn = stackStart;
+        stackOut = stackEnd;
+
+        for (var _y = 0; _y < height; _y++) {
+          var _p2 = yi << 2;
+
+          pixels[_p2 + 3] = _pa = _aSum * mulSum >> shgSum;
+
+          if (_pa > 0) {
+            _pa = 255 / _pa;
+            pixels[_p2] = (_rSum * mulSum >> shgSum) * _pa;
+            pixels[_p2 + 1] = (_gSum * mulSum >> shgSum) * _pa;
+            pixels[_p2 + 2] = (_bSum * mulSum >> shgSum) * _pa;
+          } else {
+            pixels[_p2] = pixels[_p2 + 1] = pixels[_p2 + 2] = 0;
+          }
+
+          _rSum -= _rOutSum;
+          _gSum -= _gOutSum;
+          _bSum -= _bOutSum;
+          _aSum -= _aOutSum;
+          _rOutSum -= stackIn.r;
+          _gOutSum -= stackIn.g;
+          _bOutSum -= stackIn.b;
+          _aOutSum -= stackIn.a;
+          _p2 = _x + ((_p2 = _y + radiusPlus1) < heightMinus1 ? _p2 : heightMinus1) * width << 2;
+          _rSum += _rInSum += stackIn.r = pixels[_p2];
+          _gSum += _gInSum += stackIn.g = pixels[_p2 + 1];
+          _bSum += _bInSum += stackIn.b = pixels[_p2 + 2];
+          _aSum += _aInSum += stackIn.a = pixels[_p2 + 3];
+          stackIn = stackIn.next;
+          _rOutSum += _pr = stackOut.r;
+          _gOutSum += _pg = stackOut.g;
+          _bOutSum += _pb = stackOut.b;
+          _aOutSum += _pa = stackOut.a;
+          _rInSum -= _pr;
+          _gInSum -= _pg;
+          _bInSum -= _pb;
+          _aInSum -= _pa;
+          stackOut = stackOut.next;
+          yi += width;
+        }
+      }
+
+      return imageData;
+    }
+    /**
+     * @param {HTMLCanvasElement} canvas
+     * @param {Integer} topX
+     * @param {Integer} topY
+     * @param {Integer} width
+     * @param {Integer} height
+     * @param {Float} radius
+     * @returns {undefined}
+     */
+
+
+    function processCanvasRGB(canvas, topX, topY, width, height, radius) {
+      if (isNaN(radius) || radius < 1) {
+        return;
+      }
+
+      radius |= 0;
+      var imageData = getImageDataFromCanvas(canvas, topX, topY, width, height);
+      imageData = processImageDataRGB(imageData, topX, topY, width, height, radius);
+      canvas.getContext('2d').putImageData(imageData, topX, topY);
+    }
+    /**
+     * @param {ImageData} imageData
+     * @param {Integer} topX
+     * @param {Integer} topY
+     * @param {Integer} width
+     * @param {Integer} height
+     * @param {Float} radius
+     * @returns {ImageData}
+     */
+
+
+    function processImageDataRGB(imageData, topX, topY, width, height, radius) {
+      var pixels = imageData.data;
+      var div = 2 * radius + 1; // const w4 = width << 2;
+
+      var widthMinus1 = width - 1;
+      var heightMinus1 = height - 1;
+      var radiusPlus1 = radius + 1;
+      var sumFactor = radiusPlus1 * (radiusPlus1 + 1) / 2;
+      var stackStart = new BlurStack();
+      var stack = stackStart;
+      var stackEnd;
+
+      for (var i = 1; i < div; i++) {
+        stack = stack.next = new BlurStack();
+
+        if (i === radiusPlus1) {
+          stackEnd = stack;
+        }
+      }
+
+      stack.next = stackStart;
+      var stackIn = null;
+      var stackOut = null;
+      var mulSum = mulTable[radius];
+      var shgSum = shgTable[radius];
+      var p, rbs;
+      var yw = 0,
+          yi = 0;
+
+      for (var y = 0; y < height; y++) {
+        var pr = pixels[yi],
+            pg = pixels[yi + 1],
+            pb = pixels[yi + 2],
+            rOutSum = radiusPlus1 * pr,
+            gOutSum = radiusPlus1 * pg,
+            bOutSum = radiusPlus1 * pb,
+            rSum = sumFactor * pr,
+            gSum = sumFactor * pg,
+            bSum = sumFactor * pb;
+        stack = stackStart;
+
+        for (var _i5 = 0; _i5 < radiusPlus1; _i5++) {
+          stack.r = pr;
+          stack.g = pg;
+          stack.b = pb;
+          stack = stack.next;
+        }
+
+        var rInSum = 0,
+            gInSum = 0,
+            bInSum = 0;
+
+        for (var _i6 = 1; _i6 < radiusPlus1; _i6++) {
+          p = yi + ((widthMinus1 < _i6 ? widthMinus1 : _i6) << 2);
+          rSum += (stack.r = pr = pixels[p]) * (rbs = radiusPlus1 - _i6);
+          gSum += (stack.g = pg = pixels[p + 1]) * rbs;
+          bSum += (stack.b = pb = pixels[p + 2]) * rbs;
+          rInSum += pr;
+          gInSum += pg;
+          bInSum += pb;
+          stack = stack.next;
+        }
+
+        stackIn = stackStart;
+        stackOut = stackEnd;
+
+        for (var x = 0; x < width; x++) {
+          pixels[yi] = rSum * mulSum >> shgSum;
+          pixels[yi + 1] = gSum * mulSum >> shgSum;
+          pixels[yi + 2] = bSum * mulSum >> shgSum;
+          rSum -= rOutSum;
+          gSum -= gOutSum;
+          bSum -= bOutSum;
+          rOutSum -= stackIn.r;
+          gOutSum -= stackIn.g;
+          bOutSum -= stackIn.b;
+          p = yw + ((p = x + radius + 1) < widthMinus1 ? p : widthMinus1) << 2;
+          rInSum += stackIn.r = pixels[p];
+          gInSum += stackIn.g = pixels[p + 1];
+          bInSum += stackIn.b = pixels[p + 2];
+          rSum += rInSum;
+          gSum += gInSum;
+          bSum += bInSum;
+          stackIn = stackIn.next;
+          rOutSum += pr = stackOut.r;
+          gOutSum += pg = stackOut.g;
+          bOutSum += pb = stackOut.b;
+          rInSum -= pr;
+          gInSum -= pg;
+          bInSum -= pb;
+          stackOut = stackOut.next;
+          yi += 4;
+        }
+
+        yw += width;
+      }
+
+      for (var _x2 = 0; _x2 < width; _x2++) {
+        yi = _x2 << 2;
+
+        var _pr2 = pixels[yi],
+            _pg2 = pixels[yi + 1],
+            _pb2 = pixels[yi + 2],
+            _rOutSum2 = radiusPlus1 * _pr2,
+            _gOutSum2 = radiusPlus1 * _pg2,
+            _bOutSum2 = radiusPlus1 * _pb2,
+            _rSum2 = sumFactor * _pr2,
+            _gSum2 = sumFactor * _pg2,
+            _bSum2 = sumFactor * _pb2;
+
+        stack = stackStart;
+
+        for (var _i7 = 0; _i7 < radiusPlus1; _i7++) {
+          stack.r = _pr2;
+          stack.g = _pg2;
+          stack.b = _pb2;
+          stack = stack.next;
+        }
+
+        var _rInSum2 = 0,
+            _gInSum2 = 0,
+            _bInSum2 = 0;
+
+        for (var _i8 = 1, yp = width; _i8 <= radius; _i8++) {
+          yi = yp + _x2 << 2;
+          _rSum2 += (stack.r = _pr2 = pixels[yi]) * (rbs = radiusPlus1 - _i8);
+          _gSum2 += (stack.g = _pg2 = pixels[yi + 1]) * rbs;
+          _bSum2 += (stack.b = _pb2 = pixels[yi + 2]) * rbs;
+          _rInSum2 += _pr2;
+          _gInSum2 += _pg2;
+          _bInSum2 += _pb2;
+          stack = stack.next;
+
+          if (_i8 < heightMinus1) {
+            yp += width;
+          }
+        }
+
+        yi = _x2;
+        stackIn = stackStart;
+        stackOut = stackEnd;
+
+        for (var _y2 = 0; _y2 < height; _y2++) {
+          p = yi << 2;
+          pixels[p] = _rSum2 * mulSum >> shgSum;
+          pixels[p + 1] = _gSum2 * mulSum >> shgSum;
+          pixels[p + 2] = _bSum2 * mulSum >> shgSum;
+          _rSum2 -= _rOutSum2;
+          _gSum2 -= _gOutSum2;
+          _bSum2 -= _bOutSum2;
+          _rOutSum2 -= stackIn.r;
+          _gOutSum2 -= stackIn.g;
+          _bOutSum2 -= stackIn.b;
+          p = _x2 + ((p = _y2 + radiusPlus1) < heightMinus1 ? p : heightMinus1) * width << 2;
+          _rSum2 += _rInSum2 += stackIn.r = pixels[p];
+          _gSum2 += _gInSum2 += stackIn.g = pixels[p + 1];
+          _bSum2 += _bInSum2 += stackIn.b = pixels[p + 2];
+          stackIn = stackIn.next;
+          _rOutSum2 += _pr2 = stackOut.r;
+          _gOutSum2 += _pg2 = stackOut.g;
+          _bOutSum2 += _pb2 = stackOut.b;
+          _rInSum2 -= _pr2;
+          _gInSum2 -= _pg2;
+          _bInSum2 -= _pb2;
+          stackOut = stackOut.next;
+          yi += width;
+        }
+      }
+
+      return imageData;
+    }
+    /**
+     *
+     */
+
+
+    var BlurStack =
+    /**
+     * Set properties.
+     */
+    function BlurStack() {
+      _classCallCheck(this, BlurStack);
+
+      this.r = 0;
+      this.g = 0;
+      this.b = 0;
+      this.a = 0;
+      this.next = null;
+    };
+    var Blur = {
+      /**
+        * @function module:StackBlur.image
+        * @see module:StackBlur~processImage
+        */
+      image: processImage,
+
+      /**
+        * @function module:StackBlur.canvasRGBA
+        * @see module:StackBlur~processCanvasRGBA
+        */
+      canvasRGBA: processCanvasRGBA,
+
+      /**
+        * @function module:StackBlur.canvasRGB
+        * @see module:StackBlur~processCanvasRGB
+        */
+      canvasRGB: processCanvasRGB,
+
+      /**
+        * @function module:StackBlur.imageDataRGBA
+        * @see module:StackBlur~processImageDataRGBA
+        */
+      imageDataRGBA: processImageDataRGBA,
+
+      /**
+        * @function module:StackBlur.imageDataRGB
+        * @see module:StackBlur~processImageDataRGB
+        */
+      imageDataRGB: processImageDataRGB
     };
 
     var canvas = document.createElement('canvas'),
@@ -2350,7 +4036,13 @@
       return [Math.round(r), Math.round(g), Math.round(b)];
     }
 
+    function reset(width, height) {
+      canvas.width = width;
+      canvas.height = height;
+    }
+
     function get$2(img) {
+      reset(30, 17);
       var ratio = Math.max(canvas.width / img.width, canvas.height / img.height);
       var nw = img.width * ratio,
           nh = img.height * ratio;
@@ -2358,12 +4050,26 @@
       return extract(ctx.getImageData(0, 0, canvas.width, canvas.height));
     }
 
+    function blur$1(img) {
+      reset(200, 130);
+      var ratio = Math.max(canvas.width / img.width, canvas.height / img.height);
+      var nw = img.width * ratio,
+          nh = img.height * ratio;
+      ctx.drawImage(img, -(nw - canvas.width) / 2, -(nh - canvas.height) / 2, nw, nh);
+      Blur.canvasRGB(canvas, 0, 0, canvas.width, canvas.height, 80);
+      var nimg = new Image();
+      nimg.src = canvas.toDataURL();
+      return nimg;
+    }
+
     var Color = {
       get: get$2,
       extract: extract,
       palette: palette,
       rgba: rgba,
-      tone: tone
+      blur: blur$1,
+      tone: tone,
+      rgbToHsl: rgbToHsl
     };
 
     var html$e = $("\n    <div class=\"background\">\n        <canvas class=\"background__one\"></canvas>\n        <canvas class=\"background__two\"></canvas>\n    </div>\n");
@@ -2380,6 +4086,11 @@
     var view$1 = 'one';
     var src = '';
     var loaded$1 = {};
+    var bokeh = {
+      c: [],
+      h: [],
+      d: true
+    };
     var timer$5;
 
     function bg() {
@@ -2399,24 +4110,29 @@
       item.canvas[0].height = window.innerHeight;
       var palette = data.palette;
       var type = Storage.get('background_type', 'complex');
+      blur(data, item, function () {
+        if (type == 'complex' && bokeh.d) {
+          var bright = Color.rgbToHsl(palette.average[0], palette.average[1], palette.average[2]);
+          item.ctx.globalAlpha = bright[2] > 30 ? bright[2] / 100 * 0.6 : 0.4;
+          item.ctx.globalCompositeOperation = bright[2] > 30 ? 'color-dodge' : 'screen';
 
-      if (type !== 'poster') {
-        var angle = 90 * Math.PI / 180,
-            x2 = item.canvas[0].width * Math.cos(angle),
-            y2 = item.canvas[0].height * Math.sin(angle);
-        var gradient = item.ctx.createLinearGradient(0, 0, x2, y2);
-        gradient.addColorStop(1, Color.tone(palette.average, 0.7, 50, 80));
-        gradient.addColorStop(0, Color.rgba(palette.dark, 0.2));
-        item.ctx.fillStyle = gradient;
-        item.ctx.fillRect(0, 0, item.canvas[0].width, item.canvas[0].height);
-      } else {
-        var ratio = Math.max(item.canvas[0].width / data.img.width, item.canvas[0].height / data.img.height);
-        item.ctx.globalAlpha = data.img.width > 1000 ? 0.3 : 0.6;
-        item.ctx.filter = data.img.width > 1000 ? '' : 'blur(14px)';
-        var nw = data.img.width * ratio,
-            nh = data.img.height * ratio;
-        item.ctx.drawImage(data.img, -(nw - item.canvas[0].width) / 2, -(nh - item.canvas[0].height) / 2, nw, nh);
-        item.ctx.globalAlpha = 0.7;
+          for (var i = 0; i < 10; i++) {
+            var bp = Math.round(Math.random() * (bokeh.c.length - 1));
+            var im = bright[2] > 30 ? bokeh.h[bp] : bokeh.c[bp];
+            var xp = window.innerWidth * Math.random(),
+                yp = window.innerHeight / 2 * Math.random() + window.innerHeight / 2,
+                sz = Math.max(window.innerHeight / 8, window.innerHeight / 5 * Math.random()) * 0.01,
+                nw = im.width * sz,
+                nh = im.height * sz;
+
+            try {
+              item.ctx.drawImage(im, xp - nw / 2, yp - nw / 2, nw, nh);
+            } catch (e) {}
+          }
+        }
+
+        item.ctx.globalAlpha = type == 'poster' ? 0.7 : 0.6;
+        item.ctx.globalCompositeOperation = 'multiply';
         var angle = 90 * Math.PI / 180,
             x2 = item.canvas[0].width * Math.cos(angle),
             y2 = item.canvas[0].height * Math.sin(angle);
@@ -2425,25 +4141,20 @@
         gradient.addColorStop(1, 'rgba(0,0,0,0)');
         item.ctx.fillStyle = gradient;
         item.ctx.fillRect(0, 0, item.canvas[0].width, item.canvas[0].height);
-      }
+        item.canvas.addClass('visible');
+      });
+    }
 
-      if (type == 'complex') {
-        for (var i = 0; i < 10; i++) {
-          var x = window.innerWidth * Math.random(),
-              y = window.innerHeight * Math.random(),
-              r = Math.max(window.innerHeight / 8, window.innerHeight / 5 * Math.random());
-          var circle = item.ctx.createRadialGradient(x, y, r, x, y, r * 2);
-          circle.addColorStop(0, Color.tone(i < 5 ? palette.average : palette.bright, 0.1));
-          circle.addColorStop(0.5, Color.tone(i < 5 ? palette.average : palette.bright, 0.05));
-          circle.addColorStop(1, Color.tone(i < 5 ? palette.average : palette.bright, 0));
-          item.ctx.beginPath();
-          item.ctx.fillStyle = circle;
-          item.ctx.arc(x, y, r * 2, 0, 2 * Math.PI);
-          item.ctx.fill();
-        }
-      }
-
-      item.canvas.addClass('visible');
+    function blur(data, item, complite) {
+      var img = data.img.width > 1000 ? data.img : Color.blur(data.img);
+      setTimeout(function () {
+        var ratio = Math.max(item.canvas[0].width / img.width, item.canvas[0].height / img.height);
+        var nw = img.width * ratio,
+            nh = img.height * ratio;
+        item.ctx.globalAlpha = data.img.width > 1000 ? 0.7 : 1;
+        item.ctx.drawImage(img, -(nw - item.canvas[0].width) / 2, -(nh - item.canvas[0].height) / 2, nw, nh);
+        complite();
+      }, 100);
     }
 
     function resize() {
@@ -2488,19 +4199,21 @@
 
     function change() {
       var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-      url = url.replace('https://', 'http://');
+      //url = url.replace('https://','http://')
       if (url == src) return;
+      bokeh.d = true;
       if (url) src = url;
       clearTimeout(timer$5);
       timer$5 = setTimeout(function () {
         load();
-      }, 2000);
+      }, 1000);
     }
 
     function immediately() {
       var url = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
       if (url) src = url;
       clearTimeout(timer$5);
+      bokeh.d = false;
       load();
     }
 
@@ -2512,6 +4225,21 @@
       Storage.listener.follow('change', function (event) {
         if (event.name == 'background' || event.name == 'background_type') resize();
       });
+      var u = Platform.any() ? 'https://lampa.mx/' : './';
+
+      for (var i = 1; i <= 6; i++) {
+        var im = new Image();
+        im.src = u + 'img/bokeh-h/' + i + '.png';
+        bokeh.h.push(im);
+      }
+
+      for (var _i = 1; _i <= 6; _i++) {
+        var _im = new Image();
+
+        _im.src = u + 'img/bokeh/' + _i + '.png';
+        bokeh.c.push(_im);
+      }
+
       $(window).on('resize', resize);
     }
 
@@ -2523,7 +4251,7 @@
       immediately: immediately
     };
 
-    function create$l() {
+    function create$m() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var card = Template.get('more');
 
@@ -2551,13 +4279,13 @@
       };
     }
 
-    function create$k(data) {
+    function create$l(data) {
       var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       var content = Template.get('items_line', {
         title: data.title
       });
       var body = content.find('.items-line__body');
-      var scroll = new create$n({
+      var scroll = new create$o({
         horizontal: true
       });
       var items = [];
@@ -2574,7 +4302,7 @@
 
       this.bind = function () {
         data.results.slice(0, 8).forEach(this.append.bind(this));
-        if (data.results.length >= 20 && !params.nomore) this.more();
+        if ((data.results.length >= 20 || data.more) && !params.nomore) this.more();
         this.visible();
         Layer.update();
       };
@@ -2584,7 +4312,7 @@
 
         if (element.ready) return;
         element.ready = true;
-        var card = new create$m(element, params);
+        var card = new create$n(element, params);
         card.create();
 
         card.onFocus = function (target, card_data) {
@@ -2607,12 +4335,14 @@
 
         card.onEnter = function (target, card_data) {
           if (_this.onEnter) _this.onEnter();
+          element.source = params.object.source;
           Activity$1.push({
-            url: '',
+            url: element.url,
             component: 'full',
             id: element.id,
             method: card_data.name ? 'tv' : 'movie',
-            card: element
+            card: element,
+            source: params.object.source
           });
         };
 
@@ -2623,7 +4353,7 @@
       this.more = function () {
         var _this2 = this;
 
-        more = new create$l(params);
+        more = new create$m(params);
         more.create();
 
         more.onFocus = function (target) {
@@ -2643,7 +4373,8 @@
               component: 'category_full',
               page: 2,
               genres: params.genres,
-              filter: data.filter
+              filter: data.filter,
+              source: params.object.source
             });
           }
         };
@@ -2696,7 +4427,7 @@
       };
     }
 
-    function create$j() {
+    function create$k() {
       var html;
 
       this.create = function () {
@@ -2704,10 +4435,12 @@
       };
 
       this.update = function (data) {
+        var create = (data.release_date || data.first_air_date).slice(0, 4);
         html.find('.info__title').text(data.title);
         html.find('.info__title-original').text(data.original_title);
-        html.find('.info__create').text((data.release_date || data.first_air_date).slice(0, 4));
+        html.find('.info__create').text(create).toggleClass('hide', create == '0000');
         html.find('.info__rate span').text(data.vote_average);
+        html.find('.info__rate').toggleClass('hide', data.vote_average == 0);
         html.find('.info__icon').removeClass('active');
         var status = Favorite.check(data);
         $('.icon--book', html).toggleClass('active', status.book);
@@ -2725,7 +4458,7 @@
       };
     }
 
-    function create$i() {
+    function create$j() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       Arrays.extend(params, {
         title: 'Здесь пусто',
@@ -2765,8 +4498,8 @@
     }
 
     function component$c(object) {
-      var network = new create$o();
-      var scroll = new create$n({
+      var network = new create$p();
+      var scroll = new create$o({
         mask: true,
         over: true
       });
@@ -2781,7 +4514,7 @@
 
         this.activity.loader(true);
         Api.main(object, this.build.bind(this), function () {
-          var empty = new create$i();
+          var empty = new create$j();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -2794,9 +4527,9 @@
 
       this.build = function (data) {
         lezydata = data;
-        info = new create$j();
+        info = new create$k();
         info.create();
-        scroll.render().addClass('layer--wheight').data('mheight', info.render());
+        scroll.minus(info.render());
         html.append(info.render());
         html.append(scroll.render());
         data.slice(0, 2).forEach(this.append.bind(this));
@@ -2807,10 +4540,12 @@
       this.append = function (element) {
         if (element.ready) return;
         element.ready = true;
-        var item = new create$k(element, {
+        var item = new create$l(element, {
           url: element.url,
           card_small: true,
-          genres: object.genres
+          genres: object.genres,
+          object: object,
+          card_wide: element.wide
         });
         item.create();
         item.onDown = this.down.bind(this);
@@ -2882,7 +4617,7 @@
     var html$d;
     var timer$4;
 
-    function create$h(id) {
+    function create$i(id) {
       html$d = $('<div class="youtube-player"><div id="youtube-player"></div><div id="youtube-player__progress" class="youtube-player__progress"></div></div>');
       $('body').append(html$d);
       player = new YT.Player('youtube-player', {
@@ -2919,7 +4654,7 @@
     }
 
     function play$2(id) {
-      create$h(id);
+      create$i(id);
       Controller.add('youtube', {
         invisible: true,
         toggle: function toggle() {},
@@ -2951,1295 +4686,7 @@
       play: play$2
     };
 
-    function create$g(data) {
-      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var html;
-      var last;
-
-      var follow = function follow() {
-        var status = Storage.get('parser_use');
-        html.find('.view--torrent').toggleClass('selector', status).toggleClass('hide', !status);
-      };
-
-      Arrays.extend(data.movie, {
-        title: data.movie.name,
-        original_title: data.movie.original_name,
-        runtime: 0,
-        img: data.movie.poster_path ? Api.img(data.movie.poster_path) : 'img/img_broken.svg'
-      });
-      Favorite.add('history', data.movie); // добовляем в историю просмотров
-
-      this.create = function () {
-        var _this = this;
-
-        var genres = (data.movie.genres || ['---']).slice(0, 3).map(function (a) {
-          return Utils.capitalizeFirstLetter(a.name);
-        }).join(', ');
-        html = Template.get('full_start', {
-          title: data.movie.title,
-          original_title: data.movie.original_title,
-          descr: Utils.substr(data.movie.overview, 420),
-          img: data.movie.img,
-          time: Utils.secondsToTime(data.movie.runtime * 60, true),
-          genres: genres,
-          r_themovie: data.movie.vote_average,
-          seasons: data.movie.number_of_seasons,
-          episodes: data.movie.number_of_episodes
-        });
-
-        if (data.movie.number_of_seasons) {
-          html.find('.is--serial').removeClass('hide');
-        }
-
-        html.find('.view--torrent').on('hover:enter', function () {
-          var query = data.movie.original_title;
-          if (Storage.field('parse_lang') == 'ru' || !/\w{3}/.test(query)) query = data.movie.title;
-          Activity$1.push({
-            url: '',
-            title: 'Торренты',
-            component: 'torrents',
-            search: query,
-            movie: data.movie,
-            page: 1
-          });
-        });
-        html.find('.info__icon').on('hover:enter', function (e) {
-          var type = $(e.target).data('type');
-          Favorite.toggle(type, params.object.card);
-
-          _this.favorite();
-        });
-
-        if (data.videos && data.videos.results.length) {
-          html.find('.view--trailer').on('hover:enter', function () {
-            var items = [];
-            data.videos.results.forEach(function (element) {
-              items.push({
-                title: element.name,
-                subtitle: element.official ? 'Официальный' : 'Неофициальный',
-                id: element.key
-              });
-            });
-            Select.show({
-              title: 'Трейлеры',
-              items: items,
-              onSelect: function onSelect(a) {
-                YouTube.play(a.id);
-              },
-              onBack: function onBack() {
-                Controller.toggle('full_start');
-              }
-            });
-          });
-        } else {
-          html.find('.view--trailer').remove();
-        }
-
-        Background.immediately(Utils.cardImgBackground(data.movie));
-        Storage.listener.follow('change', follow);
-        follow();
-        this.menu();
-        this.favorite();
-      };
-
-      this.menu = function () {
-        var _this2 = this;
-
-        html.find('.open--menu').on('hover:enter', function () {
-          var enabled = Controller.enabled().name;
-          var status = Favorite.check(params.object.card);
-          var menu = [];
-          menu.push({
-            title: status.book ? 'Убрать из закладок' : 'В закладки',
-            subtitle: 'Смотрите в меню (Закладки)',
-            where: 'book'
-          });
-          menu.push({
-            title: status.like ? 'Убрать из понравившихся' : 'Нравится',
-            subtitle: 'Смотрите в меню (Нравится)',
-            where: 'like'
-          });
-          menu.push({
-            title: status.wath ? 'Убрать из ожидаемых' : 'Смотреть позже',
-            subtitle: 'Смотрите в меню (Позже)',
-            where: 'wath'
-          });
-          Select.show({
-            title: 'Действие',
-            items: menu,
-            onBack: function onBack() {
-              Controller.toggle(enabled);
-            },
-            onSelect: function onSelect(a) {
-              Favorite.toggle(a.where, params.object.card);
-
-              _this2.favorite();
-
-              Controller.toggle(enabled);
-            }
-          });
-        });
-      };
-
-      this.favorite = function () {
-        var status = Favorite.check(params.object.card);
-        $('.info__icon', html).removeClass('active');
-        $('.icon--book', html).toggleClass('active', status.book);
-        $('.icon--like', html).toggleClass('active', status.like);
-        $('.icon--wath', html).toggleClass('active', status.wath);
-      };
-
-      this.toggle = function () {
-        var _this3 = this;
-
-        Controller.add('full_start', {
-          toggle: function toggle() {
-            Controller.collectionSet(_this3.render());
-            Controller.collectionFocus(last, _this3.render());
-          },
-          right: function right() {
-            Navigator.move('right');
-          },
-          left: function left() {
-            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
-          },
-          down: this.onDown,
-          up: this.onUp,
-          gone: function gone() {},
-          back: this.onBack
-        });
-        Controller.toggle('full_start');
-      };
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        last = null;
-        html.remove();
-        Storage.listener.remove('change', follow);
-      };
-    }
-
-    var html$c, active$3, scroll$2, last$3;
-
-    function open$2(params) {
-      active$3 = params;
-      html$c = Template.get('modal', {
-        title: params.title
-      });
-      html$c.on('click', function (e) {//if(!$(e.target).closest($('.modal__content',html)).length) window.history.back()
-      });
-      title$1(params.title);
-      html$c.toggleClass('modal--medium', params.size == 'medium' ? true : false);
-      html$c.toggleClass('modal--large', params.size == 'large' ? true : false);
-      scroll$2 = new create$n({
-        over: true,
-        mask: params.mask
-      });
-      html$c.find('.modal__body').append(scroll$2.render());
-      bind$2(params.html);
-      scroll$2.append(params.html);
-      $('body').append(html$c);
-      toggle$6();
-    }
-
-    function bind$2(where) {
-      where.find('.selector').on('hover:focus', function (e) {
-        last$3 = e.target;
-        scroll$2.update($(e.target));
-      }).on('hover:enter', function (e) {
-        if (active$3.onSelect) active$3.onSelect($(e.target));
-      });
-    }
-
-    function toggle$6() {
-      Controller.add('modal', {
-        invisible: true,
-        toggle: function toggle() {
-          Controller.collectionSet(scroll$2.render());
-          Controller.collectionFocus(last$3, scroll$2.render());
-        },
-        up: function up() {
-          Navigator.move('up');
-        },
-        down: function down() {
-          Navigator.move('down');
-        },
-        back: function back() {
-          if (active$3.onBack) active$3.onBack();
-        }
-      });
-      Controller.toggle('modal');
-    }
-
-    function update$3(new_html) {
-      last$3 = false;
-      scroll$2.clear();
-      scroll$2.append(new_html);
-      bind$2(new_html);
-      toggle$6();
-    }
-
-    function title$1(tit) {
-      html$c.find('.modal__title').text(tit);
-      html$c.toggleClass('modal--empty-title', tit ? false : true);
-    }
-
-    function destroy$6() {
-      last$3 = false;
-      scroll$2.destroy();
-      html$c.remove();
-    }
-
-    function close$1() {
-      destroy$6();
-    }
-
-    var Modal = {
-      open: open$2,
-      close: close$1,
-      update: update$3,
-      title: title$1
-    };
-
-    function create$f(data) {
-      var html, body, last;
-
-      this.create = function () {
-        html = Template.get('items_line', {
-          title: 'Подробно'
-        });
-        var genres = data.movie.genres.map(function (a) {
-          return '<div class="full-descr__tag selector" data-genre="' + a.id + '">' + a.name + '</div>';
-        }).join('');
-        var companies = data.movie.production_companies.map(function (a) {
-          return '<div class="full-descr__tag selector" data-company="' + a.id + '">' + a.name + '</div>';
-        }).join('');
-        var countries = data.movie.production_countries.map(function (a) {
-          return a.name;
-        }).join(', ');
-        body = Template.get('full_descr', {
-          text: data.movie.overview,
-          genres: genres,
-          companies: companies,
-          relise: data.movie.release_date || data.movie.first_air_date,
-          budget: '$ ' + Utils.numberWithSpaces(data.movie.budget || 0),
-          countries: countries
-        });
-        body.find('.selector').on('hover:enter', function (e) {
-          var item = $(e.target);
-
-          if (item.data('genre')) {
-            Activity$1.push({
-              url: 'movie',
-              component: 'category',
-              genres: item.data('genre')
-            });
-          }
-
-          if (item.data('company')) {
-            Api.clear();
-            Modal.open({
-              title: 'Компания',
-              html: Template.get('modal_loading'),
-              size: 'medium',
-              onBack: function onBack() {
-                Modal.close();
-                Controller.toggle('full_descr');
-              }
-            });
-            Api.company({
-              id: item.data('company')
-            }, function (json) {
-              if (Controller.enabled().name == 'modal') {
-                Arrays.empty(json, {
-                  homepage: '---',
-                  origin_country: '---',
-                  headquarters: '---'
-                });
-                Modal.update(Template.get('company', json));
-              }
-            }, function () {});
-          }
-        }).on('hover:focus', function (e) {
-          last = e.target;
-        });
-        html.find('.items-line__body').append(body);
-      };
-
-      this.toggle = function () {
-        var _this = this;
-
-        Controller.add('full_descr', {
-          toggle: function toggle() {
-            Controller.collectionSet(_this.render());
-            Controller.collectionFocus(last, _this.render());
-          },
-          right: function right() {
-            Navigator.move('right');
-          },
-          left: function left() {
-            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
-          },
-          down: function down() {
-            if (Navigator.canmove('down')) Navigator.move('down');else _this.onDown();
-          },
-          up: function up() {
-            if (Navigator.canmove('up')) Navigator.move('up');else _this.onUp();
-          },
-          gone: function gone() {},
-          back: this.onBack
-        });
-        Controller.toggle('full_descr');
-      };
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        body.remove();
-        html.remove();
-        html = null;
-        body = null;
-      };
-    }
-
-    function create$e(data) {
-      var html, scroll, last;
-
-      this.create = function () {
-        html = Template.get('items_line', {
-          title: 'Актеры'
-        });
-        scroll = new create$n({
-          horizontal: true
-        });
-        scroll.render().find('.scroll__body').addClass('full-actors');
-        html.find('.items-line__body').append(scroll.render());
-        data.actors.cast.forEach(function (element) {
-          var actor = Template.get('full_actor', {
-            firstname: element.name,
-            lastname: element.character,
-            img: element.profile_path ? Api.img(element.profile_path) : './img/actor.svg'
-          });
-          actor.on('hover:focus', function (e) {
-            last = e.target;
-            scroll.update($(e.target), true);
-          }).on('hover:enter', function () {
-            Activity$1.push({
-              url: '',
-              title: 'Актер',
-              component: 'actor',
-              id: element.id
-            });
-          });
-          scroll.append(actor);
-        });
-      };
-
-      this.toggle = function () {
-        var _this = this;
-
-        Controller.add('full_descr', {
-          toggle: function toggle() {
-            Controller.collectionSet(_this.render());
-            Controller.collectionFocus(last, _this.render());
-          },
-          right: function right() {
-            Navigator.move('right');
-          },
-          left: function left() {
-            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
-          },
-          down: this.onDown,
-          up: this.onUp,
-          gone: function gone() {},
-          back: this.onBack
-        });
-        Controller.toggle('full_descr');
-      };
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        scroll.destroy();
-        html.remove();
-        html = null;
-      };
-    }
-
-    var components$1 = {
-      start: create$g,
-      descr: create$f,
-      actors: create$e,
-      recomend: create$k,
-      simular: create$k
-    };
-
-    function component$b(object) {
-      var network = new create$o();
-      var scroll = new create$n({
-        mask: true,
-        over: true
-      });
-      var items = [];
-      var active = 0;
-      scroll.render().addClass('layer--wheight');
-
-      this.create = function () {
-        var _this = this;
-
-        this.activity.loader(true);
-        Api.full(object, function (data) {
-          _this.activity.loader(false);
-
-          if (data.movie) {
-            _this.build('start', data);
-
-            _this.build('descr', data);
-
-            if (data.actors && data.actors.cast && data.actors.cast.length) _this.build('actors', data);
-
-            if (data.recomend && data.recomend.results.length) {
-              data.recomend.title = 'Рекомендации';
-              data.recomend.noimage = true;
-
-              _this.build('recomend', data.recomend);
-            }
-
-            if (data.simular && data.simular.results.length) {
-              data.simular.title = 'Похожие';
-              data.simular.noimage = true;
-
-              _this.build('simular', data.simular);
-            }
-
-            Background.change(Utils.cardImgBackground(data.movie));
-
-            _this.activity.toggle();
-          }
-        }, function () {});
-        return this.render();
-      };
-
-      this.build = function (name, data) {
-        var item = new components$1[name](data, {
-          object: object
-        });
-        item.onDown = this.down;
-        item.onUp = this.up;
-        item.onBack = this.back;
-        item.create();
-        items.push(item);
-        scroll.append(item.render());
-      };
-
-      this.down = function () {
-        active++;
-        active = Math.min(active, items.length - 1);
-        items[active].toggle();
-        scroll.update(items[active].render());
-      };
-
-      this.up = function () {
-        active--;
-
-        if (active < 0) {
-          active = 0;
-          Controller.toggle('head');
-        } else {
-          items[active].toggle();
-        }
-
-        scroll.update(items[active].render());
-      };
-
-      this.back = function () {
-        Activity$1.backward();
-      };
-
-      this.start = function () {
-        Controller.add('content', {
-          toggle: function toggle() {
-            if (items.length) {
-              items[active].toggle();
-            }
-          }
-        });
-        Controller.toggle('content');
-      };
-
-      this.pause = function () {};
-
-      this.stop = function () {};
-
-      this.render = function () {
-        return scroll.render();
-      };
-
-      this.destroy = function () {
-        network.clear();
-        Arrays.destroy(items);
-        scroll.destroy();
-        items = null;
-        network = null;
-      };
-    }
-
-    function component$a(object) {
-      var network = new create$o();
-      var scroll = new create$n({
-        mask: true,
-        over: true
-      });
-      var items = [];
-      var html = $('<div></div>');
-      var body = $('<div class="category-full"></div>');
-      var total_pages = 0;
-      var info;
-      var last;
-      var waitload;
-
-      this.create = function () {
-        var _this = this;
-
-        this.activity.loader(true);
-        Api.categoryFull(object, this.build.bind(this), function () {
-          var empty = new create$i();
-          html.append(empty.render());
-          _this.start = empty.start;
-
-          _this.activity.loader(false);
-
-          _this.activity.toggle();
-        });
-        return this.render();
-      };
-
-      this.next = function () {
-        var _this2 = this;
-
-        if (waitload) return;
-
-        if (object.page < 15 && object.page < total_pages) {
-          waitload = true;
-          object.page++;
-          Api.categoryFull(object, function (result) {
-            _this2.append(result);
-
-            waitload = false;
-            Controller.enable('content');
-          }, function () {});
-        }
-      };
-
-      this.append = function (data) {
-        var _this3 = this;
-
-        data.results.forEach(function (element) {
-          var card = new create$m(element, {
-            card_category: true
-          });
-          card.create();
-
-          card.onFocus = function (target, card_data) {
-            last = target;
-            scroll.update(card.render(), true);
-            Background.change(Api.img(card_data.poster_path));
-            info.update(card_data);
-            var maxrow = Math.ceil(items.length / 7) - 1;
-            if (Math.ceil(items.indexOf(card) / 7) >= maxrow) _this3.next();
-          };
-
-          card.onEnter = function (target, card_data) {
-            Activity$1.push({
-              url: '',
-              component: 'full',
-              id: element.id,
-              method: card_data.name ? 'tv' : 'movie',
-              card: element
-            });
-          };
-
-          card.visible();
-          body.append(card.render());
-          items.push(card);
-        });
-      };
-
-      this.build = function (data) {
-        total_pages = data.total_pages;
-        info = new create$j();
-        info.create();
-        scroll.render().addClass('layer--wheight').data('mheight', info.render());
-        html.append(info.render());
-        html.append(scroll.render());
-        this.append(data);
-        scroll.append(body);
-        this.activity.loader(false);
-        this.activity.toggle();
-      };
-
-      this.start = function () {
-        Controller.add('content', {
-          toggle: function toggle() {
-            Controller.collectionSet(scroll.render());
-            Controller.collectionFocus(last || false, scroll.render());
-          },
-          left: function left() {
-            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
-          },
-          right: function right() {
-            Navigator.move('right');
-          },
-          up: function up() {
-            if (Navigator.canmove('up')) Navigator.move('up');else Controller.toggle('head');
-          },
-          down: function down() {
-            if (Navigator.canmove('down')) Navigator.move('down');
-          },
-          back: function back() {
-            Activity$1.backward();
-          }
-        });
-        Controller.toggle('content');
-      };
-
-      this.pause = function () {};
-
-      this.stop = function () {};
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        network.clear();
-        Arrays.destroy(items);
-        scroll.destroy();
-        if (info) info.destroy();
-        html.remove();
-        body.remove();
-        network = null;
-        items = null;
-        html = null;
-        body = null;
-        info = null;
-      };
-    }
-
-    function component$9(object) {
-      var network = new create$o();
-      var scroll = new create$n({
-        mask: true,
-        over: true
-      });
-      var items = [];
-      var html = $('<div></div>');
-      var active = 0;
-      var info;
-      var lezydata;
-
-      this.create = function () {
-        var _this = this;
-
-        this.activity.loader(true);
-        Api.category(object, this.build.bind(this), function () {
-          var empty = new create$i();
-          html.append(empty.render());
-          _this.start = empty.start;
-
-          _this.activity.loader(false);
-
-          _this.activity.toggle();
-        });
-        return this.render();
-      };
-
-      this.build = function (data) {
-        lezydata = data;
-        info = new create$j();
-        info.create();
-        scroll.render().addClass('layer--wheight').data('mheight', info.render());
-        html.append(info.render());
-        html.append(scroll.render());
-        data.slice(0, 2).forEach(this.append.bind(this));
-        this.activity.loader(false);
-        this.activity.toggle();
-      };
-
-      this.append = function (element) {
-        if (element.ready) return;
-        element.ready = true;
-        var item = new create$k(element, {
-          url: element.url,
-          card_small: true,
-          genres: object.genres
-        });
-        item.create();
-        item.onDown = this.down.bind(this);
-        item.onUp = this.up;
-        item.onFocus = info.update;
-        item.onBack = this.back;
-        scroll.append(item.render());
-        items.push(item);
-      };
-
-      this.back = function () {
-        Activity$1.backward();
-      };
-
-      this.down = function () {
-        active++;
-        active = Math.min(active, items.length - 1);
-        lezydata.slice(0, active + 2).forEach(this.append.bind(this));
-        items[active].toggle();
-        scroll.update(items[active].render());
-      };
-
-      this.up = function () {
-        active--;
-
-        if (active < 0) {
-          active = 0;
-          Controller.toggle('head');
-        } else {
-          items[active].toggle();
-        }
-
-        scroll.update(items[active].render());
-      };
-
-      this.start = function () {
-        Controller.add('content', {
-          toggle: function toggle() {
-            if (items.length) {
-              items[active].toggle();
-            }
-          },
-          back: this.back
-        });
-        Controller.toggle('content');
-      };
-
-      this.pause = function () {};
-
-      this.stop = function () {};
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        network.clear();
-        Arrays.destroy(items);
-        scroll.destroy();
-        if (info) info.destroy();
-        html.remove();
-        html = null;
-        network = null;
-        lezydata = null;
-      };
-    }
-
-    function create$d(data) {
-      var html;
-      var last;
-
-      this.create = function () {
-        html = Template.get('actor_start', {
-          name: data.name,
-          birthday: data.birthday,
-          descr: Utils.substr(data.biography, 1020),
-          img: Api.img(data.profile_path),
-          place: data.place_of_birth
-        });
-      };
-
-      this.toggle = function () {
-        var _this = this;
-
-        Controller.add('full_start', {
-          toggle: function toggle() {
-            Controller.collectionSet(_this.render());
-            Controller.collectionFocus(last, _this.render());
-          },
-          right: function right() {
-            Navigator.move('right');
-          },
-          left: function left() {
-            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
-          },
-          down: this.onDown,
-          up: this.onUp,
-          gone: function gone() {},
-          back: this.onBack
-        });
-        Controller.toggle('full_start');
-      };
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        last = null;
-        html.remove();
-      };
-    }
-
-    var components = {
-      start: create$d,
-      movie: create$k,
-      tv: create$k
-    };
-
-    function component$8(object) {
-      var network = new create$o();
-      var scroll = new create$n({
-        mask: true
-      });
-      var items = [];
-      var active = 0;
-      scroll.render().addClass('layer--wheight');
-
-      this.create = function () {
-        var _this = this;
-
-        this.activity.loader(true);
-        Api.actor(object, function (data) {
-          _this.activity.loader(false);
-
-          if (data.actor) {
-            _this.build('start', data.actor);
-
-            if (data.movie && data.movie.results.length) {
-              data.movie.title = 'Фильмы';
-              data.movie.noimage = true;
-
-              _this.build('movie', data.movie);
-            }
-
-            if (data.tv && data.tv.results.length) {
-              data.tv.title = 'Сериалы';
-              data.tv.noimage = true;
-
-              _this.build('tv', data.tv);
-            }
-
-            _this.activity.toggle();
-          }
-        }, function () {});
-        return this.render();
-      };
-
-      this.build = function (name, data) {
-        var item = new components[name](data, {
-          nomore: true
-        });
-        item.onDown = this.down;
-        item.onUp = this.up;
-        item.onBack = this.back;
-        item.create();
-        items.push(item);
-        scroll.append(item.render());
-      };
-
-      this.down = function () {
-        active++;
-        active = Math.min(active, items.length - 1);
-        items[active].toggle();
-        scroll.update(items[active].render());
-      };
-
-      this.up = function () {
-        active--;
-
-        if (active < 0) {
-          active = 0;
-          Controller.toggle('head');
-        } else {
-          items[active].toggle();
-        }
-
-        scroll.update(items[active].render());
-      };
-
-      this.back = function () {
-        Activity$1.backward();
-      };
-
-      this.start = function () {
-        Controller.add('content', {
-          toggle: function toggle() {
-            if (items.length) {
-              items[active].toggle();
-            }
-          }
-        });
-        Controller.toggle('content');
-      };
-
-      this.pause = function () {};
-
-      this.stop = function () {};
-
-      this.render = function () {
-        return scroll.render();
-      };
-
-      this.destroy = function () {
-        network.clear();
-        Arrays.destroy(items);
-        scroll.destroy();
-        items = null;
-        network = null;
-      };
-    }
-
-    function component$7(object) {
-      var network = new create$o();
-      var scroll = new create$n({
-        mask: true
-      });
-      var items = [];
-      var html = $('<div></div>');
-      var body = $('<div class="category-full"></div>');
-      var total_pages = 0;
-      var info;
-      var last;
-      var waitload;
-
-      this.create = function () {
-        var _this = this;
-
-        this.activity.loader(true);
-        Api.favorite(object, this.build.bind(this), function () {
-          var empty = new create$i();
-          html.append(empty.render());
-          _this.start = empty.start;
-
-          _this.activity.loader(false);
-
-          _this.activity.toggle();
-        });
-        return this.render();
-      };
-
-      this.next = function () {
-        var _this2 = this;
-
-        if (waitload) return;
-
-        if (object.page < 15 && object.page < total_pages) {
-          waitload = true;
-          object.page++;
-          Api.favorite(object, function (result) {
-            _this2.append(result);
-
-            waitload = false;
-            Controller.enable('content');
-          }, function () {});
-        }
-      };
-
-      this.append = function (data) {
-        var _this3 = this;
-
-        data.results.forEach(function (element) {
-          var card = new create$m(element, {
-            card_category: true
-          });
-          card.create();
-
-          card.onFocus = function (target, card_data) {
-            last = target;
-            scroll.update(card.render(), true);
-            Background.change(Utils.cardImgBackground(card_data));
-            info.update(card_data);
-            var maxrow = Math.ceil(items.length / 7) - 1;
-            if (Math.ceil(items.indexOf(card) / 7) >= maxrow) _this3.next();
-          };
-
-          card.onEnter = function (target, card_data) {
-            Activity$1.push({
-              url: '',
-              component: 'full',
-              id: element.id,
-              method: card_data.name ? 'tv' : 'movie',
-              card: element
-            });
-          };
-
-          card.visible();
-          body.append(card.render());
-          items.push(card);
-        });
-      };
-
-      this.build = function (data) {
-        total_pages = data.total_pages;
-        info = new create$j();
-        info.create();
-        scroll.render().addClass('layer--wheight').data('mheight', info.render());
-        html.append(info.render());
-        html.append(scroll.render());
-        this.append(data);
-        scroll.append(body);
-        this.activity.loader(false);
-        this.activity.toggle();
-      };
-
-      this.start = function () {
-        Controller.add('content', {
-          toggle: function toggle() {
-            Controller.collectionSet(scroll.render());
-            Controller.collectionFocus(last || false, scroll.render());
-          },
-          left: function left() {
-            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
-          },
-          right: function right() {
-            Navigator.move('right');
-          },
-          up: function up() {
-            if (Navigator.canmove('up')) Navigator.move('up');else Controller.toggle('head');
-          },
-          down: function down() {
-            if (Navigator.canmove('down')) Navigator.move('down');
-          },
-          back: function back() {
-            Activity$1.backward();
-          }
-        });
-        Controller.toggle('content');
-      };
-
-      this.pause = function () {};
-
-      this.stop = function () {};
-
-      this.render = function () {
-        return html;
-      };
-
-      this.destroy = function () {
-        network.clear();
-        Arrays.destroy(items);
-        scroll.destroy();
-        if (info) info.destroy();
-        html.remove();
-        body.remove();
-        network = null;
-        items = null;
-        html = null;
-        body = null;
-        info = null;
-      };
-    }
-
-    function create$c() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var html = Template.get('files', params.movie);
-      html.find('.selector').on('hover:enter', function () {
-        Activity$1.push({
-          url: '',
-          component: 'full',
-          id: params.movie.id,
-          method: params.movie.name ? 'tv' : 'movie',
-          card: params.movie
-        });
-      });
-
-      this.render = function () {
-        return html;
-      };
-
-      this.append = function (add) {
-        html.find('.files__body').append(add);
-      };
-
-      this.destroy = function () {
-        html.remove();
-        html = null;
-      };
-
-      this.clear = function () {
-        html.find('.files__body').empty();
-      };
-    }
-
-    function create$b() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var search = Template.get('search_box');
-      var input = '';
-
-      function destroy() {
-        keyboard.destroy();
-        search.remove();
-        search = null;
-      }
-
-      function back() {
-        destroy();
-        params.onBack();
-      }
-
-      function enter() {
-        destroy();
-        params.onSearch(input);
-      }
-
-      function change(text) {
-        input = text.trim();
-
-        if (input) {
-          search.find('.search-box__input').text(input);
-        } else {
-          search.find('.search-box__input').text('Введите текст...');
-        }
-      }
-
-      $('body').append(search);
-      var keyboard = new create$4({
-        layout: {
-          'en': ['1 2 3 4 5 6 7 8 9 0 {bksp}', 'q w e r t y u i o p', 'a s d f g h j k l', 'z x c v b n m', '{RU} {space} {enter}'],
-          'default': ['1 2 3 4 5 6 7 8 9 0 {bksp}', 'й ц у к е н г ш щ з х ъ', 'ф ы в а п р о л д ж э', 'я ч с м и т ь б ю', '{EN} {space} {enter}']
-        }
-      });
-      keyboard.create();
-      keyboard.listener.follow('change', function (event) {
-        change(event.value);
-      });
-      keyboard.listener.follow('back', back);
-      keyboard.listener.follow('enter', enter);
-      keyboard.value(params.input);
-      change(params.input);
-      keyboard.toggle();
-    }
-
-    function create$a() {
-      var _this = this;
-
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var line = Template.get('filter');
-      var empty = $('<div class="simple-button selector" style="margin: 2em auto 0 auto">Уточнить поиск</div>');
-      var data = {
-        sort: [],
-        filter: []
-      };
-      empty.on('hover:enter', function () {
-        new create$b({
-          input: params.search,
-          onSearch: _this.onSearch,
-          onBack: _this.onBack
-        });
-      });
-      line.find('.filter--search').on('hover:enter', function () {
-        new create$b({
-          input: params.search,
-          onSearch: _this.onSearch,
-          onBack: _this.onBack
-        });
-      });
-      line.find('.filter--sort').on('hover:enter', function () {
-        _this.show('Сортировать', 'sort');
-      });
-      line.find('.filter--filter').on('hover:enter', function () {
-        _this.show('Фильтр', 'filter');
-      });
-
-      this.show = function (title, type) {
-        var _this2 = this;
-
-        var where = data[type];
-        Select.show({
-          title: title,
-          items: where,
-          onBack: this.onBack,
-          onSelect: function onSelect(a) {
-            if (a.items) {
-              Select.show({
-                title: a.title,
-                items: a.items,
-                onBack: function onBack() {
-                  _this2.show(title, type);
-                },
-                onSelect: function onSelect(b) {
-                  _this2.selected(a.items, b);
-
-                  _this2.onSelect(type, a, b);
-                }
-              });
-            } else {
-              _this2.selected(where, a);
-
-              _this2.onSelect(type, a);
-            }
-          }
-        });
-      };
-
-      this.selected = function (items, a) {
-        items.forEach(function (element) {
-          element.selected = false;
-        });
-        a.selected = true;
-      };
-
-      this.render = function () {
-        return line;
-      };
-
-      this.append = function (add) {
-        html.find('.files__body').append(add);
-      };
-
-      this.empty = function () {
-        return empty;
-      };
-
-      this.toggle = function () {
-        line.find('.filter--sort').toggleClass('selector', data.sort.length ? true : false).toggleClass('hide', data.sort.length ? false : true);
-        line.find('.filter--filter').toggleClass('selector', data.filter.length ? true : false).toggleClass('hide', data.filter.length ? false : true);
-      };
-
-      this.set = function (type, items) {
-        data[type] = items;
-        this.toggle();
-      };
-
-      this.get = function (type) {
-        return data[type];
-      };
-
-      this.sort = function (items, by) {
-        items.sort(function (c, b) {
-          if (c[by] < b[by]) return 1;
-          if (c[by] > b[by]) return -1;
-          return 0;
-        });
-      };
-
-      this.chosen = function (type, select) {
-        line.find('.filter--' + type + ' > div').text(Utils.shortText(select.join(', '), 25)).toggleClass('hide', select.length ? false : true);
-      };
-
-      this.destroy = function () {
-        empty.remove();
-        line.remove();
-        empty = null;
-        line = null;
-        data = null;
-      };
-    }
-
-    function create$9(call_video) {
+    function create$h(call_video) {
       var stream_url, loaded;
       var object = $('<object class="player-video_video" type="application/avplayer"</object>');
       var video = object[0];
@@ -4669,10 +5116,10 @@
     }
 
     var listener$8 = start$3();
-    var html$b = Template.get('player_video');
-    var display = html$b.find('.player-video__display');
-    var paused = html$b.find('.player-video__paused');
-    var subtitles = html$b.find('.player-video__subtitles');
+    var html$c = Template.get('player_video');
+    var display = html$c.find('.player-video__display');
+    var paused = html$c.find('.player-video__paused');
+    var subtitles = html$c.find('.player-video__subtitles');
     var timer$3 = {};
     var rewind_position = 0;
     var video;
@@ -4682,7 +5129,7 @@
      * Добовляем события к контейнеру
      */
 
-    function bind$1() {
+    function bind$2() {
       // ждем загрузки
       video.addEventListener("waiting", function () {
         loader(true);
@@ -4915,12 +5362,12 @@
      */
 
 
-    function create$8() {
+    function create$g() {
       var videobox;
 
       if (Platform.is('tizen') && Storage.field('player') == 'tizen') {
         //if(true){
-        videobox = create$9(function (object) {
+        videobox = create$h(function (object) {
           video = object;
         });
       } else {
@@ -4930,7 +5377,7 @@
 
       applySubsSettings();
       display.append(videobox);
-      bind$1();
+      bind$2();
     }
     /**
      * Показать згразку или нет
@@ -4940,7 +5387,7 @@
 
     function loader(status) {
       wait = status;
-      html$b.toggleClass('video--load', status);
+      html$c.toggleClass('video--load', status);
     }
     /**
      * Устанавливаем ссылку на видео
@@ -4950,7 +5397,7 @@
 
     function url$2(src) {
       loader(true);
-      create$8();
+      create$g();
       video.src = src;
       video.load();
       play$1();
@@ -5101,7 +5548,7 @@
      */
 
 
-    function destroy$5() {
+    function destroy$6() {
       subsview(false);
       neeed_sacle = false;
       paused.addClass('hide');
@@ -5118,14 +5565,14 @@
     }
 
     function render$a() {
-      return html$b;
+      return html$c;
     }
 
     var Video = {
       listener: listener$8,
       url: url$2,
       render: render$a,
-      destroy: destroy$5,
+      destroy: destroy$6,
       playpause: playpause,
       rewind: rewind$1,
       play: play$1,
@@ -5135,7 +5582,7 @@
       to: to
     };
 
-    function create$7(object) {
+    function create$f(object) {
       this.state = object.state;
 
       this.start = function () {
@@ -5153,28 +5600,28 @@
       };
     }
 
-    var html$a = Template.get('player_panel');
+    var html$b = Template.get('player_panel');
     var listener$7 = start$3();
     var condition = {};
     var timer$2 = {};
     var tracks = [];
     var subs = [];
     var elems$1 = {
-      peding: $('.player-panel__peding', html$a),
-      position: $('.player-panel__position', html$a),
-      time: $('.player-panel__time', html$a),
-      timenow: $('.player-panel__timenow', html$a),
-      timeend: $('.player-panel__timeend', html$a),
-      title: $('.player-panel__filename', html$a),
-      tracks: $('.player-panel__tracks', html$a),
-      subs: $('.player-panel__subs', html$a)
+      peding: $('.player-panel__peding', html$b),
+      position: $('.player-panel__position', html$b),
+      time: $('.player-panel__time', html$b),
+      timenow: $('.player-panel__timenow', html$b),
+      timeend: $('.player-panel__timeend', html$b),
+      title: $('.player-panel__filename', html$b),
+      tracks: $('.player-panel__tracks', html$b),
+      subs: $('.player-panel__subs', html$b)
     };
     /**
      * Отсеживаем состояние, 
      * когда надо показать панель, а когда нет
      */
 
-    var state = new create$7({
+    var state = new create$f({
       state: 'start',
       transitions: {
         start: function start() {
@@ -5213,24 +5660,24 @@
         }
       }
     });
-    html$a.find('.selector').on('hover:focus', function (e) {
+    html$b.find('.selector').on('hover:focus', function (e) {
     });
-    html$a.find('.player-panel__playpause').on('hover:enter', function (e) {
+    html$b.find('.player-panel__playpause').on('hover:enter', function (e) {
       listener$7.send('playpause', {});
     });
-    html$a.find('.player-panel__next').on('hover:enter', function (e) {
+    html$b.find('.player-panel__next').on('hover:enter', function (e) {
       listener$7.send('next', {});
     });
-    html$a.find('.player-panel__prev').on('hover:enter', function (e) {
+    html$b.find('.player-panel__prev').on('hover:enter', function (e) {
       listener$7.send('prev', {});
     });
-    html$a.find('.player-panel__rprev').on('hover:enter', function (e) {
+    html$b.find('.player-panel__rprev').on('hover:enter', function (e) {
       listener$7.send('rprev', {});
     });
-    html$a.find('.player-panel__rnext').on('hover:enter', function (e) {
+    html$b.find('.player-panel__rnext').on('hover:enter', function (e) {
       listener$7.send('rnext', {});
     });
-    html$a.find('.player-panel__playlist').on('hover:enter', function (e) {
+    html$b.find('.player-panel__playlist').on('hover:enter', function (e) {
       listener$7.send('playlist', {});
     });
     /**
@@ -5314,7 +5761,7 @@
      * Выбор масштаба видео
      */
 
-    html$a.find('.player-panel__size').on('hover:enter', function (e) {
+    html$b.find('.player-panel__size').on('hover:enter', function (e) {
       var select = Storage.get('player_size', 'default');
       var items = [{
         title: 'По умолчанию',
@@ -5366,7 +5813,7 @@
      * @param {*} value - значение
      */
 
-    function update$2(need, value) {
+    function update$3(need, value) {
       if (need == 'position') {
         elems$1.position.css({
           width: value
@@ -5395,11 +5842,11 @@
       }
 
       if (need == 'play') {
-        html$a.toggleClass('panel--paused', false);
+        html$b.toggleClass('panel--paused', false);
       }
 
       if (need == 'pause') {
-        html$a.toggleClass('panel--paused', true);
+        html$b.toggleClass('panel--paused', true);
       }
     }
     /**
@@ -5412,7 +5859,7 @@
       listener$7.send('visible', {
         status: status
       });
-      html$a.toggleClass('panel--visible', status);
+      html$b.toggleClass('panel--visible', status);
     }
     /**
      * Можем играть, далее отслеживаем статус
@@ -5452,7 +5899,7 @@
           listener$7.send('rprev', {});
         },
         gone: function gone() {
-          html$a.find('.selector').removeClass('focus');
+          html$b.find('.selector').removeClass('focus');
         },
         back: function back() {
           Controller.toggle('player');
@@ -5466,7 +5913,7 @@
       Controller.add('player_panel', {
         toggle: function toggle() {
           Controller.collectionSet(render$9());
-          Controller.collectionFocus($('.player-panel__playpause', html$a)[0], render$9());
+          Controller.collectionFocus($('.player-panel__playpause', html$b)[0], render$9());
         },
         up: function up() {
           toggleRewind();
@@ -5481,7 +5928,7 @@
           Controller.toggle('player');
         },
         gone: function gone() {
-          html$a.find('.selector').removeClass('focus');
+          html$b.find('.selector').removeClass('focus');
         },
         back: function back() {
           Controller.toggle('player');
@@ -5495,7 +5942,7 @@
      */
 
 
-    function toggle$5() {
+    function toggle$6() {
       condition.visible = true;
       state.start();
       toggleRewind();
@@ -5543,7 +5990,7 @@
      */
 
 
-    function destroy$4() {
+    function destroy$5() {
       condition = {};
       tracks = [];
       subs = [];
@@ -5558,39 +6005,39 @@
       elems$1.timeend.text('00:00');
       elems$1.subs.toggleClass('hide', true);
       elems$1.tracks.toggleClass('hide', true);
-      html$a.toggleClass('panel--paused', false);
+      html$b.toggleClass('panel--paused', false);
     }
 
     function render$9() {
-      return html$a;
+      return html$b;
     }
 
     var Panel = {
       listener: listener$7,
       render: render$9,
-      toggle: toggle$5,
+      toggle: toggle$6,
       show: show$2,
-      destroy: destroy$4,
+      destroy: destroy$5,
       hide: hide,
       canplay: canplay,
-      update: update$2,
+      update: update$3,
       rewind: rewind,
       setTracks: setTracks,
       setSubs: setSubs
     };
 
-    var html$9 = Template.get('player_info');
+    var html$a = Template.get('player_info');
     var listener$6 = start$3();
-    var network$2 = new create$o();
+    var network$2 = new create$p();
     var elems = {
-      name: $('.player-info__name', html$9),
-      size: $('.value--size span', html$9),
-      stat: $('.value--stat span', html$9),
-      speed: $('.value--speed span', html$9),
-      error: $('.player-info__error', html$9)
+      name: $('.player-info__name', html$a),
+      size: $('.value--size span', html$a),
+      stat: $('.value--stat span', html$a),
+      speed: $('.value--speed span', html$a),
+      error: $('.player-info__error', html$a)
     };
     var error, stat_timer;
-    Utils.time(html$9);
+    Utils.time(html$a);
     /**
      * Установить значение
      * @param {String} need 
@@ -5618,7 +6065,7 @@
       var update = function update() {
         // если панель скрыта, то зачем каждую секунду чекать? хватит и 5 сек
         // проверено, если ставить на паузу, разадача удаляется, но если чекать постоянно, то все норм
-        if (!html$9.hasClass('info--visible')) {
+        if (!html$a.hasClass('info--visible')) {
           wait++;
           if (wait <= 5) return;else wait = 0;
         }
@@ -5642,15 +6089,15 @@
      */
 
 
-    function toggle$4(status) {
-      html$9.toggleClass('info--visible', status);
+    function toggle$5(status) {
+      html$a.toggleClass('info--visible', status);
     }
     /**
      * Уничтожить
      */
 
 
-    function destroy$3() {
+    function destroy$4() {
       elems.size.text('Загрузка...');
       elems.stat.text('- / - • - seeds');
       elems.speed.text('--');
@@ -5661,15 +6108,15 @@
     }
 
     function render$8() {
-      return html$9;
+      return html$a;
     }
 
     var Info = {
       listener: listener$6,
       render: render$8,
       set: set$2,
-      toggle: toggle$4,
-      destroy: destroy$3
+      toggle: toggle$5,
+      destroy: destroy$4
     };
 
     var listener$5 = start$3();
@@ -5681,7 +6128,7 @@
      */
 
     function show$1() {
-      active$2();
+      active$3();
       var enabled = Controller.enabled();
       Select.show({
         title: 'Плейлист',
@@ -5702,7 +6149,7 @@
      */
 
 
-    function active$2() {
+    function active$3() {
       playlist$1.forEach(function (element) {
         element.selected = element.url == current;
         if (element.selected) position$1 = playlist$1.indexOf(element);
@@ -5714,7 +6161,7 @@
 
 
     function prev() {
-      active$2();
+      active$3();
 
       if (position$1 > 1) {
         listener$5.send('select', {
@@ -5728,7 +6175,7 @@
 
 
     function next() {
-      active$2();
+      active$3();
 
       if (position$1 < playlist$1.length - 1) {
         listener$5.send('select', {
@@ -5764,7 +6211,7 @@
       next: next
     };
 
-    function update$1(params) {
+    function update$2(params) {
       if (params.hash == 0) return;
       var viewed = Storage.cache('file_view', 10000, {});
       viewed[params.hash] = params.percent;
@@ -5793,7 +6240,7 @@
 
     var Timeline = {
       render: render$7,
-      update: update$1,
+      update: update$2,
       view: view
     };
 
@@ -5803,7 +6250,7 @@
     var timer$1;
     var longpress;
 
-    function toggle$3(new_status) {
+    function toggle$4(new_status) {
       enabled$2 = new_status;
       listener$4.send('toggle', {
         status: enabled$2
@@ -5811,11 +6258,11 @@
     }
 
     function enable$2() {
-      toggle$3(true);
+      toggle$4(true);
     }
 
     function disable$1() {
-      toggle$3(false);
+      toggle$4(false);
     }
 
     function isEnter(keycode) {
@@ -5975,14 +6422,14 @@
     var enabled$1 = false;
     var worked = false;
     var img;
-    var html$8 = Template.get('screensaver');
+    var html$9 = Template.get('screensaver');
     var movies = [];
     var timer = {};
     var position = 0;
     var slides$1 = 'one';
     var direct = ['lt', 'rt', 'br', 'lb', 'ct'];
 
-    function toggle$2(is_enabled) {
+    function toggle$3(is_enabled) {
       enabled$1 = is_enabled;
       if (enabled$1) resetTimer();else clearTimeout(timer.wait);
       listener$3.send('toggle', {
@@ -5991,11 +6438,11 @@
     }
 
     function enable$1() {
-      toggle$2(true);
+      toggle$3(true);
     }
 
     function disable() {
-      toggle$2(false);
+      toggle$3(false);
     }
 
     function resetTimer() {
@@ -6017,14 +6464,14 @@
     function startSlideshow() {
       if (!Storage.field('screensaver')) return;
       worked = true;
-      html$8.fadeIn(300);
-      Utils.time(html$8);
+      html$9.fadeIn(300);
+      Utils.time(html$9);
       nextSlide();
       timer.work = setInterval(function () {
         nextSlide();
       }, 30000);
       timer.start = setTimeout(function () {
-        html$8.addClass('visible');
+        html$9.addClass('visible');
       }, 5000);
     }
 
@@ -6036,20 +6483,20 @@
       img.src = image;
 
       img.onload = function () {
-        var to = $('.screensaver__slides-' + (slides$1 == 'one' ? 'two' : 'one'), html$8);
+        var to = $('.screensaver__slides-' + (slides$1 == 'one' ? 'two' : 'one'), html$9);
         to[0].src = img.src;
         to.removeClass(direct.join(' ') + ' animate').addClass(direct[Math.floor(Math.random() * direct.length)]);
         setTimeout(function () {
-          $('.screensaver__title', html$8).removeClass('visible');
-          $('.screensaver__slides-' + slides$1, html$8).removeClass('visible');
+          $('.screensaver__title', html$9).removeClass('visible');
+          $('.screensaver__slides-' + slides$1, html$9).removeClass('visible');
           slides$1 = slides$1 == 'one' ? 'two' : 'one';
           to.addClass('visible').addClass('animate');
 
           if (movie) {
             setTimeout(function () {
-              $('.screensaver__title-name', html$8).text(movie.title || movie.name);
-              $('.screensaver__title-tagline', html$8).text(movie.original_title || movie.original_name);
-              $('.screensaver__title', html$8).addClass('visible');
+              $('.screensaver__title-name', html$9).text(movie.title || movie.name);
+              $('.screensaver__title-tagline', html$9).text(movie.original_title || movie.original_name);
+              $('.screensaver__title', html$9).addClass('visible');
             }, 500);
           }
         }, 3000);
@@ -6067,8 +6514,8 @@
       setTimeout(function () {
         worked = false;
       }, 300);
-      html$8.fadeOut(300, function () {
-        html$8.removeClass('visible');
+      html$9.fadeOut(300, function () {
+        html$9.removeClass('visible');
       });
       clearInterval(timer.work);
       clearTimeout(timer.start);
@@ -6076,7 +6523,7 @@
     }
 
     function init$8() {
-      $('body').append(html$8);
+      $('body').append(html$9);
       resetTimer();
       Keypad.listener.follow('keydown', function (e) {
         resetTimer();
@@ -6092,7 +6539,7 @@
     }
 
     function render$6() {
-      return html$8;
+      return html$9;
     }
 
     var Screensaver = {
@@ -6103,7 +6550,7 @@
       disable: disable
     };
 
-    var network$1 = new create$o();
+    var network$1 = new create$p();
 
     function url() {
       var u = ip();
@@ -6302,13 +6749,13 @@
       openPlayer: openPlayer
     };
 
-    var html$7 = Template.get('player');
-    html$7.append(Video.render());
-    html$7.append(Panel.render());
-    html$7.append(Info.render());
+    var html$8 = Template.get('player');
+    html$8.append(Video.render());
+    html$8.append(Panel.render());
+    html$8.append(Info.render());
     var callback$2;
     var work = false;
-    var network = new create$o();
+    var network = new create$p();
     var preloader = {
       wait: false
     };
@@ -6394,7 +6841,7 @@
       Info.toggle(e.status);
     });
     Playlist.listener.follow('select', function (e) {
-      destroy$2();
+      destroy$3();
       play(e.item);
       Info.set('stat', e.item.url);
     });
@@ -6418,7 +6865,7 @@
      * Главный контроллер
      */
 
-    function toggle$1() {
+    function toggle$2() {
       Controller.add('player', {
         invisible: true,
         toggle: function toggle() {
@@ -6475,7 +6922,7 @@
     }
 
     function backward$1() {
-      destroy$2();
+      destroy$3();
       if (callback$2) callback$2();else Controller.toggle('content');
       callback$2 = false;
     }
@@ -6484,7 +6931,7 @@
      */
 
 
-    function destroy$2() {
+    function destroy$3() {
       if (work.timeline) Timeline.update(work.timeline);
       work = false;
       preloader.wait = false;
@@ -6493,7 +6940,7 @@
       Video.destroy();
       Panel.destroy();
       Info.destroy();
-      html$7.detach();
+      html$8.detach();
     }
 
     function runWebOS(params) {
@@ -6544,7 +6991,7 @@
       if (data.url.indexOf(Torserver.ip()) > -1 && data.url.indexOf('&preload') > -1) {
         preloader.wait = true;
         Info.set('name', data.title);
-        $('body').append(html$7);
+        $('body').append(html$8);
         Panel.show(true);
         togglePreload();
         network.timeout(2000);
@@ -6580,8 +7027,8 @@
           Video.url(data.url);
           Video.size(Storage.get('player_size', 'default'));
           Info.set('name', data.title);
-          if (!preloader.call) $('body').append(html$7);
-          toggle$1();
+          if (!preloader.call) $('body').append(html$8);
+          toggle$2();
           Panel.show(true);
         });
       }
@@ -6615,7 +7062,7 @@
     }
 
     function render$5() {
-      return html$7;
+      return html$8;
     }
 
     var Player = {
@@ -6625,6 +7072,1388 @@
       stat: stat,
       callback: onBack
     };
+
+    function create$e(data) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var html;
+      var last;
+
+      var follow = function follow() {
+        var status = Storage.get('parser_use');
+        html.find('.view--torrent').toggleClass('selector', status).toggleClass('hide', !status);
+      };
+
+      Arrays.extend(data.movie, {
+        title: data.movie.name,
+        original_title: data.movie.original_name,
+        runtime: 0,
+        img: data.movie.poster_path ? Api.img(data.movie.poster_path) : 'img/img_broken.svg'
+      });
+
+      this.create = function () {
+        var _this = this;
+
+        var genres = (data.movie.genres || ['---']).slice(0, 3).map(function (a) {
+          return Utils.capitalizeFirstLetter(a.name);
+        }).join(', ');
+        html = Template.get('full_start', {
+          title: data.movie.title,
+          original_title: data.movie.original_title,
+          descr: Utils.substr(data.movie.overview, 420),
+          img: data.movie.img,
+          time: Utils.secondsToTime(data.movie.runtime * 60, true),
+          genres: genres,
+          r_themovie: data.movie.vote_average,
+          seasons: data.movie.number_of_seasons,
+          episodes: data.movie.number_of_episodes
+        });
+
+        if (data.movie.number_of_seasons) {
+          html.find('.is--serial').removeClass('hide');
+        }
+
+        html.find('.view--torrent').on('hover:enter', function () {
+          var query = data.movie.original_title;
+          if (Storage.field('parse_lang') == 'ru' || !/\w{3}/.test(query)) query = data.movie.title;
+          Activity$1.push({
+            url: '',
+            title: 'Торренты',
+            component: 'torrents',
+            search: query,
+            movie: data.movie,
+            page: 1
+          });
+        });
+        html.find('.info__icon').on('hover:enter', function (e) {
+          var type = $(e.target).data('type');
+          Favorite.toggle(type, params.object.card);
+
+          _this.favorite();
+        });
+
+        if (data.videos && data.videos.results.length) {
+          html.find('.view--trailer').on('hover:enter', function () {
+            var items = [];
+            data.videos.results.forEach(function (element) {
+              items.push({
+                title: element.name,
+                subtitle: element.official ? 'Официальный' : 'Неофициальный',
+                id: element.key,
+                player: element.player,
+                url: element.url
+              });
+            });
+            Select.show({
+              title: 'Трейлеры',
+              items: items,
+              onSelect: function onSelect(a) {
+                if (a.player) {
+                  Player.play(a);
+                  Player.playlist([a]);
+                } else YouTube.play(a.id);
+              },
+              onBack: function onBack() {
+                Controller.toggle('full_start');
+              }
+            });
+          });
+        } else {
+          html.find('.view--trailer').remove();
+        }
+
+        Background.immediately(Utils.cardImgBackground(data.movie));
+        Storage.listener.follow('change', follow);
+        follow();
+        this.menu();
+        this.favorite();
+      };
+
+      this.menu = function () {
+        var _this2 = this;
+
+        html.find('.open--menu').on('hover:enter', function () {
+          var enabled = Controller.enabled().name;
+          var status = Favorite.check(params.object.card);
+          var menu = [];
+          menu.push({
+            title: status.book ? 'Убрать из закладок' : 'В закладки',
+            subtitle: 'Смотрите в меню (Закладки)',
+            where: 'book'
+          });
+          menu.push({
+            title: status.like ? 'Убрать из понравившихся' : 'Нравится',
+            subtitle: 'Смотрите в меню (Нравится)',
+            where: 'like'
+          });
+          menu.push({
+            title: status.wath ? 'Убрать из ожидаемых' : 'Смотреть позже',
+            subtitle: 'Смотрите в меню (Позже)',
+            where: 'wath'
+          });
+          Select.show({
+            title: 'Действие',
+            items: menu,
+            onBack: function onBack() {
+              Controller.toggle(enabled);
+            },
+            onSelect: function onSelect(a) {
+              Favorite.toggle(a.where, params.object.card);
+
+              _this2.favorite();
+
+              Controller.toggle(enabled);
+            }
+          });
+        });
+      };
+
+      this.favorite = function () {
+        var status = Favorite.check(params.object.card);
+        $('.info__icon', html).removeClass('active');
+        $('.icon--book', html).toggleClass('active', status.book);
+        $('.icon--like', html).toggleClass('active', status.like);
+        $('.icon--wath', html).toggleClass('active', status.wath);
+      };
+
+      this.toggle = function () {
+        var _this3 = this;
+
+        Controller.add('full_start', {
+          toggle: function toggle() {
+            Controller.collectionSet(_this3.render());
+            Controller.collectionFocus(last, _this3.render());
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          down: this.onDown,
+          up: this.onUp,
+          gone: function gone() {},
+          back: this.onBack
+        });
+        Controller.toggle('full_start');
+      };
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        last = null;
+        html.remove();
+        Storage.listener.remove('change', follow);
+      };
+    }
+
+    var html$7, active$2, scroll$2, last$3;
+
+    function open$2(params) {
+      active$2 = params;
+      html$7 = Template.get('modal', {
+        title: params.title
+      });
+      html$7.on('click', function (e) {//if(!$(e.target).closest($('.modal__content',html)).length) window.history.back()
+      });
+      title$1(params.title);
+      html$7.toggleClass('modal--medium', params.size == 'medium' ? true : false);
+      html$7.toggleClass('modal--large', params.size == 'large' ? true : false);
+      scroll$2 = new create$o({
+        over: true,
+        mask: params.mask
+      });
+      html$7.find('.modal__body').append(scroll$2.render());
+      bind$1(params.html);
+      scroll$2.append(params.html);
+      $('body').append(html$7);
+      toggle$1();
+    }
+
+    function bind$1(where) {
+      where.find('.selector').on('hover:focus', function (e) {
+        last$3 = e.target;
+        scroll$2.update($(e.target));
+      }).on('hover:enter', function (e) {
+        if (active$2.onSelect) active$2.onSelect($(e.target));
+      });
+    }
+
+    function jump(tofoward) {
+      var select = scroll$2.render().find('.selector.focus');
+      if (tofoward) select = select.nextAll().filter('.selector');else select = select.prevAll().filter('.selector');
+      select = select.slice(0, 10);
+      select = select.last();
+
+      if (select.length) {
+        Controller.collectionFocus(select[0], scroll$2.render());
+      }
+    }
+
+    function toggle$1() {
+      Controller.add('modal', {
+        invisible: true,
+        toggle: function toggle() {
+          Controller.collectionSet(scroll$2.render());
+          Controller.collectionFocus(last$3, scroll$2.render());
+        },
+        up: function up() {
+          Navigator.move('up');
+        },
+        down: function down() {
+          Navigator.move('down');
+        },
+        right: function right() {
+          jump(true);
+        },
+        left: function left() {
+          jump(false);
+        },
+        back: function back() {
+          if (active$2.onBack) active$2.onBack();
+        }
+      });
+      Controller.toggle('modal');
+    }
+
+    function update$1(new_html) {
+      last$3 = false;
+      scroll$2.clear();
+      scroll$2.append(new_html);
+      bind$1(new_html);
+      toggle$1();
+    }
+
+    function title$1(tit) {
+      html$7.find('.modal__title').text(tit);
+      html$7.toggleClass('modal--empty-title', tit ? false : true);
+    }
+
+    function destroy$2() {
+      last$3 = false;
+      scroll$2.destroy();
+      html$7.remove();
+    }
+
+    function close$1() {
+      destroy$2();
+    }
+
+    var Modal = {
+      open: open$2,
+      close: close$1,
+      update: update$1,
+      title: title$1
+    };
+
+    function create$d(data) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var html, body, last;
+
+      this.create = function () {
+        html = Template.get('items_line', {
+          title: 'Подробно'
+        });
+        var genres = data.movie.genres.map(function (a) {
+          return '<div class="full-descr__tag selector" data-genre="' + a.id + '" data-url="' + a.url + '">' + a.name + '</div>';
+        }).join('');
+        var companies = data.movie.production_companies.map(function (a) {
+          return '<div class="full-descr__tag selector" data-company="' + a.id + '">' + a.name + '</div>';
+        }).join('');
+        var countries = data.movie.production_countries.map(function (a) {
+          return a.name;
+        }).join(', ');
+        body = Template.get('full_descr', {
+          text: data.movie.overview,
+          genres: genres,
+          companies: companies,
+          relise: data.movie.release_date || data.movie.first_air_date,
+          budget: '$ ' + Utils.numberWithSpaces(data.movie.budget || 0),
+          countries: countries
+        });
+        if (!genres) $('.full--genres', body).remove();
+        if (!companies) $('.full--companies', body).remove();
+        body.find('.selector').on('hover:enter', function (e) {
+          var item = $(e.target);
+
+          if (item.data('genre')) {
+            Activity$1.push({
+              url: params.object.source == 'tmdb' ? 'movie' : item.data('url'),
+              component: params.object.source == 'tmdb' ? 'category' : 'category_full',
+              genres: item.data('genre'),
+              source: params.object.source,
+              page: 1
+            });
+          }
+
+          if (item.data('company')) {
+            Api.clear();
+            Modal.open({
+              title: 'Компания',
+              html: Template.get('modal_loading'),
+              size: 'medium',
+              onBack: function onBack() {
+                Modal.close();
+                Controller.toggle('full_descr');
+              }
+            });
+            Api.company({
+              id: item.data('company')
+            }, function (json) {
+              if (Controller.enabled().name == 'modal') {
+                Arrays.empty(json, {
+                  homepage: '---',
+                  origin_country: '---',
+                  headquarters: '---'
+                });
+                Modal.update(Template.get('company', json));
+              }
+            }, function () {});
+          }
+        }).on('hover:focus', function (e) {
+          last = e.target;
+        });
+        html.find('.items-line__body').append(body);
+      };
+
+      this.toggle = function () {
+        var _this = this;
+
+        Controller.add('full_descr', {
+          toggle: function toggle() {
+            Controller.collectionSet(_this.render());
+            Controller.collectionFocus(last, _this.render());
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          down: function down() {
+            if (Navigator.canmove('down')) Navigator.move('down');else _this.onDown();
+          },
+          up: function up() {
+            if (Navigator.canmove('up')) Navigator.move('up');else _this.onUp();
+          },
+          gone: function gone() {},
+          back: this.onBack
+        });
+        Controller.toggle('full_descr');
+      };
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        body.remove();
+        html.remove();
+        html = null;
+        body = null;
+      };
+    }
+
+    function create$c(data) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var html, scroll, last;
+
+      this.create = function () {
+        html = Template.get('items_line', {
+          title: 'Актеры'
+        });
+        scroll = new create$o({
+          horizontal: true
+        });
+        scroll.render().find('.scroll__body').addClass('full-actors');
+        html.find('.items-line__body').append(scroll.render());
+        data.actors.cast.forEach(function (element) {
+          var actor = Template.get('full_actor', {
+            firstname: element.name,
+            lastname: element.character,
+            img: element.profile_path ? Api.img(element.profile_path) : element.img || './img/actor.svg'
+          });
+          actor.on('hover:focus', function (e) {
+            last = e.target;
+            scroll.update($(e.target), true);
+          }).on('hover:enter', function () {
+            Activity$1.push({
+              url: element.url,
+              title: 'Актер',
+              component: 'actor',
+              id: element.id,
+              source: params.object.source
+            });
+          });
+          scroll.append(actor);
+        });
+      };
+
+      this.toggle = function () {
+        var _this = this;
+
+        Controller.add('full_descr', {
+          toggle: function toggle() {
+            Controller.collectionSet(_this.render());
+            Controller.collectionFocus(last, _this.render());
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          down: this.onDown,
+          up: this.onUp,
+          gone: function gone() {},
+          back: this.onBack
+        });
+        Controller.toggle('full_descr');
+      };
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        scroll.destroy();
+        html.remove();
+        html = null;
+      };
+    }
+
+    function create$b(data) {
+      var html, scroll, last;
+
+      this.create = function () {
+        html = Template.get('items_line', {
+          title: 'Коментарии'
+        });
+        scroll = new create$o({
+          horizontal: true
+        });
+        scroll.render().find('.scroll__body').addClass('full-reviews');
+        html.find('.items-line__body').append(scroll.render());
+        data.comments.forEach(function (element) {
+          var review = Template.get('full_review', element);
+          review.on('hover:focus', function (e) {
+            last = e.target;
+            scroll.update($(e.target), true);
+          });
+          scroll.append(review);
+        });
+      };
+
+      this.toggle = function () {
+        var _this = this;
+
+        Controller.add('full_descr', {
+          toggle: function toggle() {
+            Controller.collectionSet(_this.render());
+            Controller.collectionFocus(last, _this.render());
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          down: this.onDown,
+          up: this.onUp,
+          gone: function gone() {},
+          back: this.onBack
+        });
+        Controller.toggle('full_descr');
+      };
+
+      this.render = function () {
+        return html;
+      };
+    }
+
+    var components$1 = {
+      start: create$e,
+      descr: create$d,
+      actors: create$c,
+      recomend: create$l,
+      simular: create$l,
+      comments: create$b
+    };
+
+    function component$b(object) {
+      var network = new create$p();
+      var scroll = new create$o({
+        mask: true,
+        over: true
+      });
+      var items = [];
+      var active = 0;
+      scroll.render().addClass('layer--wheight');
+
+      this.create = function () {
+        var _this = this;
+
+        this.activity.loader(true);
+        Api.full(object, function (data) {
+          _this.activity.loader(false);
+
+          if (data.movie) {
+            _this.build('start', data);
+
+            _this.build('descr', data);
+
+            if (data.actors && data.actors.cast && data.actors.cast.length) _this.build('actors', data);
+            if (data.comments && data.comments.length) _this.build('comments', data);
+
+            if (data.recomend && data.recomend.results.length) {
+              data.recomend.title = 'Рекомендации';
+              data.recomend.noimage = true;
+
+              _this.build('recomend', data.recomend);
+            }
+
+            if (data.simular && data.simular.results.length) {
+              data.simular.title = 'Похожие';
+              data.simular.noimage = true;
+
+              _this.build('simular', data.simular);
+            }
+
+            _this.activity.toggle();
+          } else {
+            _this.empty();
+          }
+        }, this.empty.bind(this));
+        return this.render();
+      };
+
+      this.empty = function () {
+        var empty = new create$j();
+        scroll.append(empty.render());
+        this.start = empty.start;
+        this.activity.loader(false);
+        this.activity.toggle();
+      };
+
+      this.build = function (name, data) {
+        var item = new components$1[name](data, {
+          object: object,
+          nomore: true
+        });
+        item.onDown = this.down;
+        item.onUp = this.up;
+        item.onBack = this.back;
+        item.create();
+        items.push(item);
+        scroll.append(item.render());
+      };
+
+      this.down = function () {
+        active++;
+        active = Math.min(active, items.length - 1);
+        items[active].toggle();
+        scroll.update(items[active].render());
+      };
+
+      this.up = function () {
+        active--;
+
+        if (active < 0) {
+          active = 0;
+          Controller.toggle('head');
+        } else {
+          items[active].toggle();
+        }
+
+        scroll.update(items[active].render());
+      };
+
+      this.back = function () {
+        Activity$1.backward();
+      };
+
+      this.start = function () {
+        Controller.add('content', {
+          toggle: function toggle() {
+            if (items.length) {
+              items[active].toggle();
+            }
+          }
+        });
+        Controller.toggle('content');
+      };
+
+      this.pause = function () {};
+
+      this.stop = function () {};
+
+      this.render = function () {
+        return scroll.render();
+      };
+
+      this.destroy = function () {
+        network.clear();
+        Arrays.destroy(items);
+        scroll.destroy();
+        items = null;
+        network = null;
+      };
+    }
+
+    function component$a(object) {
+      var network = new create$p();
+      var scroll = new create$o({
+        mask: true,
+        over: true
+      });
+      var items = [];
+      var html = $('<div></div>');
+      var body = $('<div class="category-full"></div>');
+      var total_pages = 0;
+      var info;
+      var last;
+      var waitload;
+
+      this.create = function () {
+        var _this = this;
+
+        this.activity.loader(true);
+        Api.list(object, this.build.bind(this), function () {
+          var empty = new create$j();
+          html.append(empty.render());
+          _this.start = empty.start;
+
+          _this.activity.loader(false);
+
+          _this.activity.toggle();
+        });
+        return this.render();
+      };
+
+      this.next = function () {
+        var _this2 = this;
+
+        if (waitload) return;
+
+        if (object.page < 15 && object.page < total_pages) {
+          waitload = true;
+          object.page++;
+          Api.list(object, function (result) {
+            _this2.append(result);
+
+            waitload = false;
+            Controller.enable('content');
+          }, function () {});
+        }
+      };
+
+      this.append = function (data) {
+        var _this3 = this;
+
+        data.results.forEach(function (element) {
+          var card = new create$n(element, {
+            card_category: true,
+            object: object
+          });
+          card.create();
+
+          card.onFocus = function (target, card_data) {
+            last = target;
+            scroll.update(card.render(), true);
+            Background.change(Utils.cardImgBackground(card_data));
+            info.update(card_data);
+            var maxrow = Math.ceil(items.length / 7) - 1;
+            if (Math.ceil(items.indexOf(card) / 7) >= maxrow) _this3.next();
+          };
+
+          card.onEnter = function (target, card_data) {
+            Activity$1.push({
+              url: card_data.url,
+              component: 'full',
+              id: element.id,
+              method: card_data.name ? 'tv' : 'movie',
+              card: element,
+              source: object.source
+            });
+          };
+
+          card.visible();
+          body.append(card.render());
+          items.push(card);
+        });
+      };
+
+      this.build = function (data) {
+        total_pages = data.total_pages;
+        info = new create$k();
+        info.create();
+        scroll.render().addClass('layer--wheight').data('mheight', info.render());
+        html.append(info.render());
+        html.append(scroll.render());
+        this.append(data);
+        scroll.append(body);
+        this.activity.loader(false);
+        this.activity.toggle();
+      };
+
+      this.start = function () {
+        Controller.add('content', {
+          toggle: function toggle() {
+            Controller.collectionSet(scroll.render());
+            Controller.collectionFocus(last || false, scroll.render());
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          up: function up() {
+            if (Navigator.canmove('up')) Navigator.move('up');else Controller.toggle('head');
+          },
+          down: function down() {
+            if (Navigator.canmove('down')) Navigator.move('down');
+          },
+          back: function back() {
+            Activity$1.backward();
+          }
+        });
+        Controller.toggle('content');
+      };
+
+      this.pause = function () {};
+
+      this.stop = function () {};
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        network.clear();
+        Arrays.destroy(items);
+        scroll.destroy();
+        if (info) info.destroy();
+        html.remove();
+        body.remove();
+        network = null;
+        items = null;
+        html = null;
+        body = null;
+        info = null;
+      };
+    }
+
+    function component$9(object) {
+      var network = new create$p();
+      var scroll = new create$o({
+        mask: true,
+        over: true
+      });
+      var items = [];
+      var html = $('<div></div>');
+      var active = 0;
+      var info;
+      var lezydata;
+
+      this.create = function () {
+        var _this = this;
+
+        this.activity.loader(true);
+        Api.category(object, this.build.bind(this), function () {
+          var empty = new create$j();
+          html.append(empty.render());
+          _this.start = empty.start;
+
+          _this.activity.loader(false);
+
+          _this.activity.toggle();
+        });
+        return this.render();
+      };
+
+      this.build = function (data) {
+        lezydata = data;
+        info = new create$k();
+        info.create();
+        scroll.render().addClass('layer--wheight').data('mheight', info.render());
+        html.append(info.render());
+        html.append(scroll.render());
+        data.slice(0, 2).forEach(this.append.bind(this));
+        this.activity.loader(false);
+        this.activity.toggle();
+      };
+
+      this.append = function (element) {
+        if (element.ready) return;
+        element.ready = true;
+        var item = new create$l(element, {
+          url: element.url,
+          card_small: true,
+          genres: object.genres,
+          object: object
+        });
+        item.create();
+        item.onDown = this.down.bind(this);
+        item.onUp = this.up;
+        item.onFocus = info.update;
+        item.onBack = this.back;
+        scroll.append(item.render());
+        items.push(item);
+      };
+
+      this.back = function () {
+        Activity$1.backward();
+      };
+
+      this.down = function () {
+        active++;
+        active = Math.min(active, items.length - 1);
+        lezydata.slice(0, active + 2).forEach(this.append.bind(this));
+        items[active].toggle();
+        scroll.update(items[active].render());
+      };
+
+      this.up = function () {
+        active--;
+
+        if (active < 0) {
+          active = 0;
+          Controller.toggle('head');
+        } else {
+          items[active].toggle();
+        }
+
+        scroll.update(items[active].render());
+      };
+
+      this.start = function () {
+        Controller.add('content', {
+          toggle: function toggle() {
+            if (items.length) {
+              items[active].toggle();
+            }
+          },
+          back: this.back
+        });
+        Controller.toggle('content');
+      };
+
+      this.pause = function () {};
+
+      this.stop = function () {};
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        network.clear();
+        Arrays.destroy(items);
+        scroll.destroy();
+        if (info) info.destroy();
+        html.remove();
+        html = null;
+        network = null;
+        lezydata = null;
+      };
+    }
+
+    function create$a(data) {
+      var html;
+      var last;
+
+      this.create = function () {
+        html = Template.get('actor_start', {
+          name: data.name,
+          birthday: data.birthday,
+          descr: Utils.substr(data.biography, 1020),
+          img: data.profile_path ? Api.img(data.profile_path) : data.img || 'img/img_broken.svg',
+          place: data.place_of_birth
+        });
+      };
+
+      this.toggle = function () {
+        var _this = this;
+
+        Controller.add('full_start', {
+          toggle: function toggle() {
+            Controller.collectionSet(_this.render());
+            Controller.collectionFocus(last, _this.render());
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          down: this.onDown,
+          up: this.onUp,
+          gone: function gone() {},
+          back: this.onBack
+        });
+        Controller.toggle('full_start');
+      };
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        last = null;
+        html.remove();
+      };
+    }
+
+    var components = {
+      start: create$a,
+      movie: create$l,
+      tv: create$l
+    };
+
+    function component$8(object) {
+      var network = new create$p();
+      var scroll = new create$o({
+        mask: true
+      });
+      var items = [];
+      var active = 0;
+      scroll.render().addClass('layer--wheight');
+
+      this.create = function () {
+        var _this = this;
+
+        this.activity.loader(true);
+        Api.actor(object, function (data) {
+          _this.activity.loader(false);
+
+          if (data.actor) {
+            _this.build('start', data.actor);
+
+            if (data.movie && data.movie.results.length) {
+              data.movie.title = 'Фильмы';
+              data.movie.noimage = true;
+
+              _this.build('movie', data.movie);
+            }
+
+            if (data.tv && data.tv.results.length) {
+              data.tv.title = 'Сериалы';
+              data.tv.noimage = true;
+
+              _this.build('tv', data.tv);
+            }
+
+            _this.activity.toggle();
+          }
+        }, function () {});
+        return this.render();
+      };
+
+      this.build = function (name, data) {
+        var item = new components[name](data, {
+          object: object,
+          nomore: true
+        });
+        item.onDown = this.down;
+        item.onUp = this.up;
+        item.onBack = this.back;
+        item.create();
+        items.push(item);
+        scroll.append(item.render());
+      };
+
+      this.down = function () {
+        active++;
+        active = Math.min(active, items.length - 1);
+        items[active].toggle();
+        scroll.update(items[active].render());
+      };
+
+      this.up = function () {
+        active--;
+
+        if (active < 0) {
+          active = 0;
+          Controller.toggle('head');
+        } else {
+          items[active].toggle();
+        }
+
+        scroll.update(items[active].render());
+      };
+
+      this.back = function () {
+        Activity$1.backward();
+      };
+
+      this.start = function () {
+        Controller.add('content', {
+          toggle: function toggle() {
+            if (items.length) {
+              items[active].toggle();
+            }
+          }
+        });
+        Controller.toggle('content');
+      };
+
+      this.pause = function () {};
+
+      this.stop = function () {};
+
+      this.render = function () {
+        return scroll.render();
+      };
+
+      this.destroy = function () {
+        network.clear();
+        Arrays.destroy(items);
+        scroll.destroy();
+        items = null;
+        network = null;
+      };
+    }
+
+    function component$7(object) {
+      var network = new create$p();
+      var scroll = new create$o({
+        mask: true
+      });
+      var items = [];
+      var html = $('<div></div>');
+      var body = $('<div class="category-full"></div>');
+      var total_pages = 0;
+      var info;
+      var last;
+      var waitload;
+
+      this.create = function () {
+        var _this = this;
+
+        this.activity.loader(true);
+        Api.favorite(object, this.build.bind(this), function () {
+          var empty = new create$j();
+          html.append(empty.render());
+          _this.start = empty.start;
+
+          _this.activity.loader(false);
+
+          _this.activity.toggle();
+        });
+        return this.render();
+      };
+
+      this.next = function () {
+        var _this2 = this;
+
+        if (waitload) return;
+
+        if (object.page < 15 && object.page < total_pages) {
+          waitload = true;
+          object.page++;
+          Api.favorite(object, function (result) {
+            _this2.append(result);
+
+            waitload = false;
+            Controller.enable('content');
+          }, function () {});
+        }
+      };
+
+      this.append = function (data) {
+        var _this3 = this;
+
+        data.results.forEach(function (element) {
+          var card = new create$n(element, {
+            card_category: true
+          });
+          card.create();
+
+          card.onFocus = function (target, card_data) {
+            last = target;
+            scroll.update(card.render(), true);
+            Background.change(Utils.cardImgBackground(card_data));
+            info.update(card_data);
+            var maxrow = Math.ceil(items.length / 7) - 1;
+            if (Math.ceil(items.indexOf(card) / 7) >= maxrow) _this3.next();
+          };
+
+          card.onEnter = function (target, card_data) {
+            Activity$1.push({
+              url: '',
+              component: 'full',
+              id: element.id,
+              method: card_data.name ? 'tv' : 'movie',
+              card: element,
+              source: card_data.source || 'tmdb'
+            });
+          };
+
+          card.visible();
+          body.append(card.render());
+          items.push(card);
+        });
+      };
+
+      this.build = function (data) {
+        total_pages = data.total_pages;
+        info = new create$k();
+        info.create();
+        scroll.render().addClass('layer--wheight').data('mheight', info.render());
+        html.append(info.render());
+        html.append(scroll.render());
+        this.append(data);
+        scroll.append(body);
+        this.activity.loader(false);
+        this.activity.toggle();
+      };
+
+      this.start = function () {
+        Controller.add('content', {
+          toggle: function toggle() {
+            Controller.collectionSet(scroll.render());
+            Controller.collectionFocus(last || false, scroll.render());
+          },
+          left: function left() {
+            if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('menu');
+          },
+          right: function right() {
+            Navigator.move('right');
+          },
+          up: function up() {
+            if (Navigator.canmove('up')) Navigator.move('up');else Controller.toggle('head');
+          },
+          down: function down() {
+            if (Navigator.canmove('down')) Navigator.move('down');
+          },
+          back: function back() {
+            Activity$1.backward();
+          }
+        });
+        Controller.toggle('content');
+      };
+
+      this.pause = function () {};
+
+      this.stop = function () {};
+
+      this.render = function () {
+        return html;
+      };
+
+      this.destroy = function () {
+        network.clear();
+        Arrays.destroy(items);
+        scroll.destroy();
+        if (info) info.destroy();
+        html.remove();
+        body.remove();
+        network = null;
+        items = null;
+        html = null;
+        body = null;
+        info = null;
+      };
+    }
+
+    function create$9() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var html = Template.get('files', params.movie);
+      html.find('.selector').on('hover:enter', function () {
+        Activity$1.push({
+          url: params.movie.url,
+          component: 'full',
+          id: params.movie.id,
+          method: params.movie.name ? 'tv' : 'movie',
+          card: params.movie,
+          source: params.movie.source
+        });
+      });
+
+      this.render = function () {
+        return html;
+      };
+
+      this.append = function (add) {
+        html.find('.files__body').append(add);
+      };
+
+      this.destroy = function () {
+        html.remove();
+        html = null;
+      };
+
+      this.clear = function () {
+        html.find('.files__body').empty();
+      };
+    }
+
+    function create$8() {
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var search = Template.get('search_box');
+      var input = '';
+
+      function destroy() {
+        keyboard.destroy();
+        search.remove();
+        search = null;
+      }
+
+      function back() {
+        destroy();
+        params.onBack();
+      }
+
+      function enter() {
+        destroy();
+        params.onSearch(input);
+      }
+
+      function change(text) {
+        input = text.trim();
+
+        if (input) {
+          search.find('.search-box__input').text(input);
+        } else {
+          search.find('.search-box__input').text('Введите текст...');
+        }
+      }
+
+      $('body').append(search);
+      var keyboard = new create$4({
+        layout: {
+          'en': ['1 2 3 4 5 6 7 8 9 0 {bksp}', 'q w e r t y u i o p', 'a s d f g h j k l', 'z x c v b n m', '{RU} {space} {enter}'],
+          'default': ['1 2 3 4 5 6 7 8 9 0 {bksp}', 'й ц у к е н г ш щ з х ъ', 'ф ы в а п р о л д ж э', 'я ч с м и т ь б ю', '{EN} {space} {enter}']
+        }
+      });
+      keyboard.create();
+      keyboard.listener.follow('change', function (event) {
+        change(event.value);
+      });
+      keyboard.listener.follow('back', back);
+      keyboard.listener.follow('enter', enter);
+      keyboard.value(params.input);
+      change(params.input);
+      keyboard.toggle();
+    }
+
+    function create$7() {
+      var _this = this;
+
+      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var line = Template.get('filter');
+      var empty = $('<div class="simple-button selector" style="margin: 2em auto 0 auto">Уточнить поиск</div>');
+      var data = {
+        sort: [],
+        filter: []
+      };
+      empty.on('hover:enter', function () {
+        new create$8({
+          input: params.search,
+          onSearch: _this.onSearch,
+          onBack: _this.onBack
+        });
+      });
+      line.find('.filter--search').on('hover:enter', function () {
+        new create$8({
+          input: params.search,
+          onSearch: _this.onSearch,
+          onBack: _this.onBack
+        });
+      });
+      line.find('.filter--sort').on('hover:enter', function () {
+        _this.show('Сортировать', 'sort');
+      });
+      line.find('.filter--filter').on('hover:enter', function () {
+        _this.show('Фильтр', 'filter');
+      });
+
+      this.show = function (title, type) {
+        var _this2 = this;
+
+        var where = data[type];
+        Select.show({
+          title: title,
+          items: where,
+          onBack: this.onBack,
+          onSelect: function onSelect(a) {
+            if (a.items) {
+              Select.show({
+                title: a.title,
+                items: a.items,
+                onBack: function onBack() {
+                  _this2.show(title, type);
+                },
+                onSelect: function onSelect(b) {
+                  _this2.selected(a.items, b);
+
+                  _this2.onSelect(type, a, b);
+                }
+              });
+            } else {
+              _this2.selected(where, a);
+
+              _this2.onSelect(type, a);
+            }
+          }
+        });
+      };
+
+      this.selected = function (items, a) {
+        items.forEach(function (element) {
+          element.selected = false;
+        });
+        a.selected = true;
+      };
+
+      this.render = function () {
+        return line;
+      };
+
+      this.append = function (add) {
+        html.find('.files__body').append(add);
+      };
+
+      this.empty = function () {
+        return empty;
+      };
+
+      this.toggle = function () {
+        line.find('.filter--sort').toggleClass('selector', data.sort.length ? true : false).toggleClass('hide', data.sort.length ? false : true);
+        line.find('.filter--filter').toggleClass('selector', data.filter.length ? true : false).toggleClass('hide', data.filter.length ? false : true);
+      };
+
+      this.set = function (type, items) {
+        data[type] = items;
+        this.toggle();
+      };
+
+      this.get = function (type) {
+        return data[type];
+      };
+
+      this.sort = function (items, by) {
+        items.sort(function (c, b) {
+          if (c[by] < b[by]) return 1;
+          if (c[by] > b[by]) return -1;
+          return 0;
+        });
+      };
+
+      this.chosen = function (type, select) {
+        line.find('.filter--' + type + ' > div').text(Utils.shortText(select.join(', '), 25)).toggleClass('hide', select.length ? false : true);
+      };
+
+      this.destroy = function () {
+        empty.remove();
+        line.remove();
+        empty = null;
+        line = null;
+        data = null;
+      };
+    }
 
     var SERVER = {};
     var timers = {};
@@ -6758,7 +8587,7 @@
       });
 
       if (seasons.length) {
-        Api.loadSeasons(movie, seasons, function (data) {
+        Api.seasons(movie, seasons, function (data) {
           list(plays, {
             movie: movie,
             seasons: data
@@ -6809,18 +8638,20 @@
               element.title = info.episode + ' / ' + episode.name;
               element.air_date = episode.air_date;
               element.fname = episode.name;
-              if (episode.still_path) element.img = Api.img(episode.still_path);
+              if (episode.still_path) element.img = Api.img(episode.still_path);else if (episode.img) element.img = episode.img;
             }
           }
 
           item = Template.get('torrent_file_serial', element);
         } else {
           item = Template.get('torrent_file', element);
+          if (params.movie.title) element.title = params.movie.title;
         }
 
         item.append(Timeline.render(view));
         playlist.push(element);
         item.on('hover:enter', function () {
+          if (params.movie.id) Favorite.add('history', params.movie, 100);
           Player.play(element);
           Player.callback(function () {
             Controller.toggle('modal');
@@ -6856,13 +8687,13 @@
     };
 
     function component$6(object) {
-      var network = new create$o();
-      var scroll = new create$n({
+      var network = new create$p();
+      var scroll = new create$o({
         mask: true,
         over: true
       });
-      var files = new create$c(object);
-      var filter = new create$a(object);
+      var files = new create$9(object);
+      var filter = new create$7(object);
       var results = [];
       var filtred = [];
       var total_pages = 1;
@@ -6901,7 +8732,7 @@
         var _this = this;
 
         this.activity.loader(true);
-        Background.change(Utils.cardImgBackground(object.movie)); //Storage.set('torrents_filter','{}')
+        Background.immediately(Utils.cardImgBackground(object.movie)); //Storage.set('torrents_filter','{}')
 
         if (Storage.field('parser_torrent_type') == 'jackett') {
           if (Storage.field('jackett_url')) {
@@ -7014,7 +8845,7 @@
       };
 
       this.empty = function (descr) {
-        var empty = new create$i({
+        var empty = new create$j({
           descr: descr
         });
         files.append(empty.render(filter.empty()));
@@ -7447,8 +9278,8 @@
     }
 
     function component$5(object) {
-      var network = new create$o();
-      var scroll = new create$n({
+      var network = new create$p();
+      var scroll = new create$o({
         mask: true,
         over: true
       });
@@ -7464,7 +9295,7 @@
 
         this.activity.loader(true);
         Torserver.my(this.build.bind(this), function () {
-          var empty = new create$i();
+          var empty = new create$j();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -7490,7 +9321,7 @@
         data.forEach(function (element) {
           element.title = element.title.replace('[LAMPA] ', '');
           var item_data = Arrays.decodeJson(element.data, {});
-          var card = new create$m(element, {
+          var card = new create$n(element, {
             card_category: true
           });
           card.create();
@@ -7592,8 +9423,8 @@
     }
 
     function component$4(object) {
-      var network = new create$o();
-      var scroll = new create$n({
+      var network = new create$p();
+      var scroll = new create$o({
         mask: true,
         over: true
       });
@@ -7610,7 +9441,7 @@
 
         this.activity.loader(true);
         Api.relise(this.build.bind(this), function () {
-          var empty = new create$i();
+          var empty = new create$j();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -7634,7 +9465,7 @@
         var _this2 = this;
 
         data.forEach(function (element) {
-          var card = new create$m(element, {
+          var card = new create$n(element, {
             card_category: true
           });
           card.create();
@@ -7664,7 +9495,7 @@
               query: encodeURIComponent(card_data.original_title)
             }, function (find) {
               Modal.close();
-              var finded = Api.searchFilter(find, card_data);
+              var finded = TMDB.find(find, card_data);
 
               if (finded) {
                 Activity$1.push({
@@ -7685,7 +9516,7 @@
             });
           };
 
-          card.onMenu = function (target, card_data) {};
+          card.onMenu = function () {};
 
           card.visible();
           body.append(card.render());
@@ -7696,10 +9527,10 @@
       this.build = function (data) {
         relises = data;
         total_pages = Math.ceil(relises.length / 20);
-        info = new create$j();
+        info = new create$k();
         info.create();
-        scroll.render().addClass('layer--wheight').data('mheight', info.render());
-        info.render().find('.info__right').remove();
+        info.render().find('.info__right').addClass('hide');
+        scroll.minus(info.render());
         html.append(info.render());
         html.append(scroll.render());
         this.append(relises.slice(0, 20));
@@ -7757,8 +9588,8 @@
     }
 
     function component$3(object) {
-      var network = new create$o();
-      var scroll = new create$n({
+      var network = new create$p();
+      var scroll = new create$o({
         mask: true,
         over: true
       });
@@ -7774,7 +9605,7 @@
 
         this.activity.loader(true);
         Api.collections(object, this.build.bind(this), function () {
-          var empty = new create$i();
+          var empty = new create$j();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -7806,8 +9637,9 @@
         var _this3 = this;
 
         data.forEach(function (element) {
-          var card = new create$m(element, {
-            card_collection: true
+          var card = new create$n(element, {
+            card_collection: true,
+            object: object
           });
           card.create();
 
@@ -7895,8 +9727,8 @@
     }
 
     function component$2(object) {
-      var network = new create$o();
-      var scroll = new create$n({
+      var network = new create$p();
+      var scroll = new create$o({
         mask: true,
         over: true
       });
@@ -7913,7 +9745,7 @@
 
         this.activity.loader(true);
         Api.collections(object, this.build.bind(this), function () {
-          var empty = new create$i();
+          var empty = new create$j();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -7945,8 +9777,9 @@
         var _this3 = this;
 
         data.forEach(function (element) {
-          var card = new create$m(element, {
-            card_category: true
+          var card = new create$n(element, {
+            card_category: true,
+            object: object
           });
           card.create();
 
@@ -7956,47 +9789,18 @@
             info.update(card_data);
             Background.change(Utils.cardImgBackground(card_data));
             var maxrow = Math.ceil(items.length / 7) - 1;
-            if (Math.ceil(items.indexOf(card) / 7) >= maxrow) _this3.next();
+            if (Math.ceil(items.indexOf(card) / 7) >= maxrow && items.length > 19) _this3.next();
           };
 
           card.onEnter = function (target, card_data) {
-            Modal.open({
-              title: '',
-              html: Template.get('modal_loading'),
-              size: 'small',
-              mask: true,
-              onBack: function onBack() {
-                Modal.close();
-                Api.clear();
-                Controller.toggle('content');
-              }
-            });
-            Api.search({
-              query: encodeURIComponent(card_data.original_title)
-            }, function (find) {
-              Modal.close();
-              var finded = Api.searchFilter(find, card_data);
-
-              if (finded) {
-                Activity$1.push({
-                  url: '',
-                  component: 'full',
-                  id: finded.id,
-                  method: finded.name ? 'tv' : 'movie',
-                  card: finded
-                });
-              } else {
-                Noty.show('Не удалось найти фильм.');
-                Controller.toggle('content');
-              }
-            }, function () {
-              Modal.close();
-              Noty.show('Не удалось найти фильм.');
-              Controller.toggle('content');
+            Activity$1.push({
+              url: card_data.url,
+              component: 'full',
+              id: card_data.id,
+              source: object.source,
+              card: element
             });
           };
-
-          card.onMenu = function (target, card_data) {};
 
           card.visible();
           body.append(card.render());
@@ -8006,11 +9810,9 @@
 
       this.build = function (data) {
         collections = data;
-        info = new create$j();
+        info = new create$k();
         info.create();
-        if (object.source == 'okko') info.render().addClass('hide');
-        scroll.render().addClass('layer--wheight').data('mheight', info.render());
-        info.render().find('.info__right').remove();
+        scroll.minus(info.render());
         html.append(info.render());
         html.append(scroll.render());
         this.append(collections);
@@ -8092,6 +9894,10 @@
     function init$7() {
       data = Storage.get('notice', '{}');
       notices = [{
+        time: '2021-10-25 15:00',
+        title: 'Обновление 1.3.2',
+        descr: '1. Исправлен поиск карточки, каждая карточка имеет свой источник (tmdb,ivi,okko)<br>2. Возможность переключить источник на (tmdb,ivi,okko).<br>3. Обновлена работа фона.<br>4. Добавлено перелистывание в торрент файлах, влево или вправо перелистывает на 10 позиций.<br>5. Изменен источник НЦР.<br>6. Исправлена история просмотров, теперь карточка добавляется если начали просмотр видео.<br>7. Добавлены комментарии в источнике ivi.'
+      }, {
         time: '2021-10-20 16:20',
         title: 'Обновление 1.3.1',
         descr: '1. Добавлены подборки с ivi и okko<br>2. Вернул возможность изменения масштаба видео.<br>3. Добавлены цифровые релизы, в MSX не работает.<br>4. На каком языке выводить данные TMDB.<br>5. В скринсейвер добавлена возможно переключить на природу.<br>6. Возможность выбрать на каком языке находить торренты.<br>7. Возможность отключить продолжить по таймкоду.'
@@ -8159,7 +9965,7 @@
 
     function open() {
       var html = $('<div></div>');
-      var items = notices.slice(0, 5);
+      var items = notices.slice(0, 10);
       items.forEach(function (element) {
         var item = Template.get('notice', element);
         html.append(item);
@@ -9129,6 +10935,11 @@
       'transform': 'Transform',
       'calculate': 'Рассчитать'
     }, 'transform');
+    select('source', {
+      'tmdb': 'TMDB',
+      'ivi': 'IVI',
+      'okko': 'OKKO'
+    }, 'tmdb');
     /**
      * Добовляем тригеры
      */
@@ -9366,12 +11177,11 @@
 
     var html$4;
     var last;
-    var genres = [];
     var scroll$1;
 
     function init$1() {
       html$4 = Template.get('menu');
-      scroll$1 = new create$n({
+      scroll$1 = new create$o({
         mask: true,
         over: true
       });
@@ -9384,7 +11194,8 @@
           Activity$1.push({
             url: action,
             title: action == 'movie' ? 'Фильмы' : 'Сериалы',
-            component: 'category'
+            component: 'category',
+            source: Storage.field('source')
           });
         }
 
@@ -9392,7 +11203,8 @@
           Activity$1.push({
             url: '',
             title: 'Главная',
-            component: 'main'
+            component: 'main',
+            source: Storage.field('source')
           });
         }
 
@@ -9469,9 +11281,6 @@
       });
       scroll$1.minus();
       scroll$1.append(html$4);
-      Api.genres({}, function (json) {
-        genres = json.genres;
-      });
       Controller.add('menu', {
         toggle: function toggle() {
           Controller.collectionSet(html$4);
@@ -9497,27 +11306,27 @@
     }
 
     function catalog() {
-      var menu = [];
-      genres.forEach(function (element) {
-        menu.push({
-          title: element.name,
-          id: element.id
+      Api.menu({
+        source: Storage.field('source')
+      }, function (menu) {
+        Select.show({
+          title: 'Каталог',
+          items: menu,
+          onSelect: function onSelect(a) {
+            Activity$1.push({
+              url: Storage.field('source') == 'tmdb' ? 'movie' : '',
+              title: a.title,
+              component: Storage.field('source') == 'tmdb' ? 'category' : 'category_full',
+              genres: a.id,
+              id: a.id,
+              source: Storage.field('source'),
+              page: 1
+            });
+          },
+          onBack: function onBack() {
+            Controller.toggle('menu');
+          }
         });
-      });
-      Select.show({
-        title: 'Каталог',
-        items: menu,
-        onSelect: function onSelect(a) {
-          Activity$1.push({
-            url: 'movie',
-            title: a.title,
-            component: 'category',
-            genres: a.id
-          });
-        },
-        onBack: function onBack() {
-          Controller.toggle('menu');
-        }
       });
     }
 
@@ -9531,7 +11340,7 @@
     };
 
     function component(name) {
-      var scrl = new create$n({
+      var scrl = new create$o({
         mask: true,
         over: true
       });
@@ -9593,7 +11402,7 @@
       var _this = this;
 
       var comp;
-      var scrl = new create$n({
+      var scrl = new create$o({
         mask: true,
         over: true
       });
@@ -9677,7 +11486,7 @@
       this.listener = start$3();
 
       this.create = function () {
-        scroll = new create$n({
+        scroll = new create$o({
           over: true
         });
       };
@@ -9703,7 +11512,7 @@
       this.build = function (data, type) {
         var _this2 = this;
 
-        var item = new create$k(data, {
+        var item = new create$l(data, {
           align_left: true
         });
         item.onDown = this.down;
@@ -9724,7 +11533,8 @@
             title: 'Поиск - ' + query,
             component: 'category_full',
             page: 2,
-            query: encodeURIComponent(query)
+            query: encodeURIComponent(query),
+            source: 'tmdb'
           });
         };
 
@@ -9803,7 +11613,7 @@
       this.create = function () {
         var _this = this;
 
-        scroll = new create$n({
+        scroll = new create$o({
           over: true,
           mask: false,
           nopadding: true
@@ -10033,7 +11843,7 @@
 
     function build() {
       html$1 = Template.get('console');
-      scroll = new create$n({
+      scroll = new create$o({
         over: true
       });
       scroll.minus();
