@@ -8598,11 +8598,6 @@
           movie: movie
         });
       }
-
-      if (callback$1) {
-        callback$1();
-        callback$1 = false;
-      }
     }
 
     function list(items, params) {
@@ -8658,6 +8653,11 @@
           });
           Player.playlist(playlist);
           Player.stat(element.url);
+
+          if (callback$1) {
+            callback$1();
+            callback$1 = false;
+          }
         });
         html.append(item);
       });
