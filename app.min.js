@@ -4225,7 +4225,7 @@
       Storage.listener.follow('change', function (event) {
         if (event.name == 'background' || event.name == 'background_type') resize();
       });
-      var u = Platform.any() ? 'https://lampa.mx/' : './';
+      var u = Platform.any() ? 'https://yumata.github.io/lampa/' : './';
 
       for (var i = 1; i <= 6; i++) {
         var im = new Image();
