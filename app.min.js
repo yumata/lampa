@@ -11513,7 +11513,10 @@
         var _this2 = this;
 
         var item = new create$l(data, {
-          align_left: true
+          align_left: true,
+          object: {
+            source: 'tmdb'
+          }
         });
         item.onDown = this.down;
         item.onUp = this.up;
