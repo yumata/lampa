@@ -5327,6 +5327,32 @@
           subs: subs
         });
       }
+
+      if (Platform.is('webos')) {
+        webOS.service.request("luna://com.webos.media", {
+          method: "getActivePipelines",
+          onSuccess: function onSuccess(result) {
+            var id;
+            result.forEach(function (element) {
+              if (element.type == 'media' && element.mediaId) id = element.mediaId;
+            });
+            webOS.service.request("luna://com.webos.media", {
+              method: "setSubtitleEnable",
+              parameters: {
+                "mediaId": id,
+                "enable": true
+              },
+              onSuccess: function onSuccess(result) {},
+              onFailure: function onFailure(result) {
+                console.log('Player', "setSubtitleEnable:true [fail][" + result.errorCode + "] " + result.errorText);
+              }
+            });
+          },
+          onFailure: function onFailure(result) {
+            console.log('Player', "webos get info [fail][" + result.errorCode + "] " + result.errorText);
+          }
+        });
+      }
     }
     /**
      * Включить или выключить субтитры
