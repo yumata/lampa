@@ -7126,6 +7126,7 @@
         });
         html.find('.info__icon').on('hover:enter', function (e) {
           var type = $(e.target).data('type');
+          params.object.card.source = params.object.source;
           Favorite.toggle(type, params.object.card);
 
           _this.favorite();
@@ -7197,6 +7198,7 @@
               Controller.toggle(enabled);
             },
             onSelect: function onSelect(a) {
+              params.object.card.source = params.object.source;
               Favorite.toggle(a.where, params.object.card);
 
               _this2.favorite();
@@ -8182,7 +8184,7 @@
 
           card.onEnter = function (target, card_data) {
             Activity$1.push({
-              url: '',
+              url: card_data.url,
               component: 'full',
               id: element.id,
               method: card_data.name ? 'tv' : 'movie',
