@@ -4151,7 +4151,7 @@
         var ratio = Math.max(item.canvas[0].width / img.width, item.canvas[0].height / img.height);
         var nw = img.width * ratio,
             nh = img.height * ratio;
-        item.ctx.globalAlpha = data.img.width > 1000 ? 0.7 : 1;
+        item.ctx.globalAlpha = data.img.width > 1000 ? bokeh.d ? 0.7 : 0.2 : 1;
         item.ctx.drawImage(img, -(nw - item.canvas[0].width) / 2, -(nh - item.canvas[0].height) / 2, nw, nh);
         complite();
       }, 100);
