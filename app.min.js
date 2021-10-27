@@ -4210,6 +4210,10 @@
           draw(loaded$1[src], bg());
         };
 
+        img.onerror = function () {
+          draw(false, false, true);
+        };
+
         img.src = src;
       }
     }
