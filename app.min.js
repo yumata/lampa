@@ -471,7 +471,7 @@
 
     var html$p = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>\n\n<div class=\"torrent-error noconnect\">\n    <div>\n        <div>\u041F\u0440\u0438\u0447\u0438\u043D\u044B</div>\n        <ul>\n            <li>\u0417\u0430\u043F\u0440\u043E\u0441 \u043D\u0430 \u043F\u0438\u043D\u0433 \u0432\u0435\u0440\u043D\u0443\u043B \u043D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0444\u043E\u0440\u043C\u0430\u0442</li>\n            <li>\u041E\u0442\u0432\u0435\u0442 \u043E\u0442 TorServer: <code>{echo}</code></li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C?</div>\n        <ul>\n            <li>\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E \u0443 \u0432\u0430\u0441 \u0441\u0442\u043E\u0438\u0442 \u0432\u0435\u0440\u0441\u0438\u044F Matrix</li>\n        </ul>\n    </div>\n\n    <div>\n        <div>\u041A\u0430\u043A \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C?</div>\n        <ul>\n            <li>\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0438 \u0437\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 <code>{ip}/echo</code></li>\n            <li>\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E \u0432 \u043E\u0442\u0432\u0435\u0442\u0435 \u0435\u0441\u0442\u044C \u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u043A\u043E\u0434\u0430 <code>MatriX</code></li>\n        </ul>\n    </div>\n</div>";
 
-    var html$o = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>\n\n<div class=\"torrent-error noconnect\">\n    <div>\n        <div>\u041F\u0440\u0438\u0447\u0438\u043D\u044B</div>\n        <ul>\n            <li>TorServer \u043D\u0435 \u0441\u043C\u043E\u0433 \u0441\u043A\u0430\u0447\u0430\u0442\u044C \u0442\u043E\u0440\u0440\u0435\u043D\u0442 \u0444\u0430\u0439\u043B</li>\n            <li>\u0421\u0441\u044B\u043B\u043A\u0430: <code>{url}</code></li>\n        </ul>\n    </div>\n\n    <div class=\"is--jackett\">\n        <div>\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C?</div>\n        <ul>\n            <li>\u041F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043B\u0438 \u0432\u044B \u043D\u0430\u0441\u0442\u0440\u043E\u0438\u043B\u0438 Jackett</li>\n            <li>\u041F\u0440\u0438\u0432\u0430\u0442\u043D\u044B\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438 \u043C\u043E\u0433\u0443\u0442 \u043D\u0435 \u0432\u044B\u0434\u0430\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0443 \u043D\u0430 \u0444\u0430\u0439\u043B</li>\n            <li>\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E Jackett \u0442\u043E\u0436\u0435 \u043C\u043E\u0436\u0435\u0442 \u0441\u043A\u0430\u0447\u0430\u0442\u044C \u0444\u0430\u0439\u043B</li>\n        </ul>\n    </div>\n\n    <div class=\"is--torlook\">\n        <div>\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C?</div>\n        <ul>\n            <li>\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 \u043D\u0430\u0448\u0443 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C \u0433\u0440\u0443\u043F\u043F\u0443: @lampa_group</li>\n            <li>\u0423\u043A\u0430\u0436\u0438\u0442\u0435 \u043A\u0430\u043A\u043E\u0439 \u0444\u0438\u043B\u044C\u043C, \u043A\u0430\u043A\u0430\u044F \u0440\u0430\u0437\u0434\u0430\u0447\u0430 \u0438 \u043F\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0444\u043E\u0442\u043E \u044D\u0442\u043E\u0439 \u0440\u0430\u0437\u0430\u0434\u0430\u0447\u0438</li>\n        </ul>\n    </div>\n</div>";
+    var html$o = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>\n\n<div class=\"torrent-error noconnect\">\n    <div>\n        <div>\u041F\u0440\u0438\u0447\u0438\u043D\u044B</div>\n        <ul>\n            <li>TorServer \u043D\u0435 \u0441\u043C\u043E\u0433 \u0441\u043A\u0430\u0447\u0430\u0442\u044C \u0442\u043E\u0440\u0440\u0435\u043D\u0442 \u0444\u0430\u0439\u043B</li>\n            <li>\u041E\u0442\u0432\u0435\u0442 \u043E\u0442 TorServer: {echo}</li>\n            <li>\u0421\u0441\u044B\u043B\u043A\u0430: <code>{url}</code></li>\n        </ul>\n    </div>\n\n    <div class=\"is--jackett\">\n        <div>\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C?</div>\n        <ul>\n            <li>\u041F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043B\u0438 \u0432\u044B \u043D\u0430\u0441\u0442\u0440\u043E\u0438\u043B\u0438 Jackett</li>\n            <li>\u041F\u0440\u0438\u0432\u0430\u0442\u043D\u044B\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438 \u043C\u043E\u0433\u0443\u0442 \u043D\u0435 \u0432\u044B\u0434\u0430\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0443 \u043D\u0430 \u0444\u0430\u0439\u043B</li>\n            <li>\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044C \u0447\u0442\u043E Jackett \u0442\u043E\u0436\u0435 \u043C\u043E\u0436\u0435\u0442 \u0441\u043A\u0430\u0447\u0430\u0442\u044C \u0444\u0430\u0439\u043B</li>\n        </ul>\n    </div>\n\n    <div class=\"is--torlook\">\n        <div>\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C?</div>\n        <ul>\n            <li>\u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 \u043D\u0430\u0448\u0443 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C \u0433\u0440\u0443\u043F\u043F\u0443: @lampa_group</li>\n            <li>\u0423\u043A\u0430\u0436\u0438\u0442\u0435 \u043A\u0430\u043A\u043E\u0439 \u0444\u0438\u043B\u044C\u043C, \u043A\u0430\u043A\u0430\u044F \u0440\u0430\u0437\u0434\u0430\u0447\u0430 \u0438 \u043F\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0444\u043E\u0442\u043E \u044D\u0442\u043E\u0439 \u0440\u0430\u0437\u0430\u0434\u0430\u0447\u0438</li>\n        </ul>\n    </div>\n</div>";
 
     var html$n = "<div class=\"torrent-serial selector\">\n    <img src=\"{img}\" class=\"torrent-serial__img\" />\n    <div class=\"torrent-serial__content\">\n        <div class=\"torrent-serial__body\">\n            <div class=\"torrent-serial__title\">{fname}</div>\n            <div class=\"torrent-serial__line\">\u0421\u0435\u0440\u0438\u044F - <b>{episode}</b> &nbsp;\u2022&nbsp; \u0421\u0435\u0437\u043E\u043D - <b>{season}</b> &nbsp;\u2022&nbsp; \u0412\u044B\u0445\u043E\u0434 - {air_date}</div>\n        </div>\n        <div class=\"torrent-serial__detail\">\n            <div class=\"torrent-serial__size\">{size}</div>\n            <div class=\"torrent-serial__exe\">.{exe}</div>\n        </div>\n    </div>\n    <div class=\"torrent-serial__episode\">{episode}</div>\n</div>";
 
@@ -6620,7 +6620,9 @@
         save_to_db: Storage.get('torrserver_savedb', 'false')
       });
       clear$1();
-      network$1.silent(url() + '/torrents', success, fail, data);
+      network$1.silent(url() + '/torrents', success, function (a, c) {
+        fail(network$1.errorDecode(a, c));
+      }, data);
     }
 
     function files$1(hash, success, fail) {
@@ -7146,6 +7148,8 @@
             title: 'Торренты',
             component: 'torrents',
             search: query,
+            search_one: data.movie.title,
+            search_two: data.movie.original_title,
             movie: data.movie,
             page: 1
           });
@@ -7232,7 +7236,7 @@
               Controller.toggle(enabled);
             }
           });
-        });
+        }).remove();
       };
 
       this.favorite = function () {
@@ -7393,7 +7397,7 @@
           return a.name;
         }).join(', ');
         body = Template.get('full_descr', {
-          text: data.movie.overview,
+          text: data.movie.overview + '<br><br>',
           genres: genres,
           companies: companies,
           relise: data.movie.release_date || data.movie.first_air_date,
@@ -8238,11 +8242,11 @@
                 title: 'Действие',
                 items: [{
                   title: 'Удалить из истории',
-                  subtitle: 'Удалить веделеную карточку',
+                  subtitle: 'Удалить веделенную карточку',
                   one: true
                 }, {
                   title: 'Очистить историю',
-                  subtitle: 'Удалит все карточки с истории',
+                  subtitle: 'Удалит все карточки из истории',
                   all: true
                 }],
                 onBack: function onBack() {
@@ -8434,7 +8438,7 @@
     }
 
     function create$7() {
-      var _this = this;
+      var _this2 = this;
 
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var line = Template.get('filter');
@@ -8443,29 +8447,52 @@
         sort: [],
         filter: []
       };
-      empty.on('hover:enter', function () {
-        new create$8({
-          input: params.search,
-          onSearch: _this.onSearch,
-          onBack: _this.onBack
+
+      function selectSearch() {
+        var _this = this;
+
+        var selected = params.search_one == params.search ? 0 : params.search_two == params.search ? 1 : -1;
+        Select.show({
+          title: 'Уточнить',
+          items: [{
+            title: params.search_one,
+            query: params.search_one,
+            selected: selected == 0
+          }, {
+            title: params.search_two,
+            query: params.search_two,
+            selected: selected == 1
+          }, {
+            title: 'Указать название',
+            selected: selected == -1,
+            query: ''
+          }],
+          onBack: this.onBack,
+          onSelect: function onSelect(a) {
+            if (!a.query) {
+              new create$8({
+                input: '',
+                onSearch: _this.onSearch,
+                onBack: _this.onBack
+              });
+            } else {
+              _this.onSearch(a.query);
+            }
+          }
         });
-      });
-      line.find('.filter--search').on('hover:enter', function () {
-        new create$8({
-          input: params.search,
-          onSearch: _this.onSearch,
-          onBack: _this.onBack
-        });
-      });
+      }
+
+      empty.on('hover:enter', selectSearch.bind(this));
+      line.find('.filter--search').on('hover:enter', selectSearch.bind(this));
       line.find('.filter--sort').on('hover:enter', function () {
-        _this.show('Сортировать', 'sort');
+        _this2.show('Сортировать', 'sort');
       });
       line.find('.filter--filter').on('hover:enter', function () {
-        _this.show('Фильтр', 'filter');
+        _this2.show('Фильтр', 'filter');
       });
 
       this.show = function (title, type) {
-        var _this2 = this;
+        var _this3 = this;
 
         var where = data[type];
         Select.show({
@@ -8478,18 +8505,18 @@
                 title: a.title,
                 items: a.items,
                 onBack: function onBack() {
-                  _this2.show(title, type);
+                  _this3.show(title, type);
                 },
                 onSelect: function onSelect(b) {
-                  _this2.selected(a.items, b);
+                  _this3.selected(a.items, b);
 
-                  _this2.onSelect(type, a, b);
+                  _this3.onSelect(type, a, b);
                 }
               });
             } else {
-              _this2.selected(where, a);
+              _this3.selected(where, a);
 
-              _this2.onSelect(type, a);
+              _this3.onSelect(type, a);
             }
           }
         });
@@ -8624,12 +8651,13 @@
       }, function (json) {
         SERVER.hash = json.hash;
         files();
-      }, function () {
+      }, function (echo) {
         var jac = Storage.field('parser_torrent_type') == 'jackett';
         var tpl = Template.get('torrent_nohash', {
           title: 'Ошибка',
           text: 'Не удалось получить HASH',
-          url: SERVER.object.MagnetUri || SERVER.object.Link
+          url: SERVER.object.MagnetUri || SERVER.object.Link,
+          echo: echo
         });
         if (jac) tpl.find('.is--torlook').remove();else tpl.find('.is--jackett').remove();
         Modal.update(tpl);
@@ -10823,23 +10851,55 @@
         back();
       });
       keyboard$1.listener.follow('down', function (event) {
+        var members = Storage.get('setting_member', []);
+        var links = [];
+        links.push({
+          title: (members.indexOf(input$1.text()) == -1 ? 'Добавить' : 'Удалить') + ' текущее значение',
+          subtitle: input$1.text(),
+          add: true
+        });
+        members.forEach(function (link) {
+          links.push({
+            title: link,
+            subtitle: 'Пользовательская ссылка',
+            url: link
+          });
+        });
+        links = links.concat([{
+          title: 'jac.red',
+          subtitle: 'Для торрентов, Api ключ - пустой',
+          url: 'jac.red'
+        }, {
+          title: 'j.govno.co.uk',
+          subtitle: 'Для торрентов, Api ключ - 1',
+          url: 'j.govno.co.uk'
+        }, {
+          title: '127.0.0.1:8090',
+          subtitle: 'Для локального TorrServ',
+          url: '127.0.0.1:8090'
+        }, {
+          title: Utils.shortText('api.scraperapi.com/?url={q}&api_key=', 35),
+          subtitle: 'scraperapi.com',
+          url: 'api.scraperapi.com/?url={q}&api_key='
+        }]);
         Select.show({
           title: 'Ссылки',
-          items: [{
-            title: Utils.shortText('api.scraperapi.com/?url={q}&api_key=', 35),
-            subtitle: 'scraperapi.com',
-            url: 'api.scraperapi.com/?url={q}&api_key='
-          }, {
-            title: Utils.shortText('Для торрентов jac.red', 35),
-            subtitle: 'jac.red',
-            url: 'jac.red'
-          }, {
-            title: Utils.shortText('Для локального TorrServ', 35),
-            subtitle: '127.0.0.1:8090',
-            url: '127.0.0.1:8090'
-          }],
+          items: links,
           onSelect: function onSelect(a) {
-            keyboard$1.value(a.url);
+            if (a.add) {
+              if (members.indexOf(a.subtitle) == -1) {
+                Arrays.insert(members, 0, a.subtitle);
+                Noty.show('Добавлено (' + a.subtitle + ')');
+              } else {
+                Arrays.remove(members, a.subtitle);
+                Noty.show('Удалено (' + a.subtitle + ')');
+              }
+
+              Storage.set('setting_member', members);
+            } else {
+              keyboard$1.value(a.url);
+            }
+
             keyboard$1.toggle();
           },
           onBack: function onBack() {
@@ -11621,6 +11681,7 @@
       this.build = function (data, type) {
         var _this2 = this;
 
+        data.noimage = true;
         var item = new create$l(data, {
           align_left: true,
           object: {
@@ -11692,7 +11753,12 @@
           invisible: true,
           toggle: function toggle() {
             Controller.collectionSet(scroll.render());
-            if (items.length) items[0].toggle();
+
+            if (items.length) {
+              active = 0;
+              scroll.update(items[0].render());
+              items[0].toggle();
+            }
           },
           back: function back() {
             _this3.listener.send('back');
@@ -11739,7 +11805,7 @@
       this.append = function (value) {
         var _this2 = this;
 
-        var key = $('<div class="search-history-key selector"><div>' + value + '</div></div>');
+        var key = $('<div class="search-history-key selector"><div><span>' + value + '</span><div>Влево - удалить</div></div></div>');
         key.on('hover:enter', function () {
           _this2.listener.send('enter', {
             value: value
@@ -11777,6 +11843,20 @@
           },
           back: function back() {
             _this3.listener.send('back');
+          },
+          left: function left() {
+            var elem = scroll.render().find('.focus'),
+                selc = scroll.render().find('.selector');
+
+            if (elem.length) {
+              Arrays.remove(keys, $('span', elem).text());
+              Storage.set('search_history', keys);
+              var index = selc.index(elem);
+              if (index > 0) last = selc.eq(index - 1)[0];else if (selc[index + 1]) last = selc.eq(index + 1)[0];
+              elem.remove();
+              if (selc.length - 1 <= 0) last = false;
+              Controller.toggle('search_history');
+            }
           }
         });
         Controller.toggle('search_history');
