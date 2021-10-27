@@ -4116,8 +4116,8 @@
       return background[view$1];
     }
 
-    function draw(data, item) {
-      if (!Storage.get('background', 'true')) {
+    function draw(data, item, noimage) {
+      if (!Storage.get('background', 'true') || noimage) {
         background.one.canvas.removeClass('visible');
         background.two.canvas.removeClass('visible');
         return;
@@ -4222,7 +4222,7 @@
       if (url) src = url;
       clearTimeout(timer$5);
       timer$5 = setTimeout(function () {
-        load();
+        if (url) load();else draw(false, false, true);
       }, 1000);
     }
 
@@ -4231,7 +4231,7 @@
       if (url) src = url;
       clearTimeout(timer$5);
       bokeh.d = false;
-      load();
+      if (url) load();else draw(false, false, true);
     }
 
     function render$b() {
