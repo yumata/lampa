@@ -189,7 +189,7 @@
       };
     }
 
-    function subscribe() {
+    function subscribe$1() {
       this.follow = function (type, listener) {
         if (this._listeners === undefined) this._listeners = {};
         var listeners = this._listeners;
@@ -245,7 +245,7 @@
     }
 
     function start$3() {
-      return new subscribe();
+      return new subscribe$1();
     }
 
     function _typeof(obj) {
@@ -357,7 +357,7 @@
       where.splice(index, 0, item);
     }
 
-    function destroy$8(arr) {
+    function destroy$9(arr) {
       var call_function = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'destroy';
       var value = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
       var where = toArray(arr);
@@ -379,7 +379,7 @@
       insert: insert,
       clone: clone,
       remove: remove$2,
-      destroy: destroy$8,
+      destroy: destroy$9,
       empty: empty$1
     };
 
@@ -694,7 +694,7 @@
       render: render$c
     };
 
-    function create$p() {
+    function create$q() {
       var listener = start$3();
       var _calls = [];
 
@@ -1018,7 +1018,7 @@
       }
     }
 
-    function create$o() {
+    function create$p() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var html = Template.get('scroll');
       var body = html.find('.scroll__body');
@@ -1543,7 +1543,7 @@
 
     var baseurl$2 = Utils.protocol() + 'api.themoviedb.org/3/';
     var baseimg = Utils.protocol() + 'image.tmdb.org/t/p/w300/';
-    var network$6 = new create$p();
+    var network$6 = new create$q();
     var key = '4ef0d7355d9ffb5151e987764708ce96';
     var menu_list$2 = [];
 
@@ -1856,7 +1856,7 @@
     };
 
     var baseurl$1 = 'https://ctx.playfamily.ru/screenapi/v1/noauth/';
-    var network$5 = new create$p();
+    var network$5 = new create$q();
     var menu_list$1 = [];
 
     function img$2(element) {
@@ -2301,7 +2301,7 @@
     };
 
     var baseurl = 'https://api.ivi.ru/mobileapi/';
-    var network$4 = new create$p();
+    var network$4 = new create$q();
     var menu_list = [];
 
     function tocard(element) {
@@ -2836,7 +2836,7 @@
       okko: OKKO,
       tmdb: TMDB
     };
-    var network$3 = new create$p();
+    var network$3 = new create$q();
 
     function source(params) {
       return params.source ? sources[params.source] : sources.tmdb;
@@ -2973,7 +2973,7 @@
     };
 
     var html$f = Template.get('selectbox');
-    var scroll$3 = new create$o({
+    var scroll$3 = new create$p({
       mask: true,
       over: true
     });
@@ -3051,7 +3051,7 @@
       hide: hide$1
     };
 
-    function create$n(data) {
+    function create$o(data) {
       var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       Arrays.extend(data, {
         title: data.name,
@@ -4251,7 +4251,7 @@
       immediately: immediately
     };
 
-    function create$m() {
+    function create$n() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       var card = Template.get('more');
 
@@ -4279,13 +4279,13 @@
       };
     }
 
-    function create$l(data) {
+    function create$m(data) {
       var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       var content = Template.get('items_line', {
         title: data.title
       });
       var body = content.find('.items-line__body');
-      var scroll = new create$o({
+      var scroll = new create$p({
         horizontal: true
       });
       var items = [];
@@ -4312,7 +4312,7 @@
 
         if (element.ready) return;
         element.ready = true;
-        var card = new create$n(element, params);
+        var card = new create$o(element, params);
         card.create();
 
         card.onFocus = function (target, card_data) {
@@ -4353,7 +4353,7 @@
       this.more = function () {
         var _this2 = this;
 
-        more = new create$m(params);
+        more = new create$n(params);
         more.create();
 
         more.onFocus = function (target) {
@@ -4427,7 +4427,7 @@
       };
     }
 
-    function create$k() {
+    function create$l() {
       var html;
 
       this.create = function () {
@@ -4458,7 +4458,7 @@
       };
     }
 
-    function create$j() {
+    function create$k() {
       var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       Arrays.extend(params, {
         title: 'Здесь пусто',
@@ -4498,8 +4498,8 @@
     }
 
     function component$c(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -4514,7 +4514,7 @@
 
         this.activity.loader(true);
         Api.main(object, this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -4527,7 +4527,7 @@
 
       this.build = function (data) {
         lezydata = data;
-        info = new create$k();
+        info = new create$l();
         info.create();
         scroll.minus(info.render());
         html.append(info.render());
@@ -4540,7 +4540,7 @@
       this.append = function (element) {
         if (element.ready) return;
         element.ready = true;
-        var item = new create$l(element, {
+        var item = new create$m(element, {
           url: element.url,
           card_small: true,
           genres: object.genres,
@@ -4617,7 +4617,7 @@
     var html$d;
     var timer$4;
 
-    function create$i(id) {
+    function create$j(id) {
       html$d = $('<div class="youtube-player"><div id="youtube-player"></div><div id="youtube-player__progress" class="youtube-player__progress"></div></div>');
       $('body').append(html$d);
       player = new YT.Player('youtube-player', {
@@ -4654,7 +4654,7 @@
     }
 
     function play$2(id) {
-      create$i(id);
+      create$j(id);
       Controller.add('youtube', {
         invisible: true,
         toggle: function toggle() {},
@@ -4666,7 +4666,7 @@
         },
         enter: function enter() {},
         gone: function gone() {
-          destroy$7();
+          destroy$8();
         },
         back: function back() {
           Controller.toggle('content');
@@ -4675,7 +4675,7 @@
       Controller.toggle('youtube');
     }
 
-    function destroy$7() {
+    function destroy$8() {
       clearTimeout(timer$4);
       player.destroy();
       html$d.remove();
@@ -4686,7 +4686,7 @@
       play: play$2
     };
 
-    function create$h(call_video) {
+    function create$i(call_video) {
       var stream_url, loaded;
       var object = $('<object class="player-video_video" type="application/avplayer"</object>');
       var video = object[0];
@@ -5115,17 +5115,612 @@
       return object;
     }
 
+    function create$h(object) {
+      this.state = object.state;
+
+      this.start = function () {
+        this.dispath(this.state);
+      };
+
+      this.dispath = function (action_name) {
+        var action = object.transitions[action_name];
+
+        if (action) {
+          action.call(this);
+        } else {
+          console.log('invalid action');
+        }
+      };
+    }
+
+    var html$c = Template.get('player_panel');
     var listener$8 = start$3();
-    var html$c = Template.get('player_video');
-    var display = html$c.find('.player-video__display');
-    var paused = html$c.find('.player-video__paused');
-    var subtitles = html$c.find('.player-video__subtitles');
+    var condition = {};
     var timer$3 = {};
+    var tracks$1 = [];
+    var subs = [];
+    var elems$1 = {
+      peding: $('.player-panel__peding', html$c),
+      position: $('.player-panel__position', html$c),
+      time: $('.player-panel__time', html$c),
+      timenow: $('.player-panel__timenow', html$c),
+      timeend: $('.player-panel__timeend', html$c),
+      title: $('.player-panel__filename', html$c),
+      tracks: $('.player-panel__tracks', html$c),
+      subs: $('.player-panel__subs', html$c)
+    };
+    /**
+     * Отсеживаем состояние, 
+     * когда надо показать панель, а когда нет
+     */
+
+    var state = new create$h({
+      state: 'start',
+      transitions: {
+        start: function start() {
+          clearTimeout(timer$3.hide);
+          clearTimeout(timer$3.rewind);
+          this.dispath('canplay');
+        },
+        canplay: function canplay() {
+          if (condition.canplay) this.dispath('visible');else _visible(true);
+        },
+        visible: function visible() {
+          if (condition.visible) _visible(true);else this.dispath('rewind');
+        },
+        rewind: function rewind() {
+          var _this = this;
+
+          clearTimeout(timer$3.rewind);
+
+          if (condition.rewind) {
+            _visible(true);
+
+            timer$3.rewind = setTimeout(function () {
+              condition.rewind = false;
+
+              _this.dispath('hide');
+            }, 1000);
+          } else {
+            this.dispath('hide');
+          }
+        },
+        hide: function hide() {
+          clearTimeout(timer$3.hide);
+          timer$3.hide = setTimeout(function () {
+            _visible(false);
+          }, 1000);
+        }
+      }
+    });
+    html$c.find('.selector').on('hover:focus', function (e) {
+    });
+    html$c.find('.player-panel__playpause').on('hover:enter', function (e) {
+      listener$8.send('playpause', {});
+    });
+    html$c.find('.player-panel__next').on('hover:enter', function (e) {
+      listener$8.send('next', {});
+    });
+    html$c.find('.player-panel__prev').on('hover:enter', function (e) {
+      listener$8.send('prev', {});
+    });
+    html$c.find('.player-panel__rprev').on('hover:enter', function (e) {
+      listener$8.send('rprev', {});
+    });
+    html$c.find('.player-panel__rnext').on('hover:enter', function (e) {
+      listener$8.send('rnext', {});
+    });
+    html$c.find('.player-panel__playlist').on('hover:enter', function (e) {
+      listener$8.send('playlist', {});
+    });
+    /**
+     * Выбор аудиодорожки
+     */
+
+    elems$1.tracks.on('hover:enter', function (e) {
+      if (tracks$1.length) {
+        tracks$1.forEach(function (element, p) {
+          var name = [];
+          name.push(p + 1);
+          name.push(element.language || element.name || 'Неизвестно');
+          if (element.label) name.push(element.label);
+
+          if (element.extra) {
+            if (element.extra.channels) name.push('Каналов: ' + element.extra.channels);
+            if (element.extra.fourCC) name.push('Тип: ' + element.extra.fourCC);
+          }
+
+          element.title = name.join(' / ');
+        });
+        var enabled = Controller.enabled();
+        Select.show({
+          title: 'Аудиодорожки',
+          items: tracks$1,
+          onSelect: function onSelect(a) {
+            tracks$1.forEach(function (element) {
+              element.enabled = false;
+              element.selected = false;
+            });
+            a.enabled = true;
+            a.selected = true;
+            Controller.toggle(enabled.name);
+          },
+          onBack: function onBack() {
+            Controller.toggle(enabled.name);
+          }
+        });
+      }
+    });
+    /**
+     * Выбор субтитров
+     */
+
+    elems$1.subs.on('hover:enter', function (e) {
+      if (subs.length) {
+        if (subs[0].index !== -1) {
+          Arrays.insert(subs, 0, {
+            title: 'Отключено',
+            selected: true,
+            index: -1
+          });
+        }
+
+        subs.forEach(function (element, p) {
+          if (element.index !== -1) element.title = p + ' / ' + (element.language || element.label || 'Неизвестно');
+        });
+        var enabled = Controller.enabled();
+        Select.show({
+          title: 'Субтитры',
+          items: subs,
+          onSelect: function onSelect(a) {
+            subs.forEach(function (element) {
+              element.mode = 'disabled';
+              element.selected = false;
+            });
+            a.mode = 'showing';
+            a.selected = true;
+            listener$8.send('subsview', {
+              status: a.index > -1
+            });
+            Controller.toggle(enabled.name);
+          },
+          onBack: function onBack() {
+            Controller.toggle(enabled.name);
+          }
+        });
+      }
+    });
+    /**
+     * Выбор масштаба видео
+     */
+
+    html$c.find('.player-panel__size').on('hover:enter', function (e) {
+      var select = Storage.get('player_size', 'default');
+      var items = [{
+        title: 'По умолчанию',
+        subtitle: 'Размер видео по умолчанию',
+        value: 'default',
+        selected: select == 'default'
+      }, {
+        title: 'Расширить',
+        subtitle: 'Расширяет видео на весь экран',
+        value: 'cover',
+        selected: select == 'cover'
+      }];
+
+      if (!(Platform.is('tizen') && Storage.field('player') == 'tizen')) {
+        items = items.concat([{
+          title: 'Заполнить',
+          subtitle: 'Вместить видео на весь экран',
+          value: 'fill',
+          selected: select == 'fill'
+        }, {
+          title: 'Увеличить',
+          subtitle: 'Увеличить видео на 130%',
+          value: 's130',
+          selected: select == 's130'
+        }]);
+      } else {
+        if (select == 's130' || select == 'fill') {
+          items[0].selected = true;
+        }
+      }
+
+      Select.show({
+        title: 'Размер видео',
+        items: items,
+        onSelect: function onSelect(a) {
+          listener$8.send('size', {
+            size: a.value
+          });
+          Controller.toggle('player_panel');
+        },
+        onBack: function onBack() {
+          Controller.toggle('player_panel');
+        }
+      });
+    });
+    /**
+     * Обновляем состояние панели
+     * @param {String} need - что нужно обновить
+     * @param {*} value - значение
+     */
+
+    function update$3(need, value) {
+      if (need == 'position') {
+        elems$1.position.css({
+          width: value
+        });
+        elems$1.time.css({
+          left: value
+        });
+      }
+
+      if (need == 'peding') {
+        elems$1.peding.css({
+          width: value
+        });
+      }
+
+      if (need == 'time') {
+        elems$1.time.text(value);
+      }
+
+      if (need == 'timeend') {
+        elems$1.timeend.text(value);
+      }
+
+      if (need == 'timenow') {
+        elems$1.timenow.text(value);
+      }
+
+      if (need == 'play') {
+        html$c.toggleClass('panel--paused', false);
+      }
+
+      if (need == 'pause') {
+        html$c.toggleClass('panel--paused', true);
+      }
+    }
+    /**
+     * Показать или скрыть панель
+     * @param {Boolean} status 
+     */
+
+
+    function _visible(status) {
+      listener$8.send('visible', {
+        status: status
+      });
+      html$c.toggleClass('panel--visible', status);
+    }
+    /**
+     * Можем играть, далее отслеживаем статус
+     */
+
+
+    function canplay() {
+      condition.canplay = true;
+      state.start();
+    }
+    /**
+     * Перемотка
+     */
+
+
+    function rewind$1() {
+      condition.rewind = true;
+      state.start();
+    }
+
+    function toggleRewind() {
+      Controller.add('player_rewind', {
+        toggle: function toggle() {
+          Controller.collectionSet(render$a());
+          Controller.collectionFocus(false, render$a());
+        },
+        up: function up() {
+          Controller.toggle('player');
+        },
+        down: function down() {
+          toggleButtons();
+        },
+        right: function right() {
+          listener$8.send('rnext', {});
+        },
+        left: function left() {
+          listener$8.send('rprev', {});
+        },
+        gone: function gone() {
+          html$c.find('.selector').removeClass('focus');
+        },
+        back: function back() {
+          Controller.toggle('player');
+          hide();
+        }
+      });
+      Controller.toggle('player_rewind');
+    }
+
+    function toggleButtons() {
+      Controller.add('player_panel', {
+        toggle: function toggle() {
+          Controller.collectionSet(render$a());
+          Controller.collectionFocus($('.player-panel__playpause', html$c)[0], render$a());
+        },
+        up: function up() {
+          toggleRewind();
+        },
+        right: function right() {
+          Navigator.move('right');
+        },
+        left: function left() {
+          Navigator.move('left');
+        },
+        down: function down() {
+          Controller.toggle('player');
+        },
+        gone: function gone() {
+          html$c.find('.selector').removeClass('focus');
+        },
+        back: function back() {
+          Controller.toggle('player');
+          hide();
+        }
+      });
+      Controller.toggle('player_panel');
+    }
+    /**
+     * Контроллер
+     */
+
+
+    function toggle$6() {
+      condition.visible = true;
+      state.start();
+      toggleRewind();
+    }
+    /**
+     * Показать панель
+     */
+
+
+    function show$2() {
+      state.start();
+    }
+    /**
+     * Скрыть панель
+     */
+
+
+    function hide() {
+      condition.visible = false;
+
+      _visible(false);
+    }
+    /**
+     * Установить субтитры
+     * @param {Array} su 
+     */
+
+
+    function setSubs(su) {
+      subs = su;
+      elems$1.subs.toggleClass('hide', false);
+    }
+    /**
+     * Установить дорожки
+     * @param {Array} tr 
+     */
+
+
+    function setTracks(tr) {
+      tracks$1 = tr;
+      elems$1.tracks.toggleClass('hide', false);
+    }
+    /**
+     * Уничтожить
+     */
+
+
+    function destroy$7() {
+      condition = {};
+      tracks$1 = [];
+      subs = [];
+      elems$1.peding.css({
+        width: 0
+      });
+      elems$1.position.css({
+        width: 0
+      });
+      elems$1.time.text('00:00');
+      elems$1.timenow.text('00:00');
+      elems$1.timeend.text('00:00');
+      elems$1.subs.toggleClass('hide', true);
+      elems$1.tracks.toggleClass('hide', true);
+      html$c.toggleClass('panel--paused', false);
+    }
+
+    function render$a() {
+      return html$c;
+    }
+
+    var Panel = {
+      listener: listener$8,
+      render: render$a,
+      toggle: toggle$6,
+      show: show$2,
+      destroy: destroy$7,
+      hide: hide,
+      canplay: canplay,
+      update: update$3,
+      rewind: rewind$1,
+      setTracks: setTracks,
+      setSubs: setSubs
+    };
+
+    var media_id;
+    var subtitle_visible = false;
+
+    function luna(params, call) {
+      if (call) params.onSuccess = call;
+
+      params.onFailure = function (result) {
+        console.log('WebOS', params.method + " [fail][" + result.errorCode + "] " + result.errorText);
+      };
+
+      webOS.service.request("luna://com.webos.media", params);
+    }
+
+    function subtitles$1() {
+      if (info.numSubtitleTracks) {
+        var all = [];
+
+        var add = function add(sub, index) {
+          sub.index = index;
+          Object.defineProperty(sub, 'mode', {
+            set: function set(v) {
+              if (v == 'showing') {
+                toggleSubtitles(sub.index == -1 ? false : true);
+                luna({
+                  method: 'selectTrack',
+                  parameters: {
+                    'type': 'text',
+                    'mediaId': media_id,
+                    'index': sub.index
+                  }
+                });
+              }
+            },
+            get: function get() {}
+          });
+          all.push(sub);
+        };
+
+        add({
+          index: -1,
+          title: 'Отключить'
+        });
+
+        for (var i = 0; i < info.subtitleTrackInfo.length; i++) {
+          add(info.subtitleTrackInfo[i], i);
+        }
+
+        Panel.setSubs(all);
+      }
+    }
+
+    function tracks(info) {
+      if (info.numAudioTracks) {
+        var all = [];
+
+        var add = function add(track, index) {
+          track.index = index;
+          track.extra = {
+            channels: track.channels,
+            fourCC: track.codec
+          };
+          Object.defineProperty(track, 'enabled', {
+            set: function set(v) {
+              if (v) {
+                luna({
+                  method: 'selectTrack',
+                  parameters: {
+                    'type': 'audio',
+                    'mediaId': media_id,
+                    'index': sub.index
+                  }
+                });
+              }
+            },
+            get: function get() {}
+          });
+          all.push(sub);
+        };
+
+        for (var i = 0; i < info.audioTrackInfo.length; i++) {
+          add(info.audioTrackInfo[i], i);
+        }
+
+        Panel.setTracks(all);
+      }
+    }
+
+    function subscribe() {
+      luna({
+        method: 'subscribe',
+        parameters: {
+          'mediaId': media_id,
+          'subscribe': true
+        }
+      }, function (result) {
+        if (result.sourceInfo) {
+          var _info = result.sourceInfo.programInfo[0];
+          subtitles$1();
+          tracks(_info);
+        }
+      });
+    }
+
+    function unsubscribe() {
+      luna({
+        method: 'subscribe',
+        parameters: {
+          'mediaId': media_id,
+          'subscribe': false
+        }
+      });
+    }
+
+    function toggleSubtitles(status) {
+      subtitle_visible = status;
+      luna({
+        method: 'setSubtitleEnable',
+        parameters: {
+          'mediaId': media_id,
+          'enable': status
+        }
+      });
+    }
+
+    function rewinded() {
+      toggleSubtitles(subtitle_visible);
+    }
+
+    function destroy$6() {
+      if (media_id) unsubscribe();
+      media_id = '';
+    }
+
+    function create$g() {
+      luna({
+        method: 'getActivePipelines'
+      }, function (result) {
+        result.forEach(function (element) {
+          if (element.type == 'media' && element.id && element.is_foreground) media_id = element.id;
+        });
+        console.log('WebOS', 'video id:', media_id);
+
+        if (media_id) {
+          toggleSubtitles(false);
+          subscribe();
+        }
+      });
+      this.rewinded = rewinded;
+      this.destroy = destroy$6;
+    }
+
+    var listener$7 = start$3();
+    var html$b = Template.get('player_video');
+    var display = html$b.find('.player-video__display');
+    var paused = html$b.find('.player-video__paused');
+    var subtitles = html$b.find('.player-video__subtitles');
+    var timer$2 = {};
     var rewind_position = 0;
     var video;
     var wait;
     var neeed_sacle;
-    var media_id;
+    var webos;
     /**
      * Добовляем события к контейнеру
      */
@@ -5141,7 +5736,7 @@
       }); // видео закончилось
 
       video.addEventListener('ended', function () {
-        listener$8.send('ended', {});
+        listener$7.send('ended', {});
       }); // что-то пошло не так
 
       video.addEventListener('error', function (e) {
@@ -5150,15 +5745,15 @@
 
         if (msg.indexOf('EMPTY SRC') == -1) {
           if (error.code == 3) {
-            listener$8.send('error', {
+            listener$7.send('error', {
               error: 'Не удалось декодировать видео'
             });
           } else if (error.code == 4) {
-            listener$8.send('error', {
+            listener$7.send('error', {
               error: 'Видео не найдено или повреждено'
             });
           } else if (typeof error.code !== 'undefined') {
-            listener$8.send('error', {
+            listener$7.send('error', {
               error: 'code [' + error.code + '] details [' + msg + ']'
             });
           }
@@ -5167,7 +5762,7 @@
 
       video.addEventListener('progress', function (e) {
         if (e.percent) {
-          listener$8.send('progress', {
+          listener$7.send('progress', {
             down: e.percent
           });
         } else {
@@ -5177,7 +5772,7 @@
             for (var i = 0; i < video.buffered.length; i++) {
               if (video.buffered.start(video.buffered.length - 1 - i) < video.currentTime) {
                 var down = Math.max(0, Math.min(100, video.buffered.end(video.buffered.length - 1 - i) / duration * 100)) + "%";
-                listener$8.send('progress', {
+                listener$7.send('progress', {
                   down: down
                 });
                 break;
@@ -5188,12 +5783,12 @@
       }); // можно ли уже проигрывать?
 
       video.addEventListener('canplay', function () {
-        listener$8.send('canplay', {});
+        listener$7.send('canplay', {});
         loaded();
       }); // сколько прошло
 
       video.addEventListener('timeupdate', function () {
-        listener$8.send('timeupdate', {
+        listener$7.send('timeupdate', {
           duration: video.duration,
           current: video.currentTime
         });
@@ -5218,7 +5813,7 @@
         subtitles.children().html(e.text);
       });
       video.addEventListener('loadedmetadata', function (e) {
-        listener$8.send('videosize', {
+        listener$7.send('videosize', {
           width: video.videoWidth,
           height: video.videoHeight
         });
@@ -5308,7 +5903,7 @@
           tracks = new_tracks;
         }
 
-        listener$8.send('tracks', {
+        listener$7.send('tracks', {
           tracks: tracks
         });
       }
@@ -5324,83 +5919,10 @@
           subs = new_subs;
         }
 
-        listener$8.send('subs', {
+        listener$7.send('subs', {
           subs: subs
         });
       }
-
-      if (Platform.is('webos')) {
-        webOS.service.request("luna://com.webos.media", {
-          method: "getActivePipelines",
-          onSuccess: function onSuccess(result) {
-            result.forEach(function (element) {
-              if (element.type == 'media' && element.id && element.is_foreground) media_id = element.id;
-            });
-            console.log('Player', 'video detect id:', media_id);
-
-            if (media_id) {
-              webosSubtitlesToggle(false);
-
-              var _subs = [],
-                  adsu = function adsu(i) {
-                var sub = {
-                  index: i,
-                  title: i == -1 ? 'Отключить' : '',
-                  selected: i == -1
-                };
-                Object.defineProperty(sub, "mode", {
-                  set: function set(v) {
-                    if (v == 'showing') {
-                      webosSubtitlesToggle(sub.index == -1 ? false : true);
-                      console.log('Player', 'toggle index:', sub.index);
-                      webOS.service.request("luna://com.webos.media", {
-                        method: "selectTrack",
-                        parameters: {
-                          "type": "text",
-                          "mediaId": media_id,
-                          "index": sub.index
-                        },
-                        onSuccess: function onSuccess(result) {},
-                        onFailure: function onFailure(result) {
-                          console.log('Player', "toggle track [fail][" + result.errorCode + "] " + result.errorText);
-                        }
-                      });
-                    }
-                  },
-                  get: function get() {}
-                });
-
-                _subs.push(sub);
-              };
-
-              for (var i = -1; i <= 10; i++) {
-                adsu(i);
-              }
-
-              listener$8.send('subs', {
-                subs: _subs
-              });
-            }
-          },
-          onFailure: function onFailure(result) {
-            console.log('Player', "webos get info [fail][" + result.errorCode + "] " + result.errorText);
-          }
-        });
-      }
-    }
-
-    function webosSubtitlesToggle(status) {
-      webOS.service.request("luna://com.webos.media", {
-        method: "setSubtitleEnable",
-        parameters: {
-          "mediaId": media_id,
-          "enable": status
-        },
-        onSuccess: function onSuccess(result) {},
-        onFailure: function onFailure(result) {
-          console.log('Player', "setSubtitleEnable:true [fail][" + result.errorCode + "] " + result.errorText);
-        }
-      });
     }
     /**
      * Включить или выключить субтитры
@@ -5436,12 +5958,12 @@
      */
 
 
-    function create$g() {
+    function create$f() {
       var videobox;
 
       if (Platform.is('tizen') && Storage.field('player') == 'tizen') {
         //if(true){
-        videobox = create$h(function (object) {
+        videobox = create$i(function (object) {
           video = object;
         });
       } else {
@@ -5451,6 +5973,7 @@
 
       applySubsSettings();
       display.append(videobox);
+      if (Platform.is('webos')) webos = new create$g();
       bind$2();
     }
     /**
@@ -5461,7 +5984,7 @@
 
     function loader(status) {
       wait = status;
-      html$c.toggleClass('video--load', status);
+      html$b.toggleClass('video--load', status);
     }
     /**
      * Устанавливаем ссылку на видео
@@ -5471,7 +5994,7 @@
 
     function url$2(src) {
       loader(true);
-      create$g();
+      create$f();
       video.src = src;
       video.load();
       play$1();
@@ -5497,7 +6020,7 @@
       }
 
       paused.addClass('hide');
-      listener$8.send('play', {});
+      listener$7.send('play', {});
     }
     /**
      * Пауза
@@ -5520,7 +6043,7 @@
       }
 
       paused.removeClass('hide');
-      listener$8.send('pause', {});
+      listener$7.send('pause', {});
     }
     /**
      * Играем или пауза
@@ -5532,10 +6055,10 @@
 
       if (video.paused) {
         play$1();
-        listener$8.send('play', {});
+        listener$7.send('play', {});
       } else {
         pause();
-        listener$8.send('pause', {});
+        listener$7.send('pause', {});
       }
     }
     /**
@@ -5545,11 +6068,12 @@
 
 
     function rewindEnd(immediately) {
-      clearTimeout(timer$3.rewind_call);
-      timer$3.rewind_call = setTimeout(function () {
+      clearTimeout(timer$2.rewind_call);
+      timer$2.rewind_call = setTimeout(function () {
         video.currentTime = rewind_position;
         rewind_position = 0;
         play$1();
+        if (webos) webos.rewinded();
       }, immediately ? 0 : 500);
     }
     /**
@@ -5564,12 +6088,12 @@
       rewind_position = Math.max(0, Math.min(position_time, video.duration));
       pause();
       if (rewind_position == 0) video.currentTime = 0;else if (rewind_position == video.duration) video.currentTime = video.duration;
-      timer$3.rewind = Date.now();
-      listener$8.send('timeupdate', {
+      timer$2.rewind = Date.now();
+      listener$7.send('timeupdate', {
         duration: video.duration,
         current: rewind_position
       });
-      listener$8.send('rewind', {});
+      listener$7.send('rewind', {});
       rewindEnd(immediately);
     }
     /**
@@ -5579,11 +6103,11 @@
      */
 
 
-    function rewind$1(forward, custom_step) {
+    function rewind(forward, custom_step) {
       if (video.duration) {
         var time = Date.now(),
             step = video.duration / (30 * 60),
-            mini = time - (timer$3.rewind || 0) > 50 ? 20 : 60;
+            mini = time - (timer$2.rewind || 0) > 50 ? 20 : 60;
         if (rewind_position == 0) rewind_position = video.currentTime;
 
         if (forward) {
@@ -5622,11 +6146,12 @@
      */
 
 
-    function destroy$6() {
+    function destroy$5() {
       subsview(false);
       neeed_sacle = false;
-      media_id = false;
       paused.addClass('hide');
+      if (webos) webos.destroy();
+      webos = null;
 
       if (video) {
         if (video.destroy) video.destroy();else {
@@ -5639,17 +6164,17 @@
       loader(false);
     }
 
-    function render$a() {
-      return html$c;
+    function render$9() {
+      return html$b;
     }
 
     var Video = {
-      listener: listener$8,
+      listener: listener$7,
       url: url$2,
-      render: render$a,
-      destroy: destroy$6,
+      render: render$9,
+      destroy: destroy$5,
       playpause: playpause,
-      rewind: rewind$1,
+      rewind: rewind,
       play: play$1,
       pause: pause,
       size: size,
@@ -5657,453 +6182,9 @@
       to: to
     };
 
-    function create$f(object) {
-      this.state = object.state;
-
-      this.start = function () {
-        this.dispath(this.state);
-      };
-
-      this.dispath = function (action_name) {
-        var action = object.transitions[action_name];
-
-        if (action) {
-          action.call(this);
-        } else {
-          console.log('invalid action');
-        }
-      };
-    }
-
-    var html$b = Template.get('player_panel');
-    var listener$7 = start$3();
-    var condition = {};
-    var timer$2 = {};
-    var tracks = [];
-    var subs = [];
-    var elems$1 = {
-      peding: $('.player-panel__peding', html$b),
-      position: $('.player-panel__position', html$b),
-      time: $('.player-panel__time', html$b),
-      timenow: $('.player-panel__timenow', html$b),
-      timeend: $('.player-panel__timeend', html$b),
-      title: $('.player-panel__filename', html$b),
-      tracks: $('.player-panel__tracks', html$b),
-      subs: $('.player-panel__subs', html$b)
-    };
-    /**
-     * Отсеживаем состояние, 
-     * когда надо показать панель, а когда нет
-     */
-
-    var state = new create$f({
-      state: 'start',
-      transitions: {
-        start: function start() {
-          clearTimeout(timer$2.hide);
-          clearTimeout(timer$2.rewind);
-          this.dispath('canplay');
-        },
-        canplay: function canplay() {
-          if (condition.canplay) this.dispath('visible');else _visible(true);
-        },
-        visible: function visible() {
-          if (condition.visible) _visible(true);else this.dispath('rewind');
-        },
-        rewind: function rewind() {
-          var _this = this;
-
-          clearTimeout(timer$2.rewind);
-
-          if (condition.rewind) {
-            _visible(true);
-
-            timer$2.rewind = setTimeout(function () {
-              condition.rewind = false;
-
-              _this.dispath('hide');
-            }, 1000);
-          } else {
-            this.dispath('hide');
-          }
-        },
-        hide: function hide() {
-          clearTimeout(timer$2.hide);
-          timer$2.hide = setTimeout(function () {
-            _visible(false);
-          }, 1000);
-        }
-      }
-    });
-    html$b.find('.selector').on('hover:focus', function (e) {
-    });
-    html$b.find('.player-panel__playpause').on('hover:enter', function (e) {
-      listener$7.send('playpause', {});
-    });
-    html$b.find('.player-panel__next').on('hover:enter', function (e) {
-      listener$7.send('next', {});
-    });
-    html$b.find('.player-panel__prev').on('hover:enter', function (e) {
-      listener$7.send('prev', {});
-    });
-    html$b.find('.player-panel__rprev').on('hover:enter', function (e) {
-      listener$7.send('rprev', {});
-    });
-    html$b.find('.player-panel__rnext').on('hover:enter', function (e) {
-      listener$7.send('rnext', {});
-    });
-    html$b.find('.player-panel__playlist').on('hover:enter', function (e) {
-      listener$7.send('playlist', {});
-    });
-    /**
-     * Выбор аудиодорожки
-     */
-
-    elems$1.tracks.on('hover:enter', function (e) {
-      if (tracks.length) {
-        tracks.forEach(function (element, p) {
-          var name = [];
-          name.push(p + 1);
-          name.push(element.language || element.name || 'Неизвестно');
-          if (element.label) name.push(element.label);
-
-          if (element.extra) {
-            if (element.extra.channels) name.push('Каналов: ' + element.extra.channels);
-            if (element.extra.fourCC) name.push('Тип: ' + element.extra.fourCC);
-          }
-
-          element.title = name.join(' / ');
-        });
-        var enabled = Controller.enabled();
-        Select.show({
-          title: 'Аудиодорожки',
-          items: tracks,
-          onSelect: function onSelect(a) {
-            tracks.forEach(function (element) {
-              element.enabled = false;
-              element.selected = false;
-            });
-            a.enabled = true;
-            a.selected = true;
-            Controller.toggle(enabled.name);
-          },
-          onBack: function onBack() {
-            Controller.toggle(enabled.name);
-          }
-        });
-      }
-    });
-    /**
-     * Выбор субтитров
-     */
-
-    elems$1.subs.on('hover:enter', function (e) {
-      if (subs.length) {
-        if (subs[0].index !== -1) {
-          Arrays.insert(subs, 0, {
-            title: 'Отключено',
-            selected: true,
-            index: -1
-          });
-        }
-
-        subs.forEach(function (element, p) {
-          if (element.index !== -1) element.title = p + ' / ' + (element.language || element.label || 'Неизвестно');
-        });
-        var enabled = Controller.enabled();
-        Select.show({
-          title: 'Субтитры',
-          items: subs,
-          onSelect: function onSelect(a) {
-            subs.forEach(function (element) {
-              element.mode = 'disabled';
-              element.selected = false;
-            });
-            a.mode = 'showing';
-            a.selected = true;
-            listener$7.send('subsview', {
-              status: a.index > -1
-            });
-            Controller.toggle(enabled.name);
-          },
-          onBack: function onBack() {
-            Controller.toggle(enabled.name);
-          }
-        });
-      }
-    });
-    /**
-     * Выбор масштаба видео
-     */
-
-    html$b.find('.player-panel__size').on('hover:enter', function (e) {
-      var select = Storage.get('player_size', 'default');
-      var items = [{
-        title: 'По умолчанию',
-        subtitle: 'Размер видео по умолчанию',
-        value: 'default',
-        selected: select == 'default'
-      }, {
-        title: 'Расширить',
-        subtitle: 'Расширяет видео на весь экран',
-        value: 'cover',
-        selected: select == 'cover'
-      }];
-
-      if (!(Platform.is('tizen') && Storage.field('player') == 'tizen')) {
-        items = items.concat([{
-          title: 'Заполнить',
-          subtitle: 'Вместить видео на весь экран',
-          value: 'fill',
-          selected: select == 'fill'
-        }, {
-          title: 'Увеличить',
-          subtitle: 'Увеличить видео на 130%',
-          value: 's130',
-          selected: select == 's130'
-        }]);
-      } else {
-        if (select == 's130' || select == 'fill') {
-          items[0].selected = true;
-        }
-      }
-
-      Select.show({
-        title: 'Размер видео',
-        items: items,
-        onSelect: function onSelect(a) {
-          listener$7.send('size', {
-            size: a.value
-          });
-          Controller.toggle('player_panel');
-        },
-        onBack: function onBack() {
-          Controller.toggle('player_panel');
-        }
-      });
-    });
-    /**
-     * Обновляем состояние панели
-     * @param {String} need - что нужно обновить
-     * @param {*} value - значение
-     */
-
-    function update$3(need, value) {
-      if (need == 'position') {
-        elems$1.position.css({
-          width: value
-        });
-        elems$1.time.css({
-          left: value
-        });
-      }
-
-      if (need == 'peding') {
-        elems$1.peding.css({
-          width: value
-        });
-      }
-
-      if (need == 'time') {
-        elems$1.time.text(value);
-      }
-
-      if (need == 'timeend') {
-        elems$1.timeend.text(value);
-      }
-
-      if (need == 'timenow') {
-        elems$1.timenow.text(value);
-      }
-
-      if (need == 'play') {
-        html$b.toggleClass('panel--paused', false);
-      }
-
-      if (need == 'pause') {
-        html$b.toggleClass('panel--paused', true);
-      }
-    }
-    /**
-     * Показать или скрыть панель
-     * @param {Boolean} status 
-     */
-
-
-    function _visible(status) {
-      listener$7.send('visible', {
-        status: status
-      });
-      html$b.toggleClass('panel--visible', status);
-    }
-    /**
-     * Можем играть, далее отслеживаем статус
-     */
-
-
-    function canplay() {
-      condition.canplay = true;
-      state.start();
-    }
-    /**
-     * Перемотка
-     */
-
-
-    function rewind() {
-      condition.rewind = true;
-      state.start();
-    }
-
-    function toggleRewind() {
-      Controller.add('player_rewind', {
-        toggle: function toggle() {
-          Controller.collectionSet(render$9());
-          Controller.collectionFocus(false, render$9());
-        },
-        up: function up() {
-          Controller.toggle('player');
-        },
-        down: function down() {
-          toggleButtons();
-        },
-        right: function right() {
-          listener$7.send('rnext', {});
-        },
-        left: function left() {
-          listener$7.send('rprev', {});
-        },
-        gone: function gone() {
-          html$b.find('.selector').removeClass('focus');
-        },
-        back: function back() {
-          Controller.toggle('player');
-          hide();
-        }
-      });
-      Controller.toggle('player_rewind');
-    }
-
-    function toggleButtons() {
-      Controller.add('player_panel', {
-        toggle: function toggle() {
-          Controller.collectionSet(render$9());
-          Controller.collectionFocus($('.player-panel__playpause', html$b)[0], render$9());
-        },
-        up: function up() {
-          toggleRewind();
-        },
-        right: function right() {
-          Navigator.move('right');
-        },
-        left: function left() {
-          Navigator.move('left');
-        },
-        down: function down() {
-          Controller.toggle('player');
-        },
-        gone: function gone() {
-          html$b.find('.selector').removeClass('focus');
-        },
-        back: function back() {
-          Controller.toggle('player');
-          hide();
-        }
-      });
-      Controller.toggle('player_panel');
-    }
-    /**
-     * Контроллер
-     */
-
-
-    function toggle$6() {
-      condition.visible = true;
-      state.start();
-      toggleRewind();
-    }
-    /**
-     * Показать панель
-     */
-
-
-    function show$2() {
-      state.start();
-    }
-    /**
-     * Скрыть панель
-     */
-
-
-    function hide() {
-      condition.visible = false;
-
-      _visible(false);
-    }
-    /**
-     * Установить субтитры
-     * @param {Array} su 
-     */
-
-
-    function setSubs(su) {
-      subs = su;
-      elems$1.subs.toggleClass('hide', false);
-    }
-    /**
-     * Установить дорожки
-     * @param {Array} tr 
-     */
-
-
-    function setTracks(tr) {
-      tracks = tr;
-      elems$1.tracks.toggleClass('hide', false);
-    }
-    /**
-     * Уничтожить
-     */
-
-
-    function destroy$5() {
-      condition = {};
-      tracks = [];
-      subs = [];
-      elems$1.peding.css({
-        width: 0
-      });
-      elems$1.position.css({
-        width: 0
-      });
-      elems$1.time.text('00:00');
-      elems$1.timenow.text('00:00');
-      elems$1.timeend.text('00:00');
-      elems$1.subs.toggleClass('hide', true);
-      elems$1.tracks.toggleClass('hide', true);
-      html$b.toggleClass('panel--paused', false);
-    }
-
-    function render$9() {
-      return html$b;
-    }
-
-    var Panel = {
-      listener: listener$7,
-      render: render$9,
-      toggle: toggle$6,
-      show: show$2,
-      destroy: destroy$5,
-      hide: hide,
-      canplay: canplay,
-      update: update$3,
-      rewind: rewind,
-      setTracks: setTracks,
-      setSubs: setSubs
-    };
-
     var html$a = Template.get('player_info');
     var listener$6 = start$3();
-    var network$2 = new create$p();
+    var network$2 = new create$q();
     var elems = {
       name: $('.player-info__name', html$a),
       size: $('.value--size span', html$a),
@@ -6625,7 +6706,7 @@
       disable: disable
     };
 
-    var network$1 = new create$p();
+    var network$1 = new create$q();
 
     function url() {
       var u = ip();
@@ -6830,7 +6911,7 @@
     html$8.append(Info.render());
     var callback$2;
     var work = false;
-    var network = new create$p();
+    var network = new create$q();
     var preloader = {
       wait: false
     };
@@ -7337,7 +7418,7 @@
       title$1(params.title);
       html$7.toggleClass('modal--medium', params.size == 'medium' ? true : false);
       html$7.toggleClass('modal--large', params.size == 'large' ? true : false);
-      scroll$2 = new create$o({
+      scroll$2 = new create$p({
         over: true,
         mask: params.mask
       });
@@ -7540,7 +7621,7 @@
         html = Template.get('items_line', {
           title: 'Актеры'
         });
-        scroll = new create$o({
+        scroll = new create$p({
           horizontal: true
         });
         scroll.render().find('.scroll__body').addClass('full-actors');
@@ -7607,7 +7688,7 @@
         html = Template.get('items_line', {
           title: 'Коментарии'
         });
-        scroll = new create$o({
+        scroll = new create$p({
           horizontal: true
         });
         scroll.render().find('.scroll__body').addClass('full-reviews');
@@ -7653,14 +7734,14 @@
       start: create$e,
       descr: create$d,
       actors: create$c,
-      recomend: create$l,
-      simular: create$l,
+      recomend: create$m,
+      simular: create$m,
       comments: create$b
     };
 
     function component$b(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -7706,7 +7787,7 @@
       };
 
       this.empty = function () {
-        var empty = new create$j();
+        var empty = new create$k();
         scroll.append(empty.render());
         this.start = empty.start;
         this.activity.loader(false);
@@ -7779,8 +7860,8 @@
     }
 
     function component$a(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -7797,7 +7878,7 @@
 
         this.activity.loader(true);
         Api.list(object, this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -7829,7 +7910,7 @@
         var _this3 = this;
 
         data.results.forEach(function (element) {
-          var card = new create$n(element, {
+          var card = new create$o(element, {
             card_category: true,
             object: object
           });
@@ -7863,7 +7944,7 @@
 
       this.build = function (data) {
         total_pages = data.total_pages;
-        info = new create$k();
+        info = new create$l();
         info.create();
         scroll.render().addClass('layer--wheight').data('mheight', info.render());
         html.append(info.render());
@@ -7923,8 +8004,8 @@
     }
 
     function component$9(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -7939,7 +8020,7 @@
 
         this.activity.loader(true);
         Api.category(object, this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -7952,7 +8033,7 @@
 
       this.build = function (data) {
         lezydata = data;
-        info = new create$k();
+        info = new create$l();
         info.create();
         scroll.render().addClass('layer--wheight').data('mheight', info.render());
         html.append(info.render());
@@ -7965,7 +8046,7 @@
       this.append = function (element) {
         if (element.ready) return;
         element.ready = true;
-        var item = new create$l(element, {
+        var item = new create$m(element, {
           url: element.url,
           card_small: true,
           genres: object.genres,
@@ -8085,13 +8166,13 @@
 
     var components = {
       start: create$a,
-      movie: create$l,
-      tv: create$l
+      movie: create$m,
+      tv: create$m
     };
 
     function component$8(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true
       });
       var items = [];
@@ -8131,7 +8212,7 @@
       };
 
       this.empty = function () {
-        var empty = new create$j();
+        var empty = new create$k();
         scroll.append(empty.render());
         this.start = empty.start;
         this.activity.loader(false);
@@ -8204,8 +8285,8 @@
     }
 
     function component$7(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true
       });
       var items = [];
@@ -8221,7 +8302,7 @@
 
         this.activity.loader(true);
         Api.favorite(object, this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -8253,7 +8334,7 @@
         var _this3 = this;
 
         data.results.forEach(function (element) {
-          var card = new create$n(element, {
+          var card = new create$o(element, {
             card_category: true
           });
           card.create();
@@ -8286,7 +8367,7 @@
 
       this.build = function (data) {
         total_pages = data.total_pages;
-        info = new create$k();
+        info = new create$l();
         info.create();
         scroll.render().addClass('layer--wheight').data('mheight', info.render());
         html.append(info.render());
@@ -8779,8 +8860,8 @@
     };
 
     function component$6(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -8937,7 +9018,7 @@
       };
 
       this.empty = function (descr) {
-        var empty = new create$j({
+        var empty = new create$k({
           descr: descr
         });
         files.append(empty.render(filter.empty()));
@@ -9378,8 +9459,8 @@
     }
 
     function component$5(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -9395,7 +9476,7 @@
 
         this.activity.loader(true);
         Torserver.my(this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -9421,7 +9502,7 @@
         data.forEach(function (element) {
           element.title = element.title.replace('[LAMPA] ', '');
           var item_data = Arrays.decodeJson(element.data, {});
-          var card = new create$n(element, {
+          var card = new create$o(element, {
             card_category: true
           });
           card.create();
@@ -9525,8 +9606,8 @@
     }
 
     function component$4(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -9543,7 +9624,7 @@
 
         this.activity.loader(true);
         Api.relise(this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -9567,7 +9648,7 @@
         var _this2 = this;
 
         data.forEach(function (element) {
-          var card = new create$n(element, {
+          var card = new create$o(element, {
             card_category: true
           });
           card.create();
@@ -9629,7 +9710,7 @@
       this.build = function (data) {
         relises = data;
         total_pages = Math.ceil(relises.length / 20);
-        info = new create$k();
+        info = new create$l();
         info.create();
         info.render().find('.info__right').addClass('hide');
         scroll.minus(info.render());
@@ -9690,8 +9771,8 @@
     }
 
     function component$3(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -9707,7 +9788,7 @@
 
         this.activity.loader(true);
         Api.collections(object, this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -9739,7 +9820,7 @@
         var _this3 = this;
 
         data.forEach(function (element) {
-          var card = new create$n(element, {
+          var card = new create$o(element, {
             card_collection: true,
             object: object
           });
@@ -9829,8 +9910,8 @@
     }
 
     function component$2(object) {
-      var network = new create$p();
-      var scroll = new create$o({
+      var network = new create$q();
+      var scroll = new create$p({
         mask: true,
         over: true
       });
@@ -9847,7 +9928,7 @@
 
         this.activity.loader(true);
         Api.collections(object, this.build.bind(this), function () {
-          var empty = new create$j();
+          var empty = new create$k();
           html.append(empty.render());
           _this.start = empty.start;
 
@@ -9879,7 +9960,7 @@
         var _this3 = this;
 
         data.forEach(function (element) {
-          var card = new create$n(element, {
+          var card = new create$o(element, {
             card_category: true,
             object: object
           });
@@ -9912,7 +9993,7 @@
 
       this.build = function (data) {
         collections = data;
-        info = new create$k();
+        info = new create$l();
         info.create();
         scroll.minus(info.render());
         html.append(info.render());
@@ -11283,7 +11364,7 @@
 
     function init$1() {
       html$4 = Template.get('menu');
-      scroll$1 = new create$o({
+      scroll$1 = new create$p({
         mask: true,
         over: true
       });
@@ -11442,7 +11523,7 @@
     };
 
     function component(name) {
-      var scrl = new create$o({
+      var scrl = new create$p({
         mask: true,
         over: true
       });
@@ -11504,7 +11585,7 @@
       var _this = this;
 
       var comp;
-      var scrl = new create$o({
+      var scrl = new create$p({
         mask: true,
         over: true
       });
@@ -11588,7 +11669,7 @@
       this.listener = start$3();
 
       this.create = function () {
-        scroll = new create$o({
+        scroll = new create$p({
           over: true
         });
       };
@@ -11614,7 +11695,7 @@
       this.build = function (data, type) {
         var _this2 = this;
 
-        var item = new create$l(data, {
+        var item = new create$m(data, {
           align_left: true,
           object: {
             source: 'tmdb'
@@ -11718,7 +11799,7 @@
       this.create = function () {
         var _this = this;
 
-        scroll = new create$o({
+        scroll = new create$p({
           over: true,
           mask: false,
           nopadding: true
@@ -11948,7 +12029,7 @@
 
     function build() {
       html$1 = Template.get('console');
-      scroll = new create$o({
+      scroll = new create$p({
         over: true
       });
       scroll.minus();
