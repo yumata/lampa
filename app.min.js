@@ -2057,7 +2057,7 @@
       });
       return data.length ? {
         results: data
-      } : [];
+      } : false;
     }
 
     function list$3(params, oncomplite, onerror) {
