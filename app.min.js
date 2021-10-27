@@ -5599,7 +5599,8 @@
 
         add({
           index: -1,
-          title: 'Отключить'
+          title: 'Отключить',
+          selected: true
         });
 
         for (var i = 0; i < info.subtitleTrackInfo.length; i++) {
@@ -5616,6 +5617,7 @@
 
         var add = function add(track, index) {
           track.index = index;
+          track.selected = index == -1;
           track.extra = {
             channels: track.channels,
             fourCC: track.codec
