@@ -2637,7 +2637,7 @@ body.selectbox--open .selectbox__content {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 50;
+  z-index: 100;
   background: #65eaa7;
   color: #000;
   -webkit-transform: translateY(100%);
