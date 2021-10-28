@@ -8589,6 +8589,7 @@
       this.clear = function () {
         network.clear();
         Arrays.destroy(items);
+        items = [];
         if (scroll) scroll.destroy();
         if (info) info.destroy();
         scroll = null;
