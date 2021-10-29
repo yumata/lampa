@@ -2812,8 +2812,16 @@ body.selectbox--open .selectbox__content {
 
 body.platform--orsay .head__time {
   position: absolute;
-  top: 0.8em;
+  top: 1em;
   right: 1.5em; }
 
 body.platform--orsay .head__split {
   display: none; }
+
+body.platform--orsay .head__logo-icon {
+  margin-right: 1.5em; }
+
+body.platform--orsay .head__actions {
+  position: absolute;
+  top: 0.4em;
+  right: 16em; }
