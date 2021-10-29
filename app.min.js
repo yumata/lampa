@@ -1972,7 +1972,7 @@
       if (element.children) {
         data.seasons = element.children.totalSize;
         element.children.items.forEach(function (elem) {
-          data.episodes += elem.element.children.totalSize;
+          data.episodes += elem.element.children ? elem.element.children.totalSize : 0;
         });
       }
 
