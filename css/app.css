@@ -233,6 +233,12 @@ body.menu--open .wrap {
     height: 1.3em;
     margin: 0 1em;
     opacity: 0.5; }
+  .head__actions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
   .head__logo {
     margin-right: 1em;
     width: 5.6em; }
@@ -294,7 +300,8 @@ body.menu--open .wrap {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    white-space: nowrap; }
+    white-space: nowrap;
+    margin-top: -0.2em; }
     .head__time-now {
       font-weight: 600;
       font-size: 2em;
@@ -2802,3 +2809,11 @@ body.selectbox--open .selectbox__content {
     .screensaver__datetime-date {
       font-weight: 400;
       font-size: 1.5em; }
+
+body.platform--orsay .head__time {
+  position: absolute;
+  top: 0.8em;
+  right: 1.5em; }
+
+body.platform--orsay .head__split {
+  display: none; }
