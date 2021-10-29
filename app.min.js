@@ -1958,7 +1958,7 @@
       });
     }
 
-    function date$1(element) {
+    function date(element) {
       var d = new Date(element.worldReleaseDate || element || 0);
       return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
     }
@@ -1991,7 +1991,7 @@
               episodes.push({
                 name: episode.element.name,
                 img: img$2(episode.element, 'COVER'),
-                air_date: date$1(episode.element.releaseSaleDate || 0),
+                air_date: date(episode.element.releaseSaleDate || 0),
                 episode_number: en + 1
               });
             });
@@ -1999,7 +1999,7 @@
 
           data['' + (sn + 1)] = {
             name: elem.element.name,
-            air_date: date$1(elem.element.worldReleaseDate || 0),
+            air_date: date(elem.element.worldReleaseDate || 0),
             episodes: episodes
           };
         });
@@ -2294,11 +2294,11 @@
             production_companies: [],
             production_countries: countries$1(element),
             budget: element.budget && element.budget.value ? element.budget.value : 0,
-            release_date: date$1(element),
+            release_date: date(element),
             number_of_seasons: seasonsCount$1(element).seasons,
             number_of_episodes: seasonsCount$1(element).episodes,
             seasons: seasonsDetails(element),
-            first_air_date: element.type == 'SERIAL' ? date$1(element) : ''
+            first_air_date: element.type == 'SERIAL' ? date(element) : ''
           };
         }
 
@@ -2560,10 +2560,10 @@
             production_companies: [],
             production_countries: countries(element, json),
             budget: element.budget || 0,
-            release_date: element.release_date || element.ivi_pseudo_release_date || element.ivi_release_date,
+            release_date: element.release_date || element.ivi_pseudo_release_date || element.ivi_release_date || '0000',
             number_of_seasons: seasonsCount(element).seasons,
             number_of_episodes: seasonsCount(element).episodes,
-            first_air_date: element.seasons ? date(element) : ''
+            first_air_date: element.seasons ? element.release_date || element.ivi_pseudo_release_date || element.ivi_release_date || '0000' : ''
           };
         }
 

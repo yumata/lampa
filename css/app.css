@@ -847,7 +847,8 @@ body.size--small .card--category {
        -moz-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding-left: 3em; }
+    padding-left: 3em;
+    overflow: hidden; }
   .full-start__poster {
     position: relative; }
     .full-start__poster.focus img {
@@ -899,12 +900,18 @@ body.size--small .card--category {
     font-size: 4em;
     font-weight: 700;
     margin-bottom: 0.3em;
-    max-width: 90%; }
+    max-width: 90%;
+    max-height: 2.1em;
+    overflow: hidden; }
   .full-start__title-original {
     font-size: 2.3em;
     font-weight: 300;
     max-width: 80%;
-    margin-bottom: 1.8em; }
+    margin-bottom: 1.8em;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap; }
   .full-start__descr {
     max-width: 80%;
     font-size: 1.3em;
