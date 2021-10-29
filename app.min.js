@@ -9133,7 +9133,8 @@
 
         filter.onSearch = function (value) {
           Activity$1.replace({
-            search: value
+            search: value,
+            clarification: true
           });
         };
 
@@ -9194,12 +9195,11 @@
         var genres = object.movie.genres.map(function (a) {
           return a.name;
         });
-        /*
-        if(object.search == object.movie.original_title){
-            u = Utils.addUrlComponent(u,'title='+encodeURIComponent(object.movie.title))
-            u = Utils.addUrlComponent(u,'title_original='+encodeURIComponent(object.movie.original_title))
+
+        if (!object.clarification) {
+          u = Utils.addUrlComponent(u, 'title=' + encodeURIComponent(object.movie.title));
+          u = Utils.addUrlComponent(u, 'title_original=' + encodeURIComponent(object.movie.original_title));
         }
-        */
 
         u = Utils.addUrlComponent(u, 'year=' + encodeURIComponent((object.movie.release_date || object.movie.first_air_date || '0000').slice(0, 4)));
         u = Utils.addUrlComponent(u, 'is_serial=' + (object.movie.first_air_date ? '1' : '2'));
