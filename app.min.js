@@ -7284,7 +7284,9 @@
         hash: hash
       });
       clear$1();
-      network$1.silent(url() + '/torrents', success, fail, data);
+      network$1.silent(url() + '/torrents', success, fail, data, {
+        dataType: 'text'
+      });
     }
 
     function remove(hash, success, fail) {
@@ -7293,7 +7295,9 @@
         hash: hash
       });
       clear$1();
-      network$1.silent(url() + '/torrents', success, fail, data);
+      network$1.silent(url() + '/torrents', success, fail, data, {
+        dataType: 'text'
+      });
     }
 
     function parse(file_path, movie) {
