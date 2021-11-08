@@ -6,7 +6,7 @@
   "parameter": "content:http://{domain}/msx/start.json",
   "note": "For this service, Media Station X 0.1.120 or higher is needed",
   "action": "[settings:validate_links:0|home]",
-  "dictionary": "http://fxml.ru/msx/lang/ru.json",
+  "dictionary": "http://{domain}/msx/lang/ru.json",
   "pages": [
     {
       "items": [
