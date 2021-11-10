@@ -13182,10 +13182,9 @@
           $('link[href="css/app.css"]').remove();
         });
       }
-    } //let plugins = Storage.get('plugins','[]')
+    }
 
-
-    var plugins = ['http://trollidodd.ru'];
+    var plugins = Storage.get('plugins', '[]');
     Utils.putScript(plugins, startApp);
 
 })();
