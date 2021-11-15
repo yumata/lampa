@@ -2303,6 +2303,7 @@ body.selectbox--open .selectbox__content {
   height: auto;
   width: auto;
   line-height: 1.2;
+  float: left;
 }
 .simple-keyboard .hg-button.hg-activeButton, .simple-keyboard .hg-button.focus {
   background-color: #6d6d6d;
@@ -2360,6 +2361,11 @@ body.selectbox--open .selectbox__content {
 .simple-keyboard .hg-button[data-skbtn="{EN}"] span,
 .simple-keyboard .hg-button[data-skbtn="{space}"] span {
   width: 0;
+}
+.simple-keyboard .hg-row:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .modal {
