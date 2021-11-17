@@ -609,6 +609,7 @@ body.menu--open .wrap {
   -o-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  position: relative;
 }
 .settings-param__name {
   font-size: 1.3em;
@@ -621,6 +622,25 @@ body.menu--open .wrap {
   opacity: 0.5;
   margin-top: 1.2em;
   line-height: 1.2;
+}
+.settings-param__status {
+  position: absolute;
+  left: 0.8em;
+  top: 2em;
+  width: 0.6em;
+  height: 0.6em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+.settings-param__status.wait {
+  background-color: #d6d6d6;
+}
+.settings-param__status.error {
+  background-color: #f53f32;
+}
+.settings-param__status.active {
+  background-color: #93d46d;
 }
 .settings-param.focus {
   background-color: #353535;
