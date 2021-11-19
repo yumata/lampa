@@ -3474,3 +3474,7 @@ body.platform--orsay .head__actions {
   top: 0.4em;
   right: 16em;
 }
+body.platform--orsay svg {
+  max-width: 100%;
+  width: 100%;
+}
