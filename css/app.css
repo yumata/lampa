@@ -2199,6 +2199,21 @@ body.selectbox--open .selectbox__content {
   margin: 0 0.75em;
 }
 
+body.platform--orsay .category-full {
+  display: block;
+}
+body.platform--orsay .category-full .card {
+  float: left;
+}
+body.platform--orsay .category-full .card__title {
+  min-height: 3.1em;
+}
+body.platform--orsay .category-full:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .search {
   position: fixed;
   top: 0;
@@ -2381,6 +2396,8 @@ body.selectbox--open .selectbox__content {
 .simple-keyboard .hg-button[data-skbtn="{EN}"] span,
 .simple-keyboard .hg-button[data-skbtn="{space}"] span {
   width: 0;
+  height: 0;
+  display: block;
 }
 .simple-keyboard .hg-row:after {
   content: "";
