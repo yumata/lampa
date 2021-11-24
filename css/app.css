@@ -404,6 +404,7 @@ body.menu--open .wrap {
 }
 .activity--active {
   opacity: 1;
+  z-index: 1;
 }
 
 .menu {
@@ -1231,6 +1232,13 @@ body.size--small .card--category {
   margin-right: 0;
   margin-top: 0;
   margin-left: 2em;
+}
+
+body.platform--orsay .full-start__button > svg {
+  display: none;
+}
+body.platform--orsay .full-start__button > span {
+  margin-left: 0;
 }
 
 .full-descr {
