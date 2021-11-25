@@ -890,11 +890,27 @@ body.settings--open .settings__content {
   font-size: 1.3em;
   line-height: 1.2;
 }
+.card__type {
+  position: absolute;
+  left: -0.8em;
+  top: 1.4em;
+  padding: 0.4em 0.4em;
+  background: #fff;
+  color: #000;
+  font-size: 0.8em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
 .card.focus .card__img {
   border-color: #fff;
   -webkit-box-shadow: 0 0 0 0.4em #fff;
      -moz-box-shadow: 0 0 0 0.4em #fff;
           box-shadow: 0 0 0 0.4em #fff;
+}
+.card--tv .card__type {
+  background: #ff4242;
+  color: #fff;
 }
 .card--small {
   width: 10.8em;
