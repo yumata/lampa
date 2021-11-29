@@ -227,6 +227,11 @@ body.no--animation * {
           flex-grow: 1;
 }
 
+body.menu--open .wrap {
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
 body.menu--open .wrap__left {
   -webkit-transform: translate3d(15em, 0, 0);
      -moz-transform: translate3d(15em, 0, 0);
