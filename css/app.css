@@ -1394,6 +1394,8 @@ body.platform--orsay .full-start__button > span {
 .full-person__photo {
   width: 7em;
   height: 7em;
+  background-position: center;
+	background-size: cover;
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
           border-radius: 100%;
