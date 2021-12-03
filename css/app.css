@@ -1553,17 +1553,10 @@ body.platform--orsay .full-start__button > span {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .player-video__paused {
-    background-color: rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-}
-body.platform--tizen .player-video__paused {
-  background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+body.platform--browser .player-video__paused {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .player-panel {
@@ -1820,17 +1813,10 @@ body.platform--tizen .player-video__paused {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .player-panel {
-    background-color: rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-}
-body.platform--tizen .player-panel {
-  background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+body.platform--browser .player-panel {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .player-info {
@@ -1909,17 +1895,10 @@ body.platform--tizen .player-panel {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .player-info {
-    background-color: rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-}
-body.platform--tizen .player-info {
-  background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+body.platform--browser .player-info {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .selectbox {
