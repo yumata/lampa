@@ -1544,9 +1544,9 @@ body.platform--orsay .full-start__button > span {
      -moz-border-radius: 0.25em;
           border-radius: 0.25em;
 }
-.player-video__subtitles-text:empty {
+/* .player-video__subtitles-text:empty {
   display: none;
-}
+} */
 .player-video.video--load .player-video__loader {
   display: block;
 }
