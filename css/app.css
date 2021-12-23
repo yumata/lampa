@@ -2422,6 +2422,14 @@ body.platform--orsay .category-full:after {
   height: 0;
   display: block;
 }
+.simple-keyboard .hg-button[data-skbtn="{mic}"] {
+  color: #fff;
+}
+.simple-keyboard .hg-button .svg {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
 .simple-keyboard .hg-row:after {
   content: "";
   display: block;
