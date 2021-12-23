@@ -2425,7 +2425,7 @@ body.platform--orsay .category-full:after {
 .simple-keyboard .hg-button[data-skbtn="{mic}"] {
   color: #fff;
 }
-.simple-keyboard .hg-button .svg {
+.simple-keyboard .hg-button svg {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
