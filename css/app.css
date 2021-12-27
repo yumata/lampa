@@ -2352,7 +2352,6 @@ body.platform--orsay .category-full:after {
   color: #9e9e9e;
 }
 .simple-keyboard .hg-button {
-  background: transparent;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
