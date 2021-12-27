@@ -2362,6 +2362,7 @@ body.platform--orsay .category-full:after {
   width: auto;
   line-height: 1.2;
   float: left;
+  background: rgba(221, 221, 221, 0.06);
 }
 .simple-keyboard .hg-button.hg-activeButton, .simple-keyboard .hg-button.focus {
   background-color: #6d6d6d;
