@@ -2364,7 +2364,7 @@ body.platform--orsay .category-full:after {
   float: left;
   background: rgba(221, 221, 221, 0.06);
 }
-.simple-keyboard .hg-button.hg-activeButton, .simple-keyboard .hg-button.focus {
+.simple-keyboard .hg-button.hg-activeButton, .simple-keyboard .hg-button.focus, .simple-keyboard .hg-button:hover {
   background-color: #6d6d6d;
   color: #fff;
 }
