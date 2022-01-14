@@ -823,12 +823,6 @@ body.settings--open .settings__content {
   -webkit-border-radius: 0.3em;
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
-  -webkit-transition: border-color 0.2s, -webkit-box-shadow 0.3s;
-  transition: border-color 0.2s, -webkit-box-shadow 0.3s;
-  -o-transition: box-shadow 0.3s, border-color 0.2s;
-  -moz-transition: box-shadow 0.3s, border-color 0.2s, -moz-box-shadow 0.3s;
-  transition: box-shadow 0.3s, border-color 0.2s;
-  transition: box-shadow 0.3s, border-color 0.2s, -webkit-box-shadow 0.3s, -moz-box-shadow 0.3s;
   height: 21.3em;
   width: 100%;
   background-color: #3E3E3E;
