@@ -260,8 +260,6 @@ body.menu--open .wrap__left {
 }
 .head__logo-icon {
   width: 2.7em;
-  -webkit-filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.5));
-          filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.5));
 }
 .head__split {
   background: url(../img/icons/split.svg) no-repeat 50% 50%;
@@ -720,6 +718,16 @@ body.menu--open .wrap__left {
   padding: 0.7em 1em;
   font-size: 1.2em;
   text-align: center;
+}
+.settings-input__title {
+  font-size: 2.2em;
+  margin-bottom: 0.7em;
+}
+.settings-input--free {
+  background-color: #232425;
+}
+.settings-input--free .settings-input__content {
+  margin: 0 auto;
 }
 
 body.settings--open .settings__layer {
