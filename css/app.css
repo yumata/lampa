@@ -1264,13 +1264,6 @@ body.size--small .card--category {
   margin-left: 2em;
 }
 
-body.platform--orsay .full-start__button > svg {
-  display: none;
-}
-body.platform--orsay .full-start__button > span {
-  margin-left: 0;
-}
-
 .full-descr {
   padding: 0 1.5em;
   display: -webkit-box;
@@ -3593,6 +3586,8 @@ body.platform--orsay .head__actions {
 body.platform--orsay svg {
   max-width: 100%;
   width: 100%;
+  max-height: 100%;
+  height: 100%;
 }
 body.platform--orsay .simple-keyboard .hg-button {
   float: none;
@@ -3653,4 +3648,120 @@ body.platform--orsay .simple-keyboard .hg-layout-numeric .hg-button {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+body.platform--orsay .full-start__button > svg {
+  width: 1.5em;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .full-start__button > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .full-start__tags > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .full-start__tag > img {
+  height: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .full-start__tag > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .simple-button > svg {
+  width: 1.5em;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .simple-button > svg + span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .simple-button--filter > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .menu__ico {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+     -moz-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+     -moz-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+body.platform--orsay .menu__ico > svg {
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .menu__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .player-panel .button.focus {
+  background-color: #524f4f;
+}
+body.platform--orsay .player-panel .button > svg {
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.platform--orsay .player-panel__timeend {
+  position: absolute;
+  right: 1.5em;
+}
+body.platform--orsay .player-panel__position > div::after {
+  top: 0.25em;
 }
