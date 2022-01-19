@@ -1799,6 +1799,14 @@ body.platform--browser .player-video__paused {
        -o-background-size: 55% !important;
           background-size: 55% !important;
 }
+.player-panel__quality {
+  width: auto !important;
+  padding: 0.1em 0.5em !important;
+  -webkit-border-radius: 0.2em !important;
+     -moz-border-radius: 0.2em !important;
+          border-radius: 0.2em !important;
+  text-transform: uppercase;
+}
 .player-panel__tstart {
   margin-right: 1em;
 }
