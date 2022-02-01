@@ -238,6 +238,14 @@ body.menu--open .wrap__left {
           transform: translate3d(15em, 0, 0);
 }
 
+body.platform--android .wrap__left {
+  background: -webkit-gradient(linear, left top, right top, from(#1d1f20), color-stop(70%, rgba(29, 31, 32, 0.95)), color-stop(75%, rgba(29, 31, 32, 0.9)), color-stop(80%, rgba(29, 31, 32, 0.8)), color-stop(85%, rgba(29, 31, 32, 0.6)), color-stop(90%, rgba(29, 31, 32, 0.4)), color-stop(95%, rgba(29, 31, 32, 0.2)), to(rgba(29, 31, 32, 0)));
+  background: -webkit-linear-gradient(left, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
+  background: -moz-linear-gradient(left, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
+  background: -o-linear-gradient(left, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
+  background: linear-gradient(to right, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
+}
+
 .head {
   position: fixed;
   top: 0;
