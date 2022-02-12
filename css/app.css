@@ -932,6 +932,22 @@ body.settings--open .settings__content {
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
 }
+.card__new-episode {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  bottom: 0.8em;
+}
+.card__new-episode > div {
+  background-color: #57F570;
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  padding: 0.5em 1em;
+  color: #17491C;
+  display: inline-block;
+}
 .card.focus .card__img {
   border-color: #fff;
   -webkit-box-shadow: 0 0 0 0.4em #fff;
@@ -1473,6 +1489,84 @@ body.size--small .card--category {
   margin-left: 1.5em;
 }
 .full-review.focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.full-episodes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.full-episodes .full-episode {
+  width: 28.4em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.full-episodes .full-episode + .full-episode {
+  margin-left: 1em;
+}
+
+.full-episode {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.full-episode__left {
+  width: 11em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.full-episode__img {
+  padding-bottom: 57%;
+  position: relative;
+}
+.full-episode__img img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.full-episode__body {
+  padding: 1em;
+}
+.full-episode__name {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-width: 10em;
+  font-size: 1.4em;
+}
+.full-episode__date {
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+.full-episode.focus {
   background-color: #fff;
   color: #000;
 }
