@@ -948,6 +948,19 @@ body.settings--open .settings__content {
   color: #17491C;
   display: inline-block;
 }
+.card__quality {
+  position: absolute;
+  left: -0.8em;
+  top: 17.2em;
+  padding: 0.4em 0.4em;
+  background: #ffe216;
+  color: #000;
+  font-size: 0.8em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+}
 .card.focus .card__img {
   border-color: #fff;
   -webkit-box-shadow: 0 0 0 0.4em #fff;
