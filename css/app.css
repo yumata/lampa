@@ -1118,7 +1118,7 @@ body.size--small .card--category {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .full-start__body {
   display: -webkit-box;
@@ -1198,20 +1198,22 @@ body.size--small .card--category {
 .full-start__title {
   font-size: 4em;
   font-weight: 700;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.1em;
   max-width: 90%;
   max-height: 2.1em;
   overflow: hidden;
+  line-height: 1.3;
 }
 .full-start__title-original {
   font-size: 2.3em;
   font-weight: 300;
   max-width: 80%;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.5em;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.3;
 }
 .full-start__descr {
   max-width: 80%;
