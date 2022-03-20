@@ -1070,7 +1070,7 @@ body.settings--open .settings__content {
   height: 19em;
 }
 .card--category {
-  width: 20%;
+  width: 16.666%;
   padding-bottom: 1em;
 }
 .card--category .card__icons-inner {
@@ -1082,6 +1082,11 @@ body.settings--open .settings__content {
           box-shadow: 0 0 0 0.3em #fff;
 }
 @media screen and (max-width: 767px) {
+  .card--category {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 580px) {
   .card--category {
     width: 25%;
   }
