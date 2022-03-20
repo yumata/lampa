@@ -2925,6 +2925,16 @@ body.platform--orsay .category-full:after {
   margin: 0 auto;
   max-width: 37%;
 }
+@media screen and (max-width: 767px) {
+  .modal__content {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .modal__content {
+    max-width: 80%;
+  }
+}
 .modal__head {
   margin-bottom: 2em;
 }
