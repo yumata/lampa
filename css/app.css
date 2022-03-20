@@ -746,6 +746,11 @@ body.platform--android .wrap__left {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .settings-input__content {
+    width: 100%;
+  }
+}
 .settings-input__input {
   font-size: 2.1em;
   margin-bottom: 1em;
@@ -762,6 +767,11 @@ body.platform--android .wrap__left {
   padding: 0.7em 1em;
   font-size: 1.2em;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .settings-input__links {
+    display: none;
+  }
 }
 .settings-input__title {
   font-size: 2.2em;
