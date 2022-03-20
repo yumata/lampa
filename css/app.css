@@ -2830,6 +2830,7 @@ body.platform--orsay .category-full:after {
 @media screen and (max-width: 580px) {
   .simple-keyboard .hg-button {
     font-size: 1.5em;
+    padding: 5px 0;
   }
 }
 .simple-keyboard .hg-button[data-skbtn="{bksp}"]:after,
