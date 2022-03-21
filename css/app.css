@@ -1252,6 +1252,9 @@ body.settings--open .settings__content {
      -moz-box-shadow: 0 0 0 0.4em #fff;
           box-shadow: 0 0 0 0.4em #fff;
 }
+.full-start__poster:before {
+  display: none;
+}
 @media screen and (max-width: 480px) {
   .full-start__poster {
     font-size: 0.9em;
@@ -2898,7 +2901,7 @@ body.platform--orsay .category-full:after {
 }
 .simple-keyboard .hg-button[data-skbtn="{mic}"] svg {
   width: 0.9em;
-  height: auto;
+  height: 1em;
 }
 .simple-keyboard .hg-button svg {
   -webkit-flex-shrink: 0;
