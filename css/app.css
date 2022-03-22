@@ -3049,6 +3049,11 @@ body.platform--orsay .category-full:after {
   display: flex;
   height: 30em;
 }
+@media screen and (max-width: 580px) {
+  .person-start__body {
+    height: auto;
+  }
+}
 .person-start__right {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -3066,17 +3071,7 @@ body.platform--orsay .category-full:after {
   position: relative;
 }
 .person-start__poster:before {
-  position: absolute;
-  content: "";
-  display: block;
-  top: 0.8em;
-  left: -0.8em;
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 0.3em;
-     -moz-border-radius: 0.3em;
-          border-radius: 0.3em;
-  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
 }
 .person-start__img {
   position: relative;
@@ -3085,6 +3080,16 @@ body.platform--orsay .category-full:after {
           border-radius: 0.3em;
   width: 17.7em;
   height: 26.4em;
+}
+@media screen and (max-width: 580px) {
+  .person-start__img {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .person-start__img {
+    font-size: 0.5em;
+  }
 }
 .person-start__tag {
   -webkit-border-radius: 5em;
@@ -3116,11 +3121,31 @@ body.platform--orsay .category-full:after {
   margin-bottom: 0.3em;
   max-width: 90%;
 }
+@media screen and (max-width: 580px) {
+  .person-start__name {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .person-start__name {
+    font-size: 2.5em;
+  }
+}
 .person-start__place {
   font-size: 2.3em;
   font-weight: 300;
   max-width: 80%;
   margin-bottom: 1.8em;
+}
+@media screen and (max-width: 580px) {
+  .person-start__place {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .person-start__place {
+    font-size: 1.5em;
+  }
 }
 .person-start__descr {
   max-width: 80%;
@@ -3134,6 +3159,16 @@ body.platform--orsay .category-full:after {
   -webkit-mask-image: -webkit-linear-gradient(top, white 0%, white 68%, rgba(255, 255, 255, 0) 100%);
           mask-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(68%, white), to(rgba(255, 255, 255, 0)));
           mask-image: linear-gradient(to bottom, white 0%, white 68%, rgba(255, 255, 255, 0) 100%);
+}
+@media screen and (max-width: 580px) {
+  .person-start__descr {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .person-start__descr {
+    display: none;
+  }
 }
 .person-start__icons {
   display: -webkit-box;
