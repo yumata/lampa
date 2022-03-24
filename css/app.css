@@ -1113,6 +1113,25 @@ body.settings--open .settings__content {
     width: 50%;
   }
 }
+.card--radio {
+  padding-bottom: 1em;
+  width: 12.5%;
+}
+@media screen and (max-width: 767px) {
+  .card--radio {
+    width: 14.2%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .card--radio {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 385px) {
+  .card--radio {
+    width: 25%;
+  }
+}
 
 .card-parser {
   padding: 0.75em;
