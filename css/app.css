@@ -816,10 +816,10 @@ body.settings--open .settings__content {
   transition: transform 0.3s, margin-left 0.3s, margin-top 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
 }
 .scroll__body.notransition {
-  -webkit-transition: none;
-  -o-transition: none;
-  -moz-transition: none;
-  transition: none;
+  -webkit-transition: unset;
+  -o-transition: unset;
+  -moz-transition: unset;
+  transition: unset;
 }
 
 .scroll--over {
