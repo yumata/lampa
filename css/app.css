@@ -959,7 +959,7 @@ body.settings--open .settings__content {
 }
 .card__icons-inner {
   position: absolute;
-  top: -21.4em;
+  top: 0.8em;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -1076,14 +1076,8 @@ body.settings--open .settings__content {
 .card--small + .card {
   margin-left: 1em;
 }
-.card--small .card__img {
-  height: 16.1em;
-}
 .card--small .card__view {
   margin-bottom: 0;
-}
-.card--small .card__icons-inner {
-  top: -15.2em;
 }
 .card--small.focus .card__img {
   -webkit-box-shadow: 0 0 0 0.3em #fff;
@@ -1093,20 +1087,19 @@ body.settings--open .settings__content {
 .card--small.card--wide {
   width: 34.3em;
 }
-.card--small.card--wide .card__img {
-  height: 19em;
-}
 .card--category {
-  width: 16.666%;
+  width: 14.266%;
   padding-bottom: 1em;
-}
-.card--category .card__icons-inner {
-  top: -18.2em;
 }
 .card--category.focus .card__img {
   -webkit-box-shadow: 0 0 0 0.3em #fff;
      -moz-box-shadow: 0 0 0 0.3em #fff;
           box-shadow: 0 0 0 0.3em #fff;
+}
+@media screen and (max-width: 991px) {
+  .card--category {
+    width: 16.666%;
+  }
 }
 @media screen and (max-width: 767px) {
   .card--category {
@@ -1142,16 +1135,16 @@ body.settings--open .settings__content {
 }
 .card--radio {
   padding-bottom: 1em;
-  width: 12.5%;
+  width: 16.666%;
 }
 @media screen and (max-width: 767px) {
   .card--radio {
-    width: 14.2%;
+    width: 14.266%;
   }
 }
 @media screen and (max-width: 580px) {
   .card--radio {
-    width: 20%;
+    width: 33.333%;
   }
 }
 @media screen and (max-width: 385px) {
