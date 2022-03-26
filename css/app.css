@@ -1087,6 +1087,9 @@ body.settings--open .settings__content {
 .card--small.card--wide {
   width: 34.3em;
 }
+.card--small.card--wide .card__view {
+  padding-bottom: 56%;
+}
 .card--category {
   width: 14.266%;
   padding-bottom: 1em;
