@@ -919,7 +919,7 @@ body.settings--open .settings__content {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  width: 14.6em;
+  width: 11.85em;
   -webkit-transition: margin-top 0.3s;
   -o-transition: margin-top 0.3s;
   -moz-transition: margin-top 0.3s;
@@ -3728,10 +3728,15 @@ body.platform--orsay .category-full:after {
      -moz-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 100%;
+  max-width: -webkit-calc(100% - 20em);
+  max-width: -moz-calc(100% - 20em);
+  max-width: calc(100% - 20em);
 }
 @media screen and (max-width: 580px) {
   .files__body {
     width: 100%;
+    max-width: 100%;
   }
 }
 .files__info {
