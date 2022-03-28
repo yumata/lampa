@@ -3372,6 +3372,7 @@ body.platform--orsay .category-full:after {
 }
 .torrent-item__title {
   font-size: 1.3em;
+  word-break: break-all;
 }
 .torrent-item__details {
   display: -webkit-box;
