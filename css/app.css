@@ -3683,6 +3683,7 @@ body.platform--orsay .category-full:after {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 .files__left {
   width: 20em;
