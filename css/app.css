@@ -1497,6 +1497,9 @@ body.settings--open .settings__content {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 @media screen and (max-width: 767px) {
   .full-start__icons {
