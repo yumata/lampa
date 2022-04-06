@@ -2749,10 +2749,10 @@ body.platform--orsay .category-full:after {
 @media screen and (max-width: 767px) {
   .search__results {
     width: 100%;
-    height: 50vh;
+    height: 50vh !important;
   }
   .search__results > .scroll {
-    height: 50vh;
+    height: 50vh !important;
   }
 }
 @media screen and (max-width: 767px) {
