@@ -3681,6 +3681,71 @@ body.platform--orsay .category-full:after {
   right: 0;
 }
 
+.torrent-install {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 580px) {
+  .torrent-install {
+    display: block;
+  }
+}
+.torrent-install__left, .torrent-install__details {
+  width: 50%;
+}
+@media screen and (max-width: 580px) {
+  .torrent-install__left, .torrent-install__details {
+    width: 100%;
+  }
+}
+.torrent-install__left {
+  padding-right: 3em;
+}
+@media screen and (max-width: 580px) {
+  .torrent-install__left {
+    display: none;
+  }
+}
+.torrent-install__title {
+  font-size: 2em;
+  line-height: 1.4;
+  margin-bottom: 0.7em;
+}
+.torrent-install__descr {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin-bottom: 3em;
+}
+.torrent-install__label {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.torrent-install__links:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.torrent-install__link {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background-color: #363636;
+}
+.torrent-install__link > div:first-child {
+  font-size: 1.1em;
+  margin-bottom: 0.4em;
+}
+.torrent-install__link > div:last-child {
+  font-size: 1.2em;
+}
+
 .files {
   display: -webkit-box;
   display: -webkit-flex;
