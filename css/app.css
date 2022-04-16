@@ -3746,6 +3746,84 @@ body.platform--orsay .category-full:after {
   font-size: 1.2em;
 }
 
+.torrent-checklist__title {
+  font-size: 2em;
+  line-height: 1.4;
+  margin-bottom: 0.7em;
+}
+.torrent-checklist__descr {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+}
+.torrent-checklist__progress-steps {
+  margin-bottom: 1em;
+}
+.torrent-checklist__progress-bar {
+  background-color: #3E3E3E;
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  margin-bottom: 2em;
+}
+.torrent-checklist__progress-bar > div {
+  height: 0.5em;
+  background-color: #fff;
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+}
+.torrent-checklist__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.torrent-checklist__footer {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.torrent-checklist__steps, .torrent-checklist__info {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .torrent-checklist__steps {
+    display: none;
+  }
+}
+.torrent-checklist__list {
+  margin: 0;
+}
+.torrent-checklist__list > li {
+  margin-bottom: 1em;
+  color: #8D8D8D;
+}
+.torrent-checklist__list > li.wait {
+  color: #fff;
+}
+.torrent-checklist__list > li.check {
+  text-decoration: line-through;
+}
+.torrent-checklist__info > div {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .torrent-checklist__info {
+    width: 100%;
+  }
+}
+
 .files {
   display: -webkit-box;
   display: -webkit-flex;
