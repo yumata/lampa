@@ -4381,6 +4381,94 @@ body.platform--orsay .category-full:after {
   margin-top: 4em;
 }
 
+@-webkit-keyframes scan {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 80%;
+  }
+}
+
+@-moz-keyframes scan {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 80%;
+  }
+}
+
+@-o-keyframes scan {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 80%;
+  }
+}
+
+@keyframes scan {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 80%;
+  }
+}
+.broadcast__text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.broadcast__scan {
+  position: relative;
+  height: 0.2em;
+  margin-bottom: 1em;
+}
+.broadcast__scan > div {
+  background-color: #fff;
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 20%;
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: scan;
+     -moz-animation-name: scan;
+       -o-animation-name: scan;
+          animation-name: scan;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+       -o-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.broadcast__device {
+  font-size: 1.2em;
+  padding: 1em;
+  background-color: #323232;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.broadcast__device:nth-child(2n) {
+  background-color: transparent;
+}
+.broadcast__device.focus {
+  background-color: #fff;
+  color: #000;
+}
+
 .online {
   padding: 1.2em;
   -webkit-border-radius: 0.3em;
