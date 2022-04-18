@@ -3383,7 +3383,7 @@ body.platform--orsay .category-full:after {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  color: #929292;
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 0.6em;
   font-weight: 600;
   -webkit-box-align: center;
@@ -3440,6 +3440,26 @@ body.platform--orsay .category-full:after {
   color: #000;
   background-color: #fff;
 }
+.torrent-item__stat {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  line-height: 1.4;
+  margin-top: 0.7em;
+  font-size: 0.9em;
+}
+.torrent-item__stat > div {
+  padding: 0.2em 0.8em;
+}
 .torrent-item + .torrent-item {
   margin-top: 1em;
 }
@@ -3453,6 +3473,9 @@ body.platform--orsay .category-full:after {
 }
 .torrent-item.focus .torrent-item__viewed {
   left: 0.05em;
+}
+.torrent-item--popular {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .torrent-file {
