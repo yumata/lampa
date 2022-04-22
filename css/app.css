@@ -1816,6 +1816,31 @@ body.settings--open .settings__content {
   background-color: #fff;
   color: #000;
 }
+.full-episode--next .full-episode__img {
+  background-color: #363232;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.full-episode--next .full-episode__img img {
+  opacity: 0;
+}
+.full-episode--next .full-episode__img:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.4em;
+  height: 2.4em;
+  margin: -1.2em 0 0 -1.2em;
+  background: url(../img/icons/menu/time.svg) no-repeat 50% 50%;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+  font-size: 1.3em;
+}
 
 .player {
   position: fixed;
