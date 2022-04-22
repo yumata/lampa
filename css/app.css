@@ -4517,6 +4517,113 @@ body.platform--orsay .category-full:after {
   color: #000;
 }
 
+.timetable {
+  padding: 0 1.5em;
+}
+.timetable:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.timetable__inner {
+  padding-bottom: 100%;
+}
+@media screen and (max-width: 480px) {
+  .timetable__inner {
+    padding-bottom: 120%;
+  }
+}
+@media screen and (max-width: 385px) {
+  .timetable__inner {
+    padding-bottom: 115%;
+  }
+}
+.timetable__item {
+  float: left;
+  width: 14.28%;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .timetable__item {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .timetable__item {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 385px) {
+  .timetable__item {
+    width: 33.33%;
+  }
+}
+.timetable__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  right: 0.2em;
+  bottom: 0.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.timetable__item--any:before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.timetable__item.focus {
+  color: #000;
+}
+.timetable__item.focus:before {
+  background-color: #fff;
+}
+.timetable__body {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  right: 1em;
+}
+.timetable__body > div {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  line-height: 1.4;
+}
+.timetable__body > div > span {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.9em;
+  margin-right: 0.5em;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+  margin-bottom: -0.1em;
+}
+.timetable__date {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 0.9em;
+}
+.timetable__preview {
+  margin-bottom: 0.8em;
+}
+.timetable__preview > img {
+  width: 5em;
+  height: 3.1em;
+  margin-bottom: 0.3em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.timetable__preview > div {
+  font-size: 0.9em;
+}
+
 .online {
   padding: 1.2em;
   -webkit-border-radius: 0.3em;
