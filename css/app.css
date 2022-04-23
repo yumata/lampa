@@ -1307,8 +1307,8 @@ body.settings--open .settings__content {
   -webkit-border-radius: 0.3em;
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
-  width: 17.7em;
-  height: 26.4em;
+  width: 17em;
+  height: 25.5em;
 }
 @media screen and (max-width: 767px) {
   .full-start__img {
