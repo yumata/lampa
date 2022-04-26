@@ -1900,7 +1900,7 @@ body.settings--open .settings__content {
   font-size: 2em;
 }
 .player-video__subtitles.has--backdrop .player-video__subtitles-text {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.55);
 }
 .player-video__subtitles.has--stroke {
   text-shadow: 0 2px 1px #000000, 0 -2px 1px #000000, -2px 1px 0 #000000, 2px 0px 1px #000000;
