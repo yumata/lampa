@@ -3065,6 +3065,9 @@ body.platform--orsay .category-full:after {
 .modal--empty-title .modal__head {
   margin-bottom: 0;
 }
+.modal--overlay {
+  z-index: 60;
+}
 .modal .scroll--mask .scroll__content {
   padding: 1.5em 0;
 }
