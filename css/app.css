@@ -4862,3 +4862,23 @@ body.platform--orsay .player-panel__timeend {
 body.platform--orsay .player-panel__position > div::after {
   top: 0.25em;
 }
+
+body.gods--optimization * {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+body.gods--optimization .background,
+body.gods--optimization .info__right {
+  display: none;
+}
+body.gods--optimization .info__rate,
+body.gods--optimization .wrap__left {
+  background: #383a3a;
+}
+body.gods--optimization .full-start__button {
+  background-color: #383a3a;
+}
+body.gods--optimization .full-start__button.focus {
+  background-color: #fff;
+}
