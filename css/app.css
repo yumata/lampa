@@ -4883,3 +4883,11 @@ body.platform--orsay .player-panel__timeend {
 body.platform--orsay .player-panel__position > div::after {
   top: 0.25em;
 }
+
+body.touch-device .scroll {
+  overflow: auto !important;
+}
+body.touch-device .scroll--horizontal {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
