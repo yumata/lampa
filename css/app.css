@@ -4227,6 +4227,7 @@ body.platform--orsay .category-full:after {
 .helper__ico {
   margin-right: 1em;
   width: 1.8em;
+  height: 1.8em;
 }
 .helper__body {
   font-size: 1.3em;
