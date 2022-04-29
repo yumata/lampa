@@ -3327,6 +3327,19 @@ body.platform--orsay .category-full:after {
   font-size: 1.4em;
   margin-top: 0.8em;
 }
+.empty__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
 .empty--list {
   height: auto;
   text-align: left;
