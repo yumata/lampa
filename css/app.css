@@ -140,6 +140,11 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  -webkit-touch-callout: none !important;
 }
 
 img {
