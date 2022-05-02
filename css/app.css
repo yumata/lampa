@@ -140,6 +140,11 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  -webkit-touch-callout: none !important;
 }
 
 img {
@@ -1307,8 +1312,8 @@ body.settings--open .settings__content {
   -webkit-border-radius: 0.3em;
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
-  width: 17.7em;
-  height: 26.4em;
+  width: 17em;
+  height: 25.5em;
 }
 @media screen and (max-width: 767px) {
   .full-start__img {
@@ -1900,7 +1905,7 @@ body.settings--open .settings__content {
   font-size: 2em;
 }
 .player-video__subtitles.has--backdrop .player-video__subtitles-text {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.55);
 }
 .player-video__subtitles.has--stroke {
   text-shadow: 0 2px 1px #000000, 0 -2px 1px #000000, -2px 1px 0 #000000, 2px 0px 1px #000000;
@@ -1955,6 +1960,13 @@ body.platform--browser .player-video__paused {
   -webkit-border-radius: 0.5em;
      -moz-border-radius: 0.5em;
           border-radius: 0.5em;
+}
+@media screen and (max-width: 480px) {
+  .player-panel {
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
 .player-panel.panel--visible {
   -webkit-transform: translateY(0);
@@ -2153,9 +2165,8 @@ body.platform--browser .player-video__paused {
           flex-shrink: 0;
 }
 .player-panel .button.focus {
-  background-color: #000;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  background-color: #fff;
+  color: #000;
 }
 .player-panel__right .button + .button, .player-panel__left .button + .button {
   margin-left: 1em;
@@ -2163,7 +2174,9 @@ body.platform--browser .player-video__paused {
 .player-panel__playpause {
   font-size: 1.4em;
   margin: 0 1em;
-  background-image: url(../img/icons/player/pause.svg);
+}
+.player-panel__playpause > div:first-child {
+  display: none;
 }
 @media screen and (max-width: 580px) {
   .player-panel__playpause {
@@ -2182,25 +2195,6 @@ body.platform--browser .player-video__paused {
      text-overflow: ellipsis;
   margin-bottom: 2em;
 }
-.player-panel__next {
-  background-image: url(../img/icons/player/next.svg);
-}
-.player-panel__prev {
-  background-image: url(../img/icons/player/prev.svg);
-}
-.player-panel__playlist {
-  background-image: url(../img/icons/player/playlist.svg);
-}
-.player-panel__subs {
-  background-image: url(../img/icons/player/subs.svg);
-}
-.player-panel__size {
-  background-image: url(../img/icons/player/size.svg);
-  -webkit-background-size: 55% 55% !important;
-     -moz-background-size: 55% !important;
-       -o-background-size: 55% !important;
-          background-size: 55% !important;
-}
 .player-panel__quality {
   width: auto !important;
   padding: 0.1em 0.5em !important;
@@ -2215,13 +2209,35 @@ body.platform--browser .player-video__paused {
 .player-panel__tend {
   margin-left: 1em;
 }
+.player-panel__next, .player-panel__prev {
+  padding: 0.55em !important;
+}
 @media screen and (max-width: 767px) {
   .player-panel__rprev, .player-panel__rnext {
     display: none !important;
   }
 }
-.player-panel.panel--paused .player-panel__playpause {
-  background-image: url(../img/icons/player/play.svg);
+.player-panel__playlist {
+  padding: 0.5em !important;
+}
+.player-panel__subs {
+  padding: 0.45em !important;
+}
+.player-panel__next-episode-name {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  padding-left: 1em;
+}
+.player-panel.panel--paused .player-panel__playpause > div:first-child {
+  display: block;
+}
+.player-panel.panel--paused .player-panel__playpause > div:last-child {
+  display: none;
 }
 
 .player-panel {
@@ -2255,6 +2271,13 @@ body.platform--browser .player-panel {
   -webkit-border-radius: 0.5em;
      -moz-border-radius: 0.5em;
           border-radius: 0.5em;
+}
+@media screen and (max-width: 480px) {
+  .player-info {
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 .player-info__body {
   padding: 1.5em;
@@ -3047,6 +3070,9 @@ body.platform--orsay .category-full:after {
 .modal--empty-title .modal__head {
   margin-bottom: 0;
 }
+.modal--overlay {
+  z-index: 60;
+}
 .modal .scroll--mask .scroll__content {
   padding: 1.5em 0;
 }
@@ -3300,6 +3326,19 @@ body.platform--orsay .category-full:after {
 .empty__descr {
   font-size: 1.4em;
   margin-top: 0.8em;
+}
+.empty__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
 }
 .empty--list {
   height: auto;
@@ -4175,6 +4214,126 @@ body.platform--orsay .category-full:after {
   opacity: 1;
 }
 
+.helper {
+  background: #4b8dcb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  -webkit-transform: translateY(100%);
+     -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+       -o-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  color: #fff;
+}
+.helper__ico {
+  margin-right: 1em;
+  width: 1.8em;
+  height: 1.8em;
+}
+.helper__body {
+  font-size: 1.3em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.helper--visible {
+  -webkit-transform: translateY(0%);
+     -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+       -o-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+@-webkit-keyframes helper-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@-moz-keyframes helper-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@-o-keyframes helper-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes helper-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+.helper-blink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  -webkit-animation-duration: 0.2s;
+     -moz-animation-duration: 0.2s;
+       -o-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-name: helper-blink;
+     -moz-animation-name: helper-blink;
+       -o-animation-name: helper-blink;
+          animation-name: helper-blink;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+       -o-animation-direction: alternate;
+          animation-direction: alternate;
+  pointer-events: none;
+}
+
 .no-network {
   position: fixed;
   z-index: 100;
@@ -4861,4 +5020,12 @@ body.platform--orsay .player-panel__timeend {
 }
 body.platform--orsay .player-panel__position > div::after {
   top: 0.25em;
+}
+
+body.touch-device .scroll {
+  overflow: auto !important;
+}
+body.touch-device .scroll--horizontal {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
