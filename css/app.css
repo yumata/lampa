@@ -480,7 +480,7 @@ body.platform--android .wrap__left {
           align-items: center;
   color: #ddd;
   position: relative;
-  padding: 0.8em 1.5em;
+  padding: 0.9em 1.5em;
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
@@ -511,9 +511,9 @@ body.platform--android .wrap__left {
   display: block;
 }
 .menu__ico {
-  margin-right: 1em;
-  width: 1.2em;
-  height: 1.2em;
+  margin-right: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
