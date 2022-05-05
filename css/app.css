@@ -5036,22 +5036,10 @@ body.touch-device .scroll--horizontal {
   padding-bottom: 1em;
 }
 
-body.light--version .wrap {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: -o-transform 0.2s;
-  -moz-transition: transform 0.2s, -moz-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
-}
 body.light--version .wrap__left {
   position: static;
   background: transparent;
-}
-body.light--version.menu--open .wrap {
-  -webkit-transform: translate3d(15em, 0, 0);
-     -moz-transform: translate3d(15em, 0, 0);
-          transform: translate3d(15em, 0, 0);
+  margin-left: 0;
 }
 body.light--version.menu--open .wrap__left {
   -webkit-transform: unset;
@@ -5065,7 +5053,7 @@ body.light--version .background {
 }
 @media screen and (min-width: 991px) {
   body.light--version .card--category {
-    width: 16.66%;
+    width: 20%;
   }
 }
 body.light--version .card--small .card__title {
