@@ -5074,7 +5074,8 @@ body.light--version .card--small .card__title {
 body.light--version .card__img,
 body.light--version .card__quality,
 body.light--version .items-line__more,
-body.light--version .card-more__box {
+body.light--version .card-more__box,
+body.light--version .card__type {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
