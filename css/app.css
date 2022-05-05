@@ -5042,6 +5042,9 @@ body.light--version .wrap__left {
   margin-left: 0;
 }
 body.light--version.menu--open .wrap__left {
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform: unset;
      -moz-transform: unset;
       -ms-transform: unset;
