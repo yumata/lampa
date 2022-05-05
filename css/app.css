@@ -2699,6 +2699,19 @@ body.selectbox--open .selectbox__content {
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
+.category-full__more {
+  text-align: center;
+  padding: 2em;
+  margin-top: 1.5em;
+  width: 100%;
+}
+.category-full__more > span {
+  font-size: 1.2em;
+}
+.category-full__more.focus {
+  border-color: #fff;
+  color: #000;
+}
 
 body.platform--orsay .category-full {
   display: block;
@@ -5021,4 +5034,48 @@ body.touch-device .scroll {
 body.touch-device .scroll--horizontal {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+body.light--version .wrap {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -moz-transition: transform 0.2s, -moz-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
+}
+body.light--version .wrap__left {
+  position: static;
+  background: transparent;
+}
+body.light--version.menu--open .wrap {
+  -webkit-transform: translate3d(15em, 0, 0);
+     -moz-transform: translate3d(15em, 0, 0);
+          transform: translate3d(15em, 0, 0);
+}
+body.light--version.menu--open .wrap__left {
+  -webkit-transform: unset;
+     -moz-transform: unset;
+      -ms-transform: unset;
+       -o-transform: unset;
+          transform: unset;
+}
+body.light--version .background {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  body.light--version .card--category {
+    width: 16.66%;
+  }
+}
+body.light--version .card--small .card__title {
+  margin-top: 0.5em;
+}
+body.light--version .card__img,
+body.light--version .card__quality,
+body.light--version .items-line__more,
+body.light--version .card-more__box {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
 }
