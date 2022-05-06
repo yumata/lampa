@@ -5049,6 +5049,9 @@ body.light--version .background {
   body.light--version .files__body {
     max-width: inherit;
   }
+  body.light--version .timetable__item {
+    width: 16.66%;
+  }
 }
 body.light--version .card--small .card__title {
   margin-top: 0.5em;
