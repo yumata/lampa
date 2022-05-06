@@ -5047,7 +5047,7 @@ body.light--version .background {
     font-size: 0.7em;
   }
   body.light--version .files__body {
-    max-width: unset;
+    max-width: inherit;
   }
 }
 body.light--version .card--small .card__title {
