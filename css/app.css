@@ -5058,6 +5058,12 @@ body.light--version .background {
   body.light--version .card--category {
     width: 20%;
   }
+  body.light--version .files__left {
+    font-size: 0.7em;
+  }
+  body.light--version .files__body {
+    max-width: unset;
+  }
 }
 body.light--version .card--small .card__title {
   margin-top: 0.5em;
