@@ -232,12 +232,7 @@ body.no--animation * {
           flex-grow: 1;
 }
 
-body.menu--open .wrap {
-  -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-body.menu--open .wrap__left {
+body.menu--open:not(.light--version) .wrap__left {
   -webkit-transform: translate3d(15em, 0, 0);
      -moz-transform: translate3d(15em, 0, 0);
           transform: translate3d(15em, 0, 0);
@@ -5040,16 +5035,6 @@ body.light--version .wrap__left {
   position: static;
   background: transparent;
   margin-left: 0;
-}
-body.light--version.menu--open .wrap__left {
-  -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform: unset;
-     -moz-transform: unset;
-      -ms-transform: unset;
-       -o-transform: unset;
-          transform: unset;
 }
 body.light--version .background {
   display: none;
