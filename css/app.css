@@ -3969,6 +3969,13 @@ body.platform--orsay .category-full:after {
   max-width: -moz-calc(100% - 20em);
   max-width: calc(100% - 20em);
 }
+@media screen and (max-width: 767px) {
+  .files__body {
+    max-width: -webkit-calc(100% - 17em);
+    max-width: -moz-calc(100% - 17em);
+    max-width: calc(100% - 17em);
+  }
+}
 @media screen and (max-width: 580px) {
   .files__body {
     width: 100%;
@@ -5031,15 +5038,15 @@ body.touch-device .scroll--horizontal {
   padding-bottom: 1em;
 }
 
-body.light--version .wrap__left {
-  position: static;
-  background: transparent;
-  margin-left: 0;
-}
-body.light--version .background {
-  display: none;
-}
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 767px) {
+  body.light--version .wrap__left {
+    position: static;
+    background: transparent;
+    margin-left: 0;
+  }
+  body.light--version .background {
+    display: none;
+  }
   body.light--version .card--category {
     width: 20%;
   }
@@ -5068,10 +5075,4 @@ body.light--version .card__promo {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .settings-param--light {
-    display: none;
-  }
 }
