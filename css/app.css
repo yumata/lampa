@@ -5070,7 +5070,7 @@ body.light--version .card__promo {
           border-radius: 0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .settings-param--light {
     display: none;
   }
