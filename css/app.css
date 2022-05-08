@@ -971,11 +971,8 @@ body.settings--open .settings__content {
   margin-top: 0.6em;
 }
 .card__icons {
-  position: relative;
-}
-.card__icons-inner {
   position: absolute;
-  top: 0.8em;
+  top: 0.9em;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -989,14 +986,28 @@ body.settings--open .settings__content {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.card__icons-inner {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .card__icon {
-  width: 2em;
-  height: 2em;
-  background: rgba(0, 0, 0, 0.3);
+  width: 1.8em;
+  height: 1.8em;
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
           border-radius: 100%;
-  margin: 0 0.2em;
   -webkit-background-size: 60% 60%;
      -moz-background-size: 60%;
        -o-background-size: 60%;
@@ -1012,6 +1023,9 @@ body.settings--open .settings__content {
 }
 .card__icon.icon--like {
   background-image: url(../img/icons/menu/like.svg);
+}
+.card__icon.icon--history {
+  background-image: url(../img/icons/settings/player.svg);
 }
 .card__promo {
   position: absolute;
