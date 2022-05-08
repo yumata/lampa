@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .welcome {
   position: fixed;
   top: 0;
@@ -178,6 +179,14 @@ body.no--animation * {
   -o-transition: none !important;
   -moz-transition: none !important;
   transition: none !important;
+}
+
+/** Фиг знает, баг **/
+body.no--animation .background canvas {
+  -webkit-transition: opacity 0.1s !important;
+  -o-transition: opacity 0.1s !important;
+  -moz-transition: opacity 0.1s !important;
+  transition: opacity 0.1s !important;
 }
 
 .wrap {
