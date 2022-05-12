@@ -833,12 +833,12 @@ body.settings--open .settings__content {
   }
 }
 .scroll__body {
-  -webkit-transition: margin-left 0.1s linear, margin-top 0.1s linear, -webkit-transform 0.1s linear;
-  transition: margin-left 0.1s linear, margin-top 0.1s linear, -webkit-transform 0.1s linear;
-  -o-transition: margin-left 0.1s linear, margin-top 0.1s linear, -o-transform 0.1s linear;
-  -moz-transition: transform 0.1s linear, margin-left 0.1s linear, margin-top 0.1s linear, -moz-transform 0.1s linear;
-  transition: transform 0.1s linear, margin-left 0.1s linear, margin-top 0.1s linear;
-  transition: transform 0.1s linear, margin-left 0.1s linear, margin-top 0.1s linear, -webkit-transform 0.1s linear, -moz-transform 0.1s linear, -o-transform 0.1s linear;
+  -webkit-transition: margin-left 0.3s, margin-top 0.3s, -webkit-transform 0.3s;
+  transition: margin-left 0.3s, margin-top 0.3s, -webkit-transform 0.3s;
+  -o-transition: margin-left 0.3s, margin-top 0.3s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, margin-left 0.3s, margin-top 0.3s, -moz-transform 0.3s;
+  transition: transform 0.3s, margin-left 0.3s, margin-top 0.3s;
+  transition: transform 0.3s, margin-left 0.3s, margin-top 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
 }
 .scroll__body.notransition {
   -webkit-transition: unset;
@@ -885,12 +885,12 @@ body.settings--open .settings__content {
   padding: 0;
 }
 .scroll--wheel .scroll__body {
-  -webkit-transition: margin-left 0.1s linear, margin-top 0.1s linear, -webkit-transform 0.1s linear;
-  transition: margin-left 0.1s linear, margin-top 0.1s linear, -webkit-transform 0.1s linear;
-  -o-transition: margin-left 0.1s linear, margin-top 0.1s linear, -o-transform 0.1s linear;
-  -moz-transition: transform 0.1s linear, margin-left 0.1s linear, margin-top 0.1s linear, -moz-transform 0.1s linear;
-  transition: transform 0.1s linear, margin-left 0.1s linear, margin-top 0.1s linear;
-  transition: transform 0.1s linear, margin-left 0.1s linear, margin-top 0.1s linear, -webkit-transform 0.1s linear, -moz-transform 0.1s linear, -o-transform 0.1s linear;
+  -webkit-transition: margin-left 0.2s, margin-top 0.2s, -webkit-transform 0.2s;
+  transition: margin-left 0.2s, margin-top 0.2s, -webkit-transform 0.2s;
+  -o-transition: margin-left 0.2s, margin-top 0.2s, -o-transform 0.2s;
+  -moz-transition: transform 0.2s, margin-left 0.2s, margin-top 0.2s, -moz-transform 0.2s;
+  transition: transform 0.2s, margin-left 0.2s, margin-top 0.2s;
+  transition: transform 0.2s, margin-left 0.2s, margin-top 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
 }
 
 .items-line__head {
