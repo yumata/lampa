@@ -88,6 +88,10 @@ input::placeholder {
   opacity: 1;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 input.hover::-webkit-input-placeholder, input.enter::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
@@ -1262,6 +1266,82 @@ body.settings--open .settings__content {
 }
 .card-parser + .card-parser {
   margin-left: 2em;
+}
+
+.card-watched {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: -120%;
+  bottom: 0;
+  z-index: 1;
+  background-color: #404040;
+  -webkit-border-top-right-radius: 0.3em;
+     -moz-border-radius-topright: 0.3em;
+          border-top-right-radius: 0.3em;
+  -webkit-border-bottom-right-radius: 0.3em;
+     -moz-border-radius-bottomright: 0.3em;
+          border-bottom-right-radius: 0.3em;
+  margin-left: 0.3em;
+  display: none;
+  pointer-events: none;
+}
+.card-watched__inner {
+  padding: 1em;
+}
+.card-watched__body {
+  padding-top: 1em;
+  font-size: 0.8em;
+}
+.card-watched__item {
+  margin-top: 1em;
+}
+.card-watched__item > span {
+  display: block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card-watched__item:nth-child(1) {
+  color: #fff;
+}
+.card-watched__item:nth-child(2) {
+  color: #9f9f9f;
+}
+.card-watched__item:nth-child(3) {
+  color: #6c6c6c;
+}
+.card-watched__item:nth-child(4) {
+  color: #5e5e5e;
+}
+.card-watched__item:nth-child(5) {
+  color: #4c4c4c;
+}
+.card-watched__item .time-line {
+  margin-top: 0.5em;
+}
+.card-watched.reverce--position {
+  right: 100%;
+  left: -120%;
+  margin-right: 0.3em;
+  margin-left: 0;
+  -webkit-border-top-right-radius: 0;
+     -moz-border-radius-topright: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+     -moz-border-radius-bottomright: 0;
+          border-bottom-right-radius: 0;
+  -webkit-border-top-left-radius: 0.3em;
+     -moz-border-radius-topleft: 0.3em;
+          border-top-left-radius: 0.3em;
+  -webkit-border-bottom-left-radius: 0.3em;
+     -moz-border-radius-bottomleft: 0.3em;
+          border-bottom-left-radius: 0.3em;
+}
+
+.card.focus .card-watched {
+  display: block;
 }
 
 .full-start {
