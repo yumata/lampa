@@ -1942,6 +1942,12 @@ body.settings--open .settings__content {
   background-color: #fff;
   color: #000;
 }
+.full-episode.focus .time-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.full-episode.focus .time-line > div {
+  background-color: #686868;
+}
 .full-episode--next .full-episode__img {
   background-color: #363232;
   -webkit-border-radius: 0.3em;
