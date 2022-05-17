@@ -978,6 +978,12 @@ body.settings--open .settings__content {
   font-size: 1.2em;
   max-height: 3.1em;
   overflow: hidden;
+  -o-text-overflow: ".";
+     text-overflow: ".";
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .card__age {
   font-size: 0.9em;
@@ -1466,8 +1472,8 @@ body.settings--open .settings__content {
      text-overflow: ellipsis;
 }
 .full-start__title, .full-start__title-mobile {
-  font-size: 4em;
-  font-weight: 700;
+  font-size: 3.2em;
+  font-weight: 400;
   margin-bottom: 0.1em;
   max-width: 90%;
   max-height: 2.6em;
@@ -1476,10 +1482,10 @@ body.settings--open .settings__content {
 }
 @media screen and (max-width: 767px) {
   .full-start__title, .full-start__title-mobile {
-    font-size: 3.2em;
+    font-size: 3em;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .full-start__title {
     display: none;
   }
@@ -1487,23 +1493,26 @@ body.settings--open .settings__content {
 .full-start__title-mobile {
   display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .full-start__title-mobile {
     display: block;
     max-width: 100%;
     margin-bottom: 1em;
-    font-size: 2.7em;
+    font-size: 2.5em;
   }
 }
 .full-start__title-original {
-  font-size: 2.3em;
+  font-size: 2.2em;
   font-weight: 300;
   max-width: 80%;
   margin-bottom: 1.5em;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
   line-height: 1.3;
 }
 .full-start__descr {
@@ -1548,15 +1557,23 @@ body.settings--open .settings__content {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .full-start__buttons-line {
+    margin: -1.5em;
+  }
+  .full-start__buttons-line .full-start__buttons {
+    padding: 0 1.5em;
+  }
+}
 .full-start__buttons-scroll {
   width: 100%;
   max-width: 100%;
 }
 .full-start__button {
-  margin-right: 1em;
+  margin-right: 0.75em;
   font-size: 1.3em;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 0.3em 1.2em;
+  padding: 0.3em 1em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1581,7 +1598,8 @@ body.settings--open .settings__content {
   height: 1.5em;
 }
 .full-start__button > svg + span {
-  margin-left: 1em;
+  margin-left: 0.75em;
+  margin-top: -0.2em;
 }
 .full-start__button.focus {
   background-color: #fff;
@@ -1623,14 +1641,17 @@ body.settings--open .settings__content {
 @media screen and (max-width: 767px) {
   .full-start__icons {
     position: absolute;
-    top: 17.1em;
-    left: 17.6em;
+    top: 16.2em;
+    left: 17.2em;
   }
 }
 @media screen and (max-width: 480px) {
   .full-start__icons {
     top: 15em;
-    left: 14.8em;
+    left: 14.5em;
+  }
+  .full-start__icons > * {
+    font-size: 0.8em;
   }
 }
 .full-start .info__rate {
@@ -2631,8 +2652,8 @@ body.selectbox--open .selectbox__content {
   padding-top: 1em;
 }
 .info__title {
-  font-size: 3.1em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 400;
   line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
@@ -5165,9 +5186,30 @@ body.platform--orsay .player-panel__position > div::after {
 body.touch-device .scroll {
   overflow: auto !important;
 }
+body.touch-device .scroll > .scroll__content > .scroll__body:after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
 body.touch-device .scroll--horizontal {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+body.touch-device .full-start__buttons-scroll .scroll__body:after {
+  display: none !important;
+}
+body.touch-device .full-start__buttons-scroll .scroll__body .full-start__buttons:after {
+  content: "";
+  display: block;
+  width: 0.75em;
+  height: 1.5em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 @media screen and (min-width: 767px) {
