@@ -3009,6 +3009,42 @@ body.platform--orsay .category-full:after {
   margin-top: 1em;
 }
 
+body.system--keyboard .search__history {
+  height: 60vh;
+}
+body.system--keyboard .search__history .scroll__content {
+  height: 60vh;
+}
+body.system--keyboard .search__keypad {
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  body.system--keyboard .search__left {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body.system--keyboard .search__left {
+    height: 25vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  body.system--keyboard .search__results {
+    height: 65vh !important;
+  }
+  body.system--keyboard .search__results > .scroll {
+    height: 65vh !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  body.system--keyboard .search__results {
+    height: 75vh !important;
+  }
+  body.system--keyboard .search__results > .scroll {
+    height: 75vh !important;
+  }
+}
+
 .simple-keyboard {
   background: transparent;
   padding: 0;
