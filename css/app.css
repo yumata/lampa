@@ -3160,6 +3160,23 @@ body.platform--orsay .category-full:after {
   display: block;
   clear: both;
 }
+.simple-keyboard-input {
+  background-color: #4c4b4b;
+  font-size: 1.6em;
+  height: 2.1em;
+  width: 100%;
+  border: 0;
+  padding: 0 0.7em;
+  color: #fff;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.simple-keyboard-input:focus, .simple-keyboard-input.focus {
+  -webkit-box-shadow: 0 0 0 3px #fff;
+     -moz-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+}
 
 .modal {
   position: fixed;
