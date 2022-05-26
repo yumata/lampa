@@ -3017,10 +3017,12 @@ body.system--keyboard .search__history .scroll__content {
 }
 body.system--keyboard .search__keypad {
   height: auto;
+  padding-bottom: 2em;
 }
 @media screen and (max-width: 767px) {
   body.system--keyboard .search__left {
     height: 35vh;
+    min-height: 11em;
   }
 }
 @media screen and (max-width: 480px) {
