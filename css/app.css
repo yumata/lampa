@@ -3009,6 +3009,11 @@ body.platform--orsay .category-full:after {
   margin-top: 1em;
 }
 
+.search-history-empty {
+  font-size: 1.3em;
+  color: #747474;
+}
+
 body.system--keyboard .search__history {
   height: 60vh;
 }
