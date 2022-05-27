@@ -349,6 +349,7 @@ body.platform--android .wrap__left {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  line-height: 1.2;
 }
 .head__action {
   width: 2.8em;
@@ -976,8 +977,9 @@ body.settings--open .settings__content {
 }
 .card__title {
   font-size: 1.2em;
-  max-height: 3.1em;
+  max-height: 3.6em;
   overflow: hidden;
+  line-height: 1.2;
   -o-text-overflow: ".";
      text-overflow: ".";
   display: -webkit-box;
@@ -2957,6 +2959,9 @@ body.platform--orsay .category-full:after {
     height: 50vh !important;
   }
 }
+.search__results .broadcast__text {
+  margin-top: 2.6em;
+}
 @media screen and (max-width: 767px) {
   .search {
     display: block;
@@ -3014,6 +3019,15 @@ body.platform--orsay .category-full:after {
   color: #747474;
 }
 
+.search-looking {
+  text-align: center;
+}
+.search-looking__text {
+  margin-top: 3.3em;
+  font-size: 1.3em;
+  color: #747474;
+}
+
 body.system--keyboard .search__history {
   height: 60vh;
 }
@@ -3023,6 +3037,7 @@ body.system--keyboard .search__history .scroll__content {
 body.system--keyboard .search__keypad {
   height: auto;
   padding-bottom: 2em;
+  margin-top: 0;
 }
 @media screen and (max-width: 767px) {
   body.system--keyboard .search__left {
