@@ -1598,6 +1598,9 @@ body.settings--open .settings__content {
 .full-start__button > svg {
   width: 1.5em;
   height: 1.5em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .full-start__button > svg + span {
   margin-left: 0.75em;
