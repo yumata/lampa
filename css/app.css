@@ -4403,6 +4403,43 @@ body.system--keyboard .search__keypad {
 .console__line.focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.console__tabs .scroll__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.console__tab {
+  font-size: 1.1em;
+  background-color: #3e3e3e;
+  padding: 0.6em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
+.console__tab + .console__tab {
+  margin-left: 1em;
+}
+.console__tab > span {
+  font-size: 0.7em;
+  background-color: #ddd3;
+  padding: 0.3em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  text-align: center;
+  min-width: 1.8em;
+  display: inline-block;
+}
+.console__tab.focus {
+  background: #fff;
+  color: #000;
+}
+.console__time {
+  color: #7c7c7c;
+  font-weight: 300;
+}
 
 .time-line {
   margin-top: 1em;
