@@ -1275,6 +1275,9 @@ body.settings--open .settings__content {
 .card-parser + .card-parser {
   margin-left: 2em;
 }
+.card-parser + .card-more {
+  width: 14.6em;
+}
 
 .card-watched {
   position: absolute;
