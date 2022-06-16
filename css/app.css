@@ -202,6 +202,42 @@ body.no--animation .background canvas {
   transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
 }
 
+.normalization {
+  position: absolute;
+  top: 50%;
+  left: 1.5em;
+  padding: 10px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  z-index: 60;
+  opacity: 0;
+  -webkit-transform: translateY(-50%) translateX(-100%);
+     -moz-transform: translateY(-50%) translateX(-100%);
+      -ms-transform: translateY(-50%) translateX(-100%);
+       -o-transform: translateY(-50%) translateX(-100%);
+          transform: translateY(-50%) translateX(-100%);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.normalization--visible {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) translateX(0);
+     -moz-transform: translateY(-50%) translateX(0);
+      -ms-transform: translateY(-50%) translateX(0);
+       -o-transform: translateY(-50%) translateX(0);
+          transform: translateY(-50%) translateX(0);
+}
+
+body.platform--browser .normalization {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
