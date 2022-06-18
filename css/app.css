@@ -185,6 +185,10 @@ body.no--animation * {
   transition: none !important;
 }
 
+body.no--cursor {
+  cursor: none;
+}
+
 /** Фиг знает, баг **/
 body.no--animation .background canvas {
   -webkit-transition: opacity 0.1s !important;
