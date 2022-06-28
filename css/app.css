@@ -2479,6 +2479,9 @@ body.platform--browser .player-video__paused {
 .player-panel__subs {
   padding: 0.45em !important;
 }
+.player-panel__settings {
+  padding: 0.35em !important;
+}
 .player-panel__next-episode-name {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
