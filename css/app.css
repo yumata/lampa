@@ -3258,6 +3258,7 @@ body.system--keyboard .search__keypad {
 .simple-keyboard .hg-button[data-skbtn="{shift}"]:after,
 .simple-keyboard .hg-button[data-skbtn="{RU}"]:after,
 .simple-keyboard .hg-button[data-skbtn="{EN}"]:after,
+.simple-keyboard .hg-button[data-skbtn="{UK}"]:after,
 .simple-keyboard .hg-button[data-skbtn="{space}"]:after {
   content: "";
   display: block;
@@ -3292,7 +3293,8 @@ body.system--keyboard .search__keypad {
   width: 1.4em;
 }
 .simple-keyboard .hg-button[data-skbtn="{EN}"]:after,
-.simple-keyboard .hg-button[data-skbtn="{RU}"]:after {
+.simple-keyboard .hg-button[data-skbtn="{RU}"]:after,
+.simple-keyboard .hg-button[data-skbtn="{UK}"]:after {
   background-image: url(../img/icons/keyboard/lang.svg);
   width: 0.9em;
 }
@@ -3302,6 +3304,7 @@ body.system--keyboard .search__keypad {
 .simple-keyboard .hg-button[data-skbtn="{shift}"] span,
 .simple-keyboard .hg-button[data-skbtn="{RU}"] span,
 .simple-keyboard .hg-button[data-skbtn="{EN}"] span,
+.simple-keyboard .hg-button[data-skbtn="{UK}"] span,
 .simple-keyboard .hg-button[data-skbtn="{space}"] span {
   width: 0;
   height: 0;
