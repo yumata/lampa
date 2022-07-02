@@ -72,6 +72,9 @@
   background-color: #fff;
   color: #242424;
 }
+.lang__selector > .scroll {
+  max-height: 18em !important;
+}
 
 @font-face {
   font-family: "SegoeUI";
