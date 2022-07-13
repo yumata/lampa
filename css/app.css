@@ -5315,6 +5315,9 @@ body.system--keyboard .search__keypad {
   line-height: 1.5;
   margin-bottom: 0.3em;
   font-size: 0.84em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 .extensions__item-footer {
   margin-top: auto;
