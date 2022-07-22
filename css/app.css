@@ -1000,6 +1000,9 @@ body.settings--open .settings__content {
   transition: transform 0.2s, margin-left 0.2s, margin-top 0.2s;
   transition: transform 0.2s, margin-left 0.2s, margin-top 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
 }
+.scroll--horizontal-scroll {
+  cursor: ew-resize;
+}
 
 .items-line__head {
   padding: 0 1.5em;
