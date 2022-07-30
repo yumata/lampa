@@ -4363,9 +4363,18 @@ body.touch-device .search .search__results .scroll__content {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: -0.5em;
 }
 .about__contacts > div {
-  width: 33.3%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0.5em;
 }
 
 .error {
