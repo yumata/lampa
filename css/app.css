@@ -3023,11 +3023,22 @@ body.platform--orsay .category-full:after {
   min-width: 1.8em;
   margin: 2px !important;
 }
+@media screen and (min-width: 991px) {
+  .search__keypad .simple-keyboard .hg-button {
+    float: left;
+    min-height: 1.5em;
+  }
+}
 .search__keypad .simple-keyboard .hg-row {
   margin: -2px;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+}
+@media screen and (min-width: 991px) {
+  .search__keypad .simple-keyboard .hg-row {
+    display: block;
+  }
 }
 .search__history, .search__sources {
   margin-bottom: 1.8em;
