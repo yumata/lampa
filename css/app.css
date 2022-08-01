@@ -3044,7 +3044,7 @@ body.platform--orsay .category-full:after {
 }
 @media screen and (min-width: 991px) {
   .search__keypad .simple-keyboard .hg-button {
-    float: left;
+    float: left !important;
     min-height: 1.5em;
   }
 }
@@ -3056,7 +3056,7 @@ body.platform--orsay .category-full:after {
 }
 @media screen and (min-width: 991px) {
   .search__keypad .simple-keyboard .hg-row {
-    display: block;
+    display: block !important;
     max-width: 100%;
   }
   .search__keypad .simple-keyboard .hg-row:after {
