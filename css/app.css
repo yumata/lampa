@@ -3135,7 +3135,7 @@ body.platform--orsay .category-full:after {
 
 .search-history-empty {
   font-size: 1.3em;
-  color: #747474;
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.4;
 }
 
@@ -3145,7 +3145,7 @@ body.platform--orsay .category-full:after {
 .search-looking__text {
   margin-top: 3.3em;
   font-size: 1.3em;
-  color: #747474;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .search-source {
