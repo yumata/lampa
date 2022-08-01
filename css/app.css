@@ -3096,6 +3096,9 @@ body.platform--orsay .category-full:after {
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
   padding: 0 1em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .search-history-key:before {
   content: "";
@@ -3110,6 +3113,9 @@ body.platform--orsay .category-full:after {
           background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .search-history-key > div {
   font-size: 1.6em;
@@ -3125,6 +3131,9 @@ body.platform--orsay .category-full:after {
   -o-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .search-history-key.focus {
   background: rgba(221, 221, 221, 0.3);
