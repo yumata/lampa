@@ -3036,7 +3036,6 @@ body.platform--orsay .category-full:after {
 }
 .search__keypad {
   padding: 0 1.5em;
-  margin-bottom: 2px;
 }
 .search__keypad .simple-keyboard .hg-button {
   min-width: 1.82em;
@@ -3050,6 +3049,8 @@ body.platform--orsay .category-full:after {
 }
 .search__keypad .simple-keyboard .hg-row {
   margin: -2px;
+  margin-bottom: 0;
+  padding-bottom: 2px;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
