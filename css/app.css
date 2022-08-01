@@ -305,6 +305,11 @@ body.platform--browser .normalization {
           backdrop-filter: blur(5px);
 }
 
+body.ambience--enable .wrap,
+body.ambience--enable .head {
+  display: none;
+}
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -370,12 +375,23 @@ body.menu--open:not(.light--version) .wrap__left {
             transform: translate3d(15em, 0, 0);
   }
 }
-body.platform--android .wrap__left {
-  background: -webkit-gradient(linear, left top, right top, from(#1d1f20), color-stop(70%, rgba(29, 31, 32, 0.95)), color-stop(75%, rgba(29, 31, 32, 0.9)), color-stop(80%, rgba(29, 31, 32, 0.8)), color-stop(85%, rgba(29, 31, 32, 0.6)), color-stop(90%, rgba(29, 31, 32, 0.4)), color-stop(95%, rgba(29, 31, 32, 0.2)), to(rgba(29, 31, 32, 0)));
-  background: -webkit-linear-gradient(left, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
-  background: -moz-linear-gradient(left, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
-  background: -o-linear-gradient(left, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
-  background: linear-gradient(to right, #1d1f20 0%, rgba(29, 31, 32, 0.95) 70%, rgba(29, 31, 32, 0.9) 75%, rgba(29, 31, 32, 0.8) 80%, rgba(29, 31, 32, 0.6) 85%, rgba(29, 31, 32, 0.4) 90%, rgba(29, 31, 32, 0.2) 95%, rgba(29, 31, 32, 0) 100%);
+body.platform--browser .wrap__left,
+body.platform--nw .wrap__left {
+  background: transparent;
+}
+body.platform--browser .wrap__content,
+body.platform--nw .wrap__content {
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  -o-transition: filter 0.3s;
+  -moz-transition: filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+body.platform--browser.menu--open .wrap__content,
+body.platform--nw.menu--open .wrap__content {
+  -webkit-filter: blur(9px) brightness(0.5);
+          filter: blur(9px) brightness(0.5);
 }
 
 .head {
@@ -2193,7 +2209,8 @@ body.settings--open .settings__content {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-body.platform--browser .player-video__paused {
+body.platform--browser .player-video__paused,
+body.platform--nw .player-video__paused {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -2509,7 +2526,8 @@ body.platform--browser .player-video__paused {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-body.platform--browser .player-panel {
+body.platform--browser .player-panel,
+body.platform--nw .player-panel {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -2598,7 +2616,8 @@ body.platform--browser .player-panel {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-body.platform--browser .player-info {
+body.platform--browser .player-info,
+body.platform--nw .player-info {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -2999,7 +3018,7 @@ body.platform--orsay .category-full:after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1d1f20;
+  background: transparent;
   z-index: 50;
   width: 100%;
 }
@@ -3017,7 +3036,7 @@ body.platform--orsay .category-full:after {
 }
 .search__keypad {
   padding: 0 1.5em;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .search__keypad .simple-keyboard .hg-button {
   min-width: 1.8em;
@@ -3089,6 +3108,7 @@ body.platform--orsay .category-full:after {
   font-size: 1.6em;
   padding: 0.5em;
   padding-top: 0.2em;
+  overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   white-space: nowrap;
@@ -3100,7 +3120,7 @@ body.platform--orsay .category-full:after {
   transition: background-color 0.3s;
 }
 .search-history-key.focus {
-  background-color: #6d6d6d;
+  background: rgba(221, 221, 221, 0.3);
 }
 .search-history-key + div {
   margin-left: 5px;
@@ -3171,7 +3191,7 @@ body.platform--orsay .category-full:after {
   color: #000;
 }
 .search-source.focus {
-  background: #6d6d6d;
+  background: rgba(221, 221, 221, 0.3);
   opacity: 1;
   -webkit-box-shadow: inset 0 0 0 0.15em #fff;
      -moz-box-shadow: inset 0 0 0 0.15em #fff;
@@ -3259,7 +3279,7 @@ body.touch-device .search .search__results .scroll__content {
   color: #fff;
 }
 .simple-keyboard .hg-button.hg-activeButton, .simple-keyboard .hg-button.focus, .simple-keyboard .hg-button:hover {
-  background-color: #6d6d6d;
+  background: rgba(221, 221, 221, 0.3);
   color: #fff;
 }
 @media screen and (max-width: 580px) {
@@ -4482,7 +4502,7 @@ body.touch-device .search .search__results .scroll__content {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1d1f20;
+  background: transparent;
   z-index: 50;
   width: 100%;
   display: -webkit-box;
