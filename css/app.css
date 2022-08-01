@@ -3039,7 +3039,7 @@ body.platform--orsay .category-full:after {
   margin-bottom: 2px;
 }
 .search__keypad .simple-keyboard .hg-button {
-  min-width: 1.8em;
+  min-width: 1.82em;
   margin: 2px !important;
 }
 @media screen and (min-width: 991px) {
@@ -3057,6 +3057,12 @@ body.platform--orsay .category-full:after {
 @media screen and (min-width: 991px) {
   .search__keypad .simple-keyboard .hg-row {
     display: block;
+    max-width: 100%;
+  }
+  .search__keypad .simple-keyboard .hg-row:after {
+    content: "";
+    display: block;
+    clear: both;
   }
 }
 .search__history, .search__sources {
