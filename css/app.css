@@ -348,6 +348,12 @@ body.ambience--enable .head {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   padding-top: 4em;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -moz-transition: transform 0.2s, -moz-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -366,6 +372,15 @@ body.menu--open:not(.light--version) .wrap__left {
   -webkit-transform: translate3d(15em, 0, 0);
      -moz-transform: translate3d(15em, 0, 0);
           transform: translate3d(15em, 0, 0);
+  background: transparent;
+}
+body.menu--open:not(.light--version) .wrap__content {
+  -webkit-transform: translate3d(15em, 0, 0);
+     -moz-transform: translate3d(15em, 0, 0);
+          transform: translate3d(15em, 0, 0);
+}
+body.menu--open:not(.light--version) .background {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 767px) {
@@ -375,25 +390,6 @@ body.menu--open:not(.light--version) .wrap__left {
             transform: translate3d(15em, 0, 0);
   }
 }
-body.platform--browser .wrap__left,
-body.platform--nw .wrap__left {
-  background: transparent;
-}
-body.platform--browser .wrap__content,
-body.platform--nw .wrap__content {
-  -webkit-transition: -webkit-filter 0.3s;
-  transition: -webkit-filter 0.3s;
-  -o-transition: filter 0.3s;
-  -moz-transition: filter 0.3s;
-  transition: filter 0.3s;
-  transition: filter 0.3s, -webkit-filter 0.3s;
-}
-body.platform--browser.menu--open .wrap__content,
-body.platform--nw.menu--open .wrap__content {
-  -webkit-filter: blur(9px) brightness(0.5);
-          filter: blur(9px) brightness(0.5);
-}
-
 .head {
   position: fixed;
   top: 0;
@@ -685,6 +681,10 @@ body.platform--nw.menu--open .wrap__content {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .background__one, .background__two {
   position: fixed;
@@ -3037,37 +3037,32 @@ body.platform--orsay .category-full:after {
 .search__keypad {
   padding: 0 1.5em;
 }
-.search__keypad .simple-keyboard .hg-button {
-  min-width: 1.82em;
-  margin: 2px !important;
+.search__keypad .simple-keyboard {
+  margin-bottom: 5px;
 }
 @media screen and (min-width: 991px) {
-  .search__keypad .simple-keyboard .hg-button {
-    float: left !important;
-    min-height: 1.5em;
+  .search__keypad .simple-keyboard .hg-button-MIC,
+.search__keypad .simple-keyboard .hg-button-LANG,
+.search__keypad .simple-keyboard .hg-button-SIM,
+.search__keypad .simple-keyboard .hg-button-BKSP {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+       -moz-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    min-width: 2.1em;
   }
-}
-.search__keypad .simple-keyboard .hg-row {
-  margin: -2px;
-  margin-bottom: 0;
-  padding-bottom: 2px;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-@media screen and (min-width: 991px) {
-  .search__keypad .simple-keyboard .hg-row {
-    display: block !important;
-    max-width: 100%;
-  }
-  .search__keypad .simple-keyboard .hg-row:after {
-    content: "";
-    display: block;
-    clear: both;
+  .search__keypad .simple-keyboard .hg-button-SPACE {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+       -moz-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    min-width: 7em;
   }
 }
 .search__history, .search__sources {
-  margin-bottom: 1.8em;
+  margin-bottom: 0.6em;
 }
 .search__history .scroll__body, .search__sources .scroll__body {
   display: -webkit-box;
@@ -3078,6 +3073,9 @@ body.platform--orsay .category-full:after {
 }
 .search__results .broadcast__text {
   margin-top: 2.6em;
+}
+.search__results-offset {
+  padding-top: 1.5em;
 }
 
 .search-history-key {
@@ -3215,7 +3213,7 @@ body.platform--orsay .category-full:after {
   color: #fff;
 }
 .search-source + .search-source {
-  margin-left: 1.3em;
+  margin-left: 0.6em;
 }
 
 body.touch-device .search .hg-button {
