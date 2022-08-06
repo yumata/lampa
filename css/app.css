@@ -3373,11 +3373,6 @@ body.touch-device .search .search__results .scroll__content {
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-.simple-keyboard .hg-row:after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .simple-keyboard-input {
   background-color: transparent;
   font-size: 1.6em;
@@ -5595,66 +5590,6 @@ body.platform--orsay svg {
   width: 100%;
   max-height: 100%;
   height: 100%;
-}
-body.platform--orsay .simple-keyboard .hg-button {
-  float: none;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-     -moz-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-body.platform--orsay .simple-keyboard .hg-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body.platform--orsay .simple-keyboard .hg-row .hg-button-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body.platform--orsay .simple-keyboard .hg-layout-numeric .hg-button {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 body.platform--orsay .full-start__button > svg {
   width: 1.5em;
