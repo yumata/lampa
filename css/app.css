@@ -2997,16 +2997,20 @@ body.selectbox--open .selectbox__content {
   color: #000;
 }
 
-body.platform--orsay .category-full {
+body.platform--orsay .category-full,
+body.platform--netcast .category-full {
   display: block;
 }
-body.platform--orsay .category-full .card {
+body.platform--orsay .category-full .card,
+body.platform--netcast .category-full .card {
   float: left;
 }
-body.platform--orsay .category-full .card__title {
+body.platform--orsay .category-full .card__title,
+body.platform--netcast .category-full .card__title {
   min-height: 3.1em;
 }
-body.platform--orsay .category-full:after {
+body.platform--orsay .category-full:after,
+body.platform--netcast .category-full:after {
   display: block;
   content: "";
   clear: both;
