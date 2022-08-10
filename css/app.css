@@ -3789,6 +3789,26 @@ body.touch-device .search .search__results .scroll__content {
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
 }
+.notice__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 1em;
+  margin: -0.3em;
+}
+.notice__footer > div {
+  padding: 0.5em;
+  background-color: rgba(221, 221, 221, 0.15);
+  margin: 0.3em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
 .notice--card {
   display: -webkit-box;
   display: -webkit-flex;
