@@ -1566,6 +1566,7 @@ body.settings--open .settings__content {
 @media screen and (max-width: 580px) {
   .full-start__left {
     padding-left: 0em;
+    overflow: inherit;
   }
 }
 @media screen and (max-width: 400px) {

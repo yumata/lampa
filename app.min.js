@@ -356,7 +356,7 @@
   var object$3 = {
     author: 'Yumata',
     github: 'https://github.com/yumata/lampa-source',
-    css_version: '1.6.1',
+    css_version: '1.6.2',
     app_version: '1.4.7'
   };
   Object.defineProperty(object$3, 'app_digital', {
