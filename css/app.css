@@ -1844,11 +1844,10 @@ body.settings--open .settings__content {
 }
 .full-start .info__rate {
   margin: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.06);
   -webkit-border-radius: 0.3em;
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
-  color: #000;
   font-size: 0.75em;
   margin-right: 1.5em;
 }
