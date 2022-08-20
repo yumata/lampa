@@ -1631,6 +1631,9 @@ body.settings--open .settings__content {
             mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
             mask-image: linear-gradient(to bottom, white 40%, rgba(255, 255, 255, 0) 100%);
   }
+  .full-start__poster.background--poster {
+    padding-bottom: 100%;
+  }
 }
 .full-start__img {
   position: relative;
@@ -1673,10 +1676,12 @@ body.settings--open .settings__content {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 1.5em;
+  margin-right: 1em;
   font-size: 1.05em;
   white-space: nowrap;
   margin-bottom: 0.4em;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.3em 0.5em 0.3em 0.3em;
 }
 .full-start__tag > img {
   width: 1em;
@@ -1687,6 +1692,15 @@ body.settings--open .settings__content {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+}
+.full-start__tag.tag--quality {
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: #ffe216;
+  color: #000;
+  padding: 0.3em 0.4em;
+  text-transform: uppercase;
 }
 .full-start__title {
   font-size: 3.2em;
@@ -1793,6 +1807,9 @@ body.settings--open .settings__content {
   -o-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .full-start__button > svg {
   width: 1.5em;
@@ -1831,6 +1848,56 @@ body.settings--open .settings__content {
 .full-start__rating + div {
   margin-left: 2em;
 }
+.full-start__rate {
+  border: 1px solid #fff;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
+  margin-right: 1em;
+}
+.full-start__rate > div:first-child {
+  width: 1.8em;
+  height: 1.5em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  background-color: #fff;
+  margin: -1px;
+  color: #000;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.full-start__rate > div:last-child {
+  font-size: 0.7em;
+  padding: 0 0.5em;
+}
 .full-start__icons {
   margin-left: auto;
   display: -webkit-box;
@@ -1850,6 +1917,18 @@ body.settings--open .settings__content {
           border-radius: 0.3em;
   font-size: 0.75em;
   margin-right: 1.5em;
+  position: relative;
+}
+.full-start .info__rate > div {
+  position: absolute;
+  bottom: -0.6em;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  padding: 0.3em;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
 }
 .full-start .info__icon {
   margin-left: 0;
@@ -2925,10 +3004,10 @@ body.selectbox--open .selectbox__content {
   background-color: rgba(0, 0, 0, 0.3);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  -webkit-background-size: 50% 50%;
-     -moz-background-size: 50%;
-       -o-background-size: 50%;
-          background-size: 50%;
+  -webkit-background-size: 37% 37%;
+     -moz-background-size: 37%;
+       -o-background-size: 37%;
+          background-size: 37%;
   position: relative;
   width: 4em;
   height: 4em;
@@ -2952,8 +3031,8 @@ body.selectbox--open .selectbox__content {
           justify-content: center;
 }
 .info__icon > svg {
-  width: 2.2em;
-  height: 2.2em;
+  width: 1.6em;
+  height: 1.6em;
 }
 .info__icon.active::after {
   content: "";
