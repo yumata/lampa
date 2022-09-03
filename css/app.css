@@ -3480,7 +3480,7 @@ body.platform--netcast .category-full:after {
 }
 
 body.touch-device .search .hg-button {
-  min-width: 1.4em;
+  min-width: 1em;
 }
 body.touch-device .search .search__results .scroll__content {
   padding-top: 0.5em;
