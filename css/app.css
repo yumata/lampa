@@ -1310,6 +1310,16 @@ body.settings--open .settings__content {
   border-radius: 0.3em;
   text-transform: uppercase;
 }
+.card__vote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 0.2em;
+}
 .card.focus .card__img {
   border-color: #fff;
   -webkit-box-shadow: 0 0 0 0.4em #fff;
