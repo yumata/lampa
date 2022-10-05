@@ -236,6 +236,10 @@ ul {
   display: none !important;
 }
 
+.selector {
+  cursor: pointer;
+}
+
 body.no--mask .scroll--mask {
   -webkit-mask-image: unset !important;
           mask-image: unset !important;
