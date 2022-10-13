@@ -2362,6 +2362,17 @@ body.touch-device .full-start__background {
   background-color: #000;
   z-index: 50;
 }
+.player.tv .player-panel__timeline,
+.player.tv .player-panel__center,
+.player.tv .player-panel__timeline + .player-panel__line {
+  display: none;
+}
+.player.tv .player-panel__line + .player-panel__line {
+  margin-top: 0;
+}
+.player.tv .player-panel__right {
+  margin-left: auto;
+}
 
 .player-video__video {
   position: fixed;
