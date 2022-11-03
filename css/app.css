@@ -4987,7 +4987,7 @@ body.touch-device .search .search__results .scroll__content {
   margin-bottom: 1em;
 }
 .torrent-checklist__progress-bar {
-  background-color: #3E3E3E;
+  background-color: rgba(255, 255, 255, 0.15);
   -webkit-border-radius: 5em;
      -moz-border-radius: 5em;
           border-radius: 5em;
@@ -6825,10 +6825,12 @@ body.platform--browser .selectbox__content,
 body.platform--browser .settings__content,
 body.platform--browser .settings-input__content,
 body.platform--browser .modal__content,
+body.platform--browser .settings-input--free,
 body.platform--nw .selectbox__content,
 body.platform--nw .settings__content,
 body.platform--nw .settings-input__content,
-body.platform--nw .modal__content {
+body.platform--nw .modal__content,
+body.platform--nw .settings-input--free {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1.6em);
           backdrop-filter: blur(1.6em);
@@ -6839,7 +6841,23 @@ body.platform--browser .settings-param.focus,
 body.platform--nw .selectbox-item.focus,
 body.platform--nw .settings-folder.focus,
 body.platform--nw .settings-param.focus {
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: #fff;
+  color: #000;
+}
+body.platform--browser .selectbox-item.focus .settings-folder__icon,
+body.platform--browser .selectbox-item.focus .selectbox-item__checkbox,
+body.platform--browser .settings-folder.focus .settings-folder__icon,
+body.platform--browser .settings-folder.focus .selectbox-item__checkbox,
+body.platform--browser .settings-param.focus .settings-folder__icon,
+body.platform--browser .settings-param.focus .selectbox-item__checkbox,
+body.platform--nw .selectbox-item.focus .settings-folder__icon,
+body.platform--nw .selectbox-item.focus .selectbox-item__checkbox,
+body.platform--nw .settings-folder.focus .settings-folder__icon,
+body.platform--nw .settings-folder.focus .selectbox-item__checkbox,
+body.platform--nw .settings-param.focus .settings-folder__icon,
+body.platform--nw .settings-param.focus .selectbox-item__checkbox {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 body.platform--browser .settings-param-title > span,
 body.platform--nw .settings-param-title > span {
@@ -6872,4 +6890,32 @@ body.platform--browser .menu__item.focus .menu__ico,
 body.platform--nw .menu__item.focus .menu__ico {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+body.platform--browser .settings-input--free .settings-input__content,
+body.platform--nw .settings-input--free .settings-input__content {
+  background: transparent;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+body.platform--browser .torrent-serial,
+body.platform--nw .torrent-serial {
+  background: rgba(132, 135, 137, 0.15);
+}
+body.platform--browser .torrent-serial.focus,
+body.platform--nw .torrent-serial.focus {
+  background: rgba(255, 255, 255, 0.35);
+  /*
+  background-color: #fff;
+
+  .torrent-serial__body,
+  .torrent-serial__exe{
+      color: #000;
+  }
+  */
+}
+body.platform--browser.selectbox--open .player .player-panel,
+body.platform--browser.selectbox--open .player .player-info,
+body.platform--nw.selectbox--open .player .player-panel,
+body.platform--nw.selectbox--open .player .player-info {
+  display: none;
 }
