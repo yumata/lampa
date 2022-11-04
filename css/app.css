@@ -3304,8 +3304,8 @@ body.selectbox--open .selectbox__content {
   margin-right: 2em;
 }
 .info__vote > svg {
-  width: 1.8em;
-  height: 1.8em;
+  width: 1.8em !important;
+  height: 1.8em !important;
   margin-right: 1em;
 }
 .info__vote > span {
