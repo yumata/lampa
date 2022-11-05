@@ -1328,11 +1328,18 @@ body.settings--open .settings__content {
   font-weight: 700;
   padding: 0.2em;
 }
-.card.focus .card__img {
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 0.4em #fff;
-     -moz-box-shadow: 0 0 0 0.4em #fff;
-          box-shadow: 0 0 0 0.4em #fff;
+.card.focus .card__view::after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.3em solid #fff;
+  -webkit-border-radius: 0.7em;
+     -moz-border-radius: 0.7em;
+          border-radius: 0.7em;
+  z-index: -1;
 }
 .card--tv .card__type {
   background: #ff4242;
@@ -1347,11 +1354,6 @@ body.settings--open .settings__content {
 .card--small .card__view {
   margin-bottom: 0;
 }
-.card--small.focus .card__img {
-  -webkit-box-shadow: 0 0 0 0.3em #fff;
-     -moz-box-shadow: 0 0 0 0.3em #fff;
-          box-shadow: 0 0 0 0.3em #fff;
-}
 .card--small.card--wide {
   width: 34.3em;
 }
@@ -1361,11 +1363,6 @@ body.settings--open .settings__content {
 .card--category {
   width: 14.266%;
   padding-bottom: 1em;
-}
-.card--category.focus .card__img {
-  -webkit-box-shadow: 0 0 0 0.3em #fff;
-     -moz-box-shadow: 0 0 0 0.3em #fff;
-          box-shadow: 0 0 0 0.3em #fff;
 }
 @media screen and (max-width: 991px) {
   .card--category {
@@ -1510,7 +1507,7 @@ body.settings--open .settings__content {
   -webkit-border-bottom-right-radius: 0.3em;
      -moz-border-radius-bottomright: 0.3em;
           border-bottom-right-radius: 0.3em;
-  margin-left: 0.3em;
+  margin-left: 0.5em;
   display: none;
   pointer-events: none;
 }
@@ -1552,7 +1549,7 @@ body.settings--open .settings__content {
 .card-watched.reverce--position {
   right: 100%;
   left: -120%;
-  margin-right: 0.3em;
+  margin-right: 0.5em;
   margin-left: 0;
   -webkit-border-top-right-radius: 0;
      -moz-border-radius-topright: 0;
@@ -1570,6 +1567,14 @@ body.settings--open .settings__content {
 
 .card.focus .card-watched {
   display: block;
+}
+
+.card.card--wide .card-watched {
+  right: -40%;
+}
+.card.card--wide .card-watched.reverce--position {
+  left: -40%;
+  right: 100%;
 }
 
 .full-start {
@@ -3429,14 +3434,26 @@ body.selectbox--open .selectbox__content {
   font-weight: 300;
   margin-top: -0.7em;
 }
-.card-more.focus .card-more__box {
-  -webkit-box-shadow: 0 0 0 0.4em #fff;
-     -moz-box-shadow: 0 0 0 0.4em #fff;
-          box-shadow: 0 0 0 0.4em #fff;
+.card-more.focus .card-more__box::after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.3em solid #fff;
+  -webkit-border-radius: 0.7em;
+     -moz-border-radius: 0.7em;
+          border-radius: 0.7em;
+  z-index: -1;
 }
 .card-more--small {
   width: 10.8em;
   margin-left: 1em;
+}
+
+.card.card--wide + .card-more .card-more__box {
+  padding-bottom: 177%;
 }
 
 .loading-layer {
@@ -4659,16 +4676,18 @@ body.touch-device .search .search__results .scroll__content {
 .torrent-item + .torrent-item {
   margin-top: 1em;
 }
-.torrent-item.focus {
-  -webkit-box-shadow: 0 0 0 0.2em #fff;
-     -moz-box-shadow: 0 0 0 0.2em #fff;
-          box-shadow: 0 0 0 0.2em #fff;
-  margin-left: -0.8em;
-  margin-right: -0.8em;
-  padding: 1em 1.8em;
-}
-.torrent-item.focus .torrent-item__viewed {
-  left: 0.05em;
+.torrent-item.focus::after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.3em solid #fff;
+  -webkit-border-radius: 0.7em;
+     -moz-border-radius: 0.7em;
+          border-radius: 0.7em;
+  z-index: -1;
 }
 .torrent-item--popular {
   background-color: rgba(255, 255, 255, 0.2);
@@ -5189,7 +5208,7 @@ body.touch-device .search .search__results .scroll__content {
   margin-bottom: 0;
 }
 .explorer__files .torrent-filter .simple-button {
-  font-size: 1.1em;
+  font-size: 1.2em;
   -webkit-border-radius: 0.7em;
      -moz-border-radius: 0.7em;
           border-radius: 0.7em;
@@ -5259,10 +5278,18 @@ body.touch-device .search .search__results .scroll__content {
   width: 100%;
   background-color: #3E3E3E;
 }
-.explorer-card__head-img.focus > img {
-  -webkit-box-shadow: 0 0 0 0.3em #fff;
-     -moz-box-shadow: 0 0 0 0.3em #fff;
-          box-shadow: 0 0 0 0.3em #fff;
+.explorer-card__head-img.focus::after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.3em solid #fff;
+  -webkit-border-radius: 0.7em;
+     -moz-border-radius: 0.7em;
+          border-radius: 0.7em;
+  z-index: -1;
 }
 .explorer-card__head-create {
   font-size: 1.1em;
@@ -6918,4 +6945,10 @@ body.platform--browser.selectbox--open .player .player-info,
 body.platform--nw.selectbox--open .player .player-panel,
 body.platform--nw.selectbox--open .player .player-info {
   display: none;
+}
+body.platform--browser .card-more__box,
+body.platform--nw .card-more__box {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(1.6em);
+          backdrop-filter: blur(1.6em);
 }
