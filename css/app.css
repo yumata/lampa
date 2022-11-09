@@ -1502,15 +1502,12 @@ body.settings--open .settings__content {
   bottom: 0;
   z-index: 1;
   background-color: #404040;
-  -webkit-border-top-right-radius: 0.3em;
-     -moz-border-radius-topright: 0.3em;
-          border-top-right-radius: 0.3em;
-  -webkit-border-bottom-right-radius: 0.3em;
-     -moz-border-radius-bottomright: 0.3em;
-          border-bottom-right-radius: 0.3em;
   margin-left: 0.5em;
   display: none;
   pointer-events: none;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
 }
 .card-watched__inner {
   padding: 1em;
@@ -1552,18 +1549,6 @@ body.settings--open .settings__content {
   left: -120%;
   margin-right: 0.5em;
   margin-left: 0;
-  -webkit-border-top-right-radius: 0;
-     -moz-border-radius-topright: 0;
-          border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-     -moz-border-radius-bottomright: 0;
-          border-bottom-right-radius: 0;
-  -webkit-border-top-left-radius: 0.3em;
-     -moz-border-radius-topleft: 0.3em;
-          border-top-left-radius: 0.3em;
-  -webkit-border-bottom-left-radius: 0.3em;
-     -moz-border-radius-bottomleft: 0.3em;
-          border-bottom-left-radius: 0.3em;
 }
 
 .card.focus .card-watched {
@@ -3724,9 +3709,9 @@ body.selectbox--open .selectbox__content {
   transition: transform 0.3s, border-color 0.2s;
   transition: transform 0.3s, border-color 0.2s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
   background-color: #3E3E3E;
-  -webkit-border-radius: 0.3em;
-     -moz-border-radius: 0.3em;
-          border-radius: 0.3em;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
   padding-bottom: 150%;
   position: relative;
 }
@@ -3748,9 +3733,9 @@ body.selectbox--open .selectbox__content {
   right: -0.5em;
   bottom: -0.5em;
   border: 0.3em solid #fff;
-  -webkit-border-radius: 0.7em;
-     -moz-border-radius: 0.7em;
-          border-radius: 0.7em;
+  -webkit-border-radius: 1.4em;
+     -moz-border-radius: 1.4em;
+          border-radius: 1.4em;
   z-index: -1;
 }
 .card-more--small {
@@ -7184,101 +7169,66 @@ body.light--version .torrent-item__details {
   font-size: 0.95em;
 }
 
-body.platform--browser .selectbox__content,
-body.platform--browser .settings__content,
-body.platform--browser .settings-input__content,
-body.platform--browser .modal__content,
-body.platform--browser .settings-input--free,
-body.platform--nw .selectbox__content,
-body.platform--nw .settings__content,
-body.platform--nw .settings-input__content,
-body.platform--nw .modal__content,
-body.platform--nw .settings-input--free {
+body.glass--style .selectbox__content,
+body.glass--style .settings__content,
+body.glass--style .settings-input__content,
+body.glass--style .modal__content,
+body.glass--style .settings-input--free {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1.6em);
           backdrop-filter: blur(1.6em);
 }
-body.platform--browser .selectbox-item.focus,
-body.platform--browser .settings-folder.focus,
-body.platform--browser .settings-param.focus,
-body.platform--nw .selectbox-item.focus,
-body.platform--nw .settings-folder.focus,
-body.platform--nw .settings-param.focus {
+body.glass--style .selectbox-item.focus,
+body.glass--style .settings-folder.focus,
+body.glass--style .settings-param.focus {
   background-color: #fff;
   color: #000;
 }
-body.platform--browser .selectbox-item.focus .settings-folder__icon,
-body.platform--browser .selectbox-item.focus .selectbox-item__checkbox,
-body.platform--browser .settings-folder.focus .settings-folder__icon,
-body.platform--browser .settings-folder.focus .selectbox-item__checkbox,
-body.platform--browser .settings-param.focus .settings-folder__icon,
-body.platform--browser .settings-param.focus .selectbox-item__checkbox,
-body.platform--nw .selectbox-item.focus .settings-folder__icon,
-body.platform--nw .selectbox-item.focus .selectbox-item__checkbox,
-body.platform--nw .settings-folder.focus .settings-folder__icon,
-body.platform--nw .settings-folder.focus .selectbox-item__checkbox,
-body.platform--nw .settings-param.focus .settings-folder__icon,
-body.platform--nw .settings-param.focus .selectbox-item__checkbox {
+body.glass--style .selectbox-item.focus .settings-folder__icon,
+body.glass--style .selectbox-item.focus .selectbox-item__checkbox,
+body.glass--style .settings-folder.focus .settings-folder__icon,
+body.glass--style .settings-folder.focus .selectbox-item__checkbox,
+body.glass--style .settings-param.focus .settings-folder__icon,
+body.glass--style .settings-param.focus .selectbox-item__checkbox {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
-body.platform--browser .settings-param-title > span,
-body.platform--nw .settings-param-title > span {
+body.glass--style .settings-param-title > span {
   color: rgba(255, 255, 255, 0.4);
 }
-body.platform--browser .settings-input__links,
-body.platform--nw .settings-input__links {
+body.glass--style .settings-input__links {
   background: rgba(221, 221, 221, 0.06);
 }
-body.platform--browser .settings-input__input,
-body.platform--nw .settings-input__input {
+body.glass--style .settings-input__input {
   border: 0;
 }
-body.platform--browser .menu__item,
-body.platform--nw .menu__item {
+body.glass--style .menu__item {
   -webkit-border-radius: 1em;
      -moz-border-radius: 1em;
           border-radius: 1em;
 }
-body.platform--browser .menu__item.focus,
-body.platform--nw .menu__item.focus {
+body.glass--style .menu__item.focus {
   background-color: #fff;
   color: #000;
 }
-body.platform--browser .menu__item.focus::after,
-body.platform--nw .menu__item.focus::after {
+body.glass--style .menu__item.focus::after {
   display: none;
 }
-body.platform--browser .menu__item.focus .menu__ico,
-body.platform--nw .menu__item.focus .menu__ico {
+body.glass--style .menu__item.focus .menu__ico {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
-body.platform--browser .settings-input--free .settings-input__content,
-body.platform--nw .settings-input--free .settings-input__content {
+body.glass--style .settings-input--free .settings-input__content {
   background: transparent;
   -webkit-backdrop-filter: none;
           backdrop-filter: none;
 }
-body.platform--browser .torrent-serial,
-body.platform--nw .torrent-serial {
+body.glass--style .torrent-serial {
   background: rgba(132, 135, 137, 0.15);
 }
-body.platform--browser .torrent-serial.focus,
-body.platform--nw .torrent-serial.focus {
+body.glass--style .torrent-serial.focus {
   background: rgba(255, 255, 255, 0.35);
-  /*
-  background-color: #fff;
-
-  .torrent-serial__body,
-  .torrent-serial__exe{
-      color: #000;
-  }
-  */
 }
-body.platform--browser .card-more__box,
-body.platform--nw .card-more__box {
+body.glass--style .card-more__box {
   background: rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(1.6em);
-          backdrop-filter: blur(1.6em);
 }
