@@ -214,6 +214,9 @@ body {
           user-select: none !important;
   -webkit-touch-callout: none !important;
 }
+body.black--style {
+  background: #000;
+}
 
 img {
   vertical-align: middle;
@@ -675,6 +678,7 @@ body.menu--open:not(.light--version) .background {
 }
 .menu__list {
   margin: 0;
+  padding-left: 0.6em;
 }
 .menu__item {
   display: -webkit-box;
@@ -694,30 +698,28 @@ body.menu--open:not(.light--version) .background {
   -o-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
-}
-.menu__item:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  display: none;
-  left: 0;
-  bottom: 0;
-  width: 0.3em;
-  background-color: #fff;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
 }
 .menu__item + li {
   margin-top: 0.1em;
 }
 .menu__item.focus {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: #fff;
+  color: #000;
 }
-.menu__item.focus:after {
-  display: block;
+.menu__item.focus .menu__ico > img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+.menu__item.focus .menu__ico [stroke] {
+  stroke: #000;
+}
+.menu__item.focus .menu__ico path[fill],
+.menu__item.focus .menu__ico rect[fill],
+.menu__item.focus .menu__ico circle[fill] {
+  fill: #000;
 }
 .menu__ico {
   margin-right: 1.5em;
@@ -733,14 +735,20 @@ body.menu--open:not(.light--version) .background {
           flex-shrink: 0;
 }
 .menu__ico > img {
-  width: 100%;
-  height: 100%;
+  width: 1.5em;
+  height: 1.5em;
 }
 .menu__text {
   font-size: 1.4em;
   font-weight: 300;
   line-height: 0.8;
   margin-top: -0.1em;
+}
+
+body.light--version .menu__item {
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
 }
 
 .background {
@@ -7201,22 +7209,6 @@ body.glass--style .settings-input__links {
 }
 body.glass--style .settings-input__input {
   border: 0;
-}
-body.glass--style .menu__item {
-  -webkit-border-radius: 1em;
-     -moz-border-radius: 1em;
-          border-radius: 1em;
-}
-body.glass--style .menu__item.focus {
-  background-color: #fff;
-  color: #000;
-}
-body.glass--style .menu__item.focus::after {
-  display: none;
-}
-body.glass--style .menu__item.focus .menu__ico {
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 body.glass--style .settings-input--free .settings-input__content {
   background: transparent;
