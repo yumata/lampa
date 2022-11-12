@@ -694,10 +694,6 @@ body.menu--open:not(.light--version) .background {
   color: #ddd;
   position: relative;
   padding: 0.9em 1.5em;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
   -webkit-border-radius: 1em;
      -moz-border-radius: 1em;
           border-radius: 1em;
