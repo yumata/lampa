@@ -3399,6 +3399,9 @@ body.platform--nw .player-info {
   font-size: 2.5em;
   font-weight: 300;
 }
+.selectbox--fullsize .selectbox__content {
+  width: 100%;
+}
 
 body.selectbox--open .selectbox__layer {
   display: block;
