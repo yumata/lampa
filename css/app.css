@@ -675,6 +675,7 @@ body.menu--open:not(.light--version) .background {
   margin: 1em 1em;
   width: 2.3em;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin-left: 1.7em;
 }
 .menu__list {
   margin: 0;
@@ -701,21 +702,37 @@ body.menu--open:not(.light--version) .background {
 .menu__item + li {
   margin-top: 0.1em;
 }
-.menu__item.focus {
+.menu__item.focus, .menu__item.traverse {
   background-color: #fff;
   color: #000;
 }
-.menu__item.focus .menu__ico > img {
+.menu__item.focus .menu__ico > img, .menu__item.traverse .menu__ico > img {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
-.menu__item.focus .menu__ico [stroke] {
+.menu__item.focus .menu__ico [stroke], .menu__item.traverse .menu__ico [stroke] {
   stroke: #000;
 }
 .menu__item.focus .menu__ico path[fill],
 .menu__item.focus .menu__ico rect[fill],
-.menu__item.focus .menu__ico circle[fill] {
+.menu__item.focus .menu__ico circle[fill], .menu__item.traverse .menu__ico path[fill],
+.menu__item.traverse .menu__ico rect[fill],
+.menu__item.traverse .menu__ico circle[fill] {
   fill: #000;
+}
+.menu__item.traverse::before, .menu__item.traverse::after {
+  position: absolute;
+  left: 27%;
+  margin-left: -0.5em;
+  color: #fff;
+}
+.menu__item.traverse::before {
+  content: "▲";
+  top: -1.1em;
+}
+.menu__item.traverse::after {
+  content: "▼";
+  bottom: -1.1em;
 }
 .menu__ico {
   margin-right: 1.5em;
