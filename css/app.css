@@ -7184,7 +7184,8 @@ body.light--version .full-episode--next .full-episode__img:after {
 body.light--version .card .card__view::after,
 body.light--version .torrent-item::after,
 body.light--version .explorer-card__head-img::after,
-body.light--version .full-episode.focus::after {
+body.light--version .full-episode.focus::after,
+body.light--version .card-more .card-more__box::after {
   -webkit-border-radius: 0.4em;
      -moz-border-radius: 0.4em;
           border-radius: 0.4em;
@@ -7195,7 +7196,8 @@ body.light--version .full-start__tag,
 body.light--version .full-start__tag.tag--quality,
 body.light--version .full-descr__tag,
 body.light--version .full-start .info__rate,
-body.light--version .explorer__files .torrent-filter .simple-button {
+body.light--version .explorer__files .torrent-filter .simple-button,
+body.light--version .card-watched {
   -webkit-border-radius: 0.2em;
      -moz-border-radius: 0.2em;
           border-radius: 0.2em;
