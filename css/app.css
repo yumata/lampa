@@ -4561,6 +4561,15 @@ body.touch-device .search .search__results .scroll__content {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 480px) {
+  .person-start--small .person-start__img {
+    width: 11.7em;
+    height: 16.4em;
+  }
+  .person-start--small .person-start__body {
+    height: 19em;
+  }
+}
 
 .empty {
   width: 100%;
