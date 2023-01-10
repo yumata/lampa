@@ -4427,6 +4427,39 @@ body.touch-device .search .search__results .scroll__content {
   width: 7em;
   height: 7em;
 }
+.modal__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
+}
+.modal__button {
+  padding: 0.9em 1.3em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.1em;
+}
+.modal__button.focus {
+  background: #fff;
+  color: #000;
+}
+.modal__button + .modal__button {
+  margin-left: 1em;
+}
+.modal--align-center {
+  text-align: center;
+}
+.modal--align-center .modal__footer {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .modal--cub-premium .modal__icon {
   margin-bottom: -2em;
 }
