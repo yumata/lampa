@@ -1226,6 +1226,9 @@ body.settings--open .settings__content {
 .items-line--type-cards {
   min-height: 24em;
 }
+.items-line--type-collection {
+  min-height: 15em;
+}
 
 .items-cards {
   display: -webkit-box;
@@ -1358,9 +1361,15 @@ body.settings--open .settings__content {
      -moz-border-radius-bottomright: 1em;
           border-bottom-right-radius: 1em;
 }
+.card__promo-title {
+  font-size: 2em;
+  line-height: 1.2;
+}
 .card__promo-text {
   font-size: 1.3em;
   line-height: 1.2;
+  margin-top: 1em;
+  font-weight: 300;
 }
 .card__type {
   position: absolute;
@@ -3868,6 +3877,10 @@ body.selectbox--open .selectbox__content {
 
 .card.card--wide + .card-more .card-more__box {
   padding-bottom: 177%;
+}
+
+.card.card--collection + .card-more .card-more__box {
+  padding-bottom: 95%;
 }
 
 .loading-layer {
