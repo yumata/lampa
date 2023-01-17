@@ -5117,6 +5117,10 @@ body.touch-device .search .search__results .scroll__content {
 }
 .torrent-item__tracker {
   margin-right: auto;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-width: 11em;
 }
 .torrent-item__size {
   background-color: #fff;
