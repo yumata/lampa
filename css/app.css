@@ -7288,6 +7288,26 @@ body.platform--netcast .player-info__line {
   position: relative;
 }
 
+.https {
+  padding: 4em;
+  text-align: center;
+}
+.https__icon {
+  width: 10em;
+  margin: auto;
+}
+.https__icon > svg {
+  width: 10em;
+  height: 4em;
+}
+.https__text {
+  font-size: 1.3em;
+  line-height: 1.8;
+  margin: auto;
+  max-width: 20em;
+  padding-top: 3em;
+}
+
 body.touch-device .scroll {
   overflow: auto !important;
 }
