@@ -1,0 +1,16 @@
+{
+  "name": "lampa-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "electron": "^22.0.3"
+  }
+}
