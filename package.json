@@ -1,16 +1,19 @@
 {
-  "name": "lampa-electron",
-  "version": "1.0.0",
-  "description": "",
+  "name": "lampa",
+  "version": "1.1.0",
+  "description": "Lampa Electron Fork",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
+    "build-win": "electron-builder -w",
+    "build-mac": "electron-builder -m",
+    "build-linux": "electron-builder -l"
   },
   "keywords": [],
-  "author": "",
+  "author": "Barry",
   "license": "ISC",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.4",
-    "electron": "^22.0.3"
+    "electron": "^22.0.3",
+    "electron-builder": "^23.6.0"
   }
 }
