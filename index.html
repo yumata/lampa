@@ -1,99 +1,110 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampa</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lampa</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#1d1f20" />
+    <meta name="msapplication-config" content="icons/browserconfig.xml" />
+    <meta name="theme-color" content="#1d1f20" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="icons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#1d1f20" />
-  <meta name="msapplication-config" content="icons/browserconfig.xml" />
-  <meta name="theme-color" content="#1d1f20" />
+    <meta name="referrer" content="never" />
 
-  <meta name="referrer" content="never" />
+    <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css" />
+    <link rel="stylesheet" href="./vender/keypad/style.css" />
 
-  <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css" />
-  <link rel="stylesheet" href="./vender/keypad/style.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/app.css" />
-</head>
+  <body>
+    <div class="welcome"></div>
 
-<body>
-  <div class="welcome"></div>
+    <div id="app"></div>
 
-  <div id="app"></div>
-
-  <div class="no-network hide">
-    <div class="no-network__title">Ошибка</div>
-    <div class="no-network__desc">
-      Не удалось загрузить файл: <span class="no-network__file"></span>
+    <div class="no-network hide">
+      <div class="no-network__title">Ошибка</div>
+      <div class="no-network__desc">
+        Не удалось загрузить файл: <span class="no-network__file"></span>
+      </div>
     </div>
-  </div>
 
-  <script src="./webos/webOSTV.js"></script>
-  <script src="./vender/jquery/jquery.js"></script>
-  <script src="./vender/notify/notify.js"></script>
-  <script src="./vender/scrollbar/jquery.scrollbar.js"></script>
-  <script src="./vender/navigator/navigator.js"></script>
-  <script src="./vender/keypad/keypad.js"></script>
-  <script src="http://www.youtube.com/iframe_api" async></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      self.addEventListener("load", async () => {
-        const container = navigator.serviceWorker;
-        if (container.controller === null) {
-          const reg = await container.register("sw.js");
-        }
-      });
-    }
-    function putScript(scripts) {
-      var add = function (src) {
-        console.log("Loader", "try-load-script", src);
+    <script src="./webos/webOSTV.js"></script>
+    <script src="./vender/jquery/jquery.js"></script>
+    <script src="./vender/notify/notify.js"></script>
+    <script src="./vender/scrollbar/jquery.scrollbar.js"></script>
+    <script src="./vender/navigator/navigator.js"></script>
+    <script src="./vender/keypad/keypad.js"></script>
+    <script src="http://www.youtube.com/iframe_api" async></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker &&
+            navigator.serviceWorker.register("./sw.js");
+						console.log("Service worker register")
+        });
+      }
+      function putScript(scripts) {
+        var add = function (src) {
+          console.log("Loader", "try-load-script", src);
 
-        var trys = 0;
+          var trys = 0;
 
-        var sreateScript = function () {
-          var script = document.createElement("script");
+          var sreateScript = function () {
+            var script = document.createElement("script");
 
-          script.type = "text/javascript";
+            script.type = "text/javascript";
 
-          script.onload = script.onreadystatechange = function () {
-            console.log("Loader", "Script loaded");
+            script.onload = script.onreadystatechange = function () {
+              console.log("Loader", "Script loaded");
+            };
+
+            script.onerror = function () {
+              trys++;
+
+              console.log("Loader", "error-load-script", src);
+
+              if (trys < 3) {
+                sreateScript();
+              } else {
+                $(".no-network").removeClass("hide");
+
+                $(".no-network__file").text(window.location.href + "/" + src);
+              }
+            };
+
+            script.src = src;
+
+            document.getElementsByTagName("body")[0].appendChild(script);
           };
 
-          script.onerror = function () {
-            trys++;
-
-            console.log("Loader", "error-load-script", src);
-
-            if (trys < 3) {
-              sreateScript();
-            } else {
-              $(".no-network").removeClass("hide");
-
-              $(".no-network__file").text(window.location.href + "/" + src);
-            }
-          };
-
-          script.src = src;
-
-          document.getElementsByTagName("body")[0].appendChild(script);
+          sreateScript();
         };
 
-        sreateScript();
-      };
+        add(scripts);
+      }
 
-      add(scripts);
-    }
-
-    putScript("app.min.js?v=" + Math.random());
-  </script>
-</body>
-
+      putScript("app.min.js?v=" + Math.random());
+    </script>
+  </body>
 </html>

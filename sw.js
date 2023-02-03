@@ -1,11 +1,19 @@
 const staticCacheName = "s-app-v3";
 const dynamicCacheName = "d-app-v3";
 
-const assetUrls = ["offline.html"];
+const assetUrls = [
+  "/icons/android/android-launchericon-144-144.png",
+  "/icons/android/android-launchericon-192-192.png",
+  "/icons/android/android-launchericon-48-48.png",
+  "/icons/android/android-launchericon-512-512.png",
+  "/icons/android/android-launchericon-72-72.png",
+  "/icons/android/android-launchericon-96-96.png",
+];
 
 self.addEventListener("install", async (event) => {
   const cache = await caches.open(staticCacheName);
   await cache.addAll(assetUrls);
+	self.skipWaiting();
 });
 
 self.addEventListener("activate", async (event) => {
@@ -42,6 +50,6 @@ async function networkFirst(request) {
     return response;
   } catch (e) {
     const cached = await cache.match(request);
-    return cached ?? (await caches.match("offline.html"));
+    return cached;
   }
 }
