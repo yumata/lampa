@@ -3434,6 +3434,44 @@ body.platform--nw .player-panel {
   font-size: 1.3em;
   font-weight: 300;
 }
+.player-info__values .value--pieces {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3em 0;
+}
+.player-info__values .value--pieces span {
+  font-size: 1em;
+  width: 0.8em;
+  height: 0.8em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+}
+.player-info__values .value--pieces span.active {
+  background-color: #fff;
+}
+.player-info__values .value--pieces span + span {
+  margin-left: 0.5em;
+}
+.player-info__values .value--pieces span.red {
+  background-color: #e17171;
+}
+.player-info__values .value--pieces span.green {
+  background-color: #a5d15f;
+}
+.player-info__values .value--pieces span.yellow {
+  background-color: #dfc154;
+}
 
 .player-info {
   background-color: rgba(0, 0, 0, 0.6);
