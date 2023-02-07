@@ -3426,6 +3426,9 @@ body.platform--nw .player-panel {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1.2em;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .player-info__values > div {
   margin-right: 1em;
@@ -3471,6 +3474,12 @@ body.platform--nw .player-panel {
 }
 .player-info__values .value--pieces span.yellow {
   background-color: #dfc154;
+}
+@media screen and (max-width: 400px) {
+  .player-info__values .value--pieces {
+    width: 100%;
+    margin-top: 0.4em;
+  }
 }
 
 .player-info {
