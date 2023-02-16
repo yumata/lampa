@@ -6461,10 +6461,15 @@ body.system--keyboard .search-box .simple-keyboard-input {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0;
 }
-.screensaver__video.visible {
+.screensaver__video-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   opacity: 1;
+  background-color: #000;
 }
 .screensaver__title {
   position: fixed;
