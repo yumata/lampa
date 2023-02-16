@@ -5267,6 +5267,7 @@ body.touch-device .search .search__results .scroll__content {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-bottom: 2em;
 }
 .torrent-file__title {
   -webkit-box-flex: 1;
@@ -5302,9 +5303,10 @@ body.touch-device .search .search__results .scroll__content {
 }
 .torrent-file .time-line {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: 1em;
+  right: 1em;
+  bottom: 1em;
+  display: block !important;
 }
 .torrent-file.focus {
   background-color: rgba(255, 255, 255, 0.2);
@@ -5408,38 +5410,113 @@ body.touch-device .search .search__results .scroll__content {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.torrent-serial__img.loaded {
+  opacity: 1;
 }
 .torrent-serial__content {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0.8em 1em;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
      -moz-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .torrent-serial__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.torrent-serial__body {
+  float: left;
+  max-width: 80%;
+}
+@media screen and (max-width: 580px) {
+  .torrent-serial__body {
+    max-width: 72%;
+  }
 }
 .torrent-serial__title {
-  font-size: 1.9em;
-  max-height: 2em;
+  font-size: 1.7em;
   overflow: hidden;
+  line-height: 1.2;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: -0.1em;
+}
+@media screen and (max-width: 580px) {
+  .torrent-serial__title {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .torrent-serial__title {
+    position: absolute;
+    bottom: 0.6em;
+    left: 0.5em;
+    right: 0.6em;
+  }
 }
 .torrent-serial__line {
   font-size: 1.2em;
   margin-top: 0.5em;
   font-weight: 300;
+  line-height: 1.2;
 }
 .torrent-serial__line b {
   font-weight: 500;
+}
+.torrent-serial__line span + span:before {
+  content: "•";
+  display: inline-block;
+  margin: 0 0.5em;
+  vertical-align: baseline;
+}
+@media screen and (max-width: 580px) {
+  .torrent-serial__line {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .torrent-serial__line {
+    margin-top: 0;
+    padding-right: 1em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .torrent-serial__line span + span {
+    margin-top: 0.5em;
+  }
+  .torrent-serial__line span + span:before {
+    display: none;
+  }
+}
+.torrent-serial__clear {
+  clear: both;
 }
 .torrent-serial__size {
   -webkit-border-radius: 0.3em;
@@ -5456,8 +5533,13 @@ body.touch-device .search .search__results .scroll__content {
 .torrent-serial__detail {
   text-align: right;
   margin-left: auto;
-  padding-left: 1.5em;
   white-space: nowrap;
+  float: right;
+}
+@media screen and (max-width: 400px) {
+  .torrent-serial__detail {
+    font-size: 0.9em;
+  }
 }
 .torrent-serial__episode {
   position: absolute;
@@ -5477,11 +5559,21 @@ body.touch-device .search .search__results .scroll__content {
 .torrent-serial + .torrent-serial {
   margin-top: 1em;
 }
+@media screen and (max-width: 400px) {
+  .torrent-serial {
+    padding-bottom: 3.4em;
+  }
+}
 .torrent-serial .time-line {
-  position: absolute;
-  left: 12em;
-  bottom: 0;
-  right: 0;
+  display: block !important;
+}
+@media screen and (max-width: 480px) {
+  .torrent-serial .time-line {
+    position: absolute;
+    top: 5em;
+    left: 1em;
+    width: 10em;
+  }
 }
 
 .torrent-install {
@@ -6370,10 +6462,6 @@ body.system--keyboard .search-box .simple-keyboard-input {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0;
-  -webkit-transition: opacity 3s;
-  -o-transition: opacity 3s;
-  -moz-transition: opacity 3s;
-  transition: opacity 3s;
 }
 .screensaver__video.visible {
   opacity: 1;
