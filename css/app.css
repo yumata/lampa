@@ -2143,6 +2143,10 @@ body.touch-device .full-start__background {
   left: 0;
 }
 
+body.card--no-cover .full-start__background {
+  display: none;
+}
+
 @media screen and (min-width: 767px) {
   body.no--poster .full-start__right {
     display: none;
