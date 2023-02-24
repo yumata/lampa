@@ -1428,6 +1428,33 @@ body.settings--open .settings__content {
      -moz-border-radius-bottomright: 0.6em;
           border-bottom-right-radius: 0.6em;
 }
+.card__textbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(52%, rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 52%, rgba(0, 0, 0, 0.85) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 52%, rgba(0, 0, 0, 0.85) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 52%, rgba(0, 0, 0, 0.85) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 52%, rgba(0, 0, 0, 0.85) 100%);
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .card.focus .card__view::after, .card.hover .card__view::after {
   content: "";
   position: absolute;
@@ -1528,6 +1555,17 @@ body.settings--open .settings__content {
   }
 }
 
+@media screen and (min-width: 767px) {
+  body.size--bigger .card {
+    font-size: 1.14em;
+  }
+  body.size--bigger .card--category {
+    width: 20%;
+  }
+  body.size--bigger .card--collection {
+    width: 33.33%;
+  }
+}
 .card-parser {
   padding: 0.75em;
   -webkit-flex-shrink: 0;
@@ -3940,6 +3978,11 @@ body.selectbox--open .selectbox__content {
   padding-bottom: 95%;
 }
 
+@media screen and (min-width: 767px) {
+  body.size--bigger .card-more {
+    font-size: 1.14em;
+  }
+}
 .loading-layer {
   position: fixed;
   left: 0;
@@ -4969,11 +5012,11 @@ body.touch-device .search .search__results .scroll__content {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
      -moz-box-pack: justify;
@@ -4991,11 +5034,20 @@ body.touch-device .search .search__results .scroll__content {
   text-align: left;
   padding-right: 2em;
 }
+.cub-premium__includes > div > div:first-child > span {
+  display: block;
+  padding-top: 1em;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.4;
+}
 .cub-premium__includes > div > div:last-child {
   text-align: right;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+  font-weight: 600;
+  color: #d8c39a;
 }
 .cub-premium__includes > div.focus {
   background-color: rgba(255, 255, 255, 0.1);
