@@ -401,11 +401,6 @@ body.ambience--enable .head {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
   will-change: transform;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAAAGCAYAAABpeLpkAAAB70lEQVRYhaVXSXLEIAyU5jGp5P+vy2Kci5lpt7uFnFBFGYQ2hDbn2/vHHq/h1g5W4ewRkcfX0U0chq1ksp4ZV/odwIo3r9XZ5D0Kevx2efI5w9xd+Iwn0gzCUzSOD/Lg9RDrAXSbwNkId7zgOSL2YfC2BnwjOO+/jvkJ62/6zvXPMed6i4jtIQw59wkz6FwN5oGOm4Tb4b2S18B9glk+wvCufJZwHgKPcZUcVOQf99ztJrTu7nzJnOjS4PFbI4zftpC/r3RX/Du6qDOEOX+9+OyDkJRBnDGqh3JjxV/pwUM5NfHM6tFZZsZVB0WvHAH3KiGkgFV8mUcC6cIRcmUzJdclsYoG1y7JVf5R2acTBKu7dIdLJnM++WGQ8COwYDZqI2Ltu7kLcZvDWQj3zlh5ZKfKiZ1RVxVH6bqyQ/cB5QMZUuGEl0qzytCVTqhH5ZQuYSGMcdnhnQyn56raKBxXzZxdTjJnkPylHDfar1ZwK4MqOTfK6wnEwaYqwZ3gWFUHJc/RVJW1al/VUAnG4Sj5jId2qroKHhgUGBxRrKvRrZBst0634CreKfDxn8QJxX233Eboy7HRlKzK+J32ZbJzbaIKls79pRAzutWjagtdhr6jA+OZ9saakwO+U5G6Orlsr3TkKqsqGNOp+0/4rdb0F6yINZssi7KMAAAAAElFTkSuQmCC") repeat-y 0 0;
-  -webkit-background-size: contain;
-     -moz-background-size: contain;
-       -o-background-size: contain;
-          background-size: contain;
 }
 .wrap__left .scroll--mask .scroll__content {
   padding: 1.9em 0;
@@ -606,12 +601,10 @@ body.light--version .wrap__left {
 .head__time-date {
   font-size: 0.9em;
   line-height: 1;
-  color: #ddd;
 }
 .head__time-week {
   font-size: 0.9em;
   line-height: 1;
-  color: #ddd;
 }
 @media screen and (max-width: 767px) {
   .head__time {
@@ -1074,12 +1067,12 @@ body.light--version .menu__item {
   font-size: 2.1em;
   margin-bottom: 1em;
   min-height: 2.3em;
-  border-bottom: 2px solid #4e4e4e;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.06);
   padding: 0.6em 0;
 }
 .settings-input__links {
   margin-top: 1em;
-  background-color: #2c2d2d;
+  background: rgba(221, 221, 221, 0.06);
   -webkit-border-radius: 10em;
      -moz-border-radius: 10em;
           border-radius: 10em;
@@ -1360,6 +1353,7 @@ body.settings--open .settings__content {
   -webkit-border-bottom-right-radius: 1em;
      -moz-border-radius-bottomright: 1em;
           border-bottom-right-radius: 1em;
+  color: #fff;
 }
 .card__promo-title {
   font-size: 2em;
@@ -2109,7 +2103,6 @@ body.settings--open .settings__content {
           align-items: center;
   font-size: 1.45em;
   margin-right: 1em;
-  color: #fff;
 }
 .full-start__rate > div:first-child {
   width: 1.8em;
@@ -5098,7 +5091,6 @@ body.touch-device .search .search__results .scroll__content {
   font-size: 1.2em;
   margin-top: 0.9em;
   line-height: 1.4;
-  color: #ddd;
 }
 .notice__time {
   -webkit-flex-shrink: 0;
@@ -7155,7 +7147,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
 .extensions__item-check {
   width: 1.2em;
   height: 1.2em;
-  background-color: #343534;
+  background-color: rgba(0, 0, 0, 0.18);
   background-image: url(../img/loader.svg);
   background-repeat: no-repeat;
   -webkit-background-size: 1em 1em;
@@ -7168,7 +7160,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
           border-radius: 100%;
 }
 .extensions__item-code {
-  background-color: #343534;
+  background-color: rgba(0, 0, 0, 0.18);
   -webkit-border-radius: 0.1em;
   -moz-border-radius: 0.1em;
   border-radius: 0.3em;
@@ -7187,7 +7179,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
   color: #8D8D8D;
 }
 .extensions__item-disabled {
-  background-color: #343534;
+  background-color: rgba(0, 0, 0, 0.18);
   -webkit-border-radius: 0.1em;
   -moz-border-radius: 0.1em;
   border-radius: 0.3em;
@@ -7199,7 +7191,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
 .extensions__item-included {
   width: 1.2em;
   height: 1.2em;
-  background-color: #343534;
+  background-color: rgba(0, 0, 0, 0.18);
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
           border-radius: 100%;
@@ -7369,7 +7361,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
   position: absolute;
   top: 1em;
   right: 1em;
-  background-color: #343534;
+  background-color: rgba(0, 0, 0, 0.18);
   -webkit-border-radius: 0.1em;
   -moz-border-radius: 0.1em;
   border-radius: 0.3em;
