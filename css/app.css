@@ -2722,6 +2722,14 @@ body.card--no-cover .full-start__background {
 .full-episode__img {
   padding-bottom: 57%;
   position: relative;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 .full-episode__img img {
   position: absolute;
@@ -2732,6 +2740,11 @@ body.card--no-cover .full-start__background {
   -webkit-border-radius: 1em;
      -moz-border-radius: 1em;
           border-radius: 1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .full-episode__body {
   padding: 1em;
@@ -2793,12 +2806,21 @@ body.card--no-cover .full-start__background {
           border-radius: 1.4em;
   pointer-events: none;
 }
+.full-episode--loaded .full-episode__img {
+  background: transparent;
+}
+.full-episode--loaded .full-episode__img img {
+  opacity: 1;
+}
 .full-episode--next .full-episode__body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: transparent;
+}
+.full-episode--next .full-episode__img {
   background-color: transparent;
 }
 .full-episode--next .full-episode__img img {
@@ -2816,6 +2838,66 @@ body.card--no-cover .full-start__background {
   -webkit-border-radius: 1em;
      -moz-border-radius: 1em;
           border-radius: 1em;
+}
+
+.card-episode {
+  width: 19.65em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.card-episode__body {
+  margin-bottom: 1em;
+}
+.card-episode__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-episode__footer .card__imgbox {
+  width: 33.3%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  max-width: 4em;
+}
+.card-episode__footer .card__view {
+  margin: 0;
+}
+.card-episode__footer .card__left {
+  padding-left: 1em;
+  padding-top: 0.6em;
+}
+.card-episode .full-episode__img {
+  background-color: transparent;
+}
+.card-episode .full-episode__img--loaded img {
+  opacity: 1;
+}
+.card-episode .full-episode__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-episode.focus .full-episode::after {
+  content: "";
+  position: absolute;
+  left: -0.5em;
+  top: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.3em solid #fff;
+  -webkit-border-radius: 1.4em;
+     -moz-border-radius: 1.4em;
+          border-radius: 1.4em;
+  pointer-events: none;
+}
+.card-episode + .card-episode {
+  margin-left: 1em;
 }
 
 .player {
