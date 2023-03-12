@@ -3753,10 +3753,22 @@ body.selectbox--open .selectbox__content {
       -ms-flex-align: center;
           align-items: center;
 }
-.selectbox-item.selected {
-  -webkit-box-shadow: inset 0.3em 0 0 0 #fff;
-     -moz-box-shadow: inset 0.3em 0 0 0 #fff;
-          box-shadow: inset 0.3em 0 0 0 #fff;
+.selectbox-item.selected::after {
+  content: "";
+  display: block;
+  width: 0.6em;
+  height: 1.2em;
+  border-right: 0.2em solid #fff;
+  border-bottom: 0.2em solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 1.4em;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -0.9em;
 }
 .selectbox-item.focus {
   background-color: #353535;
@@ -7942,6 +7954,9 @@ body.glass--style .settings-param.focus .settings-folder__icon,
 body.glass--style .settings-param.focus .selectbox-item__checkbox {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+body.glass--style .selectbox-item.focus::after {
+  border-color: #000;
 }
 body.glass--style .settings-param-title > span {
   color: rgba(255, 255, 255, 0.4);
