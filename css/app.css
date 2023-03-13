@@ -7810,6 +7810,16 @@ body.platform--netcast .player-info__line {
   position: relative;
 }
 
+body.orsay-player--show {
+  background: transparent;
+}
+body.orsay-player--show #app {
+  visibility: hidden;
+}
+body.orsay-player--show .player {
+  background: transparent;
+}
+
 .https {
   padding: 4em;
   text-align: center;
