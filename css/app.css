@@ -7817,7 +7817,11 @@ body.orsay-player--show #app,
 body.orsay-player--show .modal,
 body.orsay-player--show .helper {
   visibility: hidden;
-  display: none;
+}
+body.orsay-player--show #app *,
+body.orsay-player--show .modal *,
+body.orsay-player--show .helper * {
+  visibility: hidden;
 }
 body.orsay-player--show .player {
   background: transparent;
