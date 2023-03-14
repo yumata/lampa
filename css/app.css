@@ -7813,7 +7813,9 @@ body.platform--netcast .player-info__line {
 body.orsay-player--show {
   background: transparent;
 }
-body.orsay-player--show #app {
+body.orsay-player--show #app,
+body.orsay-player--show .modal,
+body.orsay-player--show .helper {
   visibility: hidden;
 }
 body.orsay-player--show .player {
