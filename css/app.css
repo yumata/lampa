@@ -3691,8 +3691,12 @@ body.true--mobile.orientation--portrait .player-panel__center .player-panel__pre
       -ms-flex-order: -1;
           order: -1;
 }
+body.true--mobile.orientation--portrait .player-panel__left {
+  display: none;
+}
 body.true--mobile.orientation--portrait .player-panel__quality {
   width: 2em !important;
+  white-space: nowrap;
 }
 
 .player-info {
