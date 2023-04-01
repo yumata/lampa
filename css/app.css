@@ -321,6 +321,10 @@ body.platform--browser .normalization {
           backdrop-filter: blur(5px);
 }
 
+body.platform--apple .normalization {
+  display: none;
+}
+
 body.ambience--enable .wrap,
 body.ambience--enable .head {
   display: none;
@@ -3054,6 +3058,15 @@ body.card--no-cover .full-start__background {
 }
 .player.tv .player-panel__right {
   margin-left: auto;
+}
+.player--ios .player-panel,
+.player--ios .player-info__line,
+.player--ios .player-info__values,
+.player--ios .player-info__error {
+  display: none !important;
+}
+.player--ios .player-video__display {
+  opacity: 0;
 }
 
 body.selectbox--open .player .player-panel,
