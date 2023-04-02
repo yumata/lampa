@@ -3065,9 +3065,6 @@ body.card--no-cover .full-start__background {
 .player--ios .player-info__error {
   display: none !important;
 }
-.player--ios .player-video__display {
-  opacity: 0;
-}
 
 body.selectbox--open .player .player-panel,
 body.selectbox--open .player .player-info {
