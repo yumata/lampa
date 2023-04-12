@@ -5052,6 +5052,91 @@ body.true--mobile .search .search-source:not(.active) {
   font-size: 2.1em;
 }
 
+.company-start {
+  padding: 0 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4em;
+  line-height: 1.4;
+}
+.company-start__left {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 10em;
+}
+@media screen and (max-width: 580px) {
+  .company-start__left {
+    width: 8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .company-start__left {
+    width: 6.5em;
+  }
+}
+.company-start__right {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 3em;
+}
+.company-start__icon {
+  position: relative;
+  padding-bottom: 93%;
+  background-color: #fff;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+}
+.company-start__img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.company-start__name {
+  font-size: 4em;
+  font-weight: 700;
+}
+@media screen and (max-width: 580px) {
+  .company-start__name {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .company-start__name {
+    font-size: 2em;
+  }
+}
+.company-start__place {
+  font-size: 2.3em;
+  font-weight: 300;
+  max-width: 80%;
+}
+@media screen and (max-width: 580px) {
+  .company-start__place {
+    font-size: 1.8em;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .company-start__place {
+    font-size: 1.5em;
+  }
+}
+.company-start.icon--broken .company-start__icon {
+  background-color: #3e3e3e;
+}
+
 .person-start {
   padding: 0 1.5em;
   display: -webkit-box;
@@ -8243,6 +8328,13 @@ body.touch-device .full-start__buttons-scroll .scroll__body .full-start__buttons
   }
   body.light--version .items-line .card {
     margin-bottom: 2em;
+  }
+}
+@media screen and (max-width: 767px) {
+  body.light--version.menu--open .wrap__content {
+    -webkit-transform: translate3d(15em, 0, 0);
+       -moz-transform: translate3d(15em, 0, 0);
+            transform: translate3d(15em, 0, 0);
   }
 }
 body.light--version .card__img,
