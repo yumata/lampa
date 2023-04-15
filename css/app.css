@@ -8521,7 +8521,8 @@ body.light--version .card .card__view::after,
 body.light--version .torrent-item::after,
 body.light--version .explorer-card__head-img::after,
 body.light--version .full-episode.focus::after,
-body.light--version .card-more .card-more__box::after {
+body.light--version .card-more .card-more__box::after,
+body.light--version .card-episode.focus .full-episode::after {
   -webkit-border-radius: 0.4em;
      -moz-border-radius: 0.4em;
           border-radius: 0.4em;
