@@ -3808,7 +3808,8 @@ body.true--mobile.orientation--portrait .player-panel__quality {
   white-space: nowrap;
 }
 
-.player.youtube .player-video__loader {
+.player.youtube .player-video__loader,
+.player.youtube .player-panel__settings {
   display: none !important;
 }
 
