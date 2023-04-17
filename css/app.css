@@ -3173,6 +3173,38 @@ video::-webkit-media-controls-panel-container {
           background-size: 80% 80%;
   display: none;
 }
+.player-video__youtube {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.player-video__youtube iframe {
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -300px;
+  border: 0;
+}
+.player-video__youtube-line-top, .player-video__youtube-line-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 7em;
+  background-color: #000;
+  display: none;
+}
+.player-video__youtube-line-top {
+  top: 0;
+}
+.player-video__youtube-line-bottom {
+  bottom: 0;
+}
+.player-video__youtube.ended {
+  opacity: 0;
+}
 .player-video__subtitles {
   position: fixed;
   bottom: 0;
@@ -3774,6 +3806,10 @@ body.true--mobile.orientation--portrait .player-panel__left {
 body.true--mobile.orientation--portrait .player-panel__quality {
   width: 2em !important;
   white-space: nowrap;
+}
+
+.player.youtube .player-video__loader {
+  display: none !important;
 }
 
 .player-info {
