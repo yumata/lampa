@@ -5021,6 +5021,56 @@ body.true--mobile .search .search-source:not(.active) {
 .simple-keyboard-buttons__cancel {
   padding: 0.7em;
 }
+.simple-keyboard-mic {
+  width: 2.8em;
+  height: 2.8em;
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.simple-keyboard-mic > svg {
+  width: 1.7em;
+  height: 1.7em;
+}
+.simple-keyboard-mic.focus {
+  background: #ffffff;
+  color: #0e0e0e;
+}
+.simple-keyboard-mic.record {
+  background: #ffffff;
+  color: red;
+}
+.simple-keyboard--with-mic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .modal {
   position: fixed;
