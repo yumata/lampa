@@ -6123,6 +6123,39 @@ body.true--mobile .search .search-source:not(.active) {
   padding-top: 0em;
 }
 
+.account-add-device {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.account-add-device__site {
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  -webkit-border-radius: 0.4em;
+     -moz-border-radius: 0.4em;
+          border-radius: 0.4em;
+  color: #D8C39A;
+}
+.account-add-device .about {
+  margin-bottom: 2em;
+}
+
 .cub-premium {
   text-align: center;
 }
