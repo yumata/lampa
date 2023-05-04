@@ -4011,8 +4011,8 @@ body.true--mobile.orientation--portrait .player-video__paused {
   }
 }
 .player-panel-iptv__arrow-up > svg, .player-panel-iptv__arrow-down > svg {
-  width: 1.8em;
-  height: 1.8em;
+  width: 1.8em !important;
+  height: 1.8em !important;
 }
 .player-panel-iptv__arrow-up {
   top: 0;
@@ -4070,7 +4070,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 .player-panel-iptv-item__left svg,
 .player-panel-iptv-item__left img {
-  width: 45%;
+  width: 45% !important;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
@@ -4084,11 +4084,11 @@ body.true--mobile.orientation--portrait .player-video__paused {
 @media screen and (max-width: 480px) {
   .player-panel-iptv-item__left svg,
 .player-panel-iptv-item__left img {
-    width: 75%;
+    width: 75% !important;
   }
 }
 .player-panel-iptv-item__left svg {
-  height: 100%;
+  height: 100% !important;
 }
 @media screen and (max-width: 767px) {
   .player-panel-iptv-item__left {
