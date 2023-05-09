@@ -2118,23 +2118,9 @@ body.settings--open .settings__content {
 .card-watched__item .time-line {
   margin-top: 0.5em;
 }
-.card-watched.reverce--position {
-  right: 100%;
-  left: -120%;
-  margin-right: 0.5em;
-  margin-left: 0;
-}
 
 .card.focus .card-watched {
   display: block;
-}
-
-.card.card--wide .card-watched {
-  right: -40%;
-}
-.card.card--wide .card-watched.reverce--position {
-  left: -40%;
-  right: 100%;
 }
 
 .full-start {
