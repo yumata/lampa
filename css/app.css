@@ -4117,6 +4117,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
   display: flex;
   margin-top: 0.4em;
   height: 1.5em;
+  font-size: 1.1em;
 }
 .player-panel-iptv-item__prog-load {
   font-size: 1.1em;
