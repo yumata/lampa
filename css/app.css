@@ -9010,6 +9010,15 @@ body.platform--netcast .player-info__line {
   position: relative;
 }
 
+body.platform--orsay.system--keyboard .settings-input__content,
+body.platform--orsay.system--keyboard .search-box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 body.orsay-player--show {
   background: transparent;
 }
