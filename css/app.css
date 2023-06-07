@@ -6142,6 +6142,19 @@ body.true--mobile .search .search-source:not(.active) {
 .account-add-device .about {
   margin-bottom: 2em;
 }
+.account-add-device .simple-button {
+  margin: 0;
+}
+.account-add-device .account-add-device__qr {
+  width: 12em;
+  height: 12em;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  padding: 0.6em;
+  background: #fff;
+  margin-bottom: 1.8em;
+}
 
 .cub-premium {
   text-align: center;
