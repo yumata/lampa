@@ -7089,10 +7089,20 @@ body.true--mobile .notice {
           align-items: center;
 }
 .feed-head__icon {
-  width: 8em;
-  height: 8em;
+  width: 8.2em;
+  height: 8.2em;
   position: relative;
   margin-right: 2em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+@media screen and (max-width: 580px) {
+  .feed-head__icon {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
 }
 .feed-head__img {
   position: absolute;
@@ -7106,7 +7116,6 @@ body.true--mobile .notice {
 }
 .feed-head__body {
   line-height: 1.4;
-  width: 50%;
 }
 .feed-head__title {
   font-size: 2.2em;
@@ -7116,10 +7125,32 @@ body.true--mobile .notice {
   margin-top: 0.1em;
   font-weight: 300;
 }
+@media screen and (max-width: 580px) {
+  .feed-head {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
 
 .feed-item {
   position: relative;
   padding-left: 3em;
+}
+@media screen and (max-width: 580px) {
+  .feed-item {
+    padding-left: 0;
+  }
 }
 .feed-item__head {
   margin-bottom: 1em;
@@ -7180,6 +7211,11 @@ body.true--mobile .notice {
   line-height: 1.4;
   width: 60%;
 }
+@media screen and (max-width: 400px) {
+  .feed-item__body {
+    width: 90%;
+  }
+}
 .feed-item__title {
   font-size: 2.5em;
   overflow: hidden;
@@ -7190,10 +7226,20 @@ body.true--mobile .notice {
   line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+@media screen and (max-width: 580px) {
+  .feed-item__title {
+    font-size: 2em;
+  }
+}
 .feed-item__info {
   font-size: 1.3em;
   opacity: 0.5;
   margin-top: 0.7em;
+}
+@media screen and (max-width: 580px) {
+  .feed-item__info {
+    font-size: 1.1em;
+  }
 }
 .feed-item__descr {
   font-size: 1.3em;
@@ -7216,6 +7262,20 @@ body.true--mobile .notice {
   top: 0;
   right: 8%;
   width: 20%;
+}
+@media screen and (max-width: 767px) {
+  .feed-item__right {
+    width: 26%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .feed-item__right {
+    position: relative;
+    width: 67%;
+    margin-left: 3.7em;
+    right: 0;
+    padding-bottom: 1em;
+  }
 }
 .feed-item__poster-img, .feed-item__image-img {
   position: absolute;
@@ -7307,6 +7367,11 @@ body.true--mobile .notice {
   bottom: -6em;
   width: 2px;
 }
+@media screen and (max-width: 580px) {
+  .feed-item:not(:last-child)::after {
+    left: 1.3em;
+  }
+}
 .feed-item--episode .feed-item__body, .feed-item--trailer .feed-item__body {
   width: 48%;
 }
@@ -7315,6 +7380,35 @@ body.true--mobile .notice {
 }
 .feed-item--episode .feed-item__descr, .feed-item--trailer .feed-item__descr {
   min-height: 6em;
+}
+@media screen and (max-width: 767px) {
+  .feed-item--trailer .feed-item__body, .feed-item--episode .feed-item__body {
+    width: 87%;
+  }
+  .feed-item--trailer .feed-item__minicard, .feed-item--episode .feed-item__minicard {
+    top: auto;
+    bottom: -5em;
+    left: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feed-item--trailer .feed-item__right, .feed-item--episode .feed-item__right {
+    position: relative;
+    width: 80%;
+    right: 0;
+    margin-left: 3.7em;
+    margin-bottom: 7em;
+  }
+  .feed-item--trailer .feed-item__title, .feed-item--episode .feed-item__title {
+    font-size: 2em;
+  }
+  .feed-item--trailer .feed-item__poster-img, .feed-item--episode .feed-item__poster-img {
+    width: 23%;
+    min-width: 9em;
+  }
 }
 
 .files {
@@ -9406,7 +9500,11 @@ body.light--version .torrent-item::after,
 body.light--version .explorer-card__head-img::after,
 body.light--version .full-episode.focus::after,
 body.light--version .card-more .card-more__box::after,
-body.light--version .card-episode.focus .full-episode::after {
+body.light--version .card-episode.focus .full-episode::after,
+body.light--version .feed-item__poster-img,
+body.light--version .feed-item__poster-box,
+body.light--version .feed-item__image-box,
+body.light--version .feed-item__image-img {
   -webkit-border-radius: 0.4em;
      -moz-border-radius: 0.4em;
           border-radius: 0.4em;
@@ -9418,7 +9516,8 @@ body.light--version .full-start__tag.tag--quality,
 body.light--version .full-descr__tag,
 body.light--version .full-start .info__rate,
 body.light--version .explorer__files .torrent-filter .simple-button,
-body.light--version .card-watched {
+body.light--version .card-watched,
+body.light--version .feed-item__buttons .simple-button {
   -webkit-border-radius: 0.2em;
      -moz-border-radius: 0.2em;
           border-radius: 0.2em;
