@@ -8518,6 +8518,10 @@ body.system--keyboard .search-box .simple-keyboard-input {
      -moz-animation-direction: alternate;
        -o-animation-direction: alternate;
           animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .broadcast__device {
   font-size: 1.2em;
