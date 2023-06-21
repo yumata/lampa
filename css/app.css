@@ -3468,6 +3468,12 @@ video::-webkit-media-controls-panel-container {
   font-size: 2.5em;
   font-weight: 600;
   line-height: 1.25;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -moz-transition: transform 0.2s, -moz-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
 }
 .player-video__subtitles.size--large {
   font-size: 3em;
@@ -3542,6 +3548,12 @@ video::-webkit-media-controls-panel-container {
 
 .player-video__paused {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player.player--panel-visible .player-video__subtitles {
+  -webkit-transform: translate3d(0, -3.6em, 0);
+     -moz-transform: translate3d(0, -3.6em, 0);
+          transform: translate3d(0, -3.6em, 0);
 }
 
 body.platform--browser .player-video__paused,
@@ -4597,7 +4609,7 @@ body.selectbox--open .selectbox__content {
       -ms-flex-align: center;
           align-items: center;
 }
-.selectbox-item.selected::after {
+.selectbox-item.selected:not(.nomark)::after {
   content: "";
   display: block;
   width: 0.6em;
