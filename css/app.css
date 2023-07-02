@@ -1663,6 +1663,39 @@ body.settings--open .settings__content {
           align-items: self-start;
 }
 
+.reaction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+}
+.reaction__icon {
+  width: 1.6em;
+  height: 1.6em;
+}
+.reaction__count {
+  padding: 0 0.5em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.reaction--voted {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .card {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1737,6 +1770,60 @@ body.settings--open .settings__content {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.card__marker {
+  position: absolute;
+  left: 0.4em;
+  bottom: 0.4em;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  padding: 0.2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.6em;
+}
+.card__marker::before {
+  content: "";
+  display: block;
+  width: 1em;
+  height: 1em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #fff;
+  margin-right: 0.4em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.card__marker > span {
+  font-size: 0.8em;
+  overflow: hidden;
+  max-width: 5em;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+.card__marker--look::before {
+  background-color: #5DBFF5;
+}
+.card__marker--viewed::before {
+  background-color: #FFD028;
+}
+.card__marker--scheduled::before {
+  background-color: #fff;
+}
+.card__marker--thrown::before {
+  background-color: #E54747;
 }
 .card__icon {
   width: 1.8em;
@@ -2737,7 +2824,6 @@ body.card--no-cover .full-start__background {
 }
 .full-start-new__head {
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 1.3em;
   font-size: 1.2em;
 }
 .full-start-new__head span {
@@ -2788,7 +2874,7 @@ body.card--no-cover .full-start__background {
 .full-start-new__details {
   color: #fff;
   margin: -0.45em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2803,7 +2889,6 @@ body.card--no-cover .full-start__background {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   min-height: 1.9em;
-  width: 80%;
   font-size: 1.1em;
 }
 .full-start-new__details > * {
@@ -2813,6 +2898,27 @@ body.card--no-cover .full-start__background {
   .full-start-new__details {
     width: auto;
   }
+}
+.full-start-new__reactions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: -0.5em;
+  margin-bottom: 1em;
+  min-height: 3.6em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.full-start-new__reactions > div {
+  padding: 0.5em;
 }
 .full-start-new__rate-line {
   display: -webkit-box;
@@ -3440,9 +3546,7 @@ video::-webkit-media-controls-panel-container {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.5;
-  -webkit-filter: blur(1em);
-          filter: blur(1em);
+  opacity: 0.3;
 }
 .player-video__youtube-needclick > div {
   position: fixed;
@@ -4588,6 +4692,18 @@ body.selectbox--open .selectbox__content {
   width: 6.9em;
   height: 3.9em;
 }
+.selectbox-item__lock {
+  position: absolute;
+  top: 50%;
+  right: 1.7em;
+  opacity: 0.5;
+  margin-top: -1.1em;
+  opacity: 0.5;
+}
+.selectbox-item__lock > svg {
+  width: 2em !important;
+  height: 2em !important;
+}
 .selectbox-item--checkbox {
   padding-right: 4em;
 }
@@ -4609,7 +4725,7 @@ body.selectbox--open .selectbox__content {
       -ms-flex-align: center;
           align-items: center;
 }
-.selectbox-item.selected:not(.nomark)::after {
+.selectbox-item.selected:not(.nomark)::after, .selectbox-item.picked::after {
   content: "";
   display: block;
   width: 0.6em;
