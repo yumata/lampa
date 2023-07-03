@@ -1696,6 +1696,45 @@ body.settings--open .settings__content {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.register {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  padding: 1em;
+  line-height: 1.4;
+  position: relative;
+  min-width: 9em;
+}
+.register__name {
+  font-size: 1.1em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-width: 5em;
+}
+.register__counter {
+  font-size: 2em;
+  font-weight: 600;
+}
+.register.focus::after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.3em solid #fff;
+  -webkit-border-radius: 1.4em;
+     -moz-border-radius: 1.4em;
+          border-radius: 1.4em;
+  z-index: -1;
+  pointer-events: none;
+}
+.register + .register {
+  margin-left: 1em;
+}
+
 .card {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
