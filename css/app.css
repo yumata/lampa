@@ -1711,7 +1711,8 @@ body.settings--open .settings__content {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  max-width: 5em;
+  max-width: 6em;
+  white-space: nowrap;
 }
 .register__counter {
   font-size: 2em;
@@ -1864,6 +1865,9 @@ body.settings--open .settings__content {
 .card__marker--thrown::before {
   background-color: #E54747;
 }
+.card__marker--continued::before {
+  background-color: #be95ff;
+}
 .card__icon {
   width: 1.8em;
   height: 1.8em;
@@ -1949,7 +1953,7 @@ body.settings--open .settings__content {
 .card__quality {
   position: absolute;
   left: -0.8em;
-  bottom: 1em;
+  bottom: 3em;
   padding: 0.4em 0.4em;
   background: #ffe216;
   color: #000;
@@ -2276,12 +2280,6 @@ body.settings--open .settings__content {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding-bottom: 2.5em;
-  width: 65%;
-}
-@media screen and (max-width: 767px) {
-  .full-start__tags {
-    width: auto;
-  }
 }
 .full-start__deta {
   display: -webkit-box;
@@ -2321,6 +2319,11 @@ body.settings--open .settings__content {
 @media screen and (max-width: 400px) {
   .full-start__body {
     display: block;
+  }
+}
+@media screen and (max-width: 580px) {
+  .full-start__body {
+    padding-bottom: 0em;
   }
 }
 .full-start__right {
@@ -3401,6 +3404,14 @@ body.card--no-cover .full-start__background {
   -webkit-border-radius: 1em;
      -moz-border-radius: 1em;
           border-radius: 1em;
+}
+
+body.true--mobile .full-episode .full-episode__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card-episode {
@@ -6637,6 +6648,9 @@ body.true--mobile .notice {
   padding: 0 1.5em;
 }
 
+.torrent-files .torrent-file + .torrent-serial,
+.torrent-files .torrent-serial + .torrent-file,
+.torrent-files .torrent-serial + .torrent-serial,
 .torrent-files .torrent-file + .torrent-file {
   margin-top: 1em;
 }
@@ -6941,6 +6955,12 @@ body.true--mobile .notice {
 .torrent-serial__img.loaded {
   opacity: 1;
 }
+@media screen and (max-width: 400px) {
+  .torrent-serial__img {
+    width: 7em;
+    height: 5em;
+  }
+}
 .torrent-serial__content {
   padding: 0.8em 1em;
   -webkit-box-flex: 1;
@@ -6984,14 +7004,11 @@ body.true--mobile .notice {
 }
 @media screen and (max-width: 400px) {
   .torrent-serial__title {
-    position: absolute;
-    bottom: 0.6em;
-    left: 0.5em;
-    right: 0.6em;
+    font-size: 1.4em;
   }
 }
 .torrent-serial__line {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: 0.5em;
   font-weight: 300;
   line-height: 1.2;
@@ -7005,6 +7022,11 @@ body.true--mobile .notice {
   margin: 0 0.5em;
   vertical-align: baseline;
 }
+@media screen and (max-width: 400px) {
+  .torrent-serial__line span:last-child {
+    display: none;
+  }
+}
 @media screen and (max-width: 580px) {
   .torrent-serial__line {
     font-size: 1em;
@@ -7012,7 +7034,6 @@ body.true--mobile .notice {
 }
 @media screen and (max-width: 400px) {
   .torrent-serial__line {
-    margin-top: 0;
     padding-right: 1em;
     display: -webkit-box;
     display: -webkit-flex;
@@ -7072,15 +7093,22 @@ body.true--mobile .notice {
   font-size: 1.4em;
   font-weight: 600;
 }
+@media screen and (max-width: 400px) {
+  .torrent-serial__episode {
+    font-size: 1.2em;
+  }
+}
 .torrent-serial.focus {
   background-color: #353535;
-}
-.torrent-serial + .torrent-serial {
-  margin-top: 1em;
 }
 @media screen and (max-width: 400px) {
   .torrent-serial {
     padding-bottom: 3.4em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .torrent-serial {
+    padding-bottom: 0;
   }
 }
 .torrent-serial .time-line {
@@ -7092,6 +7120,12 @@ body.true--mobile .notice {
     top: 5em;
     left: 1em;
     width: 10em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .torrent-serial .time-line {
+    top: 3em;
+    width: 5em;
   }
 }
 
@@ -7236,6 +7270,30 @@ body.true--mobile .notice {
   .torrent-checklist__info {
     width: 100%;
   }
+}
+
+.torrnet-folder-name {
+  font-size: 1.4em;
+  padding: 1.4em 0;
+  opacity: 0.5;
+}
+.torrnet-folder-name::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url(../img/icons/menu/catalog.svg) no-repeat 50% 50%;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+  margin-right: 0.7em;
+  margin-top: -0.3em;
+}
+
+body.platform--orsay .torrnet-folder-name::before,
+body.platform--netcast .torrnet-folder-name::before {
+  display: none;
 }
 
 .feed {
@@ -9661,6 +9719,7 @@ body.light--version .full-start__img,
 body.light--version .full-start-new__poster.loaded img,
 body.light--version .full-episode__img img,
 body.light--version .full-episode__body,
+body.light--version .register,
 body.light--version .full-episode--next .full-episode__img:after {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
@@ -9675,7 +9734,8 @@ body.light--version .card-episode.focus .full-episode::after,
 body.light--version .feed-item__poster-img,
 body.light--version .feed-item__poster-box,
 body.light--version .feed-item__image-box,
-body.light--version .feed-item__image-img {
+body.light--version .feed-item__image-img,
+body.light--version .register::after {
   -webkit-border-radius: 0.4em;
      -moz-border-radius: 0.4em;
           border-radius: 0.4em;
