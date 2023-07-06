@@ -6819,9 +6819,10 @@ body.true--mobile .notice {
   -webkit-border-radius: 0.3em;
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
-  background: #262829;
+  background: rgba(255, 255, 255, 0.06);
   padding: 0.2em 0.4em;
   display: inline-block;
+  margin-left: 0.6em;
 }
 .torrent-file__size {
   -webkit-flex-shrink: 0;
