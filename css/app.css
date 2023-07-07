@@ -1852,6 +1852,7 @@ body.settings--open .settings__content {
   max-width: 5em;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .card__marker--look::before {
   background-color: #5DBFF5;
