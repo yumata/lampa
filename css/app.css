@@ -7964,6 +7964,57 @@ body.platform--netcast .torrnet-folder-name::before {
           flex-grow: 1;
   padding: 0.5em;
 }
+.about__rules {
+  padding-top: 1em;
+  font-size: 0.9em;
+}
+.about__rules ol {
+  list-style-type: none;
+  counter-reset: item;
+}
+.about__rules li {
+  counter-increment: item;
+  display: table;
+}
+.about__rules li > h6 {
+  font-size: 1em;
+}
+.about__rules h1, .about__rules h2, .about__rules h3, .about__rules h4, .about__rules h5, .about__rules h6 {
+  font-weight: 500;
+  margin: 0;
+}
+.about__rules li > * + * {
+  margin-top: 1.5em;
+}
+.about__rules li > *:first-child {
+  padding-top: 0px;
+}
+.about__rules li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 0.9em;
+  padding-top: 0em;
+  font-size: 1em;
+}
+.about__rules li li:before {
+  content: counters(item, ".") " ";
+}
+.about__rules li + li {
+  margin-top: 1.8em;
+}
+.about__rules ol {
+  padding-left: 0px;
+}
+.about__rules > ol > li:before {
+  padding-top: 0px;
+  font-size: 1em;
+  font-weight: 700;
+  padding-right: 0.48em;
+}
+.about__rules a {
+  color: inherit;
+}
 
 .error {
   display: -webkit-box;
