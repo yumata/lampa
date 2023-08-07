@@ -3357,6 +3357,16 @@ body.card--no-cover .full-start__background {
   font-size: 2em;
   margin-bottom: 0.7em;
 }
+.full-episode__viewed {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  display: none;
+}
+.full-episode__viewed > svg {
+  width: 1.4em !important;
+  height: 1.4em !important;
+}
 .full-episode.focus .full-episode__body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3382,6 +3392,9 @@ body.card--no-cover .full-start__background {
 }
 .full-episode--loaded .full-episode__img img {
   opacity: 1;
+}
+.full-episode--viewed .full-episode__viewed {
+  display: block;
 }
 .full-episode--next .full-episode__body {
   display: -webkit-box;
