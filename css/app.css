@@ -5885,6 +5885,81 @@ body.true--mobile .search .search-source:not(.active) {
   margin-top: 1em;
 }
 
+.speedtest {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #262829;
+  z-index: 50;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.speedtest__body {
+  width: 30em;
+}
+.speedtest__body svg {
+  height: inherit !important;
+}
+.speedtest__body svg text {
+  fill: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+.speedtest__frequency {
+  stroke-dasharray: 1 69;
+  stroke-dashoffset: 5;
+}
+.speedtest__progress {
+  stroke-dashoffset: -624;
+  -webkit-transition: 0.34s ease;
+  -o-transition: 0.34s ease;
+  -moz-transition: 0.34s ease;
+  transition: 0.34s ease;
+  stroke: #df3d3d;
+  stroke-dasharray: 0, 1256.8;
+  stroke-linecap: round;
+}
+.speedtest__fill {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-linecap: round;
+  stroke-dashoffset: -624;
+  stroke-dasharray: 0, 1256.8;
+  stroke-dasharray: 1256.8, 1256.8;
+}
+.speedtest #speedtest_graph {
+  -webkit-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+.speedtest #speedtest_num {
+  fill: #fff;
+}
+.speedtest #speedtest_status {
+  font-weight: 400;
+}
+.speedtest .head-backward {
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  right: 0;
+}
+
 .company > div {
   font-size: 1.4em;
   line-height: 1.2;
