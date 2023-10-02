@@ -3423,6 +3423,27 @@ body.card--no-cover .full-start__background {
      -moz-border-radius: 1em;
           border-radius: 1em;
 }
+.full-episode--wath-all .full-episode__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.full-episode--wath-all .full-episode__date, .full-episode--wath-all .full-episode__num {
+  display: none;
+}
+.full-episode--wath-all .full-episode__name {
+  text-align: center;
+}
+.full-episode--wath-all .full-episode__img {
+  opacity: 0;
+}
 
 body.true--mobile .full-episode .full-episode__body {
   display: -webkit-box;
@@ -8269,6 +8290,275 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 }
 .error__title {
   font-size: 1.7em;
+}
+
+.season-info {
+  position: relative;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1.2em;
+  margin-bottom: 1.5em;
+  line-height: 1.4;
+}
+.season-info__title {
+  font-size: 1.7em;
+}
+.season-info__head {
+  margin-top: 0.5em;
+  font-weight: 100;
+}
+.season-info__overview {
+  margin-top: 1em;
+}
+
+.season-episode {
+  position: relative;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  will-change: transform;
+}
+.season-episode__body {
+  padding: 1.2em;
+  line-height: 1.3;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .season-episode__body {
+    padding: 0.8em 1.2em;
+  }
+}
+.season-episode__img {
+  position: relative;
+  width: 13em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  min-height: 8.2em;
+}
+.season-episode__img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.season-episode__img--loaded > img {
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  .season-episode__img {
+    width: 7em;
+    min-height: 6em;
+  }
+}
+.season-episode__folder {
+  padding: 1em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.season-episode__folder > svg {
+  width: 4.4em !important;
+  height: 4.4em !important;
+}
+.season-episode__viewed {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  background: rgba(0, 0, 0, 0.45);
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  padding: 0.25em;
+  font-size: 0.76em;
+}
+.season-episode__viewed > svg {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+.season-episode__episode-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+}
+.season-episode__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  margin-left: -1em;
+  margin-top: -1em;
+  background: url(./img/loader.svg) no-repeat center center;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+}
+.season-episode__head, .season-episode__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.season-episode__timeline {
+  margin: 0.8em 0;
+}
+.season-episode__timeline > .time-line {
+  display: block !important;
+}
+.season-episode__title {
+  font-size: 1.7em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 480px) {
+  .season-episode__title {
+    font-size: 1.4em;
+  }
+}
+.season-episode__time {
+  padding-left: 2em;
+}
+.season-episode__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.season-episode__info > * {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.season-episode__quality {
+  padding-left: 1em;
+  white-space: nowrap;
+}
+.season-episode__scan-file {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.season-episode__scan-file .broadcast__scan {
+  margin: 0;
+}
+.season-episode.focus::after {
+  content: "";
+  position: absolute;
+  top: -0.6em;
+  left: -0.6em;
+  right: -0.6em;
+  bottom: -0.6em;
+  -webkit-border-radius: 0.7em;
+     -moz-border-radius: 0.7em;
+          border-radius: 0.7em;
+  border: solid 0.3em #fff;
+  z-index: -1;
+  pointer-events: none;
+}
+.season-episode + .season-episode {
+  margin-top: 1.5em;
+}
+.season-episode--folder .season-episode__footer {
+  margin-top: 0.8em;
+}
+.season-episode-split {
+  font-size: 0.8em;
+  margin: 0 1em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.season-episode-rate {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.season-episode-rate > svg {
+  width: 1.3em !important;
+  height: 1.3em !important;
+}
+.season-episode-rate > span {
+  font-weight: 600;
+  font-size: 1.1em;
+  padding-left: 0.7em;
 }
 
 .simple-button {
