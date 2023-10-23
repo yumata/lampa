@@ -48,7 +48,7 @@ export default {
     full_writing: 'Writing',
 
     settings_cub_sync: 'Synchronization',
-    settings_cub_sync_descr: 'Synchronization with the CUB service: Synchronization of your bookmarks, browsing history, tags and timecodes. Website: www.cub.watch',
+    settings_cub_sync_descr: 'Synchronization with the CUB service: Synchronization of your bookmarks, browsing history, tags and timecodes. Website: www.cub.red',
     settings_cub_account: 'Account',
     settings_cub_logged_in_as: 'Logged in as',
     settings_cub_profile: 'Profile',
@@ -742,7 +742,7 @@ export default {
     helper_torrents_view: 'Hold down the (OK) key to reset the timecode and display the menu',
 
     fav_sync_title: 'Bookmark sync',
-    fav_sync_text: 'Your favorite bookmarks with you. Connect synchronization and view on any device. <br><br>To do this, register on the site www.cub.watch, create a profile and log in to the application.',
+    fav_sync_text: 'Your favorite bookmarks with you. Connect synchronization and view on any device. <br><br>To do this, register on the site www.cub.red, create a profile and log in to the application.',
     fav_sync_site: 'Website',
     fav_remove_title: 'Remove from history',
     fav_remove_descr: 'Delete selected card',
@@ -819,7 +819,7 @@ export default {
     notice_new_quality: 'New quality available',
     notice_quality: 'Quality',
     notice_new_episode: 'New series',
-    notice_none: 'You don\'t have any notifications yet, register at <b>www.cub.watch</b> to follow new episodes and releases.',
+    notice_none: 'You don\'t have any notifications yet, register at <b>www.cub.red</b> to follow new episodes and releases.',
     notice_in_quality: 'As',
     notice_none_account: 'You don\'t have any notifications yet, bookmark the series and wait for notifications of new episodes.',
     notice_none_system: 'You currently have no notifications. We will be sure to notify you when new notifications become available.',
@@ -843,15 +843,15 @@ export default {
     account_import_fail: 'Import error',
     account_imported: 'imported',
     account_reload_after: 'reboot after 5 sec.',
-    account_create: 'Discover more opportunities with a CUB account. Register at <span class="account-modal__site">www.cub.watch</span> and get access to sync your bookmarks, timecodes and other CUB account features.',
+    account_create: 'Discover more opportunities with a CUB account. Register at <span class="account-modal__site">www.cub.red</span> and get access to sync your bookmarks, timecodes and other CUB account features.',
     account_premium: 'Discover more features with a CUB Premium account. Increasing limits and access to additional features of the service.',
     account_premium_more: 'Learn more about CUB Premium',
-    account_limited: 'You have reached the maximum limit. Increase the limit with a CUB Premium account. Learn more at <span class="account-modal__site">www.cub.watch/premium</span>',
+    account_limited: 'You have reached the maximum limit. Increase the limit with a CUB Premium account. Learn more at <span class="account-modal__site">www.cub.red/premium</span>',
 
     account_code_enter: 'Enter a six-digit code',
     account_code_error: 'Perhaps you entered an incorrect or outdated code',
     account_code_wrong: 'Perhaps you entered an incorrect format',
-    account_code_where: 'Go to the <span class="account-add-device__site">cub.watch/add</span> website and enter the code provided there.',
+    account_code_where: 'Go to the <span class="account-add-device__site">cub.red/add</span> website and enter the code provided there.',
     account_code_input: 'Enter code',
     settings_cub_signin_button: 'Sign in',
 
@@ -1048,5 +1048,8 @@ export default {
     termsofuse_t_10: 'However, it should be noted that users install extensions at their own risk. All consequences arising from the use of extensions are the responsibility of the user. Users are advised to exercise caution when installing and using extensions, carefully evaluating their reliability and security.',
     termsofuse_t_11: 'Copyright Infringements',
     termsofuse_t_12: 'If you discover any copyright infringement in the Lampa application, you should contact the developers of the Lampa application. You can use the contacts provided in the Lampa application to do so. However, it is important to note that the Lampa application uses the API from the themoviedb.org catalog, which provides open access to information about movies and TV shows. This means that the information displayed in the Lampa application is publicly available and does not infringe on copyright.',
-    termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.'
+    termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.',
+    settings_rest_protocol_use: 'Secure connection',
+    settings_rest_protocol_descr: 'Use HTTPS protocol',
+    install_app_apk_text: 'We noticed that you are using MediaStationX to run Lampa on Android. We recommend that you install Lampa as an APK application. You can download the latest version of the application here:'
 }

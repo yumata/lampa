@@ -48,7 +48,7 @@ export default {
     full_writing: 'Сценарии',
 
     settings_cub_sync: 'Синхронизация',
-    settings_cub_sync_descr: 'Синхронизация с CUB сървиза: Синхронизиране на вашите отметки, история на сърфиране, тагове и времеви кодове. Уебсайт: www.cub.watch',
+    settings_cub_sync_descr: 'Синхронизация с CUB сървиза: Синхронизиране на вашите отметки, история на сърфиране, тагове и времеви кодове. Уебсайт: www.cub.red',
     settings_cub_account: 'Акаунт',
     settings_cub_logged_in_as: 'Влезли сте като',
     settings_cub_profile: 'Профил',
@@ -742,7 +742,7 @@ export default {
     helper_torrents_view: 'Задръжте натиснат клавиша (OK), за да нулирате времевия код и да покажете менюто',
 
     fav_sync_title: 'Синхронизация отметки',
-    fav_sync_text: 'Любимите ви отметки с вас. Свързване на синхронизация и преглед на всяко устройство. <br><br>За да направите това, регистрирайте се на сайта www.cub.watch, създайте профил и влезте в приложението.',
+    fav_sync_text: 'Любимите ви отметки с вас. Свързване на синхронизация и преглед на всяко устройство. <br><br>За да направите това, регистрирайте се на сайта www.cub.red, създайте профил и влезте в приложението.',
     fav_sync_site: 'Уебсайт',
     fav_remove_title: 'Премахни от историята',
     fav_remove_descr: 'Изтрий избраната карта',
@@ -819,7 +819,7 @@ export default {
     notice_new_quality: 'Налично ново качество',
     notice_quality: 'Качество',
     notice_new_episode: 'Нови серии',
-    notice_none: 'Все още нямате известия, регистрирайте се на <b>www.cub.watch</b>, за да следите за нови епизоди и издания.',
+    notice_none: 'Все още нямате известия, регистрирайте се на <b>www.cub.red</b>, за да следите за нови епизоди и издания.',
     notice_in_quality: 'В качество',
     notice_none_account: 'Все още нямате известия, маркирайте поредицата и изчакайте известия за нови епизоди.',
     notice_none_system: 'В момента нямате известия. Със сигурност ще Ви уведомим, когато се появят нови известия.',
@@ -843,15 +843,15 @@ export default {
     account_import_fail: 'Грешка при импортиране',
     account_imported: 'импорирано',
     account_reload_after: 'рестарт след 5 сек.',
-    account_create: 'Открийте повече възможности с CUB акаунт. Регистрирайте се на <span class="account-modal__site">www.cub.watch</span> и получете достъп за синхронизиране на вашите отметки, времеви кодове и други функции на CUB акаунта.',
+    account_create: 'Открийте повече възможности с CUB акаунт. Регистрирайте се на <span class="account-modal__site">www.cub.red</span> и получете достъп за синхронизиране на вашите отметки, времеви кодове и други функции на CUB акаунта.',
     account_premium: 'Открийте повече функции с CUB Premium акаунт. Увеличаване на ограниченията и достъпа до допълнителни функции на услугата.',
     account_premium_more: 'Научете повече за CUB Premium',
-    account_limited: 'Достигнали сте максималния лимит. Увеличете лимита с CUB Premium акаунт. Научете повече на <span class="account-modal__site">www.cub.watch/premium</span>',
+    account_limited: 'Достигнали сте максималния лимит. Увеличете лимита с CUB Premium акаунт. Научете повече на <span class="account-modal__site">www.cub.red/premium</span>',
 
     account_code_enter: 'Въведете шестцифрен код',
     account_code_error: 'Може би сте въвели неправилен или остарял код',
     account_code_wrong: 'Може би сте въвели неправилен формат',
-    account_code_where: 'Отидете на <span class="account-add-device__site">cub.watch/add</span> website и въведете предоставения там код.',
+    account_code_where: 'Отидете на <span class="account-add-device__site">cub.red/add</span> website и въведете предоставения там код.',
     account_code_input: 'Въведете кода',
     settings_cub_signin_button: 'Влизане',
 
@@ -1047,5 +1047,8 @@ export default {
     termsofuse_t_10: 'However, it should be noted that users install extensions at their own risk. All consequences arising from the use of extensions are the responsibility of the user. Users are advised to exercise caution when installing and using extensions, carefully evaluating their reliability and security.',
     termsofuse_t_11: 'Copyright Infringements',
     termsofuse_t_12: 'If you discover any copyright infringement in the Lampa application, you should contact the developers of the Lampa application. You can use the contacts provided in the Lampa application to do so. However, it is important to note that the Lampa application uses the API from the themoviedb.org catalog, which provides open access to information about movies and TV shows. This means that the information displayed in the Lampa application is publicly available and does not infringe on copyright.',
-    termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.'
+    termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.',
+    settings_rest_protocol_use: 'Сигурна връзка',
+    settings_rest_protocol_descr: 'Използвайте HTTPS протокол',
+    install_app_apk_text: 'Забелязахме, че използвате MediaStationX, за да стартирате Lampa на Android. Препоръчваме ви да инсталирате Lampa като APK приложение. Можете да изтеглите последната версия на приложението от тук:'
 }
