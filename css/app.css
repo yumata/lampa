@@ -9619,6 +9619,22 @@ body.system--keyboard .search-box .simple-keyboard-input {
 .extensions__item-code.error {
   color: #DD7337;
 }
+.extensions__item-code.yellow {
+  color: #ffd016;
+}
+.extensions__item-proto {
+  margin-right: 0.5em;
+}
+.extensions__item-proto > svg {
+  width: 1em !important;
+  height: 1em !important;
+}
+.extensions__item-proto.protocol-https {
+  color: #6DCE4B;
+}
+.extensions__item-proto.protocol-http {
+  opacity: 0.3;
+}
 .extensions__item-status {
   font-size: 0.78em;
   color: #8D8D8D;
