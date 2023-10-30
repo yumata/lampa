@@ -1050,5 +1050,16 @@ export default {
     termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.',
     settings_rest_protocol_use: 'Сигурна връзка',
     settings_rest_protocol_descr: 'Използвайте HTTPS протокол',
-    install_app_apk_text: 'Забелязахме, че използвате MediaStationX, за да стартирате Lampa на Android. Препоръчваме ви да инсталирате Lampa като APK приложение. Можете да изтеглите последната версия на приложението от тук:'
+    install_app_apk_text: 'Забелязахме, че използвате MediaStationX, за да стартирате Lampa на Android. Препоръчваме ви да инсталирате Lampa като APK приложение. Можете да изтеглите последната версия на приложението от тук:',
+
+    tv_status_returning_series: 'Предстоящ',
+    tv_status_planned: 'Планирано',
+    tv_status_in_production: 'В производство',
+    tv_status_ended: 'Завършено',
+    tv_status_canceled: 'Отменено',
+    tv_status_pilot: 'Пилотен',
+
+    tv_status_released: 'Издаден',
+    tv_status_rumored: 'Слухове',
+    tv_status_post_production: 'Скоро'
 }
