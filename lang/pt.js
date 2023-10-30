@@ -1037,5 +1037,16 @@ export default {
     speedtest_button: 'Testar velocidade',
     settings_rest_protocol_use: 'Conexão segura',
     settings_rest_protocol_descr: 'Usar protocolo HTTPS',
-    install_app_apk_text: 'Percebemos que você está usando o MediaStationX para executar o Lampa no Android. Recomendamos que você instale o Lampa como um aplicativo APK. Você pode baixar a versão mais recente do aplicativo aqui:'
+    install_app_apk_text: 'Percebemos que você está usando o MediaStationX para executar o Lampa no Android. Recomendamos que você instale o Lampa como um aplicativo APK. Você pode baixar a versão mais recente do aplicativo aqui:',
+
+    tv_status_returning_series: 'Em andamento',
+    tv_status_planned: 'Planejado',
+    tv_status_in_production: 'Em produção',
+    tv_status_ended: 'Finalizado',
+    tv_status_canceled: 'Cancelado',
+    tv_status_pilot: 'Piloto',
+
+    tv_status_released: 'Lançado',
+    tv_status_rumored: 'Rumores',
+    tv_status_post_production: 'Em breve'
 }

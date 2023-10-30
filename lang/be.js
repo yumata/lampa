@@ -1055,5 +1055,16 @@ export default {
 
     settings_rest_protocol_use: 'Бяспечнае злучэнне',
     settings_rest_protocol_descr: 'Выкарыстоўваць пратакол HTTPS',
-    install_app_apk_text: 'Мы заўважылі, што для запуску Lampa на Android вы карыстаецеся MediaStationX. Мы рэкамендуем вам усталяваць Lampa у выглядзе APK-прыкладанні. Вы можаце спампаваць апошнюю версію прыкладання тут:'
+    install_app_apk_text: 'Мы заўважылі, што для запуску Lampa на Android вы карыстаецеся MediaStationX. Мы рэкамендуем вам усталяваць Lampa у выглядзе APK-прыкладанні. Вы можаце спампаваць апошнюю версію прыкладання тут:',
+
+    tv_status_returning_series: 'Працягваецца',
+    tv_status_planned: 'Плануецца',
+    tv_status_in_production: 'У вырабніцтве',
+    tv_status_ended: 'Завершана',
+    tv_status_canceled: 'Скасавана',
+    tv_status_pilot: 'Пілотны',
+
+    tv_status_released: 'Выпушчаны',
+    tv_status_rumored: 'Па слыхам',
+    tv_status_post_production: 'Хутка'
 }

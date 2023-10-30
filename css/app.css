@@ -2299,7 +2299,7 @@ body.settings--open .settings__content {
           align-items: center;
   margin-bottom: 1em;
 }
-.full-start__pg {
+.full-start__pg, .full-start__status {
   font-size: 1.2em;
   border: 1px solid #fff;
   -webkit-border-radius: 0.2em;
@@ -2983,8 +2983,9 @@ body.card--no-cover .full-start__background {
 .full-start-new__rate-line .full-start__rate {
   margin: 0;
 }
-.full-start-new__rate-line > * + * {
-  margin-left: 1em !important;
+.full-start-new__rate-line > * {
+  margin-left: 0 !important;
+  margin-right: 1em !important;
 }
 .full-start-new__rate-line .full-start__pg {
   font-size: 1.12em;

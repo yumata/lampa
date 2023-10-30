@@ -1042,6 +1042,17 @@ export default {
 
     change_source_on_cub: 'Сменить источник на CUB',
 
+    tv_status_returning_series: 'Онгоинг',
+    tv_status_planned: 'Запланировано',
+    tv_status_in_production: 'В производстве',
+    tv_status_ended: 'Завершено',
+    tv_status_сanceled: 'Отменено',
+    tv_status_pilot: 'Пилотный',
+
+    tv_status_released:'Выпущенный',
+    tv_status_rumored:'По слухам',
+    tv_status_post_production:'Скоро',
+
     input_detection_touch: 'Хотите переключить на сенсорное управление?',
     input_detection_mouse: 'Хотите переключить на управление мышью?',
     input_detection_remote: 'Хотите переключить на управление пультом?',
