@@ -1046,9 +1046,8 @@ export default {
     tv_status_planned: 'Запланировано',
     tv_status_in_production: 'В производстве',
     tv_status_ended: 'Завершено',
-    tv_status_сanceled: 'Отменено',
+    tv_status_canceled: 'Отменено',
     tv_status_pilot: 'Пилотный',
-
     tv_status_released:'Выпущенный',
     tv_status_rumored:'По слухам',
     tv_status_post_production:'Скоро',
