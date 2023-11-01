@@ -1057,7 +1057,7 @@ export default {
     tv_status_planned: 'Planned',
     tv_status_in_production: 'In Production',
     tv_status_ended: 'Ended',
-    tv_status_сanceled: 'Canceled',
+    tv_status_canceled: 'Canceled',
     tv_status_pilot: 'Pilot',
 
     tv_status_released:'Released',
