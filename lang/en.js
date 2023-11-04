@@ -46,6 +46,7 @@ export default {
     full_episode: 'Episode',
     full_directing: 'Directing',
     full_writing: 'Writing',
+    full_keywords: 'Tags',
 
     settings_cub_sync: 'Synchronization',
     settings_cub_sync_descr: 'Synchronization with the CUB service: Synchronization of your bookmarks, browsing history, tags and timecodes. Website: www.cub.red',

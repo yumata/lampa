@@ -1013,5 +1013,6 @@ export default {
 
     tv_status_released: '已发布',
     tv_status_rumored: '传闻中',
-    tv_status_post_production: '即将发布'
+    tv_status_post_production: '即将发布',
+    full_keywords: '标签',
 }

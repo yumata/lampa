@@ -865,7 +865,7 @@ body.light--version .wrap__left {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .head__action {
   width: 2.8em;
@@ -1631,6 +1631,13 @@ body.settings--open .settings__content {
 .items-line__title {
   font-size: 1.6em;
   font-weight: 400;
+}
+.items-line__title .full-person__photo {
+  width: 2em;
+  height: 2em;
+}
+.items-line__title .full-person__name {
+  font-size: 1em;
 }
 .items-line__more {
   margin-left: 2em;
@@ -2800,6 +2807,11 @@ body.card--no-cover .full-start__background {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+@media screen and (max-width: 580px) {
+  .full-start-new__right {
+    overflow: hidden;
+  }
+}
 @media screen and (max-width: 400px) {
   .full-start-new__right {
     margin-left: -1.5em;
@@ -3034,6 +3046,11 @@ body.card--no-cover .full-start__background {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 580px) {
+  .full-start-new__buttons {
+    overflow: auto;
+  }
 }
 .full-start-new__buttons .full-start__button:not(.focus) span {
   display: none;
