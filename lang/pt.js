@@ -1050,4 +1050,5 @@ export default {
     tv_status_rumored: 'Rumores',
     tv_status_post_production: 'Em breve',
     full_keywords: 'Tag',
+    title_last_year: 'Ano passado',
 }

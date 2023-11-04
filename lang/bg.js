@@ -1064,4 +1064,5 @@ export default {
     tv_status_post_production: 'Скоро',
 
     full_keywords: 'Тагове',
+    title_last_year: 'Миналата година',
 }

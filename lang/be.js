@@ -1069,4 +1069,5 @@ export default {
     tv_status_post_production: 'Хутка',
 
     full_keywords: 'Тэгі',
+    title_last_year: 'Мінулы год',
 }

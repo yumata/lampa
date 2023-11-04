@@ -1064,4 +1064,6 @@ export default {
     tv_status_released:'Released',
     tv_status_rumored:'Rumored',
     tv_status_post_production:'Post Production',
+
+    title_last_year: 'Last year',
 }
