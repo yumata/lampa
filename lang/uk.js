@@ -1030,4 +1030,5 @@ export default {
     tv_status_rumored: 'За чутками',
     tv_status_post_production: 'Незабаром',
     full_keywords: 'Теги',
+    title_last_year: 'Минулий рік',
 }

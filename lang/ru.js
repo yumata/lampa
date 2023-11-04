@@ -410,6 +410,7 @@ export default {
     title_buffer: 'Буфер',
     title_upcoming_episodes: 'Ближайшие выходы эпизодов',
     title_reactions: 'Реакции',
+    title_last_year: 'Прошлый год',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
