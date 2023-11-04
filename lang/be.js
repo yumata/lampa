@@ -1066,5 +1066,7 @@ export default {
 
     tv_status_released: 'Выпушчаны',
     tv_status_rumored: 'Па слыхам',
-    tv_status_post_production: 'Хутка'
+    tv_status_post_production: 'Хутка',
+
+    full_keywords: 'Тэгі',
 }

@@ -1061,5 +1061,7 @@ export default {
 
     tv_status_released: 'Издаден',
     tv_status_rumored: 'Слухове',
-    tv_status_post_production: 'Скоро'
+    tv_status_post_production: 'Скоро',
+
+    full_keywords: 'Тагове',
 }

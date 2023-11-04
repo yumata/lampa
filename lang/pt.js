@@ -1048,5 +1048,6 @@ export default {
 
     tv_status_released: 'Lançado',
     tv_status_rumored: 'Rumores',
-    tv_status_post_production: 'Em breve'
+    tv_status_post_production: 'Em breve',
+    full_keywords: 'Tag',
 }

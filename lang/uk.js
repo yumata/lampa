@@ -1028,5 +1028,6 @@ export default {
 
     tv_status_released: 'Випущено',
     tv_status_rumored: 'За чутками',
-    tv_status_post_production: 'Незабаром'
+    tv_status_post_production: 'Незабаром',
+    full_keywords: 'Теги',
 }
