@@ -10344,7 +10344,9 @@ body.light--version .full-start-new__poster.loaded img,
 body.light--version .full-episode__img img,
 body.light--version .full-episode__body,
 body.light--version .register,
-body.light--version .full-episode--next .full-episode__img:after {
+body.light--version .full-episode--next .full-episode__img:after,
+body.light--version .season-episode,
+body.light--version .season-episode__img > img {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
@@ -10359,7 +10361,8 @@ body.light--version .feed-item__poster-img,
 body.light--version .feed-item__poster-box,
 body.light--version .feed-item__image-box,
 body.light--version .feed-item__image-img,
-body.light--version .register::after {
+body.light--version .register::after,
+body.light--version .season-episode::after {
   -webkit-border-radius: 0.4em;
      -moz-border-radius: 0.4em;
           border-radius: 0.4em;
