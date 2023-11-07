@@ -2074,7 +2074,7 @@ body.settings--open .settings__content {
   display: none;
 }
 .card--small.card--wide .card-watched__body {
-  padding: 0;
+  padding-top: 1em;
 }
 .card--small.card--wide .card-watched__item {
   margin: 0;
@@ -2238,10 +2238,10 @@ body.settings--open .settings__content {
 
 .card-watched {
   position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: auto;
+  left: 1em;
+  right: 1em;
+  bottom: 3em;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.9);
   display: none;
@@ -2251,10 +2251,9 @@ body.settings--open .settings__content {
           border-radius: 1em;
 }
 .card-watched__inner {
-  padding: 1em;
+  padding: 0 1em 1em 1em;
 }
 .card-watched__body {
-  padding-top: 1em;
   font-size: 0.8em;
 }
 .card-watched__item {
