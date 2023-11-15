@@ -411,6 +411,7 @@ export default {
     title_upcoming_episodes: 'Ближайшие выходы эпизодов',
     title_reactions: 'Реакции',
     title_last_year: 'Прошлый год',
+    title_reset: 'Перезагрузить',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
@@ -705,6 +706,8 @@ export default {
     empty_text: 'По вашему фильтру ничего не нашлось, уточните фильтр.',
     empty_title_two: 'Здесь пусто',
     empty_text_two: 'На данный момент список пустой',
+
+    back_to_card: 'Вернуться в карточку',
 
     menu_main: 'Главная',
     menu_movies: 'Фильмы',
