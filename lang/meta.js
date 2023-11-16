@@ -48,6 +48,13 @@ export default {
 
             lang_choice_title: 'Здравейте',
             lang_choice_subtitle: 'Изберете вашият език',
+        },
+        he: {
+            code: 'he',
+            name: 'עִברִית',
+
+            lang_choice_title: 'ברוך הבא',
+            lang_choice_subtitle: 'בחר את השפה שלך',
         }
     }
 }
