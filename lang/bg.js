@@ -1065,4 +1065,7 @@ export default {
 
     full_keywords: 'Тагове',
     title_last_year: 'Миналата година',
+
+    title_reset: 'Рестартирайте',
+    back_to_card: 'Връщане към картата',
 }

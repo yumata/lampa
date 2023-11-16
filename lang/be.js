@@ -1070,4 +1070,7 @@ export default {
 
     full_keywords: 'Тэгі',
     title_last_year: 'Мінулы год',
+
+    title_reset: 'Перазагрузіць',
+    back_to_card: 'Вярнуцца ў картку',
 }

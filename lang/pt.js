@@ -1051,4 +1051,7 @@ export default {
     tv_status_post_production: 'Em breve',
     full_keywords: 'Tag',
     title_last_year: 'Ano passado',
+
+    title_reset: 'Reinício',
+    back_to_card: 'Voltar ao cartão',
 }

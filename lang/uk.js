@@ -1031,4 +1031,7 @@ export default {
     tv_status_post_production: 'Незабаром',
     full_keywords: 'Теги',
     title_last_year: 'Минулий рік',
+
+    title_reset: 'Перезавантажити',
+    back_to_card: 'Повернутись до картки',
 }

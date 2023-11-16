@@ -4612,6 +4612,13 @@ body.true--mobile.orientation--portrait .player-panel__quality {
   font-size: 1.3em;
   font-weight: 300;
 }
+.player-info__values .value--size span {
+  background: rgba(225, 255, 255, 0.18);
+  padding: 0.1em 0.5em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+}
 .player-info__values .value--pieces {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4674,6 +4681,13 @@ body.true--mobile .player-info__values, body.true--mobile .player-info__line {
 body.true--mobile .player-info .head-backward {
   margin: 0;
   padding: 0;
+}
+body.true--mobile .player-info .head-backward__title {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 body.true--mobile .player-info .head-backward__button {
   left: -1.5em;

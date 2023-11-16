@@ -1066,4 +1066,7 @@ export default {
     tv_status_post_production:'Post Production',
 
     title_last_year: 'Last year',
+
+    title_reset: 'Reboot',
+    back_to_card: 'Return to card',
 }
