@@ -1073,4 +1073,11 @@ export default {
 
     title_reset: 'Перазагрузіць',
     back_to_card: 'Вярнуцца ў картку',
+
+    premiere_author_recomend_1: 'Замовіце піцу і падрыхтуйцеся да драйву.',
+    premiere_author_recomend_2: 'Вечарынка толькі пачынаецца.',
+    premiere_author_recomend_3: 'Прыгатуйцеся да адрэналіну.',
+    premiere_author_recomend_4: 'Гатовыя да нязабыўнага вечара?',
+    premiere_author_recomend_5: 'Я рэкамендую гэта праглядзець.',
+    premiere_title: 'Прем’ера',
 }
