@@ -1069,4 +1069,11 @@ export default {
 
     title_reset: 'Reboot',
     back_to_card: 'Return to card',
+
+    premiere_author_recomend_1: 'Order pizza and get ready for some excitement.',
+    premiere_author_recomend_2: 'The party is just getting started.',
+    premiere_author_recomend_3: 'Get ready for some adrenaline.',
+    premiere_author_recomend_4: 'Ready for an unforgettable evening?',
+    premiere_author_recomend_5: 'I recommend watching it.',
+    premiere_title: 'Premiere',
 }

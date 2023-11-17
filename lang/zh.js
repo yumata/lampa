@@ -1019,4 +1019,11 @@ export default {
 
     title_reset: '重启',
     back_to_card: '返回卡',
+
+    premiere_author_recomend_1: '订披萨，准备好迎接刺激。',
+    premiere_author_recomend_2: '派对刚刚开始。',
+    premiere_author_recomend_3: '准备迎接肾上腺素。',
+    premiere_author_recomend_4: '准备好度过难忘的夜晚了吗？',
+    premiere_author_recomend_5: '我推荐观看它。',
+    premiere_title: '首映',
 }

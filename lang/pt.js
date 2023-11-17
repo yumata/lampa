@@ -1054,4 +1054,11 @@ export default {
 
     title_reset: 'Reinício',
     back_to_card: 'Voltar ao cartão',
+
+    premiere_author_recomend_1: 'Peça pizza e prepare-se para a emoção.',
+    premiere_author_recomend_2: 'A festa está apenas começando.',
+    premiere_author_recomend_3: 'Prepare-se para a adrenalina.',
+    premiere_author_recomend_4: 'Pronto para uma noite inesquecível?',
+    premiere_author_recomend_5: 'Eu recomendo assistir.',
+    premiere_title: 'Estréia',
 }
