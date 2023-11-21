@@ -132,7 +132,6 @@ export default {
     settings_rest_device: 'Название устройства',
     settings_rest_device_placeholder: 'Например: Моя Лампа',
     settings_rest_cache: 'Очистить кэш',
-    settings_rest_cache_descr: 'Будут очищены все настройки и данные',
     settings_rest_tmdb_example: 'Например:',
     settings_rest_tmdb_api_descr: 'Для получения данных',
     settings_rest_tmdb_image_descr: 'Для получения изображений',
@@ -144,6 +143,10 @@ export default {
     settings_rest_cache_images_descr: 'Кэшировать постеры и фоны в локальное хранилище',
     settings_rest_protocol_use: 'Безопасное соединение',
     settings_rest_protocol_descr: 'Использовать протокол HTTPS',
+    settings_rest_cache_only: 'Только кеш',
+    settings_rest_cache_only_descr: 'Основные настройки сохранятся',
+    settings_rest_cache_all: 'Кеш и данные',
+    settings_rest_cache_all_descr: 'Будут очищены все настройки и данные',
 
     settings_parser_use: 'Использовать парсер',
     settings_parser_use_descr: 'Тем самым, вы соглашаетесь принять на себя всю ответственность за использование публичных ссылок для просмотра торрент и онлайн контента.',
@@ -412,6 +415,7 @@ export default {
     title_reactions: 'Реакции',
     title_last_year: 'Прошлый год',
     title_reset: 'Перезагрузить',
+    title_left:'Осталось',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
@@ -754,6 +758,7 @@ export default {
     time_reset: 'Сбросить тайм-код',
 
     settings_clear_cache: 'Кеш и данные очищены',
+    settings_clear_cache_only: 'Кеш очищен',
     settings_user_links: 'Пользовательская ссылка',
     settings_for_local: 'Для локального TorrServer',
     settings_add: 'Добавить',

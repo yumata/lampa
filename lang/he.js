@@ -977,4 +977,10 @@ export default {
     premiere_author_recomend_4: 'מוכנים לערב בלתי נשכח?',
     premiere_author_recomend_5: 'אני ממליץ לצפות.',
     premiere_title: 'הקרנת בכורה',
+    settings_clear_cache_only: 'זיכרון מטמון נקי',
+    settings_rest_cache_only: 'רק זיכרון מטמון',
+    settings_rest_cache_only_descr: 'הגדרות בסיסיות יישמרו',
+    settings_rest_cache_all: 'זיכרון מטמון ונתונים',
+    settings_rest_cache_all_descr: 'כל הגדרות והנתונים יימחקו',
+    title_left:'שמאלה',
 }

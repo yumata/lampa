@@ -1026,4 +1026,12 @@ export default {
     premiere_author_recomend_4: '准备好度过难忘的夜晚了吗？',
     premiere_author_recomend_5: '我推荐观看它。',
     premiere_title: '首映',
+
+    settings_clear_cache_only: '清除缓存',
+    settings_rest_cache_only: '仅清除缓存',
+    settings_rest_cache_only_descr: '基本设置将被保留',
+    settings_rest_cache_all: '清除缓存和数据',
+    settings_rest_cache_all_descr: '所有设置和数据将被清除',
+
+    title_left:'左边',
 }

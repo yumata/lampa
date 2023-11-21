@@ -1439,6 +1439,9 @@ body.light--version .menu__item {
 .settings-param.focus {
   background-color: #353535;
 }
+.settings-param--button .settings-param__name {
+  margin-bottom: 0;
+}
 .settings-param-title {
   padding: 1.5em 2em;
 }
