@@ -1075,4 +1075,12 @@ export default {
     premiere_author_recomend_4: 'Готови ли сте за една незабравима вечер?',
     premiere_author_recomend_5: 'Препоръчвам ви да гледате',
     premiere_title: 'Премиера',
+
+    settings_clear_cache_only: 'Изчистен кеш',
+    settings_rest_cache_only: 'Само кеш',
+    settings_rest_cache_only_descr: 'Основните настройки ще бъдат запазени',
+    settings_rest_cache_all: 'Кеш и данни',
+    settings_rest_cache_all_descr: 'Ще бъдат изчистени всички настройки и данни',
+
+    title_left:'Наляво',
 }

@@ -1061,4 +1061,12 @@ export default {
     premiere_author_recomend_4: 'Pronto para uma noite inesquecível?',
     premiere_author_recomend_5: 'Eu recomendo assistir.',
     premiere_title: 'Estréia',
+
+    settings_clear_cache_only: 'Cache Cleared',
+    settings_rest_cache_only: 'Apenas Cache',
+    settings_rest_cache_only_descr: 'As configurações básicas serão preservadas',
+    settings_rest_cache_all: 'Cache e Dados',
+    settings_rest_cache_all_descr: 'Todas as configurações e dados serão apagados',
+
+    title_left:'Esquerda',
 }

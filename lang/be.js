@@ -1080,4 +1080,12 @@ export default {
     premiere_author_recomend_4: 'Гатовыя да нязабыўнага вечара?',
     premiere_author_recomend_5: 'Я рэкамендую гэта праглядзець.',
     premiere_title: 'Прем’ера',
+
+    settings_clear_cache_only: 'Кеш ачышчаны',
+    settings_rest_cache_only: 'Толькі кеш',
+    settings_rest_cache_only_descr: 'Асноўныя налады застануцца',
+    settings_rest_cache_all: 'Кеш і дадзеныя',
+    settings_rest_cache_all_descr: 'Будуць ачышчаныя ўсе налады і дадзеныя',
+
+    title_left:'Засталося',
 }

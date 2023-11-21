@@ -1076,4 +1076,12 @@ export default {
     premiere_author_recomend_4: 'Ready for an unforgettable evening?',
     premiere_author_recomend_5: 'I recommend watching it.',
     premiere_title: 'Premiere',
+
+    settings_clear_cache_only: 'Cache Cleared',
+    settings_rest_cache_only: 'Only Cache',
+    settings_rest_cache_only_descr: 'Basic settings will be preserved',
+    settings_rest_cache_all: 'Cache and Data',
+    settings_rest_cache_all_descr: 'All settings and data will be cleared',
+
+    title_left:'Left',
 }

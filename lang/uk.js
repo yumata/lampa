@@ -1041,4 +1041,12 @@ export default {
     premiere_author_recomend_4: 'Готові до незабутнього вечора?',
     premiere_author_recomend_5: 'Я рекомендую його подивитися.',
     premiere_title: 'Прем\'єра',
+
+    settings_clear_cache_only: 'Кеш очищено',
+    settings_rest_cache_only: 'Лише кеш',
+    settings_rest_cache_only_descr: 'Базові налаштування залишаться',
+    settings_rest_cache_all: 'Кеш та дані',
+    settings_rest_cache_all_descr: 'Будуть очищені всі налаштування та дані',
+
+    title_left:'Залишилось',
 }
