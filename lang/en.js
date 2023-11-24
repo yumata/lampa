@@ -1082,6 +1082,7 @@ export default {
     settings_rest_cache_only_descr: 'Basic settings will be preserved',
     settings_rest_cache_all: 'Cache and Data',
     settings_rest_cache_all_descr: 'All settings and data will be cleared',
+    settings_rest_cache_calculate: 'How much memory is left',
 
     title_left:'Left',
 }

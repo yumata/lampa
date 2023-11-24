@@ -1067,6 +1067,7 @@ export default {
     settings_rest_cache_only_descr: 'As configurações básicas serão preservadas',
     settings_rest_cache_all: 'Cache e Dados',
     settings_rest_cache_all_descr: 'Todas as configurações e dados serão apagados',
+    settings_rest_cache_calculate: 'Quanta memória resta',
 
     title_left:'Esquerda',
 }

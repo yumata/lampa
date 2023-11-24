@@ -1081,6 +1081,7 @@ export default {
     settings_rest_cache_only_descr: 'Основните настройки ще бъдат запазени',
     settings_rest_cache_all: 'Кеш и данни',
     settings_rest_cache_all_descr: 'Ще бъдат изчистени всички настройки и данни',
+    settings_rest_cache_calculate: 'Колко памет остава',
 
     title_left:'Наляво',
 }
