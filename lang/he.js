@@ -43,7 +43,7 @@ export default {
     full_directing: 'נתוב',
     full_writing: 'כתיבה',
     settings_cub_sync: 'סנכרון',
-    settings_cub_sync_descr: 'www.cub.watch : סנכרון עם שירות CUB: סנכרון של הסימניות שלך, היסטוריית הגלישה, תגיות וקודי זמן. אתר אינטרנט',
+    settings_cub_sync_descr: 'www.cub.red : סנכרון עם שירות CUB: סנכרון של הסימניות שלך, היסטוריית הגלישה, תגיות וקודי זמן. אתר אינטרנט',
     settings_cub_account: 'חשבון',
     settings_cub_logged_in_as: 'מחובר בתור',
     settings_cub_profile: 'פרופיל',
