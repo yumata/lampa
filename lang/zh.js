@@ -1032,6 +1032,7 @@ export default {
     settings_rest_cache_only_descr: '基本设置将被保留',
     settings_rest_cache_all: '清除缓存和数据',
     settings_rest_cache_all_descr: '所有设置和数据将被清除',
+    settings_rest_cache_calculate: '还剩多少内存',
 
     title_left:'左边',
 }

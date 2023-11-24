@@ -1086,6 +1086,7 @@ export default {
     settings_rest_cache_only_descr: 'Асноўныя налады застануцца',
     settings_rest_cache_all: 'Кеш і дадзеныя',
     settings_rest_cache_all_descr: 'Будуць ачышчаныя ўсе налады і дадзеныя',
+    settings_rest_cache_calculate: 'Колькі засталося памяці',
 
     title_left:'Засталося',
 }

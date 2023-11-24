@@ -983,4 +983,5 @@ export default {
     settings_rest_cache_all: 'זיכרון מטמון ונתונים',
     settings_rest_cache_all_descr: 'כל הגדרות והנתונים יימחקו',
     title_left:'שמאלה',
+    settings_rest_cache_calculate: 'כמה זיכרון נשאר',
 }

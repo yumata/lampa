@@ -1047,6 +1047,7 @@ export default {
     settings_rest_cache_only_descr: 'Базові налаштування залишаться',
     settings_rest_cache_all: 'Кеш та дані',
     settings_rest_cache_all_descr: 'Будуть очищені всі налаштування та дані',
+    settings_rest_cache_calculate: 'Скільки залишилося пам\'яті',
 
     title_left:'Залишилось',
 }
