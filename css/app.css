@@ -5794,6 +5794,14 @@ body.true--mobile .search .search-source:not(.active) {
           align-items: center;
 }
 
+body.true--mobile .simple-keyboard--with-mic {
+  position: relative;
+}
+body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
+  position: absolute;
+  top: 100%;
+}
+
 .modal {
   position: fixed;
   top: 0;
