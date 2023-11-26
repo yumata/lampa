@@ -976,6 +976,51 @@ body.true--mobile.orientation--landscape .head .head__body {
   padding-right: 10em;
 }
 
+.processing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.processing > div {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3em;
+}
+.processing__loader {
+  background-image: url(../img/loader.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+  width: 1.6em;
+  height: 1.6em;
+}
+.processing__text {
+  padding-left: 0.5em;
+  padding-right: 0.3em;
+}
+
 .navigation-tabs {
   padding: 0.4em;
   background-color: rgba(0, 0, 0, 0.3);
