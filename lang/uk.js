@@ -1050,4 +1050,10 @@ export default {
     settings_rest_cache_calculate: 'Скільки залишилося пам\'яті',
 
     title_left:'Залишилось',
+
+    account_export_fail_500: 'Невідома помилка',
+    account_export_fail_610: 'Ви вичерпали ліміт на сьогодні',
+    account_export_fail_200: 'Помилка бази даних, спробуйте пізніше',
+    account_export_fail_600: 'Помилка, не вдалося завантажити файл',
+    account_export_fail_620: 'Помилка, файл не передано',
 }

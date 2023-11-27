@@ -1070,4 +1070,10 @@ export default {
     settings_rest_cache_calculate: 'Quanta memória resta',
 
     title_left:'Esquerda',
+
+    account_export_fail_500: 'Erro desconhecido',
+    account_export_fail_610: 'Você ultrapassou o limite para hoje',
+    account_export_fail_200: 'Erro no banco de dados, por favor, tente novamente mais tarde',
+    account_export_fail_600: 'Erro, falha ao carregar o arquivo',
+    account_export_fail_620: 'Erro, arquivo não transmitido',
 }

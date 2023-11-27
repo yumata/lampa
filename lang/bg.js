@@ -1084,4 +1084,10 @@ export default {
     settings_rest_cache_calculate: 'Колко памет остава',
 
     title_left:'Наляво',
+
+    account_export_fail_500: 'Непозната грешка',
+    account_export_fail_610: 'Изчерпахте лимита за днес',
+    account_export_fail_200: 'Грешка в базата данни, опитайте отново по-късно',
+    account_export_fail_600: 'Грешка, неуспешно качване на файл',
+    account_export_fail_620: 'Грешка, файлът не е предаден',
 }
