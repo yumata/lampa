@@ -4404,6 +4404,22 @@ body.true--mobile.orientation--portrait .player-video__paused {
     font-size: 1.6em;
   }
 }
+.player-panel-iptv-item__icons-item {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  padding: 0.2em;
+  margin-left: 0.5em;
+  margin-top: -0.2em;
+  vertical-align: middle;
+}
+.player-panel-iptv-item__icons-item svg,
+.player-panel-iptv-item__icons-item img {
+  width: 0.5em !important;
+  height: 0.5em !important;
+}
 .player-panel-iptv-item__prog {
   display: -webkit-box;
   display: -webkit-flex;
