@@ -984,4 +984,9 @@ export default {
     settings_rest_cache_all_descr: 'כל הגדרות והנתונים יימחקו',
     title_left:'שמאלה',
     settings_rest_cache_calculate: 'כמה זיכרון נשאר',
+    account_export_fail_500: 'שגיאה לא ידועה',
+    account_export_fail_610: 'חרגת מהגבלה של היום',
+    account_export_fail_200: 'שגיאת בסיס נתונים, אנא נסו שוב מאוחר יותר',
+    account_export_fail_600: 'שגיאה, כשל בהעלאת הקובץ',
+    account_export_fail_620: 'שגיאה, הקובץ לא הועבר'
 }

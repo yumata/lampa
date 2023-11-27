@@ -1089,4 +1089,10 @@ export default {
     settings_rest_cache_calculate: 'Колькі засталося памяці',
 
     title_left:'Засталося',
+
+    account_export_fail_500: 'Невядомая памылка',
+    account_export_fail_610: 'Вы выйшлі за мяжу ліміту на сёння',
+    account_export_fail_200: 'Памылка базы даных, паспрабуйце пазней',
+    account_export_fail_600: 'Памылка, не атрымалася загрузіць файл',
+    account_export_fail_620: 'Памылка, файл не перададзены',
 }

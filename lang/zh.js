@@ -1035,4 +1035,10 @@ export default {
     settings_rest_cache_calculate: '还剩多少内存',
 
     title_left:'左边',
+
+    account_export_fail_500: '未知错误',
+    account_export_fail_610: '您已超过今天的限制',
+    account_export_fail_200: '数据库错误，请稍后重试',
+    account_export_fail_600: '错误，无法上传文件',
+    account_export_fail_620: '错误，文件未传送',
 }

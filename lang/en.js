@@ -1085,4 +1085,10 @@ export default {
     settings_rest_cache_calculate: 'How much memory is left',
 
     title_left:'Left',
+
+    account_export_fail_500: 'Unknown error',
+    account_export_fail_610: 'You have exceeded the limit for today',
+    account_export_fail_200: 'Database error, please try again later',
+    account_export_fail_600: 'Error, failed to upload the file',
+    account_export_fail_620: 'Error, file not transmitted',
 }
