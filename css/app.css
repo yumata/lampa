@@ -4272,6 +4272,13 @@ body.true--mobile.orientation--portrait .player-video__paused {
 .player-panel.panel--paused .player-panel__playpause > div:last-child {
   display: none;
 }
+.player-panel.panel--norewind .player-panel__timeline,
+.player-panel.panel--norewind .player-panel__line-one {
+  display: none;
+}
+.player-panel.panel--norewind .player-panel__line-two {
+  margin-top: 0;
+}
 
 .player-panel-iptv {
   position: relative;
