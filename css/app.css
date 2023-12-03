@@ -2282,6 +2282,7 @@ body.settings--open .settings__content {
 }
 .card-parser + .card-more {
   width: 14.6em;
+  margin-left: 2em;
 }
 
 .card-watched {
