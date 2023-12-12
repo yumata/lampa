@@ -325,7 +325,8 @@ body.platform--browser .normalization {
           backdrop-filter: blur(5px);
 }
 
-body.platform--apple .normalization {
+body.platform--apple .normalization,
+body.selectbox--open .normalization {
   display: none;
 }
 

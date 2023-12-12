@@ -232,6 +232,25 @@ export default {
     settings_webos_launcher_add_device: 'Установить как стартовое',
     settings_webos_launcher_remove_device: 'Убрать из стартовых приложений',
 
+    settings_parental_control_param_time_always: 'Всегда',
+    settings_parental_control_param_time_once: 'Один раз',
+    settings_parental_control_param_time_10: 'Через 10 минут',
+    settings_parental_control_param_time_20: 'Через 20 минут',
+    settings_parental_control_param_time_30: 'Через 30 минут',
+    settings_parental_control_param_time_60: 'Через 1 час',
+    settings_parental_control_param_time_120: 'Через 2 часа',
+    settings_parental_control_change_pin: 'Изменить PIN-код',
+    settings_parental_control_demand_title: 'Когда запрашивать',
+    settings_parental_control_demand_descr: 'Через какое время запрашивать PIN-код',
+    settings_parental_control_enabled: 'Включено',
+    settings_parental_control_disabled: 'Отключено',
+
+    parental_control_input_new_code: 'Введите новый PIN-код',
+    parental_control_confirm_new_code: 'Повторите PIN-код',
+    parental_control_no_match_code: 'PIN-код не совпадает с прошлым кодом',
+    parental_control_input_code: 'Введите PIN-код',
+    parental_control_input_error: 'Вы ввели неправильный PIN-код',
+    
 
     torent_nohash_reasons: 'Причины',
     torent_nohash_reason_one: 'TorServer не смог скачать торрент файл',
@@ -417,6 +436,7 @@ export default {
     title_last_year: 'Прошлый год',
     title_reset: 'Перезагрузить',
     title_left:'Осталось',
+    title_parental_control: 'Родительский контроль',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
