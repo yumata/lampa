@@ -326,7 +326,8 @@ body.platform--browser .normalization {
 }
 
 body.platform--apple .normalization,
-body.selectbox--open .normalization {
+body.selectbox--open .normalization,
+body.keyboard-input--visible .normalization {
   display: none;
 }
 
@@ -3634,6 +3635,10 @@ body.true--mobile .full-episode .full-episode__body {
 
 body.selectbox--open .player .player-panel,
 body.selectbox--open .player .player-info {
+  display: none;
+}
+
+body.keyboard-input--visible .player {
   display: none;
 }
 
