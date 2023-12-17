@@ -1109,4 +1109,5 @@ export default {
     parental_control_no_match_code: 'PIN-кода не съвпада с предишния код',
     parental_control_input_code: 'Въведете PIN-код',
     parental_control_input_error: 'Въвели сте неправилен PIN-код',
+    title_worth_rewatch: 'Заслужава си повторно гледане',
 }

@@ -1008,4 +1008,5 @@ export default {
     parental_control_no_match_code: 'קוד PIN אינו תואם לקוד הקודם',
     parental_control_input_code: 'הזן קוד PIN',
     parental_control_input_error: 'הזנת קוד PIN שגוי',
+    title_worth_rewatch: 'שווה צפייה חוזרת',
 }

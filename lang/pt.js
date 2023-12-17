@@ -1095,4 +1095,5 @@ export default {
     parental_control_no_match_code: 'O código PIN não coincide com o código anterior',
     parental_control_input_code: 'Digite o código PIN',
     parental_control_input_error: 'Você digitou um código PIN incorreto',
+    title_worth_rewatch: 'Vale a pena assistir novamente',
 }
