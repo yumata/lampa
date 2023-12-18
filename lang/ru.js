@@ -437,6 +437,7 @@ export default {
     title_reset: 'Перезагрузить',
     title_left:'Осталось',
     title_parental_control: 'Родительский контроль',
+    title_worth_rewatch: 'Стоит пересмотреть',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',

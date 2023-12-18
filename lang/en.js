@@ -1110,4 +1110,5 @@ export default {
     parental_control_no_match_code: 'PIN code does not match the previous code',
     parental_control_input_code: 'Enter PIN code',
     parental_control_input_error: 'You entered an incorrect PIN code',
+    title_worth_rewatch: 'Worth a rewatch',
 }

@@ -1060,4 +1060,5 @@ export default {
     parental_control_no_match_code: 'PIN码与先前的代码不匹配',
     parental_control_input_code: '输入PIN码',
     parental_control_input_error: '您输入了错误的PIN码',
+    title_worth_rewatch: '值得再看一遍',
 }
