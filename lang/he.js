@@ -1009,4 +1009,6 @@ export default {
     parental_control_input_code: 'הזן קוד PIN',
     parental_control_input_error: 'הזנת קוד PIN שגוי',
     title_worth_rewatch: 'שווה צפייה חוזרת',
+
+    ad_disable: 'על ידי הרשמה ל-CUB Premium, תשכח מפרסום.'
 }

@@ -1111,4 +1111,6 @@ export default {
     parental_control_input_code: 'Enter PIN code',
     parental_control_input_error: 'You entered an incorrect PIN code',
     title_worth_rewatch: 'Worth a rewatch',
+
+    ad_disable: 'By subscribing to CUB Premium, you will forget about advertising.'
 }
