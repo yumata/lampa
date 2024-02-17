@@ -4273,6 +4273,36 @@ body.true--mobile.orientation--portrait .player-video__paused {
 .player-panel__iptv {
   display: none;
 }
+.player-panel__volume {
+  position: relative;
+}
+.player-panel__volume-drop {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0.3em;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
+}
+.player-panel__volume-range {
+  -webkit-appearance: slider-vertical;
+     -moz-appearance: slider-vertical;
+          appearance: slider-vertical;
+  width: 0.5em;
+  height: 8em;
+}
+.player-panel__volume:hover > div {
+  display: block;
+}
 .player-panel.panel--paused .player-panel__playpause > div:first-child {
   display: block;
 }
