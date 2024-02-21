@@ -1097,5 +1097,8 @@ export default {
     parental_control_input_error: 'Você digitou um código PIN incorreto',
     title_worth_rewatch: 'Vale a pena assistir novamente',
 
-    ad_disable: 'Ao assinar o CUB Premium, você esquecerá a publicidade.'
+    ad_disable: 'Ao assinar o CUB Premium, você esquecerá a publicidade.',
+    ad_after: 'Publicidade via',
+    ad: 'Anúncio',
+    ad_skip: 'Pular'
 }
