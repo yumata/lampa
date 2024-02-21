@@ -1077,5 +1077,8 @@ export default {
     parental_control_input_error: 'Ви ввели неправильний PIN-код',
     title_worth_rewatch: 'Варто переглянути',
 
-    ad_disable: 'Підписавшись на CUB Premium, ви забудьте про рекламу.'
+    ad_disable: 'Підписавшись на CUB Premium, ви забудете про рекламу.',
+    ad_after: 'Реклама через',
+    ad: 'Реклама',
+    ad_skip: 'Пропустити'
 }

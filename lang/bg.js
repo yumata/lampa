@@ -1111,5 +1111,8 @@ export default {
     parental_control_input_error: 'Въвели сте неправилен PIN-код',
     title_worth_rewatch: 'Заслужава си повторно гледане',
 
-    ad_disable: 'Като се абонирате за CUB Premium, ще забравите за рекламата.'
+    ad_disable: 'Като се абонирате за CUB Premium, ще забравите за рекламата.',
+    ad_after: 'Реклама чрез',
+    ad: 'Реклама',
+    ad_skip: 'Пропускане'
 }
