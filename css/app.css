@@ -6209,6 +6209,11 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
 .modal--cub-premium .modal__icon {
   margin-bottom: -2em;
 }
+@media screen and (min-width: 767px) {
+  .modal--cub-premium .modal__content {
+    max-width: 44%;
+  }
+}
 .modal--medium .modal__content {
   max-width: 60%;
 }

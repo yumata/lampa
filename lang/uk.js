@@ -1080,5 +1080,6 @@ export default {
     ad_disable: 'Підписавшись на CUB Premium, ви забудете про рекламу.',
     ad_after: 'Реклама через',
     ad: 'Реклама',
-    ad_skip: 'Пропустити'
+    ad_skip: 'Пропустити',
+    ad_continue_after: 'Перегляд розпочнеться через'
 }

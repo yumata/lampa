@@ -1065,5 +1065,6 @@ export default {
     ad_disable: '通过订阅 CUB Premium，您将忘记广告。',
     ad_after: '广告通过',
     ad: '广告',
-    ad_skip: '跳过'
+    ad_skip: '跳过',
+    ad_continue_after: '观看将于'
 }
