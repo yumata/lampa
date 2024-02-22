@@ -1013,5 +1013,6 @@ export default {
     ad_disable: 'על ידי הרשמה ל-CUB Premium, תשכח מפרסום.',
     ad_after: 'פרסום באמצעות',
     ad: 'פִּרסוּם',
-    ad_skip: 'לדלג'
+    ad_skip: 'לדלג',
+    ad_continue_after: 'הצפייה תתחיל בעוד'
 }

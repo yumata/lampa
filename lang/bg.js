@@ -1114,5 +1114,6 @@ export default {
     ad_disable: 'Като се абонирате за CUB Premium, ще забравите за рекламата.',
     ad_after: 'Реклама чрез',
     ad: 'Реклама',
-    ad_skip: 'Пропускане'
+    ad_skip: 'Пропускане',
+    ad_continue_after: 'Гледането ще започне в'
 }
