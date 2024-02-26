@@ -10504,6 +10504,15 @@ body.system--keyboard .search-box .simple-keyboard-input {
   color: #fff;
   text-shadow: 0 0em 0.4em #000;
 }
+.ad-video-block__info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  color: #fff;
+  text-shadow: 0 0em 0.4em #000;
+  font-size: 0.9em;
+}
 .ad-video-block__progress {
   background-color: rgba(0, 0, 0, 0.3);
 }
