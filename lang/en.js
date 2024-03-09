@@ -1119,4 +1119,6 @@ export default {
     ad_continue_after: 'Viewing will start in',
     settings_parser_prowlarr_link_descr: 'Provide a link to the Prowlarr server',
     settings_parser_prowlarr_key_descr: 'Located in the Prowlarr settings tab in the general category',
+    settings_player_torrent_type: 'Player type for torrents',
+    settings_player_torrent_type_descr: 'Which player to play torrents',
 }

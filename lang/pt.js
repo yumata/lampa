@@ -1104,4 +1104,6 @@ export default {
     ad_continue_after: 'A visualização começará em',
     settings_parser_prowlarr_link_descr: 'Forneça um link para o servidor Prowlarr',
     settings_parser_prowlarr_key_descr: 'Localizado na guia de configurações do Prowlarr na categoria geral',
+    settings_player_torrent_type: 'Tipo de player para torrents',
+    settings_player_torrent_type_descr: 'Qual player jogar torrents',
 }

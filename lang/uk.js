@@ -1084,4 +1084,6 @@ export default {
     ad_continue_after: 'Перегляд розпочнеться через',
     settings_parser_prowlarr_link_descr: 'Вкажіть посилання на сервер Prowlarr',
     settings_parser_prowlarr_key_descr: 'Знаходиться у вкладці налаштувань Prowlarr у категорії основне',
+    settings_player_torrent_type: 'Тип плеєра для торентів',
+    settings_player_torrent_type_descr: 'Яким плеєром відтворювати торренти',
 }
