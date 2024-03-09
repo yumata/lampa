@@ -1118,4 +1118,6 @@ export default {
     ad_continue_after: 'Гледането ще започне в',
     settings_parser_prowlarr_link_descr: 'Предоставете връзка към сървъра Prowlarr',
     settings_parser_prowlarr_key_descr: 'Намира се в раздела с настройки на Prowlarr в общата категория',
+    settings_player_torrent_type: 'Тип плеър за торенти',
+    settings_player_torrent_type_descr: 'На кой плеър да пускате торенти',
 }

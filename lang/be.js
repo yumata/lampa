@@ -1124,4 +1124,6 @@ export default {
 
     settings_parser_prowlarr_link_descr: 'Пазначце спасылку на сервер Prowlarr',
     settings_parser_prowlarr_key_descr: 'Знаходзіцца ва ўкладцы налад Prowlarr у катэгорыі асноўнае',
+    settings_player_torrent_type: 'Тып плэера для торэнтаў',
+    settings_player_torrent_type_descr: 'Якім плэерам прайграваць торэнты',
 }

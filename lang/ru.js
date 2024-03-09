@@ -175,6 +175,8 @@ export default {
     settings_player_type_descr: 'Каким плеером воспроизводить',
     settings_player_iptv_type: 'Тип плеера для IPTV',
     settings_player_iptv_type_descr: 'Каким плеером воспроизводить IPTV каналы',
+    settings_player_torrent_type: 'Тип плеера для торрентов',
+    settings_player_torrent_type_descr: 'Каким плеером воспроизводить торренты',
     settings_player_reset: 'Сбросить плеер по умолчанию',
     settings_player_reset_descr: 'Сбрасывает выбранный Android плеер в приложении',
     settings_player_path: 'Путь к плееру',
