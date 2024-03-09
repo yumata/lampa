@@ -1101,5 +1101,7 @@ export default {
     ad_after: 'Publicidade via',
     ad: 'Anúncio',
     ad_skip: 'Pular',
-    ad_continue_after: 'A visualização começará em'
+    ad_continue_after: 'A visualização começará em',
+    settings_parser_prowlarr_link_descr: 'Forneça um link para o servidor Prowlarr',
+    settings_parser_prowlarr_key_descr: 'Localizado na guia de configurações do Prowlarr na categoria geral',
 }
