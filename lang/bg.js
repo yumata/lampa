@@ -1115,5 +1115,7 @@ export default {
     ad_after: 'Реклама чрез',
     ad: 'Реклама',
     ad_skip: 'Пропускане',
-    ad_continue_after: 'Гледането ще започне в'
+    ad_continue_after: 'Гледането ще започне в',
+    settings_parser_prowlarr_link_descr: 'Предоставете връзка към сървъра Prowlarr',
+    settings_parser_prowlarr_key_descr: 'Намира се в раздела с настройки на Prowlarr в общата категория',
 }
