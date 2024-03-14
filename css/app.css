@@ -3817,7 +3817,8 @@ body.true--mobile .full-episode .full-episode__body {
 }
 .player.tv .player-panel__timeline,
 .player.tv .player-panel__center,
-.player.tv .player-panel__timeline + .player-panel__line {
+.player.tv .player-panel__timeline + .player-panel__line,
+.player.tv .player-panel__timeline + .player-panel__iptv + .player-panel__line {
   display: none;
 }
 .player.tv .player-panel__line + .player-panel__line {
