@@ -47,6 +47,9 @@ export default {
     full_directing: 'Режиссура',
     full_writing: 'Сценарий',
     full_keywords: 'Теги',
+    full_crew: 'Еще',
+    full_editing: 'Редактирование',
+    full_creator: 'Создатель',
 
     settings_cub_sync: 'Синхронизация',
     settings_cub_sync_descr: 'Синхронизация с сервисом CUB: синхронизация ваших закладок, истории просмотров, меток и тайм-кодов. Сайт: www.cub.red',

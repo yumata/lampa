@@ -1120,4 +1120,8 @@ export default {
     settings_parser_prowlarr_key_descr: 'Намира се в раздела с настройки на Prowlarr в общата категория',
     settings_player_torrent_type: 'Тип плеър за торенти',
     settings_player_torrent_type_descr: 'На кой плеър да пускате торенти',
+
+    full_crew: 'Още',
+    full_editing: 'Редакция',
+    full_creator: 'Създател',
 }

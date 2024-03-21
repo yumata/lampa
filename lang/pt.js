@@ -1106,4 +1106,8 @@ export default {
     settings_parser_prowlarr_key_descr: 'Localizado na guia de configurações do Prowlarr na categoria geral',
     settings_player_torrent_type: 'Tipo de player para torrents',
     settings_player_torrent_type_descr: 'Qual player jogar torrents',
+
+    full_crew: 'Mais',
+    full_editing: 'Edição',
+    full_creator: 'Criador'
 }

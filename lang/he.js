@@ -1019,4 +1019,8 @@ export default {
     settings_parser_prowlarr_key_descr: 'ממוקם בלשונית הגדרות Prowlarr בקטגוריה הכללית',
     settings_player_torrent_type: 'סוג נגן עבור טורנטים',
     settings_player_torrent_type_descr: 'באיזה שחקן לשחק טורנטים',
+
+    full_crew: 'עוד',
+    full_editing: 'עריכה',
+    full_creator: 'יוצר'
 }
