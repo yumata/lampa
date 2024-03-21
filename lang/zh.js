@@ -1071,4 +1071,8 @@ export default {
     settings_parser_prowlarr_key_descr: '位于常规类别中的 Prowlarr 设置选项卡中',
     settings_player_torrent_type: '种子播放器类型',
     settings_player_torrent_type_descr: '哪个玩家可以玩种子',
+
+    full_crew: '更多',
+    full_editing: '编辑',
+    full_creator: '创建者'
 }
