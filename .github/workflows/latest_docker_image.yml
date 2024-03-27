@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    name: Build multi-arch Docker image.
+    name: Build multi-arch Docker image latest.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

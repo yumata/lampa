@@ -6,7 +6,7 @@ on:
 
 jobs:
   docker:
-    name: Build multi-arch Docker image.
+    name: Build multi-arch Docker image release.
     runs-on: ubuntu-latest
     steps:
       - name: tag number
