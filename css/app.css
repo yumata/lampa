@@ -10602,6 +10602,52 @@ body.system--keyboard .search-box .simple-keyboard-input {
   opacity: 1;
 }
 
+.ad-server {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  margin: 1.5em 2em;
+}
+.ad-server__text {
+  padding: 1em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1.4;
+}
+.ad-server__qr {
+  width: 8em;
+  height: 8em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.ad-server__label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ffe216;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  padding: 0.5em;
+  color: #000;
+}
+
 .online {
   padding: 1.2em;
   -webkit-border-radius: 0.3em;
