@@ -3898,6 +3898,13 @@ video::-webkit-media-controls-panel-container {
        -o-transform-origin: left top;
           transform-origin: left top;
 }
+.player-video__youtube iframe.minimize {
+  -webkit-transform: scale(0.5);
+     -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+       -o-transform: scale(0.5);
+          transform: scale(0.5);
+}
 .player-video__youtube-line-top, .player-video__youtube-line-bottom {
   position: fixed;
   left: 0;
