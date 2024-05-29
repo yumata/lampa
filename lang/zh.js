@@ -285,6 +285,7 @@ export default {
     title_actor: '演员',
     title_actress: '女演员',
     title_person: '个人',
+    title_persons: '人',
     title_comments: '评论',
     title_torrents: '种子',
     title_trailers: '预告片',
@@ -1062,7 +1063,7 @@ export default {
     parental_control_input_error: '您输入了错误的PIN码',
     title_worth_rewatch: '值得再看一遍',
 
-    ad_disable: '通过订阅 CUB Premium，您将忘记广告。',
+    ad_disable: '通过订阅 CUB Premium，您将不受广告打扰。',
     ad_after: '广告通过',
     ad: '广告',
     ad_skip: '跳过',
@@ -1070,7 +1071,7 @@ export default {
     settings_parser_prowlarr_link_descr: '提供 Prowlarr 服务器的链接',
     settings_parser_prowlarr_key_descr: '位于常规类别中的 Prowlarr 设置选项卡中',
     settings_player_torrent_type: '种子播放器类型',
-    settings_player_torrent_type_descr: '哪个玩家可以玩种子',
+    settings_player_torrent_type_descr: '哪个播放器可以播放种子中的视频',
 
     full_crew: '更多',
     full_editing: '编辑',
