@@ -285,6 +285,7 @@ export default {
     title_actor: 'Актор',
     title_actress: 'Актриса',
     title_person: 'Персона',
+    title_persons: 'Особи',
     title_comments: 'Коментарі',
     title_torrents: 'Торренти',
     title_trailers: 'Трейлери',
