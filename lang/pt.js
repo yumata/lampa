@@ -305,6 +305,7 @@ export default {
     title_actor: 'Ator',
     title_actress: 'Atriz',
     title_person: 'Pessoa',
+    title_persons: 'Pessoas',
     title_comments: 'Comentários',
     title_torrents: 'Torrents',
     title_trailers: 'Trailers',
