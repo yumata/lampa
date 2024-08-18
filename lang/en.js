@@ -1126,4 +1126,5 @@ export default {
     full_crew: 'More',
     full_editing: 'Editing',
     full_creator: 'Creator',
+    player_normalization_step_none: 'Zero',
 }

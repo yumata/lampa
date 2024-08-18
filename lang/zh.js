@@ -1075,5 +1075,6 @@ export default {
 
     full_crew: '更多',
     full_editing: '编辑',
-    full_creator: '创建者'
+    full_creator: '创建者',
+    player_normalization_step_none: '零',
 }

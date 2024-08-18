@@ -1090,5 +1090,6 @@ export default {
 
     full_crew: 'Ще',
     full_editing: 'Редагування',
-    full_creator: 'Творець'
+    full_creator: 'Творець',
+    player_normalization_step_none: 'Нульова',
 }

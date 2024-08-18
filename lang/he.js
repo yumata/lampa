@@ -1023,5 +1023,6 @@ export default {
 
     full_crew: 'עוד',
     full_editing: 'עריכה',
-    full_creator: 'יוצר'
+    full_creator: 'יוצר',
+    player_normalization_step_none: 'אֶפֶס',
 }
