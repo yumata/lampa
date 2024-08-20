@@ -1131,4 +1131,5 @@ export default {
     full_crew: 'Яшчэ',
     full_editing: 'Рэдагаванне',
     full_creator: 'Стваральнік',
+    player_normalization_step_none: 'Нулявая',
 }

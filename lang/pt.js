@@ -1110,5 +1110,6 @@ export default {
 
     full_crew: 'Mais',
     full_editing: 'Edição',
-    full_creator: 'Criador'
+    full_creator: 'Criador',
+    player_normalization_step_none: 'Zero',
 }

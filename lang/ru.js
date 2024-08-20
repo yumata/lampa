@@ -897,6 +897,7 @@ export default {
     player_share_descr: 'Запустить это видео на другом устройстве',
     player_normalization_power_title: 'Сила нормализации',
     player_normalization_smooth_title: 'Скорость нормализации',
+    player_normalization_step_none: 'Нулевая',
     player_normalization_step_low: 'Низкое',
     player_normalization_step_medium: 'Среднее',
     player_normalization_step_hight: 'Высокое',

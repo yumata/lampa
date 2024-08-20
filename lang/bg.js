@@ -1125,4 +1125,5 @@ export default {
     full_crew: 'Още',
     full_editing: 'Редакция',
     full_creator: 'Създател',
+    player_normalization_step_none: 'Нула',
 }
