@@ -1168,6 +1168,8 @@ body.true--mobile .head__action.open--settings {
 }
 body.true--mobile .head__menu-icon {
   display: block;
+  margin-left: 0.3em;
+  margin-right: 1.2em;
 }
 body.true--mobile .head__action {
   margin-left: 1em;
