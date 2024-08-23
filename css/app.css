@@ -4214,6 +4214,14 @@ body.true--mobile.orientation--portrait .player-video__paused {
        -o-transform: translateY(0);
           transform: translateY(0);
 }
+.player-panel.panel--footer-open {
+  -webkit-transform: translateY(-130%);
+     -moz-transform: translateY(-130%);
+      -ms-transform: translateY(-130%);
+       -o-transform: translateY(-130%);
+          transform: translateY(-130%);
+  opacity: 0;
+}
 .player-panel__body {
   padding: 1.5em;
   position: relative;
@@ -5025,6 +5033,129 @@ body.true--mobile .player-info .head-backward__button {
 }
 .player.iptv .player-info__values {
   margin-top: 0;
+}
+
+.player-footer {
+  position: fixed;
+  left: 1.5em;
+  bottom: 1.5em;
+  right: 1.5em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(130%);
+     -moz-transform: translateY(130%);
+      -ms-transform: translateY(130%);
+       -o-transform: translateY(130%);
+          transform: translateY(130%);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+  width: auto;
+  -webkit-border-radius: 0.5em;
+     -moz-border-radius: 0.5em;
+          border-radius: 0.5em;
+}
+@media screen and (max-width: 480px) {
+  .player-footer {
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+.player-footer.open {
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+          transform: translateY(0);
+}
+.player-footer__body {
+  padding: 1.5em;
+  position: relative;
+}
+
+.player-footer-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.4;
+}
+.player-footer-card__left {
+  width: 7em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.player-footer-card__tags {
+  margin-bottom: 0.7em;
+}
+.player-footer-card__title {
+  font-size: 1.8em;
+}
+.player-footer-card__body {
+  padding-left: 2em;
+  padding-top: 0.5em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.player-footer-card__poster {
+  position: relative;
+  padding-bottom: 150%;
+}
+.player-footer-card__poster img {
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.player-footer-card__text {
+  overflow: hidden;
+  -o-text-overflow: ".";
+  text-overflow: ".";
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  width: 70%;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.player-footer-card.notext .player-footer-card__text > * {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  height: 0.8em;
+  margin-top: 0.6em;
+}
+.player-footer-card.notext .player-footer-card__text > *:nth-child(1) {
+  width: 80%;
+}
+.player-footer-card.notext .player-footer-card__text > *:nth-child(2) {
+  width: 100%;
+}
+.player-footer-card.notext .player-footer-card__text > *:nth-child(3) {
+  width: 60%;
+}
+
+body.platform--browser .player-footer,
+body.platform--nw .player-footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
 }
 
 .selectbox {
@@ -11192,6 +11323,7 @@ body.glass--style-opacity--medium .navigation-bar__body {
 }
 body.glass--style-opacity--medium .player-panel,
 body.glass--style-opacity--medium .player-info,
+body.glass--style-opacity--medium .player-footer,
 body.glass--style-opacity--medium .player-video__paused,
 body.glass--style-opacity--medium .player-video__loader,
 body.glass--style-opacity--medium .normalization {
@@ -11209,6 +11341,7 @@ body.glass--style-opacity--blacked .navigation-bar__body {
 }
 body.glass--style-opacity--blacked .player-panel,
 body.glass--style-opacity--blacked .player-info,
+body.glass--style-opacity--blacked .player-footer,
 body.glass--style-opacity--blacked .player-video__paused,
 body.glass--style-opacity--blacked .player-video__loader,
 body.glass--style-opacity--blacked .normalization {
