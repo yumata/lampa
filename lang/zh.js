@@ -1077,4 +1077,7 @@ export default {
     full_editing: '编辑',
     full_creator: '创建者',
     player_normalization_step_none: '零',
+
+    settings_cub_backup_export_descr: '将设置保存到云端',
+    settings_cub_backup_import_descr: '从云端恢复设置',
 }

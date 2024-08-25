@@ -1126,4 +1126,7 @@ export default {
     full_editing: 'Редакция',
     full_creator: 'Създател',
     player_normalization_step_none: 'Нула',
+
+    settings_cub_backup_export_descr: 'Запазете настройките в облака',
+    settings_cub_backup_import_descr: 'Възстановете настройките от облака',
 }

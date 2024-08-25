@@ -1127,4 +1127,7 @@ export default {
     full_editing: 'Editing',
     full_creator: 'Creator',
     player_normalization_step_none: 'Zero',
+
+    settings_cub_backup_export_descr: 'Save settings to the cloud',
+    settings_cub_backup_import_descr: 'Restore settings from the cloud',
 }

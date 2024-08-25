@@ -1092,4 +1092,7 @@ export default {
     full_editing: 'Редагування',
     full_creator: 'Творець',
     player_normalization_step_none: 'Нульова',
+
+    settings_cub_backup_export_descr: 'Зберегти налаштування у хмару',
+    settings_cub_backup_import_descr: 'Відновити налаштування з хмари',
 }

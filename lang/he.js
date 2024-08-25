@@ -1025,4 +1025,7 @@ export default {
     full_editing: 'עריכה',
     full_creator: 'יוצר',
     player_normalization_step_none: 'אֶפֶס',
+
+    settings_cub_backup_export_descr: 'שמור הגדרות בענן',
+    settings_cub_backup_import_descr: 'שחזר הגדרות מהענן',
 }

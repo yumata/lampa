@@ -67,6 +67,8 @@ export default {
     settings_cub_status: 'Статус',
     settings_cub_backup_import: 'Импорт',
     settings_cub_backup_export: 'Экспорт',
+    settings_cub_backup_export_descr: 'Сохранить настройки в облако',
+    settings_cub_backup_import_descr: 'Восстановить настройки из облака',
     settings_cub_sync_filters: 'Синхронизация фильтров',
     settings_cub_sync_calendar: 'Синхронизация календаря',
     settings_cub_sync_quality: 'Синхронизация отметок (качество)',
