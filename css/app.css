@@ -5084,6 +5084,12 @@ body.true--mobile .player-info .head-backward__button {
   padding: 1.5em;
   position: relative;
 }
+.player-footer .card-watched__body .card-watched__item {
+  display: none;
+}
+.player-footer .card-watched__body .card-watched__item:nth-child(1), .player-footer .card-watched__body .card-watched__item:nth-child(2) {
+  display: block;
+}
 
 .player-footer-card {
   display: -webkit-box;
@@ -5166,6 +5172,14 @@ body.platform--nw .player-footer {
           backdrop-filter: blur(1em);
 }
 
+@media screen and (min-width: 767px) {
+  body.size--bigger .player-footer .card--collection {
+    font-size: 1em;
+  }
+  body.size--bigger .player-footer .card--collection {
+    width: 25%;
+  }
+}
 .selectbox {
   position: fixed;
   top: 0;
