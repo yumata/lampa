@@ -5165,6 +5165,10 @@ body.true--mobile .player-info .head-backward__button {
   width: 60%;
 }
 
+.player-footer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 body.platform--browser .player-footer,
 body.platform--nw .player-footer {
   background-color: rgba(0, 0, 0, 0.3);
