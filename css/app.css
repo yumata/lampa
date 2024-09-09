@@ -2242,19 +2242,17 @@ body.settings--open .settings__content {
 }
 .card__vote {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 0.3em;
+  bottom: 0.3em;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 700;
-  padding: 0.2em;
-  -webkit-border-top-left-radius: 0.3em;
-     -moz-border-radius-topleft: 0.3em;
-          border-top-left-radius: 0.3em;
-  -webkit-border-bottom-right-radius: 0.6em;
-     -moz-border-radius-bottomright: 0.6em;
-          border-bottom-right-radius: 0.6em;
+  font-weight: 700;
+  padding: 0.2em 0.5em;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
 }
 .card__textbox {
   position: absolute;
@@ -5177,6 +5175,10 @@ body.platform--nw .player-footer {
 }
 
 @media screen and (min-width: 767px) {
+  .player-footer .card {
+    margin-bottom: 0 !important;
+  }
+
   body.size--bigger .player-footer .card--collection {
     font-size: 1em;
   }
@@ -9129,6 +9131,14 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
   background-color: #fff;
   color: #000;
 }
+.simple-button--filter {
+  overflow: hidden;
+}
+.simple-button--filter > span {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
 .simple-button--filter > div {
   font-size: 0.7em;
   padding: 0.3em 0.5em;
@@ -9137,6 +9147,10 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
   margin-left: 1em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .simple-button--filter > div::first-letter {
   text-transform: uppercase;
