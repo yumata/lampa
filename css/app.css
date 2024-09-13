@@ -9131,9 +9131,6 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
   background-color: #fff;
   color: #000;
 }
-.simple-button--filter {
-  overflow: hidden;
-}
 .simple-button--filter > span {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -9147,13 +9144,20 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
   margin-left: 1em;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .simple-button--filter > div::first-letter {
   text-transform: uppercase;
+}
+@media screen and (min-width: 767px) {
+  .simple-button--filter {
+    overflow: hidden;
+  }
+  .simple-button--filter > div {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 .simple-button--invisible:not(.focus) {
   background-color: rgba(0, 0, 0, 0.07);
