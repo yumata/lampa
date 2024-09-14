@@ -5395,6 +5395,47 @@ body.selectbox--open .selectbox__content {
   background-color: #fff;
 }
 
+.birthday__poster {
+  position: relative;
+  padding-bottom: 65%;
+  background: url("../img/loader.svg") no-repeat 50% 50%;
+}
+.birthday__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.birthday__text {
+  line-height: 1.4;
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+.birthday__text a {
+  text-decoration: none;
+  color: #D8C39A;
+}
+.birthday.loaded .birthday__img {
+  opacity: 1;
+}
+.birthday.noload .birthday__poster {
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  background: #585858 url("../img/logo.svg") no-repeat 50% 50%;
+}
+
 .info {
   display: -webkit-box;
   display: -webkit-flex;
