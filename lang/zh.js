@@ -1083,5 +1083,6 @@ export default {
 
     settings_interface_sound: '系统声音',
     settings_interface_sound_play: '过渡',
-    settings_interface_sound_level: '音量级别'
+    settings_interface_sound_level: '音量级别',
+    settings_interface_advanced_animation: '高级动画',
 }

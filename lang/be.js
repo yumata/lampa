@@ -1138,5 +1138,6 @@ export default {
 
     settings_interface_sound: 'Сістэмныя гукі',
     settings_interface_sound_play: 'Пераходы',
-    settings_interface_sound_level: 'Узровень гучнасці'
+    settings_interface_sound_level: 'Узровень гучнасці',
+    settings_interface_advanced_animation: 'Продвинутая анимация',
 }

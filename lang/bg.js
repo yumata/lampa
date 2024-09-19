@@ -1132,5 +1132,6 @@ export default {
 
     settings_interface_sound: 'Системни звуци',
     settings_interface_sound_play: 'Преходи',
-    settings_interface_sound_level: 'Ниво на звука'
+    settings_interface_sound_level: 'Ниво на звука',
+    settings_interface_advanced_animation: 'Разширена анимация',
 }

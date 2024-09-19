@@ -1098,5 +1098,6 @@ export default {
 
     settings_interface_sound: 'Системні звуки',
     settings_interface_sound_play: 'Переходи',
-    settings_interface_sound_level: 'Рівень гучності'
+    settings_interface_sound_level: 'Рівень гучності',
+    settings_interface_advanced_animation: 'Просунута анімація',
 }

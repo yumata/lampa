@@ -86,6 +86,7 @@ export default {
     settings_interface_background_type: 'Тип фона',
     settings_interface_performance: 'Быстродействие',
     settings_interface_animation: 'Анимация',
+    settings_interface_advanced_animation: 'Продвинутая анимация',
     settings_interface_animation_descr: 'Анимация карточек и контента',
     settings_interface_attenuation: 'Затухание',
     settings_interface_attenuation_descr: 'Плавное затухание карточек снизу и сверху',

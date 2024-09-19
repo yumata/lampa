@@ -1031,5 +1031,6 @@ export default {
 
     settings_interface_sound: 'צלילי מערכת',
     settings_interface_sound_play: 'מעברים',
-    settings_interface_sound_level: 'רמת עוצמת הקול'
+    settings_interface_sound_level: 'רמת עוצמת הקול',
+    settings_interface_advanced_animation: 'אנימציה מתקדמת',
 }

@@ -1118,5 +1118,6 @@ export default {
 
     settings_interface_sound: 'Sons do sistema',
     settings_interface_sound_play: 'Transições',
-    settings_interface_sound_level: 'Nível de volume'
+    settings_interface_sound_level: 'Nível de volume',
+    settings_interface_advanced_animation: 'Animação Avançada',
 }
