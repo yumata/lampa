@@ -105,6 +105,10 @@ export default {
     settings_interface_hide_outside_the_screen: 'Скрывать карточки за пределами экрана',
     settings_interface_hide_outside_the_screen_descr: 'Это ускорит рендер интерфейса и улучшит производительность',
 
+    settings_interface_sound: 'Системные звуки',
+    settings_interface_sound_play: 'Переходы',
+    settings_interface_sound_level: 'Уровень громкости',
+
     settings_main_account: 'Аккаунт',
     settings_main_interface: 'Интерфейс',
     settings_main_player: 'Плеер',

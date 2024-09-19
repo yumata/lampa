@@ -1095,4 +1095,8 @@ export default {
 
     settings_cub_backup_export_descr: 'Зберегти налаштування у хмару',
     settings_cub_backup_import_descr: 'Відновити налаштування з хмари',
+
+    settings_interface_sound: 'Системні звуки',
+    settings_interface_sound_play: 'Переходи',
+    settings_interface_sound_level: 'Рівень гучності'
 }

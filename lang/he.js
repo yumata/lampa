@@ -1028,4 +1028,8 @@ export default {
 
     settings_cub_backup_export_descr: 'שמור הגדרות בענן',
     settings_cub_backup_import_descr: 'שחזר הגדרות מהענן',
+
+    settings_interface_sound: 'צלילי מערכת',
+    settings_interface_sound_play: 'מעברים',
+    settings_interface_sound_level: 'רמת עוצמת הקול'
 }

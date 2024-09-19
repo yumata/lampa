@@ -1080,4 +1080,8 @@ export default {
 
     settings_cub_backup_export_descr: '将设置保存到云端',
     settings_cub_backup_import_descr: '从云端恢复设置',
+
+    settings_interface_sound: '系统声音',
+    settings_interface_sound_play: '过渡',
+    settings_interface_sound_level: '音量级别'
 }

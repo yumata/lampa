@@ -1135,4 +1135,8 @@ export default {
 
     settings_cub_backup_export_descr: 'Захаваць наладкі ў воблака',
     settings_cub_backup_import_descr: 'Аднавіць налады з аблокі',
+
+    settings_interface_sound: 'Сістэмныя гукі',
+    settings_interface_sound_play: 'Пераходы',
+    settings_interface_sound_level: 'Узровень гучнасці'
 }
