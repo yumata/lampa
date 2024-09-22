@@ -1753,6 +1753,18 @@ body.light--version .menu__item {
   border-bottom: 2px solid rgba(221, 221, 221, 0.06);
   padding: 0.6em 0;
 }
+.settings-input__input.filled::after {
+  content: "";
+  display: inline-block;
+  border-right: 0.15em solid #fff;
+  height: 1em;
+  margin: -1em 0;
+  margin-left: 0.1em;
+  -webkit-animation: animation-search-input-line 0.8s infinite;
+     -moz-animation: animation-search-input-line 0.8s infinite;
+       -o-animation: animation-search-input-line 0.8s infinite;
+          animation: animation-search-input-line 0.8s infinite;
+}
 .settings-input__links {
   margin-top: 1em;
   background: rgba(221, 221, 221, 0.06);
@@ -5821,6 +5833,53 @@ body.platform--netcast .category-full:after {
   clear: both;
 }
 
+@-webkit-keyframes animation-search-input-line {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes animation-search-input-line {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes animation-search-input-line {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-search-input-line {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .search {
   position: fixed;
   top: 0;
@@ -5842,6 +5901,18 @@ body.platform--netcast .category-full:after {
   font-size: 2em;
   margin-bottom: 0.7em;
   padding-left: 0.7em;
+}
+.search__input.filled::after {
+  content: "";
+  display: inline-block;
+  border-right: 0.15em solid #fff;
+  height: 1em;
+  margin: -1em 0;
+  margin-left: 0.1em;
+  -webkit-animation: animation-search-input-line 0.8s infinite;
+     -moz-animation: animation-search-input-line 0.8s infinite;
+       -o-animation: animation-search-input-line 0.8s infinite;
+          animation: animation-search-input-line 0.8s infinite;
 }
 .search__keypad {
   padding: 0 1.5em;
@@ -9245,6 +9316,18 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 .search-box .search__input {
   padding-left: 0;
   width: 50%;
+}
+.search-box .search__input.filled::after {
+  content: "";
+  display: inline-block;
+  border-right: 0.15em solid #fff;
+  height: 1em;
+  margin: -1em 0;
+  margin-left: 0.1em;
+  -webkit-animation: animation-search-input-line 0.8s infinite;
+     -moz-animation: animation-search-input-line 0.8s infinite;
+       -o-animation: animation-search-input-line 0.8s infinite;
+          animation: animation-search-input-line 0.8s infinite;
 }
 @media screen and (max-width: 767px) {
   .search-box .search__input {
