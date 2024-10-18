@@ -1127,4 +1127,12 @@ export default {
     full_editing: 'Editing',
     full_creator: 'Creator',
     player_normalization_step_none: 'Zero',
+
+    settings_cub_backup_export_descr: 'Save settings to the cloud',
+    settings_cub_backup_import_descr: 'Restore settings from the cloud',
+
+    settings_interface_sound: 'System sounds',
+    settings_interface_sound_play: 'Transitions',
+    settings_interface_sound_level: 'Volume level',
+    settings_interface_advanced_animation: 'Advanced animation',
 }

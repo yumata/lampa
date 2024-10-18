@@ -67,6 +67,8 @@ export default {
     settings_cub_status: 'Статус',
     settings_cub_backup_import: 'Импорт',
     settings_cub_backup_export: 'Экспорт',
+    settings_cub_backup_export_descr: 'Сохранить настройки в облако',
+    settings_cub_backup_import_descr: 'Восстановить настройки из облака',
     settings_cub_sync_filters: 'Синхронизация фильтров',
     settings_cub_sync_calendar: 'Синхронизация календаря',
     settings_cub_sync_quality: 'Синхронизация отметок (качество)',
@@ -84,6 +86,7 @@ export default {
     settings_interface_background_type: 'Тип фона',
     settings_interface_performance: 'Быстродействие',
     settings_interface_animation: 'Анимация',
+    settings_interface_advanced_animation: 'Продвинутая анимация',
     settings_interface_animation_descr: 'Анимация карточек и контента',
     settings_interface_attenuation: 'Затухание',
     settings_interface_attenuation_descr: 'Плавное затухание карточек снизу и сверху',
@@ -102,6 +105,10 @@ export default {
     settings_interface_black_style: 'Чёрный стиль',
     settings_interface_hide_outside_the_screen: 'Скрывать карточки за пределами экрана',
     settings_interface_hide_outside_the_screen_descr: 'Это ускорит рендер интерфейса и улучшит производительность',
+
+    settings_interface_sound: 'Системные звуки',
+    settings_interface_sound_play: 'Переходы',
+    settings_interface_sound_level: 'Уровень громкости',
 
     settings_main_account: 'Аккаунт',
     settings_main_interface: 'Интерфейс',
