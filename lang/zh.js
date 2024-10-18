@@ -1077,4 +1077,12 @@ export default {
     full_editing: '编辑',
     full_creator: '创建者',
     player_normalization_step_none: '零',
+
+    settings_cub_backup_export_descr: '将设置保存到云端',
+    settings_cub_backup_import_descr: '从云端恢复设置',
+
+    settings_interface_sound: '系统声音',
+    settings_interface_sound_play: '过渡',
+    settings_interface_sound_level: '音量级别',
+    settings_interface_advanced_animation: '高级动画',
 }

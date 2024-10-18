@@ -1126,4 +1126,12 @@ export default {
     full_editing: 'Редакция',
     full_creator: 'Създател',
     player_normalization_step_none: 'Нула',
+
+    settings_cub_backup_export_descr: 'Запазете настройките в облака',
+    settings_cub_backup_import_descr: 'Възстановете настройките от облака',
+
+    settings_interface_sound: 'Системни звуци',
+    settings_interface_sound_play: 'Преходи',
+    settings_interface_sound_level: 'Ниво на звука',
+    settings_interface_advanced_animation: 'Разширена анимация',
 }

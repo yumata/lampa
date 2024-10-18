@@ -1112,4 +1112,12 @@ export default {
     full_editing: 'Edição',
     full_creator: 'Criador',
     player_normalization_step_none: 'Zero',
+
+    settings_cub_backup_export_descr: 'Salvar configurações na nuvem',
+    settings_cub_backup_import_descr: 'Restaurar configurações da nuvem',
+
+    settings_interface_sound: 'Sons do sistema',
+    settings_interface_sound_play: 'Transições',
+    settings_interface_sound_level: 'Nível de volume',
+    settings_interface_advanced_animation: 'Animação Avançada',
 }
