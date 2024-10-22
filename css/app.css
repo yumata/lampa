@@ -11850,6 +11850,8 @@ body.orsay-player--show .player {
 
 body.touch-device .scroll {
   overflow: auto !important;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
 body.touch-device .scroll > .scroll__content > .scroll__body:after {
   content: "";
