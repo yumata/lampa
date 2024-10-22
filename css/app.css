@@ -11230,6 +11230,53 @@ body.system--keyboard .search-box .simple-keyboard-input {
   margin-bottom: 1em;
 }
 
+@-webkit-keyframes ad-video-loader {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
+}
+
+@-moz-keyframes ad-video-loader {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
+}
+
+@-o-keyframes ad-video-loader {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
+}
+
+@keyframes ad-video-loader {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
+}
 .ad-video-block {
   position: fixed;
   top: 0;
@@ -11238,6 +11285,30 @@ body.system--keyboard .search-box .simple-keyboard-input {
   height: 100%;
   background: #000;
   z-index: 60;
+}
+.ad-video-block__loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 0.5em;
+  width: 10em;
+  margin: -0.2em 0 0 -5em;
+  background: no-repeat -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffe216)), no-repeat -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)), rgba(255, 255, 255, 0.1);
+  background: no-repeat -webkit-linear-gradient(#ffe216 0 0), no-repeat -webkit-linear-gradient(#fff 0 0), rgba(255, 255, 255, 0.1);
+  background: no-repeat -moz-linear-gradient(#ffe216 0 0), no-repeat -moz-linear-gradient(#fff 0 0), rgba(255, 255, 255, 0.1);
+  background: no-repeat -o-linear-gradient(#ffe216 0 0), no-repeat -o-linear-gradient(#fff 0 0), rgba(255, 255, 255, 0.1);
+  background: no-repeat linear-gradient(#ffe216 0 0), no-repeat linear-gradient(#fff 0 0), rgba(255, 255, 255, 0.1);
+  -webkit-background-size: 60% 100%;
+     -moz-background-size: 60% 100%;
+       -o-background-size: 60% 100%;
+          background-size: 60% 100%;
+  -webkit-animation: ad-video-loader 3s infinite;
+     -moz-animation: ad-video-loader 3s infinite;
+       -o-animation: ad-video-loader 3s infinite;
+          animation: ad-video-loader 3s infinite;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
 }
 .ad-video-block__video {
   position: fixed;
