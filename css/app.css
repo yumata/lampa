@@ -6675,6 +6675,7 @@ body.true--mobile .search .search-source:not(.active) {
   border: 0;
   padding: 0;
   color: #fff;
+  font-family: "SegoeUI", sans-serif;
 }
 .simple-keyboard-input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
@@ -6693,6 +6694,11 @@ body.true--mobile .search .search-source:not(.active) {
 }
 .simple-keyboard-input::placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 480px) {
+  .simple-keyboard-input {
+    font-size: 1.3em;
+  }
 }
 .simple-keyboard-buttons {
   display: -webkit-box;
