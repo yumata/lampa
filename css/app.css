@@ -12548,7 +12548,8 @@ body.glass--style .discuss-rules {
   body.glass--style .selectbox__content,
 body.glass--style .modal__content,
 body.glass--style .settings__content {
-    background-color: #262829;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 }
 body.glass--style .selectbox-item.focus,
@@ -12614,7 +12615,8 @@ body.glass--style-opacity--medium .normalization {
   body.glass--style-opacity--medium .selectbox__content,
 body.glass--style-opacity--medium .modal__content,
 body.glass--style-opacity--medium .settings__content {
-    background-color: #262829;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 }
 body.glass--style-opacity--blacked .selectbox__content,
@@ -12639,6 +12641,7 @@ body.glass--style-opacity--blacked .normalization {
   body.glass--style-opacity--blacked .selectbox__content,
 body.glass--style-opacity--blacked .modal__content,
 body.glass--style-opacity--blacked .settings__content {
-    background-color: #262829;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 }
