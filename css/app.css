@@ -217,6 +217,13 @@ body {
 body.black--style {
   background: #000;
 }
+@media screen and (max-width: 480px) {
+  body.black--style .selectbox__content,
+body.black--style .modal__content,
+body.black--style .settings__content {
+    background-color: #000 !important;
+  }
+}
 
 img {
   vertical-align: middle;
