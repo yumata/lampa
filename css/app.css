@@ -11866,8 +11866,6 @@ body.orsay-player--show .player {
 
 body.touch-device .scroll {
   overflow: auto !important;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
 }
 body.touch-device .scroll > .scroll__content > .scroll__body:after {
   content: "";
@@ -11893,6 +11891,14 @@ body.touch-device .full-start__buttons-scroll .scroll__body .full-start__buttons
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+}
+@media screen and (max-width: 480px) {
+  body.touch-device .settings__body .scroll,
+body.touch-device .modal__body .scroll,
+body.touch-device .selectbox__body .scroll {
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+  }
 }
 
 @-webkit-keyframes animation-card-focus {
