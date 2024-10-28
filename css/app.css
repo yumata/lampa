@@ -1195,12 +1195,16 @@ body.light--version .wrap__left {
   left: 0;
   top: 0;
 }
+.head__logo-halloween-svg svg {
+  width: 2.7em !important;
+  height: 2.7em !important;
+}
 .head__logo-halloween-fire {
   position: absolute;
   top: 0.9em;
   left: 10%;
   width: 80%;
-  bottom: 0.6em;
+  bottom: 0.5em;
   background: #FFEB3B;
   -webkit-animation: logo-halloween-fire 5s ease infinite;
      -moz-animation: logo-halloween-fire 5s ease infinite;
