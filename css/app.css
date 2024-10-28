@@ -1194,6 +1194,8 @@ body.light--version .wrap__left {
   position: absolute;
   left: 0;
   top: 0;
+  width: 2.7em;
+  height: 2.7em;
 }
 .head__logo-halloween-svg svg {
   width: 2.7em !important;
