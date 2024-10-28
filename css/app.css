@@ -3303,6 +3303,12 @@ body.card--no-cover .full-start__background {
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+.full-start-new__poster.with-out img {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
+  -webkit-mask-image: -webkit-linear-gradient(top, white 40%, rgba(255, 255, 255, 0) 100%);
+          mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
+          mask-image: linear-gradient(to bottom, white 40%, rgba(255, 255, 255, 0) 100%);
+}
 @media screen and (max-width: 480px) {
   .full-start-new__poster {
     padding-bottom: 100%;
