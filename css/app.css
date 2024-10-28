@@ -1026,6 +1026,134 @@ body.light--version .wrap__left {
             transform: translate3d(15em, 0, 0);
   }
 }
+@-webkit-keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
+@-moz-keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
+@-o-keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
+@keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
 .head {
   position: fixed;
   top: 0;
@@ -1052,6 +1180,32 @@ body.light--version .wrap__left {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   margin-right: 1em;
+}
+.head__logo-halloween {
+  position: relative;
+  width: 2.7em;
+  height: 2.7em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 1em;
+}
+.head__logo-halloween-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.head__logo-halloween-fire {
+  position: absolute;
+  top: 0.9em;
+  left: 10%;
+  width: 80%;
+  bottom: 0.6em;
+  background: #FFEB3B;
+  -webkit-animation: logo-halloween-fire 5s ease infinite;
+     -moz-animation: logo-halloween-fire 5s ease infinite;
+       -o-animation: logo-halloween-fire 5s ease infinite;
+          animation: logo-halloween-fire 5s ease infinite;
 }
 .head__menu-icon {
   -webkit-flex-shrink: 0;
