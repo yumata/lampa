@@ -217,6 +217,13 @@ body {
 body.black--style {
   background: #000;
 }
+@media screen and (max-width: 480px) {
+  body.black--style .selectbox__content,
+body.black--style .modal__content,
+body.black--style .settings__content {
+    background-color: #000 !important;
+  }
+}
 
 img {
   vertical-align: middle;
@@ -1019,6 +1026,134 @@ body.light--version .wrap__left {
             transform: translate3d(15em, 0, 0);
   }
 }
+@-webkit-keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
+@-moz-keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
+@-o-keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
+@keyframes logo-halloween-fire {
+  0% {
+    background: #FFEB3B;
+  }
+  10% {
+    background: #ffd13b;
+  }
+  14% {
+    background: #ffb73b;
+  }
+  25% {
+    background: #FFEB3B;
+  }
+  27% {
+    background: #fbea53;
+  }
+  50% {
+    background: #ffc13b;
+  }
+  58% {
+    background: #fbeb57;
+  }
+  80% {
+    background: #ffcb3b;
+  }
+  90% {
+    background: #fff493;
+  }
+  95% {
+    background: #fcaa38;
+  }
+}
 .head {
   position: fixed;
   top: 0;
@@ -1045,6 +1180,38 @@ body.light--version .wrap__left {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   margin-right: 1em;
+}
+.head__logo-halloween {
+  position: relative;
+  width: 2.7em;
+  height: 2.7em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 1em;
+}
+.head__logo-halloween-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.7em;
+  height: 2.7em;
+}
+.head__logo-halloween-svg svg {
+  width: 2.7em !important;
+  height: 2.7em !important;
+}
+.head__logo-halloween-fire {
+  position: absolute;
+  top: 0.9em;
+  left: 10%;
+  width: 80%;
+  bottom: 0.5em;
+  background: #FFEB3B;
+  -webkit-animation: logo-halloween-fire 5s ease infinite;
+     -moz-animation: logo-halloween-fire 5s ease infinite;
+       -o-animation: logo-halloween-fire 5s ease infinite;
+          animation: logo-halloween-fire 5s ease infinite;
 }
 .head__menu-icon {
   -webkit-flex-shrink: 0;
@@ -1623,12 +1790,12 @@ body.light--version .menu__item {
     -webkit-transform: translate3d(0, 100%, 0);
        -moz-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
-    -webkit-border-top-left-radius: 1em;
-       -moz-border-radius-topleft: 1em;
-            border-top-left-radius: 1em;
-    -webkit-border-top-right-radius: 1em;
-       -moz-border-radius-topright: 1em;
-            border-top-right-radius: 1em;
+    -webkit-border-top-left-radius: 2em;
+       -moz-border-radius-topleft: 2em;
+            border-top-left-radius: 2em;
+    -webkit-border-top-right-radius: 2em;
+       -moz-border-radius-topright: 2em;
+            border-top-right-radius: 2em;
   }
 }
 .settings__head {
@@ -2022,10 +2189,10 @@ body.settings--open .settings__layer {
 .items-line__more {
   margin-left: 2em;
   padding: 0.4em 1em;
-  background: rgba(0, 0, 0, 0.33);
-  -webkit-border-radius: 0.3em;
-     -moz-border-radius: 0.3em;
-          border-radius: 0.3em;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 2em;
+     -moz-border-radius: 2em;
+          border-radius: 2em;
 }
 .items-line__more.focus {
   background-color: #fff;
@@ -3266,12 +3433,12 @@ body.card--no-cover .full-start__background {
     margin-top: -20vh;
     position: relative;
     z-index: 1;
-    -webkit-border-top-left-radius: 3em;
-       -moz-border-radius-topleft: 3em;
-            border-top-left-radius: 3em;
-    -webkit-border-top-right-radius: 3em;
-       -moz-border-radius-topright: 3em;
-            border-top-right-radius: 3em;
+    -webkit-border-top-left-radius: 2em;
+       -moz-border-radius-topleft: 2em;
+            border-top-left-radius: 2em;
+    -webkit-border-top-right-radius: 2em;
+       -moz-border-radius-topright: 2em;
+            border-top-right-radius: 2em;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
@@ -3295,6 +3462,12 @@ body.card--no-cover .full-start__background {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+.full-start-new__poster.with-out img {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
+  -webkit-mask-image: -webkit-linear-gradient(top, white 40%, rgba(255, 255, 255, 0) 100%);
+          mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
+          mask-image: linear-gradient(to bottom, white 40%, rgba(255, 255, 255, 0) 100%);
 }
 @media screen and (max-width: 480px) {
   .full-start-new__poster {
@@ -3331,6 +3504,9 @@ body.card--no-cover .full-start__background {
     -moz-transition: opacity 0.2s, transform 0.4s, -moz-transform 0.4s;
     transition: opacity 0.2s, transform 0.4s;
     transition: opacity 0.2s, transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s, -o-transform 0.4s;
+    -webkit-border-radius: 2em;
+       -moz-border-radius: 2em;
+            border-radius: 2em;
   }
 }
 .full-start-new__head {
@@ -4429,7 +4605,10 @@ video::-webkit-media-controls-panel-container {
 }
 
 body.platform--browser .player-video__paused,
-body.platform--nw .player-video__paused {
+body.platform--nw .player-video__paused,
+body.glass--style.platform--apple .player-video__paused,
+body.glass--style.platform--apple_tv .player-video__paused,
+body.glass--style.platform--android .player-video__paused {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1em);
           backdrop-filter: blur(1em);
@@ -5135,7 +5314,10 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 body.platform--browser .player-panel,
-body.platform--nw .player-panel {
+body.platform--nw .player-panel,
+body.glass--style.platform--apple .player-panel,
+body.glass--style.platform--apple_tv .player-panel,
+body.glass--style.platform--android .player-panel {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1em);
           backdrop-filter: blur(1em);
@@ -5364,7 +5546,10 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 body.platform--browser .player-info,
-body.platform--nw .player-info {
+body.platform--nw .player-info,
+body.glass--style.platform--apple .player-info,
+body.glass--style.platform--apple_tv .player-info,
+body.glass--style.platform--android .player-info {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1em);
           backdrop-filter: blur(1em);
@@ -5531,7 +5716,10 @@ body.true--mobile .player-info .head-backward__button {
 }
 
 body.platform--browser .player-footer,
-body.platform--nw .player-footer {
+body.platform--nw .player-footer,
+body.glass--style.platform--apple .player-footer,
+body.glass--style.platform--apple_tv .player-footer,
+body.glass--style.platform--android .player-footer {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1em);
           backdrop-filter: blur(1em);
@@ -5619,12 +5807,12 @@ body.platform--nw .player-footer {
     -webkit-transform: translate3d(0, 100%, 0);
        -moz-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
-    -webkit-border-top-left-radius: 1em;
-       -moz-border-radius-topleft: 1em;
-            border-top-left-radius: 1em;
-    -webkit-border-top-right-radius: 1em;
-       -moz-border-radius-topright: 1em;
-            border-top-right-radius: 1em;
+    -webkit-border-top-left-radius: 2em;
+       -moz-border-radius-topleft: 2em;
+            border-top-left-radius: 2em;
+    -webkit-border-top-right-radius: 2em;
+       -moz-border-radius-topright: 2em;
+            border-top-right-radius: 2em;
   }
 }
 .selectbox__head {
@@ -6849,6 +7037,12 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
 @media screen and (max-width: 480px) {
   .modal__content {
     max-width: 100%;
+    -webkit-border-top-left-radius: 2em;
+       -moz-border-radius-topleft: 2em;
+            border-top-left-radius: 2em;
+    -webkit-border-top-right-radius: 2em;
+       -moz-border-radius-topright: 2em;
+            border-top-right-radius: 2em;
     -webkit-border-bottom-left-radius: 0;
        -moz-border-radius-bottomleft: 0;
             border-bottom-left-radius: 0;
@@ -9269,6 +9463,66 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
   body.light--version .explorer__files {
     width: 100%;
   }
+}
+
+.bookmarks-folder__layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3E3E3E;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+}
+.bookmarks-folder__body {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1em;
+  position: relative;
+}
+.bookmarks-folder__body .i-1 {
+  height: 80%;
+  top: 20%;
+}
+.bookmarks-folder__body .i-2 {
+  height: 60%;
+  top: 40%;
+}
+.bookmarks-folder__head {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding: 1em;
+  line-height: 1.3;
+}
+.bookmarks-folder__title {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.bookmarks-folder__num {
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
 .about {
@@ -11876,6 +12130,14 @@ body.touch-device .full-start__buttons-scroll .scroll__body .full-start__buttons
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
+@media screen and (max-width: 480px) {
+  body.touch-device .settings__body .scroll,
+body.touch-device .modal__body .scroll,
+body.touch-device .selectbox__body .scroll {
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+  }
+}
 
 @-webkit-keyframes animation-card-focus {
   40% {
@@ -12491,7 +12753,8 @@ body.light--version .card__textbox,
 body.light--version .ad-bot__content,
 body.light--version .ad-bot__marker,
 body.light--version .full-review,
-body.light--version .full-review-add {
+body.light--version .full-review-add,
+body.light--version .bookmarks-folder__layer {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
@@ -12587,7 +12850,8 @@ body.glass--style .torrent-serial {
 body.glass--style .torrent-serial.focus {
   background: rgba(255, 255, 255, 0.35);
 }
-body.glass--style .card-more__box {
+body.glass--style .card-more__box,
+body.glass--style .bookmarks-folder__layer {
   background: rgba(0, 0, 0, 0.3);
 }
 body.glass--style-opacity--medium .selectbox__content,
@@ -12639,4 +12903,38 @@ body.glass--style-opacity--blacked .modal__content,
 body.glass--style-opacity--blacked .settings__content {
     background-color: #262829;
   }
+}
+body.glass--style.platform--browser .card .card__icons-inner,
+body.glass--style.platform--browser .card .card__marker,
+body.glass--style.platform--browser .card .card__vote,
+body.glass--style.platform--browser .card .card-watched, body.glass--style.platform--nw .card .card__icons-inner,
+body.glass--style.platform--nw .card .card__marker,
+body.glass--style.platform--nw .card .card__vote,
+body.glass--style.platform--nw .card .card-watched, body.glass--style.platform--apple .card .card__icons-inner,
+body.glass--style.platform--apple .card .card__marker,
+body.glass--style.platform--apple .card .card__vote,
+body.glass--style.platform--apple .card .card-watched {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
+}
+body.glass--style.platform--browser .card-watched__item, body.glass--style.platform--nw .card-watched__item, body.glass--style.platform--apple .card-watched__item {
+  color: #fff;
+}
+body.glass--style.platform--browser .card-watched__item:nth-child(2), body.glass--style.platform--nw .card-watched__item:nth-child(2), body.glass--style.platform--apple .card-watched__item:nth-child(2) {
+  opacity: 0.8;
+}
+body.glass--style.platform--browser .card-watched__item:nth-child(3), body.glass--style.platform--nw .card-watched__item:nth-child(3), body.glass--style.platform--apple .card-watched__item:nth-child(3) {
+  opacity: 0.6;
+}
+body.glass--style.platform--browser .card-watched__item:nth-child(4), body.glass--style.platform--nw .card-watched__item:nth-child(4), body.glass--style.platform--apple .card-watched__item:nth-child(4) {
+  opacity: 0.4;
+}
+body.glass--style.platform--browser .card-watched__item:nth-child(5), body.glass--style.platform--nw .card-watched__item:nth-child(5), body.glass--style.platform--apple .card-watched__item:nth-child(5) {
+  opacity: 0.2;
+}
+body.glass--style.platform--browser .head__action:not(.focus), body.glass--style.platform--nw .head__action:not(.focus), body.glass--style.platform--apple .head__action:not(.focus) {
+  background-color: rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(1em);
+          backdrop-filter: blur(1em);
 }
