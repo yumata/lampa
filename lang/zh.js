@@ -1085,4 +1085,6 @@ export default {
     settings_interface_sound_play: '过渡',
     settings_interface_sound_level: '音量级别',
     settings_interface_advanced_animation: '高级动画',
+
+    confirm_open_player: '另一台设备正在请求访问播放器。想播放视频吗？'
 }

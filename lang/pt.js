@@ -1120,4 +1120,6 @@ export default {
     settings_interface_sound_play: 'Transições',
     settings_interface_sound_level: 'Nível de volume',
     settings_interface_advanced_animation: 'Animação Avançada',
+
+    confirm_open_player: 'Outro dispositivo está solicitando acesso ao player. Quer reproduzir o vídeo?'
 }

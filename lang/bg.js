@@ -1134,4 +1134,6 @@ export default {
     settings_interface_sound_play: 'Преходи',
     settings_interface_sound_level: 'Ниво на звука',
     settings_interface_advanced_animation: 'Разширена анимация',
+
+    confirm_open_player: 'Друго устройство иска достъп до плейъра. Искате ли да пуснете видеоклипа?'
 }

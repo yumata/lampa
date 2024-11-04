@@ -7087,6 +7087,11 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
   display: flex;
   padding-top: 2em;
 }
+@media screen and (max-width: 480px) {
+  .modal__footer {
+    display: block;
+  }
+}
 .modal__button {
   padding: 0.9em 1.3em;
   -webkit-border-radius: 0.3em;
@@ -7101,6 +7106,12 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
 }
 .modal__button + .modal__button {
   margin-left: 1em;
+}
+@media screen and (max-width: 480px) {
+  .modal__button + .modal__button {
+    margin-left: 0;
+    margin-top: 1em;
+  }
 }
 .modal__close-button {
   position: absolute;
@@ -8463,6 +8474,26 @@ body.true--mobile .notice {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.torrent-serial__progress {
+  width: 0.3em;
+  position: absolute;
+  height: 0;
+  background: #fff;
+  top: 50%;
+  right: 0;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  -webkit-transition: height 0.1s linear;
+  -o-transition: height 0.1s linear;
+  -moz-transition: height 0.1s linear;
+  transition: height 0.1s linear;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .torrent-serial__img {
   width: 12em;
@@ -11577,7 +11608,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
 }
 .ad-video-block__vast {
   position: fixed;
-  top: -300px;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
