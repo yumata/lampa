@@ -8476,20 +8476,24 @@ body.true--mobile .notice {
           align-items: center;
 }
 .torrent-serial__progress {
-  width: 0;
+  width: 0.3em;
   position: absolute;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  top: 0;
-  left: 0;
-  z-index: -1;
+  height: 0;
+  background: #fff;
+  top: 50%;
+  right: 0;
   -webkit-border-radius: 0.3em;
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
-  -webkit-transition: width 0.1s linear;
-  -o-transition: width 0.1s linear;
-  -moz-transition: width 0.1s linear;
-  transition: width 0.1s linear;
+  -webkit-transition: height 0.1s linear;
+  -o-transition: height 0.1s linear;
+  -moz-transition: height 0.1s linear;
+  transition: height 0.1s linear;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .torrent-serial__img {
   width: 12em;
