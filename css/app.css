@@ -7087,6 +7087,11 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
   display: flex;
   padding-top: 2em;
 }
+@media screen and (max-width: 480px) {
+  .modal__footer {
+    display: block;
+  }
+}
 .modal__button {
   padding: 0.9em 1.3em;
   -webkit-border-radius: 0.3em;
@@ -7101,6 +7106,12 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
 }
 .modal__button + .modal__button {
   margin-left: 1em;
+}
+@media screen and (max-width: 480px) {
+  .modal__button + .modal__button {
+    margin-left: 0;
+    margin-top: 1em;
+  }
 }
 .modal__close-button {
   position: absolute;
@@ -8463,6 +8474,22 @@ body.true--mobile .notice {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.torrent-serial__progress {
+  width: 0;
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-border-radius: 0.3em;
+     -moz-border-radius: 0.3em;
+          border-radius: 0.3em;
+  -webkit-transition: width 0.1s linear;
+  -o-transition: width 0.1s linear;
+  -moz-transition: width 0.1s linear;
+  transition: width 0.1s linear;
 }
 .torrent-serial__img {
   width: 12em;
