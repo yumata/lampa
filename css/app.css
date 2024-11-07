@@ -395,6 +395,12 @@ body.ambience--enable .head {
   overflow: hidden;
 }
 
+/* Фикс для orsay */
+.online-prestige-watched__icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 @-webkit-keyframes head-icon-blick {
   0% {
     background-position: 0% 50%;
