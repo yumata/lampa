@@ -12219,6 +12219,50 @@ body.touch-device .selectbox__body .scroll {
             transform: translate3d(0, 0, 0);
   }
 }
+@-webkit-keyframes animation-trigger-enter {
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-moz-keyframes animation-trigger-enter {
+  40% {
+    -moz-transform: scale(1.2);
+         transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+         transform: scale(1);
+  }
+}
+@-o-keyframes animation-trigger-enter {
+  40% {
+    -o-transform: scale(1.2);
+       transform: scale(1.2);
+  }
+  100% {
+    -o-transform: scale(1);
+       transform: scale(1);
+  }
+}
+@keyframes animation-trigger-enter {
+  40% {
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @-webkit-keyframes animation-file-focus {
   40% {
     -webkit-transform: translate3d(-1em, 0, 0);
@@ -12633,11 +12677,23 @@ body.advanced--animation:not(.no--animation) .card:not(.card--wide).focus .card_
        -o-animation: animation-card-focus 0.2s;
           animation: animation-card-focus 0.2s;
 }
+body.advanced--animation:not(.no--animation) .card:not(.card--wide).animate-trigger-enter .card__view {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
+}
 body.advanced--animation:not(.no--animation) .card-episode.focus .full-episode, body.advanced--animation:not(.no--animation) .card-episode.hover .full-episode {
   -webkit-animation: animation-card-focus 0.2s;
      -moz-animation: animation-card-focus 0.2s;
        -o-animation: animation-card-focus 0.2s;
           animation: animation-card-focus 0.2s;
+}
+body.advanced--animation:not(.no--animation) .card-episode.animate-trigger-enter .full-episode {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
 }
 body.advanced--animation:not(.no--animation) .explorer-card__head-img.focus, body.advanced--animation:not(.no--animation) .explorer-card__head-img.hover {
   -webkit-animation: animation-card-focus 0.2s;
@@ -12645,11 +12701,23 @@ body.advanced--animation:not(.no--animation) .explorer-card__head-img.focus, bod
        -o-animation: animation-card-focus 0.2s;
           animation: animation-card-focus 0.2s;
 }
+body.advanced--animation:not(.no--animation) .explorer-card__head-img.animate-trigger-enter {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
+}
 body.advanced--animation:not(.no--animation) .torrent-item.focus, body.advanced--animation:not(.no--animation) .torrent-item.hover {
   -webkit-animation: animation-file-focus 0.2s;
      -moz-animation: animation-file-focus 0.2s;
        -o-animation: animation-file-focus 0.2s;
           animation: animation-file-focus 0.2s;
+}
+body.advanced--animation:not(.no--animation) .torrent-item.animate-trigger-enter {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
 }
 body.advanced--animation:not(.no--animation) .head .head__action.focus, body.advanced--animation:not(.no--animation) .head .head__action.hover,
 body.advanced--animation:not(.no--animation) .menu .menu__item.focus,
@@ -12671,17 +12739,42 @@ body.advanced--animation:not(.no--animation) .full-review-add.hover {
        -o-animation: animation-button-focus 0.2s;
           animation: animation-button-focus 0.2s;
 }
+body.advanced--animation:not(.no--animation) .head .head__action.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .menu .menu__item.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .full-start__button.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .simple-button.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .full-descr__tag.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .tag-count.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .full-review.animate-trigger-enter:not([data-action]),
+body.advanced--animation:not(.no--animation) .full-review-add.animate-trigger-enter:not([data-action]) {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
+}
 body.advanced--animation:not(.no--animation) .full-person.focus .full-person__photo, body.advanced--animation:not(.no--animation) .full-person.hover .full-person__photo {
   -webkit-animation: animation-button-focus 0.2s;
      -moz-animation: animation-button-focus 0.2s;
        -o-animation: animation-button-focus 0.2s;
           animation: animation-button-focus 0.2s;
 }
+body.advanced--animation:not(.no--animation) .full-person.animate-trigger-enter .full-person__photo {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
+}
 body.advanced--animation:not(.no--animation) .settings-folder.focus .settings-folder__icon, body.advanced--animation:not(.no--animation) .settings-folder.hover .settings-folder__icon {
   -webkit-animation: animation-button-focus 0.2s;
      -moz-animation: animation-button-focus 0.2s;
        -o-animation: animation-button-focus 0.2s;
           animation: animation-button-focus 0.2s;
+}
+body.advanced--animation:not(.no--animation) .settings-folder.animate-trigger-enter .settings-folder__icon {
+  -webkit-animation: animation-trigger-enter 0.2s forwards;
+     -moz-animation: animation-trigger-enter 0.2s forwards;
+       -o-animation: animation-trigger-enter 0.2s forwards;
+          animation: animation-trigger-enter 0.2s forwards;
 }
 body.advanced--animation:not(.no--animation) .modal.animate .modal__content {
   -webkit-animation: animation-modal 0.3s;
