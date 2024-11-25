@@ -1136,5 +1136,10 @@ export default {
     settings_interface_sound_level: 'Volume level',
     settings_interface_advanced_animation: 'Advanced animation',
 
-    confirm_open_player: 'Another device is requesting access to the player. Do you want to play the video?'
+    confirm_open_player: 'Another device is requesting access to the player. Do you want to play the video?',
+
+    pincode_use_remote: 'Use the remote control to enter the code by pressing the arrows to select the desired number.',
+    pincode_use_toggle: 'Press and hold the OK button to change the layout.',
+
+    settings_parental_control_where: 'Where to request a PIN code',
 }
