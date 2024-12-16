@@ -1186,6 +1186,7 @@ body.light--version .wrap__left {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   margin-right: 1em;
+  position: relative;
 }
 .head__logo-halloween {
   position: relative;
@@ -1218,6 +1219,15 @@ body.light--version .wrap__left {
      -moz-animation: logo-halloween-fire 5s ease infinite;
        -o-animation: logo-halloween-fire 5s ease infinite;
           animation: logo-halloween-fire 5s ease infinite;
+}
+.head__logo-cap {
+  position: absolute;
+  top: -0.95em;
+  left: -1.25em;
+}
+.head__logo-cap svg {
+  width: 3.2em !important;
+  height: 3.2em !important;
 }
 .head__menu-icon {
   -webkit-flex-shrink: 0;
