@@ -8150,6 +8150,84 @@ body.true--mobile .notice {
   padding-right: 0;
 }
 
+.bell {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20em;
+  z-index: 100;
+  margin-left: -10em;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+  transition: opacity 0.2s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.2s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.2s, -moz-transform 0.3s;
+  transition: transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+  -webkit-transform: translate3d(0, -100%, 0);
+     -moz-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  pointer-events: none;
+  padding-top: 1em;
+}
+.bell__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.3em;
+  background: #1d1f20;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  margin-bottom: 1em;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -1em, 0);
+     -moz-transform: translate3d(0, -1em, 0);
+          transform: translate3d(0, -1em, 0);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+  transition: opacity 0.2s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.2s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.2s, -moz-transform 0.3s;
+  transition: transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+}
+.bell__item-icon {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 2em;
+  height: 2em;
+  margin-right: 1.3em;
+}
+.bell__item-text {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+.bell__item.show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.bell.show {
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
 .torrent-list {
   padding: 0 1.5em;
 }
@@ -13136,28 +13214,34 @@ body.touch-device .selectbox__body .scroll {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
   100% {
     -webkit-transform: translate3d(0, 50%, 0);
             transform: translate3d(0, 50%, 0);
+    opacity: 0;
   }
 }
 @-moz-keyframes animation-down {
   0% {
     -moz-transform: translate3d(0, 0, 0);
          transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
   100% {
     -moz-transform: translate3d(0, 50%, 0);
          transform: translate3d(0, 50%, 0);
+    opacity: 0;
   }
 }
 @-o-keyframes animation-down {
   0% {
     transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
   100% {
     transform: translate3d(0, 50%, 0);
+    opacity: 0;
   }
 }
 @keyframes animation-down {
@@ -13165,11 +13249,13 @@ body.touch-device .selectbox__body .scroll {
     -webkit-transform: translate3d(0, 0, 0);
        -moz-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
   100% {
     -webkit-transform: translate3d(0, 50%, 0);
        -moz-transform: translate3d(0, 50%, 0);
             transform: translate3d(0, 50%, 0);
+    opacity: 0;
   }
 }
 body.advanced--animation:not(.no--animation) .card:not(.card--wide).focus .card__view, body.advanced--animation:not(.no--animation) .card:not(.card--wide).hover .card__view {
@@ -13431,7 +13517,8 @@ body.glass--style .settings-input__content,
 body.glass--style .modal__content,
 body.glass--style .settings-input--free,
 body.glass--style .navigation-bar__body,
-body.glass--style .discuss-rules {
+body.glass--style .discuss-rules,
+body.glass--style .bell__item {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1.6em);
           backdrop-filter: blur(1.6em);
@@ -13490,7 +13577,8 @@ body.glass--style-opacity--medium .settings__content,
 body.glass--style-opacity--medium .settings-input__content,
 body.glass--style-opacity--medium .modal__content,
 body.glass--style-opacity--medium .settings-input--free,
-body.glass--style-opacity--medium .navigation-bar__body {
+body.glass--style-opacity--medium .navigation-bar__body,
+body.glass--style-opacity--medium .bell__item {
   background-color: rgba(20, 20, 20, 0.6);
   -webkit-backdrop-filter: blur(1.1em);
           backdrop-filter: blur(1.1em);
@@ -13500,7 +13588,8 @@ body.glass--style-opacity--medium .player-info,
 body.glass--style-opacity--medium .player-footer,
 body.glass--style-opacity--medium .player-video__paused,
 body.glass--style-opacity--medium .player-video__loader,
-body.glass--style-opacity--medium .normalization {
+body.glass--style-opacity--medium .normalization,
+body.glass--style-opacity--medium .bell__item {
   background-color: rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 480px) {
@@ -13515,7 +13604,8 @@ body.glass--style-opacity--blacked .settings__content,
 body.glass--style-opacity--blacked .settings-input__content,
 body.glass--style-opacity--blacked .modal__content,
 body.glass--style-opacity--blacked .settings-input--free,
-body.glass--style-opacity--blacked .navigation-bar__body {
+body.glass--style-opacity--blacked .navigation-bar__body,
+body.glass--style-opacity--blacked .bell__item {
   background-color: rgba(20, 20, 20, 0.9);
   -webkit-backdrop-filter: blur(0.5em);
           backdrop-filter: blur(0.5em);
@@ -13525,7 +13615,8 @@ body.glass--style-opacity--blacked .player-info,
 body.glass--style-opacity--blacked .player-footer,
 body.glass--style-opacity--blacked .player-video__paused,
 body.glass--style-opacity--blacked .player-video__loader,
-body.glass--style-opacity--blacked .normalization {
+body.glass--style-opacity--blacked .normalization,
+body.glass--style-opacity--blacked .bell__item {
   background-color: rgba(0, 0, 0, 0.85);
 }
 @media screen and (max-width: 480px) {
