@@ -55,6 +55,13 @@ export default {
 
             lang_choice_title: 'ברוך הבא',
             lang_choice_subtitle: 'בחר את השפה שלך',
+        },
+        cs: {
+            code: "cs",
+            name: "Čeština",
+      
+            lang_choice_title: "Vítejte",
+            lang_choice_subtitle: "Vyberte svůj jazyk",
         }
     }
 }
