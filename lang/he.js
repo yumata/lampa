@@ -1040,4 +1040,6 @@ export default {
     pincode_use_toggle: 'לחץ והחזק את הלחצן אישור כדי לשנות את הפריסה.',
 
     settings_parental_control_where: 'היכן לבקש קוד PIN',
+    title_fire: 'אֵשׁ!',
+    title_top_100: '100 המובילים',
 }

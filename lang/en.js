@@ -1142,4 +1142,6 @@ export default {
     pincode_use_toggle: 'Press and hold the OK button to change the layout.',
 
     settings_parental_control_where: 'Where to request a PIN code',
+    title_fire: 'Fire!',
+    title_top_100: 'Top 100',
 }

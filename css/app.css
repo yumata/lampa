@@ -2229,6 +2229,34 @@ body.settings--open .settings__layer {
 .items-line--type-player-cards .items-line__body .scroll__content {
   padding: 0 1em;
 }
+.items-line--type-top .items-cards .card:nth-child(1), .items-line--type-top .items-cards .card:nth-child(2), .items-line--type-top .items-cards .card:nth-child(3) {
+  margin-left: 6em;
+}
+.items-line--type-top .items-cards .card:nth-child(1)::before, .items-line--type-top .items-cards .card:nth-child(2)::before, .items-line--type-top .items-cards .card:nth-child(3)::before {
+  content: "1";
+  position: absolute;
+  top: 0.2em;
+  right: 84%;
+  font-size: 16em;
+  color: #000000;
+  font-weight: 900;
+  -webkit-text-stroke: 0.01em #ffffff;
+  z-index: -1;
+}
+.items-line--type-top .items-cards .card:nth-child(2) {
+  margin-left: 4.5em;
+}
+.items-line--type-top .items-cards .card:nth-child(2)::before {
+  content: "2";
+  right: 74%;
+}
+.items-line--type-top .items-cards .card:nth-child(3) {
+  margin-left: 3.7em;
+}
+.items-line--type-top .items-cards .card:nth-child(3)::before {
+  content: "3";
+  right: 82%;
+}
 
 .items-cards {
   display: -webkit-box;
@@ -4407,6 +4435,10 @@ body.selectbox--open .player .player-info {
 
 body.keyboard-input--visible .player {
   display: none;
+}
+
+body.player--viewing #app {
+  visibility: hidden;
 }
 
 video::-webkit-media-controls-panel-container {
