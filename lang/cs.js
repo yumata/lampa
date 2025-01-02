@@ -1222,4 +1222,6 @@ export default {
   pincode_use_remote:
     "Použijte dálkový ovladač pro zadání kódu, stiskněte šipky pro výběr požadovaného čísla.",
   pincode_use_toggle: "Stiskněte a podržte tlačítko OK pro změnu rozložení.",
+  title_fire: 'Oheň!',
+    title_top_100: 'Top 100',
 };

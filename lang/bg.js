@@ -1141,4 +1141,6 @@ export default {
     pincode_use_toggle: 'Натиснете и задръжте бутона OK, за да промените оформлението.',
 
     settings_parental_control_where: 'Къде да поискате ПИН код',
+    title_fire: 'Огън!',
+    title_top_100: 'Топ 100',
 }

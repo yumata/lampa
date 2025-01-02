@@ -1157,4 +1157,6 @@ export default {
     pincode_use_toggle: 'Націсніце і ўтрымлівайце кнопку OK, каб змяніць раскладку.',
 
     settings_parental_control_where: 'Дзе запытваць PIN-код',
+    title_fire: 'Агонь!',
+    title_top_100: 'Топ 100',
 }

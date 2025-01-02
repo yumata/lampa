@@ -1127,4 +1127,6 @@ export default {
     pincode_use_toggle: 'Prima e mantenha premido o botão OK para alterar o layout.',
 
     settings_parental_control_where: 'Onde solicitar um código PIN',
+    title_fire: 'Fogo!',
+    title_top_100: '100 melhores',
 }

@@ -1092,4 +1092,6 @@ export default {
     pincode_use_toggle: '按住“确定”按钮可更改布局。',
 
     settings_parental_control_where: '在哪里请求 PIN 码',
+    title_fire: '火！',
+    title_top_100: '前100名',
 }

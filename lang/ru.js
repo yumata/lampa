@@ -454,6 +454,8 @@ export default {
     title_left:'Осталось',
     title_parental_control: 'Родительский контроль',
     title_worth_rewatch: 'Стоит пересмотреть',
+    title_fire: 'Огонь!',
+    title_top_100: 'Топ 100',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
