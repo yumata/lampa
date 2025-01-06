@@ -4441,6 +4441,12 @@ body.player--viewing #app {
   visibility: hidden;
 }
 
+.player:not(.player--panel-visible) .player-panel,
+.player:not(.player--panel-visible) .player-info,
+.player:not(.player--panel-visible) .player-footer {
+  visibility: hidden;
+}
+
 video::-webkit-media-controls-panel-container {
   display: none !important;
 }
