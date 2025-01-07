@@ -4664,10 +4664,15 @@ video::-webkit-media-controls-panel-container {
 }
 
 body.platform--browser .player-video__paused,
+body.platform--browser .player-video__loader,
 body.platform--nw .player-video__paused,
+body.platform--nw .player-video__loader,
 body.glass--style.platform--apple .player-video__paused,
+body.glass--style.platform--apple .player-video__loader,
 body.glass--style.platform--apple_tv .player-video__paused,
-body.glass--style.platform--android .player-video__paused {
+body.glass--style.platform--apple_tv .player-video__loader,
+body.glass--style.platform--android .player-video__paused,
+body.glass--style.platform--android .player-video__loader {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(1em);
           backdrop-filter: blur(1em);
