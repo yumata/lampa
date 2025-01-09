@@ -1144,4 +1144,11 @@ export default {
     settings_parental_control_where: 'Where to request a PIN code',
     title_fire: 'Fire!',
     title_top_100: 'Top 100',
+
+    player_normalization_type_title: 'Normalization Type',
+    player_normalization_type_all: 'All',
+    player_normalization_type_up: 'Only Increase',
+    player_normalization_type_down: 'Only Decrease',
+    storage_quota_exceeded: 'Storage quota exceeded. Clear cache and try again.',
+
 }

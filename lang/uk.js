@@ -1119,4 +1119,11 @@ export default {
     settings_parental_control_where: 'Де запитати PIN-код',
     title_fire: 'Вогонь!',
     title_top_100: 'Топ 100',
+
+    player_normalization_type_title: 'Тип нормалізації',
+    player_normalization_type_all: 'Усі',
+    player_normalization_type_up: 'Тільки підвищення',
+    player_normalization_type_down: 'Тільки зниження',
+    storage_quota_exceeded: 'Перевищено ліміт сховища. Очистіть кеш і спробуйте ще раз.',
+
 }
