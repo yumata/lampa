@@ -1224,4 +1224,11 @@ export default {
   pincode_use_toggle: "Stiskněte a podržte tlačítko OK pro změnu rozložení.",
   title_fire: 'Oheň!',
     title_top_100: 'Top 100',
+
+    player_normalization_type_title: 'Typ normalizace',
+player_normalization_type_all: 'Vše',
+player_normalization_type_up: 'Pouze zvýšení',
+player_normalization_type_down: 'Pouze snížení',
+storage_quota_exceeded: 'Překročena kvóta úložiště. Vymažte mezipaměť a zkuste to znovu.',
+
 };

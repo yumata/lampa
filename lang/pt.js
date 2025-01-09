@@ -1129,4 +1129,11 @@ export default {
     settings_parental_control_where: 'Onde solicitar um código PIN',
     title_fire: 'Fogo!',
     title_top_100: '100 melhores',
+
+    player_normalization_type_title: 'Tipo de Normalização',
+    player_normalization_type_all: 'Todos',
+    player_normalization_type_up: 'Apenas Aumento',
+    player_normalization_type_down: 'Apenas Diminuição',
+    storage_quota_exceeded: 'Limite de armazenamento excedido. Limpe o cache e tente novamente.',
+
 }

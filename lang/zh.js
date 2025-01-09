@@ -1094,4 +1094,11 @@ export default {
     settings_parental_control_where: '在哪里请求 PIN 码',
     title_fire: '火！',
     title_top_100: '前100名',
+
+    player_normalization_type_title: '标准化类型',
+    player_normalization_type_all: '全部',
+    player_normalization_type_up: '仅提升',
+    player_normalization_type_down: '仅降低',
+    storage_quota_exceeded: '存储配额已超出。清除缓存后重试。',
+
 }

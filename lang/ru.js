@@ -912,6 +912,10 @@ export default {
     player_normalization_step_medium: 'Среднее',
     player_normalization_step_hight: 'Высокое',
     player_normalization: 'Нормализация',
+    player_normalization_type_title: 'Тип нормализации',
+    player_normalization_type_all: 'Все',
+    player_normalization_type_up: 'Только повышение',
+    player_normalization_type_down: 'Только понижение',
     player_youtube_no_played: 'К сожалению, это видео не доступно в вашем регионе, возможно, оно было заблокировано или удалено.',
     player_youtube_start_play: 'Для начала проигрывания видео, нажмите кнопку "Плей"',
 
@@ -1156,5 +1160,7 @@ export default {
     confirm_open_player: 'Другое устройство запрашивает доступ к плееру. Хотите воспроизвести видео?',
 
     pincode_use_remote: 'Используйте пульт для ввода кода, нажимая стрелки для выбора нужной цифры.',
-    pincode_use_toggle: 'Нажмите и удерживайте кнопку OK, чтобы сменить раскладку.'
+    pincode_use_toggle: 'Нажмите и удерживайте кнопку OK, чтобы сменить раскладку.',
+
+    storage_quota_exceeded: 'Превышен лимит хранилища. Удалите кеш и повторите попытку.',
 }
