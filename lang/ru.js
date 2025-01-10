@@ -76,6 +76,7 @@ export default {
     settings_cub_sync_recomends: 'Синхронизация рекомендаций',
     settings_cub_sync_timecodes: 'Синхронизация тайм-кодов',
     settings_cub_signin_button: 'Выполнить вход',
+    settings_cub_domain: 'Основной домен',
 
     settings_input_links: 'Избранное',
 

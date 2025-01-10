@@ -1149,5 +1149,6 @@ export default {
     player_normalization_type_up: 'Само увеличаване',
     player_normalization_type_down: 'Само намаляване',
     storage_quota_exceeded: 'Надхвърлен е лимитът за съхранение. Изтрийте кеша и опитайте отново.',
+    settings_cub_domain: 'Основен домейн',
 
 }

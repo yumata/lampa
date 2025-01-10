@@ -1048,4 +1048,5 @@ export default {
     player_normalization_type_up: 'רק הגבהה',
     player_normalization_type_down: 'רק הנמכה',
     storage_quota_exceeded: 'מכסת האחסון חרגה. נקה את המטמון ונסה שוב.',
+    settings_cub_domain: 'דומיין ראשי',
 }

@@ -1135,5 +1135,6 @@ export default {
     player_normalization_type_up: 'Apenas Aumento',
     player_normalization_type_down: 'Apenas Diminuição',
     storage_quota_exceeded: 'Limite de armazenamento excedido. Limpe o cache e tente novamente.',
+    settings_cub_domain: 'Domínio primário',
 
 }

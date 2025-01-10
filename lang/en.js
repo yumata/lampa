@@ -1150,5 +1150,6 @@ export default {
     player_normalization_type_up: 'Only Increase',
     player_normalization_type_down: 'Only Decrease',
     storage_quota_exceeded: 'Storage quota exceeded. Clear cache and try again.',
+    settings_cub_domain: 'Primary domain',
 
 }

@@ -1165,4 +1165,5 @@ export default {
     player_normalization_type_all: 'Усе',
     player_normalization_type_up: 'Толькі павышэнне',
     player_normalization_type_down: 'Толькі паніжэнне',
+    settings_cub_domain: 'Асноўны дамен',
 }

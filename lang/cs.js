@@ -1230,5 +1230,6 @@ player_normalization_type_all: 'Vše',
 player_normalization_type_up: 'Pouze zvýšení',
 player_normalization_type_down: 'Pouze snížení',
 storage_quota_exceeded: 'Překročena kvóta úložiště. Vymažte mezipaměť a zkuste to znovu.',
+settings_cub_domain: 'Primární doména',
 
 };
