@@ -1100,5 +1100,6 @@ export default {
     player_normalization_type_up: '仅提升',
     player_normalization_type_down: '仅降低',
     storage_quota_exceeded: '存储配额已超出。清除缓存后重试。',
+    settings_cub_domain: '主域',
 
 }

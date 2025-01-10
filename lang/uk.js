@@ -1125,5 +1125,6 @@ export default {
     player_normalization_type_up: 'Тільки підвищення',
     player_normalization_type_down: 'Тільки зниження',
     storage_quota_exceeded: 'Перевищено ліміт сховища. Очистіть кеш і спробуйте ще раз.',
+    settings_cub_domain: 'Основний домен',
 
 }
