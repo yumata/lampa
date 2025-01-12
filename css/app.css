@@ -7890,6 +7890,10 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
   padding: 0.6em;
   background: #fff;
   margin-bottom: 1.8em;
+  opacity: 0;
+}
+.account-add-device.loaded .account-add-device__qr {
+  opacity: 1;
 }
 
 .cub-premium {
