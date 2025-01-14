@@ -2743,7 +2743,7 @@ body.settings--open .settings__layer {
     width: 25%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .card--category {
     width: 33.3%;
   }
@@ -6441,8 +6441,8 @@ body.selectbox--open .selectbox__layer {
 }
 @media screen and (max-width: 480px) {
   .category-full .card {
-    padding-left: 0.375em;
-    padding-right: 0.375em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }
 .category-full__more {
