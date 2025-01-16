@@ -5944,6 +5944,12 @@ body.selectbox--open .selectbox__layer {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
 }
+.selectbox-item__title sub {
+  vertical-align: super;
+  margin-left: 0.7em;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
 .selectbox-item__subtitle {
   font-size: 1.1em;
   margin-top: 0.4em;
@@ -12115,6 +12121,10 @@ body.system--keyboard .search-box .simple-keyboard-input {
 }
 .ad-bot.img--loaded .ad-bot__img {
   opacity: 1;
+}
+
+body.size--bigger .ad-bot__body {
+  height: 21.7em;
 }
 
 .ad-countdown {
