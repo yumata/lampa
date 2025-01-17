@@ -4427,6 +4427,9 @@ body.true--mobile .full-episode .full-episode__body {
 .player--ios .player-info__error {
   display: none !important;
 }
+.player--loading > div:not(.player-info) {
+  pointer-events: none;
+}
 
 body.selectbox--open .player .player-panel,
 body.selectbox--open .player .player-info {
@@ -5474,6 +5477,42 @@ body.true--mobile.orientation--portrait .player-panel__quality {
   display: block;
 }
 
+.player.player--loading .player-panel__peding, .player.player--loading .player-panel__position {
+  display: none;
+}
+.player.player--loading .player-panel__timeline::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 20%;
+  -webkit-border-radius: 5em;
+     -moz-border-radius: 5em;
+          border-radius: 5em;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: scan;
+     -moz-animation-name: scan;
+       -o-animation-name: scan;
+          animation-name: scan;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+       -o-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 .player-info {
   position: fixed;
   top: 1.5em;
@@ -5651,6 +5690,10 @@ body.true--mobile .player-info .head-backward__button {
 }
 .player.iptv .player-info__values {
   margin-top: 0;
+}
+
+.player.player--loading .player-info__values {
+  display: none;
 }
 
 .player-footer {
