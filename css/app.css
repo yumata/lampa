@@ -10002,7 +10002,7 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 }
 
 @media screen and (max-width: 991px) {
-  body.light--version .explorer__card {
+  body.light--version .explorer__left {
     display: none;
   }
   body.light--version .explorer__files {
