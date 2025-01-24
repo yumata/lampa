@@ -1102,4 +1102,13 @@ export default {
     storage_quota_exceeded: '存储配额已超出。清除缓存后重试。',
     settings_cub_domain: '主域',
 
+    title_ai_assistant: 'AI助手',
+    title_facts: '有趣的事实',
+    ai_search_start_typing: '向AI助手询问您想查找的电影。例如：“关于太空的电影”',
+    ai_search_limit: '请求次数已超出限制。请稍后再试。有了CUB Premium订阅，请求限制将增加，您无需等待！',
+    ai_subscribe_title: '解锁更多AI功能',
+    ai_subscribe_descr: '订阅CUB Premium，增加与AI的交互请求次数。与AI一起，我们将为您推荐最佳电影。',
+
+    dmca_title: '内容被阻止',
+    dmca_descr: '该材料无法查看。该视频是根据版权法依据版权所有者的要求而被屏蔽的。',
 }

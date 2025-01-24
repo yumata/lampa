@@ -1137,4 +1137,13 @@ export default {
     storage_quota_exceeded: 'Limite de armazenamento excedido. Limpe o cache e tente novamente.',
     settings_cub_domain: 'Domínio primário',
 
+    title_ai_assistant: 'Assistente de IA',
+    title_facts: 'Fatos Interessantes',
+    ai_search_start_typing: 'Pergunte ao Assistente de IA quais filmes você deseja encontrar. Por exemplo: "Filmes sobre o espaço"',
+    ai_search_limit: 'Limite de solicitações excedido. Tente novamente mais tarde. Com a assinatura CUB Premium, os limites serão aumentados e você não precisará esperar!',
+    ai_subscribe_title: 'Desbloqueie mais possibilidades com a IA',
+    ai_subscribe_descr: 'Assine o CUB Premium e aumente o número de solicitações para a IA. Junto com a IA, encontraremos os melhores filmes para você.',
+
+    dmca_title: 'Conteúdo bloqueado',
+    dmca_descr: 'Este material não está disponível para visualização. Foi bloqueado a pedido do detentor dos direitos autorais, de acordo com a lei de direitos autorais.',
 }

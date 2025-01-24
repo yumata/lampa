@@ -1049,4 +1049,14 @@ export default {
     player_normalization_type_down: 'רק הנמכה',
     storage_quota_exceeded: 'מכסת האחסון חרגה. נקה את המטמון ונסה שוב.',
     settings_cub_domain: 'דומיין ראשי',
+
+    title_ai_assistant: 'עוזר AI',
+    title_facts: 'עובדות מעניינות',
+    ai_search_start_typing: 'שאלו את עוזר ה-AI אילו סרטים אתם רוצים למצוא. למשל: "סרטים על חלל"',
+    ai_search_limit: 'חרגת ממגבלת הבקשות. נסה שוב מאוחר יותר. עם מנוי CUB Premium המגבלות יגדלו ולא תצטרך להמתין!',
+    ai_subscribe_title: 'פתחו אפשרויות נוספות עם AI',
+    ai_subscribe_descr: 'עשו מנוי ל-CUB Premium והגדילו את מספר הבקשות ל-AI. יחד עם AI נמצא עבורכם את הסרטים הטובים ביותר שאפשר.',
+
+    dmca_title: 'תוכן חסום',
+    dmca_descr: 'חומר זה אינו זמין לצפייה. הוא נחסם לבקשת בעל זכויות היוצרים בהתאם לחוק זכויות היוצרים.',
 }

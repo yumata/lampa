@@ -1152,4 +1152,13 @@ export default {
     storage_quota_exceeded: 'Storage quota exceeded. Clear cache and try again.',
     settings_cub_domain: 'Primary domain',
 
+    title_ai_assistant: 'AI Assistant',
+    title_facts: 'Interesting Facts',
+    ai_search_start_typing: 'Ask the AI Assistant what movies you want to find. For example: "Movies about space"',
+    ai_search_limit: 'Request limit exceeded. Please try again later. With a CUB Premium subscription, limits will be increased, and you won’t have to wait!',
+    ai_subscribe_title: 'Unlock More Opportunities with AI',
+    ai_subscribe_descr: 'Subscribe to CUB Premium and increase the number of requests to AI. Together with AI, we’ll find the best movies for you.',
+
+    dmca_title: 'Content blocked',
+    dmca_descr: 'This material is not available for viewing. It has been blocked at the request of the copyright holder in accordance with copyright law.',
 }
