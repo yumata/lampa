@@ -7031,6 +7031,7 @@ body.platform--netcast .category-full:after {
 }
 .search-source__tab {
   padding: 0.4em 0 0.5em;
+  white-space: nowrap;
 }
 .search-source__count {
   background-color: rgba(0, 0, 0, 0.6);
