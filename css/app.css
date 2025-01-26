@@ -933,7 +933,7 @@ body.true--mobile.orientation--landscape .navigation-bar .navigation-bar__body {
 }
 
 body.ambience--enable .navigation-bar {
-  display: none;
+  visibility: hidden;
 }
 
 .head-backward {
