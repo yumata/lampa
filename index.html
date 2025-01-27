@@ -56,7 +56,7 @@
         var lampa_url     = '';
         var cache_version = Math.floor((new Date()).getTime() / 9e5); // Новое значение каждые 15 минут
             
-        function URL(base, add) {
+        function urlJoin(base, add) {
             if (base.charAt(base.length - 1) !== '/') {
                 base += '/'
             }
@@ -123,12 +123,12 @@
             && /^https?:\/\//i.test(AndroidJS.getLampaURL())
             && !/^https?:\/\//i.test(location.href)
         ) {
-            lampa_url = URL(AndroidJS.getLampaURL(),'')
+            lampa_url = urlJoin(AndroidJS.getLampaURL(),'')
         }
 
         if (lampa_url !== '') {
             putScript(
-                URL(lampa_url, 'app.min.js?v=' + cache_version),
+                urlJoin(lampa_url, 'app.min.js?v=' + cache_version),
                 function () {
                     var css = URL(lampa_url, 'css/app.css?v=' + cache_version)
 
@@ -136,14 +136,14 @@
                 },
                 function () {
                     putScript(
-                        URL(lampa_url, 'lampa-main/app.min.js?v=' + cache_version),
+                        urlJoin(lampa_url, 'lampa-main/app.min.js?v=' + cache_version),
                         function () {
-                            var css = URL(lampa_url, 'lampa-main/css/app.css?v=' + cache_version)
+                            var css = urlJoin(lampa_url, 'lampa-main/css/app.css?v=' + cache_version)
 
                             $('head').append('<link rel="stylesheet" href="' + css + '">')
 
                             putScript(
-                                URL(lampa_url, 'lampainit.js?v=' + cache_version),
+                                urlJoin(lampa_url, 'lampainit.js?v=' + cache_version),
                                 false,
                                 function(){}
                             )
