@@ -1205,6 +1205,18 @@ body.light--version .wrap__left {
   margin-right: 1em;
   position: relative;
 }
+.head__logo-local {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #EA4E4E;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0.1em 0.3em;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+}
 .head__logo-halloween {
   position: relative;
   width: 2.7em;
