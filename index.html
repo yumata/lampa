@@ -130,7 +130,7 @@
             putScript(
                 urlJoin(lampa_url, 'app.min.js?v=' + cache_version),
                 function () {
-                    var css = URL(lampa_url, 'css/app.css?v=' + cache_version)
+                    var css = urlJoin(lampa_url, 'css/app.css?v=' + cache_version)
 
                     $('head').append('<link rel="stylesheet" href="' + css + '">')
                 },
