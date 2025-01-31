@@ -128,6 +128,12 @@
 
         if (lampa_url !== '') {
             putScript(
+                urlJoin(lampa_url, 'lampainit.js?v=' + cache_version),
+                false,
+                function(){}
+            )
+
+            putScript(
                 urlJoin(lampa_url, 'app.min.js?v=' + cache_version),
                 function () {
                     var css = urlJoin(lampa_url, 'css/app.css?v=' + cache_version)
