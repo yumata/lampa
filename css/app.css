@@ -12060,6 +12060,30 @@ body.system--keyboard .search-box .simple-keyboard-input {
 .extensions__item-code.yellow {
   color: #ffd016;
 }
+.extensions__item-error {
+  width: 1.2em;
+  height: 1.2em;
+  background: #d74545;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  margin-right: 0.5em;
+  position: relative;
+}
+.extensions__item-error::after {
+  content: "!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 900;
+}
 .extensions__item-proto {
   margin-right: 0.5em;
 }

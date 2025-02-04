@@ -1176,4 +1176,11 @@ export default {
 
     dmca_title: 'Кантэнт заблакаваны',
     dmca_descr: 'Гэты матэрыял недаступны для прагляду. Ён быў заблакаваны па просьбе праваўладальніка ў адпаведнасці з заканадаўствам аб аўтарскіх правах.',
+
+    loading_progress_step_0: 'Падрыхтоўка',
+    loading_progress_step_1: 'Загрузка моў',
+    loading_progress_step_2: 'Пошук люстэркаў',
+    loading_progress_step_3: 'Падрыхтоўка пашырэнняў',
+    loading_progress_step_4: 'Засталося крыху',
+    loading_progress_step_5: 'Ужо хутка'
 }

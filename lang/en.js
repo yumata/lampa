@@ -1161,4 +1161,12 @@ export default {
 
     dmca_title: 'Content blocked',
     dmca_descr: 'This material is not available for viewing. It has been blocked at the request of the copyright holder in accordance with copyright law.',
+
+    loading_progress_step_0: 'Preparation',
+    loading_progress_step_1: 'Loading languages',
+    loading_progress_step_2: 'Searching for mirrors',
+    loading_progress_step_3: 'Preparing extensions',
+    loading_progress_step_4: 'Almost there',
+    loading_progress_step_5: 'Coming soon'
+
 }

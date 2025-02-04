@@ -1172,4 +1172,11 @@ export default {
 
     dmca_title: 'Obsah zablokován',
     dmca_descr: 'Tento materiál není k nahlédnutí. Byl zablokován na žádost držitele autorských práv v souladu s autorským zákonem.',
+
+    loading_progress_step_0: 'Příprava',
+    loading_progress_step_1: 'Načítání jazyků',
+    loading_progress_step_2: 'Hledání zrcadel',
+    loading_progress_step_3: 'Příprava rozšíření',
+    loading_progress_step_4: 'Už jen trochu',
+    loading_progress_step_5: 'Už brzy'
 };

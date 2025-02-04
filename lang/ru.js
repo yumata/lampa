@@ -1174,4 +1174,11 @@ export default {
 
     dmca_title: 'Контент заблокирован',
     dmca_descr: 'Данный материал недоступен для просмотра. Он был заблокирован по просьбе правообладателя в соответствии с законодательством об авторских правах.',
+
+    loading_progress_step_0: 'Подготовка',
+    loading_progress_step_1: 'Загрузка языков',
+    loading_progress_step_2: 'Поиск зеркал',
+    loading_progress_step_3: 'Подготовка расширений',
+    loading_progress_step_4: 'Осталось немного',
+    loading_progress_step_5: 'Уже скоро',
 }

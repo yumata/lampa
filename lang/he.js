@@ -1059,4 +1059,11 @@ export default {
 
     dmca_title: 'תוכן חסום',
     dmca_descr: 'חומר זה אינו זמין לצפייה. הוא נחסם לבקשת בעל זכויות היוצרים בהתאם לחוק זכויות היוצרים.',
+
+    loading_progress_step_0: 'הכנה',
+    loading_progress_step_1: 'טעינת שפות',
+    loading_progress_step_2: 'חיפוש מראות',
+    loading_progress_step_3: 'הכנת הרחבות',
+    loading_progress_step_4: 'כמעט סיימנו',
+    loading_progress_step_5: 'ממש בקרוב'
 }

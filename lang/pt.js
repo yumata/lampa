@@ -1146,4 +1146,12 @@ export default {
 
     dmca_title: 'Conteúdo bloqueado',
     dmca_descr: 'Este material não está disponível para visualização. Foi bloqueado a pedido do detentor dos direitos autorais, de acordo com a lei de direitos autorais.',
+
+    loading_progress_step_0: 'Preparação',
+    loading_progress_step_1: 'Carregando idiomas',
+    loading_progress_step_2: 'Procurando espelhos',
+    loading_progress_step_3: 'Preparando extensões',
+    loading_progress_step_4: 'Quase pronto',
+    loading_progress_step_5: 'Chegando em breve'
+
 }

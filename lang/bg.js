@@ -1160,4 +1160,11 @@ export default {
 
     dmca_title: 'Съдържанието е блокирано',
     dmca_descr: 'Този материал не е достъпен за гледане. Беше блокиран по искане на притежателя на авторските права в съответствие със закона за авторското право.',
+
+    loading_progress_step_0: 'Подготовка',
+    loading_progress_step_1: 'Зареждане на езици',
+    loading_progress_step_2: 'Търсене на огледала',
+    loading_progress_step_3: 'Подготовка на разширения',
+    loading_progress_step_4: 'Остава малко',
+    loading_progress_step_5: 'Скоро готово'
 }

@@ -1111,4 +1111,11 @@ export default {
 
     dmca_title: '内容被阻止',
     dmca_descr: '该材料无法查看。该视频是根据版权法依据版权所有者的要求而被屏蔽的。',
+
+    loading_progress_step_0: '准备',
+    loading_progress_step_1: '加载语言',
+    loading_progress_step_2: '搜索镜像',
+    loading_progress_step_3: '准备扩展',
+    loading_progress_step_4: '快完成了',
+    loading_progress_step_5: '即将完成'
 }
