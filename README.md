@@ -8,6 +8,9 @@
 * LG WebOS
 * Samsung Tizen
 * MSX
+* Android
+* MacOS
+* Windows
 
 ## Установка для MSX
 
