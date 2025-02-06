@@ -9899,7 +9899,8 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 .explorer__search > span {
   font-size: 1.1em;
 }
-.explorer--fullsize .explorer__card {
+.explorer--fullsize .explorer__card,
+.explorer--fullsize .explorer__left {
   display: none;
 }
 .explorer--fullsize .explorer__files {
