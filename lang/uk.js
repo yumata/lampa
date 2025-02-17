@@ -672,7 +672,6 @@ export default {
     settings_added: 'Додано',
     settings_removed: 'Вилучено',
     settings_param_player_inner: 'Вбудований',
-    settings_param_player_tvOS: 'Питати кожного разу',
     settings_param_player_outside: 'Зовнішній',
     settings_param_yes: 'Так',
     settings_param_no: 'Ні',
