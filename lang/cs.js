@@ -1178,5 +1178,13 @@ export default {
     loading_progress_step_2: 'Hledání zrcadel',
     loading_progress_step_3: 'Příprava rozšíření',
     loading_progress_step_4: 'Už jen trochu',
-    loading_progress_step_5: 'Už brzy'
+    loading_progress_step_5: 'Už brzy',
+
+    install_extension_rule_1: 'Instalace externího pluginu',
+    install_extension_rule_2: 'Pluginy jsou vytvářeny nezávislými vývojáři a LAMPA neověřuje jejich obsah. Instalací souhlasíte s tím, že:',
+    install_extension_rule_3: '- Některé pluginy mohou požadovat přístup k vašim datům nebo pracovat s neověřenými zdroji.',
+    install_extension_rule_4: '- Pokud vámi nainstalovaný plugin porušuje autorská práva nebo jiné zákony, veškerá odpovědnost za jeho použití je na vás.',
+    install_extension_rule_5: '- Instalujte pouze pluginy z důvěryhodných zdrojů. Pokud máte pochybnosti o bezpečnosti nebo legálnosti pluginu, raději jej neinstalujte.',
+    install_extension_rule_6: 'LAMPA nepodporuje ani neschvaluje pluginy související s pirátským obsahem.',
+    install_extension_rule_7: 'Pokračováním potvrzujete, že rozumíte těmto rizikům.'
 };

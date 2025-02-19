@@ -1117,5 +1117,13 @@ export default {
     loading_progress_step_2: '搜索镜像',
     loading_progress_step_3: '准备扩展',
     loading_progress_step_4: '快完成了',
-    loading_progress_step_5: '即将完成'
+    loading_progress_step_5: '即将完成',
+
+    install_extension_rule_1: '安装第三方插件',
+    install_extension_rule_2: '插件由独立开发者创建，LAMPA 不会审核其内容。安装插件即表示您同意以下内容：',
+    install_extension_rule_3: '- 某些插件可能会请求访问您的数据或使用未经验证的来源。',
+    install_extension_rule_4: '- 如果您安装的插件侵犯了版权或其他法律，您需自行承担全部责任。',
+    install_extension_rule_5: '- 仅安装来自可信来源的插件。如果您对插件的安全性或合法性存有疑虑，建议不要安装。',
+    install_extension_rule_6: 'LAMPA 不支持或认可与盗版内容相关的插件。',
+    install_extension_rule_7: '继续操作即表示您确认理解这些风险。'
 }

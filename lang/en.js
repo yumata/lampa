@@ -1167,6 +1167,13 @@ export default {
     loading_progress_step_2: 'Searching for mirrors',
     loading_progress_step_3: 'Preparing extensions',
     loading_progress_step_4: 'Almost there',
-    loading_progress_step_5: 'Coming soon'
+    loading_progress_step_5: 'Coming soon',
 
+    install_extension_rule_1: 'Installing a third-party plugin',
+    install_extension_rule_2: 'Plugins are created by independent developers, and LAMPA does not verify their content. By installing them, you agree that:',
+    install_extension_rule_3: '- Some plugins may request access to your data or work with unverified sources.',
+    install_extension_rule_4: '- If the plugin you install violates copyright or other laws, you are fully responsible for its use.',
+    install_extension_rule_5: '- Install only plugins from trusted sources. If you have any doubts about the security or legality of a plugin, it is better to refrain from installing it.',
+    install_extension_rule_6: 'LAMPA does not support or endorse plugins related to pirated content.',
+    install_extension_rule_7: 'By proceeding, you confirm that you understand these risks.'
 }

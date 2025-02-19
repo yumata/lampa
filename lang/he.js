@@ -1065,5 +1065,13 @@ export default {
     loading_progress_step_2: 'חיפוש מראות',
     loading_progress_step_3: 'הכנת הרחבות',
     loading_progress_step_4: 'כמעט סיימנו',
-    loading_progress_step_5: 'ממש בקרוב'
+    loading_progress_step_5: 'ממש בקרוב',
+
+    install_extension_rule_1: 'התקנת תוסף צד שלישי',
+    install_extension_rule_2: 'תוספים נוצרים על ידי מפתחים עצמאיים, ו-LAMPA אינה בודקת את תוכנם. על ידי התקנתם, אתה מסכים כי:',
+    install_extension_rule_3: '- חלק מהתוספים עשויים לבקש גישה לנתונים שלך או לעבוד עם מקורות לא מאומתים.',
+    install_extension_rule_4: '- אם התוסף שהתקנת מפר זכויות יוצרים או חוקים אחרים, האחריות המלאה על השימוש בו חלה עליך.',
+    install_extension_rule_5: '- התקן תוספים רק ממקורות מהימנים. אם יש לך ספקות לגבי אבטחתו או חוקיותו של תוסף, עדיף להימנע מהתקנתו.',
+    install_extension_rule_6: 'LAMPA אינה תומכת ואינה מאשרת תוספים הקשורים לתוכן פיראטי.',
+    install_extension_rule_7: 'בהמשך, אתה מאשר שאתה מבין את הסיכונים הללו.'
 }
