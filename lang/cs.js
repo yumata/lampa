@@ -807,6 +807,7 @@ export default {
 
     settings_param_player_inner: "Vestavěný",
     settings_param_player_outside: "Externí",
+    settings_param_player_inner_tvos: 'Vnitřní',
     settings_param_yes: "Ano",
     settings_param_no: "Ne",
     settings_param_interface_size_small: "Menší",

@@ -707,6 +707,7 @@ export default {
 
     settings_param_player_inner: 'Убудаваны',
     settings_param_player_outside: 'Вонкавы',
+    settings_param_player_inner_tvos: 'Внутршній',
     settings_param_yes: 'Так',
     settings_param_no: 'Не',
     settings_param_interface_size_small: 'Менш',

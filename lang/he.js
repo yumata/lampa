@@ -666,6 +666,7 @@ export default {
     settings_removed: 'הוסר',
     settings_param_player_inner: 'IL',
     settings_param_player_outside: 'חיצוני',
+    settings_param_player_inner_tvos: 'פנימי',
     settings_param_yes: 'כן',
     settings_param_no: 'לא',
     settings_param_interface_size_small: 'קטן',

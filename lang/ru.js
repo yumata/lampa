@@ -813,6 +813,7 @@ export default {
 
     settings_param_player_inner: 'Встроенный',
     settings_param_player_outside: 'Внешний',
+    settings_param_player_inner_tvos: 'Встроенный',
     settings_param_yes: 'Да',
     settings_param_no: 'Нет',
     settings_param_interface_size_small: 'Меньше',

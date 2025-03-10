@@ -673,6 +673,7 @@ export default {
     settings_removed: 'Вилучено',
     settings_param_player_inner: 'Вбудований',
     settings_param_player_outside: 'Зовнішній',
+    settings_param_player_inner_tvos: 'Вбудований',
     settings_param_yes: 'Так',
     settings_param_no: 'Ні',
     settings_param_interface_size_small: 'Менше',

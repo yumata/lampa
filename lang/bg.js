@@ -704,6 +704,7 @@ export default {
 
     settings_param_player_inner: 'Lampa',
     settings_param_player_outside: 'Външен',
+    settings_param_player_inner_tvos: 'Вътрешен',
     settings_param_yes: 'Да',
     settings_param_no: 'Не',
     settings_param_interface_size_small: 'По-малък',

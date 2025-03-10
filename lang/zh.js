@@ -671,6 +671,7 @@ export default {
     settings_removed: '已删除',
     settings_param_player_inner: 'Lampa',
     settings_param_player_outside: '外部',
+    settings_param_player_inner_tvos: '内部的',
     settings_param_yes: '是',
     settings_param_no: '否',
     settings_param_interface_size_small: '较小',

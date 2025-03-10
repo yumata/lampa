@@ -703,6 +703,7 @@ export default {
 
 	settings_param_player_inner: 'Lampa',
     settings_param_player_outside: 'Externo',
+    settings_param_player_inner_tvos: 'Interno',
     settings_param_yes: 'Sim',
     settings_param_no: 'Não',
     settings_param_interface_size_small: 'Menor',
