@@ -2097,6 +2097,7 @@ body.light--version .menu__item {
 @media screen and (max-width: 480px) {
   .settings__body {
     height: auto !important;
+    font-size: 1.15em;
   }
 }
 .settings__body > * {

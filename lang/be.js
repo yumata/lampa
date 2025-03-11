@@ -48,7 +48,7 @@ export default {
 
 
     settings_cub_sync: 'Сінхранізацыя',
-    settings_cub_sync_descr: 'Сінхранізацыя з сэрвісам CUB: сінхранізацыя вашых закладак, гісторыі праглядаў, пазнак і тайм-кодаў. Сайт: www.cub.red',
+    settings_cub_sync_descr: 'Сінхранізацыя з сэрвісам CUB: сінхранізацыя вашых закладак, гісторыі праглядаў, пазнак і тайм-кодаў.',
     settings_cub_account: 'Акаўнт',
     settings_cub_logged_in_as: 'Увайшлі як',
     settings_cub_profile: 'Профіль',
@@ -748,7 +748,7 @@ export default {
     helper_torrents_view: 'Для скіду тайм-кода і выкліку меню ўтрымлівайце клавішу (ОК)',
 
     fav_sync_title: 'Сінхранізацыя закладак',
-    fav_sync_text: 'Вашыя любімыя закладкі разам з Вамі. Падлучыце сінхранізацыю і праглядайце на любой прыладзе. <br><br>Для гэтага зарэгіструйцеся на сайце www.cub.red, стварыце профіль і аўтарызуйцеся ў дадатак.',
+    fav_sync_text: 'Вашыя любімыя закладкі разам з Вамі. Падлучыце сінхранізацыю і праглядайце на любой прыладзе. <br><br>Для гэтага зарэгіструйцеся на сайце {site}, стварыце профіль і аўтарызуйцеся ў дадатак.',
     fav_sync_site: 'Сайт',
     fav_remove_title: 'Выдаліць з гісторыі',
     fav_remove_descr: 'Выдаліць выдзеленую картку',
@@ -825,7 +825,7 @@ export default {
     notice_new_quality: 'Даступна новая якасць',
     notice_quality: 'Якасць',
     notice_new_episode: 'Новая серыя',
-    notice_none: 'У вас яшчэ няма ніякіх апавяшчэнняў, зарэгіструйцеся на сайце <b>www.cub.red</b>, каб сачыць за новымі серыямі і рэлізамі.',
+    notice_none: 'У вас яшчэ няма ніякіх апавяшчэнняў, зарэгіструйцеся на сайце <b>{site}</b>, каб сачыць за новымі серыямі і рэлізамі.',
     notice_in_quality: 'У якасці',
 
     copy_link: 'Капіяваць спасылку на відэа',
@@ -847,10 +847,10 @@ export default {
     account_import_fail: 'Памылка пры імпарце',
     account_imported: 'імпартавана',
     account_reload_after: 'перазагрузка праз 5 сек.',
-    account_create: 'Адкрыйце больш магчымасцяў з акаўнтам CUB. Зарэгіструйцеся на сайце <span class="account-modal__site">www.cub.red</span> і атрымайце доступ да сінхранізацыі вашых закладак, тайм-кодаў і іншых магчымасцяў акаўнта CUB.',
+    account_create: 'Адкрыйце больш магчымасцяў з акаўнтам CUB. Зарэгіструйцеся на сайце <span class="account-modal__site">{site}</span> і атрымайце доступ да сінхранізацыі вашых закладак, тайм-кодаў і іншых магчымасцяў акаўнта CUB.',
     account_premium: 'Раскрыйце новыя гарызонты з акаўнтам CUB Premium! Атрымлівайце асалоду ад павялічанымі лімітамі і ўзбагачаным функцыяналам сэрвісу. Дадатковыя магчымасці чакаюць вас ужо сёння!',
     account_premium_more: 'Больш падрабязна пра CUB Premium',
-    account_limited: 'Вы дасягнулі максімальнага ліміту. Павялічце ліміт з акаўнтам CUB Premium. Падрабязней на сайце <span class="account-modal__site">www.cub.red/premium</span>',
+    account_limited: 'Вы дасягнулі максімальнага ліміту. Павялічце ліміт з акаўнтам CUB Premium. Падрабязней на сайце <span class="account-modal__site">{site}/premium</span>',
     account_premium_include_1: 'Павелічэнне колькасць закладак',
     account_premium_include_2: 'Павелічэнне гісторыі праглядаў',
     account_premium_include_3: 'Павелічэнне колькасць тайм-кодаў',
@@ -867,7 +867,7 @@ export default {
     account_code_enter: 'Калі ласка, увядзіце шэсцізначны код',
     account_code_error: 'Магчыма, вы ўвялі няправільны ці старэлы код',
     account_code_wrong: 'Магчыма, вы ўказалі няправільны фармат',
-    account_code_where: 'Перайдзіце на сайт <span class="account-add-device__site">cub.red/add</span> і ўвядзіце там указаны код.',
+    account_code_where: 'Перайдзіце на сайт <span class="account-add-device__site">{site}/add</span> і ўвядзіце там указаны код.',
     account_code_input: 'Увесці код',
     settings_cub_signin_button: 'Увайсці',
 
