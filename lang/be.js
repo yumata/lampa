@@ -764,6 +764,7 @@ export default {
     timetable_empty: 'У гэтым раздзеле будуць адлюстроўвацца даты выхаду новых серый',
 
     player_quality: 'Якасць',
+    player_flow: 'Струмень',
     player_tracks: 'Аўдыёдарожкі',
     player_disabled: 'Адключана',
     player_unknown: 'Невядома',

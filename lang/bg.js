@@ -761,6 +761,7 @@ export default {
     timetable_empty: 'Този раздел ще покаже датите на пускане на нови епизоди.',
 
     player_quality: 'Качество',
+    player_flow: 'Поток',
     player_tracks: 'Аудио пътчеки',
     player_disabled: 'Забранено',
     player_unknown: 'Непознат',

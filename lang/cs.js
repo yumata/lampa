@@ -873,6 +873,7 @@ export default {
     timetable_empty: "V této sekci budou zobrazeny data vydání nových epizod",
 
     player_quality: "Kvalita",
+    player_flow: 'Tok',
     player_tracks: "Zvukové stopy",
     player_disabled: "Zakázáno",
     player_unknown: "Neznámé",

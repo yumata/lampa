@@ -724,6 +724,7 @@ export default {
     fav_time_cleared: '清除时间码',
     timetable_empty: '此部分将显示新剧集的发布日期。',
     player_quality: '质量',
+    player_flow: '流动',
     player_tracks: '音轨',
     player_disabled: '已禁用',
     player_unknown: '未知',

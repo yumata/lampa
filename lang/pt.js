@@ -760,6 +760,7 @@ export default {
     timetable_empty: 'Esta secção exibirá as datas de lançamento dos novos episódios.',
 
 	player_quality: 'Qualidade',
+    player_flow: 'Fluxo',
     player_tracks: 'Faixas de áudio',
     player_disabled: 'Desativado',
     player_unknown: 'Desconhecido',

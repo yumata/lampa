@@ -761,6 +761,7 @@ export default {
     timetable_empty: 'This section will display the release dates of new episodes.',
 
     player_quality: 'Quality',
+    player_flow: 'Flow',
     player_tracks: 'Audio tracks',
     player_disabled: 'Disabled',
     player_unknown: 'Unknown',

@@ -879,6 +879,7 @@ export default {
     timetable_empty: 'В этом разделе будут отображаться даты выхода новых серий',
 
     player_quality: 'Качество',
+    player_flow: 'Поток',
     player_tracks: 'Аудиодорожки',
     player_disabled: 'Отключено',
     player_unknown: 'Неизвестно',

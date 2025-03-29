@@ -719,6 +719,7 @@ export default {
     fav_time_cleared: 'לוח זמנים פנוי',
     timetable_empty: 'סעיף זה יציג את תאריכי השחרור של פרקים חדשים.',
     player_quality: 'איכות',
+    player_flow: 'זְרִימָה',
     player_tracks: 'רצועות שמע',
     player_disabled: 'לא פעיל',
     player_unknown: 'לא ידוע',

@@ -726,6 +726,7 @@ export default {
     fav_time_cleared: 'Тайм-коди очищені',
     timetable_empty: 'У цьому розділі відображатимуться дати виходу нових серій',
     player_quality: 'Якість',
+    player_flow: 'Потік',
     player_tracks: 'Аудіодоріжки',
     player_disabled: 'Вимкнено',
     player_unknown: 'Невідомо',
