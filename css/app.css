@@ -6696,6 +6696,9 @@ body.selectbox--open .selectbox__layer {
   body.size--bigger .card-more {
     font-size: 1.14em;
   }
+  body.size--bigger .card.card--collection + .card-more {
+    width: 14.3em;
+  }
 }
 .loading-layer {
   position: fixed;
