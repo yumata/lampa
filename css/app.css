@@ -2484,10 +2484,13 @@ body.settings--open .settings__layer {
   color: #000;
 }
 .items-line + .items-line {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 .items-line--type-cards {
-  min-height: 24em;
+  min-height: 29.5em;
+}
+.items-line--type-top {
+  min-height: 29.5em;
 }
 .items-line--type-collection {
   min-height: 15em;
