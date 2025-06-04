@@ -377,7 +377,9 @@ body.keyboard-input--visible .normalization {
 }
 
 body.ambience--enable .wrap,
-body.ambience--enable .head {
+body.ambience--enable .head,
+body:not(.glass--style).keyboard-input--visible .wrap,
+body:not(.glass--style).keyboard-input--visible .head {
   display: none;
 }
 
