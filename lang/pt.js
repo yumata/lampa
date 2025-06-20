@@ -1162,5 +1162,6 @@ export default {
     install_extension_rule_4: '- Se o plug-in que você instalar violar direitos autorais ou outras leis, toda a responsabilidade pelo seu uso será sua.',
     install_extension_rule_5: '- Instale apenas plug-ins de fontes confiáveis. Se você tiver dúvidas sobre a segurança ou legalidade de um plug-in, é melhor não instalá-lo.',
     install_extension_rule_6: 'O LAMPA não apoia nem aprova plug-ins relacionados a conteúdo pirata.',
-    install_extension_rule_7: 'Ao continuar, você confirma que compreende esses riscos.'
+    install_extension_rule_7: 'Ao continuar, você confirma que compreende esses riscos.',
+    ad_plugin: 'Anúncio do plugin',
 }

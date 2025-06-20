@@ -1127,5 +1127,6 @@ export default {
     install_extension_rule_4: '- 如果您安装的插件侵犯了版权或其他法律，您需自行承担全部责任。',
     install_extension_rule_5: '- 仅安装来自可信来源的插件。如果您对插件的安全性或合法性存有疑虑，建议不要安装。',
     install_extension_rule_6: 'LAMPA 不支持或认可与盗版内容相关的插件。',
-    install_extension_rule_7: '继续操作即表示您确认理解这些风险。'
+    install_extension_rule_7: '继续操作即表示您确认理解这些风险。',
+    ad_plugin: '插件广告',
 }

@@ -1148,6 +1148,7 @@ export default {
 
     ad: 'Реклама',
     ad_disable: 'Подписавшись на CUB Premium, вы забудете о рекламе.',
+    ad_plugin: 'Реклама от плагина',
     ad_after: 'Реклама через',
     ad_skip: 'Пропустить',
     ad_continue_after: 'Просмотр начнется через',

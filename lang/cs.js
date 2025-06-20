@@ -1188,5 +1188,6 @@ export default {
     install_extension_rule_4: '- Pokud vámi nainstalovaný plugin porušuje autorská práva nebo jiné zákony, veškerá odpovědnost za jeho použití je na vás.',
     install_extension_rule_5: '- Instalujte pouze pluginy z důvěryhodných zdrojů. Pokud máte pochybnosti o bezpečnosti nebo legálnosti pluginu, raději jej neinstalujte.',
     install_extension_rule_6: 'LAMPA nepodporuje ani neschvaluje pluginy související s pirátským obsahem.',
-    install_extension_rule_7: 'Pokračováním potvrzujete, že rozumíte těmto rizikům.'
+    install_extension_rule_7: 'Pokračováním potvrzujete, že rozumíte těmto rizikům.',
+    ad_plugin: 'Reklama z pluginu',
 };

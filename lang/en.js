@@ -1177,5 +1177,6 @@ export default {
     install_extension_rule_4: '- If the plugin you install violates copyright or other laws, you are fully responsible for its use.',
     install_extension_rule_5: '- Install only plugins from trusted sources. If you have any doubts about the security or legality of a plugin, it is better to refrain from installing it.',
     install_extension_rule_6: 'LAMPA does not support or endorse plugins related to pirated content.',
-    install_extension_rule_7: 'By proceeding, you confirm that you understand these risks.'
+    install_extension_rule_7: 'By proceeding, you confirm that you understand these risks.',
+    ad_plugin: 'Advertisement from the plugin',
 }
