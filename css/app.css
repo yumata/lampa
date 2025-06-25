@@ -1179,6 +1179,118 @@ body.light--version .wrap__left {
     background: #fcaa38;
   }
 }
+@-webkit-keyframes marker-status-live {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+            box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+    background-color: #76e67a;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+            box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+            box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@-moz-keyframes marker-status-live {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+         box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+    background-color: #76e67a;
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+         box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+         box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@-o-keyframes marker-status-live {
+  0% {
+    box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+    background-color: #76e67a;
+  }
+  70% {
+    box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@keyframes marker-status-live {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+       -moz-box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+            box-shadow: 0 0 0 0 rgba(118, 230, 122, 0.7);
+    background-color: #76e67a;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+       -moz-box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+            box-shadow: 0 0 0 0.4em rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+       -moz-box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+            box-shadow: 0 0 0 0 rgba(234, 78, 78, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@-webkit-keyframes marker-status-pass {
+  0% {
+    background-color: #76e67a;
+  }
+  65% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@-moz-keyframes marker-status-pass {
+  0% {
+    background-color: #76e67a;
+  }
+  65% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@-o-keyframes marker-status-pass {
+  0% {
+    background-color: #76e67a;
+  }
+  65% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@keyframes marker-status-pass {
+  0% {
+    background-color: #76e67a;
+  }
+  65% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
 .head {
   position: fixed;
   top: 0;
@@ -1394,6 +1506,36 @@ body.light--version .wrap__left {
   .head__time {
     display: none;
   }
+}
+.head__markers {
+  margin: 0 1em;
+}
+.head__markers-item {
+  width: 0.32em;
+  height: 0.32em;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+.head__markers-item + .head__markers-item {
+  margin-top: 0.25em;
+}
+.head__markers-item.status--live {
+  -webkit-animation: marker-status-live 1.5s ease infinite;
+     -moz-animation: marker-status-live 1.5s ease infinite;
+       -o-animation: marker-status-live 1.5s ease infinite;
+          animation: marker-status-live 1.5s ease infinite;
+}
+.head__markers-item.status--error {
+  background: #ff6868;
+}
+.head__markers-item.status--pass {
+  -webkit-animation: marker-status-pass 0.1s ease infinite;
+     -moz-animation: marker-status-pass 0.1s ease infinite;
+       -o-animation: marker-status-pass 0.1s ease infinite;
+          animation: marker-status-pass 0.1s ease infinite;
 }
 
 body.true--mobile .head__logo-icon,
