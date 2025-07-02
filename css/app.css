@@ -1523,10 +1523,7 @@ body.light--version .wrap__left {
   margin-top: 0.25em;
 }
 .head__markers-item.status--live {
-  -webkit-animation: marker-status-live 1.5s ease infinite;
-     -moz-animation: marker-status-live 1.5s ease infinite;
-       -o-animation: marker-status-live 1.5s ease infinite;
-          animation: marker-status-live 1.5s ease infinite;
+  background: #76e67a;
 }
 .head__markers-item.status--error {
   background: #ff6868;
