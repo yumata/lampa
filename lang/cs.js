@@ -1190,4 +1190,12 @@ export default {
     install_extension_rule_6: 'LAMPA nepodporuje ani neschvaluje pluginy související s pirátským obsahem.',
     install_extension_rule_7: 'Pokračováním potvrzujete, že rozumíte těmto rizikům.',
     ad_plugin: 'Reklama z pluginu',
+
+    terminal_title: 'Terminál',
+    terminal_no_access: 'Bez přístupu',
+    terminal_confirm: 'Povolit',
+    terminal_deny: 'Zakázat',
+    terminal_update: 'Aktualizovat',
+    terminal_code: 'Přístupový kód',
+    terminal_text: 'Žádáte o přístup k terminálu. Vývojáři mohou získat přístup k vašemu zařízení a ovládat jej. To může být užitečné pro diagnostiku a řešení problémů, ale také to může představovat bezpečnostní riziko. Ujistěte se, že důvěřujete vývojářům, než udělíte přístup. <br><br>Tuto funkci můžete kdykoli vypnout kliknutím na tlačítko "Zakázat".'
 };

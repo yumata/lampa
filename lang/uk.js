@@ -755,7 +755,7 @@ export default {
     player_speed_default_title: 'Звичайна',
     player_speed_two_descr: 'Відтворення без звуку',
     player_video_speed: 'Швидкість відтворення',
-    player_share_title: 'Поділиться',
+    player_share_title: 'Поділитися',
     player_share_descr: 'Запустити це відео на іншому пристрої',
     player_normalization_power_title: 'Сила нормалізації',
     player_normalization_smooth_title: 'Швидкість нормалізації',
@@ -1154,4 +1154,12 @@ export default {
     install_extension_rule_6: 'LAMPA не підтримує і не схвалює плагіни, пов’язані з піратським контентом.',
     install_extension_rule_7: 'Продовжуючи, ви підтверджуєте, що розумієте ці ризики.',
     ad_plugin: 'Реклама від плагіна',
+
+    terminal_title: 'Термінал',
+    terminal_no_access: 'Без доступу',
+    terminal_confirm: 'Дозволити',
+    terminal_deny: 'Заборонити',
+    terminal_update: 'Оновити',
+    terminal_code: 'Код доступу',
+    terminal_text: 'Ви запитуєте доступ до терміналу. Розробники можуть отримати доступ до вашого пристрою та керувати ним. Це може бути корисно для діагностики та усунення проблем, але також може становити ризик безпеки. Будь ласка, переконайтеся, що ви довіряєте розробникам, перш ніж надавати доступ. <br><br>Ви можете будь-коли вимкнути цю функцію, натиснувши кнопку "Заборонити".'
 }

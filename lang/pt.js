@@ -534,7 +534,7 @@ export default {
     country_zw: 'Zimbábue',
 
     filter_clarify: 'Clarificar',
-    filter_clarify_two: 'Refinir pesquisa',
+    filter_clarify_two: 'Refinar pesquisa',
     filter_set_name: 'Especificar título',
     filter_sorted: 'Ordenar',
     filter_filtred: 'Filtrar',
@@ -1164,4 +1164,12 @@ export default {
     install_extension_rule_6: 'O LAMPA não apoia nem aprova plug-ins relacionados a conteúdo pirata.',
     install_extension_rule_7: 'Ao continuar, você confirma que compreende esses riscos.',
     ad_plugin: 'Anúncio do plugin',
+
+	terminal_title: 'Terminal',
+    terminal_no_access: 'Sem acesso',
+    terminal_confirm: 'Permitir',
+    terminal_deny: 'Negar',
+    terminal_update: 'Atualizar',
+    terminal_code: 'Código de acesso',
+    terminal_text: 'Você está solicitando acesso ao terminal. Os desenvolvedores podem acessar e controlar seu dispositivo. Isso pode ser útil para diagnóstico e solução de problemas, mas também pode representar um risco de segurança. Certifique-se de confiar nos desenvolvedores antes de conceder acesso. <br><br>Você pode desativar este recurso a qualquer momento clicando no botão "Negar".'
 }
