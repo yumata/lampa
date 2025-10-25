@@ -1,8 +1,8 @@
 {
-    "app_version": "3.0.0",
+    "app_version": "3.0.1",
     "css_version": "3.0.0",
     "css_digital": 300,
-    "app_digital": 300,
-    "time": 1761387967427,
-    "hash": "14549fa34bb3ffd40a8e164db76b359b"
+    "app_digital": 301,
+    "time": 1761394112419,
+    "hash": "035b8915a289a3e07dc32f833ed89a6b"
 }
