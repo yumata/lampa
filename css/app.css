@@ -10552,6 +10552,14 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 0.5em;
+  width: 50%;
+}
+.about__contacts > div span {
+  max-width: 90%;
+  overflow: hidden;
+  display: block;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 .about__rules {
   padding-top: 1em;
@@ -10603,6 +10611,15 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 }
 .about__rules a {
   color: inherit;
+}
+
+body.platform--orsay .about__contacts,
+body.platform--netcast .about__contacts {
+  display: block;
+}
+body.platform--orsay .about__contacts > div,
+body.platform--netcast .about__contacts > div {
+  float: left;
 }
 
 .error {
