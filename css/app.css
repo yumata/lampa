@@ -11113,6 +11113,9 @@ body.system--keyboard .search-box .simple-keyboard-input {
      -moz-border-radius: 0.3em;
           border-radius: 0.3em;
   white-space: nowrap;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .console__tab + .console__tab {
   margin-left: 1em;
