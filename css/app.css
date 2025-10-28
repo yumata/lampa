@@ -2848,6 +2848,27 @@ body.settings--open .settings__layer {
   width: 100%;
   background-color: #3E3E3E;
 }
+.card__img-broken {
+  position: absolute;
+  top: 25%;
+  left: 1em;
+  right: 1em;
+  word-break: break-all;
+  line-height: 1.4;
+  background: #3E3E3E;
+  bottom: 20%;
+  color: #ffffff82;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .card__view {
   margin-bottom: 1em;
   position: relative;
