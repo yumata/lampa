@@ -1037,7 +1037,7 @@ export default {
     settings_rest_cache_all_descr: '所有设置和数据将被清除',
     settings_rest_cache_calculate: '还剩多少内存',
 
-    title_left:'左边',
+    title_left:'剩余',
 
     account_export_fail_500: '未知错误',
     account_export_fail_610: '您已超过今天的限制',
