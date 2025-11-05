@@ -1194,4 +1194,11 @@ export default {
 
     settings_request_caching_use: '请求缓存',
     settings_request_caching_descr: '缓存来自网络的请求以加快应用程序速度。',
+
+    account_profile_child: '子账户',
+    account_profile_add: '添加账户',
+    account_profile_name: '账户名称',
+    account_profile_created: '账户创建成功',
+    account_profile_limited: '账户数量已达上限：{count}',
+    account_profile_info: '您可以在账户设置中管理账户。为此，请访问<span class="account-modal__site">{site}/profiles</span>',
 }

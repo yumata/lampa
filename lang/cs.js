@@ -1255,4 +1255,11 @@ export default {
     no_watch_history: 'Žádná historie prohlížení',
     settings_request_caching_use: 'Povolit ukládání do mezipaměti',
     settings_request_caching_descr: 'Ukládejte odpovědi z požadavků do mezipaměti pro rychlejší načítání obsahu.',
+
+    account_profile_child: 'Dítě',
+    account_profile_add: 'Přidat profil',
+    account_profile_name: 'Název profilu',
+    account_profile_created: 'Profil byl úspěšně vytvořen',
+    account_profile_limited: 'Byl dosažen maximální počet profilů: {count}',
+    account_profile_info: 'Profily můžete spravovat v nastavení účtu. Chcete-li to provést, přejděte na <span class="account-modal__site">{site}/profiles</span>',
 };

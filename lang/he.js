@@ -1142,4 +1142,11 @@ export default {
 
     settings_request_caching_use: 'שימוש במטמון לבקשות',
     settings_request_caching_descr: 'שמור תשובות לבקשות נפוצות במטמון כדי להאיץ את העבודה',
+
+    account_profile_child: 'ילד',
+    account_profile_add: 'הוספת פרופיל',
+    account_profile_name: 'שם הפרופיל',
+    account_profile_created: 'הפרופיל נוצר בהצלחה',
+    account_profile_limited: 'הגעת למגבלת הפרופיל המקסימלית: {count}',
+    account_profile_info: 'באפשרותך לנהל פרופילים בהגדרות החשבון שלך. לשם כך, עבור אל <span class="account-modal__site">{site}/profiles</span>',
 }

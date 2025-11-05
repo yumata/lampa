@@ -1227,7 +1227,14 @@ export default {
     player_segments_skiped: 'Segmento pulado',
     subscribe_info: 'Na seção "Assinaturas", você verá todas as suas assinaturas de tradução. Você receberá uma notificação quando um novo episódio com sua tradução selecionada for lançado.',
     no_watch_history: 'Sem histórico de navegação',
-    
+
     settings_request_caching_use: 'Ativar cache de solicitações',
     settings_request_caching_descr: 'Melhora o desempenho ao armazenar em cache as respostas das solicitações de rede.',
+
+    account_profile_child: 'Perfil filho',
+    account_profile_add: 'Adicionar perfil',
+    account_profile_name: 'Nome do perfil',
+    account_profile_created: 'Perfil criado com sucesso',
+    account_profile_limited: 'O limite máximo de perfis foi atingido: {count}',
+    account_profile_info: 'Você pode gerenciar os perfis nas configurações da sua conta. Para isso, acesse <span class="account-modal__site">{site}/profiles</span>',
 }

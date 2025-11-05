@@ -1220,4 +1220,11 @@ export default {
 
     settings_request_caching_use: 'Кешування запитів',
     settings_request_caching_descr: 'Зберігати відповіді на запити для прискорення роботи додатку',
+
+    account_profile_child: 'Дитячий', 
+    account_profile_add: 'Додати профіль', 
+    account_profile_name: 'Ім\'я профілю', 
+    account_profile_created: 'Профіль успішно створено', 
+    account_profile_limited: 'Досягнуто максимальний ліміт профілів: {count}', 
+    account_profile_info: 'Ви можете керувати профілями в налаштуваннях облікового запису, для цього перейдіть на сайт <span class="account-modal__site">{site}/profiles</span>',
 }
