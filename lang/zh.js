@@ -1191,4 +1191,7 @@ export default {
     player_segments_skiped: '片段已跳过',
     subscribe_info: '在“订阅”部分，您可以查看所有翻译订阅。当您选择的翻译发布新剧集时，您将收到通知。',
     no_watch_history: '没有浏览历史记录',
+
+    settings_request_caching_use: '请求缓存',
+    settings_request_caching_descr: '缓存来自网络的请求以加快应用程序速度。',
 }

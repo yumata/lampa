@@ -1139,4 +1139,7 @@ export default {
     player_segments_skiped: 'קטע דולג',
     subscribe_info: 'בקטע "מנויים" תוכלו לראות את כל מנויי התרגום שלכם. תקבלו התראה כאשר יצא פרק חדש עם התרגום שבחרתם.',
     no_watch_history: 'אין היסטוריית גלישה',
+
+    settings_request_caching_use: 'שימוש במטמון לבקשות',
+    settings_request_caching_descr: 'שמור תשובות לבקשות נפוצות במטמון כדי להאיץ את העבודה',
 }

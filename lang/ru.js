@@ -159,6 +159,8 @@ export default {
     settings_rest_cache_all: 'Кеш и данные',
     settings_rest_cache_all_descr: 'Будут очищены все настройки и данные',
     settings_rest_cache_calculate: 'Сколько осталось памяти',
+    settings_request_caching_use: 'Кэширование запросов',
+    settings_request_caching_descr: 'Сохранять ответы от серверов в кэш для ускорения работы приложения',
 
     settings_parser_use: 'Использовать парсер',
     settings_parser_use_descr: 'Тем самым, вы соглашаетесь принять на себя всю ответственность за использование публичных ссылок для просмотра торрент и онлайн контента.',

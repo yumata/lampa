@@ -1242,4 +1242,7 @@ export default {
     player_segments_skiped: 'Segment skipped',
     subscribe_info: 'In the Subscriptions section, you\'ll see all your translation subscriptions. You\'ll receive a notification when a new episode with your selected translation is released.',
     no_watch_history: 'No browsing history',
+
+    settings_request_caching_use: 'Request Caching',
+    settings_request_caching_descr: 'Cache API requests to speed up the interface and reduce data usage.',
 }
