@@ -1237,4 +1237,5 @@ export default {
     account_profile_created: 'Perfil criado com sucesso',
     account_profile_limited: 'O limite máximo de perfis foi atingido: {count}',
     account_profile_info: 'Você pode gerenciar os perfis nas configurações da sua conta. Para isso, acesse <span class="account-modal__site">{site}/profiles</span>',
+    player_youtube_no_support: 'O seu dispositivo não suporta a reprodução de vídeos do YouTube, verifique a sua ligação à Internet.',
 }

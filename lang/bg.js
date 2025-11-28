@@ -1253,4 +1253,5 @@ export default {
     account_profile_created: 'Профилът е създаден успешно',
     account_profile_limited: 'Достигнат е максималният брой профили: {count}',
     account_profile_info: 'Можете да управлявате профилите в настройките на профила си. За да направите това, отидете на <span class="account-modal__site">{site}/profiles</span>',
+    player_youtube_no_support: 'Вашето устройство не поддържа възпроизвеждане на YouTube видеоклипове, проверете интернет връзката.',
 }

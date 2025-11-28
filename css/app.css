@@ -2708,6 +2708,12 @@ body.settings--open .settings__layer {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .items-line .mapping--line .card--collection {
+    width: 19.7em;
+  }
+}
+
 .tag-count {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4971,6 +4977,11 @@ video::-webkit-media-controls-panel-container {
 .player-video__youtube-line-bottom {
   bottom: 0;
 }
+.player-video__youtube-icon {
+  width: 9em !important;
+  height: 7em !important;
+  margin-bottom: 1em;
+}
 .player-video__youtube-noplayed {
   position: fixed;
   left: 0;
@@ -4980,6 +4991,15 @@ video::-webkit-media-controls-panel-container {
   font-size: 1.2em;
   padding: 0 2em;
   line-height: 1.5;
+  -webkit-transform: translateY(-60%);
+     -moz-transform: translateY(-60%);
+      -ms-transform: translateY(-60%);
+       -o-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+.player-video__youtube-noplayed div {
+  max-width: 30em;
+  margin: 0 auto;
 }
 .player-video__youtube-needclick {
   position: fixed;

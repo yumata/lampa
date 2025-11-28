@@ -941,6 +941,7 @@ export default {
     player_normalization_type_down: 'Только понижение',
     player_youtube_no_played: 'К сожалению, это видео не доступно в вашем регионе, возможно, оно было заблокировано или удалено.',
     player_youtube_start_play: 'Для начала проигрывания видео, нажмите кнопку "Плей"',
+    player_youtube_no_support: 'Ваше устройство не поддерживает воспроизведение YouTube видео, проверьте интернет соединение.',
     player_segments_title: 'Сегменты',
     player_segments_descr: 'Пропуск интро и другие части видео',
     player_segments_ad_title: 'Рекламные вставки',

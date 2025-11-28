@@ -1267,4 +1267,5 @@ export default {
     account_profile_created: 'Профіль паспяхова створаны', 
     account_profile_limited: 'Дасягнуты максімальны ліміт профіляў: {count}', 
     account_profile_info: 'Вы можаце кіраваць профілямі ў наладах акаўнта, для гэтага перайдзіце на сайт <span class="account-modal__site">{site}/profiles</span>',
+    player_youtube_no_support: 'Вашае прылада не падтрымлівае прайграванне відэа YouTube, праверце інтэрнэт-злучэнне.',
 }

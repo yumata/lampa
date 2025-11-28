@@ -1149,4 +1149,5 @@ export default {
     account_profile_created: 'הפרופיל נוצר בהצלחה',
     account_profile_limited: 'הגעת למגבלת הפרופיל המקסימלית: {count}',
     account_profile_info: 'באפשרותך לנהל פרופילים בהגדרות החשבון שלך. לשם כך, עבור אל <span class="account-modal__site">{site}/profiles</span>',
+    player_youtube_no_support: 'המכשיר שלך אינו תומך בניגון וידאו של YouTube, בדוק את חיבור האינטרנט שלך.',
 }
