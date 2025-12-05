@@ -226,7 +226,7 @@ body {
   -webkit-touch-callout: none !important;
 }
 body.black--style {
-  background: #000;
+  background: #000 !important;
 }
 @media screen and (max-width: 480px) {
   body.black--style .selectbox__content,
