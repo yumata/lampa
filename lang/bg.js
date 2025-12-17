@@ -128,9 +128,9 @@ export default {
     settings_rest_card_episodes: 'Индекс за епизоди',
     settings_rest_card_episodes_descr: 'Покажи индекс за епизодите върху картите',
 
-    settings_parser_use: 'Използвай парсър',
+    settings_parser_use: 'Използвай анализатор',
     settings_parser_use_descr: 'С настоящото вие се съгласявате да поемете цялата отговорност за използването на публични връзки за гледане на торент и онлайн съдържание.',
-    settings_parser_type: 'Тип парсър за торенти',
+    settings_parser_type: 'Тип анализатор за торенти',
     settings_parser_jackett_placeholder: 'Например: 192.168.x',
     settings_parser_jackett_link: 'Връзка',
     settings_parser_jackett_link_descr: 'Връзка към скрипта Jackett',
@@ -139,13 +139,13 @@ export default {
     settings_parser_jackett_key_descr: 'намиращ се в Jackett',
     settings_parser_torlook_type: 'Метод за обхождане на TorLook',
     settings_parser_scraperapi_placeholder: 'Например: scraperapi.com',
-    settings_parser_scraperapi_link: 'Връзка към парсер на сайта',
+    settings_parser_scraperapi_link: 'Връзка към анализатор на сайта',
     settings_parser_scraperapi_descr: 'Регистрирайте се в сайта scraperapi.com, въведете връзката на api.scraperapi.com?api_key=...&url={q}<br>W41.torlook.info ще бъдат доставени до {q}',
     settings_parser_search: 'Търсене',
     settings_parser_search_descr: 'На какъв език да търся?',
-    settings_parser_in_search: 'Парсър при търсене',
+    settings_parser_in_search: 'Анализатор при търсене',
     settings_parser_in_search_descr: 'Показване на резултатите от търсенето?',
-    settings_parser_timeout_title: 'Парсър таймаут',
+    settings_parser_timeout_title: 'Таймаут',
     settings_parser_timeout_descr: 'Време в секудни, през което да се чака отговор от сървъра',
 
     settings_player_type: 'Тип плейър',
@@ -1089,7 +1089,7 @@ export default {
     settings_rest_cache_all_descr: 'Ще бъдат изчистени всички настройки и данни',
     settings_rest_cache_calculate: 'Колко памет остава',
 
-    title_left:'Наляво',
+    title_left:'Остават',
 
     account_export_fail_500: 'Непозната грешка',
     account_export_fail_610: 'Изчерпахте лимита за днес',
