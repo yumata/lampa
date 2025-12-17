@@ -452,6 +452,7 @@ export default {
     title_author: 'Автор',
     title_buffer: 'Буфер',
     title_upcoming_episodes: 'Ближайшие выходы эпизодов',
+    title_recent_episodes: 'Недавние выходы эпизодов',
     title_reactions: 'Реакции',
     title_last_year: 'Прошлый год',
     title_reset: 'Перезагрузить',
@@ -466,6 +467,7 @@ export default {
     title_developer: 'Разработчик',
     title_navigation: 'Навигация',
     title_page: 'Страница',
+    title_channels: 'Каналы',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',

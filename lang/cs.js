@@ -447,6 +447,7 @@ export default {
     title_author: "Autor",
     title_buffer: "Buffer",
     title_upcoming_episodes: "Nadcházející epizody",
+    title_recent_episodes: "Nedávno vydané epizody",
     title_reactions: "Reakce",
     title_last_year: "Minulý rok",
     title_reset: "Restartovat",
@@ -1263,4 +1264,5 @@ export default {
     account_profile_limited: 'Byl dosažen maximální počet profilů: {count}',
     account_profile_info: 'Profily můžete spravovat v nastavení účtu. Chcete-li to provést, přejděte na <span class="account-modal__site">{site}/profiles</span>',
     player_youtube_no_support: 'Vaše zařízení nepodporuje přehrávání videí z YouTube, zkontrolujte připojení k internetu.',
+    title_channels: 'Kanály',
 };

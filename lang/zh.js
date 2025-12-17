@@ -962,6 +962,7 @@ export default {
     settings_interface_card_cover: '显示封面',
 
     title_upcoming_episodes: '即将发布的剧集',
+    title_recent_episodes: '最近发布的剧集',
     settings_rest_cache_images: '图片缓存',
     settings_rest_cache_images_descr: '将海报和背景缓存到本地存储',
 
@@ -1202,4 +1203,5 @@ export default {
     account_profile_limited: '账户数量已达上限：{count}',
     account_profile_info: '您可以在账户设置中管理账户。为此，请访问<span class="account-modal__site">{site}/profiles</span>',
     player_youtube_no_support: '您的设备不支持播放 YouTube 视频，请检查您的互联网连接。',
+    title_channels: '频道',
 }

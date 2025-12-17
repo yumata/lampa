@@ -1012,6 +1012,7 @@ export default {
     settings_interface_card_cover: 'Показване на корицата',
 
     title_upcoming_episodes: 'Предстоящи епизоди',
+    title_recent_episodes: 'Наскоро излезли епизоди',
     settings_rest_cache_images: 'Кеш на изображения',
     settings_rest_cache_images_descr: 'Кеширане на плакати и фонове в локалното хранилище',
 
@@ -1254,4 +1255,5 @@ export default {
     account_profile_limited: 'Достигнат е максималният брой профили: {count}',
     account_profile_info: 'Можете да управлявате профилите в настройките на профила си. За да направите това, отидете на <span class="account-modal__site">{site}/profiles</span>',
     player_youtube_no_support: 'Вашето устройство не поддържа възпроизвеждане на YouTube видеоклипове, проверете интернет връзката.',
+    title_channels: 'Канали',
 }

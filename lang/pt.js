@@ -1011,6 +1011,7 @@ export default {
     settings_interface_card_cover: 'Mostrar capa',
 
     title_upcoming_episodes: 'Próximos lançamentos de episódios',
+    title_recent_episodes: 'Lançamentos recentes de episódios',
     settings_rest_cache_images: 'Cache de imagens',
     settings_rest_cache_images_descr: 'Armazene pôsteres e planos de fundo no armazenamento local',
 
@@ -1238,4 +1239,5 @@ export default {
     account_profile_limited: 'O limite máximo de perfis foi atingido: {count}',
     account_profile_info: 'Você pode gerenciar os perfis nas configurações da sua conta. Para isso, acesse <span class="account-modal__site">{site}/profiles</span>',
     player_youtube_no_support: 'O seu dispositivo não suporta a reprodução de vídeos do YouTube, verifique a sua ligação à Internet.',
+    title_channels: 'Canais',
 }

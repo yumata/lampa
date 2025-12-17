@@ -1028,6 +1028,7 @@ export default {
     settings_interface_card_cover: 'Паказаць вокладку',
     
     title_upcoming_episodes: 'Бліжэйшыя выхады эпізодаў',
+    title_recent_episodes: 'Нядаўнія выхады эпізодаў',
     settings_rest_cache_images: 'Кэш малюнкаў',
     settings_rest_cache_images_descr: 'Кэшаваць постэры і фоны ў лакальнае сховішча',
 
@@ -1268,4 +1269,5 @@ export default {
     account_profile_limited: 'Дасягнуты максімальны ліміт профіляў: {count}', 
     account_profile_info: 'Вы можаце кіраваць профілямі ў наладах акаўнта, для гэтага перайдзіце на сайт <span class="account-modal__site">{site}/profiles</span>',
     player_youtube_no_support: 'Вашае прылада не падтрымлівае прайграванне відэа YouTube, праверце інтэрнэт-злучэнне.',
+    title_channels: 'Каналы',
 }
