@@ -6228,8 +6228,16 @@ body.mouse--controll .player-info .head-backward__title {
           transform: translateY(0);
 }
 .player-footer__body {
-  padding: 1.5em;
   position: relative;
+}
+.player-footer__row {
+  padding: 1.5em;
+}
+.player-footer__row .items-line {
+  padding-bottom: 0 !important;
+}
+.player-footer__row .items-line__head {
+  padding: 0;
 }
 .player-footer .card-watched__body .card-watched__item {
   display: none;
