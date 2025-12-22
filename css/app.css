@@ -6262,13 +6262,20 @@ body.mouse--controll .player-info .head-backward__title {
 }
 .player-footer-card__tags {
   margin-bottom: 0.7em;
+  margin-top: 0.5em;
 }
 .player-footer-card__title {
   font-size: 1.8em;
+  overflow: hidden;
+  -o-text-overflow: ".";
+     text-overflow: ".";
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .player-footer-card__body {
   padding-left: 2em;
-  padding-top: 0.5em;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
      -moz-box-flex: 1;
