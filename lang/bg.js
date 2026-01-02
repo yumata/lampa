@@ -1056,7 +1056,10 @@ export default {
 
     settings_rest_protocol_use: 'Сигурна връзка',
     settings_rest_protocol_descr: 'Използвайте HTTPS протокол',
-    install_app_apk_text: 'Забелязахме, че използвате MediaStationX, за да стартирате Lampa на Android. Препоръчваме ви да инсталирате Lampa като APK приложение. Можете да изтеглите последната версия на приложението от тук:',
+    install_app_apk_title: 'Как да инсталирате Lampa на Android',
+    install_app_apk_text: 'Забелязахме, че използвате MediaStationX, за да стартирате Lampa на Android. Препоръчваме да инсталирате Lampa като APK приложение. Това ще осигури по-стабилна работа и достъп до всички функции на приложението. <br><br>Отидете в Telegram групата <span class="account-modal__site">@lampa_group</span>, за да изтеглите най-новия APK файл и инструкции за инсталиране.',
+    install_app_apk_qr: 'Сканирайте QR кода, за да изтеглите APK файла на Lampa',
+    copy_link_buffer: 'Копиране на връзката',
 
     tv_status_returning_series: 'Предстоящ',
     tv_status_planned: 'Планирано',

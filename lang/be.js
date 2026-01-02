@@ -1059,7 +1059,10 @@ export default {
 
     settings_rest_protocol_use: 'Бяспечнае злучэнне',
     settings_rest_protocol_descr: 'Выкарыстоўваць пратакол HTTPS',
-    install_app_apk_text: 'Мы заўважылі, што для запуску Lampa на Android вы карыстаецеся MediaStationX. Мы рэкамендуем вам усталяваць Lampa у выглядзе APK-прыкладанні. Вы можаце спампаваць апошнюю версію прыкладання тут:',
+    install_app_apk_title: 'Як усталяваць Lampa на Android', 
+    install_app_apk_text: 'Мы заўважылі, што для запуску Lampa на Android вы карыстаецеся MediaStationX. Мы рэкамендуем вам усталяваць Lampa у выглядзе APK-прыкладанні. Гэта забяспечыць больш стабільную працу і доступ да ўсіх функцый прыкладання. <br><br>Перайдзіце ў групу <span class="account-modal__site">@lampa_group</span> у Тэлеграме, каб спампаваць апошнюю версію APK і інструкцыі па ўстаноўцы.', 
+    install_app_apk_qr: 'Адскануйце QR-код, каб спампаваць Lampa APK', 
+    copy_link_buffer: 'Скапіяваць спасылку',
 
     tv_status_returning_series: 'Працягваецца',
     tv_status_planned: 'Плануецца',

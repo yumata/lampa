@@ -1055,7 +1055,10 @@ export default {
     termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.',
     settings_rest_protocol_use: 'Secure connection',
     settings_rest_protocol_descr: 'Use HTTPS protocol',
-    install_app_apk_text: 'We noticed that you are using MediaStationX to run Lampa on Android. We recommend that you install Lampa as an APK application. You can download the latest version of the application here:',
+    install_app_apk_title: 'How to install Lampa on Android',
+    install_app_apk_text: 'We noticed that you use MediaStationX to run Lampa on Android. We recommend installing Lampa as an APK app. This will ensure more stable operation and access to all the app\'s features. <br><br>Go to the <span class="account-modal__site">@lampa_group</span> Telegram group to download the latest APK and installation instructions.',
+    install_app_apk_qr: 'Scan the QR code to download the Lampa APK',
+    copy_link_buffer: 'Copy link',
 
     tv_status_returning_series: 'Returning series',
     tv_status_planned: 'Planned',

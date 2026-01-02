@@ -1006,7 +1006,11 @@ export default {
     termsofuse_t_13: '如果您认为Lampa应用程序仍然包含侵犯您版权的内容，您可以联系该内容的权利持有人，并要求他们从themoviedb.org网站上删除该内容。与此同时，Lampa应用程序在收到相应的侵权通知后可以删除该内容。',
     settings_rest_protocol_use: '安全连接',
     settings_rest_protocol_descr: '使用HTTPS协议',
-    install_app_apk_text: '我们注意到您正在使用 MediaStationX 在 Android 上运行 Lampa。 我们建议您将 Lampa 安装为 APK 应用程序。 您可以在此处下载该应用程序的最新版本：',
+    
+    install_app_apk_title: '如何在安卓设备上安装 Lampa',
+    install_app_apk_text: '我们注意到您使用 MediaStationX 在安卓设备上运行 Lampa。我们建议您将 Lampa 安装为 APK 应用。这将确保更稳定的运行，并让您能够访问应用的所有功能。<br><br>前往 <span class="account-modal__site">@lampa_group</span> Telegram 群组下载最新 APK 文件和安装说明。',
+    install_app_apk_qr: '扫描二维码下载 Lampa APK',
+    copy_link_buffer: '复制链接',
 
     tv_status_returning_series: '连载中',
     tv_status_planned: '计划中',

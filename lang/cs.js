@@ -1134,7 +1134,10 @@ export default {
     termsofuse_t_12: "Pokud jste objevili porušení autorských práv v aplikaci Lampa - kontaktujte vývojáře pomocí sekce Kontakty aplikace. Je však důležité vzít v úvahu, že aplikace Lampa používá API z katalogu themoviedb.org, který poskytuje otevřený přístup k informacím o filmech a seriálech. To znamená, že informace, které se zobrazují v aplikaci Lampa, jsou veřejně dostupné a neporušují autorská práva.",
     termsofuse_t_13: "Pokud se domníváte, že v aplikaci Lampa je přesto obsah porušující autorská práva - obraťte se na držitele práv tohoto obsahu s žádostí o jeho odstranění ze stránek webu themoviedb.org. Aplikace Lampa může obsah odstranit po obdržení příslušného oznámení o porušení autorských práv.",
 
-    install_app_apk_text: "Zaznamenali jsme, že pro spuštění Lampa na Android používáte MediaStationX. Doporučujeme vám nainstalovat Lampa jako APK aplikaci. Můžete si stáhnout nejnovější verzi aplikace zde:",
+    install_app_apk_title: 'Jak nainstalovat Lampu na Android',
+    install_app_apk_text: 'Všimli jsme si, že k spuštění Lampy na Androidu používáte MediaStationX. Doporučujeme nainstalovat Lampu jako aplikaci APK. Tím zajistíte stabilnější provoz a přístup ke všem funkcím aplikace. <br><br>Přejděte do telegramové skupiny <span class="account-modal__site">@lampa_group</span> a stáhněte si nejnovější APK a pokyny k instalaci.',
+    install_app_apk_qr: 'Naskenujte QR kód a stáhněte si APK Lampy',
+    copy_link_buffer: 'Kopírovat odkaz',
 
     ad: "Reklama",
     ad_disable: "Předplatným CUB Premium zapomenete na reklamu.",
