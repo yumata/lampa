@@ -75,6 +75,7 @@ export default {
 
     settings_interface_type: 'Lite version',
     settings_interface_size: 'Interface size',
+	settings_interface_menu_always: 'Always show the left menu',
     settings_interface_background: 'Background',
     settings_interface_background_use: 'Show background',
     settings_interface_background_type: 'Background type',

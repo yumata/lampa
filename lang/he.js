@@ -67,6 +67,7 @@ export default {
     settings_input_links: 'מועדפים',
     settings_interface_type: 'גרסת לייט',
     settings_interface_size: 'גודל ממשק',
+	settings_interface_menu_always: 'Always show the left menu',
     settings_interface_background: 'רקע כללי',
     settings_interface_background_use: 'הצג רקע',
     settings_interface_background_type: 'סוג רקע',

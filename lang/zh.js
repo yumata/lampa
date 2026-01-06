@@ -67,6 +67,7 @@ export default {
     settings_input_links: '收藏夹',
     settings_interface_type: '精简版',
     settings_interface_size: '界面大小',
+	settings_interface_menu_always: 'Always show the left menu',
     settings_interface_background: '背景',
     settings_interface_background_use: '显示背景',
     settings_interface_background_type: '背景类型',

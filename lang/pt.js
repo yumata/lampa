@@ -73,6 +73,7 @@ export default {
 
     settings_interface_type: 'Versão Lite',
     settings_interface_size: 'Tamanho interface',
+	settings_interface_menu_always: 'Always show the left menu',
     settings_interface_background: 'Fundo',
     settings_interface_background_use: 'Mostar fundo',
     settings_interface_background_type: 'Tipo de fundo',

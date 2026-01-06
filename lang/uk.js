@@ -69,6 +69,7 @@ export default {
     settings_input_links: 'Вибране',
     settings_interface_type: 'Полегшена версія',
     settings_interface_size: 'Розмір інтерфейсу',
+	settings_interface_menu_always: 'Always show the left menu',
     settings_interface_background: 'Фон',
     settings_interface_background_use: 'Показувати фон',
     settings_interface_background_type: 'Тип фону',

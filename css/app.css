@@ -1047,7 +1047,6 @@ body.menu--open:not(.light--version) .wrap__left {
   -webkit-transform: translate3d(15em, 0, 0);
      -moz-transform: translate3d(15em, 0, 0);
           transform: translate3d(15em, 0, 0);
-  background: transparent;
 }
 body.menu--open:not(.light--version) .wrap__content {
   -webkit-transform: translate3d(15em, 0, 0);
@@ -1056,6 +1055,32 @@ body.menu--open:not(.light--version) .wrap__content {
 }
 body.menu--open:not(.light--version) .background {
   opacity: 0.5;
+}
+
+body.menu--always:not(.light--version) .wrap__left {
+  width: 5em;
+  margin-left: 0;
+  visibility: visible;
+}
+body.menu--always:not(.light--version) .wrap__left .menu__text {
+  display: none;
+}
+
+body.menu--always.menu--open:not(.light--version) .wrap__left {
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+body.menu--always.menu--open:not(.light--version) .wrap__left > .scroll {
+  width: 15em;
+}
+body.menu--always.menu--open:not(.light--version) .wrap__left .menu__text {
+  display: block;
+}
+body.menu--always.menu--open:not(.light--version) .wrap__content {
+  -webkit-transform: translate3d(10em, 0, 0);
+     -moz-transform: translate3d(10em, 0, 0);
+          transform: translate3d(10em, 0, 0);
 }
 
 body.light--version .wrap__left {

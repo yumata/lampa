@@ -81,6 +81,7 @@ export default {
 
     settings_interface_type: "Zjednodušená verze",
     settings_interface_size: "Velikost rozhraní",
+	settings_interface_menu_always: 'Always show the left menu',
     settings_interface_background: "Pozadí",
     settings_interface_background_use: "Zobrazit pozadí",
     settings_interface_background_type: "Typ pozadí",
