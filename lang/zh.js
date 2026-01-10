@@ -590,7 +590,6 @@ export default {
     filter_lang_mi: '毛利语',
     filter_lang_mk: '马其顿语',
     filter_lang_mn: '蒙古语',
-    filter_lang_mo: '摩尔多瓦语',
     filter_lang_mt: '马耳他语',
     filter_lang_ne: '尼泊尔语',
     filter_lang_nl: '荷兰语',

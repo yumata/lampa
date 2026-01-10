@@ -62,6 +62,13 @@ export default {
       
             lang_choice_title: "Vítejte",
             lang_choice_subtitle: "Vyberte svůj jazyk",
+        },
+        ro: {
+            code: "ro",
+            name: "Română",
+      
+            lang_choice_title: "Bun venit",
+            lang_choice_subtitle: "Alegeți limba",
         }
     }
 }

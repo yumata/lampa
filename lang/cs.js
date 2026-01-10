@@ -684,7 +684,6 @@ export default {
     filter_lang_mi: "Maorština",
     filter_lang_mk: "Makedonština",
     filter_lang_mn: "Mongolština",
-    filter_lang_mo: "Moldavština",
     filter_lang_mt: "Maltština",
     filter_lang_ne: "Nepálština",
     filter_lang_nl: "Nizozemština",

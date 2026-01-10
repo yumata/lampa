@@ -705,7 +705,6 @@ export default {
     filter_lang_mi: 'Маори',
     filter_lang_mk: 'Македонский',
     filter_lang_mn: 'Монгольский',
-    filter_lang_mo: 'Молдавский',
     filter_lang_mt: 'Мальтийский',
     filter_lang_ne: 'Непальский',
     filter_lang_nl: 'Нидерландский',

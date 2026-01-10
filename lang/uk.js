@@ -563,7 +563,6 @@ export default {
     filter_lang_mi: 'Маорі',
     filter_lang_mk: 'Македонська',
     filter_lang_mn: 'Монгольська',
-    filter_lang_mo: 'Молдовська',
     filter_lang_mt: 'Мальтійська',
     filter_lang_ne: 'Непальська',
     filter_lang_nl: 'Нідерландська',

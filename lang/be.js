@@ -590,7 +590,6 @@ export default {
     filter_lang_mi: 'Маоры',
     filter_lang_mk: 'Македонская',
     filter_lang_mn: 'Мангольская',
-    filter_lang_mo: 'Малдаўская',
     filter_lang_mt: 'Мальтыйская',
     filter_lang_ne: 'Непальская',
     filter_lang_nl: 'Нідэрландская',

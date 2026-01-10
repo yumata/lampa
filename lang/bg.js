@@ -589,7 +589,6 @@ export default {
     filter_lang_mi: 'маорски',
     filter_lang_mk: 'македонски',
     filter_lang_mn: 'монголски',
-    filter_lang_mo: 'молдовски',
     filter_lang_mt: 'малтийски',
     filter_lang_ne: 'непалски',
     filter_lang_nl: 'нидерландски',

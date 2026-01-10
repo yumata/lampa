@@ -559,7 +559,6 @@ export default {
     filter_lang_mi: 'Maori',
     filter_lang_mk: 'Macedonian',
     filter_lang_mn: 'Mongolian',
-    filter_lang_mo: 'Moldavian',
     filter_lang_mt: 'Maltese',
     filter_lang_ne: 'Nepali',
     filter_lang_nl: 'Dutch (Nederlands)',
