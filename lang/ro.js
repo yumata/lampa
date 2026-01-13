@@ -35,7 +35,7 @@ export default {
     full_like: 'Îmi place',
     full_torrents: 'Torrente',
     full_trailers: 'Trailere',
-    full_detail: 'În detaliu',
+    full_detail: 'Prezentare',
     full_notext: 'Fără descriere.',
     full_series_release: 'Lansare serial',
     full_next_episode: 'Următorul',
@@ -294,7 +294,7 @@ export default {
     torrent_parser_no_responce: 'Parser-ul nu răspunde',
     torrent_parser_torlook_fallback_search_notification: 'Parser-ul Jackett nu este disponibil sau setările sunt incorecte. Se caută pe Torlook...',
 
-    about_text: 'Aplicația este complet gratuită și folosește link-uri publice pentru a obține informații despre videoclipuri, noutăți, filme populare etc. Toate informațiile sunt folosite exclusiv în scop educațional; aplicația nu folosește servere proprii pentru a distribui conținutul.',
+    about_text: 'Aplicația este complet gratuită și folosește link-uri publice pentru a obține informații despre videoclipuri, noutăți, filme populare etc. Toate informațiile sunt folosite exclusiv în scop educațional, aplicația nu folosește servere proprii pentru a distribui conținutul.',
     about_channel: 'Canalul nostru',
     about_group: 'Grup',
     about_version: 'Versiune',
