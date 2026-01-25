@@ -5099,6 +5099,7 @@ video::-webkit-media-controls-panel-container {
           align-items: center;
   margin-top: -0.5em;
   opacity: 0;
+  text-shadow: 0 0 0.4em black;
 }
 .player-video__backwork-icon > i, .player-video__forward-icon > i {
   margin: 0 1em;
@@ -6177,11 +6178,6 @@ body.true--mobile .player-info .head-backward__title {
 body.true--mobile .player-info .head-backward__button {
   left: -1.5em;
   top: -0.9em;
-}
-@media screen and (max-width: 480px) {
-  body.true--mobile .player-info .head-backward__button {
-    left: 0;
-  }
 }
 
 .player.iptv .player-info__name {
