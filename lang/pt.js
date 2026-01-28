@@ -157,8 +157,6 @@ export default {
     settings_player_path: 'Caminho para o player',
     settings_player_path_descr: 'Especifique o caminho para o player .exe',
     settings_player_vlc_header: 'Configurações do VLC',
-    settings_player_vlc_api_port: 'Porta VLC API',
-    settings_player_vlc_api_port_descr: 'Padrão: 8080',
     settings_player_vlc_api_password: 'Senha VLC API',
     settings_player_vlc_api_password_descr: 'Padrão: 123456',
     settings_player_vlc_fullscreen: 'Iniciar em modo de tela cheia',

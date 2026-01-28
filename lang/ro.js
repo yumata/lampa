@@ -159,8 +159,6 @@ export default {
     settings_player_path: 'Cale către player',
     settings_player_path_descr: 'Specifică calea către executabilul player-ului (.exe)',
     settings_player_vlc_header: 'Setări VLC',
-    settings_player_vlc_api_port: 'Port API VLC',
-    settings_player_vlc_api_port_descr: 'Implicit: 8080',
     settings_player_vlc_api_password: 'Parolă API VLC',
     settings_player_vlc_api_password_descr: 'Implicit: 123456',
     settings_player_vlc_fullscreen: 'Lansare în modul pe tot ecranul',

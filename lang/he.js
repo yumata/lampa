@@ -145,8 +145,6 @@ export default {
     settings_player_path: 'נתיב אל נגן',
     settings_player_path_descr: 'exe. סמן את הנתיב אל הנגן',
     settings_player_vlc_header: 'הגדרות VLC',
-    settings_player_vlc_api_port: 'פורט VLC API',
-    settings_player_vlc_api_port_descr: 'ברירת מחדל: 8080',
     settings_player_vlc_api_password: 'סיסמת VLC API',
     settings_player_vlc_api_password_descr: 'ברירת מחדל: 123456',
     settings_player_vlc_fullscreen: 'הפעלה במצב מסך מלא',

@@ -147,8 +147,6 @@ export default {
     settings_player_path: '播放器路径',
     settings_player_path_descr: '指定播放器.exe的路径',
     settings_player_vlc_header: 'VLC 设置',
-    settings_player_vlc_api_port: 'VLC API 端口',
-    settings_player_vlc_api_port_descr: '默认值：8080',
     settings_player_vlc_api_password: 'VLC API 密码',
     settings_player_vlc_api_password_descr: '默认值：123456',
     settings_player_vlc_fullscreen: '以全屏模式运行',

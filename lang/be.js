@@ -158,8 +158,6 @@ export default {
     settings_player_path: 'Шлях да плэера',
     settings_player_path_descr: 'Укажыце шлях да плэера .exe',
     settings_player_vlc_header: 'Налады VLC',
-    settings_player_vlc_api_port: 'Порт VLC API',
-    settings_player_vlc_api_port_descr: 'Па змаўчанні: 8080',
     settings_player_vlc_api_password: 'Пароль VLC API',
     settings_player_vlc_api_password_descr: 'Па змаўчанні: 123456',
     settings_player_vlc_fullscreen: 'Запускать у поўнаэкранным рэжыме',

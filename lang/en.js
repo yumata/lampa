@@ -159,8 +159,6 @@ export default {
     settings_player_path: 'Path to the player',
     settings_player_path_descr: 'Specify the path to the player .exe',
     settings_player_vlc_header: 'VLC Settings',
-    settings_player_vlc_api_port: 'Port VLC API',
-    settings_player_vlc_api_port_descr: 'Default: 8080',
     settings_player_vlc_api_password: 'Password VLC API',
     settings_player_vlc_api_password_descr: 'Default: 123456',
     settings_player_vlc_fullscreen: 'Launch in fullscreen mode',

@@ -193,8 +193,6 @@ export default {
     settings_player_path: "Cesta k přehrávači",
     settings_player_path_descr: "Uveďte cestu k spustitelnému souboru přehrávače",
     settings_player_vlc_header: 'Nastavení VLC',
-    settings_player_vlc_api_port: 'Port VLC API',
-    settings_player_vlc_api_port_descr: 'Výchozí: 8080',
     settings_player_vlc_api_password: 'Heslo VLC API',
     settings_player_vlc_api_password_descr: 'Výchozí: 123456',
     settings_player_vlc_fullscreen: 'Spustit v režimu celé obrazovky',
