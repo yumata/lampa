@@ -723,6 +723,7 @@ export default {
     settings_param_background_image: 'Imagem',
     settings_param_link_use_one: 'Principal',
     settings_param_link_use_two: 'Secundário',
+    settings_param_link_use_both: 'Ambas',
     settings_param_subtitles_size_small: 'Pequeno',
     settings_param_subtitles_size_normal: 'Normal',
     settings_param_subtitles_size_bigger: 'Grande',

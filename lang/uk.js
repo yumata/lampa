@@ -693,6 +693,7 @@ export default {
     settings_param_background_image: 'Картинка',
     settings_param_link_use_one: 'Основну',
     settings_param_link_use_two: 'Додаткову',
+    settings_param_link_use_both: 'Обидві',
     settings_param_subtitles_size_small: 'Маленькі',
     settings_param_subtitles_size_normal: 'Звичайні',
     settings_param_subtitles_size_bigger: 'Великі',

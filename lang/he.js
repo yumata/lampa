@@ -686,6 +686,7 @@ export default {
     settings_param_background_image: 'תמונה',
     settings_param_link_use_one: 'ראשי',
     settings_param_link_use_two: 'נוסף',
+    settings_param_link_use_both: 'שניהם',
     settings_param_subtitles_size_small: 'קטן',
     settings_param_subtitles_size_normal: 'רגיל',
     settings_param_subtitles_size_bigger: 'גדול',

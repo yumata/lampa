@@ -691,6 +691,7 @@ export default {
     settings_param_background_image: '图片',
     settings_param_link_use_one: '主要',
     settings_param_link_use_two: '额外',
+    settings_param_link_use_both: '两者',
     settings_param_subtitles_size_small: '小',
     settings_param_subtitles_size_normal: '普通',
     settings_param_subtitles_size_bigger: '大',

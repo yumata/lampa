@@ -724,6 +724,7 @@ export default {
     settings_param_background_image: 'Imagine',
     settings_param_link_use_one: 'General',
     settings_param_link_use_two: 'Adițional',
+    settings_param_link_use_both: 'Ambele',
     settings_param_subtitles_size_small: 'Mici',
     settings_param_subtitles_size_normal: 'Obișnuite',
     settings_param_subtitles_size_bigger: 'Mari',

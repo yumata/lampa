@@ -828,6 +828,7 @@ export default {
     settings_param_background_image: "Obrázek",
     settings_param_link_use_one: "Hlavní",
     settings_param_link_use_two: "Doplňkovou",
+    settings_param_link_use_both: "Obě",
     settings_param_subtitles_size_small: "Malé",
     settings_param_subtitles_size_normal: "Obvyklé",
     settings_param_subtitles_size_bigger: "Velké",

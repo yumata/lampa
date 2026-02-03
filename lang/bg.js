@@ -724,6 +724,7 @@ export default {
     settings_param_background_image: 'Картина',
     settings_param_link_use_one: 'Главна',
     settings_param_link_use_two: 'Допълнителна',
+    settings_param_link_use_both: 'И двете',
     settings_param_subtitles_size_small: 'малки',
     settings_param_subtitles_size_normal: 'нормални',
     settings_param_subtitles_size_bigger: 'големи',

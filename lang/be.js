@@ -727,6 +727,7 @@ export default {
     settings_param_background_image: 'Малюнак',
     settings_param_link_use_one: 'Асноўную',
     settings_param_link_use_two: 'Дадатковую',
+    settings_param_link_use_both: 'Абедзве',
     settings_param_subtitles_size_small: 'Маленькія',
     settings_param_subtitles_size_normal: 'Звычайныя',
     settings_param_subtitles_size_bigger: 'Вялікія',

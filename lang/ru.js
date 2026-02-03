@@ -875,6 +875,7 @@ export default {
     settings_param_background_image: 'Картинка',
     settings_param_link_use_one: 'Основную',
     settings_param_link_use_two: 'Дополнительную',
+    settings_param_link_use_both: 'Обе',
     settings_param_subtitles_size_small: 'Маленькие',
     settings_param_subtitles_size_normal: 'Обычные',
     settings_param_subtitles_size_bigger: 'Большие',
