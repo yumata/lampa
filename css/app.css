@@ -6199,15 +6199,15 @@ body.true--mobile .player-info .head-backward__button {
   display: none;
 }
 
-body.mouse--controll .player-info__body {
+body:not(.true--mobile).mouse--controll .player-info__body {
   padding-left: 5em;
 }
-body.mouse--controll .player-info .head-backward {
+body:not(.true--mobile).mouse--controll .player-info .head-backward {
   position: absolute;
   left: 0;
   top: 1.1em;
 }
-body.mouse--controll .player-info .head-backward__title {
+body:not(.true--mobile).mouse--controll .player-info .head-backward__title {
   display: none;
 }
 
