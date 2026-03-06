@@ -4970,20 +4970,9 @@ video::-webkit-media-controls-panel-container {
   position: fixed;
   left: 0;
   right: 0;
-  top: -300px;
+  width: 100%;
+  height: 100%;
   border: 0;
-  -webkit-transform-origin: left top;
-     -moz-transform-origin: left top;
-      -ms-transform-origin: left top;
-       -o-transform-origin: left top;
-          transform-origin: left top;
-}
-.player-video__youtube iframe.minimize {
-  -webkit-transform: scale(0.5);
-     -moz-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-       -o-transform: scale(0.5);
-          transform: scale(0.5);
 }
 .player-video__youtube-line-top, .player-video__youtube-line-bottom {
   position: fixed;
