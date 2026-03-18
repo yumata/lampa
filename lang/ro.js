@@ -1285,4 +1285,9 @@ export default {
     filter_keyword_spy: 'Spionaj',
     filter_keyword_disaster: 'Catastrofă', 
     filter_keyword_christmas: 'Crăciun',
+
+    dmca_title_lgbt: 'Conținut restricționat',
+    dmca_descr_lgbt: 'Vizualizarea nu este disponibilă în regiunea dvs., deoarece poate include conținut LGBT. Un astfel de material poate fi interzis sau restricționat în unele țări.',
+
+    settings_lgbt_content_block: 'Blocați conținutul LGBT',
 }

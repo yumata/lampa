@@ -268,6 +268,8 @@ export default {
     settings_parental_control_disabled: 'Отключено',
     settings_parental_control_where: 'Где запрашивать PIN-код',
 
+    settings_lgbt_content_block: 'Блокировать ЛГБТ контент',
+
     parental_control_input_new_code: 'Введите новый PIN-код',
     parental_control_confirm_new_code: 'Повторите PIN-код',
     parental_control_no_match_code: 'PIN-код не совпадает с прошлым кодом',
@@ -1258,6 +1260,8 @@ export default {
 
     dmca_title: 'Контент заблокирован',
     dmca_descr: 'Данный материал недоступен для просмотра. Он был заблокирован по просьбе правообладателя в соответствии с законодательством об авторских правах.',
+    dmca_title_lgbt: 'Контент ограничен',
+    dmca_descr_lgbt: 'Просмотр недоступен в вашем регионе, так как возможно содержит ЛГБТ-контент. В некоторых странах такие материалы могут быть запрещены или ограничены.',
 
     loading_progress_step_0: 'Подготовка',
     loading_progress_step_1: 'Загрузка языков',

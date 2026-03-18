@@ -1187,4 +1187,9 @@ export default {
     install_app_apk_text: 'שמנו לב שאתה משתמש ב-MediaStationX כדי להפעיל את Lampa באנדרואיד. אנו ממליצים להתקין את Lampa כאפליקציית APK. זה יבטיח פעולה יציבה יותר וגישה לכל תכונות האפליקציה. <br><br>עבור לקבוצת הטלגרם <span class="account-modal__site">@lampa_group</span> כדי להוריד את ה-APK והוראות ההתקנה העדכניות ביותר.',
     install_app_apk_qr: 'סרוק את קוד ה-QR כדי להוריד את ה-APK של Lampa',
     copy_link_buffer: 'העתק קישור',
+
+    dmca_title_lgbt: 'התוכן מוגבל',
+    dmca_descr_lgbt: 'הצפייה אינה זמינה באזור שלך מכיוון שהיא עשויה להכיל תוכן להט"בי. חומר כזה עשוי להיות אסור או מוגבל במדינות מסוימות.',
+
+    settings_lgbt_content_block: 'חסימת תוכן להט"בי',
 }

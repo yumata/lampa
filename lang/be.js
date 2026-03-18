@@ -1301,4 +1301,9 @@ export default {
     filter_keyword_spy: 'Шпіён', 
     filter_keyword_disaster: 'Катастрофа', 
     filter_keyword_christmas: 'Каляды',
+
+    dmca_title_lgbt: 'Кантэнт абмежаваны',
+    dmca_descr_lgbt: 'Прагляд недаступны ў вашым рэгіёне, так як магчыма змяшчае ЛГБТ-кантэнт. У некаторых краінах такія матэрыялы могуць быць забаронены ці абмежаваны.',
+
+    settings_lgbt_content_block: 'Блокіроўка ЛГБТ-контента',
 }

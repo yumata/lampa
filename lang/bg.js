@@ -1287,4 +1287,9 @@ export default {
     filter_keyword_spy: 'Шпионин',
     filter_keyword_disaster: 'Катастрофа',
     filter_keyword_christmas: 'Коледа',
+
+    dmca_title_lgbt: 'Съдържание с ограничен достъп',
+    dmca_descr_lgbt: 'Преглеждането не е възможно във вашия регион, тъй като е възможно да съдържа ЛГБТ съдържание. Такива материали може да са забранени или ограничени в някои страни.',
+
+    settings_lgbt_content_block: 'Блокиране на ЛГБТ съдържание',
 }

@@ -1236,4 +1236,9 @@ export default {
     filter_keyword_spy: '间谍',
     filter_keyword_disaster: '灾难',
     filter_keyword_christmas: '圣诞节',
+
+    dmca_title_lgbt: '内容受限',
+    dmca_descr_lgbt: '由于内容可能包含 LGBT 内容，您所在地区无法观看。此类内容在某些国家/地区可能被禁止或限制。',
+
+    settings_lgbt_content_block: '阻止 LGBT 内容',
 }
