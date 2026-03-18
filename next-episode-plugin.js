@@ -217,20 +217,19 @@
             '.card__badge--next-episode {' +
             '  position: absolute;' +
             '  z-index: 15;' +
-            '  bottom: 0;' +
-            '  left: 0;' +
-            '  right: 0;' +
-            '  padding: 0.3em 0.4em;' +
+            '  bottom: 0.3em;' +
+            '  left: 50%;' +
+            '  transform: translateX(-50%);' +
+            '  padding: 0.2em 0.5em;' +
             '  font-size: 0.72em;' +
             '  font-weight: bold;' +
             '  color: #fff;' +
             '  background: rgba(0, 0, 0, 0.75);' +
+            '  border-radius: 0.3em;' +
             '  text-align: center;' +
             '  text-shadow: 0 1px 2px rgba(0,0,0,0.8);' +
             '  pointer-events: none;' +
             '  white-space: nowrap;' +
-            '  overflow: hidden;' +
-            '  text-overflow: ellipsis;' +
             '  line-height: 1.3;' +
             '  box-sizing: border-box;' +
             '}' +
