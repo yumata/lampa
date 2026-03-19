@@ -69,6 +69,13 @@ export default {
       
             lang_choice_title: "Bun venit",
             lang_choice_subtitle: "Alegeți limba",
-        }
+        },
+        fr: {
+            code: 'fr',
+            name: 'Français',
+
+            lang_choice_title: 'Bienvenue',
+            lang_choice_subtitle: 'Choisissez votre langue',
+        },
     }
 }
