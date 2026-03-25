@@ -7675,6 +7675,14 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
   top: 100%;
 }
 
+body.platform--apple_tv #orsay-keyboard.focus {
+  border: 4px solid #fff;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+  padding-left: 12px;
+}
+
 .modal {
   position: fixed;
   top: 0;
