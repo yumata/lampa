@@ -281,7 +281,7 @@ export default {
     torrent_parser_voice_amateur: 'Amador',
     torrent_parser_reset: 'Redefinir filtro',
     torrent_parser_empty: 'Falha ao obter resultados',
-    torrent_parser_no_hash: 'Falha ao obter HASH',
+    torrent_parser_no_hash: 'Falha ao obter HASH, tente recarregar o TorrServer',
     torrent_parser_added_to_mytorrents: 'Adicionado a "Meus torrents"',
     torrent_parser_add_to_mytorrents: 'Adicionar a "Meus torrents"',
     torrent_parser_label_title: 'Sinalizador',

@@ -283,7 +283,7 @@ export default {
     torrent_parser_voice_amateur: 'Любіцельскі',
     torrent_parser_reset: 'Скінуць фільтр',
     torrent_parser_empty: 'Немагчыма атрымаць вынікаў',
-    torrent_parser_no_hash: 'Не атрымалася атрымаць HASH',
+    torrent_parser_no_hash: 'Не атрымалася атрымаць HASH, паспрабуйце перезагрузить TorrServer',
     torrent_parser_added_to_mytorrents: 'дададзена ў «Мае торэнты»',
     torrent_parser_add_to_mytorrents: 'Дадаць у «Мае торэнты»',
     torrent_parser_label_title: 'Пазначыць',

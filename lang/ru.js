@@ -351,7 +351,7 @@ export default {
     torrent_parser_voice_amateur: 'Любительский',
     torrent_parser_reset: 'Сбросить фильтр',
     torrent_parser_empty: 'Не удалось получить результатов',
-    torrent_parser_no_hash: 'Не удалось получить HASH',
+    torrent_parser_no_hash: 'Не удалось получить HASH, попробуйте перезагрузить TorrServer',
     torrent_parser_added_to_mytorrents: 'добавлено в «Мои торренты»',
     torrent_parser_add_to_mytorrents: 'Добавить в «Мои торренты»',
     torrent_parser_label_title: 'Пометить',

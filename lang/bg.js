@@ -282,7 +282,7 @@ export default {
     torrent_parser_voice_amateur: 'Аматьорски',
     torrent_parser_reset: 'Нулиране на филтъра',
     torrent_parser_empty: 'Неуспешно получаване на резултати',
-    torrent_parser_no_hash: 'Неуспешно получаване на HASH',
+    torrent_parser_no_hash: 'Неуспешно получаване на HASH, опитайте да перезагрузите TorrServer',
     torrent_parser_added_to_mytorrents: 'Добавен в "Моите торенти"',
     torrent_parser_add_to_mytorrents: 'Добави в "Моите торенти"',
     torrent_parser_label_title: 'Флаг',

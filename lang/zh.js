@@ -262,7 +262,7 @@ export default {
     torrent_parser_voice_amateur: '业余',
     torrent_parser_reset: '重置筛选',
     torrent_parser_empty: '获取结果失败',
-    torrent_parser_no_hash: '获取HASH失败',
+    torrent_parser_no_hash: '获取HASH失败,请尝试重新加载TorrServer',
     torrent_parser_added_to_mytorrents: '添加到“我的种子”',
     torrent_parser_add_to_mytorrents: '添加到“我的种子”',
     torrent_parser_label_title: '标记',

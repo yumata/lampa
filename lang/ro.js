@@ -283,7 +283,7 @@ export default {
     torrent_parser_voice_amateur: 'Amator',
     torrent_parser_reset: 'Resetează filtrul',
     torrent_parser_empty: 'Nu s-au găsit rezultate',
-    torrent_parser_no_hash: 'Eșec la obținerea HASH-ului',
+    torrent_parser_no_hash: 'Eșec la obținerea HASH-ului, încearcă să reîncarci TorrServer',
     torrent_parser_added_to_mytorrents: 'adăugat la "Torrentele mele"',
     torrent_parser_add_to_mytorrents: 'Adaugă la "Torrentele mele"',
     torrent_parser_label_title: 'Marcaj',

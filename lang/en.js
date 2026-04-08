@@ -283,7 +283,7 @@ export default {
     torrent_parser_voice_amateur: 'Amateur',
     torrent_parser_reset: 'Reset filter',
     torrent_parser_empty: 'Failed to get results',
-    torrent_parser_no_hash: 'Failed to get HASH',
+    torrent_parser_no_hash: 'Failed to get HASH, try reloading TorrServer',
     torrent_parser_added_to_mytorrents: 'added to "My torrents"',
     torrent_parser_add_to_mytorrents: 'Add to "My torrents"',
     torrent_parser_label_title: 'Flag',

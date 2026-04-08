@@ -283,7 +283,7 @@ export default {
     torrent_parser_voice_amateur: 'Amateur',
     torrent_parser_reset: 'Réinitialiser le filtre',
     torrent_parser_empty: 'Aucun résultat obtenu',
-    torrent_parser_no_hash: 'Impossible de récupérer le HASH',
+    torrent_parser_no_hash: 'Impossible de récupérer le HASH, essayez de recharger TorrServer',
     torrent_parser_added_to_mytorrents: 'Ajouté à "Mes torrents"',
     torrent_parser_add_to_mytorrents: 'Ajouter à "Mes torrents"',
     torrent_parser_label_title: 'Marquer',

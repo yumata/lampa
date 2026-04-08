@@ -259,7 +259,7 @@ export default {
     torrent_parser_voice_amateur: 'חובבן',
     torrent_parser_reset: 'אפס סנון',
     torrent_parser_empty: 'נכשל בהשגת תוצאות',
-    torrent_parser_no_hash: 'אין אפשרות להשיג את HASH',
+    torrent_parser_no_hash: 'אין אפשרות להשיג את HASH, נסה להפעיל מחדש את TorrServer',
     torrent_parser_added_to_mytorrents: 'הוסיף ל" הנחלים שלי',
     torrent_parser_add_to_mytorrents: 'הוסף ל" הנחלים שלי',
     torrent_parser_label_title: 'דגל',
