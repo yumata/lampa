@@ -1291,4 +1291,12 @@ export default {
     dmca_descr_lgbt: 'Viewing is unavailable in your region as it may contain LGBT content. Such material may be prohibited or restricted in some countries.',
 
     settings_lgbt_content_block: 'Block LGBT content',
+
+    // todo:
+    adult_content_title: 'Adult Content',
+    adult_content_text_warning: 'Content may contain adult material that may be inappropriate for some viewers.',
+    adult_content_text_modal: 'This film or series is marked as containing adult content. You must be 18 years of age or older to view this material. Please confirm that you are of legal age to continue viewing.',
+
+    adult_content_confirm: 'I am 18 or older',
+    adult_content_deny: 'I am under 18',
 }

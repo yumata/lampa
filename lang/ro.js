@@ -1290,4 +1290,12 @@ export default {
     dmca_descr_lgbt: 'Vizualizarea nu este disponibilă în regiunea dvs., deoarece poate include conținut LGBT. Un astfel de material poate fi interzis sau restricționat în unele țări.',
 
     settings_lgbt_content_block: 'Blocați conținutul LGBT',
+
+    // todo:
+    adult_content_title: 'Conținut pentru adulți',
+    adult_content_text_warning: 'Conținutul poate include material pentru adulți care poate fi inadecvat pentru unii spectatori.',
+    adult_content_text_modal: 'Acest film sau serial este marcat ca conținând conținut pentru adulți. Trebuie să aveți cel puțin 18 ani pentru a viziona acest material. Vă rugăm să confirmați că aveți vârsta legală pentru a continua vizionarea.',
+
+    adult_content_confirm: 'Am 18 ani sau mai mult',
+    adult_content_deny: 'Am sub 18 ani',
 }

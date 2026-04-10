@@ -1301,4 +1301,12 @@ export default {
     dmca_descr_lgbt: 'Prohlížení není ve vašem regionu možné, protože může obsahovat LGBT obsah. Takový materiál může být v některých zemích zakázán nebo omezen.',
 
     settings_lgbt_content_block: 'Blokovat LGBT obsah',
+
+    // todo:
+    adult_content_title: 'Obsah pro dospělé',
+    adult_content_text_warning: 'Obsah může obsahovat materiál pro dospělé, který může být nevhodný pro některé diváky.',
+    adult_content_text_modal: 'Tento film nebo seriál je označen jako obsahující obsah pro dospělé. Musíte být starší 18 let, abyste mohli tento materiál sledovat. Potvrďte prosím, že jste dosáhli zákonného věku pro pokračování ve sledování.',
+
+    adult_content_confirm: 'Je mi 18 let nebo více',
+    adult_content_deny: 'Je mi méně než 18 let',
 };

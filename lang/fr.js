@@ -1290,4 +1290,12 @@ export default {
     dmca_descr_lgbt: 'Visionnage restreint dans votre région (Contenu LGBT).',
 
     settings_lgbt_content_block: 'Bloquer le contenu LGBT',
+
+    // todo:
+    adult_content_title: 'Contenu adulte',
+    adult_content_text_warning: 'Le contenu peut contenir du matériel adulte qui pourrait être inapproprié pour certains spectateurs.',
+    adult_content_text_modal: "Ce film ou cette série est marqué comme contenant du contenu adulte. Vous devez avoir 18 ans ou plus pour visionner ce matériel. Veuillez confirmer que vous avez atteint l'âge légal pour continuer à regarder.",
+
+    adult_content_confirm: "J'ai 18 ans ou plus",
+    adult_content_deny: "J'ai moins de 18 ans",
 }
