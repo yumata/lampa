@@ -1274,4 +1274,11 @@ export default {
 
     adult_content_confirm: 'Мені 18 років або більше',
     adult_content_deny: 'Мені менше 18 років',
+
+    remote_configuration_settings_title: 'Віддалена конфігурація',
+    remote_configuration_registration_text: 'Віддалена конфігурація надає тимчасовий доступ до вашого додатку, інший додаток зможе встановлювати розширення та налаштовувати параметри.',
+    remote_configuration_waite_text: 'Тепер ви можете передати цей код іншому додатку, щоб надати доступ до налаштувань.',
+    remote_configuration_open_button: 'Відкрити доступ',
+    remote_configuration_code_life: 'Код дійсний',
+    remote_configuration_notice_nocode: 'Не вдалося відкрити доступ'
 }

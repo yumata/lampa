@@ -1309,4 +1309,11 @@ export default {
 
     adult_content_confirm: 'Je mi 18 let nebo více',
     adult_content_deny: 'Je mi méně než 18 let',
+
+    remote_configuration_settings_title: 'Vzdálená konfigurace',
+    remote_configuration_registration_text: 'Vzdálená konfigurace poskytuje dočasný přístup k vaší aplikaci, jiná aplikace bude moci instalovat rozšíření a konfigurovat parametry.',
+    remote_configuration_waite_text: 'Nyní můžete předat tento kód jiné aplikaci, abyste jí udělili přístup k nastavení.',
+    remote_configuration_open_button: 'Otevřít přístup',
+    remote_configuration_code_life: 'Kód je platný',
+    remote_configuration_notice_nocode: 'Nepodařilo se otevřít přístup'
 };

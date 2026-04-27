@@ -1300,4 +1300,11 @@ export default {
 
     adult_content_confirm: 'На 18 съм или повече',
     adult_content_deny: 'Под 18 съм',
+
+    remote_configuration_settings_title: 'Дистанционна конфигурация',
+    remote_configuration_registration_text: 'Дистанционната конфигурация предоставя временен достъп до вашето приложение, друго приложение ще може да инсталира разширения и да конфигурира параметри.',
+    remote_configuration_waite_text: 'Вече можете да предадете този код на друго приложение, за да му предоставите достъп до настройките.',
+    remote_configuration_open_button: 'Отвори достъп',
+    remote_configuration_code_life: 'Кодът е валиден',
+    remote_configuration_notice_nocode: 'Неуспешно отваряне на достъп'
 }

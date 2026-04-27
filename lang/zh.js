@@ -1249,4 +1249,11 @@ export default {
 
     adult_content_confirm: '我已满18岁',
     adult_content_deny: '我未满18岁',
+
+    remote_configuration_settings_title: '远程配置',
+    remote_configuration_registration_text: '远程配置提供对您应用程序的临时访问，其他应用程序将能够安装扩展并配置参数。',
+    remote_configuration_waite_text: '您现在可以将此代码传递给另一个应用程序，以授予对设置的访问权限。',
+    remote_configuration_open_button: '开放访问',
+    remote_configuration_code_life: '代码有效',
+    remote_configuration_notice_nocode: '无法开放访问'
 }

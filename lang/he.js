@@ -1200,4 +1200,11 @@ export default {
 
     adult_content_confirm: 'אני בן 18 ומעלה',
     adult_content_deny: 'אני מתחת לגיל 18',
+
+    remote_configuration_settings_title: 'הגדרה מרחוק',
+    remote_configuration_registration_text: 'ההגדרה מרחוק מספקת גישה זמנית לאפליקציה שלך, אפליקציה אחרת תוכל להתקין הרחבות ולהגדיר פרמטרים.',
+    remote_configuration_waite_text: 'כעת תוכל להעביר קוד זה לאפליקציה אחרת כדי להעניק גישה להגדרות.',
+    remote_configuration_open_button: 'פתח גישה',
+    remote_configuration_code_life: 'הקוד בתוקף',
+    remote_configuration_notice_nocode: 'נכשל בפתיחת הגישה'
 }

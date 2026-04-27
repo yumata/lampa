@@ -1298,4 +1298,11 @@ export default {
 
     adult_content_confirm: 'Am 18 ani sau mai mult',
     adult_content_deny: 'Am sub 18 ani',
+
+    remote_configuration_settings_title: 'Configurare de la distanță',
+    remote_configuration_registration_text: 'Configurarea de la distanță oferă acces temporar la aplicația dvs., o altă aplicație va putea instala extensii și configura parametrii.',
+    remote_configuration_waite_text: 'Acum puteți transmite acest cod unei alte aplicații pentru a acorda acces la setări.',
+    remote_configuration_open_button: 'Deschide accesul',
+    remote_configuration_code_life: 'Codul este valabil',
+    remote_configuration_notice_nocode: 'Nu s-a putut deschide accesul'
 }
