@@ -1315,6 +1315,10 @@ export default {
     adult_content_confirm: 'Мне 18 гадоў ці болей',
     adult_content_deny: 'Мне менш за 18 гадоў',
 
+    inner_player_disclaimer_title: 'Дысклеймер плэера',
+    inner_player_disclaimer_text: 'Я разумею, што запускаю плэер з няпоўнай падтрымкай, і разумею, што гэта можа выклікаць нетыповыя паводзіны прылады. Аптымальна перайсці на плэеры сямейства tvOS або іншыя альтэрнатывы.',
+
+    inner_player_disclaimer_change_player: 'Змяніць плэер',
     remote_configuration_settings_title: 'Аддалёная канфігурацыя',
     remote_configuration_registration_text: 'Аддалёная канфігурацыя забяспечвае часовы доступ да вашага прыкладання, іншае прыкладанне зможа ўсталёўваць пашырэнні і наладжваць параметры.',
     remote_configuration_waite_text: 'Цяпер вы можаце перадаць гэты код іншаму прыкладанню, каб даць доступ да налад.',

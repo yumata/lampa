@@ -1250,6 +1250,10 @@ export default {
     adult_content_confirm: '我已满18岁',
     adult_content_deny: '我未满18岁',
 
+    inner_player_disclaimer_title: '播放器免责声明',
+    inner_player_disclaimer_text: '我理解我正在启动一个支持不完整的播放器，并且我理解这可能会导致设备出现非典型行为。建议切换到 tvOS 系列播放器或其他替代方案。',
+
+    inner_player_disclaimer_change_player: '更换播放器',
     remote_configuration_settings_title: '远程配置',
     remote_configuration_registration_text: '远程配置提供对您应用程序的临时访问，其他应用程序将能够安装扩展并配置参数。',
     remote_configuration_waite_text: '您现在可以将此代码传递给另一个应用程序，以授予对设置的访问权限。',

@@ -1201,6 +1201,10 @@ export default {
     adult_content_confirm: 'אני בן 18 ומעלה',
     adult_content_deny: 'אני מתחת לגיל 18',
 
+    inner_player_disclaimer_title: 'הצהרת נגן',
+    inner_player_disclaimer_text: 'אני מבין שאני מפעיל נגן עם תמיכה חלקית, ואני מבין שזה עלול לגרום להתנהגות לא טיפוסית במכשיר. מומלץ לעבור לנגנים ממשפחת tvOS או לחלופות אחרות.',
+
+    inner_player_disclaimer_change_player: 'החלף נגן',
     remote_configuration_settings_title: 'הגדרה מרחוק',
     remote_configuration_registration_text: 'ההגדרה מרחוק מספקת גישה זמנית לאפליקציה שלך, אפליקציה אחרת תוכל להתקין הרחבות ולהגדיר פרמטרים.',
     remote_configuration_waite_text: 'כעת תוכל להעביר קוד זה לאפליקציה אחרת כדי להעניק גישה להגדרות.',

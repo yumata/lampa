@@ -1299,6 +1299,11 @@ export default {
     adult_content_confirm: "J'ai 18 ans ou plus",
     adult_content_deny: "J'ai moins de 18 ans",
 
+    inner_player_disclaimer_title: 'Avertissement du lecteur',
+    inner_player_disclaimer_text: 'Je comprends que je lance un lecteur avec une prise en charge incomplète, et je comprends que cela peut provoquer un comportement atypique de l appareil. Il est recommande de passer aux lecteurs de la famille tvOS ou a d autres alternatives.',
+
+    inner_player_disclaimer_change_player: 'Changer le lecteur',
+}
     remote_configuration_settings_title: 'Configuration à distance',
     remote_configuration_registration_text: "La configuration à distance fournit un accès temporaire à votre application, une autre application pourra installer des extensions et configurer des paramètres.",
     remote_configuration_waite_text: "Vous pouvez maintenant transmettre ce code à une autre application pour lui accorder l'accès aux paramètres.",

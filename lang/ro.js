@@ -1299,6 +1299,10 @@ export default {
     adult_content_confirm: 'Am 18 ani sau mai mult',
     adult_content_deny: 'Am sub 18 ani',
 
+    inner_player_disclaimer_title: 'Avertisment player',
+    inner_player_disclaimer_text: 'Înțeleg că pornesc un player cu suport incomplet și înțeleg că acest lucru poate duce la comportament atipic pe dispozitiv. Este recomandat să treceți la playere din familia tvOS sau la alte alternative.',
+
+    inner_player_disclaimer_change_player: 'Schimbă playerul',
     remote_configuration_settings_title: 'Configurare de la distanță',
     remote_configuration_registration_text: 'Configurarea de la distanță oferă acces temporar la aplicația dvs., o altă aplicație va putea instala extensii și configura parametrii.',
     remote_configuration_waite_text: 'Acum puteți transmite acest cod unei alte aplicații pentru a acorda acces la setări.',

@@ -1310,6 +1310,10 @@ export default {
     adult_content_confirm: 'Je mi 18 let nebo více',
     adult_content_deny: 'Je mi méně než 18 let',
 
+    inner_player_disclaimer_title: 'Upozornění přehrávače',
+    inner_player_disclaimer_text: 'Rozumím, že spouštím přehrávač s neúplnou podporou, a rozumím, že to může způsobit netypické chování zařízení. Doporučuje se přejít na přehrávače rodiny tvOS nebo jiné alternativy.',
+
+    inner_player_disclaimer_change_player: 'Změnit přehrávač',
     remote_configuration_settings_title: 'Vzdálená konfigurace',
     remote_configuration_registration_text: 'Vzdálená konfigurace poskytuje dočasný přístup k vaší aplikaci, jiná aplikace bude moci instalovat rozšíření a konfigurovat parametry.',
     remote_configuration_waite_text: 'Nyní můžete předat tento kód jiné aplikaci, abyste jí udělili přístup k nastavení.',
