@@ -1,33 +1,6 @@
 {
-    "name": "Lampa",
-    "headline": "Lampa",
-    "version": "latest",
-    "parameter": "content:{PREFIX}{domain}/msx/start.json",
-    "note": "For this service, Media Station X 0.1.120 or higher is needed",
-    "action": "[settings:validate_links:0|home]",
-    "dictionary": "{PREFIX}{domain}/msx/lang/ru.json",
-    "pages": [{
-        "items": [{
-                "id": "description",
-                "type": "space",
-                "layout": "3,0,8,3",
-                "text": ""
-            },
-            {
-                "type": "image",
-                "layout": "0,0,2,2",
-                "image": "{PREFIX}{domain}/msx-logo.png",
-                "action": "link:{PREFIX}{domain}",
-                "selection": {
-                    "important": true,
-                    "action": "update:content:description",
-                    "data": {
-                        "text": [
-                            "Открой мир кино — от новинок до любимых историй\n\nБудьте в центре событий мира кино — открывайте свежие новинки, добавляйте фильмы в избранное и первыми узнавайте о выходе новых серий любимых сериалов"
-                        ]
-                    }
-                }
-            }
-        ]
-    }]
+	"name": "Lampa",
+	"version": "latest",
+	"parameter": "content:{PREFIX}{domain}/msx/start.json",
+	"action": "link:{PREFIX}{domain}"
 }
