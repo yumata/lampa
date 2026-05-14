@@ -26,6 +26,7 @@ export default {
     search_searching: 'Идет поиск...',
     search_start: 'Начать поиск',
     search_nofound: 'По вашему запросу ничего не найдено.',
+	global_search: 'Глобальный поиск',
 
     full_genre: 'Жанр',
     full_production: 'Производство',

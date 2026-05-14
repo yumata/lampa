@@ -26,6 +26,7 @@ export default {
     search_searching: "Probíhá hledání...",
     search_start: "Začít hledat",
     search_nofound: "Podle vašeho dotazu nebylo nic nalezeno.",
+	global_search: 'Globální vyhledávání',
 
     full_genre: "Žánr",
     full_production: "Produkce",

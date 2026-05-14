@@ -24,6 +24,7 @@ export default {
     search_searching: '搜索中...',
     search_start: '开始搜索',
     search_nofound: '根据您的要求没有找到相关内容。',
+	global_search: '全局搜索',
     full_genre: '类型',
     full_production: '出品公司',
     full_date_of_release: '发布日期',

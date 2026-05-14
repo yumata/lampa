@@ -26,6 +26,7 @@ export default {
     search_searching: 'Căutare în curs...',
     search_start: 'Pentru a începe căutarea',
     search_nofound: 'Nu s-a găsit nimic conform solicitării tale.',
+	global_search: 'Căutare globală',
 
     full_genre: 'Gen',
     full_production: 'Producție',

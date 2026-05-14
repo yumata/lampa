@@ -26,6 +26,7 @@ export default {
     search_searching: 'Search in progress...',
     search_start: 'To start searching',
     search_nofound: 'Nothing was found according to your request.',
+	global_search: 'Global search',
 
     full_genre: 'Genre',
     full_production: 'Production',

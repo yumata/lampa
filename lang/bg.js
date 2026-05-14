@@ -26,6 +26,7 @@ export default {
     search_searching: 'Търсенето е в ход...',
     search_start: 'За да започнете търсене',
     search_nofound: 'Нищо не беше намерено според вашата заявка.',
+	global_search: 'Глобално търсене',
 
     full_genre: 'Жанр',
     full_production: 'Продукция',

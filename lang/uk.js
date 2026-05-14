@@ -24,6 +24,7 @@ export default {
     search_searching: 'Йде пошук...',
     search_start: 'Розпочати пошук',
     search_nofound: 'На ваш запит нічого не знайдено.',
+	global_search: 'Глобальний пошук',
     full_genre: 'Жанр',
     full_production: 'Виробництво',
     full_date_of_release: 'Дата релізу',

@@ -23,6 +23,7 @@ export default {
     search_searching: 'חיפוש בתהליך...',
     search_start: 'להתחיל לחפש',
     search_nofound: 'שום דבר לא נמצא לפי בקשתך',
+	global_search: 'חיפוש כללי',
     full_genre: 'סגנון',
     full_production: 'הפקה',
     full_date_of_release: 'תאריך השקה',

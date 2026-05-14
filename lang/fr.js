@@ -26,6 +26,7 @@ export default {
     search_searching: 'Recherche en cours...',
     search_start: 'Pour commencer la recherche',
     search_nofound: 'Aucun résultat ne correspond à votre requête.',
+	global_search: 'Recherche globale',
 
     full_genre: 'Genre',
     full_production: 'Production',
