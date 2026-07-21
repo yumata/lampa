@@ -212,6 +212,12 @@ export default {
     settings_server_login: 'Лагін',
     settings_server_password: 'Пароль',
     settings_server_not_specified: 'Не паказаны',
+    settings_server_search_type: 'Тып пошуку',
+    settings_server_search_type_descr: 'Дзе шукаць тарэнты: убудаваны rutor, Torznab-індэксары ў TorrServer, або абодва крыніцы.',
+    settings_param_torrserver_search_rutor: 'Rutor',
+    settings_param_torrserver_search_torznab: 'Torznab',
+    settings_param_torrserver_search_both: 'Rutor + Torznab',
+    settings_server_not_specified: 'Не паказаны',
 
 
     torent_nohash_reasons: 'Прычыны',

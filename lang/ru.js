@@ -253,6 +253,11 @@ export default {
     settings_server_login: 'Логин',
     settings_server_password: 'Пароль',
     settings_server_not_specified: 'Не указан',
+    settings_server_search_type: 'Тип поиска',
+    settings_server_search_type_descr: 'Где искать торренты: встроенный rutor, Torznab-индексеры в TorrServer, или оба источника.',
+    settings_param_torrserver_search_rutor: 'Rutor',
+    settings_param_torrserver_search_torznab: 'Torznab',
+    settings_param_torrserver_search_both: 'Rutor + Torznab',
 
     settings_server_gts: 'Транскодирование',
     settings_server_gts_descr: 'Автоматически преобразовывать видео в совместимый формат при необходимости.',

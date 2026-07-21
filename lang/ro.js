@@ -213,6 +213,11 @@ export default {
     settings_server_login: 'Login',
     settings_server_password: 'Parolă',
     settings_server_not_specified: 'Nespecificat',
+    settings_server_search_type: 'Tip căutare',
+    settings_server_search_type_descr: 'Unde să cauți torrenturi: rutor integrat, indexatori Torznab în TorrServer, sau ambele surse.',
+    settings_param_torrserver_search_rutor: 'Rutor',
+    settings_param_torrserver_search_torznab: 'Torznab',
+    settings_param_torrserver_search_both: 'Rutor + Torznab',
 
     torent_nohash_reasons: 'Motive posibile',
     torent_nohash_reason_one: 'TorServer nu a putut descărca fișierul torrent',

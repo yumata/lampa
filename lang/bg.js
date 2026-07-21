@@ -212,6 +212,11 @@ export default {
     settings_server_login: 'Вход',
     settings_server_password: 'Парола',
     settings_server_not_specified: 'Неопределено',
+    settings_server_search_type: 'Тип търсене',
+    settings_server_search_type_descr: 'Къде да се търсят торенти: вграденият rutor, Torznab индексатори в TorrServer, или и двата източника.',
+    settings_param_torrserver_search_rutor: 'Rutor',
+    settings_param_torrserver_search_torznab: 'Torznab',
+    settings_param_torrserver_search_both: 'Rutor + Torznab',
 
     torent_nohash_reasons: 'Причината',
     torent_nohash_reason_one: 'TorServer не можа да зареди торент файла',

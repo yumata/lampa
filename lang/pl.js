@@ -253,6 +253,11 @@ export default {
     settings_server_login:  'Login',
     settings_server_password:  'Hasło',
     settings_server_not_specified:  'Nie określono',
+    settings_server_search_type:  'Typ wyszukiwania',
+    settings_server_search_type_descr:  'Gdzie szukać torrentów: wbudowany rutor, indeksery Torznab w TorrServer, lub oba źródła.',
+    settings_param_torrserver_search_rutor:  'Rutor',
+    settings_param_torrserver_search_torznab:  'Torznab',
+    settings_param_torrserver_search_both:  'Rutor + Torznab',
 
     settings_webos_launcher:  'Uruchamianie aplikacji',
     settings_webos_launcher_add_device:  'Ustaw jako aplikację startową',

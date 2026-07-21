@@ -213,6 +213,11 @@ export default {
     settings_server_login: 'Identifiant',
     settings_server_password: 'Mot de passe',
     settings_server_not_specified: 'Non spécifié',
+    settings_server_search_type: 'Type de recherche',
+    settings_server_search_type_descr: 'Où chercher les torrents : rutor intégré, indexeurs Torznab dans TorrServer, ou les deux.',
+    settings_param_torrserver_search_rutor: 'Rutor',
+    settings_param_torrserver_search_torznab: 'Torznab',
+    settings_param_torrserver_search_both: 'Rutor + Torznab',
 
     torent_nohash_reasons: 'Raisons possibles',
     torent_nohash_reason_one: 'TorrServer n\'a pas pu télécharger le fichier torrent',

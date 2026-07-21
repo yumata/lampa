@@ -250,6 +250,11 @@ export default {
     settings_server_login: "Přihlášení",
     settings_server_password: "Heslo",
     settings_server_not_specified: "Není uvedeno",
+    settings_server_search_type: "Typ vyhledávání",
+    settings_server_search_type_descr: "Kde hledat torrenty: vestavěný rutor, Torznab indexery v TorrServer, nebo oba zdroje.",
+    settings_param_torrserver_search_rutor: "Rutor",
+    settings_param_torrserver_search_torznab: "Torznab",
+    settings_param_torrserver_search_both: "Rutor + Torznab",
 
     settings_webos_launcher: "Spuštění aplikace",
     settings_webos_launcher_add_device: "Nastavit jako startovací",
