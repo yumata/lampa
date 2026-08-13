@@ -502,6 +502,12 @@ export default {
     title_meta_profanity: 'Лексика',
     title_meta_sadness: 'Грусть',
     title_meta_sex: 'Сексуальность',
+    title_meta_humor: 'Юмор',
+    title_meta_tension: 'Напряжение',
+    title_meta_romance: 'Романтика',
+    title_meta_pace: 'Темп',
+    title_meta_importance: 'Важные сцены',
+    title_meta_action: 'Экшн',
 
     reactions_none: 'Нет реакций',
     reactions_fire: 'Супер',
@@ -1008,6 +1014,9 @@ export default {
     player_segments_skip_intro: 'Пропустить заставку',
     player_segments_next: 'Следующая серия',
     player_segments_next_in: 'Следующая серия через',
+    player_pip: 'Уменьшить',
+    player_volume: 'Громкость',
+    player_time_end: 'Конец в',
 
     broadcast_open: 'Открыть карточку на другом устройстве',
     broadcast_play: 'Выберите устройство для просмотра',
@@ -1342,5 +1351,16 @@ export default {
     remote_configuration_waite_text: 'Теперь вы можете передать этот код в другое приложение, чтобы предоставить доступ к настройкам.',
     remote_configuration_open_button: 'Открыть доступ',
     remote_configuration_code_life: 'Код действителен',
-    remote_configuration_notice_nocode: 'Не удалось открыть доступ'
+    remote_configuration_notice_nocode: 'Не удалось открыть доступ',
+
+    player_ai_agent_info: 'Хотите узнать больше о видео? Спросите у AI-ассистента, и он предоставит вам график настроений, краткий сюжет и интересные моменты.',
+    player_ai_agent_ask_plot: 'Кратко о сюжете',
+    player_ai_agent_ask_moods: 'Показать график',
+    player_ai_agent_ask_highlights: 'Интересные моменты',
+    player_ai_agent_ask: 'Спросить',
+    player_ai_agent_processing: 'Анализирую...',
+    player_ai_agent_no_data: 'Нет данных для показа.',
+    player_ai_agent_no_analysis: 'Не удалось провести анализ видео.',
+    player_ai_agent_quota: 'Лимит запросов превышен. Попробуйте повторить запрос позже.',
+    player_ai_agent_working: 'Я еще работаю над этим...',
 }
