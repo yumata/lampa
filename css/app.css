@@ -5957,9 +5957,9 @@ body.true--mobile.orientation--portrait .player-video__paused {
        -o-animation: animation-trigger-enter 0.2s forwards;
           animation: animation-trigger-enter 0.2s forwards;
 }
-.player-panel .button > svg {
-  width: 1.2em;
-  height: 1.2em;
+.player-panel .button svg {
+  width: 1.2em !important;
+  height: 1.2em !important;
 }
 .player-panel .button.focus {
   background-color: #fff;
@@ -6291,6 +6291,9 @@ body.true--mobile .player-panel__mobile-visible {
 body.true--mobile .player-panel__apex-left-side, body.true--mobile .player-panel__apex-right-side {
   width: 100%;
 }
+body.true--mobile .player-panel__line-two {
+  font-size: 1.3em;
+}
 
 .player.youtube .player-video__loader,
 .player.youtube .player-panel__settings {
@@ -6401,7 +6404,7 @@ body.true--mobile .player-panel__apex-left-side, body.true--mobile .player-panel
           flex-shrink: 0;
   padding-left: 1em;
   position: absolute;
-  top: 2.2em;
+  top: 2.4em;
   right: 1.5em;
 }
 .player-info__time span {
@@ -6505,7 +6508,7 @@ body.true--mobile .player-info__line {
 .player.iptv .player-info__body {
   padding-top: 2.2em;
 }
-.player.iptv .player-info__name, .player.iptv .player-info__title {
+.player.iptv .player-info__name, .player.iptv .player-info__title, .player.iptv .player-info__time-end {
   display: none;
 }
 .player.iptv .player-info__line {
@@ -6513,8 +6516,7 @@ body.true--mobile .player-info__line {
 }
 .player.iptv .player-info__time {
   position: absolute;
-  top: 0.4em;
-  right: 0;
+  top: 0.2em;
 }
 .player.iptv .player-info__values {
   margin-top: 0;
@@ -15063,15 +15065,6 @@ body.platform--netcast .card__icon.icon--history {
 body.platform--orsay .player-info__name,
 body.platform--netcast .player-info__name {
   padding-right: 4em;
-}
-body.platform--orsay .player-info__time,
-body.platform--netcast .player-info__time {
-  position: absolute;
-  right: 0;
-}
-body.platform--orsay .player-info__line,
-body.platform--netcast .player-info__line {
-  position: relative;
 }
 
 body.platform--orsay.system--keyboard .settings-input__content,
