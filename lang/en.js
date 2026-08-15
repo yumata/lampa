@@ -1328,6 +1328,8 @@ export default {
 
     settings_server_gts: 'Transcoding',
     settings_server_gts_descr: 'Automatically convert video to a compatible format when needed.',
+	settings_server_tracktimecode: 'Enable TrackTimecode',
+    settings_server_tracktimecode_descr: 'Saves the playback progress of movies and TV shows on the TorrServer. This option must also be enabled in TorrServer for it to work.',
 
     title_metadata: 'Metadata',
     title_moods: 'Moods',

@@ -1229,6 +1229,8 @@ export default {
 
     settings_server_gts: 'קידוד מחדש',
     settings_server_gts_descr: 'המרה אוטומטית של וידאו לפורמט תואם בעת הצורך.',
+	settings_server_tracktimecode: 'הפעל את TrackTimecode',
+    settings_server_tracktimecode_descr: 'שומר את התקדמות הצפייה בסרטים ובסדרות בשרת TorrServer. כדי שהאפשרות תפעל, יש להפעיל אותה גם ב-TorrServer.',
 
     title_metadata: 'מטא-נתונים',
     title_moods: 'מצבי רוח',

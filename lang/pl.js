@@ -1335,6 +1335,8 @@ export default {
 
     settings_server_gts: 'Transkodowanie',
     settings_server_gts_descr: 'Automatycznie konwertuj filmy do zgodnego formatu, gdy jest to potrzebne.',
+	settings_server_tracktimecode: 'Ativar TrackTimecode',
+    settings_server_tracktimecode_descr: 'Zapisuje postęp odtwarzania filmów i seriali na serwerze TorrServer. Aby funkcja działała, opcja musi być również włączona w TorrServer.',
 
     title_metadata: 'Metadane',
     title_moods: 'Nastroje',

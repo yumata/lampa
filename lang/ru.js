@@ -261,6 +261,8 @@ export default {
 
     settings_server_gts: 'Транскодирование',
     settings_server_gts_descr: 'Автоматически преобразовывать видео в совместимый формат при необходимости.',
+	settings_server_tracktimecode: 'Включить TrackTimecode',
+    settings_server_tracktimecode_descr: 'Сохраняет прогресс просмотра фильмов и сериалов на сервере TorrServer. Для работы эту опцию также необходимо включить в TorrServer.',
 
     settings_webos_launcher: 'Запуск приложения',
     settings_webos_launcher_add_device: 'Установить как стартовое',

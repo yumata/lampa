@@ -1344,6 +1344,8 @@ export default {
 
     settings_server_gts: 'Перакадаванне',
     settings_server_gts_descr: 'Аўтаматычна канвертаваць відэа ў сумяшчальны фармат пры неабходнасці.',
+	settings_server_tracktimecode: 'Уключыць TrackTimecode',
+    settings_server_tracktimecode_descr: 'Захоўвае прагрэс прайгравання фільмаў і серыялаў на серверы TorrServer. Для працы гэтую опцыю таксама неабходна ўключыць у TorrServer.',
 
     title_metadata: 'Метаданыя',
     title_moods: 'Настроі',

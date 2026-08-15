@@ -1338,6 +1338,8 @@ export default {
 
     settings_server_gts: 'Překódování',
     settings_server_gts_descr: 'Automaticky převést video do kompatibilního formátu v případě potřeby.',
+	settings_server_tracktimecode: 'Povolit TrackTimecode',
+    settings_server_tracktimecode_descr: 'Ukládá průběh přehrávání filmů a seriálů na serveru TorrServer. Pro správnou funkci musí být tato možnost povolena také v TorrServeru.',
 
     title_metadata: 'Metadata',
     title_moods: 'Nálady',

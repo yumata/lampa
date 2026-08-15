@@ -1313,6 +1313,8 @@ export default {
 
     settings_server_gts: 'Transcodificação',
     settings_server_gts_descr: 'Converter automaticamente o vídeo para um formato compatível quando necessário.',
+	settings_server_tracktimecode: 'Ativar TrackTimecode',
+    settings_server_tracktimecode_descr: 'Guarda o progresso de reprodução de filmes e séries no servidor TorrServer. Para funcionar, esta opção também deve estar ativada no TorrServer.',
 
     title_metadata: 'Metadados',
     title_moods: 'Humores',

@@ -1278,6 +1278,8 @@ export default {
 
     settings_server_gts: '转码',
     settings_server_gts_descr: '必要时自动将视频转换为兼容格式。',
+	settings_server_tracktimecode: '启用 TrackTimecode',
+    settings_server_tracktimecode_descr: '将电影和电视剧的播放进度保存到 TorrServer。要使此功能正常工作，还需要在 TorrServer 中启用此选项。',
 
     title_metadata: '元数据',
     title_moods: '情绪',

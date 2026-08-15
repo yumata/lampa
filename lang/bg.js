@@ -1329,6 +1329,8 @@ export default {
 
     settings_server_gts: 'Прекодиране',
     settings_server_gts_descr: 'Автоматично конвертиране на видеото в съвместим формат при необходимост.',
+	settings_server_tracktimecode: 'Активирай TrackTimecode',
+    settings_server_tracktimecode_descr: 'Запазва прогреса на възпроизвеждане на филми и сериали на сървъра TorrServer. За да работи, тази опция трябва да бъде активирана и в TorrServer.',
 
     title_metadata: 'Метаданни',
     title_moods: 'Настроения',
