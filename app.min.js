@@ -2579,7 +2579,7 @@
 
   var html$1E = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>737eb31b6ba8d14b5a52f796042db601</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-09-15 19:55</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>12eb2dd5f39bfeeae03903dcd5bbad1c</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-09-17 11:15</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1C = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -53735,9 +53735,19 @@
     var first = true;
     Timer.add(1000 * 60, function () {
       Manager.params.cooling = 1000 * 60 * (window.lampa_settings.developer.enabled ? 2 : 20);
+      var play_data = Lampa.Player.playdata();
+      var can_show = IMA.canShow(play_data);
+      var vast_banner = play_data.vast_banner && !(Account$1.hasPremium() || Personal.confirm());
 
-      if (Lampa.Player.opened() && Manager.coolingReady() && IMA.canShow(Lampa.Player.playdata())) {
-        banner = Manager.get(Lampa.Player.playdata(), first);
+      if (vast_banner) {
+        vast_banner = {
+          url: play_data.vast_banner,
+          name: 'plugin'
+        };
+      }
+
+      if (Lampa.Player.opened() && Manager.coolingReady() && (can_show || vast_banner)) {
+        banner = can_show ? Manager.get(play_data, first) : vast_banner;
         console.log('Ad', 'show banner', banner);
 
         if (banner) {
@@ -56232,8 +56242,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-09-15 19:55');
-    console.log('App', 'hash', '737eb31b6ba8d14b5a52f796042db601');
+    console.log('App', 'build date:', '2026-09-17 11:15');
+    console.log('App', 'hash', '12eb2dd5f39bfeeae03903dcd5bbad1c');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
