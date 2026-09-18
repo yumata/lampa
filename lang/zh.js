@@ -158,7 +158,7 @@ export default {
     settings_player_normalization_descr: '将声音标准化为一级，降低响亮的声音并增强安静的',
     settings_player_next_episode: '下一集',
     settings_player_next_episode_descr: '当前一集结束后自动切换到下一个系列',
-    settings_player_timecode: '时间码',
+    settings_player_timecode: '断点续播行为',
     settings_player_timecode_descr: '从上次播放的位置继续',
     settings_player_scale: '缩放方法',
     settings_player_scale_descr: '如何计算视频缩放',
