@@ -158,7 +158,7 @@ export default {
     settings_player_normalization_descr: '将声音标准化为一级，降低响亮的声音并增强安静的',
     settings_player_next_episode: '下一集',
     settings_player_next_episode_descr: '当前一集结束后自动切换到下一个系列',
-    settings_player_timecode: '断点续播行为',
+    settings_player_timecode: '时间码',
     settings_player_timecode_descr: '从上次播放的位置继续',
     settings_player_scale: '缩放方法',
     settings_player_scale_descr: '如何计算视频缩放',
@@ -1057,7 +1057,7 @@ export default {
     settings_rest_cache_all_descr: '所有设置和数据将被清除',
     settings_rest_cache_calculate: '还剩多少内存',
 
-    title_left:'剩余',
+    title_left:'左边',
 
     account_export_fail_500: '未知错误',
     account_export_fail_610: '您已超过今天的限制',

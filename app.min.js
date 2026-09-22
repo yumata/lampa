@@ -2579,7 +2579,7 @@
 
   var html$1E = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>12eb2dd5f39bfeeae03903dcd5bbad1c</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-09-17 11:15</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>2a1b52f44b62f45baf81458de8b4f78c</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-09-22 10:28</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1C = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -47971,6 +47971,11 @@
       this.limit = 3000;
       this.loaded = false;
       this.update_time = 0;
+      this.send_timers = {};
+      this.send_rate = {
+        count: 0,
+        reset: 0
+      };
     }
 
     _createClass(WorkerArray, [{
@@ -48100,19 +48105,38 @@
     }, {
       key: "send",
       value: function send(id, value) {
-        if (!Account$1.hasPremium()) return;
-        console.log('StorageWorker', 'save:', this.field, id, value);
-        var str = JSON.stringify(value);
+        var _this3 = this;
 
-        if (str.length < 10000) {
-          Socket.send('storage', {
-            params: {
-              id: id,
-              name: this.field,
-              value: value
-            }
-          });
-        }
+        if (!Account$1.hasPremium()) return;
+        clearTimeout(this.send_timers[id]);
+        this.send_timers[id] = setTimeout(function () {
+          delete _this3.send_timers[id];
+          var now = Date.now();
+
+          if (now > _this3.send_rate.reset) {
+            _this3.send_rate.count = 0;
+            _this3.send_rate.reset = now + 2000;
+          }
+
+          if (_this3.send_rate.count >= 5) {
+            console.log('StorageWorker', 'rate limit:', _this3.field, id);
+            return;
+          }
+
+          _this3.send_rate.count++;
+          console.log('StorageWorker', 'save:', _this3.field, id, value);
+          var str = JSON.stringify(value);
+
+          if (str.length < 10000) {
+            Socket.send('storage', {
+              params: {
+                id: id,
+                name: _this3.field,
+                value: value
+              }
+            });
+          }
+        }, 2000);
       }
     }, {
       key: "sendRemove",
@@ -48146,15 +48170,15 @@
     }, {
       key: "save",
       value: function save(value) {
-        var _this3 = this;
+        var _this4 = this;
 
         var uniq = value.filter(function (a) {
-          return _this3.data.indexOf(a) == -1;
+          return _this4.data.indexOf(a) == -1;
         });
         uniq.forEach(function (val) {
-          _this3.data.push(val);
+          _this4.data.push(val);
 
-          _this3.send(null, val);
+          _this4.send(null, val);
         });
       }
     }, {
@@ -48220,25 +48244,25 @@
     }, {
       key: "save",
       value: function save(value) {
-        var _this4 = this;
+        var _this5 = this;
 
         var uniq = [];
         value.forEach(function (val) {
-          var find = _this4.data.find(function (a) {
+          var find = _this5.data.find(function (a) {
             return a.id == val.id;
           });
 
           if (!find) {
-            _this4.data.push(_typeof(val) == 'object' ? Arrays.clone(val) : val);
+            _this5.data.push(_typeof(val) == 'object' ? Arrays.clone(val) : val);
 
             uniq.push(val);
           } else if (JSON.stringify(val) !== JSON.stringify(find)) {
-            _this4.data[_this4.data.indexOf(find)] = _typeof(val) == 'object' ? Arrays.clone(val) : val;
+            _this5.data[_this5.data.indexOf(find)] = _typeof(val) == 'object' ? Arrays.clone(val) : val;
             uniq.push(val);
           }
         });
         uniq.forEach(function (val) {
-          _this4.send(val.id, val);
+          _this5.send(val.id, val);
         });
       }
     }, {
@@ -48261,14 +48285,14 @@
     var _super2 = _createSuper(WorkerObject);
 
     function WorkerObject(params) {
-      var _this5;
+      var _this6;
 
       _classCallCheck(this, WorkerObject);
 
-      _this5 = _super2.call(this, params);
-      _this5.data = {};
-      _this5.empty = {};
-      return _this5;
+      _this6 = _super2.call(this, params);
+      _this6.data = {};
+      _this6.empty = {};
+      return _this6;
     }
 
     _createClass(WorkerObject, [{
@@ -48296,7 +48320,7 @@
     }, {
       key: "save",
       value: function save(value) {
-        var _this6 = this;
+        var _this7 = this;
 
         var uniq = [];
 
@@ -48319,7 +48343,7 @@
         }
 
         uniq.forEach(function (id) {
-          _this6.send(id, value[id]);
+          _this7.send(id, value[id]);
         });
       }
     }, {
@@ -48364,7 +48388,9 @@
     sync('torrents_filter_data', 'object_object');
     Socket.listener.follow('send', function (e) {
       if (e.method == 'storage') {
-        Api$1.load('storage/update', {}, e.data.params)["catch"](function (e) {});
+        Api$1.load('storage/update', {}, {
+          json: JSON.stringify(e.data.params)
+        })["catch"](function (e) {});
       }
     });
   }
@@ -56242,8 +56268,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-09-17 11:15');
-    console.log('App', 'hash', '12eb2dd5f39bfeeae03903dcd5bbad1c');
+    console.log('App', 'build date:', '2026-09-22 10:28');
+    console.log('App', 'hash', '2a1b52f44b62f45baf81458de8b4f78c');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
