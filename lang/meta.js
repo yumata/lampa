@@ -77,6 +77,13 @@ export default {
             lang_choice_title: 'Bienvenue',
             lang_choice_subtitle: 'Choisissez votre langue',
         },
+        lt: {
+            code: "lt",
+            name: "Lietuvių",
+
+            lang_choice_title: "Sveiki",
+            lang_choice_subtitle: "Pasirinkite kalbą",
+        },
         pl: {
             code: "pl",
             name: "Polski",
