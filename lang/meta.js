@@ -83,6 +83,13 @@ export default {
       
             lang_choice_title: "Witamy",
             lang_choice_subtitle: "Wybierz język",
+        },
+        es: {
+            code: 'es',
+            name: 'Español',
+
+            lang_choice_title: 'Bienvenido',
+            lang_choice_subtitle: 'Elige tu idioma',
         }
     }
 }
