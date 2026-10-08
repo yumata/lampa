@@ -6,7 +6,7 @@
   right: 0;
   bottom: 0;
   z-index: 100;
-  background: #000 url(../img/welcome.jpg) no-repeat 50% 50%;
+  background: #1d1f20 url(../img/welcome.jpg) no-repeat 50% 50%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #242424;
+  background-color: #1d1f20;
   z-index: 200;
   display: -webkit-box;
   display: -webkit-flex;
@@ -70,7 +70,7 @@
 }
 .lang__selector-item.focus {
   background-color: #fff;
-  color: #242424;
+  color: #1d1f20;
 }
 .lang__selector > .scroll {
   max-height: 18em !important;
