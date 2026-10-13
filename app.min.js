@@ -2072,8 +2072,8 @@
   var object$2 = {
     author: 'Yumata',
     github: 'https://github.com/yumata/lampa-source',
-    css_version: '3.3.5',
-    app_version: '3.3.5',
+    css_version: '3.3.6',
+    app_version: '3.3.6',
     cub_site: 'cub.best',
     apk_link_download: 'https://github.com/lampa-app/LAMPA/releases/download/v1.12.3/app-lite-release.apk'
   };
@@ -2350,7 +2350,7 @@
     return k;
   }
 
-  function remove$7(from, need) {
+  function remove$8(from, need) {
     var inx = from.indexOf(need);
     if (inx >= 0) from.splice(inx, 1);
   }
@@ -2382,7 +2382,7 @@
 
   function removeNoIncludes(where, items) {
     for (var i = where.length - 1; i >= 0; i--) {
-      if (items.indexOf(where[i]) === -1) remove$7(where, where[i]);
+      if (items.indexOf(where[i]) === -1) remove$8(where, where[i]);
     }
 
     return where;
@@ -2459,7 +2459,7 @@
     getValues: getValues,
     insert: insert,
     clone: clone$2,
-    remove: remove$7,
+    remove: remove$8,
     destroy: destroy$r,
     empty: empty$1,
     groupBy: groupBy,
@@ -2579,7 +2579,7 @@
 
   var html$1E = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>758fa55fe85adc08a7fef046e34fc920</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-10 18:02</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>c5701b7be6da4427afd2403b298886e3</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-13 20:25</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1C = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -2603,7 +2603,7 @@
 
   var html$1s = "<div class=\"search-box\">\n    <div class=\"search-box__input search__input\"></div>\n    <div class=\"search-box__keypad\"><div class=\"simple-keyboard\"></div></div>\n</div>";
 
-  var html$1r = "<div class=\"console\">\n    <div class=\"console__tabs\"></div>\n    <div class=\"console__body\"></div>\n</div>";
+  var html$1r = "<div class=\"console\">\n    <div class=\"console__head\">\n        <div class=\"console__head-info\">\n            <div class=\"console__title\">#{menu_console}</div>\n            <div class=\"console__subtitle\">#{console_subtitle} \xB7 {app}</div>\n        </div>\n        <div class=\"console__stats\">\n            <div class=\"console__stat console__stat--errors\">\n                <div class=\"console__stat-value\">0</div>\n                <div class=\"console__stat-name\">#{console_errors}</div>\n            </div>\n            <div class=\"console__stat console__stat--warnings\">\n                <div class=\"console__stat-value\">0</div>\n                <div class=\"console__stat-name\">#{console_warnings}</div>\n            </div>\n            <div class=\"console__stat console__stat--total\">\n                <div class=\"console__stat-value\">0</div>\n                <div class=\"console__stat-name\">#{console_total}</div>\n            </div>\n        </div>\n    </div>\n    <div class=\"console__content\">\n        <div class=\"console__sidebar\"></div>\n        <div class=\"console__main\">\n            <div class=\"console__buttons\">\n                <div class=\"console__button selector\" data-action=\"send\">#{console_send}</div>\n                <div class=\"console__button selector\" data-action=\"clear\">#{console_clear}</div>\n                <div class=\"console__button selector\" data-action=\"close\">#{console_close}</div>\n            </div>\n            <div class=\"console__new selector hide\"></div>\n            <div class=\"console__body\"></div>\n        </div>\n    </div>\n    <div class=\"console__footer\">#{console_hint}</div>\n</div>";
 
   var html$1q = "\n<svg><use xlink:href=\"#sprite-star\"></use></svg>\n";
 
@@ -3817,7 +3817,7 @@
    */
 
 
-  function remove$6(call) {
+  function remove$7(call) {
     timers$2 = timers$2.filter(function (t) {
       return t.call !== call;
     });
@@ -3826,7 +3826,7 @@
   var Timer = {
     init: init$1n,
     add: add$f,
-    remove: remove$6,
+    remove: remove$7,
     update: update$h
   };
 
@@ -8114,14 +8114,14 @@
     return find ? find : false;
   }
 
-  function remove$5(params) {
+  function remove$6(params) {
     Arrays.remove(video_tube, params);
   }
 
   var Tube = {
     register: register,
     verify: verify,
-    remove: remove$5
+    remove: remove$6
   };
 
   function parse$c(data) {
@@ -8222,7 +8222,7 @@
     var data = JSON.stringify({
       action: 'list'
     });
-    clear$d();
+    clear$e();
     network$b.silent(url$5() + '/torrents', function (result) {
       if (result.length) success(result);else fail();
     }, fail, data);
@@ -8247,7 +8247,7 @@
       action: 'list',
       hash: hash
     });
-    clear$d();
+    clear$e();
     network$b.timeout(5000);
     network$b.silent(url$5() + '/viewed', success, fail, data);
   }
@@ -8288,7 +8288,7 @@
       category: category
     };
     var data = JSON.stringify(json);
-    clear$d();
+    clear$e();
     network$b.silent(url$5() + '/torrents', success, fail, data);
   }
   /**
@@ -8318,7 +8318,7 @@
       category: category
     };
     var data = JSON.stringify(json);
-    clear$d();
+    clear$e();
     network$b.silent(url$5() + '/torrents', success, function (a, c) {
       fail(network$b.errorDecode(a, c));
     }, data);
@@ -8336,7 +8336,7 @@
       action: 'get',
       hash: hash
     });
-    clear$d();
+    clear$e();
     network$b.timeout(2000);
     network$b.silent(url$5() + '/torrents', function (json) {
       if (json.file_stats) {
@@ -8352,7 +8352,7 @@
 
 
   function connected(success, fail) {
-    clear$d();
+    clear$e();
     network$b.timeout(5000);
     network$b.silent(url$5() + '/settings', function (json) {
       if (typeof json.CacheSize == 'undefined') {
@@ -8429,7 +8429,7 @@
       action: 'drop',
       hash: hash
     });
-    clear$d();
+    clear$e();
     network$b.silent(url$5() + '/torrents', success, fail, data, {
       dataType: 'text'
     });
@@ -8442,12 +8442,12 @@
    */
 
 
-  function remove$4(hash, success, fail) {
+  function remove$5(hash, success, fail) {
     var data = JSON.stringify({
       action: 'rem',
       hash: hash
     });
-    clear$d();
+    clear$e();
     network$b.silent(url$5() + '/torrents', success, fail, data, {
       dataType: 'text'
     });
@@ -8533,7 +8533,7 @@
    */
 
 
-  function clear$d() {
+  function clear$e() {
     network$b.clear();
   }
   /**
@@ -8601,10 +8601,10 @@
     url: url$5,
     hash: hash$1,
     files: files$1,
-    clear: clear$d,
+    clear: clear$e,
     drop: drop,
     stream: stream,
-    remove: remove$4,
+    remove: remove$5,
     connected: connected,
     parse: parse$b,
     error: error$3,
@@ -11738,7 +11738,7 @@
   var html$j;
   var scroll$2;
   var active$7 = 0;
-  var items$2 = [];
+  var items$1 = [];
   var listener$g = Subscribe$2();
 
   function init$1c() {
@@ -11755,7 +11755,7 @@
     html$j.find('.player-footer__body').append(scroll$2.render(true));
     Controller.add('player_footer', {
       toggle: function toggle() {
-        items$2[active$7].toggle();
+        items$1[active$7].toggle();
         open$7();
       },
       up: close$8,
@@ -11820,10 +11820,10 @@
   }
 
   function removeRow(row) {
-    var index = items$2.indexOf(row);
+    var index = items$1.indexOf(row);
 
     if (index !== -1) {
-      items$2.splice(index, 1);
+      items$1.splice(index, 1);
       row.destroy();
     }
   }
@@ -11835,16 +11835,16 @@
       active$7 = 0;
       close$8();
     } else {
-      items$2[active$7].toggle();
-      scroll$2.update(items$2[active$7].render(true));
+      items$1[active$7].toggle();
+      scroll$2.update(items$1[active$7].render(true));
     }
   }
 
   function down() {
     active$7++;
-    active$7 = Math.min(active$7, items$2.length - 1);
-    scroll$2.update(items$2[active$7].render(true));
-    items$2[active$7].toggle();
+    active$7 = Math.min(active$7, items$1.length - 1);
+    scroll$2.update(items$1[active$7].render(true));
+    items$1[active$7].toggle();
   }
 
   function appendClass(classElement) {
@@ -11853,7 +11853,7 @@
       onDown: down,
       onToggle: function onToggle() {
         scroll$2.render(true).style.height = this.render(true).offsetHeight;
-        scroll$2.update(items$2[active$7].render(true));
+        scroll$2.update(items$1[active$7].render(true));
       },
       onEnter: function onEnter() {
         close$8();
@@ -11864,7 +11864,7 @@
     });
     classElement.create();
     scroll$2.prepend(classElement.render(true));
-    Arrays.insert(items$2, 0, classElement);
+    Arrays.insert(items$1, 0, classElement);
   }
 
   function appendAbout(card) {
@@ -11895,14 +11895,14 @@
   }
 
   function available() {
-    return items$2.length;
+    return items$1.length;
   }
 
   function destroy$n() {
-    Arrays.destroy(items$2);
+    Arrays.destroy(items$1);
     active$7 = 0;
     scroll$2.reset();
-    items$2 = [];
+    items$1 = [];
   }
 
   function render$h() {
@@ -12472,11 +12472,11 @@
    */
 
   function init$19() {
-    PlayerVideo.listener.follow('loadeddata', draw$7);
-    Segments$1.listener.follow('set', draw$7);
+    PlayerVideo.listener.follow('loadeddata', draw$8);
+    Segments$1.listener.follow('set', draw$8);
   }
 
-  function draw$7() {
+  function draw$8() {
     var segments = Segments$1.all();
     var timeline = Html.elem('segments').empty();
     var video = PlayerVideo.video();
@@ -13110,7 +13110,7 @@
     progressSet(length > 0 ? ((seg.end || 0) - current) / length : 0, instant);
   }
 
-  function draw$6(e) {
+  function draw$7(e) {
     var v = PlayerVideo.video();
     var dur = v ? v.duration || 0 : 0;
     var end = dur && e.type == 'skip' && (e.segment.start >= dur * 0.7 || e.segment.end >= dur - 15);
@@ -13130,7 +13130,7 @@
     clearInterval(skip_timer);
     skip_current = e;
     skip_phase = 'preview';
-    draw$6(e);
+    draw$7(e);
     previewUpdate(e.starts_in);
     progressSet(0, true);
     skip_button.removeClass('hide focus').addClass('player-skip--preview');
@@ -13146,7 +13146,7 @@
     clearInterval(skip_timer);
     skip_current = e;
     skip_phase = 'active';
-    draw$6(e);
+    draw$7(e);
     skip_button.removeClass('player-skip--preview');
     show$a();
     progressUpdate(typeof current == 'number' ? current : e.segment.start, true);
@@ -13224,7 +13224,7 @@
    * @param {string} html - HTML-код для добавления
    */
 
-  function push$9(side, html) {
+  function push$8(side, html) {
     Html.render().find('.player-panel__apex-' + side + '-side').prepend(html);
   }
 
@@ -13232,21 +13232,21 @@
     return Html.render().find('.player-panel__apex-' + side + '-side');
   }
 
-  function clear$c(side) {
+  function clear$d(side) {
     Html.render().find('.player-panel__apex-' + side + '-side').empty();
   }
 
   function destroy$i() {
-    clear$c('left');
-    clear$c('right');
-    clear$c('bottom');
-    clear$c('top');
+    clear$d('left');
+    clear$d('right');
+    clear$d('bottom');
+    clear$d('top');
   }
 
   var Apex = {
-    push: push$9,
+    push: push$8,
     render: render$f,
-    clear: clear$c,
+    clear: clear$d,
     destroy: destroy$i
   };
 
@@ -13256,9 +13256,9 @@
 
   function init$17() {
     PlayerPlaylist.listener.follow('set', function (e) {
-      clear$b();
+      clear$c();
       var next = e.playlist[e.position + 1];
-      if (next) draw$5(next);
+      if (next) draw$6(next);
     });
   }
   /**
@@ -13270,7 +13270,7 @@
    */
 
 
-  function draw$5(item) {
+  function draw$6(item) {
     var content = [];
 
     if (item.thumbnail) {
@@ -13307,12 +13307,12 @@
     Apex.push('left', box);
   }
 
-  function clear$b() {
+  function clear$c() {
     Apex.render('left').find('.player-next').remove();
   }
 
   function destroy$h() {
-    clear$b();
+    clear$c();
   }
 
   var Next$2 = {
@@ -14131,7 +14131,7 @@
    * @param {String} style - Стиль субтитров (например, 'bold', 'italic', 'underline')
    */
 
-  function draw$4(text, style) {
+  function draw$5(text, style) {
     var cues = render$c();
     var inner = $('> div', cues);
     inner.removeClass('bold italic underline');
@@ -14152,7 +14152,7 @@
   }
 
   var Cue = {
-    draw: draw$4,
+    draw: draw$5,
     render: render$c
   };
 
@@ -15751,7 +15751,7 @@
   }
 
   var bell;
-  var items$1 = [];
+  var items = [];
 
   function Item$1(params) {
     var _this = this;
@@ -15772,14 +15772,14 @@
         slide.css('height', element.outerHeight() + 'px');
         element.after(slide);
         element.remove();
-        Arrays.remove(items$1, _this);
+        Arrays.remove(items, _this);
         slide.animate({
           height: 0
         }, 300, function () {
           slide.remove();
         });
 
-        if (items$1.length == 0) {
+        if (items.length == 0) {
           bell.removeClass('show');
         }
       }, 300);
@@ -15788,7 +15788,7 @@
     setTimeout(function () {
       element.addClass('show');
     }, 100);
-    items$1.push(this);
+    items.push(this);
     Sound$1.play('bell');
   }
 
@@ -15797,14 +15797,14 @@
     $('body').append(bell);
   }
 
-  function push$8(params) {
+  function push$7(params) {
     new Item$1(params);
     bell.addClass('show');
   }
 
   var Bell = {
     init: init$14,
-    push: push$8
+    push: push$7
   };
 
   var listener$c = Subscribe$2();
@@ -18241,7 +18241,7 @@
       if (Date.now() - window.app_time_end > 1000 * 60 * 5) update$b();
     });
     Socket.listener.follow('send', function (e) {
-      if (e.method == 'timeline') send$1(e.data);
+      if (e.method == 'timeline') send$2(e.data);
     });
     Storage.listener.follow('clear', function () {
       refrash();
@@ -18255,7 +18255,7 @@
    */
 
 
-  function send$1(data) {
+  function send$2(data) {
     if (!permit.sync) return; // Отправляем только данные. Сюда часто приходит объект из Timeline.view() вместе с функцией
     // handler, а jQuery.param при сборке запроса вызывает найденные функции: handler() без
     // аргументов перезаписывает прогресс с percent: undefined, и отметка тут же слетает.
@@ -18423,7 +18423,7 @@
     }
   }
 
-  function remove$3(row) {
+  function remove$4(row) {
     var index = rows.indexOf(row);
 
     if (index > -1) {
@@ -18462,7 +18462,7 @@
   var ContentRows = {
     init: init$10,
     add: add$b,
-    remove: remove$3,
+    remove: remove$4,
     call: call$1
   };
 
@@ -19793,11 +19793,11 @@
 
   var lgbt = ["bisexual man", "bisexuality", "black lgbt", "closeted homosexual", "drag queen", "female homosexuality", "gay  hardcore", "gay adoption", "gay artist", "gay bar", "gay club", "gay couple", "gay erotica", "gay for pay", "gay friend", "gay history", "gay interest", "gay kiss", "gay love", "gay love story", "gay man", "gay marriage", "gay men", "gay muslim", "gay parent", "gay pornography", "gay pride", "gay priest", "gay relationship", "gay rights", "gay romance", "gay sauna", "gay sex", "gay son", "gay teenager", "gay theme", "gay youth", "gender transition", "homoerotic", "homoeroticism", "homoerotism", "homofobia", "homophobia", "homophobic", "homophobic attack", "homosexual", "homosexual father", "homosexuality", "indigenous lgbt", "intersex", "intersexuality", "lesbian", "lesbian couple", "lesbian love", "lesbian maid", "lesbian nun", "lesbian relationship", "lesbian sex", "lgbt", "lgbt activist", "lgbt athlete", "lgbt history", "lgbt in africa", "lgbt in the military", "lgbt parenting", "lgbt rights", "lgbt teen", "male homosexuality", "queer", "queer cinema", "queer history", "queer loneliness", "queer love", "queer romance", "queer sexuality", "repressed gay", "teenage lesbian romance", "trans man", "trans woman", "transgender", "transgender rights", "transition", "transsexual", "transsexuality", "transvestism", "transvestite", "boys' love", "boys love"];
   var adult = ['porn', 'sex', 'xxx', 'erotic', 'fetish', 'bdsm', 'bondage', 'sado', 'masochism', 'voyeurism', 'exhibitionism', 'incest', 'softcore', 'eroticism', 'erotica', 'nude', 'nudity', 'nudism', 'naked', 'pink film'];
-  var filter$2 = ['путин', 'россия', 'putin', 'russia', 'лукашенко', 'lukashenko', 'навальный', 'navalny', '^буча', 'мариуполь', 'гомосекс', 'homosex', 'кремль'];
+  var filter$3 = ['путин', 'россия', 'putin', 'russia', 'лукашенко', 'lukashenko', 'навальный', 'navalny', '^буча', 'мариуполь', 'гомосекс', 'homosex', 'кремль'];
   var Keys = {
     lgbt: lgbt,
     adult: adult,
-    filter: filter$2
+    filter: filter$3
   };
 
   var network$7 = new Request();
@@ -20549,7 +20549,7 @@
     }
   }
 
-  function list$5() {
+  function list$6() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
     var onerror = arguments.length > 2 ? arguments[2] : undefined;
@@ -21190,7 +21190,7 @@
     return finded;
   }
 
-  function clear$a() {
+  function clear$b() {
     network$7.clear();
   }
 
@@ -21199,10 +21199,10 @@
     menu: menu$3,
     img: img$1,
     full: full$3,
-    list: list$5,
+    list: list$6,
     category: category$3,
     search: search$5,
-    clear: clear$a,
+    clear: clear$b,
     company: company$1,
     person: person$2,
     seasons: seasons$2,
@@ -21942,7 +21942,7 @@
     });
   }
 
-  function filter$1(episodes) {
+  function filter$2(episodes) {
     var filtred = [];
     var fileds = ['air_date', 'season_number', 'episode_number', 'name', 'still_path'];
     episodes.forEach(function (episode) {
@@ -21978,7 +21978,7 @@
         console.log('Timetable', 'parse:', object$1.id, 'new season:', object$1.season);
         TMDB.get('tv/' + object$1.id + '/season/' + object$1.season, {}, function (ep) {
           if (!ep.episodes) return save$3();
-          object$1.episodes = filter$1(ep.episodes_original || ep.episodes);
+          object$1.episodes = filter$2(ep.episodes_original || ep.episodes);
           object$1.next = getNextEpisode(object$1.episodes);
           Cache.getData('timetable', object$1.id).then(function (obj) {
             if (obj) obj.episodes = object$1.episodes;else obj = Arrays.clone(object$1);
@@ -22701,7 +22701,7 @@
           var excess = data$1[where].slice(limit);
 
           for (var i = excess.length - 1; i >= 0; i--) {
-            remove$2(where, {
+            remove$3(where, {
               id: excess[i]
             });
           }
@@ -22734,7 +22734,7 @@
    */
 
 
-  function remove$2(where, card) {
+  function remove$3(where, card) {
     if (Account$1.Permit.sync) {
       listener$b.send('remove', {
         where: where,
@@ -22809,10 +22809,10 @@
       var added = marks.find(function (a) {
         return find[a];
       });
-      if (added && added !== where) remove$2(added, card);
+      if (added && added !== where) remove$3(added, card);
     }
 
-    if (find[where]) remove$2(where, card);else add$8(where, card);
+    if (find[where]) remove$3(where, card);else add$8(where, card);
     return find[where] ? false : true;
   }
   /**
@@ -22901,15 +22901,15 @@
    */
 
 
-  function clear$9(where, card) {
+  function clear$a(where, card) {
     if (Account$1.Permit.sync) {
       Account$1.Bookmarks.clear(where);
     } else {
-      if (card) remove$2(where, card);else {
+      if (card) remove$3(where, card);else {
         for (var i = data$1[where].length - 1; i >= 0; i--) {
           var _card = search$4(data$1[where][i]);
 
-          if (_card) remove$2(where, _card);
+          if (_card) remove$3(where, _card);
         }
       }
     }
@@ -22993,10 +22993,10 @@
     init: Utils$1.onceInit(init$Z),
     check: cloud,
     add: add$8,
-    remove: remove$2,
+    remove: remove$3,
     toggle: toggle$6,
     get: get$a,
-    clear: clear$9,
+    clear: clear$a,
     continues: continues,
     full: full$2,
     checkAnyNotHistory: checkAnyNotHistory,
@@ -23117,10 +23117,10 @@
 
   function init$X() {
     Favorite.listener.follow('add,added', function (e) {
-      push$7('add', e.where, e.card);
+      push$6('add', e.where, e.card);
     });
     Favorite.listener.follow('remove', function (e) {
-      if (e.method == 'id') push$7('remove', e.where, e.card);
+      if (e.method == 'id') push$6('remove', e.where, e.card);
     });
     Storage.listener.follow('change', function (e) {
       if (e.name == 'protocol' || e.name == 'account_use' && e.value == 'true') update$9(function () {
@@ -23160,7 +23160,7 @@
    */
 
 
-  function push$7(method, type, card) {
+  function push$6(method, type, card) {
     if (permit.sync) {
       push_queue.push({
         method: method,
@@ -23348,7 +23348,7 @@
    */
 
 
-  function clear$8(where) {
+  function clear$9(where) {
     if (permit.sync) {
       Api$1.load('bookmarks/clear', {}, {
         type: 'group',
@@ -23526,9 +23526,9 @@
 
   var Bookmarks$1 = {
     init: Utils$1.onceInit(init$X),
-    push: push$7,
+    push: push$6,
     update: update$9,
-    clear: clear$8,
+    clear: clear$9,
     get: get$9,
     all: all$1,
     sync: sync$1,
@@ -24483,7 +24483,7 @@
     update$6();
   }
 
-  function live(who) {
+  function live$1(who) {
     markers_object[who].error = false;
     markers_object[who].live = true;
     markers_object[who].bad = false;
@@ -24502,7 +24502,7 @@
     bad: bad,
     error: error$1,
     pass: pass,
-    live: live,
+    live: live$1,
     normal: normal
   };
 
@@ -24546,7 +24546,7 @@
       console.log('Socket', 'open on ' + socket_url);
       timeping = 5000;
       clearTimeout(timeout$1);
-      send('start', {});
+      send$1('start', {});
       listener$9.send('open', {});
       Markers.live('socket');
     });
@@ -24591,7 +24591,7 @@
         } else if (result.method == 'terminal_activate') {
           if (Storage.get('terminal_access', '') == result.data.code) {
             terminal_access = true;
-            send('terminal_result', {
+            send$1('terminal_result', {
               result: 'Terminal access activated'
             });
           }
@@ -24626,7 +24626,7 @@
             } else tojson = 'unknown type';
 
             console.log('Socket', 'terminal eval result', tojson);
-            send('terminal_result', {
+            send$1('terminal_result', {
               result: tojson
             });
           }
@@ -24676,7 +24676,7 @@
       if (socket && socket.readyState == 1 && expects.length) {
         var msg = expects.shift();
         console.log('Socket', 'sent with a delay:', msg.method);
-        send(msg.method, msg);
+        send$1(msg.method, msg);
       }
     }, false, true);
     Timer.add(1000 * 30, function () {
@@ -24694,7 +24694,7 @@
     }, false, true);
   }
 
-  function send(method, data) {
+  function send$1(method, data) {
     var name_devise = Platform.get() ? Platform.get() : navigator.userAgent.toLowerCase().indexOf('mobile') > -1 ? 'mobile' : navigator.userAgent.toLowerCase().indexOf('x11') > -1 ? 'chrome' : 'other';
     listener$9.send('send', {
       method: method,
@@ -24719,7 +24719,7 @@
   var Socket = {
     listener: listener$9,
     init: connect$1,
-    send: send,
+    send: send$1,
     uid: function uid() {
       return _uid;
     },
@@ -27439,7 +27439,7 @@
    */
 
 
-  function push$6(data) {
+  function push$5(data) {
     if (data.once) {
       message = message.filter(function (m) {
         return m.from !== data.from;
@@ -27449,15 +27449,15 @@
     message.push(data);
     if (message.length > limit$2) message.shift();
     clearTimeout(timer$3);
-    timer$3 = setTimeout(draw$3, 200);
+    timer$3 = setTimeout(draw$4, 200);
   }
   /**
    * Отрисовка сообщений в чате
    */
 
 
-  function draw$3() {
-    clear$7();
+  function draw$4() {
+    clear$8();
     html$e.toggleClass('hide', false);
     timer_hide = setTimeout(function () {
       if (!PlayerPanel.visibleStatus()) html$e.toggleClass('hide', true);
@@ -27491,7 +27491,7 @@
    */
 
 
-  function clear$7() {
+  function clear$8() {
     html$e.empty();
   }
 
@@ -27500,7 +27500,7 @@
   }
 
   function destroy$a() {
-    clear$7();
+    clear$8();
     html$e.toggleClass('hide', true);
     clearTimeout(timer$3);
     clearTimeout(timer_hide);
@@ -27510,8 +27510,8 @@
   var PlayerChat = {
     init: init$M,
     render: render$8,
-    push: push$6,
-    clear: clear$7,
+    push: push$5,
+    clear: clear$8,
     destroy: destroy$a
   };
 
@@ -27628,10 +27628,10 @@
    */
 
 
-  function push$5(data) {
-    clear$6(data.name);
+  function push$4(data) {
+    clear$7(data.name);
     graphs.push(data);
-    draw$2();
+    draw$3();
 
     if (!row) {
       row = PlayerFooter.appendRow(html$d);
@@ -27660,7 +27660,7 @@
    */
 
 
-  function draw$2() {
+  function draw$3() {
     graphs.filter(function (g) {
       return !g.html;
     }).forEach(function (data) {
@@ -27841,7 +27841,7 @@
    */
 
 
-  function clear$6(graph_name) {
+  function clear$7(graph_name) {
     if (graph_name) {
       var remove = graphs.filter(function (g) {
         return g.name == graph_name;
@@ -27864,7 +27864,7 @@
   }
 
   function destroy$9() {
-    clear$6();
+    clear$7();
 
     if (row) {
       row.destroy();
@@ -27876,8 +27876,8 @@
 
   var Charts = {
     init: init$L,
-    push: push$5,
-    clear: clear$6,
+    push: push$4,
+    clear: clear$7,
     destroy: destroy$9
   };
 
@@ -28069,7 +28069,7 @@
         });
 
         if (data.status == 'completed') {
-          draw$1(item, data);
+          draw$2(item, data);
         }
 
         working = false;
@@ -28085,7 +28085,7 @@
     });
   }
 
-  function draw$1(item, data) {
+  function draw$2(item, data) {
     if (item.need == 'analysis') {
       chat_history = [];
       chat_history.push({
@@ -29468,7 +29468,7 @@
    ******************************************************************************************/
 
 
-  function list$4() {
+  function list$5() {
     return Object.keys(supportedFormats);
   }
   /******************************************************************************************
@@ -29649,7 +29649,7 @@
   }
 
   var subsrt = {
-    list: list$4,
+    list: list$5,
     detect: detect,
     parse: parse$1,
     build: build$1,
@@ -31665,7 +31665,7 @@
    */
 
 
-  function draw(data, item, noimage) {
+  function draw$1(data, item, noimage) {
     if (noimage) return; // Для мобильных устройств делаем полный сброс canvas
 
     if (Platform.screen('mobile')) {
@@ -31816,7 +31816,7 @@
     background.fade.canvas.width(window.screen_width);
     background.fade.canvas.height(window.screen_height);
     html$b[0].toggleClass('hide', !Storage.field('background'));
-    if (loaded$1[src]) draw(loaded$1[src], background[view]);
+    if (loaded$1[src]) draw$1(loaded$1[src], background[view]);
   }
   /**
    * Максимум картинок в памяти
@@ -31838,7 +31838,7 @@
 
   function load$1() {
     if (loaded$1[src]) {
-      draw(loaded$1[src], bg());
+      draw$1(loaded$1[src], bg());
     } else if (src) {
       limit$1();
       var cache_src = src;
@@ -31857,11 +31857,11 @@
           img: img,
           palette: Color.palette(colors)
         };
-        draw(loaded$1[cache_src], bg());
+        draw$1(loaded$1[cache_src], bg());
       };
 
       img.onerror = function () {
-        draw(false, false, true);
+        draw$1(false, false, true);
       };
 
       img.src = src;
@@ -31880,7 +31880,7 @@
     if (url) src = url;
     clearTimeout(timer$2);
     timer$2 = setTimeout(function () {
-      if (url) load$1();else draw(false, false, true);
+      if (url) load$1();else draw$1(false, false, true);
     }, 1000);
   }
   /**
@@ -31896,7 +31896,7 @@
     clearTimeout(timer$2);
     bokeh.d = false;
     immed_time = Date.now();
-    if (url) load$1();else draw(false, false, true);
+    if (url) load$1();else draw$1(false, false, true);
   }
 
   function theme(color) {
@@ -34223,7 +34223,7 @@
     });
   }
 
-  function list$3() {
+  function list$4() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
     var onerror = arguments.length > 2 ? arguments[2] : undefined;
@@ -34875,7 +34875,7 @@
     TMDB.seasons(tv, from, oncomplite);
   }
 
-  function clear$5() {
+  function clear$6() {
     network$4.clear();
   }
 
@@ -34883,9 +34883,9 @@
     main: main$1,
     menu: menu$1,
     full: full$1,
-    list: list$3,
+    list: list$4,
     category: category$1,
-    clear: clear$5,
+    clear: clear$6,
     person: person$1,
     seasons: seasons$1,
     menuCategory: menuCategory$1,
@@ -35072,7 +35072,7 @@
    */
 
 
-  function list$2() {
+  function list$3() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var oncomplite = arguments.length > 1 ? arguments[1] : undefined;
     var onerror = arguments.length > 2 ? arguments[2] : undefined;
@@ -35354,7 +35354,7 @@
    */
 
 
-  function clear$4() {
+  function clear$5() {
     for (var i in sources$1) {
       sources$1[i].clear();
     }
@@ -35370,11 +35370,11 @@
     main: main,
     img: img,
     full: full,
-    list: list$2,
+    list: list$3,
     genres: genres,
     category: category,
     search: search$2,
-    clear: clear$4,
+    clear: clear$5,
     company: company,
     person: person,
     favorite: favorite,
@@ -36923,7 +36923,7 @@
     Storage.set('plugins', list);
   }
 
-  function remove$1(plug) {
+  function remove$2(plug) {
     Arrays.remove(_loaded, plug);
     console.log('Plugins', 'remove:', plug, 'index:', _loaded.indexOf(plug), 'from:', _loaded);
     Storage.set('plugins', _loaded);
@@ -36934,10 +36934,10 @@
 
     console.log('Plugins', 'add:', plug);
     Storage.set('plugins', _loaded);
-    push$4(plug);
+    push$3(plug);
   }
 
-  function push$4(plug) {
+  function push$3(plug) {
     var find = _created.find(function (a) {
       return a == plug.url;
     });
@@ -37147,7 +37147,7 @@
   var Plugins = {
     init: init$z,
     load: load,
-    remove: remove$1,
+    remove: remove$2,
     loaded: function loaded() {
       return _created;
     },
@@ -37157,7 +37157,7 @@
     add: add$6,
     get: get$6,
     save: save$1,
-    push: push$4,
+    push: push$3,
     task: task$1,
     awaits: awaits
   };
@@ -38857,7 +38857,7 @@
     return count;
   }
 
-  function filter(text) {
+  function filter$1(text) {
     var err = 0;
     if (/\d{4,}/g.test(text)) err = 1;else if (!/[а-яА-ЯёЁ]{5,}/.test(text)) err = 2;else if (!/[.,:;!?]/.test(text)) err = 3;else if (/[*%$#_+=|^&]/.test(text)) err = 4;else if (containsFiveWords(text) < 5) err = 5;else if (containsLongWords(text)) err = 6;else if (text.length > 300) err = 7;
     return err;
@@ -38940,7 +38940,7 @@
             if (keypad.find('.simple-keyboard-input').length) {
               keypad.after(helper);
               keyboard.listener.follow('change', function (event) {
-                var code = filter(event.value.trim());
+                var code = filter$1(event.value.trim());
                 helper.toggleClass('hide', !Boolean(code)).text(Lang.translate('discuss_rules_rule_' + code));
               });
             }
@@ -40871,7 +40871,7 @@
 
     if (seasons.length) {
       Api.seasons(movie, seasons, function (data) {
-        list$1(plays, {
+        list$2(plays, {
           movie: movie,
           seasons: data,
           files: files,
@@ -40879,7 +40879,7 @@
         });
       });
     } else {
-      list$1(plays, {
+      list$2(plays, {
         movie: movie,
         files: files,
         viewed: viewed || []
@@ -40979,7 +40979,7 @@
     } else run();
   }
 
-  function list$1(items, params) {
+  function list$2(items, params) {
     var html = $('<div class="torrent-files"></div>');
     var playlist = [];
     var scroll_to_element;
@@ -42576,7 +42576,7 @@
     });
   }
 
-  function clear$3() {
+  function clear$4() {
     network$2.clear();
   }
 
@@ -42584,7 +42584,7 @@
     init: init$x,
     get: get$5,
     jackett: jackett,
-    clear: clear$3
+    clear: clear$4
   };
 
   var WatchedHistory = /*#__PURE__*/function () {
@@ -46181,7 +46181,7 @@
    */
 
 
-  function push$3(object) {
+  function push$2(object) {
     limit();
     create$4(object);
     activites.push(object);
@@ -46393,13 +46393,13 @@
         component: 'iptv',
         page: 1
       };
-      push$3(active);
+      push$2(active);
     } else if (window.start_deep_link) {
       window.start_deep_link.page = 1;
-      push$3(window.start_deep_link);
+      push$2(window.start_deep_link);
     } else if (active && start_from === "last") {
       if (active.page) active.page = 1;
-      push$3(active);
+      push$2(active);
     } else {
       var _start_from$split = start_from.split('@'),
           _start_from$split2 = _slicedToArray(_start_from$split, 2),
@@ -46407,7 +46407,7 @@
           type = _start_from$split2[1];
 
       if (action == 'favorite') {
-        push$3({
+        push$2({
           url: '',
           title: Lang.translate(type == 'bookmarks' ? 'settings_input_links' : 'title_history'),
           component: type == 'bookmarks' ? 'bookmarks' : 'favorite',
@@ -46415,14 +46415,14 @@
           page: 1
         });
       } else if (action == 'mytorrents') {
-        push$3({
+        push$2({
           url: '',
           title: Lang.translate('title_mytorrents'),
           component: 'mytorrents',
           page: 1
         });
       } else {
-        push$3({
+        push$2({
           url: '',
           title: Lang.translate('title_main') + ' - ' + Storage.field('source').toUpperCase(),
           component: 'main',
@@ -46495,7 +46495,7 @@
       object: made
     });
     activites.pop();
-    push$3(clear ? replace : object);
+    push$2(clear ? replace : object);
   }
   /**
    * Проверить что активность принадлежит компоненту
@@ -46512,7 +46512,7 @@
   var Activity = {
     init: init$v,
     listener: listener$3,
-    push: push$3,
+    push: push$2,
     back: back$3,
     render: render$2,
     backward: backward,
@@ -46529,6 +46529,644 @@
     mixState: mixState,
     own: own$1,
     refresh: refresh
+  };
+
+  var html$8;
+  var object;
+
+  function init$u() {
+    html$8 = Template.get('iframe');
+  }
+
+  function show$2() {
+    var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    object = params;
+
+    html$8.find('iframe').attr('src', params.url)[0].onload = function () {
+      html$8.addClass('iframe--loaded');
+    };
+
+    $('body').append(html$8);
+    toggle$2();
+  }
+
+  function toggle$2() {
+    Controller.add('iframe', {
+      toggle: function toggle() {},
+      back: close$2
+    });
+    Controller.toggle('iframe');
+  }
+
+  function close$2() {
+    html$8.removeClass('iframe--loaded');
+    html$8.detach();
+    html$8.find('iframe').attr('src', '');
+    if (object.onBack) object.onBack();
+  }
+
+  function render$1() {
+    return html$8;
+  }
+
+  var Iframe = {
+    init: init$u,
+    show: show$2,
+    close: close$2,
+    render: render$1
+  };
+
+  var MAX_ENTRIES = 300;
+  var MAX_ORIGINAL = 200;
+  var PAGE_SIZE = 30;
+  var icons = {
+    all: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>',
+    error: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></svg>',
+    warning: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 2.5 20h19L12 3.5z"/><path d="M12 10v4.5M12 17.5v.01"/></svg>',
+    name: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h4"/></svg>'
+  };
+  var entries = [];
+  var counts = {};
+  var original = {};
+  var count_errors = 0;
+  var count_warnings = 0;
+  var times = 0;
+  var html$7;
+  var scroll_tabs;
+  var scroll_body;
+  var filter = {
+    type: 'all'
+  };
+  var list$1 = [];
+  var rendered = 0;
+  var pending = 0;
+  var last_line;
+  var rendering = false;
+  var uploading = false;
+  var console_orig = {
+    log: console.log,
+    error: console.error,
+    warn: console.warn
+  };
+
+  function init$t() {
+    Keypad.listener.follow('keydown', function (e) {
+      if (e.code == 38 || e.code == 29460) {
+        var enable = Controller.enabled();
+
+        if (enable.name == 'head') {
+          times++;
+
+          if (times > 10) {
+            Controller.toggle('console');
+          }
+        } else {
+          times = 0;
+        }
+      }
+    });
+    Controller.add('console', {
+      toggle: function toggle() {
+        build();
+        Controller.toggle('console-body');
+      },
+      back: back$2
+    });
+    Controller.add('console-tabs', {
+      toggle: function toggle() {
+        var active = scroll_tabs.render().find('.console__tab.active')[0];
+        Controller.collectionSet(scroll_tabs.render());
+        Controller.collectionFocus(active || false, scroll_tabs.render());
+      },
+      up: function up() {
+        Navigator.move('up');
+      },
+      down: function down() {
+        Navigator.move('down');
+      },
+      right: function right() {
+        Controller.toggle('console-body');
+      },
+      back: back$2
+    });
+    Controller.add('console-body', {
+      toggle: function toggle() {
+        var main = html$7.find('.console__main');
+        var focus = last_line && last_line.parentNode ? last_line : main.find('.console__line')[0];
+        Controller.collectionSet(main, false, true);
+        Controller.collectionFocus(focus || false, main, true);
+      },
+      up: function up() {
+        Navigator.move('up');
+      },
+      down: function down() {
+        Navigator.move('down');
+      },
+      left: function left() {
+        if (Navigator.canmove('left')) Navigator.move('left');else Controller.toggle('console-tabs');
+      },
+      right: function right() {
+        Navigator.move('right');
+      },
+      back: back$2
+    });
+    follow();
+  }
+
+  function back$2() {
+    if (!html$7) return;
+    times = 0;
+    scroll_tabs.destroy();
+    scroll_body.destroy();
+    html$7.remove();
+    html$7 = null;
+    list$1 = [];
+    Controller.toggle('head');
+  }
+
+  function match(entry, need) {
+    if (need.type == 'all') return true;
+    if (need.type == 'name') return entry.name == need.name;
+    return entry.type == need.type;
+  }
+
+  function filterKey(need) {
+    return Utils$1.hash(need.type + (need.name || ''));
+  }
+
+  function filterCount(need) {
+    if (need.type == 'all') return entries.length;
+    if (need.type == 'error') return count_errors;
+    if (need.type == 'warning') return count_warnings;
+    return counts[need.name] || 0;
+  }
+
+  function nameColor(entry) {
+    if (entry.type == 'error') return '#ff6b6b';
+    if (entry.type == 'warning') return '#ffd25e';
+    return Utils$1.stringToHslColor(entry.name, 50, 65);
+  }
+
+  function textOf(message) {
+    return Arrays.isArray(message) ? message.join(' ') : message + '';
+  }
+
+  function line(entry, index) {
+    var item = $("<div class=\"console__line selector\">\n        <div class=\"console__time\">".concat(Utils$1.parseTime(entry.time).time_full, "</div>\n        <div class=\"console__name\"></div>\n        <div class=\"console__message\">").concat(entry.message, "</div>\n    </div>"));
+    item.find('.console__name').text(entry.name).css('color', nameColor(entry));
+    item.on('hover:focus', function (e) {
+      last_line = e.target;
+      scroll_body.update($(e.target)); // Подгружаем следующую порцию заранее, пока до конца еще несколько строк
+
+      if (index >= rendered - 5) more();
+    }).on('hover:enter', function () {
+      record(entry);
+    });
+    return item;
+  }
+
+  function record(entry) {
+    var full = textOf(entry.full);
+    var body = $("<div class=\"console-record\">\n        <div class=\"console-record__head\">\n            <span class=\"console-record__time\">".concat(Utils$1.parseTime(entry.time).time_full, "</span>\n            <span class=\"console-record__name\"></span>\n        </div>\n        <div class=\"console-record__text\">").concat(full, "</div>\n    </div>"));
+    body.find('.console-record__name').text(entry.name).css('color', nameColor(entry));
+
+    var close = function close() {
+      Modal.close();
+      Controller.toggle('console-body');
+    };
+
+    var buttons = [];
+    var url = $('<div>' + full + '</div>').text().match(/error of (.*?) :/);
+
+    if (url && url[1]) {
+      buttons.push({
+        name: Lang.translate('console_open_url'),
+        onSelect: function onSelect() {
+          Modal.close();
+          Iframe.show({
+            url: url[1],
+            onBack: function onBack() {
+              Controller.toggle('console-body');
+            }
+          });
+        }
+      });
+    }
+
+    Modal.open({
+      title: Lang.translate('menu_console'),
+      html: body,
+      size: 'large',
+      zIndex: 200,
+      buttons: buttons.length ? buttons : undefined,
+      onBack: close
+    });
+  }
+
+  function show$1(need) {
+    draw(need);
+    Controller.toggle('console-body');
+  }
+
+  function draw(need) {
+    if (need) filter = need;
+    pending = 0;
+    last_line = null;
+    html$7.find('.console__new').addClass('hide');
+    scroll_tabs.render().find('.console__tab').removeClass('active');
+    scroll_tabs.render().find('.console__tab[data-key="' + filterKey(filter) + '"]').addClass('active');
+    scroll_body.clear();
+    scroll_body.reset();
+    list$1 = entries.filter(function (entry) {
+      return match(entry, filter);
+    });
+    rendered = 0;
+    if (list$1.length) more();else scroll_body.append($('<div class="console__empty">' + Lang.translate('console_empty') + '</div>'));
+  }
+  /**
+   * Дорисовать следующую порцию записей из текущего списка
+   */
+
+
+  function more() {
+    if (!html$7 || rendered >= list$1.length) return;
+    var items = list$1.slice(rendered, rendered + PAGE_SIZE).map(function (entry, i) {
+      return line(entry, rendered + i);
+    });
+    rendered += items.length;
+    items.forEach(function (item) {
+      return scroll_body.append(item);
+    });
+    if (Controller.enabled().name == 'console-body') Controller.collectionAppend(items.map(function (item) {
+      return item[0];
+    }));
+  }
+
+  function tab(need, name) {
+    var elem = $("<div class=\"console__tab selector\" data-key=\"".concat(filterKey(need), "\">\n        <div class=\"console__tab-icon\">").concat(icons[need.type], "</div>\n        <div class=\"console__tab-name\"></div>\n        <div class=\"console__tab-count\">").concat(filterCount(need), "</div>\n    </div>"));
+    elem[0].console_filter = need;
+    elem.find('.console__tab-name').text(name);
+    elem.on('hover:enter', function () {
+      show$1(need);
+    }).on('hover:focus', function (e) {
+      scroll_tabs.update($(e.target));
+    });
+    scroll_tabs.append(elem);
+    return elem;
+  }
+
+  function tabs() {
+    scroll_tabs.clear();
+    scroll_tabs.reset();
+    tab({
+      type: 'all'
+    }, Lang.translate('console_all'));
+    tab({
+      type: 'error'
+    }, Lang.translate('console_errors'));
+    tab({
+      type: 'warning'
+    }, Lang.translate('console_warnings'));
+    Object.keys(counts).sort(function (a, b) {
+      return counts[b] - counts[a];
+    }).forEach(function (name) {
+      tab({
+        type: 'name',
+        name: name
+      }, name);
+    });
+    if (filter.type == 'name' && !counts[filter.name]) filter = {
+      type: 'all'
+    };
+  }
+
+  function stats() {
+    html$7.find('.console__stat--errors').toggleClass('active', count_errors > 0).find('.console__stat-value').text(count_errors);
+    html$7.find('.console__stat--warnings').toggleClass('active', count_warnings > 0).find('.console__stat-value').text(count_warnings);
+    html$7.find('.console__stat--total .console__stat-value').text(entries.length);
+  }
+
+  function updateCounts() {
+    scroll_tabs.render().find('.console__tab').each(function () {
+      $(this).find('.console__tab-count').text(filterCount(this.console_filter));
+    });
+  }
+  /**
+   * Обновить открытую консоль после добавления новой записи
+   */
+
+
+  function live(entry) {
+    stats();
+
+    if (!scroll_tabs.render().find('.console__tab[data-key="' + filterKey({
+      type: 'name',
+      name: entry.name
+    }) + '"]').length) {
+      var elem = tab({
+        type: 'name',
+        name: entry.name
+      }, entry.name);
+      if (Controller.enabled().name == 'console-tabs') Controller.collectionAppend(elem);
+    }
+
+    updateCounts();
+
+    if (match(entry, filter)) {
+      var banner = html$7.find('.console__new');
+      var hidden = banner.hasClass('hide');
+      pending++;
+      banner.text(Lang.translate('console_new_records') + ': ' + pending + ' - ' + Lang.translate('console_new_back')).removeClass('hide');
+      if (hidden && Controller.enabled().name == 'console-body') Controller.collectionAppend(banner);
+    }
+  }
+
+  function clear$3() {
+    entries = [];
+    counts = {};
+    original = {};
+    count_errors = 0;
+    count_warnings = 0;
+    filter = {
+      type: 'all'
+    };
+    tabs();
+    stats();
+    show$1();
+  }
+
+  function send() {
+    if (uploading) return;
+    uploading = true;
+    var button = html$7.find('.console__button[data-action="send"]').addClass('console__button--loading');
+
+    var close = function close() {
+      Modal.close();
+      Controller.toggle('console-body');
+    };
+
+    upload().then(function (code) {
+      Modal.open({
+        title: '',
+        html: $('<div class="about"><div>' + Lang.translate('account_export_secuses') + ': <span class="extensions__item-code">' + code + '</span></div></div>'),
+        size: 'small',
+        zIndex: 200,
+        onBack: close
+      });
+    })["catch"](function (code) {
+      Noty.show(Lang.translate('account_export_fail' + (code && typeof code == 'number' ? '_' + code : '')));
+    })["finally"](function () {
+      uploading = false;
+      button.removeClass('console__button--loading');
+    });
+  }
+
+  function build() {
+    var platform = Platform.get();
+    html$7 = Template.get('console', {
+      app: 'Lampa ' + object$2.app_version + (platform ? ' · ' + platform.charAt(0).toUpperCase() + platform.slice(1) : '')
+    });
+    scroll_body = new Scroll({
+      over: true,
+      mask: true,
+      end_ratio: 2
+    });
+    scroll_body.onEnd = more;
+    scroll_tabs = new Scroll({
+      over: true,
+      mask: true
+    });
+    html$7.find('.console__sidebar').append(scroll_tabs.render());
+    html$7.find('.console__body').append(scroll_body.render());
+    html$7.find('.console__button').on('hover:enter', function () {
+      var action = $(this).data('action');
+      if (action == 'send') send();else if (action == 'clear') clear$3();else if (action == 'close') back$2();
+    });
+    html$7.find('.console__new').on('hover:enter', function () {
+      show$1();
+    });
+    $('body').append(html$7);
+    tabs();
+    stats();
+    draw();
+  }
+
+  function remove$1(entry) {
+    counts[entry.name]--;
+    if (counts[entry.name] <= 0) delete counts[entry.name];
+    if (entry.type == 'error') count_errors--;
+    if (entry.type == 'warning') count_warnings--;
+  }
+
+  function store(name, time, message_original) {
+    if (!original[name]) original[name] = [];
+    Arrays.insert(original[name], 0, {
+      time: time,
+      message: message_original
+    });
+    if (original[name].length > MAX_ORIGINAL) original[name].pop();
+  }
+
+  function add$4(name, type, message, message_original, full) {
+    var time = Date.now();
+    entries.unshift({
+      time: time,
+      name: name,
+      type: type,
+      message: message,
+      full: full || message,
+      original: message_original
+    });
+    counts[name] = (counts[name] || 0) + 1;
+    if (type == 'error') count_errors++;
+    if (type == 'warning') count_warnings++;
+    if (entries.length > MAX_ENTRIES) remove$1(entries.pop());
+    store(name, time, message_original);
+    if (type == 'error') store('Errors', time, message_original);
+    if (type == 'warning') store('Warnings', time, message_original);
+
+    try {
+      if (Storage.get('terminal_access', '') && Socket.terminalAccess()) {
+        Socket.send('terminal_console', {
+          name: name,
+          time: time,
+          message: message_original
+        });
+      }
+    } catch (e) {}
+
+    if (html$7 && !rendering) {
+      rendering = true;
+
+      try {
+        live(entries[0]);
+      } catch (e) {}
+
+      rendering = false;
+    }
+  }
+
+  function escapeHtml(text) {
+    return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  }
+
+  function decode(arr) {
+    if (Arrays.isObject(arr) || Arrays.isArray(arr)) {
+      try {
+        arr = JSON.stringify(arr);
+      } catch (e) {
+        arr = '[noview]';
+      }
+    } else if (typeof arr === 'string' || typeof arr === 'number' || typeof arr === 'boolean') {
+      arr = escapeHtml(arr + '');
+    } else {
+      var a = [];
+
+      for (var i in arr) {
+        a.push(i + ': ' + arr[i]);
+      }
+
+      arr = JSON.stringify(a);
+    }
+
+    return arr;
+  }
+
+  function follow() {
+    var _get_logger_function = function _get_logger_function(func, type) {
+      return function () {
+        var msgs = [];
+        var mcon = [];
+        var orgn = [];
+
+        while (arguments.length) {
+          var arr = [].shift.call(arguments);
+          msgs.push(Utils$1.shortText(decode(arr), 600));
+          mcon.push(arr);
+          orgn.push(decode(arr));
+        }
+
+        var name = 'Other';
+        var message = msgs.join(' ');
+        var full = orgn.join(' ');
+
+        if (msgs.length >= 2) {
+          name = msgs[0];
+          message = msgs.slice(1).join(' ');
+          full = orgn.slice(1).join(' '); // Add brackets to real log
+
+          mcon[0] = '[' + mcon[0] + ']';
+        }
+
+        try {
+          add$4(name, type, message, orgn, full);
+        } catch (e) {}
+
+        func.apply(console, mcon);
+      };
+    };
+
+    var called = {
+      log: _get_logger_function(console_orig.log, 'log'),
+      error: _get_logger_function(console_orig.error, 'error'),
+      warn: _get_logger_function(console_orig.warn, 'warning')
+    };
+    Timer.add(1000, function () {
+      // Заменяем консоль на свою
+      console.log = called.log;
+      console.error = called.error;
+      console.warn = called.warn;
+    });
+    console.log = called.log;
+    console.error = called.error;
+    console.warn = called.warn;
+    window.addEventListener("error", function (e) {
+      var stack = (e.error && e.error.stack ? e.error.stack : e.stack || '').split("\n").join('<br>');
+      var message = typeof e.error == 'string' ? e.error : (e.error || e).message;
+      var filename = e.filename || (e.error && e.error.fileName ? e.error.fileName : '');
+      var noty = [];
+      message && noty.push('Message: ' + message);
+      filename && noty.push('In: ' + filename);
+      stack && noty.push('Stack: ' + stack);
+      noty = noty.join('<br><br>');
+      var welcome = $('.welcome');
+
+      if (welcome.length) {
+        welcome.fadeOut(500, function () {
+          Noty.show(noty, {
+            time: 8000
+          });
+        });
+      }
+
+      add$4('Error', 'error', noty, noty.replace(/<br>/g, '\n'));
+      if (!(stack.indexOf('resetTopStyle') >= 0 || stack.indexOf('Blocked a frame') >= 0 || stack.indexOf('global code@http') >= 0)) Noty.show(noty, {
+        time: 8000
+      });
+    });
+  }
+  /**
+   * Отправить журнал на сервер CUB
+   * @returns {Promise<string>} код для разработчиков
+   */
+
+
+  function upload() {
+    return new Promise(function (resolve, reject) {
+      var file;
+      var data = JSON.stringify(original);
+
+      try {
+        file = new File([data], "lampa_logs.json", {
+          type: "text/plain"
+        });
+      } catch (e) {}
+
+      if (!file) {
+        try {
+          file = new Blob([data], {
+            type: 'text/plain'
+          });
+          file.lastModifiedDate = new Date();
+        } catch (e) {
+          reject();
+        }
+      }
+
+      if (file) {
+        var formData = new FormData($('<form></form>')[0]);
+        formData.append("file", file, "lampa_logs.json");
+        $.ajax({
+          url: Utils$1.protocol() + object$2.cub_domain + '/api/lampa/logs/write',
+          type: 'POST',
+          data: formData,
+          async: true,
+          cache: false,
+          timeout: 10000,
+          contentType: false,
+          enctype: 'multipart/form-data',
+          processData: false,
+          success: function success(j) {
+            resolve(j.code);
+          },
+          error: function error(e) {
+            reject(e.responseJSON ? e.responseJSON.code : 0);
+          }
+        });
+      }
+    });
+  }
+
+  var Console = {
+    init: init$t,
+    upload: upload,
+    "export": function _export() {
+      return original;
+    },
+    opened: function opened() {
+      return !!html$7;
+    },
+    close: back$2
   };
 
   var listener$2 = Subscribe$2();
@@ -46573,7 +47211,7 @@
    */
 
 
-  function add$4(name, calls) {
+  function add$3(name, calls) {
     controlls[name] = calls;
   }
   /**
@@ -46633,7 +47271,7 @@
    */
 
 
-  function back$2() {
+  function back$1() {
     run('back');
   }
   /**
@@ -46642,7 +47280,7 @@
    */
 
 
-  function toggle$2(name) {
+  function toggle$1(name) {
     if (active$2 && active$2.gone) active$2.gone(name);
 
     if (controlls[name]) {
@@ -46737,7 +47375,7 @@
   }
 
   function enable(name) {
-    if (active_name == name) toggle$2(name);
+    if (active_name == name) toggle$1(name);
   }
 
   function clearSelects() {
@@ -46856,7 +47494,7 @@
     Screensaver$2.stopSlideshow();
 
     var any = function any() {
-      return parseInt([$('body').hasClass('settings--open') ? 1 : 0, $('body').hasClass('selectbox--open') ? 1 : 0, $('.modal,.youtube-player,.player,.search-box,.search').length ? 1 : 0].join(''));
+      return parseInt([$('body').hasClass('settings--open') ? 1 : 0, $('body').hasClass('selectbox--open') ? 1 : 0, $('.modal,.youtube-player,.player,.search-box,.search,.console').length ? 1 : 0].join(''));
     };
 
     var close = function close() {
@@ -46880,8 +47518,11 @@
         if ($('.player').length) Player.close();
         if ($('.search-box').length) $('.search-box').remove();
         if ($('body').hasClass('search--open')) Search.close();
+        if (Console.opened()) Console.close();
         $('body').removeClass('ambience--enable');
-      } catch (e) {}
+      } catch (e) {
+        console.error('Controller', 'to content error remove', e);
+      }
     };
 
     close();
@@ -46897,13 +47538,13 @@
   var Controller = {
     listener: listener$2,
     observe: observe,
-    add: add$4,
+    add: add$3,
     move: move,
     enter: enter,
     finish: finish,
-    toggle: toggle$2,
+    toggle: toggle$1,
     trigger: trigger$1,
-    back: back$2,
+    back: back$1,
     focus: focus,
     collectionSet: collectionSet,
     collectionFocus: collectionFocus,
@@ -46944,7 +47585,7 @@
     }
   };
 
-  function add$3(name, layout) {
+  function add$2(name, layout) {
     layers[name] = layout;
   }
 
@@ -46957,7 +47598,7 @@
   }
 
   var Layers = {
-    add: add$3,
+    add: add$2,
     addLang: addLang,
     get: get$2
   };
@@ -47332,9 +47973,9 @@
 
           if (event.error == 'not-allowed') {
             Noty.show(Lang.translate('keyboard_nomic'));
+          } else {
+            recognition.stop();
           }
-
-          recognition.stop();
         });
       } else {
         $('.simple-keyboard [data-skbtn="{mic}"]').css('opacity', '0.3');
@@ -47469,7 +48110,7 @@
     };
   }
 
-  var html$8,
+  var html$6,
       keyboard,
       input,
       input_value = '';
@@ -47480,11 +48121,11 @@
    */
 
   function edit(params, call) {
-    html$8 = Template.get('settings_input');
-    input = html$8.find('.settings-input__input');
+    html$6 = Template.get('settings_input');
+    input = html$6.find('.settings-input__input');
     if ((params.keyboard || Storage.field('keyboard_type')) !== 'lampa') input.hide();
-    $('body').addClass('keyboard-input--visible').append(html$8);
-    html$8.addClass('settings-input--align-' + (params.align || 'center'));
+    $('body').addClass('keyboard-input--visible').append(html$6);
+    html$6.addClass('settings-input--align-' + (params.align || 'center'));
 
     var pass = function pass(v) {
       return params.password ? v.replace(/./g, '*') : v;
@@ -47497,18 +48138,18 @@
       input.html(pass(Utils$1.inputDisplay(event.value)));
     });
     keyboard.listener.follow('enter', function (event) {
-      back$1();
+      back();
       call(input_value);
     });
     keyboard.listener.follow('focus', function (event) {
-      html$8.toggleClass('settings-input--focus', true);
+      html$6.toggleClass('settings-input--focus', true);
     });
     keyboard.listener.follow('blur', function (event) {
-      html$8.toggleClass('settings-input--focus', false);
+      html$6.toggleClass('settings-input--focus', false);
     });
-    html$8.toggleClass('settings-input--free', params.free ? true : false);
-    $('.settings-input__links', html$8).toggleClass('hide', params.nosave ? true : false);
-    if (params.title) html$8.find('.settings-input__content').prepend('<div class="settings-input__title">' + params.title + '</div>');
+    html$6.toggleClass('settings-input--free', params.free ? true : false);
+    $('.settings-input__links', html$6).toggleClass('hide', params.nosave ? true : false);
+    if (params.title) html$6.find('.settings-input__content').prepend('<div class="settings-input__title">' + params.title + '</div>');
     keyboard.listener.follow('down', function (event) {
       if (params.nosave) return;
       var members = Storage.get('setting_member', []);
@@ -47567,7 +48208,7 @@
       });
     });
     keyboard.listener.follow('back', function () {
-      back$1();
+      back();
       call(input_value);
     });
     keyboard.create();
@@ -47581,7 +48222,7 @@
    */
 
 
-  function back$1() {
+  function back() {
     destroy$1();
     Controller.toggle('settings_component');
   }
@@ -47592,9 +48233,9 @@
 
   function destroy$1() {
     keyboard.destroy();
-    html$8.remove();
+    html$6.remove();
     $('body').removeClass('keyboard-input--visible');
-    html$8 = null;
+    html$6 = null;
     keyboard = null;
     input = null;
   }
@@ -47610,7 +48251,7 @@
    * Запуск
    */
 
-  function init$u() {
+  function init$s() {
     if (Platform.is('tizen')) {
       select('player', {
         'inner': '#{settings_param_player_inner}',
@@ -48310,7 +48951,7 @@
   select('tmdb_proxy_image', '', '');
   var Params = {
     listener: listener$1,
-    init: init$u,
+    init: init$s,
     bind: bind,
     update: update$3,
     field: field$1,
@@ -48744,7 +49385,7 @@
   var workers = {};
   var reserve = {};
 
-  function init$t() {
+  function init$r() {
     sync('online_view', 'array_string');
     sync('torrents_view', 'array_string');
     sync('search_history', 'array_string');
@@ -48894,7 +49535,7 @@
    */
 
 
-  function add$2(name, new_value, nolisten) {
+  function add$1(name, new_value, nolisten) {
     var list = get$1(name, '[]');
 
     if (list.indexOf(new_value) == -1) {
@@ -49061,12 +49702,12 @@
 
   var Storage = {
     listener: listener,
-    init: init$t,
+    init: init$r,
     get: get$1,
     set: set,
     field: field,
     cache: cache,
-    add: add$2,
+    add: add$1,
     value: value,
     sync: sync,
     remove: remove,
@@ -49973,6 +50614,19 @@
     menu_settings: 'Настройки',
     menu_about: 'Информация',
     menu_console: 'Консоль',
+    console_subtitle: 'Журнал работы приложения',
+    console_all: 'Все события',
+    console_errors: 'Ошибки',
+    console_warnings: 'Предупреждения',
+    console_total: 'Всего записей',
+    console_send: 'Отправить разработчикам',
+    console_clear: 'Очистить',
+    console_close: 'Закрыть',
+    console_new_records: 'Новых записей',
+    console_new_back: 'вернитесь к началу списка',
+    console_hint: 'Влево-вправо - переход между списками, «ОК» - открыть запись целиком, «Назад» - выход',
+    console_empty: 'Записей нет',
+    console_open_url: 'Открыть ссылку',
     menu_multmovie: 'Мультфильмы',
     menu_multtv: 'Мультсериалы',
     menu_feed: 'Лента',
@@ -51099,6 +51753,19 @@
     menu_settings: 'Settings',
     menu_about: 'Information',
     menu_console: 'Console',
+    console_subtitle: 'Application log',
+    console_all: 'All events',
+    console_errors: 'Errors',
+    console_warnings: 'Warnings',
+    console_total: 'Total records',
+    console_send: 'Send to developers',
+    console_clear: 'Clear',
+    console_close: 'Close',
+    console_new_records: 'New records',
+    console_new_back: 'go back to the top of the list',
+    console_hint: 'Left-right - switch between lists, «OK» - open the full record, «Back» - exit',
+    console_empty: 'No records',
+    console_open_url: 'Open link',
     menu_multmovie: 'Cartoons',
     menu_multtv: 'Animated series',
     plugins_catalog_work: 'Working plugins',
@@ -51765,7 +52432,7 @@
    */
 
 
-  function add$1(data) {
+  function add(data) {
     for (var name in data) {
       for (var _code in data[name]) {
         if (langs[_code]) {
@@ -51816,7 +52483,7 @@
 
   var Lang = {
     translate: translate,
-    add: add$1,
+    add: add,
     codes: codes,
     addCodes: addCodes,
     AddTranslation: AddTranslation,
@@ -51843,349 +52510,6 @@
 
   var Render = {
     app: app
-  };
-
-  var html$7;
-  var object;
-
-  function init$s() {
-    html$7 = Template.get('iframe');
-  }
-
-  function show$2() {
-    var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    object = params;
-
-    html$7.find('iframe').attr('src', params.url)[0].onload = function () {
-      html$7.addClass('iframe--loaded');
-    };
-
-    $('body').append(html$7);
-    toggle$1();
-  }
-
-  function toggle$1() {
-    Controller.add('iframe', {
-      toggle: function toggle() {},
-      back: close$2
-    });
-    Controller.toggle('iframe');
-  }
-
-  function close$2() {
-    html$7.removeClass('iframe--loaded');
-    html$7.detach();
-    html$7.find('iframe').attr('src', '');
-    if (object.onBack) object.onBack();
-  }
-
-  function render$1() {
-    return html$7;
-  }
-
-  var Iframe = {
-    init: init$s,
-    show: show$2,
-    close: close$2,
-    render: render$1
-  };
-
-  var items = {
-    App: [],
-    Errors: [],
-    Warnings: []
-  };
-  var original = {
-    App: [],
-    Errors: [],
-    Warnings: []
-  };
-  var times = 0;
-  var html$6;
-  var scroll_tabs;
-  var scroll_body;
-  var last_tab;
-  var console_orig = {
-    log: console.log,
-    error: console.error,
-    warn: console.warn
-  };
-
-  function init$r() {
-    Keypad.listener.follow('keydown', function (e) {
-      if (e.code == 38 || e.code == 29460) {
-        var enable = Controller.enabled();
-
-        if (enable.name == 'head') {
-          times++;
-
-          if (times > 10) {
-            Controller.toggle('console');
-          }
-        } else {
-          times = 0;
-        }
-      }
-    });
-    Controller.add('console', {
-      toggle: function toggle() {
-        build();
-        Controller.toggle('console-tabs');
-      },
-      back: back
-    });
-    Controller.add('console-tabs', {
-      toggle: function toggle() {
-        Controller.collectionSet(scroll_tabs.render());
-        Controller.collectionFocus(scroll_tabs.render().find('.console__tab[data-name="' + Utils$1.hash(last_tab) + '"]')[0], scroll_tabs.render());
-      },
-      down: function down() {
-        Controller.toggle('console-body');
-      },
-      right: function right() {
-        Navigator.move('right');
-      },
-      left: function left() {
-        Navigator.move('left');
-      },
-      back: back
-    });
-    follow();
-  }
-
-  function back() {
-    times = 0;
-    scroll_tabs.destroy();
-    scroll_body.destroy();
-    html$6.remove();
-    Controller.toggle('head');
-  }
-
-  function show$1(name) {
-    scroll_body.clear();
-    scroll_body.reset();
-
-    if (items[name]) {
-      items[name].forEach(function (element) {
-        var item = $(element);
-        item.on('hover:focus', function (e) {
-          scroll_body.update($(e.target));
-        });
-
-        if (name == 'Request') {
-          item.on('hover:enter', function (e) {
-            var str = item.text();
-            var mth = str.match(/error of (.*?) :/);
-
-            if (mth && mth[1]) {
-              Iframe.show({
-                url: mth[1],
-                onBack: function onBack() {
-                  Controller.toggle('console-body');
-                }
-              });
-            }
-          });
-        }
-
-        scroll_body.append(item);
-      });
-    }
-
-    Controller.add('console-body', {
-      toggle: function toggle() {
-        Controller.collectionSet(scroll_body.render());
-        Controller.collectionFocus(false, scroll_body.render());
-      },
-      up: function up() {
-        if (Navigator.canmove('up')) Navigator.move('up');else Controller.toggle('console-tabs');
-      },
-      down: function down() {
-        Navigator.move('down');
-      },
-      back: back
-    });
-    Controller.toggle('console-body');
-  }
-
-  function tab(name, lines) {
-    var elem = $('<div class="console__tab selector" data-name="' + Utils$1.hash(name) + '">' + Utils$1.shortText(name, 10) + ' - <span>' + lines.length + '</span></div>');
-    elem.on('hover:enter', function () {
-      show$1(name);
-      last_tab = name;
-    }).on('hover:focus', function (e) {
-      scroll_tabs.update($(e.target));
-    });
-    scroll_tabs.append(elem);
-    if (!last_tab) last_tab = name;
-    if (last_tab == name) show$1(name);
-  }
-
-  function build() {
-    html$6 = Template.get('console');
-    scroll_body = new Scroll({
-      over: true,
-      mask: true
-    });
-    scroll_tabs = new Scroll({
-      horizontal: true
-    });
-
-    for (var i in items) {
-      tab(i, items[i]);
-    }
-
-    html$6.find('.console__tabs').append(HeadBackward(Lang.translate('menu_console'))).append(scroll_tabs.render());
-    html$6.find('.console__body').append(scroll_body.render());
-    scroll_body.height(html$6.find('.console__tabs'));
-    $('body').append(html$6);
-  }
-
-  function add(name, message, message_original) {
-    if (!items[name]) {
-      items[name] = [];
-      original[name] = [];
-    }
-
-    var where_items = items[name];
-    var where_original = original[name];
-    var time = Utils$1.parseTime(Date.now()).time_full;
-
-    try {
-      Arrays.insert(where_items, 0, '<div class="console__line selector"><span class="console__time">' + time + '</span> - <span>' + message + '</span></div>');
-      Arrays.insert(where_original, 0, {
-        time: Date.now(),
-        message: message_original
-      });
-
-      if (Storage.get('terminal_access', '') && Socket.terminalAccess()) {
-        Socket.send('terminal_console', {
-          name: name,
-          time: Date.now(),
-          message: message_original
-        });
-      }
-    } catch (e) {
-      Arrays.insert(where_items, 0, '<div class="console__line selector"><span class="console__time">' + time + '</span> - <span>Failed to print line</span></div>');
-      Arrays.insert(where_original, 0, {
-        time: Date.now(),
-        message: 'Failed to print line'
-      });
-    }
-
-    if (where_items.length > 50) where_items.pop();
-    if (where_original.length > 200) where_original.pop();
-  }
-
-  function escapeHtml(text) {
-    return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-  }
-
-  function decode(arr) {
-    if (Arrays.isObject(arr) || Arrays.isArray(arr)) {
-      try {
-        arr = JSON.stringify(arr);
-      } catch (e) {
-        arr = '[noview]';
-      }
-    } else if (typeof arr === 'string' || typeof arr === 'number' || typeof arr === 'boolean') {
-      arr = escapeHtml(arr + '');
-    } else {
-      var a = [];
-
-      for (var i in arr) {
-        a.push(i + ': ' + arr[i]);
-      }
-
-      arr = JSON.stringify(a);
-    }
-
-    return arr;
-  }
-
-  function follow() {
-    var _get_logger_function = function _get_logger_function(func, color) {
-      var prefix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
-      return function () {
-        var msgs = [];
-        var mcon = [];
-        var orgn = [];
-
-        while (arguments.length) {
-          var arr = [].shift.call(arguments);
-          msgs.push(Utils$1.shortText(decode(arr), 600));
-          mcon.push(arr);
-          orgn.push(decode(arr));
-        }
-
-        var name = msgs[0];
-
-        if (msgs.length < 2) {
-          name = 'Other';
-        } else {
-          // Add color and prefix to lampa console
-          var spanColor = color || Utils$1.stringToHslColor(msgs[0], 50, 65);
-          msgs[0] = '<span style="color: ' + spanColor + '">' + msgs[0] + '</span>'; // Add brackets to real log
-
-          if (mcon.length > 0) {
-            mcon[0] = '[' + mcon[0] + ']';
-          }
-        }
-
-        if (prefix == 'ERROR' || prefix == 'WARNING') {
-          add(prefix == 'ERROR' ? 'Errors' : 'Warnings', msgs.join(' '), orgn);
-        }
-
-        add(name, msgs.join(' '), orgn);
-        func.apply(console, mcon);
-      };
-    };
-
-    var called = {
-      log: _get_logger_function(console_orig.log, null),
-      error: _get_logger_function(console_orig.error, 'red', 'ERROR'),
-      warn: _get_logger_function(console_orig.warn, 'yellow', 'WARNING')
-    };
-    Timer.add(1000, function () {
-      // Заменяем консоль на свою
-      console.log = called.log;
-      console.error = called.error;
-      console.warn = called.warn;
-    });
-    console.log = called.log;
-    console.error = called.error;
-    console.warn = called.warn;
-    window.addEventListener("error", function (e) {
-      var stack = (e.error && e.error.stack ? e.error.stack : e.stack || '').split("\n").join('<br>');
-      var message = typeof e.error == 'string' ? e.error : (e.error || e).message;
-      var filename = e.filename || (e.error && e.error.fileName ? e.error.fileName : '');
-      var noty = [];
-      message && noty.push('Message: ' + message);
-      filename && noty.push('In: ' + filename);
-      stack && noty.push('Stack: ' + stack);
-      noty = noty.join('<br><br>');
-      var welcome = $('.welcome');
-
-      if (welcome.length) {
-        welcome.fadeOut(500, function () {
-          Noty.show(noty, {
-            time: 8000
-          });
-        });
-      }
-
-      add('Errors', noty, noty.replace(/<br>/g, '\n'));
-      if (!(stack.indexOf('resetTopStyle') >= 0 || stack.indexOf('Blocked a frame') >= 0 || stack.indexOf('global code@http') >= 0)) Noty.show(noty, {
-        time: 8000
-      });
-    });
-  }
-
-  var Console = {
-    init: init$r,
-    "export": function _export() {
-      return original;
-    }
   };
 
   function create$3() {
@@ -54076,11 +54400,11 @@
 
   function init$m() {
     if (Account$1.Permit.access && Lang.selected(['ru', 'uk', 'be', 'bg']) && window.lampa_settings.account_use) {
-      if (Account$1.Permit.user.premium && !Account$1.hasPremium()) setTimeout(push$2, 5000);
+      if (Account$1.Permit.user.premium && !Account$1.hasPremium()) setTimeout(push$1, 5000);
     }
   }
 
-  function push$2() {
+  function push$1() {
     var now = new Date();
     var id = 'extend_premium_' + now.getFullYear() + '_' + now.getMonth();
     if (Notice$1.classes.lampa.notices.find(function (n) {
@@ -54835,7 +55159,7 @@
    */
 
 
-  function push$1(id, percent) {
+  function push(id, percent) {
     var find = processing.find(function (a) {
       return a.id == id;
     });
@@ -54863,7 +55187,7 @@
 
   var Processing = {
     init: init$g,
-    push: push$1,
+    push: push,
     render: render
   };
 
@@ -55094,7 +55418,7 @@
         if (waite) return;
         waite = true;
         loader.removeClass('hide');
-        push().then(function (code) {
+        Console.upload().then(function (code) {
           Modal.open({
             title: '',
             html: $('<div class="about"><div>' + Lang.translate('account_export_secuses') + ': <span class="extensions__item-code">' + code + '</span></div></div>'),
@@ -55169,52 +55493,6 @@
   function closeModal() {
     Modal.close();
     Controller.toggle('settings_component');
-  }
-
-  function push() {
-    return new Promise(function (resolve, reject) {
-      var file;
-      var data = JSON.stringify(Console["export"]());
-
-      try {
-        file = new File([data], "lampa_logs.json", {
-          type: "text/plain"
-        });
-      } catch (e) {}
-
-      if (!file) {
-        try {
-          file = new Blob([data], {
-            type: 'text/plain'
-          });
-          file.lastModifiedDate = new Date();
-        } catch (e) {
-          reject();
-        }
-      }
-
-      if (file) {
-        var formData = new FormData($('<form></form>')[0]);
-        formData.append("file", file, "lampa_logs.json");
-        $.ajax({
-          url: Utils$1.protocol() + object$2.cub_domain + '/api/lampa/logs/write',
-          type: 'POST',
-          data: formData,
-          async: true,
-          cache: false,
-          timeout: 10000,
-          contentType: false,
-          enctype: 'multipart/form-data',
-          processData: false,
-          success: function success(j) {
-            resolve(j.code);
-          },
-          error: function error(e) {
-            reject(e.rresponseJSON ? e.responseJSON.code : 0);
-          }
-        });
-      }
-    });
   }
 
   var Logs = {
@@ -56646,8 +56924,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-10-10 18:02');
-    console.log('App', 'hash', '758fa55fe85adc08a7fef046e34fc920');
+    console.log('App', 'build date:', '2026-10-13 20:25');
+    console.log('App', 'hash', 'c5701b7be6da4427afd2403b298886e3');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
