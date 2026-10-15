@@ -2579,7 +2579,7 @@
 
   var html$1E = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>c5701b7be6da4427afd2403b298886e3</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-13 20:25</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>ca11b75b77898bfd2922dc542c64dce9</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-15 10:00</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1C = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -8129,7 +8129,9 @@
       hash_string: '',
       season: null,
       episode: null,
-      serial: !!data.movie.number_of_seasons
+      serial: !!data.movie.number_of_seasons,
+      by_title: false // хеш построен из названия карточки, а не из пути файла
+
     };
     var regexps = [[/\bs(\d+)\.?ep?(\d+)\b/i, 'season', 'episode'], [/\b(\d{1,2})[x\-](\d+)\b/i, 'season', 'episode'], [/\bs(\d{2})(\d{2,3})\b/i, 'season', 'episode'], [/season (\d+) episode (\d+)/i, 'season', 'episode'], [/сезон (\d+) серия (\d+)/i, 'season', 'episode'], [/(\d+) season (\d+) episode/i, 'season', 'episode'], [/(\d+) сезон (\d+) серия/i, 'season', 'episode'], [/episode (\d+)/i, 'episode'], [/серия (\d+)/i, 'episode'], [/(\d+) episode/i, 'episode'], [/(\d+) серия/i, 'episode'], [/season (\d+)/i, 'season'], [/сезон (\d+)/i, 'season'], [/(\d+) season/i, 'season'], [/(\d+) сезон/i, 'season'], [/\bs(\d+)\b/i, 'season'], [/\bep?\.?(\d+)\b/i, 'episode'], [/\b(\d{1,3}) of (\d+)/i, 'episode'], [/\b(\d{1,3}) из (\d+)/i, 'episode'], [/ - (\d{1,3})\b/i, 'episode'], [/\[(\d{1,3})\]/i, 'episode'], [/(\d+) сер/i, 'episode']];
     var folder_regexps = [[/season (\d+)/i, 'season'], [/сезон (\d+)/i, 'season'], [/(\d+) season/i, 'season'], [/(\d+) сезон/i, 'season'], [/\bs(\d+)\b/i, 'season']];
@@ -8172,8 +8174,10 @@
     if (!data.is_file) {
       if (data.movie.number_of_seasons) {
         result.hash_string = [result.season, result.season > 10 ? ':' : '', result.episode, data.movie.original_title].join('');
+        result.by_title = true;
       } else if (data.movie.original_title && !result.serial) {
         result.hash_string = data.movie.original_title;
+        result.by_title = true;
       } else {
         result.hash_string = data.path;
       }
@@ -21736,7 +21740,7 @@
       var out_day = data.air_date ? Math.round((out_air.getTime() - out_now) / (24 * 60 * 60 * 1000)) : 1;
       data.left_days = out_day > 0 ? out_day : 0;
       data.left_text = Lang.translate('full_episode_days_left') + ': ' + (data.air_date ? out_day : '- -');
-      data.timeline = Timeline$1.view(data.hash);
+      data.timeline = Timeline$1.view(data.hash, Timeline$1.link(data.card, data.season_number, data.episode_number));
       data.time = Utils$1.secondsToTime(data.runtime * 60, true);
       data.title = data.name || Lang.translate('torrent_serial_episode') + ' ' + data.episode_number;
       data.date = data.air_date ? Utils$1.parseTime(data.air_date).full : '----';
@@ -22266,7 +22270,7 @@
           var Draw = function Draw() {
             episodes.forEach(function (ep) {
               var hash = Utils$1.hash([ep.season_number, ep.season_number > 10 ? ':' : '', ep.episode_number, data.original_title].join(''));
-              var view = Timeline$1.view(hash);
+              var view = Timeline$1.view(hash, Timeline$1.link(data, ep.season_number, ep.episode_number));
               if (view.percent) viewed = {
                 ep: ep,
                 view: view
@@ -22283,7 +22287,7 @@
                     episode_number: filed.episode,
                     name: Lang.translate('full_episode') + ' ' + filed.episode
                   },
-                  view: Timeline$1.view(Utils$1.hash([filed.season, filed.season > 10 ? ':' : '', filed.episode, data.original_title].join('')))
+                  view: Timeline$1.view(Utils$1.hash([filed.season, filed.season > 10 ? ':' : '', filed.episode, data.original_title].join('')), Timeline$1.link(data, filed.season, filed.episode))
                 };
               }
             } // Если это фильм и не нашли просмотренное, то проверим по прогрессу просмотра из таймлайна
@@ -24130,7 +24134,9 @@
   var Account$1 = Account;
 
   var listener$a = Subscribe$2(),
-      viewed$1;
+      viewed$1,
+      index = {}; // ключ карточки (card|season|episode) -> hash, для поиска тайм-кода при смене названия
+
   /**
    * Инициализация
    * @returns {void}
@@ -24148,6 +24154,7 @@
   function read() {
     var no_nolisten = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
     viewed$1 = Storage.get(filename(), {});
+    buildIndex();
     listener$a.send('read', {
       data: viewed$1
     });
@@ -24157,6 +24164,94 @@
       reason: 'read',
       viewed: viewed$1
     });
+  }
+  /**
+   * Ключ индекса для привязки к карточке
+   * @param {object} meta - объект с полями card, season, episode
+   * @returns {string}
+   */
+
+
+  function indexKey(meta) {
+    return [meta.card, meta.season, meta.episode].join('|');
+  }
+  /**
+   * Добавить запись в индекс. При коллизии оставляем более свежую запись
+   * @param {string} hash - хеш записи
+   * @param {object} road - запись прогресса
+   * @returns {void}
+   */
+
+
+  function indexAdd(hash, road) {
+    if (!road || _typeof(road) !== 'object' || !road.card) return;
+    var key = indexKey(road);
+    var exist = index[key] ? viewed$1[index[key]] : null;
+    if (!exist || _typeof(exist) !== 'object' || (exist.updated || 0) <= (road.updated || 0)) index[key] = hash;
+  }
+  /**
+   * Построить индекс по всем записям прогресса
+   * @returns {void}
+   */
+
+
+  function buildIndex() {
+    index = {};
+
+    for (var hash in viewed$1) {
+      indexAdd(hash, viewed$1[hash]);
+    }
+  }
+  /**
+   * Привязка тайм-кода к карточке. Нужна, чтобы найти прогресс, если у карточки сменится оригинальное название и, как следствие, хеш
+   * @param {object} card - карточка
+   * @param {number} [season] - номер сезона (для сериала)
+   * @param {number} [episode] - номер серии (для сериала)
+   * @returns {object|null} - {card, season, episode} или null, если привязать нельзя
+   */
+
+
+  function link(card, season, episode) {
+    if (!card || !card.id) return null;
+    var type = card.original_name ? 'tv' : 'movie';
+    var source = (card.source || 'tmdb') + '';
+    var key = type + '_' + card.id; // id разных источников могут совпадать, поэтому для не tmdb/cub добавляем префикс источника
+
+    if (source !== 'tmdb' && source !== 'cub') key = source + '_' + key; // так же чистит сервер, держим ключ одинаковым на клиенте и на сервере
+
+    key = key.toLowerCase().replace(/[^a-z0-9_]/g, '').slice(0, 64);
+    var result = {
+      card: key
+    };
+
+    if (type == 'tv') {
+      season = parseInt(season);
+      episode = parseInt(episode); // Без сезона и серии привязка сериала не имеет смысла
+
+      if (isNaN(season) || isNaN(episode)) return null;
+      result.season = season;
+      result.episode = episode;
+    }
+
+    return result;
+  }
+  /**
+   * Выбрать из объекта только поля привязки к карточке
+   * @param {object} obj - объект с полями card, season, episode
+   * @returns {object} - {card, season, episode} или пустой объект
+   */
+
+
+  function linked(obj) {
+    var result = {};
+
+    if (obj && obj.card) {
+      result.card = obj.card;
+      if (typeof obj.season !== 'undefined') result.season = obj.season;
+      if (typeof obj.episode !== 'undefined') result.episode = obj.episode;
+    }
+
+    return result;
   }
   /**
    * Имя файла для хранения прогресса просмотра в localStorage
@@ -24176,6 +24271,9 @@
    * @param {number} [params.duration] - общая длительность файла в секундах
    * @param {number} [params.profile] - ID профиля
    * @param {number} [params.updated] - когда отметка изменилась, в миллисекундах. Для локальных изменений ставится сам
+   * @param {string} [params.card] - ключ карточки из link()
+   * @param {number} [params.season] - номер сезона (вместе с card)
+   * @param {number} [params.episode] - номер серии (вместе с card)
    * @param {boolean} [params.received] - флаг, что данные получены с сервера
    * @returns {void}
    */
@@ -24204,10 +24302,18 @@
     if (typeof params.time !== 'undefined') road.time = params.time;
     if (typeof params.duration !== 'undefined') road.duration = params.duration;
     if (typeof params.profile !== 'undefined') road.profile = params.profile;
-    if (typeof params.updated !== 'undefined') road.updated = params.updated; // округляем время и длительность до целых секунд
+    if (typeof params.updated !== 'undefined') road.updated = params.updated; // Привязка к карточке необязательна: старые записи и сторонние плагины работают только по хешу
+
+    if (params.card) {
+      road.card = params.card + '';
+      if (typeof params.season !== 'undefined') road.season = params.season;
+      if (typeof params.episode !== 'undefined') road.episode = params.episode;
+    } // округляем время и длительность до целых секунд
+
 
     road.time = Math.round(road.time);
     road.duration = Math.round(road.duration);
+    indexAdd(params.hash, road);
     Storage.set(filename(), viewed$1);
     var layers = [].concat(Activity.renderLayers());
     layers.push($(document));
@@ -24245,13 +24351,21 @@
   /**
    * Получить прогресс просмотра
    * @param {string} hash - хеш файла
-   * @return {object} - объект с прогрессом просмотра {hash, percent, time, duration, profile, updated, handler}
+   * @param {object} [meta] - привязка к карточке из link(). Если по хешу ничего нет, ищем по ней
+   * @return {object} - объект с прогрессом просмотра {hash, percent, time, duration, profile, updated, handler, [card, season, episode]}
    */
 
 
-  function view$1(hash) {
+  function view$1(hash, meta) {
     var curent = typeof viewed$1[hash] !== 'undefined' ? viewed$1[hash] : 0,
-        profile = Account$1.Permit.sync ? Account$1.Permit.account.profile.id : 0;
+        profile = Account$1.Permit.sync ? Account$1.Permit.account.profile.id : 0; // По хешу ничего нет, возможно у карточки сменилось название — ищем по привязке.
+    // Хеш оставляем новый, чтобы дальше прогресс писался уже под ним
+
+    if (typeof viewed$1[hash] == 'undefined' && meta && meta.card) {
+      var found = index[indexKey(meta)];
+      if (found && _typeof(viewed$1[found]) == 'object') curent = viewed$1[found];
+    }
+
     var road = {
       percent: 0,
       time: 0,
@@ -24277,7 +24391,7 @@
         road: road
       }
     });
-    return {
+    var result = {
       hash: hash,
       percent: road.percent,
       time: road.time,
@@ -24285,15 +24399,17 @@
       profile: road.profile,
       updated: road.updated,
       handler: function handler(percent, time, duration) {
-        return update$7({
+        return update$7(Object.assign({
           hash: hash,
           percent: percent,
           time: time,
           duration: duration,
           profile: road.profile
-        });
+        }, linked(meta)));
       }
     };
+    Object.assign(result, linked(meta));
+    return result;
   }
   /**
    * Создать прогресс просмотра
@@ -24338,7 +24454,7 @@
       var list = [];
 
       for (var i = 1; i <= max; i++) {
-        var time = view$1(Utils$1.hash([1, i, card.original_name].join('')));
+        var time = view$1(Utils$1.hash([1, i, card.original_name].join('')), link(card, 1, i));
 
         if (time.percent) {
           list.push({
@@ -24350,7 +24466,7 @@
 
       return return_time ? list : list.length;
     } else {
-      var _time = view$1(Utils$1.hash(card.original_title));
+      var _time = view$1(Utils$1.hash(card.original_title), link(card));
 
       return return_time ? _time : _time.percent;
     }
@@ -24358,7 +24474,7 @@
 
   function watchedEpisode(card, season, episode) {
     var return_time = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-    var time = view$1(Utils$1.hash([season, season > 10 ? ':' : '', episode, card.original_name || card.original_title].join('')));
+    var time = view$1(Utils$1.hash([season, season > 10 ? ':' : '', episode, card.original_name || card.original_title].join('')), link(card, season, episode));
     return return_time ? time : time.percent;
   }
   /**
@@ -24388,7 +24504,8 @@
     format: format,
     watched: watched,
     watchedEpisode: watchedEpisode,
-    filename: filename
+    filename: filename,
+    link: link
   };
 
   var markers = ['socket', 'mirrors', 'request'];
@@ -33265,7 +33382,7 @@
 
     var updateTimeline = function updateTimeline(elem) {
       if (elem.timeline) {
-        var new_timeline = Lampa.Timeline.view(elem.timeline.hash);
+        var new_timeline = Lampa.Timeline.view(elem.timeline.hash, elem.timeline);
         elem.timeline.time = Math.round(new_timeline.time);
         elem.timeline.duration = Math.round(new_timeline.duration);
         elem.timeline.percent = new_timeline.percent;
@@ -40998,8 +41115,10 @@
         filename: element.path_human,
         path: element.path,
         is_file: formats_individual.indexOf(exe) >= 0
-      });
-      var view = Timeline$1.view(info.hash);
+      }); // Привязываем к карточке, только если хеш из названия: хеш из пути файла от названия карточки не зависит.
+      // Серию 0 парсер ставит, когда номер не распознан — такую не привязываем
+
+      var view = Timeline$1.view(info.hash, info.by_title && (!info.serial || info.episode) ? Timeline$1.link(params.movie, info.season, info.episode) : null);
       var serverView = (params.viewed || []).filter(function (v) {
         return v.file_index == element.id;
       })[0];
@@ -52798,7 +52917,7 @@
           var viewed;
           episodes.forEach(function (ep) {
             var hash = Utils$1.hash([ep.season_number, ep.season_number > 10 ? ':' : '', ep.episode_number, data.original_title].join(''));
-            var view = Timeline$1.view(hash);
+            var view = Timeline$1.view(hash, Timeline$1.link(data, ep.season_number, ep.episode_number));
             if (view.percent) viewed = {
               ep: ep,
               view: view
@@ -52815,13 +52934,13 @@
                   episode_number: filed.episode,
                   name: Lang.translate('full_episode') + ' ' + filed.episode
                 },
-                view: Timeline$1.view(Utils$1.hash([filed.season, filed.season > 10 ? ':' : '', filed.episode, data.original_title].join('')))
+                view: Timeline$1.view(Utils$1.hash([filed.season, filed.season > 10 ? ':' : '', filed.episode, data.original_title].join('')), Timeline$1.link(data, filed.season, filed.episode))
               };
             }
           }
 
           if (!viewed && !data.original_name) {
-            var time = Timeline$1.view(Utils$1.hash([data.original_title].join('')));
+            var time = Timeline$1.view(Utils$1.hash([data.original_title].join('')), Timeline$1.link(data));
 
             if (time.percent) {
               viewed = {
@@ -56924,8 +57043,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-10-13 20:25');
-    console.log('App', 'hash', 'c5701b7be6da4427afd2403b298886e3');
+    console.log('App', 'build date:', '2026-10-15 10:00');
+    console.log('App', 'hash', 'ca11b75b77898bfd2922dc542c64dce9');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
