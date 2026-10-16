@@ -817,6 +817,7 @@ export default {
     notice_in_quality: 'As',
     notice_none_account: '你还没有任何通知，收藏该系列并等待新剧集的通知。',
     notice_none_system: '您目前没有任何通知。 当有新通知可用时，我们一定会通知您。',
+    notice_discuss_reply: '评论回复',
     copy_link: '复制视频链接',
     copy_secuses: '链接复制到剪贴板',
     copy_error: '复制链接时出错',

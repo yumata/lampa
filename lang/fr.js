@@ -858,6 +858,7 @@ export default {
     notice_in_quality: 'En',
     notice_none_account: 'Pas de notifications. Ajoutez des séries en favoris pour être prévenu.',
     notice_none_system: 'Aucune notification disponible actuellement.',
+    notice_discuss_reply: 'Réponse à votre commentaire',
 
     copy_link: 'Copier le lien vidéo',
     copy_secuses: 'Lien copié dans le presse-papiers',

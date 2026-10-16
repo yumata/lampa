@@ -858,6 +858,7 @@ export default {
     notice_in_quality: 'În format',
     notice_none_account: 'Nu ai notificări încă, adaugă serialul la favorite și așteaptă noutăți.',
     notice_none_system: 'Momentan nu ai notificări. Te vom anunța când apar noutăți.',
+    notice_discuss_reply: 'Răspuns la comentariu',
 
     copy_link: 'Copiază link-ul video',
     copy_secuses: 'Link copiat în clipboard',

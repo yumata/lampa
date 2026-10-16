@@ -1062,6 +1062,7 @@ export default {
     notice_in_quality: 'En buena calidad',
     notice_none_account: 'Aún no tienes notificaciones. Añade la serie a favoritos y espera los avisos de nuevos episodios.',
     notice_none_system: 'Ahora mismo no tienes notificaciones. Te avisaremos en cuanto haya nuevas.',
+    notice_discuss_reply: 'Respuesta a tu comentario',
 
     copy_link: 'Copiar enlace del vídeo',
     copy_secuses: 'Enlace copiado al portapapeles',

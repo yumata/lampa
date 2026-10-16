@@ -1041,6 +1041,7 @@ export default {
     notice_in_quality:  'W jakości',
     notice_none_account:  'Brak powiadomień. Dodaj seriale do zakładek, aby otrzymywać aktualizacje.',
     notice_none_system:  'Obecnie brak powiadomień.',
+    notice_discuss_reply: 'Odpowiedź na komentarz',
 
     copy_link:  'Kopiuj link do wideo',
     copy_secuses:  'Link skopiowany do schowka',

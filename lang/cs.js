@@ -973,6 +973,7 @@ export default {
     notice_in_quality: "V kvalitě",
     notice_none_account: "Ještě nemáte žádná upozornění, přidejte seriály do záložek a očekávejte upozornění o nových epizodách.",
     notice_none_system: "Momentálně nemáte žádná upozornění. Určitě vás upozorníme, když se objeví nová upozornění.",
+    notice_discuss_reply: 'Odpověď na komentář',
 
     copy_link: "Kopírovat odkaz na video",
     copy_secuses: "Odkaz zkopírován do schránky",

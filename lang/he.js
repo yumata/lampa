@@ -812,6 +812,7 @@ export default {
     notice_in_quality: 'כ',
     notice_none_account: '',
     notice_none_system: 'כרגע אין לך הודעות, אנו נודיע לך כשההודעות החדשות יהיו זמינות.',
+    notice_discuss_reply: 'תגובה לתגובה שלך',
     copy_link: 'העתק קישור וידאו',
     copy_secuses: 'קישור הועתק ללוח העריכה',
     copy_error: 'שגיאה בהעתקת קישור',

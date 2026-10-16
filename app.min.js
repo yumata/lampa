@@ -2073,7 +2073,7 @@
     author: 'Yumata',
     github: 'https://github.com/yumata/lampa-source',
     css_version: '3.3.6',
-    app_version: '3.3.6',
+    app_version: '3.3.7',
     cub_site: 'cub.best',
     apk_link_download: 'https://github.com/lampa-app/LAMPA/releases/download/v1.12.3/app-lite-release.apk'
   };
@@ -2579,7 +2579,7 @@
 
   var html$1E = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>ca11b75b77898bfd2922dc542c64dce9</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-15 10:00</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1D = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>88f1b98c4cb42b82030557dad34c8307</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-16 11:38</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1C = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -18742,6 +18742,10 @@
     return NoticeLampa;
   }(NoticeClass);
 
+  function escapeHtml$1(str) {
+    return (str + '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   function enrichTmdbNotice(element, oncomplite) {
     var card = element.card || {};
     if (!card.imdb_id) return oncomplite(element);
@@ -18840,7 +18844,16 @@
 
         Account$1.Api.notices(function (result) {
           var notices = result.map(function (item) {
-            var data = JSON.parse(item.data);
+            var data;
+
+            try {
+              data = JSON.parse(item.data);
+            } catch (e) {
+              return null;
+            }
+
+            if (data.type == 'discuss_reply') return _this2.discussReply(item, data);
+            if (!data.card) return null;
             var text = Lang.translate('notice_new_quality');
             var labels = [];
 
@@ -18870,7 +18883,7 @@
               data: data,
               item: item
             };
-          });
+          }).filter(Boolean);
           notices.sort(function (a, b) {
             return a.time > b.time ? -1 : a.time < b.time ? 1 : 0;
           });
@@ -18880,6 +18893,28 @@
             Notice$1.drawCount();
           });
         });
+      }
+    }, {
+      key: "discussReply",
+      value: function discussReply(item, data) {
+        var card = data.card && data.card.id ? data.card : null;
+        var method = data.method || ((item.card_id + '').indexOf('tv_') == 0 ? 'tv' : 'movie');
+        var title = card ? !Lang.selected(['ru', 'uk', 'be']) ? card.original_title || card.original_name : card.title || card.name : '';
+        return {
+          time: item.time || Utils$1.parseToDate(item.date).getTime(),
+          title: Lang.translate('notice_discuss_reply') + (title ? ': ' + escapeHtml$1(title) : ''),
+          text: escapeHtml$1(data.parent_comment || ''),
+          poster: card ? card.poster_path : '',
+          card: card,
+          method: method,
+          author: {
+            name: escapeHtml$1(data.from || ''),
+            img: Utils$1.protocol() + object$2.cub_domain + '/img/profiles/' + encodeURIComponent(data.icon || 'l_1') + '.png',
+            text: escapeHtml$1(data.comment || '')
+          },
+          data: data,
+          item: item
+        };
       }
     }, {
       key: "viewed",
@@ -19009,7 +19044,8 @@
             }).join(' ') + '</div>'));
 
             if (element.author) {
-              author_data = translate$1(element.author);
+              // author бывает {name, img, text} или по языкам {ru: {name, img, text}, ...}
+              author_data = element.author.name || element.author.img || element.author.text ? element.author : translate$1(element.author) || {};
               author_html = $("<div class=\"notice__author\">\n                        <div class=\"notice__author-img\">\n                            <img />\n                        </div>\n                        <div class=\"notice__author-body\">\n                            <div class=\"notice__author-name\"></div>\n                            <div class=\"notice__author-text\"></div>\n                        </div>\n                    </div>");
               author_html.find('.notice__author-name').html(author_data.name);
               author_html.find('.notice__author-text').html(author_data.text);
@@ -19024,7 +19060,7 @@
                   url: '',
                   component: 'full',
                   id: element.card.id,
-                  method: element.card.number_of_seasons || element.card.seasons ? 'tv' : 'movie',
+                  method: element.method || (element.card.number_of_seasons || element.card.seasons ? 'tv' : 'movie'),
                   card: element.card,
                   source: element.card.source || (Lang.selected(['ru', 'uk', 'be']) ? 'cub' : '')
                 });
@@ -19039,7 +19075,6 @@
                 if (Arrays.isObject(icon)) icon = icon[Lampa.Storage.get('tmdb_lang')] || ((_element$card2 = element.card) === null || _element$card2 === void 0 ? void 0 : _element$card2.poster_path);
                 if (icon && icon.indexOf('http') == -1) icon = TMDB$1.image('t/p/w300/' + icon);
                 var img_icon = item.find('.notice__left img')[0] || {};
-                var img_author = item.find('.notice__author img')[0] || {};
 
                 img_icon.onload = function () {
                   item.addClass('image--loaded');
@@ -19049,6 +19084,12 @@
                   img_icon.src = './img/img_broken.svg';
                 };
 
+                img_icon.src = icon ? Utils$1.fixProtocolLink(icon) : './img/img_broken.svg';
+              }
+
+              if (element.author) {
+                var img_author = item.find('.notice__author img')[0] || {};
+
                 img_author.onload = function () {
                   item.addClass('image-author--loaded');
                 };
@@ -19057,8 +19098,7 @@
                   img_author.src = './img/img_broken.svg';
                 };
 
-                img_icon.src = icon ? Utils$1.fixProtocolLink(icon) : './img/img_broken.svg';
-                if (element.author) img_author.src = author_data.img ? Utils$1.fixProtocolLink(author_data.img.indexOf('http') >= 0 ? author_data.img : TMDB$1.image('t/p/w200/' + author_data.img)) : './img/img_broken.svg';
+                img_author.src = author_data.img ? Utils$1.fixProtocolLink(author_data.img.indexOf('http') >= 0 ? author_data.img : TMDB$1.image('t/p/w200/' + author_data.img)) : './img/img_broken.svg';
               }
             });
             html.append(item);
@@ -50928,6 +50968,7 @@
     notice_in_quality: 'В качестве',
     notice_none_account: 'У вас еще нет никаких уведомлений, добавьте сериалы в закладки и ожидайте уведомления о новых сериях.',
     notice_none_system: 'На данный момент у вас отсутствуют уведомления. Мы обязательно оповестим вас, когда появятся новые уведомления.',
+    notice_discuss_reply: 'Ответ на комментарий',
     copy_link: 'Копировать ссылку на видео',
     copy_secuses: 'Ссылка скопирована в буфер обмена',
     copy_error: 'Ошибка при копирование ссылки',
@@ -52029,6 +52070,7 @@
     notice_in_quality: 'As',
     notice_none_account: 'You don\'t have any notifications yet, bookmark the series and wait for notifications of new episodes.',
     notice_none_system: 'You currently have no notifications. We will be sure to notify you when new notifications become available.',
+    notice_discuss_reply: 'Reply to comment',
     copy_link: 'Copy video link',
     copy_secuses: 'Link copied to clipboard',
     copy_error: 'Error copying link',
@@ -57043,8 +57085,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-10-15 10:00');
-    console.log('App', 'hash', 'ca11b75b77898bfd2922dc542c64dce9');
+    console.log('App', 'build date:', '2026-10-16 11:38');
+    console.log('App', 'hash', '88f1b98c4cb42b82030557dad34c8307');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
