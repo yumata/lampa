@@ -99,6 +99,8 @@ export default {
     settings_rest_tmdb_lang: 'Якою мовою відображати дані з TMDB',
     settings_rest_tmdb_prox: 'Проксирувати TMDB',
     settings_rest_tmdb_prox_auto: 'Увімкнути проксі автоматично',
+    settings_rest_tmdb_only_released: 'Показувати лише релізи',
+    settings_rest_tmdb_only_released_descr: 'Приховувати фільми, які ще йдуть лише в кінотеатрах, і серіали до прем’єри',
     settings_rest_tmdb_posters: 'Раздільна здатність TMDB',
     settings_rest_screensaver: 'Скрінсейвер',
     settings_rest_screensaver_use: 'Показувати заставку за бездіяльності',

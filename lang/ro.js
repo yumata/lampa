@@ -107,6 +107,8 @@ export default {
     settings_rest_tmdb_lang: 'Limba pentru datele de pe TMDB',
     settings_rest_tmdb_prox: 'Proxy TMDB',
     settings_rest_tmdb_prox_auto: 'Activează proxy automat',
+    settings_rest_tmdb_only_released: 'Afișează doar lansările',
+    settings_rest_tmdb_only_released_descr: 'Ascunde filmele care rulează încă doar în cinematografe și serialele înainte de premieră',
     settings_rest_tmdb_posters: 'Rezoluție postere TMDB',
     settings_rest_screensaver: 'Screensaver',
     settings_rest_screensaver_use: 'Afișează screensaver la inactivitate',

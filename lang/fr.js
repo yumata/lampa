@@ -107,6 +107,8 @@ export default {
     settings_rest_tmdb_lang: 'Langue des données TMDB',
     settings_rest_tmdb_prox: 'Proxy TMDB',
     settings_rest_tmdb_prox_auto: 'Activer le proxy automatiquement',
+    settings_rest_tmdb_only_released: 'Afficher uniquement les sorties',
+    settings_rest_tmdb_only_released_descr: 'Masquer les films encore uniquement en salles et les séries avant leur première',
     settings_rest_tmdb_posters: 'Résolution des affiches TMDB',
     settings_rest_screensaver: 'Économiseur d\'écran',
     settings_rest_screensaver_use: 'Afficher l\'écran de veille en cas d\'inactivité',

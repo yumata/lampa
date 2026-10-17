@@ -97,6 +97,8 @@ export default {
     settings_rest_tmdb_lang: 'איזו שפה להציג נתונים מ- TMDB',
     settings_rest_tmdb_prox: 'פרוקסי TMDB',
     settings_rest_tmdb_prox_auto: 'אפשר פרוקסי באופן אוטומטי',
+    settings_rest_tmdb_only_released: 'הצג רק מהדורות שיצאו',
+    settings_rest_tmdb_only_released_descr: 'הסתר סרטים שעדיין מוקרנים רק בבתי קולנוע וסדרות לפני הבכורה',
     settings_rest_tmdb_posters: 'רזולוציה של כרזות TMDB',
     settings_rest_screensaver: 'שומר מסך',
     settings_rest_screensaver_use: 'הצג מסך התזה כאשר בטל',

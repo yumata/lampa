@@ -97,6 +97,8 @@ export default {
     settings_rest_tmdb_lang: '从 TMDB 显示数据的语言',
     settings_rest_tmdb_prox: '代理 TMDB',
     settings_rest_tmdb_prox_auto: '自动启用代理',
+    settings_rest_tmdb_only_released: '仅显示已发行',
+    settings_rest_tmdb_only_released_descr: '隐藏仍仅在影院上映的电影和尚未首播的剧集',
     settings_rest_tmdb_posters: 'TMDB 海报的分辨率',
     settings_rest_screensaver: '屏幕保护程序',
     settings_rest_screensaver_use: '空闲时启动屏保',
