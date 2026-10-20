@@ -1043,6 +1043,9 @@ export default {
     extensions_hpu_video: 'Відэа',
     extensions_hpu_control: 'Упраўленне',
     extensions_hpu_other: 'Рознае',
+    extensions_price_free: 'Бясплатна',
+    extensions_price_shareware: 'Умоўна бясплатна',
+    extensions_price_paid: 'Платна',
     extensions_hpu_: 'Астатняе',
 
     title_author: 'Аўтар',

@@ -1233,6 +1233,9 @@ export default {
     extensions_hpu_video: 'Vídeo',
     extensions_hpu_control: 'Control',
     extensions_hpu_other: 'Varios',
+    extensions_price_free: 'Gratis',
+    extensions_price_shareware: 'Freemium',
+    extensions_price_paid: 'De pago',
     extensions_hpu_: 'Otros',
 
     speedtest_connect: 'conexión',

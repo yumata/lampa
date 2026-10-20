@@ -1122,6 +1122,9 @@ export default {
     extensions_hpu_video: "Video",
     extensions_hpu_control: "Ovládání",
     extensions_hpu_other: "Různé",
+    extensions_price_free: 'Zdarma',
+    extensions_price_shareware: 'Částečně zdarma',
+    extensions_price_paid: 'Placené',
     extensions_hpu_: "Ostatní",
 
     speedtest_connect: "připojení",

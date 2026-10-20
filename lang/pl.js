@@ -1213,6 +1213,9 @@ export default {
     extensions_hpu_video:  'Wideo',
     extensions_hpu_control:  'Sterowanie',
     extensions_hpu_other:  'Różne',
+    extensions_price_free: 'Darmowe',
+    extensions_price_shareware: 'Częściowo darmowe',
+    extensions_price_paid: 'Płatne',
     extensions_hpu_:  'Pozostałe',
 
     speedtest_connect:  'łączenie',

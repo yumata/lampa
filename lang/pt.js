@@ -1025,6 +1025,9 @@ export default {
     extensions_hpu_video: 'Vídeo',
     extensions_hpu_control: 'Ao controle',
     extensions_hpu_other: 'Diversos',
+    extensions_price_free: 'Grátis',
+    extensions_price_shareware: 'Freemium',
+    extensions_price_paid: 'Pago',
     extensions_hpu_: 'Descansar',
 
     title_author: 'Autor',

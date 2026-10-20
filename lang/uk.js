@@ -992,6 +992,9 @@ export default {
     extensions_hpu_video: 'Відео',
     extensions_hpu_control: 'Управління',
     extensions_hpu_other: 'Різне',
+    extensions_price_free: 'Безкоштовно',
+    extensions_price_shareware: 'Умовно безкоштовно',
+    extensions_price_paid: 'Платно',
     extensions_hpu_: 'Решта',
 
     title_author: 'Автор',
