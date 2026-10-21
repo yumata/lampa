@@ -1029,6 +1029,7 @@ export default {
     extensions_price_free: 'Безплатно',
     extensions_price_shareware: 'Условно безплатно',
     extensions_price_paid: 'Платено',
+    full_add_source: 'Добави източник',
     extensions_hpu_: 'Други',
 
     title_author: 'Автор',

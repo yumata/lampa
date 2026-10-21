@@ -1125,6 +1125,7 @@ export default {
     extensions_price_free: 'Zdarma',
     extensions_price_shareware: 'Částečně zdarma',
     extensions_price_paid: 'Placené',
+    full_add_source: 'Přidat zdroj',
     extensions_hpu_: "Ostatní",
 
     speedtest_connect: "připojení",

@@ -1028,6 +1028,7 @@ export default {
     extensions_price_free: 'Free',
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Paid',
+    full_add_source: 'Add source',
     extensions_hpu_: 'Other',
 
     title_author: 'Author',

@@ -1216,6 +1216,7 @@ export default {
     extensions_price_free: 'Darmowe',
     extensions_price_shareware: 'Częściowo darmowe',
     extensions_price_paid: 'Płatne',
+    full_add_source: 'Dodaj źródło',
     extensions_hpu_:  'Pozostałe',
 
     speedtest_connect:  'łączenie',

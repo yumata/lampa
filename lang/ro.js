@@ -1028,6 +1028,7 @@ export default {
     extensions_price_free: 'Gratuit',
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Plătit',
+    full_add_source: 'Adaugă sursă',
     extensions_hpu_: 'Altele',
 
     title_author: 'Autor',

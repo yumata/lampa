@@ -965,6 +965,7 @@ export default {
     extensions_price_free: 'חינם',
     extensions_price_shareware: 'חינם חלקית',
     extensions_price_paid: 'בתשלום',
+    full_add_source: 'הוסף מקור',
     extensions_hpu_: 'אחר',
     title_author: 'מחבר',
     title_buffer: 'מאגר',

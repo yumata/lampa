@@ -1046,6 +1046,7 @@ export default {
     extensions_price_free: 'Бясплатна',
     extensions_price_shareware: 'Умоўна бясплатна',
     extensions_price_paid: 'Платна',
+    full_add_source: 'Дадаць крыніцу',
     extensions_hpu_: 'Астатняе',
 
     title_author: 'Аўтар',

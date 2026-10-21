@@ -1028,6 +1028,7 @@ export default {
     extensions_price_free: 'Grátis',
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Pago',
+    full_add_source: 'Adicionar fonte',
     extensions_hpu_: 'Descansar',
 
     title_author: 'Autor',
