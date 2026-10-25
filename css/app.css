@@ -1489,6 +1489,25 @@ body.mouse--controll:not(.true--mobile) .head__backward {
   display: block;
 }
 
+.head__action.watch-history__filter {
+  width: auto;
+  padding: 0 1.2em;
+  -webkit-border-radius: 2em;
+     -moz-border-radius: 2em;
+          border-radius: 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
 .processing {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3411,6 +3430,42 @@ body.settings--open .settings__layer {
      -moz-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+.card__history {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.4em 0.7em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-border-radius: 1em;
+     -moz-border-radius: 1em;
+          border-radius: 1em;
+  margin-bottom: 0.6em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.4;
+}
+.card__history-date {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card__history-episode {
+  margin-left: auto;
+  padding-left: 0.8em;
+  font-weight: 700;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.card--history-removed {
+  opacity: 0.3;
 }
 .card__subscribe {
   background: rgba(0, 0, 0, 0.3);
@@ -9730,6 +9785,19 @@ body.platform--apple_tv #orsay-keyboard.focus {
 }
 .account-modal-split__keyboard .hg-button {
   padding: 0.5em 0;
+}
+.account-modal-split__device-code {
+  font-size: 3.6em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.4em;
+  white-space: nowrap;
+}
+.account-modal-split__status {
+  font-size: 1.1em;
+  opacity: 0.6;
+  margin-bottom: 2.5em;
 }
 .account-modal-split .account-modal__site {
   color: #D8C39A;
