@@ -414,6 +414,8 @@ export default {
     title_wath: 'Позже',
     title_look: 'Смотрю',
     title_scheduled: 'Запланировано',
+    episode_mark_watched: 'Отметить как просмотренную',
+    episode_mark_unwatched: 'Отметить как непросмотренную',
     title_viewed: 'Просмотрено',
     title_thrown: 'Брошено',
     title_continued: 'Продолжение следует',
@@ -523,6 +525,8 @@ export default {
     reactions_bore: 'Скука',
     reactions_shit: 'Плохо',
     reactions_ready: 'Вы уже оставили реакцию',
+    reactions_ask_movie: 'Как вам фильм, который вы посмотрели?',
+    reactions_ask_tv: 'Как вам сериал, который вы посмотрели?',
 
     subscribe_success: 'Вы успешно подписались',
     subscribe_error: 'Возникла ошибка при подписке, попробуйте позже',

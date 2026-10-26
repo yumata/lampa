@@ -402,6 +402,8 @@ export default {
     title_wath: "Později",
     title_look: "Sleduji",
     title_scheduled: "Naplánováno",
+    episode_mark_watched: "Označit jako zhlédnuté",
+    episode_mark_unwatched: "Označit jako nezhlédnuté",
     title_viewed: "Zhlédnuto",
     title_thrown: "Odloženo",
     title_continued: "Pokračování",
@@ -482,6 +484,8 @@ export default {
     reactions_bore: "Nuda",
     reactions_shit: "Špatné",
     reactions_ready: "Již jste zanechali reakci",
+    reactions_ask_movie: "Jak se vám líbil film, který jste viděli?",
+    reactions_ask_tv: "Jak se vám líbil seriál, který jste viděli?",
 
     subscribe_success: "Úspěšně jste se přihlásili",
     subscribe_error: "Při přihlášení došlo k chybě, zkuste to později",

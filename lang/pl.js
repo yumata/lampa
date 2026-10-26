@@ -409,6 +409,8 @@ export default {
     title_wath:  'Później',
     title_look:  'Oglądam',
     title_scheduled:  'Zaplanowane',
+    episode_mark_watched: "Oznacz jako obejrzane",
+    episode_mark_unwatched: "Oznacz jako nieobejrzane",
     title_viewed:  'Obejrzane',
     title_thrown:  'Porzucone',
     title_continued:  'Ciąg dalszy nastąpi',
@@ -504,6 +506,8 @@ export default {
     reactions_bore:  'Nuda',
     reactions_shit:  'Słabe',
     reactions_ready:  'Już dodałeś reakcję',
+    reactions_ask_movie: 'Jak podobał ci się obejrzany film?',
+    reactions_ask_tv: 'Jak podobał ci się obejrzany serial?',
 
     subscribe_success:  'Subskrypcja zakończona sukcesem',
     subscribe_error:  'Wystąpił błąd podczas subskrypcji, spróbuj później',
