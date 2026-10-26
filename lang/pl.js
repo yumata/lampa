@@ -946,6 +946,7 @@ export default {
     fav_remove_title:  'Usuń z historii',
     fav_remove_descr:  'Usuń wybraną kartę',
     fav_clear_title:  'Wyczyść historię',
+    fav_clear_confirm: 'Historia oglądania zostanie wyczyszczona. Wyczyścić historię oglądania?',
     fav_clear_descr:  'Usuń wszystkie karty z historii',
     fav_clear_label_title:  'Wyczyść oznaczenia',
     fav_clear_label_descr:  'Usuń oznaczenia obejrzenia',

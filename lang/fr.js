@@ -783,6 +783,7 @@ export default {
     fav_remove_title: 'Retirer de l\'historique',
     fav_remove_descr: 'Supprimer la fiche sélectionnée',
     fav_clear_title: 'Vider l\'historique',
+    fav_clear_confirm: 'L\'historique de visionnage sera effacé. Effacer l\'historique ?',
     fav_clear_descr: 'Supprimer toutes les fiches de l\'historique',
     fav_clear_label_title: 'Effacer les marques',
     fav_clear_label_descr: 'Effacer les indicateurs de visionnage',

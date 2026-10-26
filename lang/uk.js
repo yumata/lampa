@@ -751,6 +751,7 @@ export default {
     fav_remove_title: 'Видалити з історії',
     fav_remove_descr: 'Видалити виділену картку',
     fav_clear_title: 'Очистити історію',
+    fav_clear_confirm: 'Історію переглядів буде очищено. Очистити історію переглядів?',
     fav_clear_descr: 'Видалити всі картки з історії',
     fav_clear_label_title: 'Очистити мітки',
     fav_clear_label_descr: 'Очистити мітки про перегляд',

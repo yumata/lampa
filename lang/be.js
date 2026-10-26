@@ -787,6 +787,7 @@ export default {
     fav_remove_title: 'Выдаліць з гісторыі',
     fav_remove_descr: 'Выдаліць выдзеленую картку',
     fav_clear_title: 'Ачысціць гісторыю',
+    fav_clear_confirm: 'Гісторыя праглядаў будзе ачышчана. Ачысціць гісторыю праглядаў?',
     fav_clear_descr: 'Выдаліць усе карткі з гісторыі',
     fav_clear_label_title: 'Ачысціць пазнакі',
     fav_clear_label_descr: 'Ачысціць пазнакі аб праглядах',

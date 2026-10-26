@@ -743,6 +743,7 @@ export default {
     fav_remove_title: 'הסר מההיסטוריה',
     fav_remove_descr: 'מחק את הכרטיס הנבחר',
     fav_clear_title: 'נקה את ההיסטוריה',
+    fav_clear_confirm: 'היסטוריית הצפייה תימחק. למחוק את היסטוריית הצפייה?',
     fav_clear_descr: 'מחק את כל הקלפים מההיסטוריה',
     fav_clear_label_title: 'נקה תוויות',
     fav_clear_label_descr: 'נקה תגיות תצוגה',

@@ -896,6 +896,7 @@ export default {
     fav_remove_title: "Odstranit z historie",
     fav_remove_descr: "Odstranit vybranou kartu",
     fav_clear_title: "Vymazat historii",
+    fav_clear_confirm: 'Historie sledování bude vymazána. Vymazat historii sledování?',
     fav_clear_descr: "Odstranit všechny karty z historie",
     fav_clear_label_title: "Vymazat značky",
     fav_clear_label_descr: "Vymazat značky o sledování",

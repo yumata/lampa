@@ -748,6 +748,7 @@ export default {
     fav_remove_title: '从历史记录中删除',
     fav_remove_descr: '删除所选卡片',
     fav_clear_title: '清除历史记录',
+    fav_clear_confirm: '观看历史将被清除。要清除观看历史吗？',
     fav_clear_descr: '从历史记录中删除所有卡片',
     fav_clear_label_title: '清除标签',
     fav_clear_label_descr: '清除查看标签',

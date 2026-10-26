@@ -783,6 +783,7 @@ export default {
     fav_remove_title: 'Remove from history',
     fav_remove_descr: 'Delete selected card',
     fav_clear_title: 'Clear the history',
+    fav_clear_confirm: 'Your watch history will be cleared. Clear watch history?',
     fav_clear_descr: 'Delete all cards from history',
     fav_clear_label_title: 'Clear labels',
     fav_clear_label_descr: 'Clear View Tags',

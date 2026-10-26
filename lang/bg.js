@@ -783,6 +783,7 @@ export default {
     fav_remove_title: 'Премахни от историята',
     fav_remove_descr: 'Изтрий избраната карта',
     fav_clear_title: 'Изчистване на историята',
+    fav_clear_confirm: 'Историята на гледанията ще бъде изчистена. Да се изчисти ли историята?',
     fav_clear_descr: 'Изтриване на всички карти от историята',
     fav_clear_label_title: 'Изчисти отметките',
     fav_clear_label_descr: 'Изчисти отметките за прегледани',

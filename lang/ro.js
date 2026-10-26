@@ -783,6 +783,7 @@ export default {
     fav_remove_title: 'Elimină din istoric',
     fav_remove_descr: 'Șterge elementul selectat',
     fav_clear_title: 'Șterge istoricul',
+    fav_clear_confirm: 'Istoricul vizionărilor va fi șters. Ștergi istoricul vizionărilor?',
     fav_clear_descr: 'Șterge tot istoricul de vizionare',
     fav_clear_label_title: 'Șterge etichetele',
     fav_clear_label_descr: 'Șterge etichetele de vizionare',

@@ -782,6 +782,7 @@ export default {
     fav_remove_title: 'Remover do histórico',
     fav_remove_descr: 'Eliminar cartão selecionado',
     fav_clear_title: 'Limpar o histórico',
+    fav_clear_confirm: 'O histórico de visualização será apagado. Limpar o histórico?',
     fav_clear_descr: 'Eliminar todos os cartões do histórico',
     fav_clear_label_title: 'Limpar rótulos',
     fav_clear_label_descr: 'Limpar rótulos visualizados',

@@ -964,6 +964,7 @@ export default {
     fav_remove_title: 'Eliminar del historial',
     fav_remove_descr: 'Eliminar la ficha seleccionada',
     fav_clear_title: 'Borrar el historial',
+    fav_clear_confirm: 'Se borrará el historial de visualización. ¿Borrar el historial?',
     fav_clear_descr: 'Eliminar todas las fichas del historial',
     fav_clear_label_title: 'Borrar marcas',
     fav_clear_label_descr: 'Borrar las marcas de visto',
