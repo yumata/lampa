@@ -14193,6 +14193,241 @@ body.mouse--controll .pincode__container {
   pointer-events: none;
 }
 
+.watch-history__season {
+  position: relative;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding: 0.7em 1.2em;
+  margin-right: 0.8em;
+  -webkit-border-radius: 0.8em;
+     -moz-border-radius: 0.8em;
+          border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.watch-history__season-title {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.watch-history__season-descr {
+  margin-top: 0.2em;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+.watch-history__season-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+.watch-history__season-bar > div {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.watch-history__season--done {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.watch-history__season--done .watch-history__season-descr {
+  opacity: 0.7;
+}
+.watch-history__season--partial {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.watch-history__season--ahead {
+  opacity: 0.45;
+}
+
+.watch-history-days__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.5em 2em 1.5em 2em;
+}
+.watch-history-days__poster {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 5em;
+  height: 7.5em;
+  -webkit-border-radius: 0.6em;
+     -moz-border-radius: 0.6em;
+          border-radius: 0.6em;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 1.2em;
+}
+.watch-history-days__poster > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.watch-history-days__title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  line-height: 1.4;
+  overflow: hidden;
+  -o-text-overflow: ".";
+  text-overflow: ".";
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.watch-history-days__text {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+.watch-history-days__bar {
+  margin: 0 2em 1.2em 2em;
+  height: 0.25em;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+  background: rgba(255, 255, 255, 0.2);
+}
+.watch-history-days__bar > div {
+  height: 100%;
+  -webkit-border-radius: 0.2em;
+     -moz-border-radius: 0.2em;
+          border-radius: 0.2em;
+  background: #fff;
+}
+.watch-history-days__seasons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 1em 0.4em 2em;
+}
+.watch-history-days__seasons .watch-history__season {
+  margin-bottom: 0.8em;
+}
+.watch-history-days__continue {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2em 1em 2em;
+  padding: 1em 1.2em;
+  -webkit-border-radius: 0.8em;
+     -moz-border-radius: 0.8em;
+          border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.1);
+}
+.watch-history-days__continue:before {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 0.45em 0 0.45em 0.7em;
+  border-color: transparent transparent transparent currentColor;
+  margin-right: 0.9em;
+}
+.watch-history-days__continue.focus {
+  background: #fff;
+  color: #000;
+}
+.watch-history-days__continue-title {
+  font-size: 1.2em;
+}
+.watch-history-days__continue-value {
+  margin-left: auto;
+  padding-left: 1em;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.watch-history-days__day {
+  margin: 0 2em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 0.6em;
+     -moz-border-radius: 0.6em;
+          border-radius: 0.6em;
+  margin-bottom: 1em;
+}
+.watch-history-days__day.focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+.watch-history-days__day-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+     -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 0.6em;
+}
+.watch-history-days__day-name {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+.watch-history-days__day-date {
+  color: rgba(255, 255, 255, 0.5);
+}
+.watch-history-days__day-count {
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+}
+.watch-history-days__line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4em 0;
+}
+.watch-history-days__time {
+  width: 4em;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+.watch-history-days__season {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.watch-history-days__episodes {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .timetable {
   padding: 0 1.5em;
 }
