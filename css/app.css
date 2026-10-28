@@ -14359,42 +14359,25 @@ body.mouse--controll .pincode__container {
   font-size: 1.1em;
 }
 .watch-history-days__day {
-  margin: 0 2em;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-border-radius: 0.6em;
-     -moz-border-radius: 0.6em;
-          border-radius: 0.6em;
-  margin-bottom: 1em;
-}
-.watch-history-days__day.focus {
-  background: rgba(255, 255, 255, 0.2);
-}
-.watch-history-days__day-head {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-     -moz-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin-bottom: 0.6em;
+  margin: 0 2em 1.6em 2em;
 }
 .watch-history-days__day-name {
   font-size: 1.3em;
-  font-weight: 600;
-  margin-right: 0.5em;
+  margin: 0 0 0.7em 0;
 }
-.watch-history-days__day-date {
-  color: rgba(255, 255, 255, 0.5);
+.watch-history-days__day-body {
+  padding: 0 1.4em;
+  -webkit-border-radius: 0.8em;
+     -moz-border-radius: 0.8em;
+          border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.12);
 }
-.watch-history-days__day-count {
-  margin-left: auto;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.9em;
+.watch-history-days__day.focus .watch-history-days__day-body {
+  background: white;
+  color: #000;
+}
+.watch-history-days__day.focus .watch-history-days__line, .watch-history-days__day.focus .watch-history-days__time {
+  border-color: rgba(0, 0, 0, 0.2);
 }
 .watch-history-days__line {
   display: -webkit-box;
@@ -14407,14 +14390,19 @@ body.mouse--controll .pincode__container {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.4em 0;
+  padding: 1.1em 0;
+}
+.watch-history-days__line + .watch-history-days__line {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .watch-history-days__time {
-  width: 4em;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.5);
+  padding-right: 1em;
+  margin-right: 1em;
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
+  line-height: 1.8;
 }
 .watch-history-days__season {
   -webkit-box-flex: 1;
@@ -14422,9 +14410,10 @@ body.mouse--controll .pincode__container {
      -moz-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-weight: 700;
 }
 .watch-history-days__episodes {
-  font-weight: 700;
+  padding-left: 1em;
   white-space: nowrap;
 }
 
