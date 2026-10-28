@@ -1291,6 +1291,7 @@ export default {
     account_device_code_qr: 'Или сканирайте QR кода — кодът ще се попълни автоматично',
     account_device_code_wait: 'Чакаме потвърждение на сайта…',
     account_device_code_denied: 'Входът е отказан на сайта, показан е нов код',
+    account_device_code_open: 'Отвори сайта',
     account_device_code_manual: 'Въведете код от сайта',
     account_none_title: 'Все още нямате акаунт?',
     account_none_include_1: 'Отметките и историята на гледане се съхраняват в облака',

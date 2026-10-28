@@ -1300,6 +1300,7 @@ export default {
     account_device_code_qr: 'Nebo naskenujte QR kód — kód se vyplní sám',
     account_device_code_wait: 'Čekáme na potvrzení na webu…',
     account_device_code_denied: 'Přihlášení bylo na webu zamítnuto, zobrazen nový kód',
+    account_device_code_open: 'Otevřít web',
     account_device_code_manual: 'Zadat kód z webu',
     account_none_title: 'Ještě nemáte účet?',
     account_none_include_1: 'Záložky a historie sledování se ukládají do cloudu',

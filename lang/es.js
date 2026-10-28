@@ -1172,6 +1172,7 @@ export default {
     account_device_code_qr: 'O escanea el código QR: el código se rellenará solo',
     account_device_code_wait: 'Esperando la confirmación en el sitio…',
     account_device_code_denied: 'El inicio de sesión fue rechazado en el sitio, se muestra un código nuevo',
+    account_device_code_open: 'Abrir sitio',
     account_device_code_manual: 'Introducir código del sitio',
     account_none_title: '¿Aún no tienes cuenta?',
     account_none_include_1: 'Favoritos e historial guardados en la nube',

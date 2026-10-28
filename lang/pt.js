@@ -1275,6 +1275,7 @@ export default {
     account_device_code_qr: 'Ou leia o QR code — o código será preenchido automaticamente',
     account_device_code_wait: 'Aguardando confirmação no site…',
     account_device_code_denied: 'O login foi recusado no site, um novo código é exibido',
+    account_device_code_open: 'Abrir site',
     account_device_code_manual: 'Digitar código do site',
     account_none_title: 'Ainda não tem uma conta?',
     account_none_include_1: 'Favoritos e histórico de exibição são salvos na nuvem',

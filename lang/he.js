@@ -1184,6 +1184,7 @@ export default {
     account_device_code_qr: 'או סרקו את קוד ה-QR — הקוד יוזן אוטומטית',
     account_device_code_wait: 'ממתינים לאישור באתר…',
     account_device_code_denied: 'הכניסה נדחתה באתר, מוצג קוד חדש',
+    account_device_code_open: 'פתיחת האתר',
     account_device_code_manual: 'הזנת קוד מהאתר',
     account_none_title: 'עדיין אין לכם חשבון?',
     account_none_include_1: 'סימניות והיסטוריית צפייה נשמרות בענן',

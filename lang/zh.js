@@ -1240,6 +1240,7 @@ export default {
     account_device_code_qr: '或扫描二维码 — 代码会自动填写',
     account_device_code_wait: '正在等待网站确认…',
     account_device_code_denied: '网站上的登录被拒绝，已显示新代码',
+    account_device_code_open: '打开网站',
     account_device_code_manual: '输入网站上的代码',
     account_none_title: '还没有账户？',
     account_none_include_1: '书签和观看历史保存在云端',

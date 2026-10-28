@@ -1151,6 +1151,7 @@ export default {
     account_device_code_qr: 'Albo zeskanuj kod QR — kod uzupełni się sam',
     account_device_code_wait: 'Czekamy na potwierdzenie na stronie…',
     account_device_code_denied: 'Logowanie zostało odrzucone na stronie, pokazano nowy kod',
+    account_device_code_open: 'Otwórz stronę',
     account_device_code_manual: 'Wpisz kod ze strony',
     account_none_title:  'Nie masz konta?',
     account_none_include_1:  'Zakładki w chmurze',

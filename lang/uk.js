@@ -1265,6 +1265,7 @@ export default {
     account_device_code_qr: 'Або відскануйте QR-код — код підставиться сам',
     account_device_code_wait: 'Чекаємо на підтвердження на сайті…',
     account_device_code_denied: 'Вхід відхилено на сайті, показано новий код',
+    account_device_code_open: 'Відкрити сайт',
     account_device_code_manual: 'Ввести код із сайту',
     account_none_title: 'Ще не маєте облікового запису?',
     account_none_include_1: 'Закладки та історія переглядів зберігаються у хмарі',

@@ -1289,6 +1289,7 @@ export default {
     account_device_code_qr: 'Sau scanați codul QR — codul se completează singur',
     account_device_code_wait: 'Așteptăm confirmarea pe site…',
     account_device_code_denied: 'Autentificarea a fost refuzată pe site, este afișat un cod nou',
+    account_device_code_open: 'Deschideți site-ul',
     account_device_code_manual: 'Introduceți codul de pe site',
     account_none_title: 'Nu ai cont încă?',
     account_none_include_1: 'Marcajele și istoricul vizualizărilor sunt salvate în cloud',

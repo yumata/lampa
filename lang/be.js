@@ -1305,6 +1305,7 @@ export default {
     account_device_code_qr: 'Або адсканіруйце QR-код — код падставіцца сам',
     account_device_code_wait: 'Чакаем пацверджання на сайце…',
     account_device_code_denied: 'Уваход адхілены на сайце, паказаны новы код',
+    account_device_code_open: 'Адкрыць сайт',
     account_device_code_manual: 'Увесці код з сайта',
     account_none_title: 'Яшчэ няма ўліковага запісу?',
     account_none_include_1: 'Закладкі і гісторыя праглядаў захоўваюцца ў воблаку',

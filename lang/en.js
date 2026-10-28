@@ -1290,6 +1290,7 @@ export default {
     account_device_code_qr: 'Or scan the QR code — the code will be filled in automatically',
     account_device_code_wait: 'Waiting for confirmation on the website…',
     account_device_code_denied: 'Sign-in was declined on the website, a new code is shown',
+    account_device_code_open: 'Open website',
     account_device_code_manual: 'Enter code from website',
     account_none_title: 'Don’t have an account yet?',
     account_none_include_1: 'Bookmarks and watch history are stored in the cloud',

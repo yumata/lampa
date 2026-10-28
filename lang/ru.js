@@ -1173,6 +1173,7 @@ export default {
     account_device_code_qr: 'Или отсканируйте QR-код — код подставится сам',
     account_device_code_wait: 'Ждём подтверждения на сайте…',
     account_device_code_denied: 'Вход отклонён на сайте, показан новый код',
+    account_device_code_open: 'Открыть сайт',
     account_device_code_manual: 'Ввести код с сайта',
     account_none_title: 'Еще нет аккаунта?',
     account_none_include_1: 'Закладки и история просмотров сохраняются в облаке',
