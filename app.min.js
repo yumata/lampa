@@ -3365,7 +3365,7 @@
 
   var html$1H = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1G = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>c95b7a3b4d26094b4b7236bab3da7bb6</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-10-30 09:11</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1G = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>bdb9bb22cff20349fb5e00f5933972ca</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-11-05 13:44</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1F = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -4777,7 +4777,7 @@
       this.tik = function () {
         var date = new Date(),
             time = date.getTime(),
-            ofst = parseInt((localStorage.getItem('time_offset') == null ? 'n0' : localStorage.getItem('time_offset')).replace('n', ''));
+            ofst = parseInt(Storage.value('time_offset', 'n0').replace('n', ''));
         date = new Date(time + ofst * 1000 * 60 * 60);
         time = [date.getHours(), date.getMinutes(), date.getSeconds(), date.getFullYear()];
 
@@ -4895,7 +4895,7 @@
   }
 
   function fixProtocolLink(u) {
-    return rewriteIfHTTPS((localStorage.getItem('protocol') || 'https') + '://' + u.replace(/^(http:\/\/|https:\/\/)/, ''));
+    return rewriteIfHTTPS(Storage.value('protocol', 'https') + '://' + u.replace(/^(http:\/\/|https:\/\/)/, ''));
   }
 
   function fixMirrorLink(u) {
@@ -12778,7 +12778,7 @@
 
             console.log('Account', 'timeline dump loaded, items:', Object.keys(data.timelines).length, 'profile id:', permit.account.profile.id); // Если нет файла в localStorage, то создаем его из кеша
 
-            if (window.localStorage.getItem(name) === null) {
+            if (!Storage.value(name)) {
               Storage.set(name, JSON.stringify(Storage.cache('file_view', 10000, {})));
             }
 
@@ -13171,6 +13171,7 @@
       }
       /**
        * Очистка всех таблиц
+       * @param {string[]} exclude - Таблицы, которые не нужно очищать
        * @returns {Promise<void>}
        */
 
@@ -13179,6 +13180,7 @@
       value: function clearAll() {
         var _this9 = this;
 
+        var exclude = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
         return new Promise(function (resolve, reject) {
           if (!_this9.db) {
             return _this9.log('Database not open'), reject('Database not open');
@@ -13186,7 +13188,9 @@
 
           var objectStoreNames = _this9.db.objectStoreNames;
           var tableNames = Array.from(objectStoreNames);
-          tableNames.forEach(function (n) {
+          tableNames.filter(function (n) {
+            return exclude.indexOf(n) == -1;
+          }).forEach(function (n) {
             _this9.clearTable(n);
           });
           resolve();
@@ -13660,7 +13664,7 @@
     var file;
 
     try {
-      file = new File([localStorage.getItem('favorite') || '{}'], "bookmarks.json", {
+      file = new File([Storage.value('favorite', '{}')], "bookmarks.json", {
         type: "text/plain"
       });
     } catch (e) {
@@ -13669,7 +13673,7 @@
 
     if (!file) {
       try {
-        file = new Blob([localStorage.getItem('favorite') || '{}'], {
+        file = new Blob([Storage.value('favorite', '{}')], {
           type: 'text/plain'
         });
         file.lastModifiedDate = new Date();
@@ -13922,22 +13926,18 @@
         callback && callback(data);
 
         if (data.data) {
-          var imp = 0;
-          var ers = 0;
-
-          for (var i in data.data) {
-            try {
-              localStorage.setItem(i, data.data[i]);
-              imp++;
-            } catch (e) {
-              ers++;
-            }
-          }
-
-          Noty.show(Lang.translate('account_import_secuses') + ' - ' + Lang.translate('account_imported') + ' (' + imp + '/' + ers + ') - ' + Lang.translate('account_reload_after'));
-          setTimeout(function () {
-            window.location.reload();
-          }, 5000);
+          return Promise.all(Object.keys(data.data).map(function (i) {
+            return Storage.restore(i, data.data[i]);
+          })).then(function (results) {
+            var imp = results.filter(function (r) {
+              return r;
+            }).length;
+            var ers = results.length - imp;
+            Noty.show(Lang.translate('account_import_secuses') + ' - ' + Lang.translate('account_imported') + ' (' + imp + '/' + ers + ') - ' + Lang.translate('account_reload_after'));
+            setTimeout(function () {
+              window.location.reload();
+            }, 5000);
+          });
         } else Noty.show(Lang.translate('nodata'));
       })["catch"](function () {
         Noty.show(Lang.translate('account_import_fail'));
@@ -13948,9 +13948,14 @@
   function publish(callback) {
     if (!permit.access) return console.warn('Backup', 'no access'), callback && callback();
     confirm$1('', function () {
-      var file; // Удаляем из бэкапа app.js
+      var file;
+      var data = {}; // В бэкап идут и значения, которые не влезли в localStorage
 
-      var serialized = JSON.stringify(localStorage, function (key, value) {
+      Storage.keys().forEach(function (key) {
+        data[key] = Storage.value(key);
+      }); // Удаляем из бэкапа app.js
+
+      var serialized = JSON.stringify(data, function (key, value) {
         return key === 'app.js' ? undefined : value;
       });
 
@@ -19018,7 +19023,7 @@
       };
 
       var last = data.last && data.last.season > 0 ? data.last : null;
-      var part = this.data.original_name ? last ? 'S' + pad(last.season) + 'E' + pad(last.episode) : '' : data.views > 1 ? '×' + data.views : '';
+      var part = this.data.original_name ? last ? 'S' + pad(last.season) + ' E' + pad(last.episode) : '' : data.views > 1 ? '×' + data.views : '';
       var line = Template.elem('div', {
         "class": 'card__history',
         children: [Template.elem('div', {
@@ -19668,7 +19673,7 @@
       type: 'end'
     });
     Lampa.Listener.follow('app', function (e) {
-      if (e.type == 'ready') ready();
+      if (e.type == 'ready') ready$1();
     });
   }
   /**
@@ -19728,7 +19733,7 @@
    */
 
 
-  function ready() {
+  function ready$1() {
     html$k.find('.selector').data('binded_events', true).on('hover:enter', function (e) {
       var action = $(e.target).data('action');
       Lampa.Listener.send('menu', {
@@ -19971,7 +19976,7 @@
   var Menu = {
     init: Utils$1.onceInit(init$14),
     render: render$i,
-    ready: ready,
+    ready: ready$1,
     toggle: toggle$9,
     opened: opened$2,
     addElement: addElement$1,
@@ -25126,7 +25131,7 @@
       });
       scale();
       if (need_speed) speed(need_speed);
-      loaded$2();
+      loaded$3();
     });
 
     var pc = Boolean(Platform.desktop() || Platform.is('browser') || Platform.is('apple') && !Utils$1.isPWA()); // для страховки
@@ -25280,7 +25285,7 @@
    */
 
 
-  function loaded$2() {
+  function loaded$3() {
     var tracks = [];
     var subs = _video.customSubs || _video.textTracks || [];
     console.log('Player', 'video full loaded');
@@ -36536,7 +36541,7 @@
   var theme_elem = $('head meta[name="theme-color"]');
   var view = 'one';
   var src = '';
-  var loaded$1 = {};
+  var loaded$2 = {};
   var bokeh = {
     c: [],
     h: [],
@@ -36757,7 +36762,7 @@
     background.fade.canvas.width(window.screen_width);
     background.fade.canvas.height(window.screen_height);
     html$b[0].toggleClass('hide', !Storage.field('background'));
-    if (loaded$1[src]) draw$1(loaded$1[src], background[view]);
+    if (loaded$2[src]) draw$1(loaded$2[src], background[view]);
   }
   /**
    * Максимум картинок в памяти
@@ -36765,11 +36770,11 @@
 
 
   function limit$1() {
-    var a = Arrays.getKeys(loaded$1);
+    var a = Arrays.getKeys(loaded$2);
 
     if (a.length > 30) {
       var u = a.slice(0, 1);
-      delete loaded$1[u];
+      delete loaded$2[u];
     }
   }
   /**
@@ -36778,8 +36783,8 @@
 
 
   function load$1() {
-    if (loaded$1[src]) {
-      draw$1(loaded$1[src], bg());
+    if (loaded$2[src]) {
+      draw$1(loaded$2[src], bg());
     } else if (src) {
       limit$1();
       var cache_src = src;
@@ -36794,11 +36799,11 @@
           colors = [[200, 200, 200], [100, 100, 100], [10, 10, 10]];
         }
 
-        loaded$1[cache_src] = {
+        loaded$2[cache_src] = {
           img: img,
           palette: Color.palette(colors)
         };
-        draw$1(loaded$1[cache_src], bg());
+        draw$1(loaded$2[cache_src], bg());
       };
 
       img.onerror = function () {
@@ -42251,7 +42256,7 @@
 
     if (!/[0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}/.test(encode)) {
       encode = encode.replace(/\{storage_(\w+|\d+|_|-)\}/g, function (match, key) {
-        return encodeURIComponent(Base64.encode(localStorage.getItem(key) || ''));
+        return encodeURIComponent(Base64.encode(Storage.value(key)));
       });
       if (Account.Permit.access) encode = Utils$1.addUrlComponent(encode, 'email=' + encodeURIComponent(Base64.encode(Account.Permit.account.email)));
       encode = Utils$1.addUrlComponent(encode, 'logged=' + encodeURIComponent(Account.Permit.access ? 'true' : 'false'));
@@ -54694,7 +54699,7 @@
           elem: elem,
           name: name,
           nomic: true,
-          value: elem.data('string') ? window.localStorage.getItem(name) || defaults[name] : Storage.get(name, defaults[name]) + ''
+          value: elem.data('string') ? Storage.value(name, defaults[name]) : Storage.get(name, defaults[name]) + ''
         }, function (new_value) {
           Storage.set(name, new_value);
           update$3(elem, elems, elems_html);
@@ -54801,7 +54806,7 @@
 
   function update$3(elem, elems, elems_html) {
     var name = elem.data('name');
-    var key = elem.data('string') ? window.localStorage.getItem(name) || defaults[name] : Storage.get(name, defaults[name] + '');
+    var key = elem.data('string') ? Storage.value(name, defaults[name]) : Storage.get(name, defaults[name] + '');
     var val = typeof values[name] == 'string' ? key : values[name][key] || values[name][defaults[name]];
     var plr = elem.attr('placeholder');
     if (!val && plr) val = plr;
@@ -55234,7 +55239,7 @@
         var to = Storage.cache(this.field, this.limit, Arrays.clone(this.empty));
         this.filter(from, to);
         Storage.set(this.field, to, nolisten);
-        this.data = this.restrict(Arrays.decodeJson(localStorage.getItem(this.field), Arrays.clone(this.empty)));
+        this.data = this.restrict(Arrays.clone(to));
         Lampa.Listener.send('worker_storage', {
           type: 'insert',
           name: this.field,
@@ -55570,6 +55575,8 @@
   var readed = {};
   var workers = {};
   var reserve = {};
+  var early = {};
+  var loaded$1 = false;
 
   function init$r() {
     sync('online_view', 'array_string');
@@ -55596,19 +55603,86 @@
 
 
   function task(next) {
+    // Замер свободного места мог прерваться и оставить ключ в localStorage
+    window.localStorage.removeItem('testsize');
     Cache.getData('storage').then(function (result) {
       if (result) {
         console.log('Storage', 'load cache:', result.length);
         result.forEach(function (data) {
-          reserve[data.key] = data.value;
+          // Значение в localStorage новее, значит запись в резерве устарела
+          if (window.localStorage.getItem(data.key) === null) reserve[data.key] = data.value;else removeReserve(data.key);
         });
       }
 
+      ready();
       next();
     })["catch"](function (e) {
       console.log('Storage', 'cache error:', e.message, e.stack, e);
+      ready();
       next();
     });
+  }
+  /**
+   * Резерв загружен: настройки, прочитанные раньше него, получили значение по умолчанию, сообщаем о настоящем
+   */
+
+
+  function ready() {
+    var names = Object.keys(early);
+    loaded$1 = true;
+    early = {};
+    names.forEach(function (name) {
+      if (reserve.hasOwnProperty(name) && typeof readed[name] == 'undefined') {
+        listener.send('change', {
+          name: name,
+          value: get$1(name)
+        });
+      }
+    });
+  }
+  /**
+   * Удалить значение из резерва
+   * @param {string} name название
+   */
+
+
+  function removeReserve(name) {
+    delete reserve[name];
+    Cache.deleteData('storage', name)["catch"](function (e) {
+      console.log('Storage', 'Cache error:', e.message, e.stack, e);
+    });
+  }
+  /**
+   * Записать значение в резерв
+   * @param {string} name название
+   * @param {any} write значение для записи
+   * @returns {Promise<boolean>} удалось ли записать
+   */
+
+
+  function writeReserve(name, write) {
+    reserve[name] = write;
+    return Cache.rewriteData('storage', name, {
+      key: name,
+      value: write
+    }).then(function () {
+      // Старое значение удаляем только после записи, если его не успели обновить
+      if (reserve[name] === write) window.localStorage.removeItem(name);
+      return true;
+    })["catch"](function (e) {
+      console.log('Storage', 'Cache error:', e.message, e.stack, e);
+      return false;
+    });
+  }
+  /**
+   * Ошибка переполнения, в старых браузерах у неё другое имя и код
+   * @param {Error} e ошибка
+   * @returns {boolean}
+   */
+
+
+  function isQuotaError(e) {
+    return ['QuotaExceededError', 'QUOTA_EXCEEDED_ERR', 'NS_ERROR_DOM_QUOTA_REACHED'].indexOf(e.name) >= 0 || e.code == 22 || e.code == 1014;
   }
   /**
    * Получить значение переменной из оператвной памяти localStorage
@@ -55629,12 +55703,14 @@
       item = window.localStorage.getItem(name);
       value = item;
 
-      if (item == null && reserve[name]) {
+      if (item == null && reserve.hasOwnProperty(name)) {
         value = reserve[name];
       }
     }
 
-    value = value || empty || '';
+    var missing = value === null || typeof value == 'undefined';
+    if (missing && !loaded$1) early[name] = true;
+    if (!value && value !== false && value !== 0) value = empty || '';
     if (value == 'true' || value == 'false') return value == 'true' ? true : false;
     if (readed[name] && (Arrays.isObject(value) || Arrays.isArray(value))) return readed[name];
     var convert = parseInt(value);
@@ -55645,13 +55721,14 @@
       try {
         value = JSON.parse(value);
       } catch (error) {}
-    }
+    } // Пока резерв не загружен, значение по умолчанию запоминать нельзя
 
-    readed[name] = value;
+
+    if (!missing || loaded$1) readed[name] = value;
     return value;
   }
   /**
-   * Получить значение переменной напрямую из localStorage
+   * Получить значение переменной напрямую из localStorage или резерва
    * @doc
    * @name value
    * @alias Storage
@@ -55662,7 +55739,9 @@
 
 
   function value(name, empty) {
-    return window.localStorage.getItem(name) || empty || '';
+    var item = window.localStorage.getItem(name);
+    if (item === null && reserve.hasOwnProperty(name)) item = reserve[name] + '';
+    return item || empty || '';
   }
   /**
    * Установить значение переменной в оператвную память и localStorage
@@ -55678,28 +55757,28 @@
 
   function set(name, value, nolisten, callerror) {
     readed[name] = value;
-    var write = '';
+    var write;
 
     try {
       write = Arrays.isObject(value) || Arrays.isArray(value) ? JSON.stringify(value) : value;
     } catch (e) {
-      console.log('Storage', name, 'JSON.stringify error:', e, value);
+      console.log('Storage', name, 'JSON.stringify error:', e, value); // Записывать нечего, прежнее значение остаётся на месте
+
+      if (callerror) callerror(e);
+      if (!nolisten) listener.send('change', {
+        name: name,
+        value: value
+      });
+      return;
     }
 
     try {
       window.localStorage.setItem(name, write);
+      if (reserve.hasOwnProperty(name)) removeReserve(name);
     } catch (e) {
-      if (e.name == 'QuotaExceededError') {
+      if (isQuotaError(e)) {
         console.log('Storage', 'QuotaExceededError:', name, value);
-        window.localStorage.removeItem(name);
-        Cache.rewriteData('storage', name, {
-          key: name,
-          value: write
-        }).then(function () {
-          reserve[name] = write;
-        })["catch"](function (e) {
-          console.log('Storage', 'Cache error:', e.message, e.stack, e);
-        });
+        writeReserve(name, write);
         if (callerror) callerror(e);
       }
     }
@@ -55763,10 +55842,11 @@
     var result = get$1(name, JSON.stringify(empty));
 
     if (Arrays.isObject(empty)) {
-      var keys = Arrays.getKeys(result);
+      var _keys = Arrays.getKeys(result);
 
-      if (keys.length > max) {
-        var remv = keys.slice(0, keys.length - max);
+      if (_keys.length > max) {
+        var remv = _keys.slice(0, _keys.length - max);
+
         remv.forEach(function (k) {
           delete result[k];
         });
@@ -55837,25 +55917,85 @@
     if (full) {
       Noty.show(Lang.translate('settings_clear_cache'));
       localStorage.clear();
+      reserve = {};
+      Cache.clearTable('storage')["catch"](function (e) {
+        console.log('Storage', 'Cache error:', e.message, e.stack, e);
+      });
     } else {
       Noty.show(Lang.translate('settings_clear_cache_only'));
       var need = ['online_view', 'ser_clarifys', 'torrents_view', 'account_bookmarks', 'recomends_list', 'file_view', 'timetable', 'search_history', 'recomends_scan'];
       var more = ['online_', 'file_view_', 'storage_'];
-
-      for (var key in localStorage) {
+      keys$1().forEach(function (key) {
         if (more.find(function (w) {
           return key.indexOf(w) >= 0;
         })) need.push(key);
-      }
-
+      });
       need.forEach(function (a) {
-        localStorage.setItem(a, '');
+        // Новый ключ может не влезть в заполненное хранилище
+        try {
+          localStorage.setItem(a, '');
+        } catch (e) {
+          localStorage.removeItem(a);
+        }
+
+        if (reserve.hasOwnProperty(a)) removeReserve(a);
       });
     }
 
     setTimeout(function () {
       window.location.reload();
     }, 3000);
+  }
+  /**
+   * Получить названия всех переменных из localStorage и резерва
+   * @doc
+   * @name keys
+   * @alias Storage
+   * @returns {string[]}
+   */
+
+
+  function keys$1() {
+    var local = Object.keys(window.localStorage);
+    return local.concat(Object.keys(reserve).filter(function (key) {
+      return local.indexOf(key) == -1;
+    }));
+  }
+  /**
+   * Восстановить значение из бэкапа, если не влезает в localStorage, то записать в резерв
+   * @doc
+   * @name restore
+   * @alias Storage
+   * @param {string} name название
+   * @param {any} value значение
+   * @returns {Promise<boolean>} удалось ли сохранить
+   */
+
+
+  function restore(name, value) {
+    var write = value + '';
+
+    try {
+      window.localStorage.setItem(name, write);
+      if (reserve.hasOwnProperty(name)) removeReserve(name);
+      return Promise.resolve(true);
+    } catch (e) {
+      return isQuotaError(e) ? writeReserve(name, write) : Promise.resolve(false);
+    }
+  }
+  /**
+   * Полностью удалить переменную из оперативной памяти, localStorage и резерва
+   * @doc
+   * @name erase
+   * @alias Storage
+   * @param {string} name название
+   */
+
+
+  function erase(name) {
+    delete readed[name];
+    window.localStorage.removeItem(name);
+    removeReserve(name);
   }
   /**
    * Получить размер данных в localStorage
@@ -55874,6 +56014,7 @@
 
         try {
           localStorage.setItem('testsize', new Array(i * 1024 + 1).join('a'));
+          localStorage.removeItem('testsize');
         } catch (e) {
           localStorage.removeItem('testsize');
           clearInterval(t);
@@ -55900,7 +56041,10 @@
     clear: clear$1,
     clean: clean,
     getsize: getsize,
-    task: task
+    task: task,
+    keys: keys$1,
+    restore: restore,
+    erase: erase
   };
 
   var meta = {
@@ -60579,8 +60723,13 @@
     }, {
       name: Lang.translate('settings_reset'),
       select: function select() {
-        localStorage.clear();
-        window.location.reload();
+        localStorage.clear(); // Меню открывается до запуска приложения, база ещё не открыта
+
+        Cache.openDatabase().then(function () {
+          return Cache.clearTable('storage');
+        })["catch"](function () {}).then(function () {
+          window.location.reload();
+        });
         destroy();
       }
     }];
@@ -61817,7 +61966,7 @@
     active = params;
     controll = Controller.enabled().name;
     html$1 = $('<div></div>');
-    var keys = Object.keys(localStorage);
+    var keys = Storage.keys();
     var hide = ['parental_', 'vast_', 'account_'];
 
     if (window.lampa_settings.hide_important_params) {
@@ -61832,7 +61981,7 @@
       return a.localeCompare(b);
     });
     keys.forEach(function (key) {
-      var value = Utils$1.shortText(localStorage.getItem(key), 50); // Не показывать метки времени
+      var value = Utils$1.shortText(Storage.value(key), 50); // Не показывать метки времени
 
       if (parseInt(value) > 0 && (value + '').length == 13) return;
       var line = $('<div class="console__line selector"><span style="color: hsl(105, 50%, 65%)">' + key + '</span> ' + value + '</div>');
@@ -61847,7 +61996,7 @@
             Controller.toggle('modal');
 
             if (selected.action == 'delete') {
-              localStorage.removeItem(key);
+              Storage.erase(key);
               line.remove();
             }
           },
@@ -61991,8 +62140,9 @@
           }],
           onSelect: function onSelect(a) {
             Controller.toggle('settings_component');
-            Storage.clear(a.full);
-            Cache.clearAll();
+            Storage.clear(a.full); // В таблице storage лежат настройки, которые не влезли в localStorage
+
+            Cache.clearAll(a.full ? [] : ['storage']);
           },
           onBack: function onBack() {
             Controller.toggle('settings_component');
@@ -63258,8 +63408,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-10-30 09:11');
-    console.log('App', 'hash', 'c95b7a3b4d26094b4b7236bab3da7bb6');
+    console.log('App', 'build date:', '2026-11-05 13:44');
+    console.log('App', 'hash', 'bdb9bb22cff20349fb5e00f5933972ca');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
