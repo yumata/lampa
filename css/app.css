@@ -8378,12 +8378,13 @@ body.selectbox--open .selectbox__layer {
   .friend-feed__target {
     width: 100%;
     max-width: none;
-    margin: 1em 0 0 4.8em;
+    margin: 1em 0 0 0;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
        -moz-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-left: 4.8em;
   }
   .friend-feed__about {
     text-align: left;
