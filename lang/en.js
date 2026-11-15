@@ -943,6 +943,11 @@ export default {
 
     account_sync_to_profile: 'All bookmarks will be moved to the profile',
     account_sync_secuses: 'All bookmarks have been successfully transferred',
+    settings_cub_sync_timeline_btn: 'Sync timecodes',
+    settings_cub_sync_timeline_btn_descr: 'Transfer timecodes to your CUB account',
+    account_sync_timeline_to_profile: 'Timecodes from this device will be transferred to the profile',
+    account_sync_timeline_secuses: 'Timecodes transferred',
+    account_sync_timeline_empty: 'There are no timecodes on this device',
     account_profiles: 'Profiles',
     account_profiles_empty: 'Failed to get list of profiles',
     account_authorized: 'Authorized',

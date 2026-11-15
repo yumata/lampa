@@ -941,6 +941,11 @@ export default {
 
     account_sync_to_profile: 'Toate marcajele vor fi mutate în profil',
     account_sync_secuses: 'Toate marcajele au fost transferate cu succes',
+    settings_cub_sync_timeline_btn: 'Sincronizează progresul',
+    settings_cub_sync_timeline_btn_descr: 'Transferă progresul vizionării în contul CUB',
+    account_sync_timeline_to_profile: 'Progresul vizionării de pe acest dispozitiv va fi transferat în profil',
+    account_sync_timeline_secuses: 'Progresul a fost transferat',
+    account_sync_timeline_empty: 'Nu există progres salvat pe acest dispozitiv',
     account_profiles: 'Profiluri',
     account_profiles_empty: 'Eșec la preluarea listei de profiluri',
     account_authorized: 'Autorizat',

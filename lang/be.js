@@ -914,6 +914,11 @@ export default {
 
     account_sync_to_profile: 'Усе закладкі будуць перанесеныя ў профіль',
     account_sync_secuses: 'Усе закладкі паспяхова перанесены',
+    settings_cub_sync_timeline_btn: 'Сінхранізаваць тайм-коды',
+    settings_cub_sync_timeline_btn_descr: 'Перанесці тайм-коды ў рахунак CUB',
+    account_sync_timeline_to_profile: 'Тайм-коды з гэтай прылады будуць перанесеныя ў профіль',
+    account_sync_timeline_secuses: 'Тайм-коды перанесены',
+    account_sync_timeline_empty: 'На гэтай прыладзе няма тайм-кодаў',
     account_profiles: 'Профілі',
     account_profiles_empty: 'Немагчыма атрымаць спіс профіляў',
     account_authorized: 'Аўтарызаваны',

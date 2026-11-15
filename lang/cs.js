@@ -1062,6 +1062,11 @@ export default {
 
     account_sync_to_profile: "Všechny záložky budou přeneseny do profilu",
     account_sync_secuses: "Všechny záložky úspěšně přeneseny",
+    settings_cub_sync_timeline_btn: 'Synchronizovat časové kódy',
+    settings_cub_sync_timeline_btn_descr: 'Přenést časové kódy do účtu CUB',
+    account_sync_timeline_to_profile: 'Časové kódy z tohoto zařízení budou přeneseny do profilu',
+    account_sync_timeline_secuses: 'Časové kódy přeneseny',
+    account_sync_timeline_empty: 'Na tomto zařízení nejsou žádné časové kódy',
     account_profiles: "Profily",
     account_profiles_empty: "Nepodařilo se získat seznam profilů",
     account_authorized: "Autorizováno",

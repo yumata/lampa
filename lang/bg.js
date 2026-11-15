@@ -941,6 +941,11 @@ export default {
 
     account_sync_to_profile: 'Всички отметки ще бъдат преместени в профила',
     account_sync_secuses: 'Всички отметки са прехвърлени успешно',
+    settings_cub_sync_timeline_btn: 'Синхронизиране на времевите кодове',
+    settings_cub_sync_timeline_btn_descr: 'Прехвърляне на времевите кодове в CUB акаунта',
+    account_sync_timeline_to_profile: 'Времевите кодове от това устройство ще бъдат прехвърлени в профила',
+    account_sync_timeline_secuses: 'Времевите кодове са прехвърлени',
+    account_sync_timeline_empty: 'На това устройство няма времеви кодове',
     account_profiles: 'Профили',
     account_profiles_empty: 'Неуспешно получаване на списък с профили',
     account_authorized: 'Оторизиран',

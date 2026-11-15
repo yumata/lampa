@@ -1152,6 +1152,11 @@ export default {
 
     account_sync_to_profile: 'Todos los favoritos se moverán al perfil',
     account_sync_secuses: 'Todos los favoritos se transfirieron correctamente',
+    settings_cub_sync_timeline_btn: 'Sincronizar marcas de tiempo',
+    settings_cub_sync_timeline_btn_descr: 'Transferir las marcas de tiempo a la cuenta CUB',
+    account_sync_timeline_to_profile: 'Las marcas de tiempo de este dispositivo se transferirán al perfil',
+    account_sync_timeline_secuses: 'Marcas de tiempo transferidas',
+    account_sync_timeline_empty: 'No hay marcas de tiempo en este dispositivo',
     account_profiles: 'Perfiles',
     account_profiles_empty: 'No se pudo obtener la lista de perfiles',
     account_authorized: 'Autorizado',

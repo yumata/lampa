@@ -940,6 +940,11 @@ export default {
 
 	account_sync_to_profile: 'Todos os favoritos serão movidos para o perfil',
     account_sync_secuses: 'Todos os favoritos foram transferidos com sucesso',
+    settings_cub_sync_timeline_btn: 'Sincronizar códigos de tempo',
+    settings_cub_sync_timeline_btn_descr: 'Transferir os códigos de tempo para a conta CUB',
+    account_sync_timeline_to_profile: 'Os códigos de tempo deste dispositivo serão transferidos para o perfil',
+    account_sync_timeline_secuses: 'Códigos de tempo transferidos',
+    account_sync_timeline_empty: 'Não há códigos de tempo neste dispositivo',
     account_profiles: 'Perfis',
     account_profiles_empty: 'Falha ao obter lista de perfis',
     account_authorized: 'Autorizado',

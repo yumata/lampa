@@ -941,6 +941,11 @@ export default {
 
     account_sync_to_profile: 'Les favoris seront déplacés vers le profil',
     account_sync_secuses: 'Synchronisation réussie',
+    settings_cub_sync_timeline_btn: 'Synchroniser les codes temporels',
+    settings_cub_sync_timeline_btn_descr: 'Transférer les codes temporels vers le compte CUB',
+    account_sync_timeline_to_profile: 'Les codes temporels de cet appareil seront transférés vers le profil',
+    account_sync_timeline_secuses: 'Codes temporels transférés',
+    account_sync_timeline_empty: 'Aucun code temporel sur cet appareil',
     account_profiles: 'Profils',
     account_profiles_empty: 'Échec de récupération des profils',
     account_authorized: 'Autorisé',

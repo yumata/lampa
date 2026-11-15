@@ -1155,6 +1155,11 @@ export default {
 
     account_sync_to_profile: 'Все закладки будут перенесены в профиль',
     account_sync_secuses: 'Все закладки успешно перенесены',
+    settings_cub_sync_timeline_btn: 'Синхронизировать тайм-коды',
+    settings_cub_sync_timeline_btn_descr: 'Перенести тайм-коды в аккаунт CUB',
+    account_sync_timeline_to_profile: 'Тайм-коды с этого устройства будут перенесены в профиль',
+    account_sync_timeline_secuses: 'Тайм-коды перенесены',
+    account_sync_timeline_empty: 'На этом устройстве нет тайм-кодов',
     account_profiles: 'Профили',
     account_profiles_empty: 'Не удалось получить список профилей',
     account_authorized: 'Авторизованы',

@@ -1131,6 +1131,11 @@ export default {
 
     account_sync_to_profile:  'Zakładki zostaną przeniesione do profilu',
     account_sync_secuses:  'Zakładki przeniesione',
+    settings_cub_sync_timeline_btn: 'Synchronizuj znaczniki czasu',
+    settings_cub_sync_timeline_btn_descr: 'Przenieś znaczniki czasu na konto CUB',
+    account_sync_timeline_to_profile: 'Znaczniki czasu z tego urządzenia zostaną przeniesione do profilu',
+    account_sync_timeline_secuses: 'Znaczniki czasu przeniesione',
+    account_sync_timeline_empty: 'Na tym urządzeniu nie ma znaczników czasu',
     account_profiles:  'Profile',
     account_profiles_empty:  'Nie udało się pobrać listy profili',
     account_authorized:  'Zalogowany',
