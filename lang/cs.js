@@ -1210,6 +1210,7 @@ export default {
     extensions_price_shareware: 'Částečně zdarma',
     extensions_price_paid: 'Placené',
     full_add_source: 'Přidat zdroj',
+    full_watch_kinopoisk: 'Sledovat na Kinopoisku',
     extensions_hpu_: "Ostatní",
 
     speedtest_connect: "připojení",

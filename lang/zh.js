@@ -1058,6 +1058,7 @@ export default {
     extensions_price_shareware: '部分免费',
     extensions_price_paid: '付费',
     full_add_source: '添加来源',
+    full_watch_kinopoisk: '在 Kinopoisk 观看',
     extensions_hpu_: '休息',
 
     title_author: '作者',

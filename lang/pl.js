@@ -1307,6 +1307,7 @@ export default {
     extensions_price_shareware: 'Częściowo darmowe',
     extensions_price_paid: 'Płatne',
     full_add_source: 'Dodaj źródło',
+    full_watch_kinopoisk: 'Oglądaj na Kinopoisku',
     extensions_hpu_:  'Pozostałe',
 
     speedtest_connect:  'łączenie',

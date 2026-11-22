@@ -1125,6 +1125,7 @@ export default {
     extensions_price_shareware: 'Умоўна бясплатна',
     extensions_price_paid: 'Платна',
     full_add_source: 'Дадаць крыніцу',
+    full_watch_kinopoisk: 'Глядзець на Кінапошуку',
     extensions_hpu_: 'Астатняе',
 
     title_author: 'Аўтар',

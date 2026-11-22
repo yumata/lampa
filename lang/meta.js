@@ -84,6 +84,13 @@ export default {
             lang_choice_title: "Witamy",
             lang_choice_subtitle: "Wybierz język",
         },
+        lt: {
+            code: "lt",
+            name: "Lietuvių",
+
+            lang_choice_title: "Sveiki",
+            lang_choice_subtitle: "Pasirinkite kalbą",
+        },
         es: {
             code: 'es',
             name: 'Español',

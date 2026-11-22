@@ -1044,6 +1044,7 @@ export default {
     extensions_price_shareware: 'חינם חלקית',
     extensions_price_paid: 'בתשלום',
     full_add_source: 'הוסף מקור',
+    full_watch_kinopoisk: 'צפה ב-Kinopoisk',
     extensions_hpu_: 'אחר',
     title_author: 'מחבר',
     title_buffer: 'מאגר',

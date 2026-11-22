@@ -1331,6 +1331,7 @@ export default {
     extensions_price_shareware: 'Условно бесплатно',
     extensions_price_paid: 'Платно',
     full_add_source: 'Добавить источник',
+    full_watch_kinopoisk: 'Смотреть на Кинопоиске',
     extensions_hpu_: 'Остальное',
 
     speedtest_connect: 'подключение',

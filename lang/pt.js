@@ -1107,6 +1107,7 @@ export default {
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Pago',
     full_add_source: 'Adicionar fonte',
+    full_watch_kinopoisk: 'Assistir no Kinopoisk',
     extensions_hpu_: 'Descansar',
 
     title_author: 'Autor',

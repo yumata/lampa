@@ -1107,6 +1107,7 @@ export default {
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Plătit',
     full_add_source: 'Adaugă sursă',
+    full_watch_kinopoisk: 'Vizionează pe Kinopoisk',
     extensions_hpu_: 'Altele',
 
     title_author: 'Autor',

@@ -3405,7 +3405,7 @@
 
   var html$1I = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1H = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>c5274ea098e8ebd6552c7ed2adfc7a18</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-11-19 15:55</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1H = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>2e830ce6aa3388357d52954e71a8526f</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-11-22 13:57</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1G = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -4128,7 +4128,7 @@
       orsay_loaded,
       orsay_call = Date.now();
 
-  function init$1w() {
+  function init$1x() {
     $('body').append($("<div style=\"position: absolute; left: -1000px; top: -1000px;\">  \n    <object id=\"pluginObjectNNavi\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-NNAVI\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n    <object id=\"pluginObjectTVMW\" border=\"0\" classid=\"clsid:SAMSUNG-INFOLINK-TVMW\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n    <object id=\"pluginObjectScreen\" border=0 classid=\"clsid:SAMSUNG-INFOLINK-SCREEN\" style=\"opacity: 0.0; background-color: #000; width: 1px; height: 1px;\"></object>\n</div>"));
     Utils$1.putScript(['$MANAGER_WIDGET/Common/API/Widget.js', '$MANAGER_WIDGET/Common/API/TVKeyValue.js', '$MANAGER_WIDGET/Common/API/Plugin.js', '$MANAGER_WIDGET/Common/webapi/1.0/webapis.js', '$MANAGER_WIDGET/Common/IME_XT9/ime.js', '$MANAGER_WIDGET/Common/IME_XT9/inputCommon/ime_input.js'], function () {
       try {
@@ -4220,7 +4220,7 @@
   }
 
   var Orsay = {
-    init: init$1w,
+    init: init$1x,
     isNewWidget: isNewWidget,
     getLoaderUrl: getLoaderUrl,
     setLoaderUrl: setLoaderUrl,
@@ -4285,7 +4285,7 @@
     return this;
   }
 
-  function init$1v() {
+  function init$1w() {
     if (Platform.is('android') || Platform.is('browser') || Platform.is('apple_tv') || Platform.desktop()) {
       add$h('hover', {
         url: object$2.github_lampa + 'sound/hover.ogg'
@@ -4313,7 +4313,7 @@
   }
 
   var Sound$1 = {
-    init: init$1v,
+    init: init$1w,
     add: add$h,
     play: play$6
   };
@@ -4533,7 +4533,7 @@
     if (!(keycode == 122 || keycode == 123)) e.preventDefault();
   }
 
-  function init$1u() {
+  function init$1v() {
     window.addEventListener("keydown", function (e) {
       lastdown = keyCode(e);
 
@@ -4578,7 +4578,7 @@
 
   var Keypad = {
     listener: listener$m,
-    init: init$1u,
+    init: init$1v,
     enable: enable$1,
     disable: disable
   };
@@ -4586,7 +4586,7 @@
   var timers$2 = [];
   var paused$1 = false;
 
-  function init$1t() {
+  function init$1u() {
     setInterval(function () {
       var now = Date.now();
       timers$2.forEach(function (t) {
@@ -4676,7 +4676,7 @@
   }
 
   var Timer = {
-    init: init$1t,
+    init: init$1u,
     add: add$g,
     remove: remove$7,
     update: update$i
@@ -5522,7 +5522,7 @@
         break;
 
       case '360p':
-        text = 'SD';
+        text = 'LD';
         break;
 
       default:
@@ -8120,7 +8120,7 @@
   var move_time = 0;
   var touch = false;
 
-  function init$1s() {
+  function init$1t() {
     Keypad.listener.follow('keydown', function () {
       keydown_time = Date.now();
       move_time = 0;
@@ -8155,7 +8155,7 @@
   }
 
   var DeviceInput = {
-    init: init$1s,
+    init: init$1t,
     canClick: canClick,
     noDubleClick: noDubleClick
   };
@@ -8174,7 +8174,7 @@
    * @returns {void}
    */
 
-  function init$1r() {
+  function init$1s() {
     html$p = Template.get('selectbox');
     scroll$5 = new Scroll({
       mask: true,
@@ -8465,7 +8465,7 @@
 
   var Select = {
     listener: listener$k,
-    init: init$1r,
+    init: init$1s,
     show: show$j,
     opened: opened$4,
     hide: hide$5,
@@ -8477,7 +8477,7 @@
   var elems$1;
   var html$o;
 
-  function init$1q() {
+  function init$1r() {
     html$o = Template.get('player_panel');
     elems$1 = {
       peding: $('.player-panel__peding', html$o),
@@ -8528,7 +8528,7 @@
   }
 
   var Html = {
-    init: init$1q,
+    init: init$1r,
     render: render$m,
     elem: elem
   };
@@ -8545,7 +8545,7 @@
     return name.replace(/^[0-9]+(\.)?([\t ]+)?/, '').replace(/\s#[0-9]+/, '');
   }
 
-  function init$1p() {
+  function init$1q() {
     /**
      * Выбор потока
      */
@@ -8873,7 +8873,7 @@
   }
 
   var Option = {
-    init: init$1p,
+    init: init$1q,
     setSubtitles: setSubtitles,
     setTracks: setTracks,
     setLevels: setLevels,
@@ -9315,7 +9315,7 @@
     parse: parse$d
   };
 
-  var network$c = new Request();
+  var network$d = new Request();
   var gst_check = new Request();
   var gst_work = false;
   /**
@@ -9351,7 +9351,7 @@
       action: 'list'
     });
     clear$e();
-    network$c.silent(url$6() + '/torrents', function (result) {
+    network$d.silent(url$6() + '/torrents', function (result) {
       if (result.length) success(result);else fail();
     }, fail, data);
   }
@@ -9367,7 +9367,7 @@
       action: 'get',
       hash: hash
     });
-    network$c.silent(url$6() + '/cache', success, fail, data);
+    network$d.silent(url$6() + '/cache', success, fail, data);
   }
 
   function viewed$2(hash, success, fail) {
@@ -9376,8 +9376,8 @@
       hash: hash
     });
     clear$e();
-    network$c.timeout(5000);
-    network$c.silent(url$6() + '/viewed', success, fail, data);
+    network$d.timeout(5000);
+    network$d.silent(url$6() + '/viewed', success, fail, data);
   }
 
   function viewedSet(hash, file_index, timecode, success, fail) {
@@ -9387,7 +9387,7 @@
       file_index: file_index,
       timecode: timecode
     });
-    network$c.silent(url$6() + '/viewed', success, fail, data);
+    network$d.silent(url$6() + '/viewed', success, fail, data);
   }
   /**
    * Добавляет торрент на сервер
@@ -9417,7 +9417,7 @@
     };
     var data = JSON.stringify(json);
     clear$e();
-    network$c.silent(url$6() + '/torrents', success, fail, data);
+    network$d.silent(url$6() + '/torrents', success, fail, data);
   }
   /**
    * Добавляет торрент на сервер с проверкой хэша
@@ -9447,8 +9447,8 @@
     };
     var data = JSON.stringify(json);
     clear$e();
-    network$c.silent(url$6() + '/torrents', success, function (a, c) {
-      fail(network$c.errorDecode(a, c));
+    network$d.silent(url$6() + '/torrents', success, function (a, c) {
+      fail(network$d.errorDecode(a, c));
     }, data);
   }
   /**
@@ -9465,8 +9465,8 @@
       hash: hash
     });
     clear$e();
-    network$c.timeout(2000);
-    network$c.silent(url$6() + '/torrents', function (json) {
+    network$d.timeout(2000);
+    network$d.silent(url$6() + '/torrents', function (json) {
       if (json.file_stats) {
         success(json);
       }
@@ -9481,8 +9481,8 @@
 
   function connected(success, fail) {
     clear$e();
-    network$c.timeout(5000);
-    network$c.silent(url$6() + '/settings', function (json) {
+    network$d.timeout(5000);
+    network$d.silent(url$6() + '/settings', function (json) {
       if (typeof json.CacheSize == 'undefined') {
         fail(Lang.translate('torrent_error_nomatrix'));
       } else {
@@ -9491,7 +9491,7 @@
 
       gstCheck();
     }, function (a, c) {
-      fail(network$c.errorDecode(a, c));
+      fail(network$d.errorDecode(a, c));
     }, JSON.stringify({
       action: 'get'
     }));
@@ -9563,7 +9563,7 @@
 
 
   function drop(hash, success, fail) {
-    if (gstWork()) return network$c.silent(url$6() + '/gst/remove?hash=' + encodeURIComponent(hash), success, fail, data, {
+    if (gstWork()) return network$d.silent(url$6() + '/gst/remove?hash=' + encodeURIComponent(hash), success, fail, data, {
       dataType: 'text'
     });
     var data = JSON.stringify({
@@ -9571,7 +9571,7 @@
       hash: hash
     });
     clear$e();
-    network$c.silent(url$6() + '/torrents', success, fail, data, {
+    network$d.silent(url$6() + '/torrents', success, fail, data, {
       dataType: 'text'
     });
   }
@@ -9589,7 +9589,7 @@
       hash: hash
     });
     clear$e();
-    network$c.silent(url$6() + '/torrents', success, fail, data, {
+    network$d.silent(url$6() + '/torrents', success, fail, data, {
       dataType: 'text'
     });
   }
@@ -9675,7 +9675,7 @@
 
 
   function clear$e() {
-    network$c.clear();
+    network$d.clear();
   }
   /**
    * Показывает модальное окно с информацией об ошибке соединения с сервером
@@ -10950,7 +10950,7 @@
   var menu$4;
   var timer$b;
 
-  function init$1o(list) {
+  function init$1p(list) {
     menu$4 = list;
     observe$3();
   }
@@ -11057,7 +11057,7 @@
   }
 
   var Editor = {
-    init: init$1o,
+    init: init$1p,
     start: start$f,
     update: update$h,
     observe: observe$3
@@ -11193,7 +11193,7 @@
    * @returns {void}
    */
 
-  function init$1n() {
+  function init$1o() {
     read$1();
   }
   /**
@@ -11545,7 +11545,7 @@
   }
 
   var Timeline$2 = {
-    init: Utils$1.onceInit(init$1n),
+    init: Utils$1.onceInit(init$1o),
     read: read$1,
     listener: listener$i,
     render: render$l,
@@ -11573,7 +11573,7 @@
     };
   });
 
-  function init$1m() {
+  function init$1n() {
     markers.forEach(function (marker) {
       markers_object[marker].element = Head.render()[0].querySelector('.head__markers .item--' + marker);
     });
@@ -11666,7 +11666,7 @@
   }
 
   var Markers = {
-    init: init$1m,
+    init: init$1n,
     bad: bad,
     error: error$3,
     pass: pass,
@@ -12374,7 +12374,7 @@
     Sound$1.play('bell');
   }
 
-  function init$1l() {
+  function init$1m() {
     bell = $("<div class=\"bell\">\n        <div class=\"bell__wrap\"></div>\n    </div>");
     $('body').append(bell);
   }
@@ -12385,11 +12385,11 @@
   }
 
   var Bell = {
-    init: init$1l,
+    init: init$1m,
     push: push$8
   };
 
-  function init$1k() {
+  function init$1l() {
     Settings.listener.follow('open', function (e) {
       if (e.name == 'account') e.body.find('.settings--account-device-add').on('hover:enter', function () {
         login(function () {
@@ -12687,7 +12687,7 @@
   }
 
   var Device = {
-    init: Utils$1.onceInit(init$1k),
+    init: Utils$1.onceInit(init$1l),
     login: login,
     manual: manual,
     opener: opener,
@@ -12791,7 +12791,7 @@
     premium: premium
   };
 
-  var network$b = new Request();
+  var network$c = new Request();
 
   function url$5() {
     return Utils$1.protocol() + object$2.cub_domain + '/api/';
@@ -12811,7 +12811,7 @@
           timeout: 8000
         });
         var u = params.url ? params.url : url$5() + path;
-        network$b.silent(u, resolve, reject, post, params);
+        network$c.silent(u, resolve, reject, post, params);
       } else {
         reject({
           decode_code: 403
@@ -13038,7 +13038,7 @@
     subscribes: subscribes,
     notices: notices,
     subscribeToTranslation: subscribeToTranslation,
-    clear: network$b.clear
+    clear: network$c.clear
   };
 
   /**
@@ -13132,7 +13132,7 @@
 
   var changelog_max = 500;
 
-  function init$1j() {
+  function init$1k() {
     Storage.listener.follow('change', function (e) {
       if (e.name == 'account_use' || e.name == 'account') refresh$2();
     });
@@ -13359,7 +13359,7 @@
   }
 
   var Timeline$1 = {
-    init: Utils$1.onceInit(init$1j),
+    init: Utils$1.onceInit(init$1k),
     update: update$e,
     sync: sync$2
   };
@@ -13728,7 +13728,7 @@
    * @returns {void}
    */
 
-  function init$1i() {
+  function init$1j() {
     html$n = $("<div style=\"position: fixed; left: 0; top: 50%; right: 0; z-index: 101; text-align: center; padding-top: 6em; padding-top: 13vh;\">\n        <div style=\"font-size: 1.5em; line-height: 1.6\" class=\"lp-step\"></div>\n        <div style=\"font-size: 0.9em; opacity: 0.5\" class=\"lp-status\"></div>\n    </div>");
     $('body').append(html$n);
     step(0);
@@ -13767,7 +13767,7 @@
   }
 
   var LoadingProgress = {
-    init: init$1i,
+    init: init$1j,
     step: step,
     status: status$2,
     destroy: destroy$o
@@ -13830,7 +13830,7 @@
    */
 
 
-  function init$1h() {
+  function init$1i() {
     Favorite.listener.follow('add,added', function (e) {
       push$7('add', e.where, e.card);
     });
@@ -14105,7 +14105,7 @@
    */
 
 
-  function find$2(params) {
+  function find$3(params) {
     var _bookmarks_map$params;
 
     return bookmarks_map[params.type] ? (_bookmarks_map$params = bookmarks_map[params.type][params.id]) === null || _bookmarks_map$params === void 0 ? void 0 : _bookmarks_map$params.data : null;
@@ -14240,19 +14240,19 @@
   }
 
   var Bookmarks$1 = {
-    init: Utils$1.onceInit(init$1h),
+    init: Utils$1.onceInit(init$1i),
     push: push$7,
     update: update$d,
     clear: clear$d,
     get: get$e,
     all: all$4,
     sync: sync$1,
-    find: find$2
+    find: find$3
   };
 
   var profile_icon;
 
-  function init$1g() {
+  function init$1h() {
     profile_icon = Template.elem('div', {
       "class": 'head__action selector open--profile'
     });
@@ -14430,7 +14430,7 @@
   }
 
   var Profile = {
-    init: Utils$1.onceInit(init$1g),
+    init: Utils$1.onceInit(init$1h),
     update: update$c,
     check: check$4,
     select: select$3,
@@ -15102,7 +15102,7 @@
     };
   }
 
-  function init$1f() {
+  function init$1g() {
     var tmdb_proxy = {
       name: 'TMDB Proxy',
       version: '1.0.6',
@@ -15146,7 +15146,7 @@
   }
 
   var TMDBProxy = {
-    init: init$1f
+    init: init$1g
   };
 
   /**
@@ -15154,7 +15154,7 @@
    * Решил сделать автоматическую установку TMDB Proxy если регион RU
    */
 
-  var network$a = new Request();
+  var network$b = new Request();
   var response_code = 'ru';
 
   function region(call) {
@@ -15176,7 +15176,7 @@
       };
 
       extract$3(extracted, function (e, x) {
-        console.warn('VPN', 'geo.' + object$2.cub_domain + ' domain not responding', network$a.errorDecode(e, x));
+        console.warn('VPN', 'geo.' + object$2.cub_domain + ' domain not responding', network$b.errorDecode(e, x));
         Storage.set('region', {
           code: Storage.field('language'),
           time: Date.now()
@@ -15218,7 +15218,7 @@
       window.vpn_region = response_code;
       call();
     }, function (e, x) {
-      console.warn('VPN', 'geo.' + object$2.cub_domain + ' domain not responding:', network$a.errorDecode(e, x));
+      console.warn('VPN', 'geo.' + object$2.cub_domain + ' domain not responding:', network$b.errorDecode(e, x));
 
       if (!window.lampa_settings.disable_features.install_proxy) {
         console.log('VPN', 'launch TMDB Proxy');
@@ -15544,7 +15544,7 @@
   var rows$1 = [];
   var component$p = 'content_rows';
 
-  function init$1e() {
+  function init$1f() {
     SettingsApi.addComponent({
       component: component$p,
       after: 'interface',
@@ -15627,7 +15627,7 @@
   }
 
   var ContentRows = {
-    init: init$1e,
+    init: init$1f,
     add: add$d,
     remove: remove$4,
     call: call$1
@@ -16058,7 +16058,7 @@
    * Запуск
    */
 
-  function init$1d() {
+  function init$1e() {
     data$2 = Storage.cache('timetable', limit$4, []);
     Timer.add(time_favorites, favorites);
     Timer.add(time_extract, extract$2); // Добавляем поле ssn для хранения времени обновления сезонов
@@ -16505,7 +16505,7 @@
   }
 
   var TimeTable = {
-    init: init$1d,
+    init: init$1e,
     get: get$d,
     add: add$c,
     all: all$3,
@@ -17323,7 +17323,7 @@
     filter: filter$2
   };
 
-  var network$9 = new Request();
+  var network$a = new Request();
   var network_released = new Request(); // отдельный, чтобы clear() не обрывал проверки релизов
 
   var released_dates = {}; // id фильма → {date: дата первого домашнего релиза или '', time}
@@ -17696,8 +17696,8 @@
     var cache = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
     var u = url$4(method, params);
     var s = method.match(/tv\/(\d+)\/season\/(\d+)/);
-    network$9.timeout(1000 * 10);
-    network$9.silent(u, function (json) {
+    network$a.timeout(1000 * 10);
+    network$a.silent(u, function (json) {
       json.url = method;
       json.source = source$2; // Исправляем сезоны для сериалов
 
@@ -17751,8 +17751,8 @@
     var onerror = arguments.length > 4 ? arguments[4] : undefined;
     var cache = arguments.length > 5 ? arguments[5] : undefined;
     method = method.replace(/\/season\/(\d+)/, '/season/1');
-    network$9.timeout(1000 * 10);
-    network$9.silent(url$4(method, params), function (new_json) {
+    network$a.timeout(1000 * 10);
+    network$a.silent(url$4(method, params), function (new_json) {
       new_json.url = method;
       new_json.source = source$2;
       var seasons = Utils$1.splitEpisodesIntoSeasons(new_json.episodes); // Считаем количество реальных сезонов и отмечаем в объекте
@@ -17771,7 +17771,7 @@
     });
   }
 
-  function find$1(find) {
+  function find$2(find) {
     var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var found;
 
@@ -18199,18 +18199,18 @@
     }
   }
 
-  function list$6() {
+  function list$7() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var oncomplete = arguments.length > 1 ? arguments[1] : undefined;
     var onerror = arguments.length > 2 ? arguments[2] : undefined;
     var attempt = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
     var u = url$4(params.url, params);
-    network$9.silent(u, function (data) {
+    network$a.silent(u, function (data) {
       releasedFilter(params.url, data, function () {
         // Если фильтр убрал всю страницу, берём следующую, иначе пагинация остановится
         if (data.results && !data.results.length && attempt < 5 && params.page && params.page < data.total_pages) {
           params.page++;
-          list$6(params, oncomplete, onerror, attempt + 1);
+          list$7(params, oncomplete, onerror, attempt + 1);
         } else oncomplete(Utils$1.addSource(data, source$2));
       });
     }, onerror, false, {
@@ -18288,7 +18288,7 @@
           source: source$2
         });
       },
-      onCancel: network$9.clear.bind(network$9)
+      onCancel: network$a.clear.bind(network$a)
     };
   }
 
@@ -18396,7 +18396,7 @@
     var oncomplete = arguments.length > 1 ? arguments[1] : undefined;
     if (menu_list.length) oncomplete(menu_list);else {
       var u = url$4('genre/movie/list', params);
-      network$9.silent(u, function (j) {
+      network$a.silent(u, function (j) {
         j.genres.forEach(function (g) {
           menu_list.push({
             title: g.name,
@@ -18848,7 +18848,7 @@
   }
 
   function clear$c() {
-    network$9.clear();
+    network$a.clear();
   }
 
   var TMDB = {
@@ -18856,14 +18856,14 @@
     menu: menu$3,
     img: img$1,
     full: full$4,
-    list: list$6,
+    list: list$7,
     category: category$3,
     search: search$5,
     clear: clear$c,
     company: company$1,
     person: person$2,
     seasons: seasons$2,
-    find: find$1,
+    find: find$2,
     external_ids: external_ids,
     get: get$c,
     menuCategory: menuCategory$2,
@@ -18889,7 +18889,7 @@
   var EVENTS = ['request', 'accept', 'invite', 'recommend'];
   var BELL = '<svg width="30" height="30"><use xlink:href="#sprite-friends"></use></svg>';
 
-  function init$1c() {
+  function init$1d() {
     if (!window.lampa_settings.account_use || window.lampa_settings.disable_features.friends) return;
     icon$3 = $('<div class="head__action selector open--friends"><svg><use xlink:href="#sprite-friends"></use></svg></div>');
     icon$3.on('hover:enter', function () {
@@ -19570,7 +19570,7 @@
   }
 
   var Friends = {
-    init: Utils$1.onceInit(init$1c),
+    init: Utils$1.onceInit(init$1d),
     show: show$f,
     update: update$a,
     avatar: avatar,
@@ -19647,14 +19647,14 @@
     }
   }
 
-  function init$1b() {
+  function init$1c() {
     if (!window.lampa_settings.account_use || window.lampa_settings.disable_features.friends) return;
     Player.listener.follow('start', start$d);
     Player.listener.follow('close', stop$4);
   }
 
   var Watching = {
-    init: init$1b
+    init: init$1c
   };
 
   function inject(callback) {
@@ -19815,7 +19815,7 @@
     inject: inject
   };
 
-  function init$1a() {
+  function init$1b() {
     Settings.listener.follow('open', function (e) {
       if (e.name == 'account') render$k(e.body);
     });
@@ -19920,17 +19920,17 @@
   }
 
   var Panel = {
-    init: Utils$1.onceInit(init$1a),
+    init: Utils$1.onceInit(init$1b),
     render: render$k
   };
 
-  var network$8 = new Request();
+  var network$9 = new Request();
   var user_data;
   /**
    * Запуск
    */
 
-  function init$19() {
+  function init$1a() {
     if (!window.lampa_settings.account_use) return;
     console.log('Account', 'use', permit.token ? permit.account.email : 'no account');
     Timeline$1.init();
@@ -20015,8 +20015,8 @@
     Permit: permit,
     Modal: Modal$1,
     listener: Listener$1,
-    network: network$8,
-    init: init$19,
+    network: network$9,
+    init: init$1a,
     task: task$3,
     working: function working() {
       console.warn('Account.working() is deprecated, use Account.Permit.sync');
@@ -20848,7 +20848,7 @@
    * Запуск
    */
 
-  function init$18() {
+  function init$19() {
     read();
     ContentRows.add({
       name: 'continue_watch',
@@ -21277,7 +21277,7 @@
   var Favorite = {
     historyActivity: historyActivity,
     listener: listener$g,
-    init: Utils$1.onceInit(init$18),
+    init: Utils$1.onceInit(init$19),
     check: cloud,
     add: add$9,
     remove: remove$3,
@@ -21429,7 +21429,7 @@
    * @returns {void}
    */
 
-  function init$17() {
+  function init$18() {
     html$l = Template.get('menu');
     scroll$4 = new Scroll({
       mask: true,
@@ -21509,7 +21509,7 @@
       type: 'end'
     });
     Lampa.Listener.follow('app', function (e) {
-      if (e.type == 'ready') ready$1();
+      if (e.type == 'ready') ready$2();
     });
   }
   /**
@@ -21569,7 +21569,7 @@
    */
 
 
-  function ready$1() {
+  function ready$2() {
     html$l.find('.selector').data('binded_events', true).on('hover:enter', function (e) {
       var action = $(e.target).data('action');
       Lampa.Listener.send('menu', {
@@ -21814,9 +21814,9 @@
   }
 
   var Menu = {
-    init: Utils$1.onceInit(init$17),
+    init: Utils$1.onceInit(init$18),
     render: render$j,
-    ready: ready$1,
+    ready: ready$2,
     toggle: toggle$a,
     opened: opened$3,
     addElement: addElement$1,
@@ -21859,7 +21859,7 @@
    */
 
 
-  function init$16() {
+  function init$17() {
     html$k = Template.get('head');
     if (window.local_lampa) html$k.find('.head__logo-icon').append('<span class="head__logo-local">local</span>');
 
@@ -21945,7 +21945,7 @@
   }
 
   var Head = {
-    init: init$16,
+    init: init$17,
     render: render$i,
     title: title$2,
     addElement: addElement,
@@ -21964,7 +21964,7 @@
    */
 
 
-  function init$15() {
+  function init$16() {
     html$j = Template.get('settings');
     body$2 = html$j.find('.settings__body');
     html$j.find('.settings__layer').on('click', function (e) {
@@ -22081,7 +22081,7 @@
 
   var Settings = {
     listener: listener$f,
-    init: init$15,
+    init: init$16,
     render: render$h,
     update: update$9,
     create: create$a,
@@ -22094,7 +22094,7 @@
   var last_time_requested = 0;
   var personal_codes = {};
 
-  function init$14() {
+  function init$15() {
     Params.trigger('parental_control', false);
     Params.select('parental_control_time', {
       'always': '#{settings_parental_control_param_time_always}',
@@ -22505,7 +22505,7 @@
   }
 
   var ParentalControl = {
-    init: init$14,
+    init: init$15,
     query: query,
     personal: personal,
     enabled: enabled$2,
@@ -22525,7 +22525,7 @@
     prev: ''
   };
 
-  function init$13() {
+  function init$14() {
     Keypad.listener.follow('keydown', function (e) {
       if (!playning()) return;
       PlayerPanel.rewind(); //PG-
@@ -22710,7 +22710,7 @@
 
   var PlayerIPTV = {
     listener: listener$e,
-    init: init$13,
+    init: init$14,
     start: start$c,
     playning: playning,
     channel: channel$1,
@@ -22750,7 +22750,7 @@
   var items = [];
   var listener$d = Subscribe$2();
 
-  function init$12() {
+  function init$13() {
     html$i = Template.js('player_footer');
     scroll$3 = new Scroll({
       nopadding: true,
@@ -22903,7 +22903,7 @@
     appendRow(card_html);
   }
 
-  function available$1() {
+  function available$2() {
     return items.length;
   }
 
@@ -22919,14 +22919,14 @@
   }
 
   var PlayerFooter = {
-    init: init$12,
+    init: init$13,
     listener: listener$d,
     appendAbout: appendAbout,
     appendRow: appendRow,
     removeRow: removeRow,
     render: render$g,
     destroy: destroy$m,
-    available: available$1
+    available: available$2
   };
 
   var listener$c = Subscribe$2();
@@ -22934,7 +22934,7 @@
   var playlist$1 = [];
   var _position = 0;
 
-  function init$11() {
+  function init$12() {
     PlayerPanel.listener.follow('playlist', show$e);
     PlayerPanel.listener.follow('prev', prev);
     PlayerPanel.listener.follow('next', next);
@@ -23083,7 +23083,7 @@
   }
 
   var PlayerPlaylist = {
-    init: init$11,
+    init: init$12,
     listener: listener$c,
     active: active$9,
     show: show$e,
@@ -23111,7 +23111,7 @@
   var ref_duration = 0;
   var skip_preview_lead = 5;
 
-  function init$10() {
+  function init$11() {
     Player.listener.follow('start', function (data) {
       if (data.segments) set$2(data.segments);
     });
@@ -23465,7 +23465,7 @@
   }
 
   var Segments$1 = {
-    init: init$10,
+    init: init$11,
     listener: listener$b,
     update: update$8,
     set: set$2,
@@ -23480,7 +23480,7 @@
    * Отрисовка сегментов на таймлайне плеера
    */
 
-  function init$$() {
+  function init$10() {
     PlayerVideo.listener.follow('loadeddata', draw$9);
     Segments$1.listener.follow('set', draw$9);
   }
@@ -23513,7 +23513,7 @@
   }
 
   var Segments = {
-    init: init$$,
+    init: init$10,
     destroy: destroy$j
   };
 
@@ -24043,7 +24043,7 @@
   var skip_is_end = false;
   var skip_phase = '';
 
-  function init$_() {
+  function init$$() {
     skip_button = $("<div class=\"player-skip selector hide\"><span class=\"player-skip__text\"></span><svg><use xlink:href=\"#sprite-player-next\"></use></svg><div class=\"player-skip__progress\"><div class=\"player-skip__progress-line\"></div></div></div>");
     skip_line = skip_button.find('.player-skip__progress-line');
     skip_button.on('hover:enter', skipDo);
@@ -24206,7 +24206,7 @@
   }
 
   var Skip = {
-    init: init$_,
+    init: init$$,
     render: render$f,
     hide: hide$3,
     preview: preview,
@@ -24263,7 +24263,7 @@
    * Отрисовка следующего эпизода в плеере
    */
 
-  function init$Z() {
+  function init$_() {
     PlayerPlaylist.listener.follow('set', function (e) {
       clear$9();
       var next = e.playlist[e.position + 1];
@@ -24325,7 +24325,7 @@
   }
 
   var Next$2 = {
-    init: init$Z,
+    init: init$_,
     destroy: destroy$g
   };
 
@@ -24338,7 +24338,7 @@
   var condition = {};
   var timer$7 = {};
 
-  function init$Y() {
+  function init$Z() {
     Html.init();
     Option.init();
     Segments.init();
@@ -24903,7 +24903,7 @@
   }
 
   var PlayerPanel = {
-    init: init$Y,
+    init: init$Z,
     listener: listener$j,
     render: render$d,
     toggle: toggle$8,
@@ -24930,11 +24930,11 @@
 
   var html$h;
   var listener$a = Subscribe$2();
-  var network$7 = new Request();
+  var network$8 = new Request();
   var elems;
   var error$1, stat_timer;
 
-  function init$X() {
+  function init$Y() {
     html$h = Template.get('player_info');
     html$h.find('.player-info__body').prepend(HeadBackward(Lang.translate('settings_main_player')));
     elems = {
@@ -25059,10 +25059,10 @@
         if (wait <= 5) return;else wait = 0;
       }
 
-      network$7.timeout(2000);
+      network$8.timeout(2000);
       var url = '';
       if (Torserver.gstWork()) url = Torserver.url() + '/gst/' + player_data.torrent_hash + '/heartbeat';else url = player_data.url.replace('&preload', '&stat').replace('&play', '&stat');
-      network$7.silent(url, function (data) {
+      network$8.silent(url, function (data) {
         var torrent = data.Torrent || data;
         elems.stat.text((torrent.active_peers || 0) + ' / ' + (torrent.total_peers || 0) + ' • ' + (torrent.connected_seeders || 0) + ' ' + Lang.translate('connected_seeds'));
         elems.speed.text(Utils$1.bytesToSize(torrent.download_speed ? torrent.download_speed * 8 : 0, true));
@@ -25121,7 +25121,7 @@
     elems.title.toggleClass('hide', false);
     clearTimeout(error$1);
     clearInterval(stat_timer);
-    network$7.clear();
+    network$8.clear();
   }
 
   function render$c() {
@@ -25129,7 +25129,7 @@
   }
 
   var PlayerInfo = {
-    init: init$X,
+    init: init$Y,
     listener: listener$a,
     render: render$c,
     set: set$1,
@@ -26832,7 +26832,7 @@
   var click_timer;
   var pause_timer;
 
-  function init$W() {
+  function init$X() {
     html$g = Template.get('player_video');
     display = html$g.find('.player-video__display');
     paused = html$g.find('.player-video__paused');
@@ -27031,7 +27031,7 @@
       });
       scale();
       if (need_speed) speed$1(need_speed);
-      loaded$3();
+      loaded$4();
     });
 
     var pc = Boolean(Platform.desktop() || Platform.is('browser') || Platform.is('apple') && !Utils$1.isPWA()); // для страховки
@@ -27185,7 +27185,7 @@
    */
 
 
-  function loaded$3() {
+  function loaded$4() {
     var tracks = [];
     var subs = _video.customSubs || _video.textTracks || [];
     console.log('Player', 'video full loaded');
@@ -27714,7 +27714,7 @@
   }
 
   var PlayerVideo = {
-    init: init$W,
+    init: init$X,
     listener: listener$9,
     url: url$2,
     render: render$a,
@@ -27770,7 +27770,7 @@
    */
 
 
-  function available(data) {
+  function available$1(data) {
     if (!data || !data.torrent_hash) return false;
     var ip = Torserver.ip();
     if (!ip) return false;
@@ -27843,7 +27843,7 @@
   }
 
   var SubsTorserver = {
-    available: available,
+    available: available$1,
     fileIndex: fileIndex,
     load: load$3,
     convert: convert$1
@@ -27908,7 +27908,7 @@
     return Lang.translate(key);
   }
 
-  function init$V() {
+  function init$W() {
     html$f = $('<div class="playback-info"></div>');
     title$1 = $('<div class="playback-info__title"></div>');
     body$1 = $('<div class="playback-info__body"></div>');
@@ -28647,7 +28647,7 @@
     }
   }
   var PlaybackInfo = {
-    init: init$V,
+    init: init$W,
     render: render$9,
     isOpen: isOpen,
     open: open$7,
@@ -29734,7 +29734,7 @@
    ******************************************************************************************/
 
 
-  function list$5() {
+  function list$6() {
     return Object.keys(supportedFormats);
   }
   /******************************************************************************************
@@ -29915,7 +29915,7 @@
   }
 
   var subsrt = {
-    list: list$5,
+    list: list$6,
     detect: detect,
     parse: parse$2,
     build: build$1,
@@ -32794,7 +32794,7 @@
     }
   };
   var current = null;
-  var network$6 = null;
+  var network$7 = null;
   var show_token = 0;
   var fonts_session = null;
   /**
@@ -32912,9 +32912,9 @@
       current.load(text);
     };
 
-    network$6 = new Request();
-    network$6.timeout(30000);
-    network$6.silent(url, function (text) {
+    network$7 = new Request();
+    network$7.timeout(30000);
+    network$7.silent(url, function (text) {
       if (token !== show_token) return;
       var renderer = pick();
       if (!renderer) return;
@@ -32966,9 +32966,9 @@
       fonts_session = null;
     }
 
-    if (network$6) {
-      network$6.clear();
-      network$6 = null;
+    if (network$7) {
+      network$7.clear();
+      network$7 = null;
     }
 
     if (current) {
@@ -32995,7 +32995,7 @@
   var pending_memo = null;
   var MEMO_TTL = 60000;
 
-  function init$U() {
+  function init$V() {
     Player.listener.follow('ready', bind$2);
     Player.listener.follow('destroy', destroy$a); // переключение серии: запоминаем выбранные субтитры, чтобы выбрать такие же в следующей серии
 
@@ -33260,7 +33260,7 @@
   }
 
   var Subtitles = {
-    init: init$U,
+    init: init$V,
     custom: custom,
     suspend: suspend,
     resume: resume,
@@ -33287,7 +33287,7 @@
   var session$1 = 0;
   var seek$1 = null;
 
-  function init$T() {
+  function init$U() {
     Player.listener.follow('start', start$b);
     Player.listener.follow('destroy', stop$3);
   }
@@ -33489,7 +33489,7 @@
   }
 
   var GstAudio = {
-    init: init$T,
+    init: init$U,
     isActive: isActive$1
   };
 
@@ -33664,7 +33664,7 @@
   var placeholder = null;
   var tracklist = null;
 
-  function init$S() {
+  function init$T() {
     Player.listener.follow('start', start$9);
     Player.listener.follow('destroy', stop$1); // дорожки самого видео браузер отдаёт после загрузки
 
@@ -33872,7 +33872,7 @@
   }
 
   var AudioExternal = {
-    init: init$S,
+    init: init$T,
     isActive: isActive
   };
 
@@ -34378,7 +34378,7 @@
   var timer$5;
   var listener$8;
 
-  function init$R() {
+  function init$S() {
     var timer, activity;
     var broadcast = Head.addIcon(Template.string('icon_broadcast'), function () {
       open$6({
@@ -34508,7 +34508,7 @@
   }
 
   var Broadcast = {
-    init: init$R,
+    init: init$S,
     open: open$6
   };
 
@@ -34516,7 +34516,7 @@
   var show_disclaimer = false;
   var show_torrent_disclaimer = false;
 
-  function init$Q() {
+  function init$R() {
     Player.listener.follow('destroy', reset);
   }
 
@@ -34604,7 +34604,7 @@
   }
 
   var Disclaimer = {
-    init: init$Q,
+    init: init$R,
     needs: needs,
     needsTorrent: needsTorrent,
     show: show$7,
@@ -34614,7 +34614,7 @@
 
   var status = false;
 
-  function init$P() {
+  function init$Q() {
     $.ajax({
       url: "./personal.lampa",
       dataType: 'text',
@@ -34629,11 +34629,11 @@
   }
 
   var Personal = {
-    init: init$P,
+    init: init$Q,
     confirm: confirm
   };
 
-  function init$O() {
+  function init$P() {
     var today = new Date();
     var date = today.toISOString().split('T')[0];
 
@@ -34688,7 +34688,7 @@
   }
 
   var ServiceMetric = {
-    init: init$O,
+    init: init$P,
     counter: counter,
     histogram: histogram
   };
@@ -35721,7 +35721,7 @@
     cooling: 1000 * 60 * 5
   });
 
-  function init$N() {
+  function init$O() {
     Manager$1.init();
   }
   /**
@@ -35882,7 +35882,7 @@
   }
 
   var Preroll = {
-    init: init$N,
+    init: init$O,
     show: show$6
   };
 
@@ -37300,7 +37300,7 @@
    * Имитация чата в плеере
    */
 
-  function init$M() {
+  function init$N() {
     html$e = Template.elem('div', {
       "class": 'player-chat'
     });
@@ -37388,7 +37388,7 @@
   }
 
   var PlayerChat = {
-    init: init$M,
+    init: init$N,
     render: render$8,
     push: push$5,
     clear: clear$8,
@@ -37493,7 +37493,7 @@
    * Графики в плеере
    */
 
-  function init$L() {
+  function init$M() {
     html$d = Template.elem('div', {
       "class": 'player-charts'
     });
@@ -37755,7 +37755,7 @@
   }
 
   var Charts = {
-    init: init$L,
+    init: init$M,
     push: push$4,
     clear: clear$7,
     destroy: destroy$8
@@ -37765,7 +37765,7 @@
   var agent_icon;
   var working = false;
   var play_data = {};
-  var network$5 = new Request();
+  var network$6 = new Request();
   var timers$1 = {};
   var chat_history = [];
   var buttons$2 = [];
@@ -37801,7 +37801,7 @@
    * Инициализация AI-агента
    */
 
-  function init$K() {
+  function init$L() {
     agent_icon = Template.get('ai_agent', {}).addClass('animate ai-agent--absolute');
     button = Template.elem('div', {
       "class": 'button player-panel__button--ai selector hide',
@@ -38122,7 +38122,7 @@
     button.addClass('hide');
     play_data = {};
     chat_history = [];
-    network$5.clear();
+    network$6.clear();
 
     for (var key in timers$1) {
       clearTimeout(timers$1[key]);
@@ -38137,7 +38137,7 @@
   }
 
   var Agent = {
-    init: init$K,
+    init: init$L,
     destroy: destroy$7
   };
 
@@ -38145,7 +38145,7 @@
   var timer_ask = null;
   var timer_save = null;
 
-  function init$J() {
+  function init$K() {
     PlayerVideo.listener.follow('reset_continue', function () {
       if (work$1 && work$1.timeline && !work$1.timeline.continued_bloc) work$1.timeline.continued = false;
     });
@@ -38259,7 +38259,7 @@
   }
 
   var Timeline = {
-    init: init$J,
+    init: init$K,
     needToContinue: needToContinue,
     setEnd: setEnd,
     resetContinue: resetContinue,
@@ -38275,7 +38275,7 @@
   var delay = 1500;
   var timer$3;
 
-  function init$I() {
+  function init$J() {
     Player.listener.follow('close', function (e) {
       clearTimeout(timer$3);
       var target = extract(e.data);
@@ -38514,7 +38514,7 @@
   }
 
   var Reaction = {
-    init: init$I
+    init: init$J
   };
 
   var NoiseEffect = /*#__PURE__*/function () {
@@ -39347,7 +39347,7 @@
 
   var noise;
 
-  function init$H() {
+  function init$I() {
     PlayerVideo.listener.follow('error', function (e) {
       if (e.fatal) {
         destroy$5();
@@ -39394,7 +39394,7 @@
   }
 
   var Error$1 = {
-    init: init$H,
+    init: init$I,
     destroy: destroy$5
   };
 
@@ -39415,7 +39415,7 @@
    * Подписываемся на события
    */
 
-  function init$G() {
+  function init$H() {
     PlayerPanel.init();
     PlayerVideo.init();
     PlayerInfo.init();
@@ -40175,7 +40175,7 @@
   }
 
   var Player = {
-    init: init$G,
+    init: init$H,
     listener: listener$7,
     toggle: toggle$5,
     play: play$1,
@@ -40214,7 +40214,7 @@
   var theme_elem = $('head meta[name="theme-color"]');
   var view = 'one';
   var src = '';
-  var loaded$2 = {};
+  var loaded$3 = {};
   var bokeh = {
     c: [],
     h: [],
@@ -40228,7 +40228,7 @@
    * Запуск
    */
 
-  function init$F() {
+  function init$G() {
     Storage.listener.follow('change', function (event) {
       if (event.name == 'background' || event.name == 'background_type') resize$1();
     });
@@ -40442,7 +40442,7 @@
     background.fade.canvas.width(window.screen_width);
     background.fade.canvas.height(window.screen_height);
     html$b[0].toggleClass('hide', !Storage.field('background'));
-    if (loaded$2[src]) draw$1(loaded$2[src], background[view]);
+    if (loaded$3[src]) draw$1(loaded$3[src], background[view]);
   }
   /**
    * Максимум картинок в памяти
@@ -40450,11 +40450,11 @@
 
 
   function limit$1() {
-    var a = Arrays.getKeys(loaded$2);
+    var a = Arrays.getKeys(loaded$3);
 
     if (a.length > 30) {
       var u = a.slice(0, 1);
-      delete loaded$2[u];
+      delete loaded$3[u];
     }
   }
   /**
@@ -40463,8 +40463,8 @@
 
 
   function load$1() {
-    if (loaded$2[src]) {
-      draw$1(loaded$2[src], bg());
+    if (loaded$3[src]) {
+      draw$1(loaded$3[src], bg());
     } else if (src) {
       limit$1();
       var cache_src = src;
@@ -40479,11 +40479,11 @@
           colors = [[200, 200, 200], [100, 100, 100], [10, 10, 10]];
         }
 
-        loaded$2[cache_src] = {
+        loaded$3[cache_src] = {
           img: img,
           palette: Color.palette(colors)
         };
-        draw$1(loaded$2[cache_src], bg());
+        draw$1(loaded$3[cache_src], bg());
       };
 
       img.onerror = function () {
@@ -40545,7 +40545,7 @@
     render: render$6,
     change: change,
     update: resize$1,
-    init: init$F,
+    init: init$G,
     immediately: immediately,
     theme: theme
   };
@@ -40554,7 +40554,7 @@
   var need_update = false;
   var need_visible = false;
 
-  function init$E() {
+  function init$F() {
     window.screen_width = window.innerWidth;
     window.screen_height = window.innerHeight;
     $(window).on('resize', function () {
@@ -40801,7 +40801,7 @@
   var Layer = {
     update: update$5,
     visible: visible,
-    init: init$E
+    init: init$F
   };
 
   /**
@@ -41634,7 +41634,7 @@
     }
   };
 
-  function init$D() {
+  function init$E() {
     var agent = navigator.userAgent.toLowerCase();
 
     if (typeof webOS !== 'undefined' && webOS.platform.tv === true) {
@@ -41872,7 +41872,7 @@
   }
 
   var Platform = {
-    init: init$D,
+    init: init$E,
     get: get$8,
     any: any,
     is: is,
@@ -41890,7 +41890,7 @@
   var reqCallback = {};
   var timeCallback = {};
 
-  function init$C() {
+  function init$D() {
     if (Platform.is('android')) {
       Params.listener.follow('button', function (e) {
         if (e.name === 'reset_player') {
@@ -42071,7 +42071,7 @@
   }
 
   var Android = {
-    init: init$C,
+    init: init$D,
     exit: exit,
     openTorrent: openTorrent,
     openPlayer: openPlayer,
@@ -42089,7 +42089,7 @@
   var _connected = true;
   var protocols = ['https://', 'http://'];
 
-  function init$B() {
+  function init$C() {
     Timer.add(1000 * 60 * 15, function () {
       task$2();
     });
@@ -42113,7 +42113,7 @@
    */
 
 
-  function find(protocol, callback) {
+  function find$1(protocol, callback) {
     var status = new Status(object$2.cub_mirrors.length);
 
     status.onComplite = function (data) {
@@ -42206,7 +42206,7 @@
         if (call) call();
       } else {
         protocols.forEach(function (protocol) {
-          find(protocol, function (mirrors) {
+          find$1(protocol, function (mirrors) {
             status.append(protocol, mirrors);
           });
         });
@@ -42215,7 +42215,7 @@
   }
 
   var Mirrors = {
-    init: init$B,
+    init: init$C,
     task: task$2,
     connected: function connected() {
       return _connected;
@@ -42861,7 +42861,7 @@
     };
   }
 
-  var network$4 = new Request();
+  var network$5 = new Request();
   var day = 60 * 24;
   var source$1 = 'cub';
 
@@ -42893,7 +42893,7 @@
     var onerror = arguments.length > 3 ? arguments[3] : undefined;
     var cache = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
     var u = url(method, params);
-    network$4.silent(u, function (json) {
+    network$5.silent(u, function (json) {
       json.url = method;
       json.source = source$1; // Фильтруем результаты по ключевым словам, чтобы не показывать фильмы с неуместными словами в названии
 
@@ -42913,12 +42913,12 @@
     });
   }
 
-  function list$4() {
+  function list$5() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var oncomplete = arguments.length > 1 ? arguments[1] : undefined;
     var onerror = arguments.length > 2 ? arguments[2] : undefined;
     var u = url(params.url, params);
-    network$4.silent(u, function (data) {
+    network$5.silent(u, function (data) {
       oncomplete(Utils$1.addSource(data, source$1));
     }, onerror, false, {
       cache: {
@@ -43028,7 +43028,7 @@
     });
 
     if (!permit.child_small) {
-      network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/collections/list?category=new', function (data) {
+      network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/collections/list?category=new', function (data) {
         data.results.forEach(function (collection, index) {
           var event = function event(call_inner) {
             get$7('collections/' + collection.id, {}, function (json) {
@@ -43389,7 +43389,7 @@
   }
 
   function trailers(type, oncomplete) {
-    network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/trailers/short/trailers/' + type, function (result) {
+    network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/trailers/short/trailers/' + type, function (result) {
       result.title = Lang.translate('title_trailers') + ' - ' + Lang.translate('title_new');
       result.results.forEach(function (card) {
         card.params = {
@@ -43412,7 +43412,7 @@
 
   function metadataGet(params, oncomplete) {
     if (window.lampa_settings.disable_features.metadata) return oncomplete({});
-    network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/ai/video-view/' + params.id + '/metadata?type=' + params.method, oncomplete, function () {
+    network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/ai/video-view/' + params.id + '/metadata?type=' + params.method, oncomplete, function () {
       oncomplete({});
     }, false, {
       timeout: 1000 * 5
@@ -43423,7 +43423,7 @@
     if (window.lampa_settings.disable_features.reactions) return oncomplete({
       result: []
     });
-    network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/reactions/get/' + params.method + '_' + params.id, oncomplete, function () {
+    network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/reactions/get/' + params.method + '_' + params.id, oncomplete, function () {
       oncomplete({
         result: []
       });
@@ -43434,13 +43434,13 @@
 
   function discussGet(params, oncomplete, onerror) {
     if (window.lampa_settings.disable_features.discuss) return onerror();
-    network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/discuss/get/' + params.method + '_' + params.id + '/' + (params.page || 1) + '/' + Storage.field('language'), oncomplete, onerror, false, {
+    network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/discuss/get/' + params.method + '_' + params.id + '/' + (params.page || 1) + '/' + Storage.field('language'), oncomplete, onerror, false, {
       timeout: 1000 * 5
     });
   }
 
   function reactionsAdd(params, oncomplete, onerror) {
-    network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/reactions/add/' + params.method + '_' + params.id + '/' + params.type + '?uid=' + Storage.get('lampa_uid', 'none'), oncomplete, onerror);
+    network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/reactions/add/' + params.method + '_' + params.id + '/' + params.type + '?uid=' + Storage.get('lampa_uid', 'none'), oncomplete, onerror);
   }
 
   function menuCategory$1(params, oncomplete) {
@@ -43524,7 +43524,7 @@
           source: 'cub'
         });
       },
-      onCancel: network$4.clear.bind(network$4)
+      onCancel: network$5.clear.bind(network$5)
     };
   }
 
@@ -43540,8 +43540,8 @@
       };
     }
 
-    network$4.timeout(5000);
-    network$4.silent(Utils$1.protocol() + object$2.cub_domain + '/api/extensions/list', function (result) {
+    network$5.timeout(5000);
+    network$5.silent(Utils$1.protocol() + object$2.cub_domain + '/api/extensions/list', function (result) {
       //network.silent('http://localhost:3100/api/extensions/list', (result)=>{
       if (result.secuses) {
         Storage.set('account_extensions', result);
@@ -43567,14 +43567,14 @@
   }
 
   function clear$6() {
-    network$4.clear();
+    network$5.clear();
   }
 
   var CUB = {
     main: main$1,
     menu: menu$1,
     full: full$1,
-    list: list$4,
+    list: list$5,
     category: category$1,
     clear: clear$6,
     person: person$1,
@@ -43610,7 +43610,7 @@
       return CUB;
     }
   });
-  var network$3 = new Request();
+  var network$4 = new Request();
   /**
    * Получить источник
    * @param {{source:string}} params 
@@ -43763,7 +43763,7 @@
    */
 
 
-  function list$3() {
+  function list$4() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var oncomplete = arguments.length > 1 ? arguments[1] : undefined;
     var onerror = arguments.length > 2 ? arguments[2] : undefined;
@@ -43891,7 +43891,7 @@
   }
 
   function relise(params, oncomplete, onerror) {
-    network$3.silent(Utils$1.protocol() + 'tmdb.' + object$2.cub_domain + '?sort=releases&results=20&page=' + params.page, function (data) {
+    network$4.silent(Utils$1.protocol() + 'tmdb.' + object$2.cub_domain + '?sort=releases&results=20&page=' + params.page, function (data) {
       data = Utils$1.addSource(data, 'cub');
 
       if (data.results && data.results.length) {
@@ -44050,7 +44050,7 @@
       sources$1[i].clear();
     }
 
-    network$3.clear();
+    network$4.clear();
   }
 
   function img() {
@@ -44061,7 +44061,7 @@
     main: main,
     img: img,
     full: full,
-    list: list$3,
+    list: list$4,
     genres: genres,
     category: category,
     search: search$2,
@@ -45764,7 +45764,7 @@
   var extensions;
   var listener$5 = Subscribe$2();
 
-  function init$A() {
+  function init$B() {
     ParentalControl.add('extensions', {
       title: 'settings_main_plugins'
     });
@@ -45800,7 +45800,7 @@
   }
 
   var Extensions = {
-    init: init$A,
+    init: init$B,
     listener: listener$5,
     show: show$4,
     render: render$4
@@ -45818,7 +45818,7 @@
    * Запуск
    */
 
-  function init$z() {
+  function init$A() {
     _loaded = Storage.get('plugins', '[]');
     Settings.main().render().find('[data-component="plugins"]').unbind('hover:enter').on('hover:enter', function () {
       ParentalControl.personal('extensions', function () {
@@ -46070,7 +46070,7 @@
   }
 
   var Plugins = {
-    init: init$z,
+    init: init$A,
     load: load,
     remove: remove$2,
     loaded: function loaded() {
@@ -46377,13 +46377,117 @@
     return comp;
   }
 
+  var network$3 = new Request();
+  var list$3 = [];
+  var map$1 = {};
+  var loaded$2 = false;
+  var waiting = [];
+  /**
+   * Можно ли открыть приложение Кинопоиск — только Android-приложение с AndroidJS.openBrowser, не в демо-режиме
+   * @returns {boolean}
+   */
+
+  function available() {
+    return !window.lampa_settings.demo && Platform.is('android') && typeof AndroidJS !== 'undefined' && typeof AndroidJS.openBrowser == 'function';
+  }
+  /**
+   * Загрузка списка карточек, которые смотрят в приложении Кинопоиск (CUB: static/filter/kinopoisk.json).
+   * Список не нужен (не Android, выключено) или не загрузился — тоже считается загруженным, ожидающие получают пустой список.
+   * @returns {void}
+   */
+
+
+  function init$z() {
+    if (window.lampa_settings.disable_features.kinopoisk || !available()) return done();
+    network$3.timeout(1000 * 10);
+    network$3.silent(Utils$1.protocol() + object$2.cub_domain + '/api/kinopoisk/list', function (data) {
+      if (data && Arrays.isArray(data.results)) {
+        data.results.forEach(function (item) {
+          if (!item || !item.url) return;
+          list$3.push(item);
+          if (item.id && item.cat) map$1[item.cat + '_' + item.id] = item;
+          if (item.kpid) map$1['kp_' + item.kpid] = item;
+        });
+      }
+
+      done();
+    }, done);
+  }
+  /**
+   * Список загружен (или не нужен) — вызвать всех ожидающих
+   * @returns {void}
+   */
+
+
+  function done() {
+    if (loaded$2) return;
+    loaded$2 = true;
+    var calls = waiting;
+    waiting = [];
+    calls.forEach(function (call) {
+      try {
+        call();
+      } catch (e) {
+        console.log('Kinopoisk', 'ready error:', e.message);
+      }
+    });
+  }
+  /**
+   * Выполнить, когда список загружен (или не нужен / не загрузился); если уже загружен — сразу
+   * @param {function} call
+   * @returns {void}
+   */
+
+
+  function ready$1(call) {
+    if (loaded$2) call();else waiting.push(call);
+  }
+  /**
+   * Убрать из списка DMCA карточки, которые смотрят на Кинопоиске: они открываются с кнопкой «Смотреть на Кинопоиске».
+   * Вызывать в ready(), иначе список Кинопоиска может быть ещё пуст.
+   * @param {array} dcma список DMCA [{id, cat}|{kpid}]
+   * @returns {array} список без карточек Кинопоиска
+   */
+
+
+  function allow(dcma) {
+    if (!list$3.length || !Arrays.isArray(dcma)) return dcma;
+    return dcma.filter(function (item) {
+      if (item && item.id && item.cat && map$1[item.cat + '_' + item.id]) return false;
+      if (item && item.kpid && map$1['kp_' + item.kpid]) return false;
+      return true;
+    });
+  }
+  /**
+   * Найти карточку в списке: по id TMDB и типу или по id Кинопоиска
+   * @param {object} card карточка
+   * @returns {object|null} {id, cat, kpid, url} или null
+   */
+
+
+  function find(card) {
+    if (!card || !list$3.length || !available()) return null;
+    var tmdb = !card.source || card.source == 'tmdb' || card.source == 'cub';
+    var cat = card.name || card.number_of_seasons || card.first_air_date ? 'tv' : 'movie';
+    var kpid = parseInt(card.kinopoisk_id || card.kp_id) || 0;
+    return tmdb && card.id && map$1[cat + '_' + card.id] || kpid && map$1['kp_' + kpid] || null;
+  }
+
+  var ServiceKinopoisk = {
+    init: init$z,
+    ready: ready$1,
+    find: find,
+    allow: allow
+  };
+
   var Options = {
     onCreate: function onCreate() {
       var _this = this;
 
       this.html.find('.button--options').on('hover:enter', function () {
-        var options = [];
-        Lampa.Listener.send('full', {
+        var options = []; // Карточка Кинопоиска: плагины не добавляют свои пункты (источники)
+
+        if (!ServiceKinopoisk.find(_this.card)) Lampa.Listener.send('full', {
           link: _this,
           type: 'options',
           props: _this.props,
@@ -47018,7 +47122,25 @@
       var _this2 = this;
 
       var play = this.html.find('.button--play');
-      var btns = this.html.find('.buttons--container > .full-start__button').not('.hide');
+      var btns = this.html.find('.buttons--container > .full-start__button').not('.hide'); // Карточка из списка CUB: вместо «Смотреть» — «Смотреть на Кинопоиске», открывает приложение Кинопоиск
+
+      var kinopoisk = ServiceKinopoisk.find(this.card);
+
+      if (kinopoisk && play.length) {
+        if (!play.hasClass('button--kinopoisk')) {
+          play.addClass('button--kinopoisk').find('span').text(Lang.translate('full_watch_kinopoisk'));
+          this.html.find('.full-start-new__buttons .button--priority').remove();
+        }
+
+        play.unbind().on('hover:enter', function () {
+          Android.openBrowser(kinopoisk.url);
+        }).on('hover:focus', function () {
+          _this2.last = play[0];
+        });
+        play.removeClass('hide');
+        return;
+      }
+
       var priority = Storage.get('full_btn_priority', '') + '';
 
       if (priority) {
@@ -47041,6 +47163,9 @@
       var _this3 = this;
 
       var context = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      // Карточка из списка CUB (и серии из неё) смотрится только в приложении Кинопоиск
+      var kinopoisk = ServiceKinopoisk.find(this.card);
+      if (kinopoisk) return Android.openBrowser(kinopoisk.url);
       var priority = Storage.get('full_btn_priority', '') + '';
       var btns = this.html.find('.buttons--container > .full-start__button').not('.hide').filter(function () {
         return Number.isInteger(context.season) || priority !== Utils$1.hash($(this).clone().removeClass('focus').prop('outerHTML'));
@@ -48151,13 +48276,21 @@
         this.tv = Platform.screen('tv');
         this.view = 3;
         this.rows = ['start', 'description'];
-        this.html.addClass('layer--wheight');
+        this.html.addClass('layer--wheight'); // Карточку Кинопоиска определяем по списку CUB — ждём его загрузку (при запуске карточка открывается раньше)
+
+        ServiceKinopoisk.ready(function () {
+          if (!_this.destroyed) _this.emit('loadFull');
+        });
+      },
+      onLoadFull: function onLoadFull() {
+        var _this2 = this;
+
         Api.full(object, function (data) {
-          if (!data.movie) return _this.emit('error', {
+          if (!data.movie) return _this2.emit('error', {
             empty: true
           }); // Добавляем в пропсы данные
 
-          _this.props.set(data); // Проверяем по ключевым словам, есть ли в фильме ЛГБТ тематика
+          _this2.props.set(data); // Проверяем по ключевым словам, есть ли в фильме ЛГБТ тематика
 
 
           var key_tags = data.movie.keywords ? data.movie.keywords.results || data.movie.keywords.keywords : [];
@@ -48176,14 +48309,18 @@
             if (window.lampa_settings.lgbt[data.movie.id + '_' + (data.movie.first_air_date ? 'tv' : 'movie')]) data.movie.lgbt = 'list';
           }
 
-          if (data.movie.blocked || data.movie.lgbt) return _this.emit('error', {
+          if (data.movie.blocked || data.movie.lgbt) return _this2.emit('error', {
             blocked: true,
             lgbt: data.movie.lgbt
           }); // Для плагинов которые используют Activity.active().card
 
-          object.card = data.movie; // Проверяем можно ли показывать полную карточку детям
+          object.card = data.movie; // Карточка смотрится только на Кинопоиске — события не отправляем, чтобы плагины не добавляли свои кнопки
 
-          var watch = Utils$1.canWatchChildren(TMDB.parsePG(data.movie), permit.profile.age); // Ищем по ключевым словам, есть ли в фильме тематика для взрослых
+          _this2.kinopoisk = Boolean(ServiceKinopoisk.find(data.movie)); // Проверяем можно ли показывать полную карточку детям
+
+          var watch = Utils$1.canWatchChildren(TMDB.parsePG(data.movie), permit.profile.age); // События для плагинов: не для детского профиля и не для карточки Кинопоиска
+
+          var events = watch && !_this2.kinopoisk; // Ищем по ключевым словам, есть ли в фильме тематика для взрослых
 
           var adult_block = key_tags && key_tags.find && key_tags.length ? key_tags.find(function (key) {
             return Keys.adult.find(function (word) {
@@ -48194,23 +48331,23 @@
 
           if (adult_block) data.movie.adult = true; // Отправляем событие, что началась загрузка полной карточки
 
-          if (watch) Lampa.Listener.send('full', {
-            link: _this,
+          if (events) Lampa.Listener.send('full', {
+            link: _this2,
             type: 'start',
-            props: _this.props,
-            body: $(_this.html),
+            props: _this2.props,
+            body: $(_this2.html),
             object: object,
             data: data
           });
 
           if (data.metadata && data.metadata && data.metadata.status && data.metadata.status == 'completed') {
-            _this.rows.push(['metadata_chart', {
+            _this2.rows.push(['metadata_chart', {
               movie: data.movie,
               metadata: data.metadata
             }]);
 
             if (Lang.selected(['ru', 'uk', 'be'])) {
-              _this.rows.push(['metadata_tags', {
+              _this2.rows.push(['metadata_tags', {
                 movie: data.movie,
                 metadata: data.metadata
               }]);
@@ -48251,7 +48388,7 @@
               return episode.original_name = data.movie.original_name || data.movie.name;
             });
 
-            _this.rows.push(['episodes', {
+            _this2.rows.push(['episodes', {
               movie: data.movie,
               title: data.episodes.name || Lang.translate('full_series_release'),
               results: cameout
@@ -48263,19 +48400,19 @@
             var directors = data.persons.crew.filter(function (member) {
               return member.job === 'Director';
             });
-            directors.length && _this.rows.push(['persons', {
+            directors.length && _this2.rows.push(['persons', {
               results: directors,
               title: Lang.translate('title_producer')
             }]);
           } // Создаем актеров
 
 
-          if (!adult_block && data.persons && data.persons.cast && data.persons.cast.length) _this.rows.push(['persons', {
+          if (!adult_block && data.persons && data.persons.cast && data.persons.cast.length) _this2.rows.push(['persons', {
             results: data.persons.cast,
             title: Lang.translate('title_actors')
           }]); // Создаем отзывы
 
-          if (!adult_block && data.discuss) Arrays.insert(_this.rows, data.discuss.result.length ? 2 : _this.rows.length, ['discuss', _objectSpread2(_objectSpread2({}, data.discuss), {}, {
+          if (!adult_block && data.discuss) Arrays.insert(_this2.rows, data.discuss.result.length ? 2 : _this2.rows.length, ['discuss', _objectSpread2(_objectSpread2({}, data.discuss), {}, {
             movie: data.movie,
             title: Lang.translate('title_comments'),
             results: data.discuss.result || []
@@ -48290,25 +48427,25 @@
               return parseInt(yearA) - parseInt(yearB);
             });
 
-            _this.rows.push(['cards', data.collection]);
+            _this2.rows.push(['cards', data.collection]);
           } // Создаем рекомендации
 
 
           if (!adult_block && data.recomend && data.recomend.results && data.recomend.results.length) {
             data.recomend.title = Lang.translate('title_recomendations');
 
-            _this.rows.push(['cards', data.recomend]);
+            _this2.rows.push(['cards', data.recomend]);
           } // Создаем похожие
 
 
           if (!adult_block && data.simular && data.simular.results && data.simular.results.length) {
             data.simular.title = Lang.translate('title_similar');
 
-            _this.rows.push(['cards', data.simular]);
+            _this2.rows.push(['cards', data.simular]);
           } // Добавляем картинку для фона
 
 
-          _this.html.prepend(Template.elem('img', {
+          _this2.html.prepend(Template.elem('img', {
             "class": 'full-start__background'
           })); // Добавляем фоновую картинку
 
@@ -48316,38 +48453,38 @@
           var background = data.movie.backdrop_path ? Api.img(data.movie.backdrop_path, 'w1280') : data.movie.background_image ? data.movie.background_image : '';
 
           if (window.innerWidth > 790 && background && !Storage.field('light_version')) {
-            Utils$1.imgLoad(_this.html.find('.full-start__background'), background, function (img) {
+            Utils$1.imgLoad(_this2.html.find('.full-start__background'), background, function (img) {
               return img.addClass('loaded');
             });
-          } else _this.html.find('.full-start__background').remove(); // Создаем все компоненты
+          } else _this2.html.find('.full-start__background').remove(); // Создаем все компоненты
 
 
-          _this.build(_this.rows.slice(0, _this.view)); // Обновляем расписание
+          _this2.build(_this2.rows.slice(0, _this2.view)); // Обновляем расписание
 
 
           TimeTable.update(data.movie); // Отправляем событие, что полная карточка загружена
 
-          if (watch) Lampa.Listener.send('full', {
-            link: _this,
+          if (events) Lampa.Listener.send('full', {
+            link: _this2,
             type: 'complite',
-            props: _this.props,
-            body: $(_this.html),
+            props: _this2.props,
+            body: $(_this2.html),
             object: object,
             data: data
           });
 
-          _this.activity.loader(false); // Группируем кнопки после полной загрузки
+          _this2.activity.loader(false); // Группируем кнопки после полной загрузки
 
 
-          if (_this.items.length) _this.items[0].emit('groupButtons');
+          if (_this2.items.length) _this2.items[0].emit('groupButtons');
 
-          _this.activity.toggle();
+          _this2.activity.toggle();
 
-          if (Number.isInteger(object.episode_season) && _this.items.length) {
+          if (Number.isInteger(object.episode_season) && _this2.items.length) {
             var season = object.episode_season;
             delete object.episode_season;
 
-            _this.items[0].emit('watch', {
+            _this2.items[0].emit('watch', {
               season: season
             });
           }
@@ -48382,9 +48519,9 @@
         var item = new components[name](data);
         this.emit('instance', item);
         item.create();
-        this.emit('append', item); // Отправляем событие, что компонент создан
+        this.emit('append', item); // Отправляем событие, что компонент создан (кроме карточки Кинопоиска)
 
-        Lampa.Listener.send('full', {
+        if (!this.kinopoisk) Lampa.Listener.send('full', {
           link: this,
           type: 'build',
           props: this.props,
@@ -60320,6 +60457,12 @@
         lang_choice_title: "Witamy",
         lang_choice_subtitle: "Wybierz język"
       },
+      lt: {
+        code: "lt",
+        name: "Lietuvių",
+        lang_choice_title: "Sveiki",
+        lang_choice_subtitle: "Pasirinkite kalbą"
+      },
       es: {
         code: 'es',
         name: 'Español',
@@ -61594,6 +61737,7 @@
     extensions_price_shareware: 'Условно бесплатно',
     extensions_price_paid: 'Платно',
     full_add_source: 'Добавить источник',
+    full_watch_kinopoisk: 'Смотреть на Кинопоиске',
     extensions_hpu_: 'Остальное',
     speedtest_connect: 'подключение',
     speedtest_test: 'тестирование',
@@ -62836,6 +62980,7 @@
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Paid',
     full_add_source: 'Add source',
+    full_watch_kinopoisk: 'Watch on Kinopoisk',
     extensions_hpu_: 'Other',
     title_author: 'Author',
     title_buffer: 'Buffer',
@@ -63235,6 +63380,7 @@
     ro: ['Inițializare', 'Încărcare limbi'],
     fr: ['Préparation', 'Chargement des langues'],
     pl: ['Przygotowanie', 'Ładowanie języków'],
+    lt: ['Pasiruošimas', 'Kalbų įkėlimas'],
     es: ['Preparación', 'Cargando idiomas']
   };
   var lang_default = 'ru';
@@ -67012,7 +67158,10 @@
       //     if(result && Arrays.isArray(result)) window.lampa_settings.dcma = result
       //     else{
       Lampa.Network.silent(Utils$1.protocol() + 'tmdb.' + object$2.cub_domain + '/blocked', function (dcma) {
-        window.lampa_settings.dcma = dcma; //Cache.rewriteData('other', 'dcma', dcma).catch((e)=>{})
+        // Карточки Кинопоиска не блокируем — ждём список, чтобы применить DMCA один раз
+        ServiceKinopoisk.ready(function () {
+          window.lampa_settings.dcma = ServiceKinopoisk.allow(dcma);
+        }); //Cache.rewriteData('other', 'dcma', dcma).catch((e)=>{})
       }); //     }
       // }).catch(e=>{})
     }
@@ -67447,6 +67596,8 @@
       dmca: false,
       // Блокировка ЛГБТ-контента
       lgbt: false,
+      // Кнопка «Смотреть на Кинопоиске» для карточек из списка CUB
+      kinopoisk: false,
       // Реакции
       reactions: false,
       // Обсуждения
@@ -67826,8 +67977,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-11-19 15:55');
-    console.log('App', 'hash', 'c5274ea098e8ebd6552c7ed2adfc7a18');
+    console.log('App', 'build date:', '2026-11-22 13:57');
+    console.log('App', 'hash', '2e830ce6aa3388357d52954e71a8526f');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
@@ -67847,6 +67998,8 @@
     LoadingProgress.status('ServiceMetric init');
     ServiceRemoteFavorites.init();
     LoadingProgress.status('ServiceRemoteFavorites init');
+    ServiceKinopoisk.init();
+    LoadingProgress.status('ServiceKinopoisk init');
     ServiceDMCA.init();
     LoadingProgress.status('ServiceDMCA init');
     ServiceFPS.init();

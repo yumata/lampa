@@ -1109,6 +1109,7 @@ export default {
     extensions_price_shareware: 'Freemium',
     extensions_price_paid: 'Paid',
     full_add_source: 'Add source',
+    full_watch_kinopoisk: 'Watch on Kinopoisk',
     extensions_hpu_: 'Other',
 
     title_author: 'Author',
