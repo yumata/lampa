@@ -2888,8 +2888,8 @@
   var object$2 = {
     author: 'Yumata',
     github: 'https://github.com/yumata/lampa-source',
-    css_version: '3.4.7',
-    app_version: '3.4.7',
+    css_version: '3.4.8',
+    app_version: '3.4.8',
     cub_site: 'cub.best',
     apk_link_download: 'https://github.com/lampa-app/LAMPA/releases/download/v1.12.3/app-lite-release.apk'
   };
@@ -3363,7 +3363,13 @@
 
   var html$21 = "<div class=\"friend-profile layer--width\">\n    <div class=\"friend-profile__left\">\n        <div class=\"friend-profile__left-body\">\n            <div class=\"friend-profile__panel friend-profile__user\">\n                <div class=\"friend-profile__avatar\"><img src=\"./img/img_load.svg\" /></div>\n                <div class=\"friend-profile__user-body\">\n                    <div class=\"friend-profile__name\"></div>\n                    <div class=\"friend-profile__since\"></div>\n                </div>\n            </div>\n            <div class=\"friend-profile__panel friend-profile__watching hide\">\n                <div class=\"friend-profile__panel-title\"><svg><use xlink:href=\"#sprite-player-play\"></use></svg><span>#{friends_now_watching}</span></div>\n                <div class=\"friend-profile__movie selector\">\n                    <div class=\"friend-profile__movie-img\"><img /></div>\n                    <div class=\"friend-profile__movie-body\">\n                        <div class=\"friend-profile__movie-title\"></div>\n                        <div class=\"friend-profile__movie-meta\"></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"friend-profile__panel friend-profile__opened hide\">\n                <div class=\"friend-profile__panel-title\"><svg><use xlink:href=\"#sprite-lock\"></use></svg><span>#{friends_opened}</span></div>\n                <div class=\"friend-profile__tags\"></div>\n            </div>\n        </div>\n    </div>\n    <div class=\"friend-profile__right\">\n        <div class=\"friend-profile__head\">\n            <div class=\"friend-profile__mini\">\n                <div class=\"friend-profile__avatar friend-profile__mini-avatar\"><img src=\"./img/img_load.svg\" /></div>\n                <div class=\"friend-profile__user-body\">\n                    <div class=\"friend-profile__name\"></div>\n                    <div class=\"friend-profile__since friend-profile__mini-status\"></div>\n                </div>\n            </div>\n            <div class=\"navigation-tabs friend-profile__tabs\"></div>\n        </div>\n        <div class=\"friend-profile__body\">\n            <div class=\"friend-profile__content\"></div>\n        </div>\n    </div>\n</div>";
 
-  var html$20 = "<div class=\"friend-feed selector\">\n    <div class=\"friend-feed__avatar\"><img src=\"./img/img_load.svg\" /></div>\n    <div class=\"friend-feed__body\">\n        <div class=\"friend-feed__head\"><span class=\"friend-feed__name\"></span> <span class=\"friend-feed__action\"></span></div>\n        <div class=\"friend-feed__time\"></div>\n        <div class=\"friend-feed__detail\"><svg><use xlink:href=\"\"></use></svg><span></span></div>\n    </div>\n    <div class=\"friend-feed__target\">\n        <div class=\"friend-feed__about\">\n            <div class=\"friend-feed__title\"></div>\n            <div class=\"friend-feed__meta\"></div>\n        </div>\n        <div class=\"friend-feed__poster\"><img /></div>\n    </div>\n</div>";
+  // Карточка фильма в событии две: на ТВ — справа колонкой (__target--side), на телефоне — в строке под линией рядом с иконкой (__row), как на сайте CUB.
+  // Видна одна из них (friend.scss, $media_sm)
+  var target = function target(mod) {
+    return "<div class=\"friend-feed__target friend-feed__target--".concat(mod, "\">\n        <div class=\"friend-feed__about\">\n            <div class=\"friend-feed__title\"></div>\n            <div class=\"friend-feed__meta\"></div>\n        </div>\n        <div class=\"friend-feed__poster\"><img /></div>\n    </div>");
+  };
+
+  var html$20 = "<div class=\"friend-feed selector\">\n    <div class=\"friend-feed__avatar\"><img src=\"./img/img_load.svg\" /></div>\n    <div class=\"friend-feed__body\">\n        <div class=\"friend-feed__head\"><span class=\"friend-feed__name\"></span> <span class=\"friend-feed__action\"></span></div>\n        <div class=\"friend-feed__time\"></div>\n        <div class=\"friend-feed__row\">\n            <div class=\"friend-feed__detail\"><svg><use xlink:href=\"\"></use></svg><span></span></div>\n            ".concat(target('row'), "\n        </div>\n    </div>\n    ").concat(target('side'), "\n</div>");
 
   var html$1$ = "<div class=\"friend-recommend\">\n    <div class=\"friend-recommend__all selector\">\n        <div class=\"friend-recommend__all-icon\"><svg><use xlink:href=\"#sprite-friends\"></use></svg></div>\n        <div class=\"friend-recommend__all-title\">#{friends_recommend_all}</div>\n        <div class=\"friend-recommend__total\"></div>\n        <div class=\"friend-recommend__check\"></div>\n    </div>\n    <div class=\"friend-recommend__label\">\n        <span>#{friends_recommend_choose}</span>\n        <span class=\"friend-recommend__selected\"></span>\n    </div>\n    <div class=\"friend-recommend__list\"></div>\n</div>";
 
@@ -3405,7 +3411,7 @@
 
   var html$1I = "<div class=\"files\">\n    <div class=\"files__left\">\n        <div class=\"full-start__poster selector\">\n            <img src=\"{img}\" class=\"full-start__img\" />\n        </div>\n\n        <div class=\"files__info\">\n            <div class=\"files__title\">{title}</div>\n            <div class=\"files__title-original\">{original_title}</div>\n        </div>\n    </div>\n    <div class=\"files__body\">\n        \n    </div>\n</div>";
 
-  var html$1H = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>2e830ce6aa3388357d52954e71a8526f</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-11-22 13:57</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
+  var html$1H = "<div class=\"about\">\n    <div>#{about_text}</div>\n\n\n    <div class=\"overhide\">\n        <div class=\"about__contacts\">\n            <div>\n                <small>#{about_channel}</small><br>\n                @lampa_channel\n            </div>\n\n            <div>\n                <small>#{about_group}</small><br>\n                @lampa_group\n            </div>\n\n            <div>\n                <small>#{about_version}</small><br>\n                <span class=\"version_app\"></span>\n            </div>\n\n            <div class=\"hide platform_android\">\n                <small>#{about_version} Android APK</small><br>\n                <span class=\"version_android\"></span>\n            </div>\n\n            <div>\n                <small>Hash</small><br>\n                <span>b8aa96410e3073d7dfa9ff4a4e4b9481</span>\n            </div>\n\n            <div>\n                <small>Builded</small><br>\n                <span>2026-11-23 10:36</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"about__rules\">\n        <h3>#{termsofuse_t_01}</h3>\n\n        <p>#{termsofuse_t_02}</p>\n\n        <ol>\n            <li>\n                <h6>#{termsofuse_t_03}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_04}</p></li>\n\n                    <li><p>#{termsofuse_t_05}</p></li>\n\n                    <li><p>#{termsofuse_t_06}</p></li>\n\n                    <li><p>#{termsofuse_t_07}</p></li>\n                </ol>\n                \n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_08}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_09}</p></li>\n                    <li><p>#{termsofuse_t_10}</p></li>\n                </ol>\n            </li>\n\n            <li>\n                <h6>#{termsofuse_t_11}</h6>\n\n                <ol>\n                    <li><p>#{termsofuse_t_12}</p></li>\n                    <li><p>#{termsofuse_t_13}</p></li>\n                </ol>\n            </li>\n        </ol>\n    </div>\n</div>";
 
   var html$1G = "<div class=\"error\">\n    <div class=\"error__ico\"></div>\n    <div class=\"error__body\">\n        <div class=\"error__title\">{title}</div>\n        <div class=\"error__text\">{text}</div>\n    </div>\n</div>";
 
@@ -55593,7 +55599,8 @@
       if (!first) this.collection(content.find('.friend-profile__registers .active')[0]);
     };
     /**
-     * События ленты: аватар, «ник действие», время, деталь с иконкой; справа — название, «Фильм · 2026», постер
+     * События ленты: аватар, «ник действие», время, деталь с иконкой; справа — название, «Фильм · 2026», постер.
+     * На телефоне — как на сайте: шапка с аватаром, линия, строка «иконка … название, постер», комментарий внизу
      */
 
 
@@ -55619,10 +55626,10 @@
         item.find('.friend-feed__action').text(_this5.action(event));
         item.find('.friend-feed__time').text(_this5.date(event.time) + ', ' + Utils$1.parseTime(event.time).time);
         item.find('.friend-feed__detail use').attr('xlink:href', '#' + det.icon);
-        item.find('.friend-feed__detail span').text(det.text).toggleClass('hide', !det.text);
+        item.find('.friend-feed__detail span').text(det.text).toggleClass('hide', !det.text); // после строки «деталь + карточка»: на ТВ — под деталью, на телефоне — серым блоком на всю ширину
 
         if (event.comment && event.comment.text) {
-          item.find('.friend-feed__detail').after(elem('friend-feed__comment', event.comment.text));
+          item.find('.friend-feed__row').after(elem('friend-feed__comment', event.comment.text));
         }
 
         Utils$1.imgLoad(item.find('.friend-feed__avatar img'), Friends.avatar(event.user && event.user.icon || user.icon), function () {}, function (img) {
@@ -55633,12 +55640,15 @@
           item.find('.friend-feed__title').text(card.title || card.name || '');
           item.find('.friend-feed__meta').text([Lang.translate(card.name !== undefined ? 'friends_feed_tv' : 'friends_feed_movie'), ((card.release_date || card.first_air_date || '') + '').slice(0, 4)].filter(function (a) {
             return a;
-          }).join(' · '));
+          }).join(' · ')); // постер в обеих карточках (справа для ТВ и в строке для телефона), второй берётся из кеша браузера
 
           if (card.poster_path) {
-            Utils$1.imgLoad(item.find('.friend-feed__poster img'), TMDB.img(card.poster_path, 'w200'), function () {
-              item.find('.friend-feed__poster').addClass('loaded');
-            }, function () {});
+            item.find('.friend-feed__poster img').each(function () {
+              var poster = $(this).parent();
+              Utils$1.imgLoad(this, TMDB.img(card.poster_path, 'w200'), function () {
+                poster.addClass('loaded');
+              }, function () {});
+            });
           }
         } else if (event.collection) {
           item.find('.friend-feed__title').text(event.collection.title || '');
@@ -67977,8 +67987,8 @@
     console.log('App', 'is PWA:', Utils$1.isPWA());
     console.log('App', 'platform:', Storage.get('platform', 'noname'));
     console.log('App', 'version:', object$2.app_version);
-    console.log('App', 'build date:', '2026-11-22 13:57');
-    console.log('App', 'hash', '2e830ce6aa3388357d52954e71a8526f');
+    console.log('App', 'build date:', '2026-11-23 10:36');
+    console.log('App', 'hash', 'b8aa96410e3073d7dfa9ff4a4e4b9481');
     console.log('App', 'location:', location.href); // Записываем uid
 
     if (!Storage.get('lampa_uid', '')) Storage.set('lampa_uid', Utils$1.uid()); // Ренедрим лампу
